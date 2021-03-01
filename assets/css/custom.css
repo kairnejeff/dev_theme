@@ -18,6 +18,7 @@
 @media (min-width: 768px) {
     #header .header-nav {
         max-height: 100%;
+        margin-top: 50px;
     }
     .header-nav .container .row {
         display: flex;
@@ -29,5 +30,17 @@
     }
     .header-nav .container .row .navigation-header #_desktop_logo {
         width: 100%;
+    }
+    .header-nav .container .row .navigation-header div:nth-child(2) {
+        width: 100%;
+    }
+    .header-nav .container .row .navigation-header div:nth-child(2) #search_widget {
+        float: right;
+    }
+    /*products*/
+    #main #content section .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }

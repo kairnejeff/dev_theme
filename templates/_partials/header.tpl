@@ -50,9 +50,9 @@
           {hook h='displayTop'}
           <div class="clearfix"></div>
         </div>
-          <div class="col-md-5 col-xs-12">
+          {* <div class="col-md-5 col-xs-12">
             {hook h='displayNav1'}
-          </div>
+          </div> *}
           <div class="col-md-7 right-nav">
               {hook h='displayNav2'}
           </div>
@@ -65,6 +65,11 @@
           <div class="float-xs-right" id="_mobile_user_info"></div>
           <div class="top-logo" id="_mobile_logo"></div>
           <div class="clearfix"></div>
+        </div>
+        <div class="main-menu">
+          <ul>
+            
+          </ul>
         </div>
       </div>
     </div>
