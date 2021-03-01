@@ -29,5 +29,6 @@
     }
     .header-nav .container .row .navigation-header #_desktop_logo {
         width: 100%;
+        height: 100%;
     }
 }
