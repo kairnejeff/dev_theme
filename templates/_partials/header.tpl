@@ -32,7 +32,24 @@
   <nav class="header-nav">
     <div class="container">
       <div class="row">
-        <div class="hidden-sm-down">
+        <div class="hidden-sm-down navigation-header">
+        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
+            {if $page.page_name == 'index'}
+              <h1>
+                <a href="{$urls.base_url}">
+                  <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
+                </a>
+              </h1>
+            {else}
+                <a href="{$urls.base_url}">
+                  <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
+                </a>
+            {/if}
+        </div>
+        <div class="col-md-10 col-sm-12 position-static">
+          {hook h='displayTop'}
+          <div class="clearfix"></div>
+        </div>
           <div class="col-md-5 col-xs-12">
             {hook h='displayNav1'}
           </div>
@@ -58,23 +75,6 @@
   <div class="header-top">
     <div class="container">
        <div class="row">
-        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
-            {if $page.page_name == 'index'}
-              <h1>
-                <a href="{$urls.base_url}">
-                  <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
-                </a>
-              </h1>
-            {else}
-                <a href="{$urls.base_url}">
-                  <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
-                </a>
-            {/if}
-        </div>
-        <div class="col-md-10 col-sm-12 position-static">
-          {hook h='displayTop'}
-          <div class="clearfix"></div>
-        </div>
       </div>
       <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
         <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
