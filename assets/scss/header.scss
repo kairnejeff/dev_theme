@@ -1,0 +1,62 @@
+/* logo */
+
+#header .logo {
+    max-width: 400px;
+    max-height: auto;
+}
+
+
+/* Header */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1190px;
+    }
+}
+
+@media (min-width: 768px) {
+    #header {
+        .header-nav {
+            max-height: 100%;
+            margin-top: 50px;
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 15px;
+                .navigation-header {
+                    display: flex;
+                    width: 100%;
+                    #_desktop_logo {
+                        width: 100%;
+                    }
+                    div:nth-child(2) {
+                        width: 100%;
+                        #search_widget {
+                            float: right;
+                        }
+                    }
+                }
+                .header-bottom {
+                    width: 100%;
+                    padding: 0;
+                    #_desktop_top_menu {
+                        ul {
+                            li {
+                                &:not(:last-child) {
+                                    margin-right: 10px;
+                                }
+                                a {
+                                    text-transform: none;
+                                    letter-spacing: 1px;
+                                    word-spacing: -2px;
+                                    padding: 0;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
