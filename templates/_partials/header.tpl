@@ -62,7 +62,7 @@
           <div class="top-logo" id="_mobile_logo"></div>
           <div class="clearfix"></div>
         </div>
-          <div class="col-md-10 col-sm-12 position-static">
+          <div class="col-md-10 col-sm-12 position-static header-bottom">
             {hook h='displayTop'}
           <div class="clearfix"></div>
         </div>

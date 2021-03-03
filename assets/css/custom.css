@@ -44,20 +44,20 @@
     .header-nav .container .row .navigation-header div:nth-child(2) #search_widget {
         float: right;
     }
-    .header-nav .container .row .main-menu {
+    .header-nav .container .row .header-bottom {
         width: 100%;
+        padding: 0;
     }
-    .header-nav .container .row .main-menu ul {
-        display: flex;
-        justify-content: space-between;
+    .header-nav .container .row .header-bottom #_desktop_top_menu ul li:not(:last-child) {
+        margin-right: 10px;
+        ;
     }
-    .header-nav .container .row .main-menu ul li:not(:last-child) {
-        margin-right: 15px;
-    }
-    .header-nav .container .row .main-menu ul li a {
+    .header-nav .container .row .header-bottom #_desktop_top_menu ul li a {
         text-transform: none;
         letter-spacing: 1px;
         word-spacing: -2px;
+        padding: 0;
+        font-weight: 400;
     }
     /*products*/
     #main #content .featured-products {
