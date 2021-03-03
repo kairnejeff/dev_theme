@@ -16,7 +16,15 @@
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+<<<<<<< HEAD
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../scss/app.scss */ \"./scss/app.scss\");\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../scss/header.scss */ \"./scss/header.scss\");\n/* harmony import */ var _scss_home_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../scss/home.scss */ \"./scss/home.scss\");\n/* harmony import */ var _scss_footer_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../scss/footer.scss */ \"./scss/footer.scss\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://assets/./index.js?");
+=======
+<<<<<<< HEAD
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../scss/app.scss */ \"./scss/app.scss\");\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../../scss/header.scss */ \"./scss/header.scss\");\n/* harmony import */ var _scss_home_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../scss/home.scss */ \"./scss/home.scss\");\n\n\n\n\n//# sourceURL=webpack://assets/./index.js?");
+=======
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../scss/app.scss */ \"./scss/app.scss\");\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../scss/header.scss */ \"./scss/header.scss\");\n/* harmony import */ var _scss_home_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../scss/home.scss */ \"./scss/home.scss\");\n\r\n\r\n\n\n//# sourceURL=webpack://assets/./index.js?");
+>>>>>>> 949dfdeac20e01abad0c587fbcf8912449ca4c37
+>>>>>>> refs/remotes/origin/master
 
 /***/ }),
 

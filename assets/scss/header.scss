@@ -19,31 +19,43 @@
         .header-nav {
             max-height: 100%;
             margin-top: 50px;
+            border: none;
             .row {
                 display: flex;
                 flex-wrap: wrap;
-                padding: 0 15px;
+                border-bottom: 1px solid #000;
                 .navigation-header {
                     display: flex;
                     width: 100%;
                     #_desktop_logo {
                         width: 100%;
+                        padding: 0;
                     }
-                    div:nth-child(2) {
-                        width: 100%;
-                        #search_widget {
-                            float: right;
-                        }
+                    .right-nav {
+                        width: 400px;
+                        position: absolute;
+                        right: 0;
+                        top: 65px;
                     }
                 }
                 .header-bottom {
                     width: 100%;
                     padding: 0;
+                    #search_widget {
+                        position: absolute;
+                        top: -130px;
+                        right: 30%;
+                    }
                     #_desktop_top_menu {
+                        width: 100%;
+                        padding: 0 20px;
                         ul {
+                            display: flex;
+                            justify-content: space-between;
                             li {
                                 &:not(:last-child) {
                                     margin-right: 10px;
+                                    display: block;
                                 }
                                 a {
                                     text-transform: none;

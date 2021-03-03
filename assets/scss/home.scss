@@ -1,3 +1,5 @@
+@import "global.scss";
+
 /*products*/
 
 .container {
@@ -8,16 +10,51 @@
                 h2 {
                     font-size: 11px;
                     letter-spacing: 1px;
+                    border-bottom: 1px solid $black;
+                    padding-bottom: 20px;
                 }
-                .products {
+                .row {
+                    height: 410px;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
+                    margin: 0;
+                    &::after {
+                        content: none
+                    }
                     .product-miniature {
+                        margin: 0;
                         .thumbnail-container {
                             box-shadow: none;
+                            border: 1px solid $black;
+                            width: 320px;
+                            a {
+                                height: 100%;
+                                img {
+                                    width: 100%;
+                                    border: 1px solid $black;
+                                }
+                            }
+                            .product-description {
+                                z-index: 0;
+                                width: 100%;
+                                bottom: auto;
+                                h3 {
+                                    text-align: left;
+                                    border-left: 1px solid $black;
+                                    padding-left: 5px;
+                                    text-transform: lowercase;
+                                    a {
+                                        font-size: 24px;
+                                    }
+                                }
+                                .product-price-and-shipping {
+                                    text-align: left;
+                                }
+                            }
                             .highlighted-informations {
                                 box-shadow: none;
+                                display: none;
                             }
                         }
                     }
