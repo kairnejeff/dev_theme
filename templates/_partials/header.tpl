@@ -46,10 +46,6 @@
                 </a>
             {/if}
         </div>
-        <div class="col-md-10 col-sm-12 position-static">
-          {hook h='displayTop'}
-          <div class="clearfix"></div>
-        </div>
           {* <div class="col-md-5 col-xs-12">
             {hook h='displayNav1'}
           </div> *}
@@ -66,11 +62,35 @@
           <div class="top-logo" id="_mobile_logo"></div>
           <div class="clearfix"></div>
         </div>
-        <div class="main-menu">
-          <ul>
-            
-          </ul>
+          <div class="col-md-10 col-sm-12 position-static">
+            {hook h='displayTop'}
+          <div class="clearfix"></div>
         </div>
+        {* <div class="main-menu">
+          <ul>
+            <li>
+              <a href="#">Soupes et gaspachos</a>
+            </li>
+            <li>
+              <a href="#">Plats et accompagnements</a>
+            </li>
+            <li>
+              <a href="#">Sauces et bases culinaires</a>
+            </li>
+            <li>
+              <a href="#">Légumes au naturel</a>
+            </li>
+            <li>
+              <a href="#">Douceurs et confitures</a>
+            </li>
+            <li>
+              <a href="#">Les Bentos</a>
+            </li>
+            <li>
+              <a href="#">Les menus nature</a>
+            </li>
+          </ul>
+        </div> *}
       </div>
     </div>
   </nav>
