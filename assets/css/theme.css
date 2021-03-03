@@ -273,49 +273,56 @@ textarea {
     font-family: AlegreyaSans;
     src: url(../fonts/AlegreyaSans-Regular.ttf) format("truetype");
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: AlegreyaSans Medium;
     src: url(../fonts/AlegreyaSans-Medium.ttf) format("truetype");
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Unna;
     src: url(../fonts/Unna-Regular.ttf) format("truetype");
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Unna Bold;
     src: url(../fonts/Unna-Bold.ttf) format("truetype");
     font-weight: 700;
-    font-style: normal
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: Unna Bold Italic;
     src: url(../fonts/Unna-BoldItalic.ttf) format("truetype");
     font-weight: 700;
-    font-style: italic
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: RobotoMono;
     src: url(../fonts/RobotoMono-Regular.ttf) format("truetype");
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: RobotoMono Medium;
     src: url(../fonts/RobotoMono-Medium.ttf) format("truetype");
     font-weight: 400;
-    font-style: medium
+    font-style: medium;
+    font-display: swap;
 }
 
 @font-face {
@@ -622,13 +629,13 @@ blockquote {
 }
 
 a {
-    color: #2fb5d2;
+    color: #464646;
     text-decoration: none
 }
 
 a:focus,
 a:hover {
-    color: #208094;
+    color: #000000;
     text-decoration: underline
 }
 
@@ -2867,7 +2874,7 @@ fieldset[disabled] a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #2fb5d2;
+    background-color: #464646;
     border-color: transparent
 }
 
@@ -2875,7 +2882,7 @@ fieldset[disabled] a.btn {
 .btn-primary:focus,
 .btn-primary:hover {
     color: #fff;
-    background-color: #2592a9;
+    background-color: #000000;
     border-color: transparent
 }
 
@@ -2883,7 +2890,7 @@ fieldset[disabled] a.btn {
 .btn-primary:active,
 .open>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #2592a9;
+    background-color: #464646;
     border-color: transparent;
     background-image: none
 }
@@ -2898,7 +2905,7 @@ fieldset[disabled] a.btn {
 .open>.btn-primary.dropdown-toggle:focus,
 .open>.btn-primary.dropdown-toggle:hover {
     color: #fff;
-    background-color: #1e788c;
+    background-color: #000000;
     border-color: transparent
 }
 
@@ -2939,7 +2946,7 @@ fieldset[disabled] a.btn {
     color: #232323;
     background-color: #ddd;
     border-color: transparent;
-    background-image: none
+    background-image: none;
 }
 
 .active.btn-tertiary:focus,
@@ -7307,7 +7314,7 @@ ul {
 }
 
 a:hover {
-    color: #2fb5d2;
+    color: #000000;
     text-decoration: none
 }
 
@@ -7354,10 +7361,13 @@ p {
 .btn-primary,
 .btn-secondary,
 .btn-tertiary {
-    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .2);
     text-transform: uppercase;
     font-weight: 600;
-    padding: .5rem 1.25rem
+    padding: .5rem 1.25rem;
+    font-family: RobotoMono Medium;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 11px
 }
 
 .btn-primary .material-icons,
@@ -12080,13 +12090,13 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .footer-container li a {
-    color: #7a7a7a;
+    color: #333;
     cursor: pointer;
     font-size: .875rem
 }
 
 .footer-container li a:hover {
-    color: #2fb5d2
+    color: #333;
 }
 
 .links .collapse {
@@ -12332,7 +12342,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     padding: 10px;
     min-width: 255px;
     color: #7a7a7a;
-    border: 1px solid rgba(0, 0, 0, .25)
 }
 
 .block_newsletter form input[type=text]:focus {
@@ -12368,14 +12377,13 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .block_newsletter form input[type=email]:focus {
-    border: 3px solid #2fb5d2;
+    border: 3px solid #464646;
     padding: 8px 8px 9px;
     outline: 0
 }
 
 .block_newsletter form input {
     height: 42px;
-    box-shadow: none
 }
 
 #footer .block_newsletter .page-content.page-cms ul,
@@ -12967,6 +12975,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: normal;
     font-style: normal;
     font-display: block;
+    font-display: swap;
 }
 
 
