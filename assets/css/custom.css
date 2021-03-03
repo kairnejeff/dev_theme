@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 
-=======
-.text-primary {
-  color: #2525b2;
-}
->>>>>>> 949dfdeac20e01abad0c587fbcf8912449ca4c37
 /* logo */
 #header .logo {
   max-width: 400px;
@@ -21,32 +15,27 @@
   #header .header-nav {
     max-height: 100%;
     margin-top: 50px;
-<<<<<<< HEAD
     border: none;
-=======
->>>>>>> 949dfdeac20e01abad0c587fbcf8912449ca4c37
   }
   #header .header-nav .row {
     display: flex;
     flex-wrap: wrap;
-<<<<<<< HEAD
     border-bottom: 1px solid #000;
-=======
-    padding: 0 15px;
->>>>>>> 949dfdeac20e01abad0c587fbcf8912449ca4c37
   }
   #header .header-nav .row .navigation-header {
     display: flex;
     width: 100%;
+    position: relative;
   }
   #header .header-nav .row .navigation-header #_desktop_logo {
     width: 100%;
-<<<<<<< HEAD
     padding: 0;
   }
   #header .header-nav .row .navigation-header .right-nav {
-    width: 400px;
-    position: relative;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 65px;
   }
   #header .header-nav .row .header-bottom {
     width: 100%;
@@ -68,21 +57,6 @@
   #header .header-nav .row .header-bottom #_desktop_top_menu ul li:not(:last-child) {
     margin-right: 10px;
     display: block;
-=======
-  }
-  #header .header-nav .row .navigation-header div:nth-child(2) {
-    width: 100%;
-  }
-  #header .header-nav .row .navigation-header div:nth-child(2) #search_widget {
-    float: right;
-  }
-  #header .header-nav .row .header-bottom {
-    width: 100%;
-    padding: 0;
-  }
-  #header .header-nav .row .header-bottom #_desktop_top_menu ul li:not(:last-child) {
-    margin-right: 10px;
->>>>>>> 949dfdeac20e01abad0c587fbcf8912449ca4c37
   }
   #header .header-nav .row .header-bottom #_desktop_top_menu ul li a {
     text-transform: none;
@@ -99,7 +73,6 @@
 .container #main #content .featured-products h2 {
   font-size: 11px;
   letter-spacing: 1px;
-<<<<<<< HEAD
   border-bottom: 1px solid #000;
   padding-bottom: 20px;
 }
@@ -148,17 +121,4 @@
 .container #main #content .featured-products .row .product-miniature .thumbnail-container .highlighted-informations {
   box-shadow: none;
   display: none;
-=======
-}
-.container #main #content .featured-products .products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.container #main #content .featured-products .products .product-miniature .thumbnail-container {
-  box-shadow: none;
-}
-.container #main #content .featured-products .products .product-miniature .thumbnail-container .highlighted-informations {
-  box-shadow: none;
->>>>>>> 949dfdeac20e01abad0c587fbcf8912449ca4c37
 }

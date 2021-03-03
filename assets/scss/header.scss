@@ -27,12 +27,13 @@
                 .navigation-header {
                     display: flex;
                     width: 100%;
+                    position: relative;
                     #_desktop_logo {
                         width: 100%;
                         padding: 0;
                     }
                     .right-nav {
-                        width: 400px;
+                        width: 300px;
                         position: absolute;
                         right: 0;
                         top: 65px;
