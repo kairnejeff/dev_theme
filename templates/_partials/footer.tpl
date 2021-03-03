@@ -46,7 +46,7 @@
         <p class="text-sm-center">
           {block name='copyright_link'}
             <a class="_blank" href="https://www.prestashop.com" target="_blank" rel="nofollow">
-              {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
+            {l s='%copyright% %year% - %kj%' sprintf=['%kj%' => 'Karine & Jeff™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
             </a>
           {/block}
         </p>
