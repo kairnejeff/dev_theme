@@ -1,33 +1,14 @@
 /*products*/
 
-#main #content section .products article .thumbnail-container,
-#main #content section .products article .thumbnail-container .highlighted-informations {
-    box-shadow: none;
-}
-
-#main #content section .products article .product-description h3 {
-    text-align: left;
-    position: relative;
-}
-
-#main #content section .products article .product-description a {
-    text-align: left;
-    padding-left: 10px;
-    color: #000;
-    font-size: 20px;
-    border-left: 1px solid #000;
-}
-
-#main #content section .products article .product-description .product-price-and-shipping {
-    text-align: left;
-    font-size: 13px;
-}
-
 .container {
     #main {
         #content {
             .featured-products {
                 margin-top: 60px;
+                h2 {
+                    font-size: 11px;
+                    letter-spacing: 1px;
+                }
                 .products {
                     display: flex;
                     flex-wrap: wrap;
