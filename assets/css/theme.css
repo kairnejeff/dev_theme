@@ -9836,11 +9836,17 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 #custom-text {
-    background: #fff;
+    background: #fff url(../img/dots-background.png) repeat 50%;
     border-radius: 2px;
     margin-bottom: 1.5rem;
-    padding: 3.125rem;
-    text-align: center
+    text-align: center;
+    margin: 80px 0 80px 0;
+    padding: 40px;
+}
+
+#custome-text .text-introduction {
+    background: #fff;
+    padding: 40px;
 }
 
 #custom-text h2 {
