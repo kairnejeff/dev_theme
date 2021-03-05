@@ -23,6 +23,8 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {extends file=$layout}
+{block name='breadcrumb'}
+{/block}
 
 {block name='content'}
   <section id="main">

@@ -45,3 +45,15 @@ function addCompleteCssProgressBar() {
         })
     })
 })();
+
+
+//facet filtre mobile
+(function() {
+
+    $('#filtre-name').click(function() {
+        var isExpanded = $('#filtre-name').first().attr("aria-expanded")
+        isExpanded ? $('.mobile-collapse').collapse() : $('.mobile-collapse').collapse('hide')
+    })
+
+
+})();

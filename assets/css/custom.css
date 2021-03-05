@@ -4,6 +4,10 @@
   max-height: auto;
 }
 
+.top-menu .sub-menu.collapse {
+  display: none;
+}
+
 /* Header */
 @media (min-width: 1200px) {
   .container {
@@ -201,4 +205,24 @@
   .categories-preview {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+.block-category {
+  position: relative;
+  padding: unset;
+}
+
+.block-category .h1 {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+
+.block-category img {
+  max-width: 100%;
 }

@@ -16,7 +16,7 @@
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../scss/header.scss */ \"./scss/header.scss\");\n/* harmony import */ var _scss_home_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../scss/home.scss */ \"./scss/home.scss\");\n/* harmony import */ var _scss_footer_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../scss/footer.scss */ \"./scss/footer.scss\");\n/* harmony import */ var _scss_categorie_grid_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../scss/categorie-grid.scss */ \"./scss/categorie-grid.scss\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://assets/./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../scss/header.scss */ \"./scss/header.scss\");\n/* harmony import */ var _scss_home_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../scss/home.scss */ \"./scss/home.scss\");\n/* harmony import */ var _scss_footer_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../scss/footer.scss */ \"./scss/footer.scss\");\n/* harmony import */ var _scss_categorie_grid_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../scss/categorie-grid.scss */ \"./scss/categorie-grid.scss\");\n/* harmony import */ var _scss_category_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../scss/category.scss */ \"./scss/category.scss\");\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://assets/./index.js?");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://assets/./scss/categorie-grid.scss?");
+
+/***/ }),
+
+/***/ "./scss/category.scss":
+/*!****************************!*\
+  !*** ./scss/category.scss ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://assets/./scss/category.scss?");
 
 /***/ }),
 

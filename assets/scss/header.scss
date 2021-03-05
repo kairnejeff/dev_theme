@@ -5,6 +5,12 @@
     max-height: auto;
 }
 
+.top-menu {
+    .sub-menu.collapse {
+        display: none;
+    }
+}
+
 
 /* Header */
 
