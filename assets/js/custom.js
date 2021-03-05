@@ -57,3 +57,33 @@ function addCompleteCssProgressBar() {
 
 
 })();
+
+
+//mon compte 
+(function() {
+    var width = $('.my-account').width();
+    const margin = 20
+    const colum = 2
+    if ($(window).width() >= 576) {
+        var blocs = $('.info-blocs .info-bloc')
+        const left = width * 0.51
+        var columheight = []
+        columheight.push(blocs.eq(0).outerHeight() + margin)
+        columheight.push(blocs.eq(1).outerHeight() + margin)
+        blocs.eq(1).css("left", left)
+        $.each(blocs, function(index) {
+            if (index > 1) {
+                if (columheight[0] < columheight[1]) {
+                    $(this).css("top", columheight[0])
+                    columheight[0] += $(this).outerHeight() + margin
+                    return true;
+                }
+                $(this).css("left", left)
+                $(this).css("top", columheight[1])
+                columheight[1] += ($(this).outerHeight() + margin)
+            }
+
+        })
+        $('.info-blocs').css('height', columheight[0] > columheight[1] ? columheight[0] + 'px' : columheight[1] + 'px')
+    }
+})();

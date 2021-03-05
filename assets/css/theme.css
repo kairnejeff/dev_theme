@@ -10474,8 +10474,9 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .product-price {
-    color: #2fb5d2;
-    display: inline-block
+    font-family: RobotoMono;
+    font-size: 13px;
+    color: #000;
 }
 
 #product-description-short {
@@ -10730,7 +10731,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .product-cover img {
-    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .2);
     background: #fff
 }
 
