@@ -25,7 +25,7 @@
 
 <section class="featured-products clearfix mt-3">
   <h2 class="h2 products-section-title text-uppercase">
-    {l s='On sale' d='Shop.Theme.Catalog'}
+    <span>{l s='On sale' d='Shop.Theme.Catalog'}</span>
   </h2>
   {include file="catalog/_partials/productlist.tpl" products=$products}
   <a class="all-product-link float-xs-left float-md-right h4" href="{$allSpecialProductsLink}">

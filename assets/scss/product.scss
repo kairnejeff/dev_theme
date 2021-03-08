@@ -31,3 +31,27 @@
 .label-bio img {
     max-width: 100px
 }
+
+#js-product-list,
+.featured-products {
+    .products {
+        > div {
+            margin-bottom: 80px;
+
+            @media (max-width:480px) {
+                margin-bottom: 60px;
+            }
+
+            article {
+                height: 370px;
+                position: relative;
+
+                .product-price-and-shipping {
+                    position: absolute;
+                    bottom:0;
+                    left:0;
+                }
+            }
+        }
+    }
+}

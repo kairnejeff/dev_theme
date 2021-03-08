@@ -1340,7 +1340,7 @@
             }, {
                 key: "toggleMobileMenu",
                 value: function() {
-                    (0, u.default)("#header").toggleClass("is-open"), (0, u.default)("#mobile_top_menu_wrapper").is(":visible") ? (0, u.default)("#notifications, #wrapper, #footer").hide() : (0, u.default)("#notifications, #wrapper, #footer").show()
+                    (0, u.default)("#header").toggleClass("is-open"), (0, u.default)("#mobile_top_menu_wrapper").is(":visible")
                 }
             }]), e
         }(f.default);

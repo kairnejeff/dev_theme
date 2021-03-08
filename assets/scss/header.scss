@@ -53,6 +53,18 @@
                         top: -130px;
                         right: 30%;
                     }
+                    .search-widget {
+                        @media (max-width: 480px) {
+                            margin-top: 20px;
+                            width: 100%;
+                            // form {
+                            //     width: 100%;
+                            //    .ui-autocomplete-input {
+                            //         min-width: 100%;
+                            //     }
+                            // }
+                        }
+                    }
                     #_desktop_top_menu {
                         width: 100%;
                         padding: 0 20px;

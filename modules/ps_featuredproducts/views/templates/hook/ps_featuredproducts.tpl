@@ -24,7 +24,7 @@
  *}
 <section class="featured-products clearfix">
   <h2 class="h2 products-section-title text-uppercase">
-    {l s='Popular Products' d='Shop.Theme.Catalog'}
+    <span>{l s='Popular Products' d='Shop.Theme.Catalog'}</span>
   </h2>
   {include file="catalog/_partials/productlist.tpl" products=$products cssClass="row"}
   <a class="all-product-link float-xs-left float-md-right h4" href="{$allProductsLink}">
