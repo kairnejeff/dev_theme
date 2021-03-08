@@ -1,0 +1,33 @@
+.info-detailed {
+    font-size: 14px
+}
+
+.info-detailed h2 {
+    padding: 15px 0;
+    margin: 0;
+    border-top: 1px solid #CCCCCC
+}
+
+.info-detailed table {
+    width: 100%;
+}
+
+.info-detailed .grey {
+    background: #EEEEEE;
+}
+
+.info-detailed table td {
+    padding: 8px 10px;
+}
+
+.info-detailed table td:last-child {
+    width: 35px;
+}
+
+.product-images>li.thumb-container>.thumb {
+    box-shadow: unset
+}
+
+.label-bio img {
+    max-width: 100px
+}

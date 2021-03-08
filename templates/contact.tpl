@@ -22,24 +22,20 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-{extends file='page.tpl'}
+ {extends file='page.tpl'}
 
 {block name='page_header_container'}{/block}
 
-{if $layout === 'layouts/layout-left-column.tpl'}
-  {block name="left_column"}
-    <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
-      {widget name="ps_contactinfo" hook='displayLeftColumn'}
-    </div>
-  {/block}
-{else if $layout === 'layouts/layout-right-column.tpl'}
-  {block name="right_column"}
-    <div id="right-column" class="col-xs-12 col-sm-4 col-md-3">
-      {widget name="ps_contactinfo" hook='displayRightColumn'}
-    </div>
-  {/block}
-{/if}
 
 {block name='page_content'}
+    <div class="block-category">
+        <h1 class="h1">{l s='Contact us' d='Shop.Theme.Global'}</h1>
+        <img class="category-cover" src="{$urls.img_url}/contact-img.jpg" alt="contact us" width="100%"/>
+    </div>
+
   {widget name="contactform"}
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        {widget name="ps_contactinfo" hook='displayLeftColumn'}
+    </div>
 {/block}
+

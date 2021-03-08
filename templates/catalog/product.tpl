@@ -76,15 +76,18 @@
             {block name='page_header'}
               <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
+            {if $product.description_short}
+              <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
+            {/if} 
           {/block}
           {block name='product_prices'}
             {include file='catalog/_partials/product-prices.tpl'}
           {/block}
 
           <div class="product-information">
-            {block name='product_description_short'}
-              <div id="product-description-short-{$product.id}" class="product-description" itemprop="description">{$product.description_short nofilter}</div>
-            {/block}
+          {block name='product_description'}
+            <div id="product-description-{$product.id}" itemprop="description">{$product.description nofilter}</div>
+          {/block}
 
             {if $product.is_customizable && count($product.customizations.fields)}
               {block name='product_customization'}
@@ -134,98 +137,100 @@
               {/block}
 
             </div>
-
-            {block name='hook_display_reassurance'}
-              {hook h='displayReassurance'}
-            {/block}
-
-            {block name='product_tabs'}
-              <div class="tabs">
-                <ul class="nav nav-tabs" role="tablist">
-                  {if $product.description}
-                    <li class="nav-item">
-                       <a
-                         class="nav-link{if $product.description} active{/if}"
-                         data-toggle="tab"
-                         href="#description"
-                         role="tab"
-                         aria-controls="description"
-                         {if $product.description} aria-selected="true"{/if}>{l s='Description' d='Shop.Theme.Catalog'}</a>
-                    </li>
-                  {/if}
-                  <li class="nav-item">
-                    <a
-                      class="nav-link{if !$product.description} active{/if}"
-                      data-toggle="tab"
-                      href="#product-details"
-                      role="tab"
-                      aria-controls="product-details"
-                      {if !$product.description} aria-selected="true"{/if}>{l s='Product Details' d='Shop.Theme.Catalog'}</a>
-                  </li>
-                  {if $product.attachments}
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        data-toggle="tab"
-                        href="#attachments"
-                        role="tab"
-                        aria-controls="attachments">{l s='Attachments' d='Shop.Theme.Catalog'}</a>
-                    </li>
-                  {/if}
-                  {foreach from=$product.extraContent item=extra key=extraKey}
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        data-toggle="tab"
-                        href="#extra-{$extraKey}"
-                        role="tab"
-                        aria-controls="extra-{$extraKey}">{$extra.title}</a>
-                    </li>
-                  {/foreach}
-                </ul>
-
-                <div class="tab-content" id="tab-content">
-                 <div class="tab-pane fade in{if $product.description} active{/if}" id="description" role="tabpanel">
-                   {block name='product_description'}
-                     <div class="product-description">{$product.description nofilter}</div>
-                   {/block}
-                 </div>
-
-                 {block name='product_details'}
-                   {include file='catalog/_partials/product-details.tpl'}
-                 {/block}
-
-                 {block name='product_attachments'}
-                   {if $product.attachments}
-                    <div class="tab-pane fade in" id="attachments" role="tabpanel">
-                       <section class="product-attachments">
-                         <p class="h5 text-uppercase">{l s='Download' d='Shop.Theme.Actions'}</p>
-                         {foreach from=$product.attachments item=attachment}
-                           <div class="attachment">
-                             <h4><a href="{url entity='attachment' params=['id_attachment' => $attachment.id_attachment]}">{$attachment.name}</a></h4>
-                             <p>{$attachment.description}</p>
-                             <a href="{url entity='attachment' params=['id_attachment' => $attachment.id_attachment]}">
-                               {l s='Download' d='Shop.Theme.Actions'} ({$attachment.file_size_formatted})
-                             </a>
-                           </div>
-                         {/foreach}
-                       </section>
-                     </div>
-                   {/if}
-                 {/block}
-
-                 {foreach from=$product.extraContent item=extra key=extraKey}
-                 <div class="tab-pane fade in {$extra.attr.class}" id="extra-{$extraKey}" role="tabpanel" {foreach $extra.attr as $key => $val} {$key}="{$val}"{/foreach}>
-                   {$extra.content nofilter}
-                 </div>
-                 {/foreach}
-              </div>
-            </div>
-          {/block}
         </div>
       </div>
     </div>
+    <div class="info-all clearfix">	
+		<div class="info-detailed col-md-7">
+		{if isset($product.features)}
+			<h2 class="font3 text-uppercase">Ingrédients / composition</h2>
+			{foreach from=$product.features item=feature}
+				{if ($feature.name == "Ingrédients")}
+					<p>{$feature.value|escape:'html':'UTF-8'}</p>
+					<p>*ingrédients issus de l'agriculture biologique <br />
+						Certifié Ecocert SAS. 32600</p>
+				{/if}
+			{/foreach}
 
+			<h2 class="font3 text-uppercase">Préparation</h2>
+			{foreach from=$product.features item=feature}
+				{if ($feature.name == "Suggestions d'utilisation")}
+					<p>{$feature.value|escape:'html':'UTF-8'}</p>
+				{/if}
+			{/foreach}
+			
+			<h2 class="font3 text-uppercase">Histoire de la recette</h2>
+			{foreach from=$product.features item=feature}
+				{if ($feature.name == "Histoire de la recette")}
+					<p>{$feature.value|escape:'html':'UTF-8'}</p>
+				{/if}
+			{/foreach}
+
+		{/if}
+		</div>
+		<div class="info-detailed col-md-5">
+		{if isset($product.features)}
+			<h2 class="font3 text-uppercase">Mentions</h2>
+			{foreach from=$product.features item=feature}
+				{if ($feature.name == "Mentions Spéciales")}
+					<div>{$feature.value|escape:'html':'UTF-8'}</div>
+				{/if}
+			{/foreach}		
+			<div>Valeurs nutritionnelles / 100g / ml</div>
+			<table>
+			{foreach from=$product.features item=feature}
+				<tr class="grey">
+				{if ($feature.name == "Energie kcal/100g")}
+					<td>{$feature.name|escape:'htmlall':'UTF-8'|cat:" "}</td><td>{$feature.value|escape:'html':'UTF-8'}</td>
+				{/if}
+				</tr>
+				<tr>
+				{if ($feature.name == "Energie kJ/100g")}
+					<td>{$feature.name|escape:'htmlall':'UTF-8'|cat:" "}</td><td>{$feature.value|escape:'html':'UTF-8'}</td>
+				{/if}
+				</tr>
+				<tr class="grey">
+				{if ($feature.name == "Matière grasse")}
+					<td>{$feature.name|escape:'htmlall':'UTF-8'|cat:" "}</td><td>{$feature.value|escape:'html':'UTF-8'}</td>
+				{/if}
+				</tr>
+				<tr>
+				{if ($feature.name == "Acides gras saturés")}
+					<td>dont Acides gras saturés</td><td>{$feature.value|escape:'html':'UTF-8'}</td>
+				{/if}
+				</tr>
+				<tr class="grey">
+				{if ($feature.name == "Glucides")}
+					<td>{$feature.name|escape:'htmlall':'UTF-8'|cat:" "}</td><td>{$feature.value|escape:'html':'UTF-8'}</td>
+				{/if}	
+				</tr>
+				<tr>
+				{if ($feature.name == "Sucres")}
+					<td>dont Sucres</td><td>{$feature.value|escape:'html':'UTF-8'}</td>
+				{/if}	
+				</tr>
+				<tr class="grey">
+				{if ($feature.name == "Fibres")}
+					<td>{$feature.name|escape:'htmlall':'UTF-8'|cat:" "}</td><td>{$feature.value|escape:'html':'UTF-8'}</td>
+				{/if}	
+				</tr>
+				<tr>
+				{if ($feature.name == "Protéines")}
+					<td>{$feature.name|escape:'htmlall':'UTF-8'|cat:" "}</td><td>{$feature.value|escape:'html':'UTF-8'}</td>
+				{/if}	
+				</tr>
+				<tr class="grey">
+				{if ($feature.name == "Sel")}
+					<td>{$feature.name|escape:'htmlall':'UTF-8'|cat:" "}</td><td>{$feature.value|escape:'html':'UTF-8'}</td>
+				{/if}	
+				</tr>
+			{/foreach}	
+			</table>
+		{/if}	
+		</div>
+		
+
+    </div>
     {block name='product_accessories'}
       {if $accessories}
         <section class="product-accessories clearfix">
