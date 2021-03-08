@@ -1,2 +1,35 @@
 $black: #000;
 $white: #fff;
+
+
+#js-product-list,
+.featured-products {
+    .products {
+        > div {
+            margin-bottom: 80px;
+
+            @media (max-width:480px) {
+                margin-bottom: 60px;
+            }
+
+            article {
+                height: 370px;
+                position: relative;
+
+                @media (max-width: 480px) {
+                    height: 400px;
+                }
+
+                .product-price-and-shipping {
+                    position: absolute;
+                    bottom:0;
+                    left:0;
+
+                    @media (max-width: 480px) {
+                        position: relative;
+                    }                    
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,37 @@
+#js-product-list .products > div,
+.featured-products .products > div {
+  margin-bottom: 80px;
+}
+@media (max-width: 480px) {
+  #js-product-list .products > div,
+.featured-products .products > div {
+    margin-bottom: 60px;
+  }
+}
+#js-product-list .products > div article,
+.featured-products .products > div article {
+  height: 370px;
+  position: relative;
+}
+@media (max-width: 480px) {
+  #js-product-list .products > div article,
+.featured-products .products > div article {
+    height: 400px;
+  }
+}
+#js-product-list .products > div article .product-price-and-shipping,
+.featured-products .products > div article .product-price-and-shipping {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 480px) {
+  #js-product-list .products > div article .product-price-and-shipping,
+.featured-products .products > div article .product-price-and-shipping {
+    position: relative;
+  }
+}
+
 /* logo */
 #header .logo {
   max-width: 400px;
@@ -77,6 +111,96 @@
     font-weight: 400;
   }
 }
+@media (max-width: 480px) {
+  #header .header-nav {
+    border: none;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  #header .header-nav .row .navigation-header {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+  #header .header-nav .row .navigation-header #_desktop_logo {
+    width: 100%;
+    padding: 0;
+  }
+  #header .header-nav .row .navigation-header .right-nav {
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 65px;
+  }
+}
+@media (max-width: 480px) and (max-width: 480px) {
+  #header .header-nav .row .header-bottom .search-widget {
+    margin-top: 20px;
+    width: 100%;
+  }
+  #header .header-nav .row .header-bottom .search-widget form {
+    width: 100%;
+  }
+  #header .header-nav .row .header-bottom .search-widget form .ui-autocomplete-input {
+    min-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  #header .header-top {
+    background-color: #fff;
+  }
+  #header .header-top .container #menu-icon {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: relative;
+  }
+  #header .header-top .container #menu-icon ::after {
+    content: "pwip";
+    display: block;
+    float: right;
+  }
+  #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul li a {
+    font-weight: 400;
+  }
+}
+#js-product-list .products > div,
+.featured-products .products > div {
+  margin-bottom: 80px;
+}
+@media (max-width: 480px) {
+  #js-product-list .products > div,
+.featured-products .products > div {
+    margin-bottom: 60px;
+  }
+}
+#js-product-list .products > div article,
+.featured-products .products > div article {
+  height: 370px;
+  position: relative;
+}
+@media (max-width: 480px) {
+  #js-product-list .products > div article,
+.featured-products .products > div article {
+    height: 400px;
+  }
+}
+#js-product-list .products > div article .product-price-and-shipping,
+.featured-products .products > div article .product-price-and-shipping {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 480px) {
+  #js-product-list .products > div article .product-price-and-shipping,
+.featured-products .products > div article .product-price-and-shipping {
+    position: relative;
+  }
+}
+
 /*products*/
 .container #main #content .featured-products {
   margin-top: 60px;
@@ -290,26 +414,11 @@
   max-width: 100px;
 }
 
-#js-product-list .products > div,
-.featured-products .products > div {
-  margin-bottom: 80px;
+#wrapper {
+  padding-top: 0;
 }
-@media (max-width: 480px) {
-  #js-product-list .products > div,
-.featured-products .products > div {
-    margin-bottom: 60px;
-  }
-}
-#js-product-list .products > div article,
-.featured-products .products > div article {
-  height: 370px;
-  position: relative;
-}
-#js-product-list .products > div article .product-price-and-shipping,
-.featured-products .products > div article .product-price-and-shipping {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+#wrapper .container .page-home #custom-text #custom-text-container {
+  padding: 40px 20px;
 }
 @media screen and (max-width: 480px) {
   .log-out {

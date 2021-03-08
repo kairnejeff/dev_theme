@@ -1,3 +1,5 @@
+@import "global.scss";
+
 /* logo */
 
 #header .logo {
@@ -81,6 +83,79 @@
                                     letter-spacing: 1px;
                                     word-spacing: -2px;
                                     padding: 0;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #header {
+        .header-nav {
+            border: none;
+            margin:0;
+            padding-bottom: 20px;
+            .row {
+                .navigation-header {
+                    display: flex;
+                    width: 100%;
+                    position: relative;
+                    #_desktop_logo {
+                        width: 100%;
+                        padding: 0;
+                    }
+                    .right-nav {
+                        width: 300px;
+                        position: absolute;
+                        right: 0;
+                        top: 65px;
+                    }
+                }
+                .header-bottom {
+                    .search-widget {
+                        @media (max-width: 480px) {
+                            margin-top: 20px;
+                            width: 100%;
+                            form {
+                                width: 100%;
+                               .ui-autocomplete-input {
+                                    min-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-top {
+            background-color: $white;
+            .container {
+                #menu-icon {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    background-color: rgba(0,0,0,.05);
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                    position: relative;
+
+                    ::after {
+                        content: "pwip";
+                        display: block;
+                        float: right;
+                    }
+                }
+                #mobile_top_menu_wrapper {
+                    #_mobile_top_menu {
+                        ul {
+                            li {
+                                a {
                                     font-weight: 400;
                                 }
                             }
