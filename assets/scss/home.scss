@@ -22,7 +22,12 @@
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
-                    margin: 0;
+                    margin-right: 0;
+                    margin-left: 0;
+                    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                        margin: 0 -15px;
+
+                    }
                     &::after {
                         content: none
                     }
