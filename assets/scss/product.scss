@@ -1,31 +1,34 @@
 .info-detailed {
-    font-size: 14px
-}
-
-.info-detailed h2 {
-    padding: 15px 0;
-    margin: 0;
-    border-top: 1px solid #CCCCCC
-}
-
-.info-detailed table {
-    width: 100%;
-}
-
-.info-detailed .grey {
-    background: #EEEEEE;
-}
-
-.info-detailed table td {
-    padding: 8px 10px;
-}
-
-.info-detailed table td:last-child {
-    width: 35px;
-}
-
-.product-images>li.thumb-container>.thumb {
-    box-shadow: unset
+    margin-top: 20px;
+    font-size: 14px;
+    h2 {
+        padding: 15px 0;
+        margin: 0;
+        border-top: 1px solid #CCCCCC;
+    }
+    .info-detailed-title {
+        position: relative;
+        i {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    }
+    table {
+        width: 100%;
+        td {
+            padding: 8px 10px;
+        }
+        td:last-child {
+            width: 35px;
+        }
+        .product-images>li.thumb-container>.thumb {
+            box-shadow: unset
+        }
+    }
+    .grey {
+        background: #EEEEEE;
+    }
 }
 
 .label-bio img {
@@ -34,7 +37,6 @@
 
 #wrapper {
     padding-top: 0;
-
     .container {
         .page-home {
             #custom-text {
@@ -43,5 +45,18 @@
                 }
             }
         }
+    }
+}
+
+.product-accessories {
+    margin: 30px 0 0;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+    .h5 {
+        text-align: center;
+        text-transform: uppercase!important;
+        font-size: 11px;
+        font-family: RobotoMono Medium;
+        margin-bottom: 120px;
     }
 }

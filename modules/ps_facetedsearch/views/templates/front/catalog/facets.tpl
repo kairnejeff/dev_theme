@@ -133,7 +133,7 @@
       </section>
     {/foreach}
     <div class="button-filtre">
-    <button id ="category-filtre">Appliquer</button>
+    <button id ="category-filtre" class="btn-primary">Appliquer</button>
     </div>
     </div>
   </div>

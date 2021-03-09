@@ -88,9 +88,24 @@ function addCompleteCssProgressBar() {
     }
 })();
 
-//category - filtre
+
+(function() {
+    var windowsize = $(window).width()
+    if (windowsize > 767) {
+        $('.info-detailed .collapse').collapse()
+    } else {
+        $('.info-detailed .collapse').on('show.bs.collapse', function() {
+            $(this).prev().find("i")[0].innerHTML = 'expand_less';
+        });
+        $('.info-detailed .collapse').on('hide.bs.collapse', function() {
+            $(this).prev().find("i")[0].innerHTML = 'expand_more';
+        });
+    }
+})();
+
 
 $(document).ready(function() {
+    //category - filtre
     $('#facet_section .form-check-filtre-label').click(function() {
         var attr = $(this).prev().attr('checked');
         if (typeof attr !== typeof undefined && attr !== false) {

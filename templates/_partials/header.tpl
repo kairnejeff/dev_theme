@@ -71,7 +71,7 @@
        <div class="row">
       </div>
       <div class="float-xs-left" id="menu-icon">
-      <span>Select Page </span>
+      <span class="hidden-md-up">Select Page </span>
       </div>
       <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
         <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
