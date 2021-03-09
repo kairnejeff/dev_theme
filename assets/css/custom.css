@@ -129,6 +129,19 @@
     right: 0;
     top: 65px;
   }
+  #header .header-nav .row .mobile {
+    position: relative;
+  }
+  #header .header-nav .row .mobile #_mobile_cart {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
+  #header .header-nav .row .mobile #_mobile_user_info {
+    position: absolute;
+    top: 20px;
+    right: 55px;
+  }
   #header .header-nav .row .mobile #_mobile_logo {
     text-align: center;
   }
@@ -495,4 +508,12 @@
 .info-bloc-content .button {
   text-align: center;
   margin: 20px 0 20px 0;
+}
+.login-form form section .form-group:nth-child(3) {
+  margin-bottom: 0;
+}
+@media (max-width: 480px) {
+  .login-form form footer {
+    text-align: center;
+  }
 }
