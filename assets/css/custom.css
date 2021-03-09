@@ -129,10 +129,10 @@
     right: 0;
     top: 65px;
   }
-  #header .header-nav .row .mobile #_id_logo {
+  #header .header-nav .row .mobile #_mobile_logo {
     text-align: center;
   }
-  #header .header-nav .row .mobile #_id_logo a img {
+  #header .header-nav .row .mobile #_mobile_logo a img {
     max-height: 80px;
   }
 }
