@@ -87,3 +87,37 @@ function addCompleteCssProgressBar() {
         $('.info-blocs').css('height', columheight[0] > columheight[1] ? columheight[0] + 'px' : columheight[1] + 'px')
     }
 })();
+
+//category - filtre
+
+(function() {
+    $('#facet_section .form-check-input').change(function() {
+        if ($(this).is(':checked')) {
+            $(this).attr('checked', 'checked')
+        } else {
+            $(this).attr('checked', '')
+        }
+    })
+    $('#category-filtre').click(function() {
+        var params = "?q="
+        $('#facet_section .facet').each(function(index) {
+            var isEmpty = true
+            var checkbox = $(this).find('input:checked')
+                //alert($(this).find('input:checked').length)
+            checkbox.each(function(i) {
+                if (checkbox.length !== 0) {
+                    if (i == 0) {
+                        params = params + encodeURIComponent($(this).attr('name') + '-' + $(this).attr('value'))
+
+                    } else {
+                        params = params + encodeURIComponent('-' + $(this).attr('value'))
+                    }
+                }
+            })
+            if (checkbox.length !== 0)
+                params = params + '/'
+        })
+        window.location.replace(window.location.href + params)
+    })
+
+})()

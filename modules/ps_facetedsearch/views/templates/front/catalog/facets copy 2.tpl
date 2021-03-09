@@ -16,7 +16,7 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
- {if $displayedFacets|count}
+{if $displayedFacets|count}
   <div id="search_filters">
     <div id="filtre-name" class="hidden-md-up" data-target="#facet_section" data-toggle="collapse" aria-expanded="false"><p class="facet-title">Fitrer</p></div>
     {block name='facets_clearall_button'}
@@ -47,16 +47,48 @@
                   {continue}
                 {/if}
 
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name='{$facet.label}' value="{$filter.label}"
-                {if $filter.active }checked{/if}>
+                <li>
+                  <label class="facet-label{if $filter.active} active {/if}" for="facet_input_{$_expand_id}_{$filter_key}">
+                    <a
+                      href="{$filter.nextEncodedFacetsURL}"
+                      class="_gray-darker search-link js-search-link"
+                      rel="nofollow"
+                    >
+                      {$filter.label}
                       {if $filter.magnitude and $show_quantities}
                         <span class="magnitude">({$filter.magnitude})</span>
                       {/if}
-                   <label class="form-check-label">
-                    {$filter.label}
+                    </a>
+                    {if $facet.multipleSelectionAllowed}
+                      <span class="custom-checkbox">
+                        <input
+                          id="facet_input_{$_expand_id}_{$filter_key}"
+                          data-search-url="{$filter.nextEncodedFacetsURL}"
+                          type="checkbox"
+                          {if $filter.active }checked{/if}
+                        >
+                        {if isset($filter.properties.color)}
+                          <span class="color" style="background-color:{$filter.properties.color}"></span>
+                        {elseif isset($filter.properties.texture)}
+                          <span class="color texture" style="background-image:url({$filter.properties.texture})"></span>
+                        {else}
+                          <span {if !$js_enabled} class="ps-shown-by-js" {/if}><i class="checkbox-checked">x</i></span>
+                        {/if}
+                      </span>
+                    {else}
+                      <span class="custom-radio">
+                        <input
+                          id="facet_input_{$_expand_id}_{$filter_key}"
+                          data-search-url="{$filter.nextEncodedFacetsURL}"
+                          type="radio"
+                          name="filter {$facet.label}"
+                          {if $filter.active }checked{/if}
+                        >
+                        <span {if !$js_enabled} class="ps-shown-by-js" {/if}></span>
+                      </span>
+                    {/if}
                   </label>
-                </div>
+                </li>
               {/foreach}
             </ul>
           {/block}
@@ -134,7 +166,7 @@
     {/foreach}
     </div>
     <div class="button-filtre">
-      <button id ="category-filtre">Appliquer</button>
+      <button type="submit">Appliquer<button>
     </div>
   </div>
 {/if}
