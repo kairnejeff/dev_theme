@@ -90,13 +90,19 @@ function addCompleteCssProgressBar() {
 
 //category - filtre
 
-(function() {
-    $('#facet_section .form-check-input').change(function() {
-        if ($(this).is(':checked')) {
-            $(this).attr('checked', 'checked')
+$(document).ready(function() {
+    $('#facet_section .form-check-filtre-label').click(function() {
+        var attr = $(this).prev().attr('checked');
+        if (typeof attr !== typeof undefined && attr !== false) {
+            $(this).prev().removeAttr('checked')
+            $(this).prev().removeClass("checked")
+            $(this).parent().removeClass("form-checked")
         } else {
-            $(this).attr('checked', '')
+            $(this).prev().attr('checked', 'checked')
+            $(this).prev().addClass("checked")
+            $(this).parent().addClass("form-checked")
         }
+
     })
     $('#category-filtre').click(function() {
         var params = "?q="
@@ -117,7 +123,7 @@ function addCompleteCssProgressBar() {
             if (checkbox.length !== 0)
                 params = params + '/'
         })
-        window.location.replace(window.location.href + params)
+        window.location.replace(window.location.href.split('?')[0] + params)
     })
 
-})()
+})

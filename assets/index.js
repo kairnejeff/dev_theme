@@ -5,3 +5,4 @@ import '/scss/categorie-grid.scss';
 import '/scss/category.scss';
 import '/scss/product.scss';
 import '/scss/my-account.scss';
+import '/scss/filtre.scss';

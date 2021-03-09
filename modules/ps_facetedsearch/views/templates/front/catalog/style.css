@@ -1,0 +1,107 @@
+div {
+    max-width: 800px;
+}
+
+.food,
+.blog {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.food label,
+.blog label,
+.livraison {
+    border: 1px solid #ccc;
+    padding: 20px 20px;
+    margin: 0 0 10px;
+    position: relative
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.food label,
+.blog label {
+    margin-bottom: 0;
+    border: none;
+}
+
+.food input[type="checkbox"]:checked+label {
+    background-color: #eee;
+}
+
+.food input[type="checkbox"]:checked+label:after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/OOjs_UI_icon_check-constructive.svg/1200px-OOjs_UI_icon_check-constructive.svg.png);
+    background-size: 100%;
+    pointer-events: none;
+}
+
+.food .z-index {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    display: block;
+    right: 20px;
+    top: 10px;
+    z-index: 9999999;
+}
+
+.food input,
+.blog input {
+    display: none;
+}
+
+.blog label {
+    text-align: right;
+}
+
+.blog input[type="checkbox"]:checked+label {
+    background-color: #eee;
+}
+
+.blog input[type="checkbox"]:checked+label:after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/OOjs_UI_icon_check-constructive.svg/1200px-OOjs_UI_icon_check-constructive.svg.png);
+    background-size: 100%;
+    pointer-events: none;
+}
+
+.blog .z-index {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    display: block;
+    left: 20px;
+    top: 10px;
+    z-index: 9999999;
+}
+
+
+/* Livraison */
+
+.livraison {
+    display: flex;
+    justify-content: space-between;
+}
+
+.livraison>div {
+    margin: auto 0;
+}
+
+.livraison label {
+    font-weight: 700;
+}

@@ -496,3 +496,36 @@
   text-align: center;
   margin: 20px 0 20px 0;
 }
+#search_filters #filtre-name {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#facet_section input[type=checkbox] {
+  display: none;
+}
+#facet_section label {
+  margin-bottom: 0;
+  border: none;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  display: block;
+}
+#facet_section label:hover {
+  cursor: pointer;
+}
+#facet_section .form-checked {
+  background-color: #eee;
+}
+#facet_section .checked + label:after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 200px;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/OOjs_UI_icon_check-constructive.svg/1200px-OOjs_UI_icon_check-constructive.svg.png);
+  background-size: 100%;
+  pointer-events: none;
+}

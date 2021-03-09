@@ -22,10 +22,10 @@
     {block name='facets_clearall_button'}
       {if $activeFilters|count}
         <div id="_desktop_search_filters_clear_all" class="hidden-sm-down clear-all-wrapper">
-          <button data-search-url="{$clear_all_link}" class="btn btn-tertiary js-search-filters-clear-all">
+          <a href="{$clear_all_link}" class="btn btn-tertiary js-search-filters-clear-all">
             <i class="material-icons">&#xE14C;</i>
             {l s='Clear all' d='Shop.Theme.Actions'}
-          </button>
+          </a>
         </div>
       {/if}
     {/block}
@@ -47,13 +47,13 @@
                   {continue}
                 {/if}
 
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name='{$facet.label}' value="{$filter.label}"
+                <div class="form-check-filtre">
+                  <input class="form-check-filtre-input {if $filter.active} checked {/if}" type="checkbox" name='{$facet.label}' value="{$filter.label}"
                 {if $filter.active }checked{/if}>
                       {if $filter.magnitude and $show_quantities}
                         <span class="magnitude">({$filter.magnitude})</span>
                       {/if}
-                   <label class="form-check-label">
+                   <label class="form-check-filtre-label">
                     {$filter.label}
                   </label>
                 </div>
@@ -132,9 +132,9 @@
         {/if}
       </section>
     {/foreach}
-    </div>
     <div class="button-filtre">
-      <button id ="category-filtre">Appliquer</button>
+    <button id ="category-filtre">Appliquer</button>
+    </div>
     </div>
   </div>
 {/if}

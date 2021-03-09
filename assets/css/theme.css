@@ -10366,6 +10366,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
         margin-bottom: 0;
         box-shadow: none;
         padding: 0;
+        background: #eee;
     }
     #category #left-column #search_filters .facet {
         padding-top: 0;
