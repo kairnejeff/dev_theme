@@ -148,7 +148,7 @@
   #header .header-nav .row .mobile #_mobile_user_info {
     position: absolute;
     top: 20px;
-    right: 55px;
+    right: 100px;
   }
   #header .header-nav .row .mobile #_mobile_logo a img {
     max-height: 80px;
@@ -426,7 +426,6 @@
   max-width: 100%;
 }
 .info-detailed {
-  margin-top: 20px;
   font-size: 14px;
 }
 .info-detailed h2 {
@@ -468,9 +467,21 @@
 #wrapper .container .page-home #custom-text #custom-text-container {
   padding: 40px 20px;
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #wrapper .container #main .products {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 480px) {
+  #wrapper .container #main .products {
+    justify-content: space-around;
+  }
+  #wrapper .container #main .products > div {
+    margin-bottom: 30px;
+  }
+}
 
 .product-accessories {
-  margin: 30px 0 0;
   padding: 30px 0;
   border-top: 1px solid #ccc;
 }
@@ -479,11 +490,7 @@
   text-transform: uppercase !important;
   font-size: 11px;
   font-family: RobotoMono Medium;
-  margin-bottom: 120px;
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  #wrapper .container #main .products {
-    justify-content: space-between;
-  }
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 480px) {
   .log-out {
@@ -559,8 +566,12 @@
 #facet_section label:hover {
   cursor: pointer;
 }
+#facet_section .form-check-filtre:first-child {
+  margin-bottom: 10px;
+}
 #facet_section .form-checked {
   background-color: #eee;
+  padding: 5px;
 }
 #facet_section .checked + label:after {
   content: "";
@@ -568,7 +579,7 @@
   width: 20px;
   height: 20px;
   position: absolute;
-  left: 200px;
+  right: 5px;
   background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/OOjs_UI_icon_check-constructive.svg/1200px-OOjs_UI_icon_check-constructive.svg.png);
   background-size: 100%;
   pointer-events: none;
