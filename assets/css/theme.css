@@ -9572,14 +9572,28 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 .featured-products .products,
 .product-accessories .products,
 .product-miniature .products {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 480px) {
+    #products .products,
+    .featured-products .products,
+    .product-accessories .products,
+    .product-miniature .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #products .products,
+    .featured-products .products,
+    .product-accessories .products,
+    .product-miniature .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 #products .product-thumbnail,
@@ -9603,11 +9617,17 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 .featured-products .thumbnail-container,
 .product-accessories .thumbnail-container,
 .product-miniature .thumbnail-container {
-    position: relative;
-    margin-bottom: 1.563rem;
-    height: 318px;
-    width: 250px;
+    width: 100%;
     background: #fff;
+}
+
+@media screen and (max-width: 480px) {
+    #products .thumbnail-container,
+    .featured-products .thumbnail-container,
+    .product-accessories .thumbnail-container,
+    .product-miniature .thumbnail-container {
+        width: calc(100% - 30px);
+    }
 }
 
 #products .thumbnail-container:focus .highlighted-informations,
@@ -9660,26 +9680,11 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     opacity: .25
 }
 
-#products .thumbnail-container .product-thumbnail,
-.featured-products .thumbnail-container .product-thumbnail,
-.product-accessories .thumbnail-container .product-thumbnail,
-.product-miniature .thumbnail-container .product-thumbnail {
-    position: relative;
-    height: calc(100% - 70px)
-}
-
 #products .thumbnail-container .product-thumbnail img,
 .featured-products .thumbnail-container .product-thumbnail img,
 .product-accessories .thumbnail-container .product-thumbnail img,
 .product-miniature .thumbnail-container .product-thumbnail img {
-    max-height: 100%;
     max-width: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto
 }
 
 #products .products-section-title,
@@ -9758,18 +9763,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 .product-accessories .highlighted-informations .quick-view:hover,
 .product-miniature .highlighted-informations .quick-view:hover {
     color: #2fb5d2
-}
-
-#products .product-description,
-.featured-products .product-description,
-.product-accessories .product-description,
-.product-miniature .product-description {
-    position: absolute;
-    z-index: 3;
-    background: #fff;
-    width: 250px;
-    bottom: 0;
-    height: 70px
 }
 
 #products .product-miniature,
@@ -10465,9 +10458,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 @media screen and (max-width:767px) {
-    .category-cover {
-        display: none
-    }
     .block-category {
         min-height: 0;
         margin-bottom: 0

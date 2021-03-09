@@ -1,18 +1,6 @@
 #js-product-list .products > div,
 .featured-products .products > div {
-  margin-bottom: 80px;
-}
-@media (max-width: 480px) {
-  #js-product-list .products > div,
-.featured-products .products > div {
-    margin-bottom: 40px;
-    max-height: 400px;
-    position: relative;
-  }
-}
-#js-product-list .products > div article,
-.featured-products .products > div article {
-  height: 400px;
+  margin-bottom: 50px;
   position: relative;
 }
 @media (max-width: 480px) {
@@ -20,13 +8,13 @@
 .featured-products .products > div article {
     height: auto;
     padding-bottom: 20px;
+    margin-left: 20px;
   }
 }
 #js-product-list .products > div article .product-price-and-shipping,
 .featured-products .products > div article .product-price-and-shipping {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -25px;
 }
 
 /* logo */
@@ -198,19 +186,7 @@
 }
 #js-product-list .products > div,
 .featured-products .products > div {
-  margin-bottom: 80px;
-}
-@media (max-width: 480px) {
-  #js-product-list .products > div,
-.featured-products .products > div {
-    margin-bottom: 40px;
-    max-height: 400px;
-    position: relative;
-  }
-}
-#js-product-list .products > div article,
-.featured-products .products > div article {
-  height: 400px;
+  margin-bottom: 50px;
   position: relative;
 }
 @media (max-width: 480px) {
@@ -218,13 +194,13 @@
 .featured-products .products > div article {
     height: auto;
     padding-bottom: 20px;
+    margin-left: 20px;
   }
 }
 #js-product-list .products > div article .product-price-and-shipping,
 .featured-products .products > div article .product-price-and-shipping {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -25px;
 }
 
 /*products*/
@@ -468,7 +444,6 @@
   text-transform: uppercase !important;
   font-size: 11px;
   font-family: RobotoMono Medium;
-  margin-bottom: 120px;
 }
 @media screen and (max-width: 480px) {
   .log-out {

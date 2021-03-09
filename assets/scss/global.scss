@@ -1,34 +1,20 @@
 $black: #000;
 $white: #fff;
-
-
 #js-product-list,
 .featured-products {
     .products {
-        > div {
-            margin-bottom: 80px;
-
-            @media (max-width:480px) {
-                margin-bottom: 40px;
-                max-height: 400px;
-                position: relative;
-                
-            }
-
+        >div {
+            margin-bottom: 50px;
+            position: relative;
             article {
-                height: 400px;
-                position: relative;
-
                 @media (max-width: 480px) {
                     height: auto;
                     padding-bottom: 20px;
+                    margin-left: 20px;
                 }
-
                 .product-price-and-shipping {
                     position: absolute;
-                    bottom:0;
-                    left:0;
-                   
+                    bottom: -25px;
                 }
             }
         }
