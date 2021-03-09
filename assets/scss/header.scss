@@ -116,7 +116,18 @@
                         top: 65px;
                     }
                 }
+                .mobile {
+                    #_id_logo {
+                        text-align: center;
+                        a {
+                            img { 
+                                max-height: 80px;
+                            }
+                        }
+                    }
+                }
                 .header-bottom {
+                    
                     .search-widget {
                         @media (max-width: 480px) {
                             margin-top: 20px;
@@ -153,7 +164,16 @@
                 }
                 #mobile_top_menu_wrapper {
                     #_mobile_top_menu {
+                        position: relative;
+                        width: 100%;
+                        margin-top: 15px;
                         ul {
+                            position: absolute;
+                            background-color: #fff;
+                            z-index: 999;
+                            width: 100%;
+                            border-top: 2px solid #000;
+                            top: 25px;
                             li {
                                 a {
                                     font-weight: 400;

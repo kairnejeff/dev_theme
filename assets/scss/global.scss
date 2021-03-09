@@ -9,7 +9,10 @@ $white: #fff;
             margin-bottom: 80px;
 
             @media (max-width:480px) {
-                margin-bottom: 60px;
+                margin-bottom: 40px;
+                max-height: 400px;
+                position: relative;
+                
             }
 
             article {
@@ -17,17 +20,15 @@ $white: #fff;
                 position: relative;
 
                 @media (max-width: 480px) {
-                    height: 400px;
+                    height: auto;
+                    padding-bottom: 20px;
                 }
 
                 .product-price-and-shipping {
                     position: absolute;
                     bottom:0;
                     left:0;
-
-                    @media (max-width: 480px) {
-                        position: relative;
-                    }                    
+                   
                 }
             }
         }

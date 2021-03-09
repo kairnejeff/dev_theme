@@ -5,6 +5,11 @@
 .container {
     #main {
         #content {
+            #carousel {
+                ul {
+                    height: auto;
+                }
+            }
             .featured-products {
                 margin-top: 60px;
                 h2 {
@@ -82,6 +87,17 @@
                         display: block;
                     }
 
+                }
+            }
+        }
+        .block-category-inner {
+            #category-description {
+                .col-md-8 {
+                    img {
+                        @media (max-width: 480px) {
+                            width:100%;
+                        }  
+                    }
                 }
             }
         }
