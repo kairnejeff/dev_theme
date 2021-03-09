@@ -96,6 +96,14 @@
     display: flex;
     justify-content: space-between;
   }
+}
+@media only screen and (min-width: 768px) and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #header .header-nav .row .header-bottom #_desktop_top_menu ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) {
   #header .header-nav .row .header-bottom #_desktop_top_menu ul li:not(:last-child) {
     margin-right: 10px;
     display: block;
@@ -108,7 +116,7 @@
     font-weight: 400;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   #header .header-nav {
     border: none;
     margin: 0;
@@ -142,14 +150,11 @@
     top: 20px;
     right: 55px;
   }
-  #header .header-nav .row .mobile #_mobile_logo {
-    text-align: center;
-  }
   #header .header-nav .row .mobile #_mobile_logo a img {
     max-height: 80px;
   }
 }
-@media (max-width: 480px) and (max-width: 480px) {
+@media (max-width: 768px) and (max-width: 480px) {
   #header .header-nav .row .header-bottom .search-widget {
     margin-top: 20px;
     width: 100%;
@@ -161,7 +166,7 @@
     min-width: 100%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   #header .header-top {
     background-color: #fff;
   }
@@ -244,7 +249,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .container #main #content .featured-products .row {
+    margin: 0 -15px;
+  }
 }
 .container #main #content .featured-products .row::after {
   content: none;
@@ -469,6 +480,10 @@
   font-size: 11px;
   font-family: RobotoMono Medium;
   margin-bottom: 120px;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #wrapper .container #main .products {
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 480px) {
   .log-out {

@@ -73,6 +73,10 @@
                         ul {
                             display: flex;
                             justify-content: space-between;
+                            @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                                justify-content: center;
+                                flex-wrap: wrap;
+                            }
                             li {
                                 &:not(:last-child) {
                                     margin-right: 10px;
@@ -94,7 +98,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     #header {
         .header-nav {
             border: none;
@@ -130,7 +134,6 @@
                         right: 55px;
                     }
                     #_mobile_logo {
-                        text-align: center;
                         a {
                             img { 
                                 max-height: 80px;
@@ -198,3 +201,4 @@
         }
     }
 }
+
