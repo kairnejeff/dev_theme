@@ -117,6 +117,18 @@
                     }
                 }
                 .mobile {
+                    position: relative;
+
+                    #_mobile_cart {
+                        position: absolute;
+                        right: 10px;
+                        top: 20px;
+                    }
+                    #_mobile_user_info {
+                        position: absolute;
+                        top: 20px;
+                        right: 55px;
+                    }
                     #_mobile_logo {
                         text-align: center;
                         a {

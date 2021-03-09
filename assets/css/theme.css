@@ -412,6 +412,7 @@ textarea {
 
 .icon-panier-off:before {
     content: "\e901";
+    font-size: 20px;
 }
 
 .icon-favoris-off:before {
@@ -420,6 +421,7 @@ textarea {
 
 .icon-compte-off:before {
     content: "\e903";
+    font-size: 20px;
 }
 
 .icon-poubelle-on .path1:before {
@@ -8998,9 +9000,9 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .page-customer-account #content .forgot-password {
-    text-align: center;
+    text-align: left;
     font-size: .875rem;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding-bottom: .9375rem
 }
 
@@ -9484,11 +9486,8 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 @media (max-width:991px) {
     .carousel {
         box-shadow: none;
-        width: 100vw;
-        margin-left: -50vw;
-        left: 50%;
+        width: 100%;
         padding-bottom: .5rem;
-        background-color: #f1f1f1
     }
     .carousel .carousel-item .caption {
         position: static;
