@@ -12727,10 +12727,10 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     #header .header-nav {
         max-height: inherit
     }
-    #header .header-nav .search-widget {
+    /* #header .header-nav .search-widget {
         float: none;
         width: 15.63rem
-    }
+    } */
 }
 
 @media (max-width:991px) {

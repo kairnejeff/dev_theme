@@ -20,34 +20,26 @@
                 .row {
                     margin-right: 0;
                     margin-left: 0;
-<<<<<<< HEAD
                     @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
                         margin: 0;
                         height: 100%;
 
-=======
-                    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-                        margin: 0 -15px;
->>>>>>> 5d9adbfb56249126c22360045ddb1ba7ce2aac12
                     }
                     &::after {
                         content: none
                     }
-<<<<<<< HEAD
 
                     > div {
                         margin-bottom: 50px;
                     }
 
-=======
->>>>>>> 5d9adbfb56249126c22360045ddb1ba7ce2aac12
                     @media (max-width: 480px) {
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
                         height: 100%;
                         >div {
                             width: 100%;
-                            margin-bottom: 0;
+                            margin-bottom: 60px;
                         }
                         .products>div article {
                             padding-bottom: 0;
@@ -80,7 +72,6 @@
                                         font-size: 24px;
                                     }
                                 }
-<<<<<<< HEAD
                                 .product-subtitle {
                                     p {
                                         margin: 0;
@@ -100,19 +91,6 @@
                             .highlighted-informations {
                                 box-shadow: none;
                                 display: none;
-=======
-                                @media (max-width: 480px) {
-                                    .product-price-and-shipping {
-                                        position: unset;
-                                    }
-                                }
-                                @media (min-width: 960px) {
-                                    .product-price-and-shipping {
-                                        bottom: -10px;
-                                        ;
-                                    }
-                                }
->>>>>>> 5d9adbfb56249126c22360045ddb1ba7ce2aac12
                             }
                         }
                     }

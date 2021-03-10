@@ -60,17 +60,14 @@
                             right: 20px;
     
                         }
-                    }
-                    .search-widget {
-                        @media (max-width: 480px) {
+                        @media (max-width: 768px) {
                             margin-top: 20px;
                             width: 100%;
-                            // form {
-                            //     width: 100%;
-                            //    .ui-autocomplete-input {
-                            //         min-width: 100%;
-                            //     }
-                            // }
+                            form {
+                               .ui-autocomplete-input {
+                                    min-width: 100%;
+                                }
+                            }
                         }
                     }
                     #_desktop_top_menu {
@@ -150,7 +147,7 @@
                 .header-bottom {
                     
                     .search-widget {
-                        @media (max-width: 480px) {
+                        @media (max-width: 768px) {
                             margin-top: 20px;
                             width: 100%;
                             form {

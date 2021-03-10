@@ -1,0 +1,41 @@
+@import "global.scss";
+
+#blockcart-modal {
+    .modal-dialog {
+        .modal-body {
+            .row {
+                .cart-content {
+                    .cart-content-btn {
+                        a {
+                            i {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#wrapper {
+    .container {
+        #main {
+            .cart-grid {
+                .cart-grid-body {
+                    .label {
+                        position: relative;
+
+                        i {
+                            position: absolute;
+                            line-height: inherit;
+                        }
+                        span {
+                            margin-left: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
