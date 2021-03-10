@@ -70,6 +70,12 @@
                                         position: unset;
                                     }
                                 }
+                                @media (min-width: 960px) {
+                                    .product-price-and-shipping {
+                                        bottom: -10px;
+                                        ;
+                                    }
+                                }
                             }
                         }
                     }

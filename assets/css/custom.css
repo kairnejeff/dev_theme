@@ -283,6 +283,11 @@
     position: unset;
   }
 }
+@media (min-width: 960px) {
+  .container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description .product-price-and-shipping {
+    bottom: -10px;
+  }
+}
 @media (max-width: 480px) {
   .container #main #content .home-category-foot .categories-preview {
     display: block;
