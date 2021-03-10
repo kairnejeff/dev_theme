@@ -3,13 +3,46 @@
 .login-form {
     form {
         section {
+            position: relative;
             .form-group:nth-child(3) {
                 margin-bottom: 0;
             }
+            .forgot-password {
+                @media (min-width: 768px) {
+                    position: absolute;
+                    left: 160px;
+                }
+            }
         }
         footer {
-            @media (max-width: 480px) {
-                text-align: center;
+            text-align: center;
+            @media (min-width: 768px) {
+                margin-top: 50px;
+            }
+            
+        }
+    }
+}
+
+// #wrapper {
+//     .container {
+//         #main {
+//             .card-block {
+//                 .register-form {
+                    
+//                 }
+//             }
+//         }
+//     }
+// }
+
+form {
+    section {
+        .form-group:first-child {
+            .form-control-valign {
+                .radio-inline:first-child {
+                    margin-right: 20px;
+                }
             }
         }
     }

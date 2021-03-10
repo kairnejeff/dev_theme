@@ -13,8 +13,7 @@
             .featured-products {
                 margin-top: 60px;
                 h2 {
-                    font-size: 11px;
-                    letter-spacing: 1px;
+                    @include title;
                     padding-bottom: 20px;
                 }
                 .row {

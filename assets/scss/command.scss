@@ -1,5 +1,27 @@
 @import "global.scss";
 
+#header {
+    .header-nav {
+        box-shadow: none;
+        margin-bottom: 30px;
+        margin-top: none;
+        .container {
+            .row {
+                display: block;
+                border: none;
+                #_desktop_logo {
+                    text-align: center;
+                    a {
+                        .logo {
+                            max-height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 #blockcart-modal {
     .modal-dialog {
         .modal-body {

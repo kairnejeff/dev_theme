@@ -225,8 +225,13 @@
   margin-top: 60px;
 }
 .container #main #content .featured-products h2 {
-  font-size: 11px;
-  letter-spacing: 1px;
+  font-family: RobotoMono Medium;
+  font-size: 13px;
+  line-height: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
   padding-bottom: 20px;
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -335,13 +340,33 @@
   font-family: "AlegreyaSans";
   font-size: 12px;
 }
+#js-product-list .products > div,
+.featured-products .products > div {
+  margin-bottom: 50px;
+  position: relative;
+}
+@media (max-width: 480px) {
+  #js-product-list .products > div article,
+.featured-products .products > div article {
+    height: auto;
+    padding-bottom: 20px;
+    margin-left: 20px;
+  }
+}
+#js-product-list .products > div article .product-price-and-shipping,
+.featured-products .products > div article .product-price-and-shipping {
+  position: absolute;
+  bottom: -25px;
+}
+
 #custom-categories-container {
   margin-top: 40px;
 }
 #custom-categories-container .featured-block-title {
   font-family: RobotoMono Medium;
-  font-size: 11px;
-  letter-spacing: 1px;
+  font-size: 13px;
+  line-height: 1em;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 2rem;
@@ -598,13 +623,29 @@
   bottom: -25px;
 }
 
+.login-form form section {
+  position: relative;
+}
 .login-form form section .form-group:nth-child(3) {
   margin-bottom: 0;
 }
-@media (max-width: 480px) {
-  .login-form form footer {
-    text-align: center;
+@media (min-width: 768px) {
+  .login-form form section .forgot-password {
+    position: absolute;
+    left: 160px;
   }
+}
+.login-form form footer {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .login-form form footer {
+    margin-top: 50px;
+  }
+}
+
+form section .form-group:first-child .form-control-valign .radio-inline:first-child {
+  margin-right: 20px;
 }
 #js-product-list .products > div,
 .featured-products .products > div {
@@ -623,6 +664,22 @@
 .featured-products .products > div article .product-price-and-shipping {
   position: absolute;
   bottom: -25px;
+}
+
+#header .header-nav {
+  box-shadow: none;
+  margin-bottom: 30px;
+  margin-top: none;
+}
+#header .header-nav .container .row {
+  display: block;
+  border: none;
+}
+#header .header-nav .container .row #_desktop_logo {
+  text-align: center;
+}
+#header .header-nav .container .row #_desktop_logo a .logo {
+  max-height: 100px;
 }
 
 #blockcart-modal .modal-dialog .modal-body .row .cart-content .cart-content-btn a i {

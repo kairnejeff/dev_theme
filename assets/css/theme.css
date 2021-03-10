@@ -7099,9 +7099,6 @@ a.bg-inverse:hover {
     .text-sm-right {
         text-align: right!important
     }
-    .text-sm-center {
-        text-align: center!important
-    }
 }
 
 @media (min-width:768px) {

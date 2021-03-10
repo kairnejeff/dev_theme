@@ -21,3 +21,13 @@ $blue: #2fb5d2;
         }
     }
 }
+
+@mixin title {
+    font-family: RobotoMono Medium;
+    font-size: 13px;
+    line-height: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
