@@ -3,6 +3,11 @@
   margin-bottom: 50px;
   position: relative;
 }
+#js-product-list .products > div article .product-price-and-shipping,
+.featured-products .products > div article .product-price-and-shipping {
+  position: absolute;
+  bottom: -25px;
+}
 @media (max-width: 480px) {
   #js-product-list .products > div article,
 .featured-products .products > div article {
@@ -10,11 +15,10 @@
     padding-bottom: 20px;
     margin-left: 20px;
   }
-}
-#js-product-list .products > div article .product-price-and-shipping,
+  #js-product-list .products > div article .product-price-and-shipping,
 .featured-products .products > div article .product-price-and-shipping {
-  position: absolute;
-  bottom: -25px;
+    bottom: -10px;
+  }
 }
 
 /* logo */
@@ -176,8 +180,7 @@
     padding: 5px 10px;
     position: relative;
   }
-  #header .header-top .container #menu-icon ::after {
-    content: "pwip";
+  #header .header-top .container #menu-icon .expand-more {
     display: block;
     float: right;
   }
@@ -203,6 +206,11 @@
   margin-bottom: 50px;
   position: relative;
 }
+#js-product-list .products > div article .product-price-and-shipping,
+.featured-products .products > div article .product-price-and-shipping {
+  position: absolute;
+  bottom: -25px;
+}
 @media (max-width: 480px) {
   #js-product-list .products > div article,
 .featured-products .products > div article {
@@ -210,11 +218,10 @@
     padding-bottom: 20px;
     margin-left: 20px;
   }
-}
-#js-product-list .products > div article .product-price-and-shipping,
+  #js-product-list .products > div article .product-price-and-shipping,
 .featured-products .products > div article .product-price-and-shipping {
-  position: absolute;
-  bottom: -25px;
+    bottom: -10px;
+  }
 }
 
 /*products*/
