@@ -18,41 +18,31 @@
                     padding-bottom: 20px;
                 }
                 .row {
-                    height: 450px;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
                     margin-right: 0;
                     margin-left: 0;
-                    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
                         margin: 0 -15px;
-
                     }
                     &::after {
                         content: none
                     }
-
-                    > div {
-                        margin: 0;
-                    }
-
                     @media (max-width: 480px) {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
                         height: 100%;
-
-                        > div {
+                        >div {
                             width: 100%;
-                            margin-bottom: 60px;
+                            margin-bottom: 0;
+                        }
+                        .products>div article {
+                            padding-bottom: 0;
+                            margin-left: 0;
                         }
                     }
                     .product-miniature {
-                        margin: 0;
                         height: 100%;
-                        @media (max-width:480px) {
-                            height: 440px;
-                        }
                         .thumbnail-container {
                             box-shadow: none;
-                            width: 320px;
                             @media (max-width: 480px) {
                                 width: 100%;
                             }
@@ -75,23 +65,21 @@
                                         font-size: 24px;
                                     }
                                 }
-                            }
-                            .highlighted-informations {
-                                box-shadow: none;
-                                display: none;
+                                @media (max-width: 480px) {
+                                    .product-price-and-shipping {
+                                        position: unset;
+                                    }
+                                }
                             }
                         }
                     }
                 }
             }
-
             .home-category-foot {
                 .categories-preview {
                     @media (max-width: 480px) {
-                    
                         display: block;
                     }
-
                 }
             }
         }
@@ -100,8 +88,8 @@
                 .col-md-8 {
                     img {
                         @media (max-width: 480px) {
-                            width:100%;
-                        }  
+                            width: 100%;
+                        }
                     }
                 }
             }
