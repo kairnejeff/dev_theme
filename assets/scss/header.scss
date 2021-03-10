@@ -54,6 +54,12 @@
                         position: absolute;
                         top: -130px;
                         right: 30%;
+
+                        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                            top: -70px;
+                            right: 20px;
+    
+                        }
                     }
                     .search-widget {
                         @media (max-width: 480px) {
@@ -73,7 +79,7 @@
                         ul {
                             display: flex;
                             justify-content: space-between;
-                            @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                            @media only screen and (min-device-width : 768px) and (max-device-width : 1200px) {
                                 justify-content: center;
                                 flex-wrap: wrap;
                             }

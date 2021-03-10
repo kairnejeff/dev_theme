@@ -53,6 +53,7 @@
           {if $product.description_short}
             <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
           {/if} 
+          <a href="{$product.url}" class="recipe">Découvrir la recette</a>
         {/block}
 
         {block name='product_price_and_shipping'}
