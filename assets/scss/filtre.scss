@@ -3,6 +3,11 @@
         text-align: center;
         font-size: 1.2em;
     }
+    .facet {
+        .facet-title {
+            overflow: visible;
+        }
+    }
 }
 
 #facet_section {
