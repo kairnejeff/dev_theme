@@ -56,10 +56,10 @@
         <div class="checkout-bar">
             <div class="progress-bar-wrapper">
               <ul class="progress-bar">
-                <li class="step">Information personnelles</li>
-                <li class="step">Adresses</li>
-                <li class="step">Livraison</li>
-                <li class="step">Paiement</li>
+                <li class="step"><span class="material-icons"></span>Information personnelles</li>
+                <li class="step"><span class="material-icons"></span>Adresses</li>
+                <li class="step"><span class="material-icons"></span>Livraison</li>
+                <li class="step"><span class="material-icons"></span>Paiement</li>
               </ul>
             </div>
           </div>

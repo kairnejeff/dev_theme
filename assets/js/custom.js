@@ -89,6 +89,24 @@ function addCompleteCssProgressBar() {
 })();
 
 
+//grid view
+(function() {
+
+    $('.grid-controle #list-view').click(function() {
+        $("#js-product-list .row").css("grid-template-columns", "repeat(1, 1fr)")
+        $(this).prev().children('span').removeClass('active')
+        $(this).children('span').addClass('active')
+    })
+    $('.grid-controle #grid-view').click(function() {
+        $("#js-product-list .row").css("grid-template-columns", "repeat(2, 1fr)")
+        $(this).next().children('span').removeClass('active')
+        $(this).children('span').addClass('active')
+    })
+
+
+})();
+
+
 (function() {
     var windowsize = $(window).width()
     if (windowsize > 767) {

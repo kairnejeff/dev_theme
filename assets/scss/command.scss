@@ -1,5 +1,4 @@
 @import "global.scss";
-
 #header {
     .header-nav {
         box-shadow: none;
@@ -8,9 +7,7 @@
         .container {
             .row {
                 display: block;
-                border: none;
                 #_desktop_logo {
-                    text-align: center;
                     a {
                         .logo {
                             max-height: 100px;
@@ -47,7 +44,6 @@
                 .cart-grid-body {
                     .label {
                         position: relative;
-
                         i {
                             position: absolute;
                             line-height: inherit;

@@ -17,19 +17,16 @@
                     padding-bottom: 20px;
                 }
                 .row {
-                    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
                         margin: 0;
                         height: 100%;
-
                     }
                     &::after {
                         content: none
                     }
-
-                    > div {
+                    >div {
                         margin-bottom: 50px;
                     }
-
                     @media (max-width: 480px) {
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
@@ -81,10 +78,9 @@
                                     font-size: 13px;
                                     margin-top: 10px;
                                     position: absolute;
-                                    bottom:-10px;
-                                    z-index:999;
+                                    bottom: -10px;
+                                    z-index: 999;
                                     height: auto;
-
                                     &:hover {
                                         color: $blue;
                                     }
@@ -116,6 +112,29 @@
                         @media (max-width: 480px) {
                             width: 100%;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#js-product-list,
+.featured-products {
+    .products {
+        >div {
+            margin-bottom: 50px;
+            position: relative;
+            article {
+                .product-price-and-shipping {
+                    position: absolute;
+                    bottom: -25px;
+                }
+                @media (max-width: 480px) {
+                    height: auto;
+                    padding-bottom: 20px;
+                    .product-price-and-shipping {
+                        bottom: -5px;
                     }
                 }
             }

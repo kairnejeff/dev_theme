@@ -40,6 +40,13 @@
       <a class="label" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
     </div>
 
+    {foreach from=$product.attributes key="attribute" item="value"}
+      <div class="product-line-info">
+        <span class="label">{$attribute}:</span>
+        <span class="value">{$value}</span>
+      </div>
+    {/foreach}
+
     <div class="product-line-info product-price h5 {if $product.has_discount}has-discount{/if}">
       {if $product.has_discount}
         <div class="product-discount">
@@ -63,14 +70,18 @@
       </div>
     </div>
 
-    <br/>
-
-    {foreach from=$product.attributes key="attribute" item="value"}
-      <div class="product-line-info">
-        <span class="label">{$attribute}:</span>
-        <span class="value">{$value}</span>
-      </div>
-    {/foreach}
+  <div class="price">
+    <span class="product-price">
+      <strong>
+      {l s='Total' d='Shop.Theme.Checkout'} : 
+        {if isset($product.is_gift) && $product.is_gift}
+          <span class="gift">{l s='Gift' d='Shop.Theme.Checkout'}</span>
+        {else}
+          {$product.total}
+        {/if}
+      </strong>
+    </span>
+  </div>
 
     {if is_array($product.customizations) && $product.customizations|count}
       <br>
@@ -117,10 +128,10 @@
   <!--  product line right content: actions (quantity, delete), price -->
   <div class="product-line-grid-right product-line-actions col-md-5 col-xs-12">
     <div class="row">
-      <div class="col-xs-4 hidden-md-up"></div>
+      <div class="col-xs-4 hidden-md-up">{l s='Quantity' d='Shop.Theme.Checkout'}</div>
       <div class="col-md-10 col-xs-6">
         <div class="row">
-          <div class="col-md-6 col-xs-6 qty">
+          <div class="col-md-6 col-xs-8 qty">
             {if isset($product.is_gift) && $product.is_gift}
               <span class="gift-quantity">{$product.quantity}</span>
             {else}
@@ -136,17 +147,7 @@
               />
             {/if}
           </div>
-          <div class="col-md-6 col-xs-2 price">
-            <span class="product-price">
-              <strong>
-                {if isset($product.is_gift) && $product.is_gift}
-                  <span class="gift">{l s='Gift' d='Shop.Theme.Checkout'}</span>
-                {else}
-                  {$product.total}
-                {/if}
-              </strong>
-            </span>
-          </div>
+
         </div>
       </div>
       <div class="col-md-2 col-xs-2 text-xs-right">

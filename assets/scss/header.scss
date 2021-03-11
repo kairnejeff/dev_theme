@@ -37,14 +37,12 @@
                     width: 100%;
                     position: relative;
                     #_desktop_logo {
-                        width: 100%;
-                        padding: 0;
+                        margin-top: -2em;
                     }
                     .right-nav {
                         width: 300px;
                         position: absolute;
                         right: 0;
-                        top: 65px;
                     }
                 }
                 .header-bottom {
@@ -52,7 +50,7 @@
                     padding: 0;
                     #search_widget {
                         position: absolute;
-                        top: -130px;
+                        top: -107px;
                         right: 30%;
                         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
                             top: -70px;

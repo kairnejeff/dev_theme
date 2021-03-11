@@ -28,8 +28,8 @@
       class="address-item{if $address.id == $selected} selected{/if}"
       id="{$name|classname}-address-{$address.id}"
     >
-      <header class="h4">
-        <label class="radio-block">
+  
+      <label class="radio-block">
           <span class="custom-radio">
             <input
               type="radio"
@@ -39,30 +39,27 @@
             >
             <span></span>
           </span>
-          <span class="address-alias h4">{$address.alias}</span>
-          <div class="address">{$address.formatted nofilter}</div>
-        </label>
-      </header>
-      <hr>
-      <footer class="address-footer">
-        {if $interactive}
-          <a
-            class="edit-address text-muted"
-            data-link-action="edit-address"
-            href="{url entity='order' params=['id_address' => $address.id, 'editAddress' => $type, 'token' => $token]}"
-          >
-            <i class="material-icons edit">&#xE254;</i>{l s='Edit' d='Shop.Theme.Actions'}
-          </a>
-          <a
-            class="delete-address text-muted"
-            data-link-action="delete-address"
-            href="{url entity='order' params=['id_address' => $address.id, 'deleteAddress' => true, 'token' => $token]}"
-          >
-            <i class="material-icons delete">&#xE872;</i>{l s='Delete' d='Shop.Theme.Actions'}
-          </a>
-        {/if}
-      </footer>
+          <span class="address-alias h4">{$address.firstname} {$address.lastname}</span>
+          <sapn class="address">{$address.company} {$address.address1} {$address.address2} {$address.postcode} {$address.state} {$address.country} {$address.phone} </span>
+      </label>
     </article>
+    
+    {if $interactive}
+      <a
+        class="edit-address"
+        data-link-action="edit-address"
+        href="{url entity='order' params=['id_address' => $address.id, 'editAddress' => $type, 'token' => $token]}"
+      >
+        <i class="material-icons edit">&#xE254;</i>
+      </a>
+      <a
+        class="delete-address"
+        data-link-action="delete-address"
+        href="{url entity='order' params=['id_address' => $address.id, 'deleteAddress' => true, 'token' => $token]}"
+      >
+        <i class="material-icons delete">&#xE872;</i>
+      </a>
+    {/if}
   {/foreach}
   {if $interactive}
     <p>

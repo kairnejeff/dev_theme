@@ -48,7 +48,9 @@
           </div>
         {/block}
 
-        <div>
+        {block name='product_grid_controle'}
+          {include file='catalog/_partials/product_grid_controle.tpl'}
+        {/block}
           {block name='product_list'}
             {include file='catalog/_partials/products.tpl' listing=$listing}
           {/block}

@@ -1,30 +1,6 @@
 $black: #000;
 $white: #fff;
 $blue: #2fb5d2;
-#js-product-list,
-.featured-products {
-    .products {
-        >div {
-            margin-bottom: 50px;
-            position: relative;
-            article {
-                .product-price-and-shipping {
-                    position: absolute;
-                    bottom: -25px;
-                }
-                @media (max-width: 480px) {
-                    height: auto;
-                    padding-bottom: 20px;
-                    margin-left: 20px;
-                    .product-price-and-shipping {
-                        bottom: -10px;
-                    }
-                }
-            }
-        }
-    }
-}
-
 @mixin title {
     font-family: RobotoMono Medium;
     font-size: 13px;

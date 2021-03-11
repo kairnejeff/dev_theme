@@ -48,11 +48,4 @@
     {if $category.description}
         <div id="category-description" class="text-muted col-md-4">{$category.description nofilter}</div>
     {/if}
-{*    {if $listing.products|count >1}
-        <div class="col-md-8 category-feature-products">
-            {for $i=0 to 1}
-                {include file='catalog/_partials/miniatures/feature-product.tpl' product=$listing.products[$i]}
-            {/for}
-        </div>
-    {/if}*}
 </div>

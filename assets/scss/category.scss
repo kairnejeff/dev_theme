@@ -22,3 +22,25 @@
         max-width: 100%;
     }
 }
+
+.grid-controle {
+    .grid-button {
+        background-color: unset;
+        border: unset;
+        float: right;
+        margin-bottom: 5px;
+        span {
+            color: #464646;
+        }
+        span:hover {
+            color: #000;
+            border: 1px solid #464646;
+        }
+        .active {
+            border: 1px solid #464646;
+        }
+    }
+    button:focus {
+        outline: unset;
+    }
+}
