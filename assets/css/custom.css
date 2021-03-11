@@ -615,12 +615,6 @@ form section .form-group:first-child .form-control-valign .radio-inline:first-ch
   margin-bottom: 30px;
   margin-top: none;
 }
-#header .header-nav .container .row {
-  display: block;
-}
-#header .header-nav .container .row #_desktop_logo a .logo {
-  max-height: 100px;
-}
 
 #blockcart-modal .modal-dialog .modal-body .row .cart-content .cart-content-btn a i {
   font-size: 18px;
