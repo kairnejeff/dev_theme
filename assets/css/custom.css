@@ -171,7 +171,6 @@
     z-index: 999;
     width: 100%;
     border-top: 2px solid #000;
-    top: 25px;
   }
   #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul li a {
     font-weight: 400;
@@ -551,6 +550,9 @@
   text-align: center;
   font-size: 1.2em;
 }
+#search_filters #filtre-name p {
+  margin: unset;
+}
 #search_filters .facet .facet-title {
   overflow: visible;
 }
@@ -613,7 +615,6 @@ form section .form-group:first-child .form-control-valign .radio-inline:first-ch
 }
 #header .header-nav {
   box-shadow: none;
-  margin-bottom: 30px;
   margin-top: none;
 }
 

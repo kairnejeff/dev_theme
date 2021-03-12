@@ -18,7 +18,12 @@
  *}
  {if $displayedFacets|count}
   <div id="search_filters">
-    <div id="filtre-name" class="hidden-md-up" data-target="#facet_section" data-toggle="collapse" aria-expanded="false"><p class="facet-title">Fitrer</p></div>
+    <div id="filtre-name" class="hidden-md-up" data-target="#facet_section" data-toggle="collapse" aria-expanded="false">
+      <p class="facet-title">
+        <span class="material-icons">manage_search</span>
+        Fitrer
+      </p>
+    </div>
     {block name='facets_clearall_button'}
       {if $activeFilters|count}
         <div id="_desktop_search_filters_clear_all" class="hidden-sm-down clear-all-wrapper">
