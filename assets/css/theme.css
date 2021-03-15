@@ -8231,8 +8231,12 @@ body#checkout {
 }
 
 body#checkout #header .header-nav .logo {
-    max-height: 4.375rem;
+    max-height: 200px;
     width: auto
+}
+
+body#checkout #header .header-nav #_desktop_logo {
+    text-align: center;
 }
 
 body#checkout #header .header-nav #_desktop_contact_link #contact-link {
@@ -10982,18 +10986,12 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .product-images>li.thumb-container>.thumb {
-    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .2);
     cursor: pointer;
     margin-bottom: .625rem
 }
 
 .images-container .product-images>li.thumb-container>.thumb {
     margin-right: .8125rem
-}
-
-.product-images>li.thumb-container>.thumb.selected,
-.product-images>li.thumb-container>.thumb:hover {
-    border: 3px solid #2fb5d2
 }
 
 #main .images-container .js-qv-mask {
@@ -12859,6 +12857,10 @@ input[type=number]::-webkit-outer-spin-button {
     z-index: 1;
 }
 
+.progress-bar li.complete span.material-icons {
+    cursor: pointer;
+}
+
 .progress-bar li span.material-icons {
     display: block;
     font-size: 10px;
@@ -12871,7 +12873,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0 auto 5px auto;
     border: 2px #464646 solid;
     border-bottom: 1px solid;
-    cursor: pointer;
 }
 
 .progress-bar li.complete span.material-icons {
@@ -12886,14 +12887,34 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
 }
 
+.progress-bar li.complete span.material-icons:after {
+    background: #464646;
+}
+
+.progress-bar li.animate span.material-icons:after {
+    animation: progress-bar-animate 1s linear 0S;
+}
+
 .progress-bar li span.material-icons:after {
     content: "";
     width: 100%;
     height: 2px;
-    background: black;
+    background: #eee;
     position: absolute;
     top: 10px;
     z-index: -1;
+}
+
+@keyframes progress-bar-animate {
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 60%;
+    }
+    0% {
+        width: 30%;
+    }
 }
 
 .progress-bar li:last-child span.material-icons:after {

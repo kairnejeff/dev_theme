@@ -1,6 +1,5 @@
 /*
- * Custom code goes here.
- * A template should always ship with an empty custom.js
+ *checkout 
  */
 let tabs = $('section.checkout-step')
 let steps = $('.checkout-bar .step')
@@ -16,11 +15,20 @@ function removeCurrentClass() {
     while (!remove && i < tabs.length) {
         if ($(tabs[i]).hasClass('-current')) {
             $(tabs[i]).removeClass('-current')
+            $(steps[i - 1]).removeClass('animate')
             remove = true
         }
         i++;
 
     }
+}
+
+function addAnimateToSteps() {
+    tabs.each(function(index) {
+        if ($(tabs[index]).hasClass('-current')) {
+            $(steps[index - 1]).addClass('animate')
+        }
+    })
 }
 
 function addCompleteCssProgressBar() {
@@ -33,6 +41,7 @@ function addCompleteCssProgressBar() {
 
 (function() {
     addCompleteCssProgressBar()
+    addAnimateToSteps()
     displayCheckOutTab()
     steps.each(function(index) {
         $(this).click(function() {
@@ -40,6 +49,7 @@ function addCompleteCssProgressBar() {
                 removeCurrentClass()
                 $(tabs[index]).css('display', 'block')
                 $(tabs[index]).addClass("-current")
+                $(steps[index - 1]).addClass('animate')
                 displayCheckOutTab()
             }
         })
