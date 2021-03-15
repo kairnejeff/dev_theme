@@ -9656,7 +9656,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 .featured-products .thumbnail-container .product-thumbnail img,
 .product-accessories .thumbnail-container .product-thumbnail img,
 .product-miniature .thumbnail-container .product-thumbnail img {
-    max-width: 100%;
+    width: 100%;
 }
 
 #products .products-section-title,

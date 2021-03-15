@@ -44,8 +44,8 @@
         </div>
     {/if}
 </div>
-<div class="block-category-inner row">
+<div class="block-category-inner">
     {if $category.description}
-        <div id="category-description" class="text-muted col-md-4">{$category.description nofilter}</div>
+        <div id="category-description" class="text-muted">{$category.description nofilter}</div>
     {/if}
 </div>

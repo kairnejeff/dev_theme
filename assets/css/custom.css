@@ -45,7 +45,7 @@
   }
   #header .header-nav .row .header-bottom #search_widget {
     position: absolute;
-    top: -107px;
+    top: -115px;
     right: 30%;
   }
 }
@@ -184,7 +184,7 @@
   margin-top: 40px;
 }
 .container #main #content .featured-products h2 {
-  font-family: RobotoMono Medium;
+  font-family: RobotoMono;
   font-size: 13px;
   line-height: 1em;
   font-weight: 500;
@@ -256,6 +256,7 @@
   margin: 0;
 }
 .container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description .recipe {
+  font-family: RobotoMono;
   text-decoration: underline;
   text-transform: uppercase;
   font-size: 13px;
@@ -325,7 +326,7 @@
   margin-top: 40px;
 }
 #custom-categories-container .featured-block-title {
-  font-family: RobotoMono Medium;
+  font-family: RobotoMono;
   font-size: 13px;
   line-height: 1em;
   font-weight: 500;
