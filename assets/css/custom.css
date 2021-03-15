@@ -91,6 +91,8 @@
     word-spacing: -2px;
     padding: 0;
     font-weight: 400;
+    font-family: "AlegreyaSans";
+    font-size: 14px;
   }
 }
 @media (max-width: 768px) {
@@ -158,7 +160,10 @@
   }
   #header .header-top .container #menu-icon .expand-more {
     display: block;
-    float: right;
+    position: absolute;
+    right: 22px;
+    z-index: 999;
+    top: 4px;
   }
   #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu {
     position: relative;
@@ -190,7 +195,7 @@
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding-bottom: 20px;
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -259,12 +264,14 @@
   font-family: RobotoMono;
   text-decoration: underline;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 10px;
   position: absolute;
   bottom: -10px;
   z-index: 999;
   height: auto;
+  font-weight: 500;
+  line-height: 27px;
 }
 .container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description .recipe:hover {
   color: #2fb5d2;
@@ -275,6 +282,9 @@
 .container #main #content .featured-products .row .product-miniature .thumbnail-container .highlighted-informations {
   box-shadow: none;
   display: none;
+}
+.container #main #content .home-category-foot .categories-preview {
+  margin-top: 40px;
 }
 @media (max-width: 480px) {
   .container #main #content .home-category-foot .categories-preview {
@@ -332,7 +342,7 @@
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .categories-preview {
@@ -433,13 +443,13 @@
 .info-detailed {
   font-size: 14px;
 }
-.info-detailed h2 {
-  padding: 15px 0;
-  margin: 0;
-  border-top: 1px solid #CCCCCC;
-}
 .info-detailed .info-detailed-title {
   position: relative;
+}
+.info-detailed .info-detailed-title h2 {
+  padding: 15px 0;
+  margin: 0;
+  border-top: 1px solid #ccc;
 }
 .info-detailed .info-detailed-title i {
   position: absolute;
@@ -480,10 +490,14 @@
     margin-bottom: 30px;
   }
 }
+@media (max-width: 768px) {
+  #wrapper .container #main .block-category-inner .text-muted {
+    margin-top: 30px;
+  }
+}
 
 .product-accessories {
-  padding: 30px 0;
-  border-top: 1px solid #ccc;
+  margin: 120px 0;
 }
 .product-accessories .h5 {
   text-align: center;
@@ -632,4 +646,51 @@ form section .form-group:first-child .form-control-valign .radio-inline:first-ch
 }
 #wrapper .container #main .cart-grid .cart-grid-body .label span {
   margin-left: 25px;
+}
+#main .cart-grid .cart-grid-body .cart-container hr {
+  margin-bottom: 20px;
+}
+#main .cart-grid .cart-grid-body .cart-container .product-line-grid {
+  height: 125px;
+}
+#main .cart-grid .cart-grid-body .cart-container .product-line-grid .product-line-grid-body {
+  height: 100%;
+  position: relative;
+}
+@media (max-width: 468px) {
+  #main .cart-grid .cart-grid-body .cart-container .product-line-grid .product-line-grid-body {
+    height: auto;
+  }
+}
+#main .cart-grid .cart-grid-body .cart-container .product-line-grid .product-line-grid-body .price span {
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 468px) {
+  #main .cart-grid .cart-grid-body .cart-container .product-line-grid .product-line-grid-body .price span {
+    position: relative;
+  }
+}
+@media (max-width: 768px) {
+  #main .cart-grid .cart-grid-body .cart-container .product-line-grid .product-line-grid-right {
+    margin-top: 20px;
+  }
+  #main .cart-grid .cart-grid-body .cart-container .product-line-grid .product-line-grid-right .row > div {
+    line-height: 2.5em;
+  }
+}
+@media (max-width: 768px) and (max-width: 768px) {
+  #main .cart-grid .cart-grid-body .cart-container .product-line-grid .product-line-grid-right .row .bootstrap-touchspin {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+  }
+  #main .cart-grid .cart-grid-body .cart-container .product-line-grid .product-line-grid-right .row .bootstrap-touchspin > input {
+    border: 0;
+  }
+  #main .cart-grid .cart-grid-body .cart-container .product-line-grid .product-line-grid-right .row .bootstrap-touchspin .input-group-btn-vertical {
+    float: right;
+  }
+}
+#main .cart-grid .cart-grid-right .cart-summary .cart-detailed-actions > div {
+  text-align: center;
 }

@@ -8494,10 +8494,10 @@ body#checkout section.checkout-step .add-address a {
 body#checkout section.checkout-step .add-address a i {
     font-size: .9375rem
 }
-
+/* 
 body#checkout section.checkout-step .delivery-options>.row {
     border-right: .1rem solid #c3c3c3
-}
+} */
 
 body#checkout section.checkout-step .delivery-options .delivery-option {
     background: #f6f6f6;
@@ -8574,7 +8574,8 @@ body#checkout section.checkout-step .sign-in {
 }
 
 body#checkout section.checkout-step .forgot-password {
-    margin-left: 14.38rem
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 body#checkout .additional-information {
@@ -11537,10 +11538,9 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .block-promo .promo-input+button {
-    margin-top: -4px;
-    margin-left: -1px;
+    margin-top: -1px;
     text-transform: capitalize;
-    border: 2px solid #2fb5d2
+    line-height: inherit;
 }
 
 .block-promo .cart-summary-line .label,

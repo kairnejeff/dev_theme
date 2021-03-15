@@ -88,6 +88,8 @@
                                     word-spacing: -2px;
                                     padding: 0;
                                     font-weight: 400;
+                                    font-family: 'AlegreyaSans';
+                                    font-size: 14px;
                                 }
                             }
                         }
@@ -169,7 +171,10 @@
                     position: relative;
                     .expand-more {
                         display: block;
-                        float: right;
+                        position: absolute;
+                        right: 22px;
+                        z-index: 999;
+                        top: 4px;
                     }
                 }
                 #mobile_top_menu_wrapper {

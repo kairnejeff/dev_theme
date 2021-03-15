@@ -76,12 +76,14 @@
                                     font-family: RobotoMono;
                                     text-decoration: underline;
                                     text-transform: uppercase;
-                                    font-size: 13px;
+                                    font-size: 12px;
                                     margin-top: 10px;
                                     position: absolute;
                                     bottom: -10px;
                                     z-index: 999;
                                     height: auto;
+                                    font-weight: 500;
+                                    line-height: 27px;
                                     &:hover {
                                         color: $blue;
                                     }
@@ -100,6 +102,8 @@
             }
             .home-category-foot {
                 .categories-preview {
+                    margin-top: 40px;
+
                     @media (max-width: 480px) {
                         display: block;
                     }

@@ -38,17 +38,16 @@
             <h1 class="h1">{l s='Shopping Cart' d='Shop.Theme.Checkout'}</h1>
           </div>
           <hr class="separator">
+          {block name='continue_shopping'}
+            <a class="label" href="{$urls.pages.index}">
+              <i class="material-icons">chevron_left</i>
+              <span>{l s='Continue shopping' d='Shop.Theme.Actions'}</span>
+            </a>
+          {/block}
           {block name='cart_overview'}
             {include file='checkout/_partials/cart-detailed.tpl' cart=$cart}
           {/block}
         </div>
-
-        {block name='continue_shopping'}
-          <a class="label" href="{$urls.pages.index}">
-            <i class="material-icons">chevron_left</i>
-            <span>{l s='Continue shopping' d='Shop.Theme.Actions'}</span>
-          </a>
-        {/block}
 
         <!-- shipping informations -->
         {block name='hook_shopping_cart_footer'}

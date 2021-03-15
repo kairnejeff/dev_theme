@@ -8,3 +8,4 @@ import '/scss/my-account.scss';
 import '/scss/filtre.scss';
 import '/scss/log.scss';
 import '/scss/command.scss';
+import '/scss/shop.scss';

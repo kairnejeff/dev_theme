@@ -1,0 +1,68 @@
+#main {
+    .cart-grid {
+        .cart-grid-body{
+            .cart-container {
+                hr {
+                    margin-bottom: 20px;
+                }
+                .product-line-grid {
+                    height:125px;
+                    .product-line-grid-body {
+                        height: 100%;
+                        position: relative;
+
+                        @media (max-width: 468px) {
+                            height:auto;
+                        }
+
+                        .price {
+                            span {
+                                position: absolute;
+                                bottom: 0;
+                                @media (max-width: 468px) {
+                                    position: relative;
+                                }
+                            }
+                        }
+                    }
+                    .product-line-grid-right {
+                        @media (max-width:768px) {
+                            margin-top: 20px;
+
+                            .row {
+                                > div {
+                                    line-height: 2.5em;
+                                }
+
+                                .bootstrap-touchspin {
+                                    @media (max-width: 768px) {
+                                        width:100%;
+                                        border: 1px solid rgba(0, 0, 0, .25);
+
+                                        > input {
+                                            border: 0;
+                                        }
+
+                                        .input-group-btn-vertical {
+                                            float: right;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .cart-grid-right {
+            .cart-summary {
+                .cart-detailed-actions {
+                    > div {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
