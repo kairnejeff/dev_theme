@@ -116,11 +116,12 @@ function addCompleteCssProgressBar() {
 
 })();
 
-
-(function() {
+//product-accordion
+function productAccordion() {
     var windowsize = $(window).width()
     if (windowsize > 767) {
         $('.info-detailed .collapse').collapse()
+
     } else {
         $('.info-detailed .collapse').on('show.bs.collapse', function() {
             $(this).prev().find("i")[0].innerHTML = 'expand_less';
@@ -129,6 +130,9 @@ function addCompleteCssProgressBar() {
             $(this).prev().find("i")[0].innerHTML = 'expand_more';
         });
     }
+}
+(function() {
+    $(window).resize(productAccordion);
 })();
 
 
@@ -183,7 +187,7 @@ $(document).ready(function() {
             $("#mobile_top_menu_wrapper").removeClass("hidden-md-up");
             $("#menu-icon span").removeClass("hidden-md-up");
             $("#menu-icon i").removeClass("hidden-md-up");
-        } else if (width > 1024) {
+        } else {
             $("#menu-icon span").addClass("hidden-md-up");
             $("#menu-icon i").addClass("hidden-md-up");
             $("#top-menu").prependTo("#_desktop_top_menu");

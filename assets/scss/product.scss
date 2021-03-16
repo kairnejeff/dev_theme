@@ -1,6 +1,17 @@
 @import "global.scss";
-
 .info-detailed {
+    @media screen and (min-width: 1024px) {
+        .collapse {
+            display: block;
+            height: auto !important;
+            visibility: visible;
+        }
+        .collapsing {
+            position: relative;
+            height: unset !important;
+            overflow: hidden;
+        }
+    }
     font-size: 14px;
     .info-detailed-title {
         position: relative;
@@ -50,8 +61,7 @@
             .products {
                 @media (max-width: 480px) {
                     justify-content: space-around;
-
-                    > div {
+                    >div {
                         margin-bottom: 30px;
                     }
                 }
