@@ -22,7 +22,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
     #header {
         .header-nav {
             max-height: 100%;
@@ -49,21 +49,11 @@
                 .header-bottom {
                     width: 100%;
                     padding: 0;
+                    position: relative;
                     #search_widget {
                         position: absolute;
-                        // top: -115px;
-                        // right: 30%;
-                        top: -70px;
-                        right: 20px;
-                        @media (max-width: 768px) {
-                            margin-top: 20px;
-                            width: 100%;
-                            form {
-                                .ui-autocomplete-input {
-                                    min-width: 100%;
-                                }
-                            }
-                        }
+                        top: -115px;
+                        right: 30%;
                     }
                     #_desktop_top_menu {
                         width: 100%;
@@ -71,10 +61,6 @@
                         ul {
                             display: flex;
                             justify-content: space-between;
-                            @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-                                justify-content: center;
-                                flex-wrap: wrap;
-                            }
                             li {
                                 &:not(:last-child) {
                                     margin-right: 10px;
@@ -98,7 +84,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
     #header {
         .header-nav {
             border: none;
@@ -141,15 +127,14 @@
                     }
                 }
                 .header-bottom {
+                    width: 100%;
                     .search-widget {
-                        @media (max-width: 768px) {
-                            margin-top: 20px;
+                        margin-top: 20px;
+                        width: 100%;
+                        form {
                             width: 100%;
-                            form {
-                                width: 100%;
-                                .ui-autocomplete-input {
-                                    min-width: 100%;
-                                }
+                            .ui-autocomplete-input {
+                                min-width: 100%;
                             }
                         }
                     }
@@ -198,3 +183,5 @@
         }
     }
 }
+
+

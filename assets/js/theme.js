@@ -1335,7 +1335,9 @@
                         (0, u.default)("#mobile_top_menu_wrapper").toggle(), i.toggleMobileMenu()
                     }), (0, u.default)(".js-top-menu .category").mouseleave(function() { t.el.parent().hasClass("mobile") }), this.el.on("click", function(e) { t.el.parent().hasClass("mobile") || e.stopPropagation() }), prestashop.on("responsive update", function(t) {
                         (0, u.default)(".js-sub-menu").removeAttr("style"), i.toggleMobileMenu()
-                    }), s(Object.getPrototypeOf(e.prototype), "init", this).call(this)
+                    }), s(Object.getPrototypeOf(e.prototype), "init", this).call(this)                                                                                                                                                                                                         
+
+                    
                 }
             }, {
                 key: "toggleMobileMenu",

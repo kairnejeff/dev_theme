@@ -170,3 +170,29 @@ $(document).ready(function() {
     })
 
 })
+
+
+/*menu*/
+$(document).ready(function() {
+
+    function mobileMenu() {
+        var width = $(window).width();
+        if (768 < width < 1024) {
+            $("#top-menu").prependTo("#_mobile_top_menu");
+            $("#mobile_top_menu_wrapper").css("display","block");
+            $("#mobile_top_menu_wrapper").removeClass("hidden-md-up");
+            $("#menu-icon span").removeClass("hidden-md-up");
+            $("#menu-icon i").removeClass("hidden-md-up");
+        } else {
+            alert("hello");
+            $("#top-menu").prependTo("#_desktop_top_menu");
+            $("#mobile_top_menu_wrapper").css("display","none");
+        }
+    }
+   
+    
+
+    // mobileMenu();
+
+    window.addEventListener('resize', mobileMenu, false);
+})

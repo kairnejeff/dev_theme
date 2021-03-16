@@ -14,7 +14,7 @@
     width: 1190px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   #header .header-nav {
     max-height: 100%;
     margin-top: 50px;
@@ -42,23 +42,13 @@
   #header .header-nav .row .header-bottom {
     width: 100%;
     padding: 0;
+    position: relative;
   }
   #header .header-nav .row .header-bottom #search_widget {
     position: absolute;
-    top: -70px;
-    right: 20px;
+    top: -115px;
+    right: 30%;
   }
-}
-@media (min-width: 768px) and (max-width: 768px) {
-  #header .header-nav .row .header-bottom #search_widget {
-    margin-top: 20px;
-    width: 100%;
-  }
-  #header .header-nav .row .header-bottom #search_widget form .ui-autocomplete-input {
-    min-width: 100%;
-  }
-}
-@media (min-width: 768px) {
   #header .header-nav .row .header-bottom #_desktop_top_menu {
     width: 100%;
     padding: 0 20px;
@@ -67,14 +57,6 @@
     display: flex;
     justify-content: space-between;
   }
-}
-@media only screen and (min-width: 768px) and (min-device-width: 769px) and (max-device-width: 1024px) {
-  #header .header-nav .row .header-bottom #_desktop_top_menu ul {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-}
-@media (min-width: 768px) {
   #header .header-nav .row .header-bottom #_desktop_top_menu ul li:not(:last-child) {
     margin-right: 10px;
     display: block;
@@ -89,7 +71,7 @@
     font-size: 14px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
   #header .header-nav {
     border: none;
     margin: 0;
@@ -126,8 +108,9 @@
   #header .header-nav .row .mobile #_mobile_logo a img {
     max-height: 80px;
   }
-}
-@media (max-width: 768px) and (max-width: 768px) {
+  #header .header-nav .row .header-bottom {
+    width: 100%;
+  }
   #header .header-nav .row .header-bottom .search-widget {
     margin-top: 20px;
     width: 100%;
@@ -138,8 +121,6 @@
   #header .header-nav .row .header-bottom .search-widget form .ui-autocomplete-input {
     min-width: 100%;
   }
-}
-@media (max-width: 768px) {
   #header .header-top {
     background-color: #fff;
   }
