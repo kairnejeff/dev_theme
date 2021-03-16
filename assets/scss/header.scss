@@ -22,7 +22,7 @@
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
     #header {
         .header-nav {
             max-height: 100%;
@@ -84,7 +84,7 @@
     }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1200px) {
     #header {
         .header-nav {
             border: none;
@@ -129,14 +129,15 @@
                 .header-bottom {
                     width: 100%;
                     .search-widget {
-                        margin-top: 20px;
-                        width: 100%;
-                        form {
-                            width: 100%;
-                            .ui-autocomplete-input {
-                                min-width: 100%;
-                            }
-                        }
+                        display: none;
+                        // margin-top: 20px;
+                        // width: 100%;
+                        // form {
+                        //     width: 100%;
+                        //     .ui-autocomplete-input {
+                        //         min-width: 100%;
+                        //     }
+                        
                     }
                 }
             }
@@ -173,7 +174,13 @@
                             border-top: 2px solid #000;
                             li {
                                 a {
+                                    text-transform: none;
+                                    letter-spacing: 1px;
+                                    word-spacing: -2px;
+                                    padding: 0;
                                     font-weight: 400;
+                                    font-family: 'AlegreyaSans';
+                                    font-size: 14px;
                                 }
                             }
                         }

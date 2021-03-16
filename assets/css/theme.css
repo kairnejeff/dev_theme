@@ -7262,7 +7262,7 @@ a.text-gray-dark:hover {
     }
 }
 
-@media (min-width:1025px) {
+@media (min-width:768px) {
     .hidden-md-up {
         display: none!important
     }
