@@ -116,11 +116,12 @@ function addCompleteCssProgressBar() {
 
 })();
 
-
-(function() {
+//product-accordion
+function productAccordion() {
     var windowsize = $(window).width()
     if (windowsize > 767) {
         $('.info-detailed .collapse').collapse()
+
     } else {
         $('.info-detailed .collapse').on('show.bs.collapse', function() {
             $(this).prev().find("i")[0].innerHTML = 'expand_less';
@@ -129,6 +130,9 @@ function addCompleteCssProgressBar() {
             $(this).prev().find("i")[0].innerHTML = 'expand_more';
         });
     }
+}
+(function() {
+    $(window).resize(productAccordion);
 })();
 
 
