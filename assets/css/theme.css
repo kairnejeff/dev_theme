@@ -8987,10 +8987,10 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     padding: 0
 }
 
-#authentication .radio-inline .custom-radio,
+/* #authentication .radio-inline .custom-radio,
 #identity .radio-inline .custom-radio {
     margin-right: 0
-}
+} */
 
 .page-customer-account #content {
     box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .2);

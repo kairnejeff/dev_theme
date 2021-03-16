@@ -57,6 +57,10 @@
     display: flex;
     justify-content: space-between;
   }
+  #header .header-nav .row .header-bottom #_desktop_top_menu ul li {
+    font-family: "AlegreyaSans";
+    font-size: 14px;
+  }
   #header .header-nav .row .header-bottom #_desktop_top_menu ul li:not(:last-child) {
     margin-right: 10px;
     display: block;
@@ -106,7 +110,8 @@
     right: 100px;
   }
   #header .header-nav .row .mobile #_mobile_logo a img {
-    max-height: 80px;
+    max-height: 120px;
+    margin-left: 50px;
   }
   #header .header-nav .row .header-bottom {
     width: 100%;
@@ -129,7 +134,7 @@
   #header .header-top .container #menu-icon .expand-more {
     display: block;
     position: absolute;
-    right: 22px;
+    right: 18px;
     z-index: 999;
     top: 4px;
   }
@@ -145,6 +150,10 @@
     width: 100%;
     border-top: 2px solid #000;
   }
+  #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul li {
+    padding: 8px 5px;
+    border-bottom: 1px solid #ccc;
+  }
   #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul li a {
     text-transform: none;
     letter-spacing: 1px;
@@ -153,6 +162,7 @@
     font-weight: 400;
     font-family: "AlegreyaSans";
     font-size: 14px;
+    border: 0;
   }
 }
 /*products*/
@@ -265,8 +275,24 @@
     display: block;
   }
 }
+@media (max-width: 1200px) {
+  .container #main .block-category-inner #category-description .col-md-4 {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .container #main .block-category-inner #category-description .col-md-4 .col-md-8 {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .container #main .block-category-inner #category-description .col-md-4 .col-md-8 img {
+    display: block;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 480px) {
-  .container #main .block-category-inner #category-description .col-md-8 img {
+  .container #main .block-category-inner #category-description .col-md-4 .col-md-8 img {
     width: 100%;
   }
 }
@@ -613,6 +639,9 @@
 
 form section .form-group:first-child .form-control-valign .radio-inline:first-child {
   margin-right: 20px;
+}
+form section .form-group:first-child .form-control-valign .radio-inline span {
+  margin-right: 3px;
 }
 #header .header-nav {
   box-shadow: none;

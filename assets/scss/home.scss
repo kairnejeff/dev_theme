@@ -112,10 +112,22 @@
         }
         .block-category-inner {
             #category-description {
-                .col-md-8 {
-                    img {
-                        @media (max-width: 480px) {
+                .col-md-4 {
+                    @media (max-width:1200px) {
+                        width: 100%;
+                    }
+                    .col-md-8 {
+                        @media (max-width:1200px) {
                             width: 100%;
+                        }
+                        img {
+                            @media (max-width:1200px) {
+                                display:block;
+                                margin: 0 auto;
+                            }
+                            @media (max-width: 480px) {
+                                width: 100%;
+                            }
                         }
                     }
                 }

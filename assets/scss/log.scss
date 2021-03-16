@@ -40,8 +40,15 @@ form {
     section {
         .form-group:first-child {
             .form-control-valign {
-                .radio-inline:first-child {
-                    margin-right: 20px;
+                .radio-inline {
+                    &:first-child {
+                        margin-right: 20px;
+
+                    }
+
+                    span {
+                        margin-right: 3px;
+                    }
                 }
             }
         }

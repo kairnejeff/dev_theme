@@ -62,6 +62,8 @@
                             display: flex;
                             justify-content: space-between;
                             li {
+                                font-family: 'AlegreyaSans';
+                                font-size: 14px;
                                 &:not(:last-child) {
                                     margin-right: 10px;
                                     display: block;
@@ -121,7 +123,8 @@
                     #_mobile_logo {
                         a {
                             img {
-                                max-height: 80px;
+                                max-height: 120px;
+                                margin-left: 50px;
                             }
                         }
                     }
@@ -156,7 +159,7 @@
                     .expand-more {
                         display: block;
                         position: absolute;
-                        right: 22px;
+                        right: 18px;
                         z-index: 999;
                         top: 4px;
                     }
@@ -173,6 +176,8 @@
                             width: 100%;
                             border-top: 2px solid #000;
                             li {
+                                padding: 8px 5px;
+                                border-bottom: 1px solid $grey;
                                 a {
                                     text-transform: none;
                                     letter-spacing: 1px;
@@ -181,6 +186,7 @@
                                     font-weight: 400;
                                     font-family: 'AlegreyaSans';
                                     font-size: 14px;
+                                    border: 0
                                 }
                             }
                         }
