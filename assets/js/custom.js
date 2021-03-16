@@ -180,14 +180,15 @@ $(document).ready(function() {
         if (768 < width < 1024) {
             $("#top-menu").prependTo("#_mobile_top_menu");
             $("#mobile_top_menu_wrapper").css("display","block");
-            $("#mobile_top_menu_wrapper").removeClass("hidden-md-up");
-            $("#menu-icon span").removeClass("hidden-md-up");
-            $("#menu-icon i").removeClass("hidden-md-up");
-        } else {
+            // $("#mobile_top_menu_wrapper").removeClass("hidden-md-up");
+            // $("#menu-icon span").removeClass("hidden-md-up");
+            // $("#menu-icon i").removeClass("hidden-md-up");
+        } else if (width > 1025) { 
             alert("hello");
             $("#top-menu").prependTo("#_desktop_top_menu");
             $("#mobile_top_menu_wrapper").css("display","none");
         }
+
     }
    
     
