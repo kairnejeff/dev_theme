@@ -34,15 +34,22 @@
       {foreach from=$homeslider.slides item=slide name='homeslider'}
         <li class="carousel-item {if $smarty.foreach.homeslider.first}active{/if}" role="option" aria-hidden="{if $smarty.foreach.homeslider.first}false{else}true{/if}">
           <a href="{$slide.url}">
-            <figure>
-              <img src="{$slide.image_url}" alt="{$slide.legend|escape}">
-              {if $slide.title || $slide.description}
-                <figcaption class="caption">
-                  <h2 class="display-1 text-uppercase">{$slide.title}</h2>
-                  <div class="caption-description">{$slide.description nofilter}</div>
-                </figcaption>
+          <figure>
+              {if file_exists($slide.image_webp_url)&& $modules.kj_detectdevice.machine !=='Mac'&&$modules.kj_detectdevice.machine !=='iPad'}
+                  <picture>
+                    <source srcset="{$urls.base_url}{$slide.image_webp_url}" alt="{$slide.legend|escape}" type="image/webp">
+                    <img src="{$slide.image_url}" alt="{$slide.legend|escape}">
+                  </picture>
+              {else}
+                  <img src="{$slide.image_url}" alt="{$slide.legend|escape}">
               {/if}
-            </figure>
+              {if $slide.title || $slide.description}
+                  <figcaption class="caption">
+                    <h2 class="display-1 text-uppercase">{$slide.title}</h2>
+                    <div class="caption-description">{$slide.description nofilter}</div>
+                  </figcaption>
+              {/if}
+          </figure>
           </a>
         </li>
       {/foreach}
