@@ -150,6 +150,7 @@ function productAccordion() {
         $('.info-detailed .collapse').collapse()
 
     } else {
+        
         $('.info-detailed .collapse').on('show.bs.collapse', function() {
             $(this).prev().find("i")[0].innerHTML = 'expand_less';
         });

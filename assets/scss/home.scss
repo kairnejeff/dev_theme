@@ -55,7 +55,8 @@
                             a {
                                 height: 100%;
                                 img {
-                                    width: 100%;
+                                    max-width: 373.328px;
+                                    max-height: 373.328px;
                                 }
                             }
                             .product-description {
@@ -165,6 +166,19 @@
                         bottom: -5px;
                     }
                 }
+            }
+        }
+    }
+
+    .up {
+        a {
+            position: relative;
+            padding-right: 30px;
+
+            i {
+                position: absolute;
+                bottom: 3px;
+                right: -1px;
             }
         }
     }

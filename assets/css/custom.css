@@ -1,7 +1,3 @@
-body {
-  font-family: "AlegreyaSans";
-}
-
 /* logo */
 #header .logo {
   max-width: 400px;
@@ -179,10 +175,6 @@ body {
     border: 0;
   }
 }
-body {
-  font-family: "AlegreyaSans";
-}
-
 /*products*/
 .container #main #content #carousel ul {
   height: auto;
@@ -248,7 +240,8 @@ body {
   height: 100%;
 }
 .container #main #content .featured-products .row .product-miniature .thumbnail-container a img {
-  width: 100%;
+  max-width: 373.328px;
+  max-height: 373.328px;
 }
 .container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description {
   z-index: 0;
@@ -350,10 +343,17 @@ body {
     bottom: -5px;
   }
 }
-body {
-  font-family: "AlegreyaSans";
+#js-product-list .up a,
+.featured-products .up a {
+  position: relative;
+  padding-right: 30px;
 }
-
+#js-product-list .up a i,
+.featured-products .up a i {
+  position: absolute;
+  bottom: 3px;
+  right: -1px;
+}
 #footer {
   position: relative;
 }
@@ -363,11 +363,11 @@ body {
 #footer .footer-container .row .home_popup #popup-box {
   top: 85%;
   left: 350px;
-  height: 300px;
+  height: auto;
 }
 @media (max-width: 769px) {
   #footer .footer-container .row .home_popup #popup-box {
-    width: auto;
+    width: 300px;
     top: 50%;
     left: 50%;
     height: auto;
@@ -404,7 +404,7 @@ body {
 }
 @media (max-width: 769px) {
   #footer .footer-container .row .home_popup #popup-box #popup-box-content > div img {
-    height: auto !important;
+    height: 200px !important;
     margin-left: 0;
   }
 }
@@ -491,10 +491,6 @@ body {
   display: block;
   text-align: center;
 }
-body {
-  font-family: "AlegreyaSans";
-}
-
 #custom-categories-container {
   margin-top: 40px;
 }
@@ -602,10 +598,6 @@ body {
 .grid-controle button:focus {
   outline: unset;
 }
-body {
-  font-family: "AlegreyaSans";
-}
-
 .info-detailed {
   font-size: 14px;
 }
@@ -782,10 +774,6 @@ body {
   background-size: 100%;
   pointer-events: none;
 }
-body {
-  font-family: "AlegreyaSans";
-}
-
 .login-form form section {
   position: relative;
 }
@@ -813,10 +801,6 @@ form section .form-group:first-child .form-control-valign .radio-inline:first-ch
 form section .form-group:first-child .form-control-valign .radio-inline span {
   margin-right: 3px;
 }
-body {
-  font-family: "AlegreyaSans";
-}
-
 #header .header-nav {
   box-shadow: none;
   margin-top: none;
