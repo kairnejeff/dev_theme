@@ -71,7 +71,7 @@
        <div class="row">
       </div>
       <div class="float-xs-left" id="menu-icon">
-      <span class="hidden-md-up">Select Page </span>
+      <span class="hidden-md-up">Menu </span>
       <i class="material-icons expand-more hidden-md-up">expand_more</i>
       </div>
       <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">

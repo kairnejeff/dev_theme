@@ -126,6 +126,10 @@
                             img {
                                 max-height: 120px;
                                 margin-left: 50px;
+
+                                @media (max-width: 468px) {
+                                    margin-left: -10px;
+                                }
                             }
                         }
                     }

@@ -9597,7 +9597,8 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     font-size: 24px;
     text-decoration: none;
     text-align: center;
-    font-weight: 400
+    font-weight: 400;
+    color: #000;
 }
 
 #products .thumbnail-container,

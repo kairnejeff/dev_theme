@@ -118,12 +118,21 @@ body {
     max-height: 120px;
     margin-left: 50px;
   }
+}
+@media (max-width: 1200px) and (max-width: 468px) {
+  #header .header-nav .row .mobile #_mobile_logo a img {
+    margin-left: -10px;
+  }
+}
+@media (max-width: 1200px) {
   #header .header-nav .row .header-bottom {
     width: 100%;
   }
   #header .header-nav .row .header-bottom .search-widget {
     display: none;
   }
+}
+@media (max-width: 1200px) {
   #header .header-top {
     background-color: #fff;
   }
