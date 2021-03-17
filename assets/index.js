@@ -1,3 +1,4 @@
+import '/scss/theme.css';
 import '/scss/header.scss';
 import '/scss/home.scss';
 import '/scss/footer.scss';
@@ -9,3 +10,5 @@ import '/scss/filtre.scss';
 import '/scss/log.scss';
 import '/scss/command.scss';
 import '/scss/shop.scss';
+import '/js/themes.js';
+import '/js/customs.js';

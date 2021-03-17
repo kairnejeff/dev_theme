@@ -8494,6 +8494,8 @@ body#checkout section.checkout-step .add-address a {
 body#checkout section.checkout-step .add-address a i {
     font-size: .9375rem
 }
+
+
 /* 
 body#checkout section.checkout-step .delivery-options>.row {
     border-right: .1rem solid #c3c3c3
@@ -8986,6 +8988,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 #identity .radio-inline {
     padding: 0
 }
+
 
 /* #authentication .radio-inline .custom-radio,
 #identity .radio-inline .custom-radio {
@@ -12013,31 +12016,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     background-image: url(../img/twitter.png)
 }
 
-.rss {
-    background-image: url(../css/cf2f3c1d5c7cb02c29f61964313148e1.svg)
-}
-
-.youtube {
-    background-image: url(../css/22c0528acb6d9cd5bf4c8f96381bc05c.svg)
-}
-
-.googleplus {
-    background-image: url(../css/36bff72dcba3098b4b70b482b22c29ab.svg)
-}
-
-.googleplus:before {
-    content: "";
-    background-image: url(../css/c1a65805f759901a39d10eb854c1dcf2.svg)
-}
-
-.googleplus.icon-gray {
-    background-image: url(../css/3a2aeeba930cc29e4d31ebfa1b7cdaa2.svg)
-}
-
-.googleplus.icon-gray:hover {
-    background-image: url(../css/c1a65805f759901a39d10eb854c1dcf2.svg)
-}
-
 #block_myaccount_infos .myaccount-title a {
     color: #232323
 }
@@ -12049,18 +12027,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 .pinterest:before {
     content: "";
     background-image: url(../img/printerest.svg)
-}
-
-.pinterest.icon-gray {
-    background-image: url(../css/99db8adec61e4fcf5586e1afa549b432.svg)
-}
-
-.pinterest.icon-gray:hover {
-    background-image: url(../css/b1db819132e64a3e01911a1413c33acf.svg)
-}
-
-.vimeo {
-    background-image: url(../css/f255af0bbbe837e79f7821827f9c6f10.svg)
 }
 
 .instagram {

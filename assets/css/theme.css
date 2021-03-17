@@ -8494,6 +8494,8 @@ body#checkout section.checkout-step .add-address a {
 body#checkout section.checkout-step .add-address a i {
     font-size: .9375rem
 }
+
+
 /* 
 body#checkout section.checkout-step .delivery-options>.row {
     border-right: .1rem solid #c3c3c3
@@ -8986,6 +8988,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 #identity .radio-inline {
     padding: 0
 }
+
 
 /* #authentication .radio-inline .custom-radio,
 #identity .radio-inline .custom-radio {
