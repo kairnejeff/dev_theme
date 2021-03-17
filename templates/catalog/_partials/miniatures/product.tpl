@@ -30,11 +30,20 @@
       {block name='product_thumbnail'}
         {if $product.cover}
           <a href="{$product.url}" class="thumbnail product-thumbnail">
-            <img
-              src="{$product.cover.bySize.home_default.url}"
-              alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
-              data-full-size-image-url="{$product.cover.large.url}"
-              />
+          {assign var="img_webp" value="modules/kj_webp/images/p/webp-img{$product.id_product}.webp"}
+          {if file_exists($img_webp)}
+              <picture>
+                  <source srcset="{$urls.base_url}modules/kj_webp/images/p/webp-img{$product.id_product}.webp" alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}" type="image/webp">
+                  <img src="{$product.cover.bySize.home_default.url}" alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}">
+              </picture>
+              
+          {else}
+                <img
+                        src="{$product.cover.bySize.home_default.url}"
+                        alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
+                        data-full-size-image-url="{$product.cover.large.url}"
+                />
+          {/if}
           </a>
         {else}
           <a href="{$product.url}" class="thumbnail product-thumbnail">
