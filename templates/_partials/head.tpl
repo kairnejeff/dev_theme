@@ -59,7 +59,9 @@
   <link rel="preload" href="{$urls.theme_assets}fonts/Unna-Regular.ttf"  as="font" type="font/ttf" type="font/ttf" crossorigin>
   <link rel="preload" href="{$urls.theme_assets}fonts/RobotoMono-Medium.ttf"  as="font" type="font/ttf" type="font/ttf" crossorigin>
   <link rel="preload" href="{$urls.theme_assets}fonts/RobotoMono-Regular.ttf"  as="font" type="font/ttf" type="font/ttf" crossorigin>
-  <link rel="preload" href="{$urls.theme_assets}fonts/icomoon.ttf"  as="font" type="font/ttf" type="font/ttf" crossorigin>
+  <link rel="preload" href="{$urls.theme_assets}fonts/AlegreyaSans-Regular.ttf"  as="font" type="font/ttf" type="font/ttf" crossorigin>
+  <link rel="preload" href="{$urls.theme_assets}fonts/AlegreyaSans-Medium.ttf"  as="font" type="font/ttf" type="font/ttf" crossorigin>
+  <link rel="preload" href="{$urls.theme_assets}fonts/material.woff2"  as="font" type="font/ttf" type="font/ttf" crossorigin>
 {/block}
 
 {block name='stylesheets'}
