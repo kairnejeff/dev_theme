@@ -26,6 +26,10 @@
                     }
                     >div {
                         margin-bottom: 50px;
+
+                        @media (max-width: 960px) {
+                            margin-bottom: 70px;
+                        }
                     }
                     @media (max-width: 480px) {
                         display: grid;
@@ -86,9 +90,17 @@
                                     &:hover {
                                         color: $blue;
                                     }
+
+                                    @media (max-width: 960px) {
+                                        bottom: -25px;
+                                    }
                                 }
                                 .product-price-and-shipping {
                                     bottom: -35px;
+
+                                    @media (max-width: 960px) {
+                                        bottom: -55px;
+                                    }
                                 }
                             }
                             .highlighted-informations {

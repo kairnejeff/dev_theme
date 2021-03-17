@@ -1,3 +1,5 @@
+@import "global.scss";
+
 #footer {
     position: relative;
     .footer-container {
@@ -10,26 +12,56 @@
                     top:85%;
                     left:350px;
                     height:300px;
+
+                    @media (max-width: 769px) {
+                        width: auto;
+                        top:50%;
+                        left:50%;
+                        height: auto;
+                        border: 1px solid $grey;
+                        padding-bottom: 50px;
+                    }
                     #popup-close {
                         top: 5px;
                         right: 5px;
                     }
                     #popup-box-content {
                         height:auto;
-                        border-top: 1px solid #ccc;
-                        border-right: 1px solid #ccc;
+                        border-top: 1px solid $grey;
+                        border-right: 1px solid $grey;
+
+                        @media (max-width: 769px) {
+                            border: none;
+                        }
 
                         > div {
                             height: auto;
+                            @media (max-width: 769px) {
+                                padding-left: 0;
+                                padding-right: 0;
+                            }
+                            
 
                             img {
                                 object-fit: cover;
+                                height: auto!important;
+                                @media (max-width: 769px) {
+                                    height: auto!important;
+                                    margin-left: 0;
+                                }
                             }
                         }
                         form {
                             margin-top: 40px;
+                            @media (max-width: 769px) {
+                                padding-left: 15px;
+                                padding-right: 15px;
+                            }
 
                             .description {
+                                @media (max-width: 769px) {
+                                    text-align: center;
+                                }
                                 p {
                                     &:first-child {
                                         font-weight: 600;
@@ -45,6 +77,27 @@
                                 &:nth-child(2) {
                                     display:none;
                                 }
+
+                                label {
+                                    @media (max-width: 769px) {
+                                        width: auto;
+                                    }
+                                }
+
+                                > div {
+                                    @media (max-width: 769px) {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+
+                            .btn-primary {
+                                @media (max-width: 769px) {
+                                    width: 100%;
+                                    margin-top: 15px;
+                                    display: block!important;
+                                }
+                                
                             }
                         }
                     }
