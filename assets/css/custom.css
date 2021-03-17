@@ -12,6 +12,7 @@
 @media (min-width: 1200px) {
   .container {
     width: 1190px;
+    position: relative;
   }
 }
 @media (min-width: 1200px) {
@@ -252,7 +253,6 @@
   margin-top: 10px;
   position: absolute;
   bottom: -10px;
-  z-index: 999;
   height: auto;
   font-weight: 500;
   line-height: 27px;
@@ -318,6 +318,15 @@
     bottom: -5px;
   }
 }
+#footer {
+  position: relative;
+}
+#footer .footer-container .row .home_popup #list-builder {
+  opacity: 0;
+}
+#footer .footer-container .row .home_popup #popup-box #popup-box-content form {
+  margin-top: 40px;
+}
 #footer .blockreassurance {
   border-top: 1px solid;
   border-bottom: 1px solid;
@@ -331,6 +340,15 @@
   font-style: italic;
   font-family: "AlegreyaSans";
   font-size: 12px;
+}
+#footer .block_newsletter {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#footer .row .text-sm-center a {
+  display: block;
+  text-align: center;
 }
 #custom-categories-container {
   margin-top: 40px;

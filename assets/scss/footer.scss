@@ -1,4 +1,21 @@
 #footer {
+    position: relative;
+    .footer-container {
+        .row {
+            .home_popup {
+                #list-builder {
+                    opacity: 0;
+                }
+                #popup-box {
+                    #popup-box-content {
+                        form {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .blockreassurance {
         .block-icon,
         .block-icon img {
@@ -12,5 +29,20 @@
         }
         border-top: 1px solid;
         border-bottom: 1px solid;
+    }
+
+    .block_newsletter {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .row {
+        .text-sm-center {
+            a {
+                display:block;
+                text-align: center;
+            }
+        }
     }
 }
