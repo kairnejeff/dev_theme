@@ -7,9 +7,45 @@
                     opacity: 0;
                 }
                 #popup-box {
+                    top:85%;
+                    left:350px;
+                    height:300px;
+                    #popup-close {
+                        top: 5px;
+                        right: 5px;
+                    }
                     #popup-box-content {
+                        height:auto;
+                        border-top: 1px solid #ccc;
+                        border-right: 1px solid #ccc;
+
+                        > div {
+                            height: auto;
+
+                            img {
+                                object-fit: cover;
+                            }
+                        }
                         form {
                             margin-top: 40px;
+
+                            .description {
+                                p {
+                                    &:first-child {
+                                        font-weight: 600;
+                                        margin-bottom:5px;
+                                    }
+                                    &:last-child {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+
+                            .form-group {
+                                &:nth-child(2) {
+                                    display:none;
+                                }
+                            }
                         }
                     }
                 }
@@ -31,14 +67,31 @@
         border-bottom: 1px solid;
     }
 
-    .block_newsletter {
-        position: absolute;
-        right: 0;
-        top: 0;
+    .container {
+
+        .block_newsletter {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            @media only screen and (min-device-width: 993px) and (max-device-width: 1025px)  {
+                bottom: 65px;
+            }
+
+            @media (max-width: 992px) {
+                position: relative;
+                padding-left:0;
+            }
+        }
     }
 
     .row {
         .text-sm-center {
+            margin-top:50px;
+
+            @media (max-width: 992px) {
+                margin-top:20px;
+            }
+
             a {
                 display:block;
                 text-align: center;

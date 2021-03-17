@@ -1,3 +1,7 @@
+body {
+  font-family: "AlegreyaSans";
+}
+
 /* logo */
 #header .logo {
   max-width: 400px;
@@ -50,23 +54,23 @@
     top: -115px;
     right: 30%;
   }
-  #header .header-nav .row .header-bottom #_desktop_top_menu {
+  #header .header-nav .row #_desktop_top_menu {
     width: 100%;
     padding: 0 20px;
   }
-  #header .header-nav .row .header-bottom #_desktop_top_menu ul {
+  #header .header-nav .row #_desktop_top_menu ul {
     display: flex;
     justify-content: space-between;
   }
-  #header .header-nav .row .header-bottom #_desktop_top_menu ul li {
+  #header .header-nav .row #_desktop_top_menu ul li {
     font-family: "AlegreyaSans";
     font-size: 14px;
   }
-  #header .header-nav .row .header-bottom #_desktop_top_menu ul li:not(:last-child) {
+  #header .header-nav .row #_desktop_top_menu ul li:not(:last-child) {
     margin-right: 10px;
     display: block;
   }
-  #header .header-nav .row .header-bottom #_desktop_top_menu ul li a {
+  #header .header-nav .row #_desktop_top_menu ul li a {
     text-transform: none;
     letter-spacing: 1px;
     word-spacing: -2px;
@@ -166,6 +170,10 @@
     border: 0;
   }
 }
+body {
+  font-family: "AlegreyaSans";
+}
+
 /*products*/
 .container #main #content #carousel ul {
   height: auto;
@@ -324,8 +332,38 @@
 #footer .footer-container .row .home_popup #list-builder {
   opacity: 0;
 }
+#footer .footer-container .row .home_popup #popup-box {
+  top: 85%;
+  left: 350px;
+  height: 300px;
+}
+#footer .footer-container .row .home_popup #popup-box #popup-close {
+  top: 5px;
+  right: 5px;
+}
+#footer .footer-container .row .home_popup #popup-box #popup-box-content {
+  height: auto;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#footer .footer-container .row .home_popup #popup-box #popup-box-content > div {
+  height: auto;
+}
+#footer .footer-container .row .home_popup #popup-box #popup-box-content > div img {
+  object-fit: cover;
+}
 #footer .footer-container .row .home_popup #popup-box #popup-box-content form {
   margin-top: 40px;
+}
+#footer .footer-container .row .home_popup #popup-box #popup-box-content form .description p:first-child {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+#footer .footer-container .row .home_popup #popup-box #popup-box-content form .description p:last-child {
+  font-size: 14px;
+}
+#footer .footer-container .row .home_popup #popup-box #popup-box-content form .form-group:nth-child(2) {
+  display: none;
 }
 #footer .blockreassurance {
   border-top: 1px solid;
@@ -341,15 +379,38 @@
   font-family: "AlegreyaSans";
   font-size: 12px;
 }
-#footer .block_newsletter {
+#footer .container .block_newsletter {
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
+}
+@media only screen and (min-device-width: 993px) and (max-device-width: 1025px) {
+  #footer .container .block_newsletter {
+    bottom: 65px;
+  }
+}
+@media (max-width: 992px) {
+  #footer .container .block_newsletter {
+    position: relative;
+    padding-left: 0;
+  }
+}
+#footer .row .text-sm-center {
+  margin-top: 50px;
+}
+@media (max-width: 992px) {
+  #footer .row .text-sm-center {
+    margin-top: 20px;
+  }
 }
 #footer .row .text-sm-center a {
   display: block;
   text-align: center;
 }
+body {
+  font-family: "AlegreyaSans";
+}
+
 #custom-categories-container {
   margin-top: 40px;
 }
@@ -383,7 +444,6 @@
 
 .categories-preview h3 {
   position: absolute;
-  z-index: 10;
   width: 100%;
   text-align: center;
   margin: auto;
@@ -458,6 +518,10 @@
 .grid-controle button:focus {
   outline: unset;
 }
+body {
+  font-family: "AlegreyaSans";
+}
+
 .info-detailed {
   font-size: 14px;
 }
@@ -634,6 +698,10 @@
   background-size: 100%;
   pointer-events: none;
 }
+body {
+  font-family: "AlegreyaSans";
+}
+
 .login-form form section {
   position: relative;
 }
@@ -661,6 +729,10 @@ form section .form-group:first-child .form-control-valign .radio-inline:first-ch
 form section .form-group:first-child .form-control-valign .radio-inline span {
   margin-right: 3px;
 }
+body {
+  font-family: "AlegreyaSans";
+}
+
 #header .header-nav {
   box-shadow: none;
   margin-top: none;
