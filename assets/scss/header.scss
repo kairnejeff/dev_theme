@@ -112,21 +112,20 @@
                 .mobile {
                     position: relative;
                     #_mobile_cart {
-                        position: absolute;
+                        position: relative;
                         right: 10px;
                         top: 20px;
                     }
                     #_mobile_user_info {
-                        position: absolute;
+                        position: relative;
                         top: 20px;
-                        right: 100px;
+                        right: 20px;
                     }
                     #_mobile_logo {
                         a {
                             img {
                                 max-height: 120px;
                                 margin-left: 50px;
-
                                 @media (max-width: 468px) {
                                     margin-left: -10px;
                                 }
@@ -145,7 +144,6 @@
                         //     .ui-autocomplete-input {
                         //         min-width: 100%;
                         //     }
-                        
                     }
                 }
             }
@@ -201,5 +199,3 @@
         }
     }
 }
-
-

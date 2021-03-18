@@ -26,7 +26,6 @@
                     }
                     >div {
                         margin-bottom: 50px;
-
                         @media (max-width: 960px) {
                             margin-bottom: 70px;
                         }
@@ -89,16 +88,14 @@
                                     font-weight: 500;
                                     line-height: 27px;
                                     &:hover {
-                                        color: $blue;
+                                        color: $hover;
                                     }
-
                                     @media (max-width: 960px) {
                                         bottom: -25px;
                                     }
                                 }
                                 .product-price-and-shipping {
                                     bottom: -35px;
-
                                     @media (max-width: 960px) {
                                         bottom: -55px;
                                     }
@@ -115,7 +112,6 @@
             .home-category-foot {
                 .categories-preview {
                     margin-top: 40px;
-
                     @media (max-width: 480px) {
                         display: block;
                     }
@@ -125,16 +121,16 @@
         .block-category-inner {
             #category-description {
                 .col-md-4 {
-                    @media (max-width:1200px) {
+                    @media (max-width: 1200px) {
                         width: 100%;
                     }
                     .col-md-8 {
-                        @media (max-width:1200px) {
+                        @media (max-width: 1200px) {
                             width: 100%;
                         }
                         img {
-                            @media (max-width:1200px) {
-                                display:block;
+                            @media (max-width: 1200px) {
+                                display: block;
                                 margin: 0 auto;
                             }
                             @media (max-width: 480px) {
@@ -169,12 +165,10 @@
             }
         }
     }
-
     .up {
         a {
             position: relative;
             padding-right: 30px;
-
             i {
                 position: absolute;
                 bottom: 3px;

@@ -95,9 +95,7 @@ function addCompleteCssProgressBar() {
 
 })();
 
-
-//mon compte 
-(function() {
+function setComptedisplay() {
     var width = $('.my-account').width();
     const margin = 20
     const colum = 2
@@ -123,6 +121,11 @@ function addCompleteCssProgressBar() {
         })
         $('.info-blocs').css('height', columheight[0] > columheight[1] ? columheight[0] + 'px' : columheight[1] + 'px')
     }
+}
+//mon compte 
+(function() {
+    setComptedisplay()
+    $(window).resize(setComptedisplay)
 })();
 
 
@@ -150,7 +153,7 @@ function productAccordion() {
         $('.info-detailed .collapse').collapse()
 
     } else {
-        
+
         $('.info-detailed .collapse').on('show.bs.collapse', function() {
             $(this).prev().find("i")[0].innerHTML = 'expand_less';
         });
@@ -202,5 +205,3 @@ $(document).ready(function() {
     })
 
 })
-
-
