@@ -10353,7 +10353,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
         margin-bottom: 0;
         box-shadow: none;
         padding: 0;
-        background: #eee;
+        border-top: 1px solid;
     }
     #category #left-column #search_filters .facet {
         padding-top: 0;
@@ -10416,6 +10416,9 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     #new-products #content-wrapper,
     #prices-drop #content-wrapper {
         width: 100%
+    }
+    #facet_section .button-filtre {
+        text-align: center;
     }
 }
 
@@ -12712,13 +12715,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
         background: #fff;
         margin-bottom: .625rem;
         color: #232323
-    }
-    #header .header-nav .top-logo {
-        padding-top: 11px
-    }
-    #header .header-nav .top-logo a img {
-        max-height: 50px;
-        max-width: 100%
     }
     #header .header-nav .right-nav {
         -webkit-box-orient: vertical;

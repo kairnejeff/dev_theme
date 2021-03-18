@@ -38,13 +38,13 @@
                     width: 100%;
                     position: relative;
                     #_desktop_logo {
-                        margin-top: -2em;
+                        margin-top: 3rem;
                     }
                     .right-nav {
                         width: 300px;
                         position: absolute;
                         right: 0;
-                        top: 50px;
+                        top: 70px;
                     }
                 }
                 .header-bottom {
@@ -98,15 +98,16 @@
                     display: flex;
                     width: 100%;
                     position: relative;
-                    #_desktop_logo {
-                        width: 100%;
-                        padding: 0;
-                    }
                     .right-nav {
                         width: 300px;
                         position: absolute;
                         right: 0;
                         top: 65px;
+                    }
+                    #_desktop_logo {
+                        img {
+                            margin-top: 3rem;
+                        }
                     }
                 }
                 .mobile {
@@ -124,10 +125,10 @@
                     #_mobile_logo {
                         a {
                             img {
-                                max-height: 120px;
-                                margin-left: 50px;
+                                max-height: 100px;
+                                margin-top: 2rem;
                                 @media (max-width: 468px) {
-                                    margin-left: -10px;
+                                    max-height: 70px;
                                 }
                             }
                         }
@@ -137,13 +138,6 @@
                     width: 100%;
                     .search-widget {
                         display: none;
-                        // margin-top: 20px;
-                        // width: 100%;
-                        // form {
-                        //     width: 100%;
-                        //     .ui-autocomplete-input {
-                        //         min-width: 100%;
-                        //     }
                     }
                 }
             }

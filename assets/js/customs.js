@@ -204,4 +204,19 @@ $(document).ready(function() {
         window.location.replace(window.location.href.split('?')[0] + params)
     })
 
+    var windowsize = $(window).width()
+    $(window).scroll(function() {
+        if (windowsize < 767) {
+            var scrollTop = $(this).scrollTop();　　
+            var scrollHeight = $(document).height();
+            var windowHeight = $(this).height();　　　
+            if (scrollTop + windowHeight - scrollHeight > -700) {　　　　
+                $('#filtre-name').addClass('show-filtre')　　
+            } else {
+                $('#filtre-name').removeClass('show-filtre')
+            }
+        }
+
+    });
+
 })

@@ -21,7 +21,7 @@
     <div id="filtre-name" class="hidden-md-up" data-target="#facet_section" data-toggle="collapse" aria-expanded="false">
       <p class="facet-title">
         <span class="material-icons">manage_search</span>
-        Fitrer
+        <span class="filtre-sr">Fitrer</span>
       </p>
     </div>
     {block name='facets_clearall_button'}
