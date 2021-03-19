@@ -1,3 +1,12 @@
+@media screen and (min-width: 768px) {
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+}
+
 .page-cms .page-header h1 {
     text-align: center;
 }
