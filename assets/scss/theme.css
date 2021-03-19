@@ -339,6 +339,7 @@ textarea {
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/material.woff2') format('woff2');
+    font-display: swap;
 }
 
 .material-icons {
@@ -9662,6 +9663,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 .product-accessories .thumbnail-container .product-thumbnail img,
 .product-miniature .thumbnail-container .product-thumbnail img {
     width: 100%;
+    height: auto;
 }
 
 #products .products-section-title,
