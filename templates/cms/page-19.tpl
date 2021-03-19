@@ -22,31 +22,11 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-{extends file='page.tpl'}
+{extends file='cms/page.tpl'}
 
-{block name='page_title'}
-  <span class="sitemap-title">{l s='Sitemap' d='Shop.Theme.Global'}</span>
+{block name='breadcrumb'}
+    {include file='cms/cms-nav-qualitebio.tpl'}
 {/block}
-
-{block name='page_content_container'}
-  <div class="container-fluid">
-    <div class="row sitemap col-xs-12">
-        <div class="col-md-3">
-          <h2>{$our_offers}</h2>
-          {include file='cms/_partials/sitemap-nested-list.tpl' links=$links.offers}
-        </div>
-        <div class="col-md-3">
-          <h2>{$categories}</h2>
-          {include file='cms/_partials/sitemap-nested-list.tpl' links=$links.categories}
-        </div>
-        <div class="col-md-3">
-          <h2>{$your_account}</h2>
-          {include file='cms/_partials/sitemap-nested-list.tpl' links=$links.user_account}
-        </div>
-        <div class="col-md-3">
-          <h2>{$pages}</h2>
-          {include file='cms/_partials/sitemap-nested-list.tpl' links=$links.pages}
-        </div>
-    </div>
-  </div>
+{block name='page_title'}
+    Une qualité totalement bio
 {/block}
