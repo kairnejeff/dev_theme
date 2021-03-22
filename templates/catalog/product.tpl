@@ -146,7 +146,7 @@
     <div class="info-all row clearfix">	
 		<div class="info-detailed col-md-7">
 		{if isset($product.features)}
-      <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#composition" aria-expanded="false" aria-controls="collapseOne"">
+      <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#composition" aria-expanded="false" aria-controls="collapseOne">
 			<h2 class="font3 text-uppercase">Ingrédients / composition</h2>
       <i class="material-icons hidden-md-up">expand_more</i>
       </div>
@@ -160,7 +160,7 @@
         {/foreach}
       </div>
 
-      <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#preperation" aria-expanded="false" aria-controls="collapseOne"">
+      <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#preperation" aria-expanded="false" aria-controls="collapseOne">
 			<h2 class="font3 text-uppercase">Préparation</h2>
       <i class="material-icons hidden-md-up">expand_more</i>
       </div>
@@ -172,13 +172,24 @@
 			{/foreach}
       </div>
 			
-      <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#history" aria-expanded="false" aria-controls="collapseOne"">
+      <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#history" aria-expanded="false" aria-controls="collapseOne">
 			<h2 class="font3 text-uppercase">Histoire de la recette</h2> 
       <i class="material-icons hidden-md-up">expand_more</i>
       </div>
       <div id="history" class="info-detail-content collapse">
 			{foreach from=$product.features item=feature}
 				{if ($feature.name == "Histoire de la recette")}
+					<p>{$feature.value|escape:'html':'UTF-8'}</p>
+				{/if}
+			{/foreach}
+      </div>
+      <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#know" aria-expanded="false" aria-controls="collapseOne">
+			<h2 class="font3 text-uppercase">En savoir plus</h2> 
+      <i class="material-icons hidden-md-up">expand_more</i>
+      </div>
+      <div id="history" class="info-detail-content collapse">
+			{foreach from=$product.features item=feature}
+				{if ($feature.name == "En savoir plus")}
 					<p>{$feature.value|escape:'html':'UTF-8'}</p>
 				{/if}
 			{/foreach}

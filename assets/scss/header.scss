@@ -43,14 +43,19 @@
                     display: flex;
                     width: 100%;
                     position: relative;
+                    margin-bottom: 30px;
                     #_desktop_logo {
                         margin-top: 3rem;
+                        .logo {
+                            display:block;
+                            margin:0 auto;
+                        }
                     }
                     .right-nav {
                         width: 300px;
                         position: absolute;
                         right: 0;
-                        top: 70px;
+                        top: 0;
                     }
                 }
                 .header-bottom {
@@ -59,8 +64,9 @@
                     position: relative;
                     #search_widget {
                         position: absolute;
-                        top: -105px;
+                        top: -95px;
                         right: 30%;
+                        display:none;
                     }
                 }
                 #_desktop_top_menu {
@@ -120,20 +126,19 @@
                     #_mobile_cart {
                         position: relative;
                         right: 10px;
-                        top: 20px;
+                        top: 0;
                     }
                     #_mobile_user_info {
                         position: relative;
-                        top: 20px;
+                        top: 0;
                         right: 20px;
                     }
                     #_mobile_logo {
                         a {
                             img {
-                                max-height: 100px;
                                 margin-top: 2rem;
-                                @media (max-width: 468px) {
-                                    max-height: 70px;
+                                @media (max-width: 768px) {
+                                    margin-left:0;
                                 }
                             }
                         }

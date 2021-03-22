@@ -1,10 +1,13 @@
 #search_filters {
+    @media (max-width: 767px) {
+        padding: 20px 0!important;
+    }
     #filtre-name {
         text-align: center;
         font-size: 1.2em;
         p {
-            margin: unset;
             position: relative;
+
             .filtre-sr {
                 position: relative;
                 top: -5px;
