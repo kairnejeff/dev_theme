@@ -2,21 +2,19 @@
 
 #main {
     .cart-grid {
-        .cart-grid-body{
+        .cart-grid-body {
             .cart-container {
                 hr {
                     margin-bottom: 20px;
                 }
                 .product-line-grid {
-                    height:125px;
+                    height: 125px;
                     .product-line-grid-body {
                         height: 100%;
                         position: relative;
-
                         @media (max-width: 468px) {
-                            height:auto;
+                            height: auto;
                         }
-
                         .price {
                             span {
                                 position: absolute;
@@ -28,25 +26,21 @@
                         }
                     }
                     .product-line-grid-right {
-                        @media (max-width:768px) {
+                        @media (max-width: 768px) {
                             margin-top: 20px;
                             margin-bottom: 50px;
-
                             .row {
-                                > div {
+                                >div {
                                     line-height: 2.5em;
                                 }
-
                                 .bootstrap-touchspin {
                                     box-shadow: inherit;
                                     @media (max-width: 768px) {
-                                        width:100%;
+                                        width: 100%;
                                         border: 1px solid rgba(0, 0, 0, .25);
-
-                                        > input {
+                                        >input {
                                             border: 0;
                                         }
-
                                         .input-group-btn-vertical {
                                             float: right;
                                         }
@@ -58,16 +52,10 @@
                 }
             }
         }
-
         .cart-grid-right {
             .cart-summary {
-                .card-block {
-                    #cart-subtotal-shipping {
-                        display: none;
-                    }
-                }
                 .cart-detailed-actions {
-                    > div {
+                    >div {
                         text-align: center;
                         a {
                             @include button;
