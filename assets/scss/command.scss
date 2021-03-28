@@ -8,13 +8,33 @@
 
 #blockcart-modal {
     .modal-dialog {
+        .modal-header {
+            h4 {
+                text-align: center;
+                position: relative;
+
+                i {
+                    position: absolute;
+                    left: 35%;
+                }
+            }
+        }
         .modal-body {
             .row {
                 .cart-content {
                     .cart-content-btn {
+                        button {
+                            height: 40px;
+                        }
                         a {
+                            position: relative;
+                            padding-left: 40px;
+                            @include button;
                             i {
                                 font-size: 18px;
+                                position: absolute;
+                                left: 15px;
+                                bottom: 10px;
                             }
                         }
                     }

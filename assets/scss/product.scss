@@ -34,9 +34,11 @@
         td:last-child {
             width: 35px;
         }
+        
         .product-images>li.thumb-container>.thumb {
             box-shadow: unset
         }
+        
     }
     .grey {
         background: #EEEEEE;
@@ -58,6 +60,55 @@
             }
         }
         #main {
+            .product-container {
+                > div {
+                    &:first-child {
+                        .page-content {
+                            width: auto;
+                            .js-qv-mask {
+                                display: none;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        .h1 {
+                            padding-left: 8px;
+                            text-transform: lowercase;
+                            line-height: 0.9;
+                            border-left: 1px solid $black;
+
+                            // &::before {
+
+                            // }
+                        }
+                        .product-information {
+                            > div {
+                                &:first-child {
+                                    p {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                            .product-actions {
+                                .product-add-to-cart {
+                                    .product-quantity {
+                                        .add {
+                                            .btn-primary {
+                                                padding: 0.6rem 1.25rem;
+                                                .icon-panier-off {
+                                                    &:before {
+                                                        font-size: 15px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             .products {
                 @media (max-width: 480px) {
                     justify-content: space-around;
@@ -83,7 +134,7 @@
         text-align: center;
         text-transform: uppercase!important;
         font-size: 11px;
-        font-family: RobotoMono Medium;
+        font-family: RobotoMono;
         margin-bottom: 20px;
     }
 }

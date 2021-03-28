@@ -60,7 +60,7 @@
   }
   #header .header-nav .row #_desktop_top_menu ul li {
     font-family: "AlegreyaSans";
-    font-size: 14px;
+    font-size: 16px;
   }
   #header .header-nav .row #_desktop_top_menu ul li:not(:last-child) {
     margin-right: 10px;
@@ -72,7 +72,7 @@
     padding: 0;
     font-weight: 400;
     font-family: "AlegreyaSans";
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 1200px) {
@@ -248,8 +248,6 @@
 }
 .container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description h3 {
   text-align: left;
-  border-left: 1px solid #000;
-  padding-left: 5px;
   text-transform: lowercase;
 }
 .container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description h3 a {
@@ -741,15 +739,16 @@
 }
 
 #facet_section input[type=checkbox] {
-  display: none;
+  display: inline-block;
 }
 #facet_section label {
   margin-bottom: 0;
+  margin-left: 5px;
   border: none;
   position: relative;
   text-align: left;
   width: 100%;
-  display: block;
+  display: inline;
 }
 #facet_section label:hover {
   cursor: pointer;
@@ -757,20 +756,8 @@
 #facet_section .form-check-filtre:first-child {
   margin-bottom: 10px;
 }
-#facet_section .form-checked {
-  background-color: #eee;
-  padding: 5px;
-}
 #facet_section .checked + label:after {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: 5px;
-  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/OOjs_UI_icon_check-constructive.svg/1200px-OOjs_UI_icon_check-constructive.svg.png);
-  background-size: 100%;
-  pointer-events: none;
+ display:none!important;
 }
 .login-form form section {
   position: relative;

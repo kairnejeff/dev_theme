@@ -144,7 +144,7 @@
       </div>
     </div>
     <div class="info-all row clearfix">	
-		<div class="info-detailed col-md-7">
+		<div class="info-detailed col-md-6">
 		{if isset($product.features)}
       <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#composition" aria-expanded="false" aria-controls="collapseOne">
 			<h2 class="font3 text-uppercase">Ingrédients / composition</h2>
@@ -197,7 +197,7 @@
 
 		{/if}
 		</div>
-		<div class="info-detailed col-md-5">
+		<div class="info-detailed col-md-6">
 		{if isset($product.features)}
       <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#mentions" aria-expanded="false" aria-controls="collapseOne"">
 			<h2 class="font3 text-uppercase">Mentions</h2>

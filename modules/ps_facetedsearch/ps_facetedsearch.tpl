@@ -22,6 +22,11 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
+<div class="block-category-inner">
+    {if $category.description}
+        <div id="category-description" class="text-muted">{$category.description nofilter}</div>
+    {/if}
+</div>
 {if isset($listing.rendered_facets)}
 <div id="search_filters_wrapper">
   {* <div id="search_filter_controls" class="hidden-md-up">
