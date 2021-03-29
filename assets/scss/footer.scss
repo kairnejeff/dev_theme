@@ -109,6 +109,7 @@
     }
     .container {
         .block_newsletter {
+            bottom: auto!important;
             @media (max-width: 768px) {
                 p {
                     padding: 0.625em;
