@@ -1,5 +1,6 @@
 import '/scss/theme.css';
 import '/scss/header.scss';
+import '/scss/bentos.scss';
 import '/scss/home.scss';
 import '/scss/footer.scss';
 import '/scss/categorie-grid.scss';

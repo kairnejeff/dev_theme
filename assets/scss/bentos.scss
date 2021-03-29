@@ -1,0 +1,33 @@
+.category-id-71 {
+    .container {
+        >#left-column {
+            display: none;
+        }
+
+        #content-wrapper {
+            margin: 0 auto;
+            float: inherit;
+            padding: 0;
+
+            #main {
+                .block-category {
+                    width: 100%;
+
+                    .category-cover {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .page-home {
+                    #custom-text {
+                        #custom-text-container {
+                            text-align: center!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
