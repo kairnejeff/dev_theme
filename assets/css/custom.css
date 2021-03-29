@@ -38,12 +38,12 @@
     #header .header-nav .row .navigation-header #_desktop_logo {
         margin-top: -2em;
     }
-    #header .header-nav .row .navigation-header .right-nav {
+    /* #header .header-nav .row .navigation-header .right-nav {
         width: 300px;
         position: absolute;
         right: 0;
         top: 0;
-    }
+    } */
     #header .header-nav .row .header-bottom {
         width: 100%;
         padding: 0;
