@@ -301,7 +301,7 @@
 }
 
 .container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description .product-price-and-shipping {
-    bottom: -35px;
+    bottom: -40px;
 }
 
 @media (max-width: 960px) {
