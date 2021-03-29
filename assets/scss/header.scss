@@ -47,8 +47,8 @@
                     #_desktop_logo {
                         margin-top: 3rem;
                         .logo {
-                            display:block;
-                            margin:0 auto;
+                            display: block;
+                            margin: 0 auto;
                         }
                     }
                     .right-nav {
@@ -66,7 +66,7 @@
                         position: absolute;
                         top: -95px;
                         right: 30%;
-                        display:none;
+                        display: none;
                     }
                 }
                 #_desktop_top_menu {
@@ -114,9 +114,8 @@
                         position: absolute;
                         right: 0;
                         top: 65px;
-
                         #_desktop_cart {
-                            .cart-preview.active{
+                            .cart-preview.active {
                                 background: $white;
                                 a {
                                     color: $black;
@@ -147,7 +146,8 @@
                             img {
                                 margin-top: 2rem;
                                 @media (max-width: 768px) {
-                                    margin-left:0;
+                                    margin-left: 1rem;
+                                    max-width: 50%;
                                 }
                             }
                         }
