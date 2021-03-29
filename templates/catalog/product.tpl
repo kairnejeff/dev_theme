@@ -183,17 +183,6 @@
 				{/if}
 			{/foreach}
       </div>
-      <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#know" aria-expanded="false" aria-controls="collapseOne">
-			<h2 class="font3 text-uppercase">En savoir plus</h2> 
-      <i class="material-icons hidden-md-up">expand_more</i>
-      </div>
-      <div id="history" class="info-detail-content collapse">
-			{foreach from=$product.features item=feature}
-				{if ($feature.name == "En savoir plus")}
-					<p>{$feature.value|escape:'html':'UTF-8'}</p>
-				{/if}
-			{/foreach}
-      </div>
 
 		{/if}
 		</div>
