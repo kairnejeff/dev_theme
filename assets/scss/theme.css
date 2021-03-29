@@ -12469,7 +12469,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 
 #header .header-nav .user-info {
     margin-left: 2.5rem;
-    margin-top: .9375rem;
+    margin-top: 1.1rem;
     text-align: right;
     white-space: nowrap
 }
@@ -12545,7 +12545,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 #header .header-nav .material-icons.expand-more {
     margin-left: -.375rem
 }
-
 
 #header .header-top>.container {
     position: relative
