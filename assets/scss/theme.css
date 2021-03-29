@@ -12546,9 +12546,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     margin-left: -.375rem
 }
 
-#header .header-top {
-    padding-bottom: 1.25rem
-}
 
 #header .header-top>.container {
     position: relative
