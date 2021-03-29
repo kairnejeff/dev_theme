@@ -40,7 +40,6 @@
         rel="nofollow"
       >
         <i class="material-icons hidden-md-up logged">&#xE7FF;</i>
-        <span class="hidden-sm-down">{$customerName}</span>
       </a>
     {else}
       <a
