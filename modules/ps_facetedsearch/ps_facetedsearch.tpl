@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 <div class="block-category-inner">
-    {if $category.description}
+    {if isset($category.description)}
         <div id="category-description" class="text-muted">{$category.description nofilter}</div>
     {/if}
 </div>
