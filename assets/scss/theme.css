@@ -10850,6 +10850,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 #blockcart-modal .product-image {
     width: 100%;
     max-width: 9.375rem;
+    max-height: 9.375rem;
     display: block;
     margin: 0 0 0 auto
 }
@@ -11298,7 +11299,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 
 @media (max-width:991px) {
     .product-cover img {
-        width: 100%
+        width: 100%;
     }
     #product-modal .modal-content .modal-body {
         -webkit-box-orient: vertical;
@@ -11576,7 +11577,8 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .product-line-grid-left img {
-    max-width: 100%
+    max-width: 125px;
+    max-height: 125px;
 }
 
 .product-line-grid-body>.product-line-info>.label {
@@ -12438,7 +12440,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 
 #header .header-nav .user-info {
     margin-left: 2.5rem;
-    margin-top: 1rem;
+    margin-top: 0.9rem;
     text-align: right;
     white-space: nowrap;
     font-size:12px;
@@ -12514,10 +12516,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 
 #header .header-nav .material-icons.expand-more {
     margin-left: -.375rem
-}
-
-#header .header-top>.container {
-    position: relative
 }
 
 #header .header-top .menu {

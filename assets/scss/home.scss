@@ -47,12 +47,10 @@
                         height: 100%;
                         position: relative;
                         .thumbnail-container {
-                            box-shadow: none;
                             @media (max-width: 480px) {
                                 width: 100%;
                             }
                             a:first-child {
-                                height: 100%;
                                 &:hover {
                                     opacity: 0.4;
                                 }
@@ -215,3 +213,15 @@
     }
 }
 
+/*Nous connaître*/
+
+.chapter {
+    margin-bottom: 20px;
+
+    a {
+        img {
+            max-width: 314px!important;
+            max-height: 403px!important;
+        }
+    }
+}

@@ -51,8 +51,8 @@
 }
 
 .label-bio img {
-    max-width: 100px;
-    max-height: 100%;
+    max-width: 68px;
+    max-height: 52px;
 }
 
 #wrapper {
@@ -146,11 +146,45 @@
 
         .product-container {
             .col-md-6 {
+                &:first-child {
+                    .page-content {
+                        .images-container {
+                            .product-cover {
+                                img {
+                                    max-width: 565px;
+                                    max-height: 565px;
+
+                                    @media (max-width: 1200px){
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
                 &:nth-child(2) {
                     .product-prices {
                         .current-price {
                             span {
                                 font-size: 16px;
+                            }
+                        }
+                    }
+                    .product-information {
+                        .product-actions {
+                            form {
+                                .product-add-to-cart {
+                                    #product-availability {
+                                        position: relative;
+                                        padding-left: 30px;
+
+                                        i {
+                                            position: absolute;
+                                            left: 0;
+                                            bottom: 2px;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }

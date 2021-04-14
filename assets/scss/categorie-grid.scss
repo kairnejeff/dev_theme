@@ -7,6 +7,15 @@
     }
 }
 
+.block-category img {
+    max-width: 840px;
+    max-height: 293.95px;
+
+    @media (max-width:1200px) {
+        max-width: 100%!important;
+    }
+}
+
 .categories-preview {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -21,9 +30,13 @@
 
 .categories-preview {
     img {
-        max-width: 100%;
-        height: 100%;
+        max-width: 275px;
+        height: 150px;
         object-fit: cover;
+
+        @media (max-width: 1200px) {
+            max-width: 100%;
+        }
     }
 }
 

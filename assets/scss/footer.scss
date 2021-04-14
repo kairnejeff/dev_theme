@@ -110,10 +110,13 @@
     }
     .blockreassurance {
         .block-icon,
-        .block-icon img {
-            height: 30px;
-            width: auto;
-        }
+            .block-icon {
+                margin: 0 auto;
+                img {
+                    height: 30px;
+                    width: 52px;
+                }
+            }
         .block-title {
             margin-top: 10px;
             font-style: italic;
