@@ -51,7 +51,7 @@
                             @media (max-width: 480px) {
                                 width: 100%;
                             }
-                            a {
+                            a:first-child {
                                 height: 100%;
                                 &:hover {
                                     opacity: 0.4;
@@ -97,10 +97,7 @@
                                     font-weight: 500;
                                     line-height: 27px;
                                     color: $hover;
-                                    &:hover {
-                                        color: $black;
-                                        opacity: 1;
-                                    }
+                            
                                     @media (max-width: 960px) {
                                         bottom: -25px;
                                     }
@@ -115,6 +112,10 @@
                                         font-family: 'RobotoMono';
                                         font-size: 13px;
                                     }
+                                }
+
+                                &:after {
+                                    content: "";
                                 }
                             }
                             .highlighted-informations {
