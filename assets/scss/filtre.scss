@@ -31,6 +31,24 @@
             .facet {
                 .facet-title {
                     overflow: visible;
+                    text-transform: uppercase;
+                    letter-spacing: .1rem;
+                    font-size: 13px;
+                }
+            }
+
+            .button-filtre {
+                #category-filtre {
+                    color: $black;
+                    background-color: $white;
+                    border: 1px solid $greylight;
+                    position: relative;
+                    padding-left: 40px;
+
+                    i {
+                        position: absolute;
+                        left: 10px;
+                    }
                 }
             }
         }

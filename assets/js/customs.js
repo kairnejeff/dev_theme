@@ -23,6 +23,83 @@ $(document).ready(function() {
     $(window).resize(mobileMenu);
 })
 
+$(document).ready(function(){
+    // Get current page URL
+    var url = window.location.href;
+
+    // // // remove parameters from URL
+    // url = url.substring(0, (url.indexOf("?") == -1) ? url.length : url.indexOf("?"));
+
+    // // select file name
+    // url = url.substr(url.lastIndexOf("/") + 1);
+ 
+    // If file name not avilable
+    if(url == ''){
+        url = 'https://www.karinejeff.fr/';
+    }
+ 
+    // Loop all menu items
+    $('#top-menu .category .dropdown-item').each(function(){
+
+        // select href
+        var href = $(this).attr('href');
+
+        console.log("href :"+ href);
+
+        if(url == href) {
+            if(href == "https://www.karinejeff.fr/79-soupes-gaspachos") {
+                $(this).css('color', '#f9992f');
+            } else if(href == "https://www.karinejeff.fr/78-plats-accompagnements") {
+                $(this).css('color', '#ff3e39');
+    
+            } else if(href == "https://www.karinejeff.fr/80-legumes-naturel") {
+                $(this).css('color', '#647b3f');
+    
+            } else if(href == "https://www.karinejeff.fr/40-douceurs-confitures") {
+                $(this).css('color', '#e8ae32');
+    
+            } else if(href == "https://www.karinejeff.fr/58-sauces-aides-culinaires") {
+                $(this).css('color', '#e0a077');
+    
+            } else if(href == "https://www.karinejeff.fr/71-bentos-saisonniers") {
+                $(this).css('color', '#464646');
+    
+            }   
+        }
+
+
+
+        // if(url == href) {
+        //     $('#top-menu .category').each(function(){
+            
+        //         var id = $(this).attr('id');
+
+        //         console.log("id :" + id);
+
+        //         if(id == "category-79") {
+        //             $('.dropdown-item').css('color', '#f9992f');
+
+        //         } else if (id == "category-80") {
+        //             $(this).css('color', '#ff3e39');
+
+        //         } else if (id == "category-78") {
+        //             $(this).css('color', '#647b3f');
+                    
+        //         } else if (id == "category-40") {
+        //             $(this).css('color', '#e8ae32');
+                    
+        //         } else if (id == "category-58") {
+        //             $(this).css('color', '#e0a077');
+                    
+        //         } else if (id == "category-71") {
+        //             $(this).css('color', '#464646');
+                    
+        //         }
+        //     });  
+        // }
+    });
+});
+
 
 
 /*

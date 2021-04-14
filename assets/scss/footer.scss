@@ -91,12 +91,28 @@
                     }
                 }
             }
+
+            .block_newsletter {
+                .row {
+                    @media (max-width: 768px) {
+                        padding-left: 15px;
+                    }
+
+                    > p {
+                        @media (max-width: 768px) {
+
+                            padding: 0;
+                        }
+                    }
+                }
+            }
         }
     }
     .blockreassurance {
         .block-icon,
         .block-icon img {
             height: 30px;
+            width: auto;
         }
         .block-title {
             margin-top: 10px;

@@ -114,3 +114,38 @@
     }
 }
 
+
+/*Information*/
+
+.info-blocs {
+    position: relative;
+
+    > a {
+        position: absolute;
+        bottom: -50px;
+        left: -18px;
+
+        span {
+            position: relative;
+            padding-left: 30px;
+
+            i {
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+
+    .info-bloc {
+        .info-bloc-content {
+            .font3 {
+                text-transform: uppercase;
+            }
+            .button {
+                a {
+                    line-height: inherit;
+                }
+            }
+        }
+    }
+}

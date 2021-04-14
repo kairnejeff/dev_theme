@@ -2,7 +2,7 @@
 
 #header .logo {
     max-width: 400px;
-    max-height: auto;
+    max-height: 100%;
 }
 
 .top-menu .sub-menu.collapse {
@@ -22,7 +22,6 @@
 @media (min-width: 1200px) {
     #header .header-nav {
         max-height: 100%;
-        margin-top: 50px;
         border: none;
     }
     #header .header-nav .row {
@@ -72,7 +71,7 @@
     }
     #header .header-nav .row #_desktop_top_menu ul li a {
         text-transform: none;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
         padding: 0;
         font-weight: 400;
         font-family: "AlegreyaSans";
@@ -290,9 +289,9 @@
     line-height: 27px;
 }
 
-.container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description .recipe:hover {
+/* .container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description .recipe:hover {
     color: #2fb5d2;
-}
+} */
 
 @media (max-width: 960px) {
     .container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description .recipe {

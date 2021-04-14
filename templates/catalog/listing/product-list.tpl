@@ -54,12 +54,25 @@
           {block name='product_list'}
             {include file='catalog/_partials/products.tpl' listing=$listing}
           {/block}
-        </div>
+
+          {* <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#know" aria-expanded="false" aria-controls="collapseOne">
+          <h2 class="font3 text-uppercase">En savoir plus</h2> 
+          <i class="material-icons">expand_more</i>
+          </div>
+          <div id="know" class="info-detail-content collapse">
+              {foreach from=$product.features item=feature}
+                  {if ($feature.name == "En savoir plus")}
+                      <p>{$feature.value|escape:'html':'UTF-8'}</p>
+                  {/if}
+              {/foreach}
+          </div>
+        </div> *}
 
         <div id="js-product-list-bottom">
           {block name='product_list_bottom'}
             {include file='catalog/_partials/products-bottom.tpl' listing=$listing}
           {/block}
+
         </div>
 
       {else}
@@ -69,11 +82,14 @@
           {include file='errors/not-found.tpl'}
         </div>
 
-        <div id="js-product-list-bottom"></div>
+        <div id="js-product-list-bottom">
+        
+        </div>
       {/if}
+      
     </section>
 
     {hook h="displayFooterCategory"}
-
-  </section>
+    
+    </section>
 {/block}

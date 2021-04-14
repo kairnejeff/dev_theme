@@ -183,6 +183,17 @@
 				{/if}
 			{/foreach}
       </div>
+      <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#know" aria-expanded="false" aria-controls="collapseOne">
+			<h2 class="font3 text-uppercase">En savoir plus</h2> 
+      <i class="material-icons hidden-md-up">expand_more</i>
+      </div>
+      <div id="know" class="info-detail-content collapse">
+			{foreach from=$product.features item=feature}
+				{if ($feature.name == "En savoir plus")}
+					<p>{$feature.value|escape:'html':'UTF-8'}</p>
+				{/if}
+			{/foreach}
+      </div>
 
 		{/if}
 		</div>
@@ -257,7 +268,9 @@
     {block name='product_accessories'}
       {if $accessories}
         <section class="product-accessories clearfix">
-          <p class="h5 text-uppercase">{l s='You might also like' d='Shop.Theme.Catalog'}</p>
+          <p class="h5 text-uppercase">
+          <span>{l s='You might also like' d='Shop.Theme.Catalog'}</span>
+          </p>
           <div class="products" itemscope itemtype="http://schema.org/ItemList">
             {foreach from=$accessories item="product_accessory" key="position"}
               {block name='product_miniature'}

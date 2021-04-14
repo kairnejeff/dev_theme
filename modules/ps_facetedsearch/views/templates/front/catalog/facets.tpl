@@ -138,7 +138,10 @@
       </section>
     {/foreach}
     <div class="button-filtre">
-    <button id ="category-filtre" class="btn-primary">Appliquer</button>
+    <button id ="category-filtre" class="btn-primary">
+    <i class="material-icons rtl-no-flip">&#xE876;</i>
+      Appliquer
+    </button>
     </div>
     </div>
   </div>

@@ -54,7 +54,7 @@
                             a {
                                 height: 100%;
                                 &:hover {
-                                    opacity: 0.7;
+                                    opacity: 0.4;
                                 }
                                 img {
                                     max-width: 373.328px;
@@ -86,7 +86,7 @@
                                     }
                                 }
                                 .recipe {
-                                    font-family: 'RobotoMono';
+                                    font-family: $roboto;
                                     text-decoration: underline;
                                     text-transform: uppercase;
                                     font-size: 12px;
@@ -96,8 +96,10 @@
                                     height: auto;
                                     font-weight: 500;
                                     line-height: 27px;
+                                    color: $hover;
                                     &:hover {
-                                        color: $hover;
+                                        color: $black;
+                                        opacity: 1;
                                     }
                                     @media (max-width: 960px) {
                                         bottom: -25px;
@@ -164,6 +166,7 @@
                             }
                             @media (max-width: 480px) {
                                 width: 100%;
+                                height: auto;
                             }
                         }
                     }
@@ -183,6 +186,10 @@
                 .product-price-and-shipping {
                     position: absolute;
                     bottom: -25px;
+                    .price {
+                        font-family: $roboto;
+                        font-size: 14px;
+                    }
                 }
                 @media (max-width: 480px) {
                     height: auto;
@@ -206,3 +213,4 @@
         }
     }
 }
+
