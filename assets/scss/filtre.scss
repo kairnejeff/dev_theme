@@ -44,11 +44,25 @@
                     border: 1px solid $greylight;
                     position: relative;
                     padding-left: 40px;
+                    cursor: pointer;
 
                     i {
                         position: absolute;
                         left: 10px;
                     }
+                }
+            }
+        }
+
+        #_desktop_search_filters_clear_all {
+            a {
+                position: relative;
+                padding-left: 30px;
+
+                i {
+                    position: absolute;
+                    left: 8px;
+                    bottom: 3px;
                 }
             }
         }
