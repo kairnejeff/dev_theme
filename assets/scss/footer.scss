@@ -146,7 +146,11 @@
                     }
                 }
                 > div {
-                    padding-left: 15px;
+                    padding-left: 0;
+                    @media (max-width: 480px) {
+                        padding-left: 15px;
+                    }
+
 
                     form {
                         .row {
