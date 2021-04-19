@@ -118,6 +118,7 @@
             .products {
                 @media (max-width: 480px) {
                     justify-content: space-around;
+                    margin-top: 80px;
                     >div {
                         margin-bottom: 30px;
                     }

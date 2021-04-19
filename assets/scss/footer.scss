@@ -115,10 +115,14 @@
                 img {
                     height: 30px;
                     width: auto;
+
+                    @media (max-width: 480px) {
+                        width: auto;
+                    }
                 }
             }
         .block-title {
-            margin-top: 10px;
+            margin-left: 30px;
             font-style: italic;
             font-family: 'AlegreyaSans';
             font-size: 12px;
@@ -132,6 +136,27 @@
             @media (max-width: 768px) {
                 p {
                     padding: 0.625em;
+                }
+            }
+
+            .row {
+                > div {
+                    padding-left: 0;
+
+                    form {
+                        .row {
+                            margin-left: 0;
+                            padding-left: 0;
+
+                            div {
+                                padding-left: 0;
+
+                                p {
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
