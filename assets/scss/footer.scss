@@ -134,7 +134,7 @@
         .block_newsletter {
             bottom: auto!important;
             @media (max-width: 480px) {
-                p {
+                .block-newsletter-label {
                     padding-left: 15px!important;
                 }
             }
