@@ -135,13 +135,18 @@
             bottom: auto!important;
             @media (max-width: 768px) {
                 p {
-                    padding: 0.625em;
+                    padding-left: 15px;
                 }
             }
 
             .row {
+                p {
+                    @media (min-width: 1200px) {
+                        padding-left: 0;
+                    }
+                }
                 > div {
-                    padding-left: 0;
+                    padding-left: 15px;
 
                     form {
                         .row {
