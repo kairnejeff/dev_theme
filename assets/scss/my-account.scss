@@ -56,3 +56,19 @@
     text-align: center;
     margin: 20px 0 20px 0
 }
+
+.info-blocs {
+    .info-bloc:nth-child(3) {
+        .info-bloc-content {
+            .row {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                > div {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
