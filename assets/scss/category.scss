@@ -50,3 +50,25 @@
         outline: unset;
     }
 }
+
+.pagination {
+    > div {
+        padding: 0;
+    }
+}
+
+.info-all {
+    padding-left: 15px;
+
+    .savoir-plus {
+        > div {
+            position: relative;
+
+            i {
+                position: absolute;
+                left: 120px;
+                bottom: -5px;
+            }
+        }
+    }
+}
