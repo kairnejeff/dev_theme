@@ -1,9 +1,8 @@
 @import "global.scss";
-
-#checkout{
+#checkout {
     header {
         .header-nav {
-            margin-top:0;
+            margin-top: 0;
         }
     }
     .login-form {
@@ -25,23 +24,19 @@
                 @media (min-width: 768px) {
                     margin-top: 50px;
                 }
-                
             }
         }
     }
-
     // #wrapper {
     //     .container {
     //         #main {
     //             .card-block {
     //                 .register-form {
-                        
     //                 }
     //             }
     //         }
     //     }
     // }
-
     form {
         section {
             .form-group:first-child {
@@ -61,10 +56,6 @@
                 height: 100%;
                 line-height: initial;
             }
-            .form-group:nth-child(8),
-            .form-group:nth-child(9) {
-                display: none;
-            }
         }
         footer {
             button {
@@ -80,7 +71,6 @@
             @include button;
         }
     }
-
     #checkout-addresses-step {
         .content {
             #delivery-addresses {
@@ -122,26 +112,21 @@
     }
 }
 
-
 .info-blocs {
     position: relative;
-
-    > a {
+    >a {
         position: absolute;
         bottom: -50px;
         left: -18px;
-
         span {
             position: relative;
             padding-left: 30px;
-
             i {
                 position: absolute;
                 left: 0;
             }
         }
     }
-
     .info-bloc {
         .info-bloc-content {
             .font3 {
