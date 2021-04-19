@@ -27,11 +27,11 @@
     {if $logged}
       <a
         class="logout hidden-sm-down"
-        href="{$logout_url}"
+        href="{$my_account_url}"
         rel="nofollow"
       >
       <span class="icon-compte-on"></span>
-        {l s='Sign out' d='Shop.Theme.Actions'}
+        {l s='Mon compte' d='Shop.Theme.Actions'}
       </a>
       <a
         class="account"
