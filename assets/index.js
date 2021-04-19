@@ -11,6 +11,7 @@ import '/scss/filtre.scss';
 import '/scss/log.scss';
 import '/scss/command.scss';
 import '/scss/shop.scss';
+import '/scss/contact.scss'
 import '/scss/cms.css';
 import '/js/themes.js';
 import '/js/customs.js';
