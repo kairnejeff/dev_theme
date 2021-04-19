@@ -133,7 +133,7 @@
     .container {
         .block_newsletter {
             bottom: auto!important;
-            @media (max-width: 768px) {
+            @media (max-width: 480px) {
                 p {
                     padding-left: 15px!important;
                 }
