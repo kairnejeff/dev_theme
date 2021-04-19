@@ -85,9 +85,6 @@
                             font-family: 'AlegreyaSans';
                             font-size: 16px;
 
-                            &#category-79:target {
-                                color: #f9992f;
-                            }
                             &:not(:last-child) {
                                 margin-right: 10px;
                                 display: block;
@@ -99,9 +96,36 @@
                                 font-weight: 400;
                                 font-family: 'AlegreyaSans';
                                 font-size: 16px;
+                            }
 
-                                &.active {
-                                    color: red;
+                            &.current#category-79 {
+                                a {
+                                    color: #f9992f;
+                                }
+                            }
+                            &.current#category-78 {
+                                a {
+                                    color: #ff3e39;
+                                }
+                            }
+                            &.current#category-80 {
+                                a {
+                                    color: #647b3f;
+                                }
+                            }
+                            &.current#category-40 {
+                                a {
+                                    color: #e8ae32;
+                                }
+                            }
+                            &.current#category-58 {
+                                a {
+                                    color: #e0a077;
+                                }
+                            }
+                            &.current#category-71 {
+                                a {
+                                    color: #464646;
                                 }
                             }
                         }
