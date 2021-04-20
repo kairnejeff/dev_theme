@@ -8,8 +8,8 @@
 }
 
 .block-category img {
-    max-width: 840px;
-    max-height: 293.95px;
+    max-width: 840px!important;
+    max-height: 293.95px!important;
 
     @media (max-width:1200px) {
         max-width: 100%!important;

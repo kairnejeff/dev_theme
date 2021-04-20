@@ -8,6 +8,16 @@
             #carousel {
                 ul {
                     height: auto;
+                    li {
+                        a {
+                            figure {
+                                img {
+                                    width: 1160px;
+                                    height: 493.61px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
             .featured-products {
