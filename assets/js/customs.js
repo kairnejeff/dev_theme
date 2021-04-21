@@ -150,19 +150,19 @@ function productAccordion() {
         $('.info-detailed .collapse').collapse()
 
     } else {
-        $('.info-detailed .collapsed').on('show.bs.collapse', function() {
+        $('.info-detailed .collapse').on('show.bs.collapse', function() {
             $(this).prev().find("i")[0].innerHTML = 'expand_less';
-            $('.info-detailed .collapsed').not(this).collapse('hide');
+            $('.info-detailed .collapse').not(this).collapse('hide');
         });
-        $('.info-detailed .collapsed').on('hide.bs.collapse', function() {
+        $('.info-detailed .collapse').on('hide.bs.collapse', function() {
             $(this).prev().find("i")[0].innerHTML = 'expand_more';
         });
     }
-
-        
-        
 }
+
+
 (function() {
+    productAccordion();
     $(window).resize(productAccordion);
 })();
 
