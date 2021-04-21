@@ -32,10 +32,10 @@
                     {if file_exists($img_webp)&& $modules.kj_detectdevice.machine !=='Mac'&&$modules.kj_detectdevice.machine !=='iPad'}
                         <picture>
                             <source srcset="{$urls.base_url}modules/kj_webp/images/c/webp-img{$category.id}.webp" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}" type="image/webp">
-                            <img src="{$category.image.large.url}" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}">
+                            <img src="{$category.image.bySize.category_default.url}" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}">
                         </picture>
                     {else}
-                        <img src="{$category.image.large.url}" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}">
+                        <img src="{$category.image.bySize.category_default.url}" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}">
                     {/if}
 
                 </div>
