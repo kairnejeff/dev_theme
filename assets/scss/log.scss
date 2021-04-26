@@ -60,6 +60,15 @@
             }
         }
     }
+
+    #checkout-personal-information-step {
+        p:nth-child(2) {
+            a {
+                margin-left: 15px;
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
 .cart-grid-body {

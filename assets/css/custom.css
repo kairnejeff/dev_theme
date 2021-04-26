@@ -871,10 +871,6 @@ form section .form-group:first-child .form-control-valign .radio-inline span {
     font-size: 18px;
 }
 
-#wrapper .container #main .cart-grid .cart-grid-body .label {
-    position: relative;
-}
-
 #wrapper .container #main .cart-grid .cart-grid-body .label i {
     position: absolute;
     line-height: inherit;

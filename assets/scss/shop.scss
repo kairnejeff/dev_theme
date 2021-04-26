@@ -15,7 +15,16 @@
                         @media (max-width: 468px) {
                             height: auto;
                         }
-                        .price {
+                        .product-line-info {
+                            margin-bottom: 8px;
+
+                            a {
+                                font-size: 16px;
+                                font-weight: bold;
+                            }
+                        }
+                        .price { 
+                            padding-left: 25px;
                             span {
                                 position: absolute;
                                 bottom: 0;

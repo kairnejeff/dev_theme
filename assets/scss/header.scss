@@ -5,6 +5,11 @@
 #header .logo {
     width: 400px;
     height: 120.75px;
+
+    @media (max-width: 480px) {
+        max-width: 240px;
+        max-height: 72.453px;
+    }
 }
 
 .top-menu {
