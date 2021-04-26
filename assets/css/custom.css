@@ -504,6 +504,7 @@
 #footer .blockreassurance .block-icon,
 #footer .blockreassurance .block-icon img {
     height: 30px;
+    width: auto;
 }
 
 #footer .blockreassurance .block-title {
