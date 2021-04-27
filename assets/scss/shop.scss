@@ -17,6 +17,7 @@
                         }
                         .product-line-info {
                             margin-bottom: 8px;
+                            margin-left: 25px;
 
                             a {
                                 font-size: 16px;
@@ -24,10 +25,10 @@
                             }
                         }
                         .price { 
-                            padding-left: 25px;
                             span {
                                 position: absolute;
                                 bottom: 0;
+                                left: 25px;
                                 @media (max-width: 468px) {
                                     position: relative;
                                 }
