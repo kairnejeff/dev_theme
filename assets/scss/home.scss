@@ -13,8 +13,8 @@
                             figure {
                                 img {
                                     @media (min-width: 1200px) {
-                                        width: 1160px;
-                                        height: 493.61px;
+                                        max-width: 1160px;
+                                        max-height: 493.61px;
                                     }
 
                                     @media (max-width: 1200px) {
@@ -23,8 +23,8 @@
                                     }
 
                                     @media (max-width: 480px) {
-                                        max-width: 345px;
-                                        max-height: 164.80px;
+                                        max-width: 450px;
+                                        max-height: 191.484px;
                                     }
                                 }
                             }
