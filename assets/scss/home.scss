@@ -238,14 +238,19 @@
 }
 
 /*Nous connaître*/
+.introduction {
+    .block-container {
+        margin-bottom: 60px;
+    }
 
-.chapter {
-    margin-bottom: 20px;
-
-    a {
-        img {
-            max-width: 314px!important;
-            max-height: 403px!important;
+    .chapter {
+        margin-bottom: 20px;
+    
+        a {
+            img {
+                width: 314px;
+                height: 403px;
+            }
         }
     }
 }
