@@ -504,6 +504,7 @@
 #footer .blockreassurance .block-icon,
 #footer .blockreassurance .block-icon img {
     height: 30px;
+    width: auto;
 }
 
 #footer .blockreassurance .block-title {
@@ -868,10 +869,6 @@ form section .form-group:first-child .form-control-valign .radio-inline span {
 
 #blockcart-modal .modal-dialog .modal-body .row .cart-content .cart-content-btn a i {
     font-size: 18px;
-}
-
-#wrapper .container #main .cart-grid .cart-grid-body .label {
-    position: relative;
 }
 
 #wrapper .container #main .cart-grid .cart-grid-body .label i {

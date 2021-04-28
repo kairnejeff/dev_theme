@@ -220,3 +220,33 @@ $(document).ready(function() {
     });
 
 })
+
+
+$(document).keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+   var str = $("input[name=phone]").val();
+    if(keycode == '13'){
+        console.log(str[0]);
+
+        if(isNaN(str)) {
+            alert("NOPE");
+
+        } else {
+
+            if(str.length == 10) {
+                alert("C'est un oui");
+
+                if (str[0] == 0 ) {
+                    alert("that's correct");
+
+                } else {
+                    alert ("mdr de lol");
+
+                }
+            } else {
+                alert ("C'est un non");
+                
+            }
+        }
+    }
+});
