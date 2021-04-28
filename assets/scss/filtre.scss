@@ -77,5 +77,27 @@
     .form-check-filtre {
         position: relative;
         margin-bottom: 10px;
+
+        input {
+            margin-top: .25rem;
+            opacity: 0;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        label {
+            &::before {
+                content: '';
+                margin-right: 3px;
+                display: inline-block;
+                width: .9375rem;
+                height: .9375rem;
+                vertical-align: middle;
+                cursor: pointer;
+                border: 2px solid #232323;
+            }
+        }
+
+        
     }
 }
