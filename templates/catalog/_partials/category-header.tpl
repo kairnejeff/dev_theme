@@ -37,7 +37,6 @@
                     {else}
                         <img src="{$category.image.bySize.category_default.url}" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}">
                     {/if}
-
                 </div>
             {/if}
         </div>

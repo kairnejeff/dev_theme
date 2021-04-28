@@ -37,7 +37,7 @@
             {if $page.page_name == 'index'}
               <h1>
                 <a href="{$urls.base_url}">
-                  <img class="logo img-responsive" src="{$urls.img_url}/logo-karine-jeff.svg"  alt="{$shop.name}">
+                  <img class="logo img-responsive" src="{$urls.img_url}/logo-karine-jeff.svg"  alt="{$shop.name} ">
                 </a>
               </h1>
             {else}
