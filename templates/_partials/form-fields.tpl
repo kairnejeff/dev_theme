@@ -64,6 +64,21 @@
           </select>
         {/block}
 
+      {elseif $field.type === 'tel'}
+
+        {block name='form_field_item_tel'}
+          <input
+          class="form-control"
+          name="{$field.name}"
+          type="{$field.type}"
+          value="{$field.value}"
+          placeholder="Numéro commence par 0"
+          {if $field.maxLength}maxlength="{$field.maxLength}"{/if}
+          {if $field.required}required{/if}
+        >
+        <div class="informaton"></div>
+        {/block}
+
       {elseif $field.type === 'radio-buttons'}
 
         {block name='form_field_item_radio'}
