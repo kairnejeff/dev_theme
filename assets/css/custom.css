@@ -243,7 +243,8 @@
 
 .container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description h3 {
     text-align: left;
-    text-transform: lowercase;
+    padding-left: 8px;
+    border-left: 1px solid #000;
 }
 
 .container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description h3 a {

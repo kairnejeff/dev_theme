@@ -223,30 +223,15 @@ $(document).ready(function() {
 
 
 $(document).keypress(function(event){
-    var keycode = (event.keyCode ? event.keyCode : event.which);
-   var str = $("input[name=phone]").val();
-    if(keycode == '13'){
-        console.log(str[0]);
+    var str = $("input[name=phone]").val();
 
-        if(isNaN(str)) {
-            alert("NOPE");
+    $('input[name=phone] + p').hide();
 
-        } else {
+    if(isNaN(str) || str.length != 10 || str[0] != 0) {
+        $("input[name=phone]").css({"border":"2px solid red"});
+        $( "input[name=phone]").after('<p> Numéro invalide</p>');
 
-            if(str.length == 10) {
-                alert("C'est un oui");
-
-                if (str[0] == 0 ) {
-                    alert("that's correct");
-
-                } else {
-                    alert ("mdr de lol");
-
-                }
-            } else {
-                alert ("C'est un non");
-                
-            }
-        }
+    } else {
+            $("input[name=phone]").css({"border":"2px solid green"});
     }
 });

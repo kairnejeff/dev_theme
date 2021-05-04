@@ -34,6 +34,10 @@
                     text-transform: uppercase;
                     letter-spacing: .1rem;
                     font-size: 13px;
+
+                    @media (max-width: 1200px) {
+                        font-size: 11px;
+                    }
                 }
             }
 
@@ -78,26 +82,68 @@
         position: relative;
         margin-bottom: 10px;
 
-        input {
-            margin-top: .25rem;
+        input[type="checkbox"] {
             opacity: 0;
-            cursor: pointer;
             position: absolute;
+            left: 0;
+            top: 4px;
+            z-index: 99999;
+        
+        }
+
+        input[type="checkbox"] + label::before {
+            content:'';
+            border: 2px solid $black;
+            height: 15px;
+            width: 15px;
+            display: inline-block;
+            left: 0;
+            position: absolute;
+            top: 1px;
+        }
+
+        input[type="checkbox"]:checked + label::before {
+            background-color: $black;
         }
 
         label {
-            &::before {
-                content: '';
-                margin-right: 3px;
-                display: inline-block;
-                width: .9375rem;
-                height: .9375rem;
-                vertical-align: middle;
-                cursor: pointer;
-                border: 2px solid #232323;
-            }
+            margin-left: 0;
+            padding-left: 25px;
         }
 
-        
+        // input {
+        //     margin-top: .25rem;
+        //     opacity: 0;
+        //     cursor: pointer;
+        //     position: absolute;
+        //     left: 5px;
+        // }
+
+        // label {
+        //     &::before {
+        //         content: '';
+        //         margin-right: 3px;
+        //         display: inline-block;
+        //         width: .9375rem;
+        //         height: .9375rem;
+        //         vertical-align: middle;
+        //         cursor: pointer;
+        //         border: 2px solid #232323;
+        //     }
+        // }
+
+        // input:checked + label::after {
+           
+        //         left: 9px;
+        //         top: 5px;
+        //         width: 5px;
+        //         height: 10px;
+        //         border: solid white;
+        //         border-width: 0 3px 3px 0;
+        //         -webkit-transform: rotate(45deg);
+        //         -ms-transform: rotate(45deg);
+        //         transform: rotate(45deg);
+            
+        // }
     }
 }
