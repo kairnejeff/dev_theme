@@ -76,7 +76,7 @@
           {if $field.maxLength}maxlength="{$field.maxLength}"{/if}
           {if $field.required}required{/if}
         >
-        <div class="informaton"></div>
+        <div class="alert" id="phone-informaton"></div>
         {/block}
 
       {elseif $field.type === 'radio-buttons'}

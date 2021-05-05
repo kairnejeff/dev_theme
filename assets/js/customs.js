@@ -221,17 +221,24 @@ $(document).ready(function() {
 
 })
 
-
-$(document).keypress(function(event){
-    var str = $("input[name=phone]").val();
-
-    $('input[name=phone] + p').hide();
-
-    if(isNaN(str) || str.length != 10 || str[0] != 0) {
-        $("input[name=phone]").css({"border":"2px solid red"});
-        $( "input[name=phone]").after('<p> Numéro invalide</p>');
+function checkNumero(phone, number) {
+    var div = $('#phone-informaton')
+    var str = phone.val();
+    if (isNaN(str) || str.length != number || str[0] != 0) {
+        phone.css({ "border": "2px solid red" });
+        div.addClass('alert alert-danger')
+        div.text('Numéro invalide');
 
     } else {
-            $("input[name=phone]").css({"border":"2px solid green"});
+        phone.css({ "border": "2px solid green" });
+        div.text('');
+        div.removeClass('alert alert-danger')
     }
-});
+}
+
+$(document).ready(function() {
+    var phone = $("input[name=phone]")
+    phone.keypress(function() { checkNumero(phone, 9) })
+    phone.focus(function() { checkNumero(phone, 10) })
+    phone.focusout(function() { checkNumero(phone, 10) });
+})
