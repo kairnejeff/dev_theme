@@ -215,13 +215,5 @@
 
     .products {
         grid-gap: 60px;
-
-        article {
-            .product-description {
-                .product-title {
-                    border-left: 1px solid $black;
-                }
-            }
-        }
     }
 }
