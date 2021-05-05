@@ -24,19 +24,23 @@ $unna: 'Unna';
     background-color: $blue!important;
 }
 
+.product-description {
+    border-left: 1px solid $black;
+    padding-left: 8px;
+    
+    .h3 {
+        a {
+            font-size: 24px;
+            display: block;
+            text-align: left!important;
 
-.h3 {
-    a {
-        font-size: 24px;
-        display: block;
-        text-align: left!important;
-
-        &:hover {
-            color: $black;
+            &:hover {
+                color: $black;
+            }
         }
-    }
 
-    a::first-letter {
-        text-transform: lowercase;
+        a::first-letter {
+            text-transform: lowercase;
+        }
     }
 }

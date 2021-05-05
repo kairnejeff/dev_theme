@@ -9637,7 +9637,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 .product-accessories .product-title,
 .product-miniature .product-title {
     text-align: left;
-    padding-left: 8px;
     margin-top: .7rem
 }
 
