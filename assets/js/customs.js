@@ -230,6 +230,7 @@ function checkNumero(phone, number) {
         div.text('Numéro invalide');
 
     } else {
+        $('#delivery-address .js-address-form .help-block').remove()
         phone.css({ "border": "2px solid green" });
         div.text('');
         div.removeClass('alert alert-danger')
