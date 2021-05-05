@@ -39,7 +39,7 @@
  
  {block name='page_content'}
     <div class="block-category my-account">
-         <h1 class="h1">  {l s='Your account' d='Shop.Theme.Customeraccount'}</h1>
+         <h1 class="h1">  {l s='Mon compte' d='Shop.Theme.Customeraccount'}</h1>
          <img class="category-cover" src="{$urls.img_url}/customer-account-img.jpg" alt="contact us" width="100%"/>
     </div>
    <div class="clearfix"></div>
