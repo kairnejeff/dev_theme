@@ -244,3 +244,5 @@ $(document).ready(function() {
     phone.focus(function() { checkNumero(phone, 10) })
     phone.focusout(function() { checkNumero(phone, 10) });
 })
+
+
