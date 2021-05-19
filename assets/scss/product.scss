@@ -71,6 +71,9 @@
         }
         #main {
             .product-container {
+                .product-flags {
+                    display: none;
+                }
                 > div {
                     &:first-child {
                         .page-content {
