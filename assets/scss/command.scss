@@ -14,6 +14,10 @@
                 i {
                     position: absolute;
                     left: 35%;
+
+                    @media (max-width: 480px) {
+                        left: 12px;
+                    }
                 }
             }
         }
@@ -34,6 +38,14 @@
                                 left: 15px;
                                 bottom: 10px;
                             }
+                        }
+                    }
+                }
+
+                .divide-right {
+                    .product-image {
+                        @media (max-width: 480px) {
+                            max-width: 150px;
                         }
                     }
                 }
