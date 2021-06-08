@@ -11613,6 +11613,9 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     .cart-items {
         padding: 1rem 0
     }
+    .cart-item {
+        border-bottom: 0
+    }
     .cart-item:last-child {
         border-bottom: 0
     }
