@@ -370,7 +370,6 @@
 #footer .footer-container .row .home_popup #popup-box {
     top: 85%;
     left: 350px;
-    height: auto;
 }
 
 @media (max-width: 769px) {
@@ -469,7 +468,6 @@
 @media (max-width: 769px) {
     #footer .footer-container .row .home_popup #popup-box #popup-box-content form .btn-primary {
         width: 100%;
-        margin-top: 15px;
         display: block !important;
     }
 }

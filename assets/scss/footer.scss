@@ -10,12 +10,12 @@
                 #popup-box {
                     top: 85%;
                     left: 350px;
-                    height: auto;
+                    height: 48%;
                     @media (max-width: 769px) {
                         width: 300px;
                         top: 50%;
                         left: 50%;
-                        height: auto;
+                        height: 100%;
                         border: 1px solid $grey;
                         padding-bottom: 50px;
                     }
@@ -31,6 +31,7 @@
                             border: none;
                         }
                         >div {
+                            padding: 0;
                             height: auto;
                             @media (max-width: 769px) {
                                 padding-left: 0;
@@ -46,16 +47,31 @@
                             }
                         }
                         form {
-                            margin-top: 40px;
+                            margin-top: 20px!important;
+                            padding-left: 0;
+                            padding-right: 30px;
+
                             @media (max-width: 769px) {
                                 padding-left: 15px;
                                 padding-right: 15px;
                             }
+
+                            .popup-logo {
+                                img {
+                                    width: 200px;
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+                            }
                             .description {
+                                margin-top: 20px!important;
+
                                 @media (max-width: 769px) {
                                     text-align: center;
+                                    margin-top: 20px;
                                 }
                                 p {
+                                    text-align: center;
                                     &:first-child {
                                         font-weight: 600;
                                         margin-bottom: 5px;
@@ -66,6 +82,21 @@
                                 }
                             }
                             .form-group {
+
+                                margin-bottom: 0;
+                                
+                                input {
+                                    border-bottom: 1px solid black;
+                                    border-left: none;
+                                    border-right: none;
+                                    border-top: none;
+                                    background: $white;
+                                }
+
+                                .form-control:focus {
+                                    outline: none;
+                                }
+
                                 &:nth-child(2) {
                                     display: none;
                                 }
@@ -74,16 +105,18 @@
                                         width: auto;
                                     }
                                 }
-                                >div {
-                                    @media (max-width: 769px) {
-                                        width: 100%;
-                                    }
+                                > div {
+                                    width: 90%;
+                                    margin: 0 auto;
+                                    display: block;
+                                    float: none;
                                 }
                             }
                             .btn-primary {
+                                margin-top: 2rem; 
+
                                 @media (max-width: 769px) {
                                     width: 100%;
-                                    margin-top: 15px;
                                     display: block!important;
                                 }
                             }
