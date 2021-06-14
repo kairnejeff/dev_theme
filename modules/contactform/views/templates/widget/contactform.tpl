@@ -68,6 +68,19 @@
           </div>
         </div>
 
+        <div class="form-group row">
+          <label class="col-md-3 form-control-label">{l s='Téléphone' d='Shop.Forms.Labels'}</label>
+          <div class="col-md-6">
+          <input
+          class="form-control"
+          name="phone"
+          type="phone"
+          value="{$contact.phone}"
+          placeholder="{l s='Téléphone' d='Shop.Forms.Help'}"
+         >
+          </div>
+        </div>
+
         {if $contact.orders}
           <div class="form-group row">
             <label class="col-md-3 form-control-label">{l s='Order reference' d='Shop.Forms.Labels'}</label>
