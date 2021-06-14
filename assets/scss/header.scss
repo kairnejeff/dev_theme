@@ -73,12 +73,11 @@
                             .header {
                                 margin-top: 0;
 
-                                a {
-                                    span {
-                                        &:nth-child(2) {
-                                            font-size: 12px;
-                                        }
-                                    }
+                                .hidden-sm-down {
+                                    font-size: 12px;
+                                }
+                                .cart-products-count {
+                                    font-size: 12px;;
                                 }
                             }
                         }
