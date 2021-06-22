@@ -158,6 +158,17 @@
           {/if}
         {/foreach}
       </div>
+      <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#allergenes" aria-expanded="false" aria-controls="collapseOne">
+			<h2 class="font3 text-uppercase">Allergènes</h2>
+      <i class="material-icons hidden-md-up">expand_more</i>
+      </div>
+      <div id="allergenes" class="info-detail-content collapse">
+        {foreach from=$product.features item=feature}
+          {if ($feature.name == "Allergènes")}
+            <p>{$feature.value|escape:'html':'UTF-8'}</p>
+          {/if}
+        {/foreach}
+      </div>
 
       <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#preperation" aria-expanded="false" aria-controls="collapseOne">
 			<h2 class="font3 text-uppercase">Préparation</h2>
