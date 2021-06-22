@@ -258,7 +258,7 @@
         <i class="material-icons add">expand_more</i>
         <i class="material-icons remove">expand_less</i>
       </div>
-      <div id="product-savoir-plus">
+      <div id="product-savoir-plus" aria-expanded="false" class="collapse">
          {$product.custom_field_lang_wysiwyg nofilter}
       </div>
     </div>
