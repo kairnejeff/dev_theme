@@ -23,6 +23,12 @@
                             a {
                                 font-size: 16px;
                                 font-weight: bold;
+
+                                
+                            }
+
+                            a::first-letter {
+                                text-transform: lowercase;
                             }
                         }
                         .price {
@@ -71,6 +77,20 @@
                         text-align: center;
                         a {
                             @include button;
+                        }
+                    }
+                }
+
+                .membership_livraison {
+                    .conditions {
+                        margin-top: 10px;
+                        font-size: 13px;
+                        color: #363a42;
+                        line-height: 18px;
+
+                        a {
+                            text-decoration: underline;
+                            color: $blue;
                         }
                     }
                 }
