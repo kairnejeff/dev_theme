@@ -364,12 +364,7 @@
 }
 
 #footer .footer-container .row .home_popup #list-builder {
-    opacity: 0;
-}
-
-#footer .footer-container .row .home_popup #popup-box {
-    top: 85%;
-    left: 350px;
+    opacity: 0.5;
 }
 
 @media (max-width: 769px) {
@@ -378,7 +373,6 @@
         top: 50%;
         left: 50%;
         height: auto;
-        border: 1px solid #ccc;
         padding-bottom: 50px;
     }
 }
@@ -390,8 +384,6 @@
 
 #footer .footer-container .row .home_popup #popup-box #popup-box-content {
     height: auto;
-    border-top: 1px solid #ccc;
-    border-right: 1px solid #ccc;
 }
 
 @media (max-width: 769px) {

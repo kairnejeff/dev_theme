@@ -246,3 +246,31 @@ $(document).ready(function() {
 })
 
 
+
+function itsTime() {
+    $('.home_popup').css('display', 'block');
+}
+
+setTimeout(function(){
+    itsTime();
+},3000);
+
+
+function tab (idConteiner, classTab, classPanel) {
+    let tabs = [...document.querySelectorAll(classTab)],
+        panels = [...document.querySelectorAll(classPanel)]
+    document.getElementById(idConteiner).addEventListener('click', e => {
+      let compareTab = tabs.filter(tab => tab === e.target.parentElement)
+      if(e.target.parentElement === compareTab[0]){
+         let i = tabs.indexOf(e.target.parentElement)
+         tabs.map(tab => tab.classList.remove('active'))
+         tabs[i].classList.add('active')
+         panels.map(panel => panel.classList.remove('active'))
+         panels[i].classList.add('active')
+      }
+    })
+}
+  tab('main-menu','.menu-tab','.info-detailed-titler')
+
+
+

@@ -7101,7 +7101,7 @@ a.bg-inverse:hover {
 }
 
 .text-uppercase {
-    text-transform: uppercase!important
+    text-transform: uppercase
 }
 
 .text-capitalize {
@@ -12240,7 +12240,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .block_newsletter {
-    background: #fff;
     font-size: .875rem;
     margin-bottom: .625rem
 }

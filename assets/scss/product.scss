@@ -207,7 +207,7 @@
         margin-bottom: 20px;
         span {
             text-align: center;
-            text-transform: uppercase!important;
+            // text-transform: uppercase!important;
             font-size: 13px;
             font-family: $roboto;
             padding-bottom: 6px;
@@ -219,5 +219,117 @@
     .products {
         grid-gap: 60px;
         margin-top: 60px;
+    }
+}
+
+
+
+
+
+
+/* Test */
+.info-detailed {
+    width: 100%;
+    padding: 0;
+    padding-top: 30px;
+    border-top: 1px solid #eee; 
+
+
+    #main-menu {
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            .menu-tab {
+                font-size: 14px;
+                text-transform: uppercase;
+                font-size: $roboto;
+
+                &.active {
+                    a {
+                        color: $blue;
+                        border-bottom: 2px solid black;
+                        padding-bottom: 3px;
+                        text-decoration: none;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                    }
+                }   
+            }
+            
+        }
+    }
+
+    .info-detailed-titler {
+        width: 100%;
+        padding-left: 0;
+        display: none;
+
+        &.active {
+            display: block;
+            margin-top: 15px;
+
+        }
+
+        h2 {
+            border-top: none!important;
+            text-transform: initial!important;
+            font-family: $unna;
+            font-size: 24px;
+            letter-spacing: 0;
+        }
+
+        &.nut {
+            width: 50%;
+        }
+        
+        #mentions {
+            .info-nutrition {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 35px;
+
+                ul {
+                    flex: 1 0 21%;
+
+                    &:nth-child(2) {
+                        display: none;
+                    }
+
+                    .kj {
+                        .number {
+                            span {
+                                display: block;
+                                line-height: 18px;
+
+                                &:first-child {
+                                    padding-top: 8px;
+                                }
+                            }
+                        }
+                    }
+
+                    .nutrition {
+
+                        .number {
+                            border: 1px solid #000;
+                            padding: 10px;
+                            border-radius: 50%;
+                            text-align: center;
+                            width: 70px;
+                            height: 70px;
+                            line-height: 50px;
+                            margin: 0 auto;
+                        }
+
+                        .label-nutrition {
+                            text-align: center;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
