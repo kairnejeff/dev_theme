@@ -169,6 +169,16 @@
           {/if}
         {/foreach}
       </div>
+      <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#allergenes" aria-expanded="false" aria-controls="collapseOne">
+			<h2 class="font3 text-uppercase">Allergènes</h2>
+      <i class="material-icons hidden-md-up">expand_more</i>
+      </div>
+      <div id="allergenes" class="info-detail-content collapse">
+        {foreach from=$product.features item=feature}
+          {if ($feature.name == "Allergènes")}
+            <p>{$feature.value|escape:'html':'UTF-8'}</p>
+          {/if}
+        {/foreach}
       </div>
 
       <div class="info-detailed-titler nut col-md-6">
@@ -306,13 +316,21 @@
   </div>
   {if $product.custom_field_lang_wysiwyg != NULL}
   <div class="info-all row clearfix">	
+<<<<<<< HEAD
     <div class="info-detailed col-md-6">
       <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#know" aria-expanded="false" aria-controls="collapseOne">
       <h2 class="font3">En savoir plus</h2> 
       <i class="material-icons hidden-md-up">expand_more</i>
+=======
+    <div class="col-md-12">
+      <div class="collapse-icons" role="button" data-toggle="collapse" data-target="#product-savoir-plus" aria-expanded="false" aria-controls="collapseOne">
+        <h2 class="font3 text-uppercase">En savoir plus</h2>
+        <i class="material-icons add">expand_more</i>
+        <i class="material-icons remove">expand_less</i>
+>>>>>>> 56313aec9bb868b662dd3d554230329e13500cee
       </div>
-      <div id="know" class="info-detail-content collapse">
-      {$product.custom_field_lang_wysiwyg nofilter}
+      <div id="product-savoir-plus" aria-expanded="false" class="collapse">
+         {$product.custom_field_lang_wysiwyg nofilter}
       </div>
     </div>
   </div>

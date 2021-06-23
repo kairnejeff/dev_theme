@@ -1,5 +1,4 @@
 @import "global.scss";
-
 .block-category {
     position: relative;
     padding: unset;
@@ -52,18 +51,16 @@
 }
 
 .pagination {
-    > div {
+    >div {
         padding: 0;
     }
 }
 
 .info-all {
     padding-left: 15px;
-
     .savoir-plus {
-        > div {
+        >div {
             position: relative;
-
             i {
                 position: absolute;
                 left: 120px;
@@ -71,4 +68,20 @@
             }
         }
     }
+}
+
+.collapse-icons {
+    .remove {
+        display: none;
+    }
+}
+
+.collapse-icons[aria-expanded=true] {
+    .remove {
+        display: block;
+    }
+}
+
+.collapse-icons[aria-expanded=true] .add {
+    display: none;
 }
