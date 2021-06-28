@@ -275,6 +275,12 @@
               {/if}
             </ul>
           </li>
+          
+          {if isset($product.nutriscore)}
+          <div class="product-nutriscore">
+              <div class="nutriscore"><img src="{$urls.img_url}/nutriscore-{$product.nutriscore}.svg" /></div>
+          </div>
+          {/if}
 
         </ul>
       {/foreach}
