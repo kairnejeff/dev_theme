@@ -336,55 +336,57 @@
         }
     }
 
-    .actu {
-        width: 60%;
+   
+}
 
-        .info-actu {
-            margin-bottom: 60px;
+.actu {
+    width: 60%;
 
-            h2 {
-                margin-bottom: 30px;
-            }
+    .info-actu {
+        margin-bottom: 60px;
+
+        h2 {
+            margin-bottom: 30px;
         }
+    }
 
-        .origin {
-            h2 {
-                font-family: Unna;
-                font-size: 24px;
-                letter-spacing: 0;
-            }
+    .origin {
+        h2 {
+            font-family: Unna;
+            font-size: 24px;
+            letter-spacing: 0;
         }
+    }
 
-        .flex {
+    .flex {
+        display: flex;
+
+        > div {
             display: flex;
+            flex-direction: column;
+        }
 
-            > div {
+            
+
+        > div {
+
+            &:first-child {
+                
                 display: flex;
                 flex-direction: column;
-            }
 
-                
-
-            > div {
-
-                &:first-child {
-                    
-                    display: flex;
-                    flex-direction: column;
-
-                    img {
-                        height: 300px;
-                        width: auto;
-                    }
-                }
-                &:last-child {
-                    p {
-                        margin-left: 20px;
-                    }
+                img {
+                    height: 300px;
+                    width: auto;
                 }
             }
-
+            &:last-child {
+                p {
+                    margin-left: 20px;
+                }
+            }
         }
+
     }
 }
 
