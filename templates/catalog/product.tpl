@@ -275,6 +275,19 @@
     </div>
   </div>
   {/if}
+ 
+
+  <div class="data-hidden d-none">
+    {if !empty($combinations)}
+        <div id="combinaison-attributes" data-attributes="[{$combinations|json_encode}]"></div>
+   {/if}
+  </div>
+  <!-- TrustBox widget - Product Reviews -->
+  <div id="trustbox-widget" class="trustpilot-widget" data-locale="fr-FR" data-template-id="544a426205dc0a09088833c6" data-businessunit-id="603ce71821527000016deb69" data-style-height="300px" data-style-width="100%" data-theme="light" data-sku="{if empty($combinations)}{$product.reference}{/if}" data-review-languages="fr" data-no-reviews="hide">
+    <a href="https://fr.trustpilot.com/review/karinejeff.fr" target="_blank" rel="noopener">Trustpilot</a>
+  </div>
+  <!-- End TrustBox widget -->
+
     {block name='product_accessories'}
       {if $accessories}
         <section class="product-accessories clearfix">

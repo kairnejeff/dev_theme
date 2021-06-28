@@ -254,3 +254,20 @@ $(document).ready(function(e) { // On attend que la page soit chargée
         window.location.href = link // On renvoi l'utilisateur vers la page
     })
 })
+
+
+//Trustpilot
+$(document).ready(function(e) {
+    var attributes = $('#combinaison-attributes').data('attributes')
+    $('.input-color').change(
+        function() {
+            if (this.checked) {
+                var id = $(this).val();
+                $.each(attributes[0], function(k, v) {
+                    if (id == v.attributes[0]) {
+                        $('#trustbox-widget').attr('data-sku', v.reference)
+                    }
+                })
+            }
+        })
+})
