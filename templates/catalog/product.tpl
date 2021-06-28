@@ -305,15 +305,20 @@
 
       <div class="info-detailed-titler col-md-6">
       <div class="info-detailed-title" id="avis" role="button" data-toggle="collapse" data-target="#preperation" aria-expanded="false" aria-controls="collapseOne">
-			<h2 class="font3">Préparation</h2>
-      <i class="material-icons hidden-md-up">expand_more</i>
+        <div class="data-hidden d-none">
+          {if !empty($combinations)}
+              <div id="combinaison-attributes" data-attributes="[{$combinations|json_encode}]"></div>
+        {/if}
+        </div>
+        <!-- TrustBox widget - Product Reviews -->
+        <div id="trustbox-widget" class="trustpilot-widget" data-locale="fr-FR" data-template-id="544a426205dc0a09088833c6" data-businessunit-id="603ce71821527000016deb69" data-style-height="300px" data-style-width="100%" data-theme="light" data-sku="{if empty($combinations)}{$product.reference}{/if}" data-review-languages="fr" data-no-reviews="hide">
+          <a href="https://fr.trustpilot.com/review/karinejeff.fr" target="_blank" rel="noopener">Trustpilot</a>
+        </div>
+        <!-- End TrustBox widget -->
       </div>
-      <div id="preperation" class="info-detail-content collapse">
-			{foreach from=$product.features item=feature}
-				{if ($feature.name == "Suggestions d'utilisation")}
-					<p>{$feature.value|escape:'html':'UTF-8'}</p>
-				{/if}
-			{/foreach}
+      </div>
+			
+      <div class="info-detailed-titler col-md-6">
       <div class="info-detailed-title" id="histoire"  role="button" data-toggle="collapse" data-target="#history" aria-expanded="false" aria-controls="collapseOne">
 			<h2 class="font3">Histoire de la recette</h2> 
       <i class="material-icons hidden-md-up">expand_more</i>
@@ -401,6 +406,7 @@
   {/if}
 
 
+ 
     {block name='product_accessories'}
       {if $accessories}
         <section class="product-accessories clearfix">

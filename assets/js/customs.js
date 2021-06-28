@@ -251,26 +251,26 @@ function itsTime() {
     $('.home_popup').css('display', 'block');
 }
 
-setTimeout(function(){
+setTimeout(function() {
     itsTime();
-},3000);
+}, 3000);
 
 
-function tab (idConteiner, classTab, classPanel) {
+function tab(idConteiner, classTab, classPanel) {
     let tabs = [...document.querySelectorAll(classTab)],
         panels = [...document.querySelectorAll(classPanel)]
     document.getElementById(idConteiner).addEventListener('click', e => {
-      let compareTab = tabs.filter(tab => tab === e.target.parentElement)
-      if(e.target.parentElement === compareTab[0]){
-         let i = tabs.indexOf(e.target.parentElement)
-         tabs.map(tab => tab.classList.remove('active'))
-         tabs[i].classList.add('active')
-         panels.map(panel => panel.classList.remove('active'))
-         panels[i].classList.add('active')
-      }
+        let compareTab = tabs.filter(tab => tab === e.target.parentElement)
+        if (e.target.parentElement === compareTab[0]) {
+            let i = tabs.indexOf(e.target.parentElement)
+            tabs.map(tab => tab.classList.remove('active'))
+            tabs[i].classList.add('active')
+            panels.map(panel => panel.classList.remove('active'))
+            panels[i].classList.add('active')
+        }
     })
 }
-  tab('main-menu','.menu-tab','.info-detailed-titler')
+tab('main-menu', '.menu-tab', '.info-detailed-titler')
 
 
 
@@ -281,4 +281,21 @@ $(document).ready(function(e) { // On attend que la page soit chargée
         var link = atob(t.data('o')) // On décode l'url
         window.location.href = link // On renvoi l'utilisateur vers la page
     })
+})
+
+
+//Trustpilot
+$(document).ready(function(e) {
+    var attributes = $('#combinaison-attributes').data('attributes')
+    $('.input-color').change(
+        function() {
+            if (this.checked) {
+                var id = $(this).val();
+                $.each(attributes[0], function(k, v) {
+                    if (id == v.attributes[0]) {
+                        $('#trustbox-widget').attr('data-sku', v.reference)
+                    }
+                })
+            }
+        })
 })
