@@ -53,6 +53,12 @@
     <meta itemprop="url" content="{$product.url}">
 
     <div class="row product-container">
+      <div class="title">
+        <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+        {if $product.description_short}
+          <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
+        {/if}
+      </div>
       <div class="col-md-6">
         {block name='page_content_container'}
           <section class="page-content" id="content">
@@ -73,7 +79,7 @@
         <div class="col-md-6">
           {block name='page_header_container'}
             {block name='page_header'}
-              <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+              <h2 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h2>
             {/block}
             {if $product.description_short}
               <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
@@ -143,7 +149,7 @@
       </div>
     </div>
     <div class="info-all row clearfix">	
-		<div class="info-detailed col-md-6">
+		<div class="info-detailed col-md-12">
 
       <nav id="main-menu" class="main-menu" >
         <ul>
@@ -180,6 +186,7 @@
           {/if}
         {/foreach}
       </div>
+      </div>
 
       <div class="info-detailed-titler nut col-md-6">
 		{if isset($product.features)}
@@ -203,7 +210,7 @@
 
           <li class="nutrition kj">
             <ul>
-              {if ($feature.name == "Energie kcal/100g" )}
+              {if ($feature.name == "Energie kcal/100g")}
                 <li class="number"> 
                   <span>{$feature.value|escape:'html':'UTF-8'} kcal </span>
                   <span>{$feature.value|escape:'html':'UTF-8'} kj </span>
@@ -212,6 +219,18 @@
               {/if}
             </ul>
           </li>
+
+          {* <li class="nutrition kj">
+            <ul>
+              {foreach from=$product.features item=feature}
+                <li class="number"> 
+                  {if ($feature.name == "Energie kcal/100g")}<span>{$feature.value|escape:'html':'UTF-8'} kcal </span>{/if}
+                  {if ($feature.name == "Energie kj/100g")}<span>{$feature.value|escape:'html':'UTF-8'} kj </span>{/if}
+                </li>
+                <li class="label-nutrition">Calories</li>
+              {/foreach}
+            </ul>
+          </li> *}
 
           <li class="nutrition">
             <ul>
@@ -317,10 +336,66 @@
 				{/if}
 			{/foreach}
       </div>
+      </div>
+			
+      <div class="info-detailed-titler col-md-6">
+      
+      </div>
 		{/if}
 		</div>
     </div>
+    
+    <div class="actu">
+        <div class="info-actu origin">
+          <h2> D'où viennent nos produits ? </h2>
+          <div class="flex">
+            <div>
+              <img src="https://i.pinimg.com/originals/f8/25/9e/f8259ee09f46cab2f4b28e774d752493.gif"/>
+            </div>
+            <div class="text-info">
+              <p>Nos recettes sont fabriquées à Revel, au cœur du Lauragais, dans ce Sud-Ouest de la France où l’on sait faire honneur à la qualité du produit comme à l’art de la bonne cuisine.</p>
+              <p>Méthode de culture
+              Tomates ...
+              Partenariat
+              Faire parler les fournisseurs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-actu secret">
+          <h2> Notre secret de cuisine </h2>
+          <div class="flex">
+            <div>
+            <img src="https://s1.edi-static.fr/Img/BREVE/2019/10/343492/456045.jpg"/>
+              <span> Karine Tardon Fondatrice et créatrice des recettes</span>
+            </div>
+            <div class="text-info">
+              <p>Toutes nos recettes sont cuites à basse température, selon un procédé unique élaboré par nos soins.</p>
+              <p>Ce procédé permet de respecter les saveurs et les qualités de chaque ingrédient.</p>
+              <p>Aucun additif (conservateur, arôme, épaississant, stabilisant, colorant) n’est ajouté.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-actu secret">
+          <h2> Recyclage </h2>
+          <div class="flex">
+            <div>
+              <img src="https://previews.123rf.com/images/coprid/coprid1311/coprid131100016/23485719-bocal-en-verre-vide-isol%C3%A9-sur-blanc.jpg"/>
+            </div>
+            <div class="text-info">
+            <p> Les emballages : bocaux en verre recyclables </p>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
   </div>
+
+
+
+
   {if $product.custom_field_lang_wysiwyg != NULL}
   <div class="info-all row clearfix">	
     <div class="col-md-12">
@@ -335,6 +410,8 @@
     </div>
   </div>
   {/if}
+
+
  
     {block name='product_accessories'}
       {if $accessories}
