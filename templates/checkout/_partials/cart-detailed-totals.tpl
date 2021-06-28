@@ -37,14 +37,16 @@
             {/if}
           </span>
           <span class="value">
-            {if 'discount' == $subtotal.type}-&nbsp;{/if}{$subtotal.value}
+            {if 'discount' == $subtotal.type}-&nbsp; {/if}{$subtotal.value}
           </span>
           {if $subtotal.type === 'shipping'}
               <div><small class="value">{hook h='displayCheckoutSubtotalDetails' subtotal=$subtotal}</small></div>
           {/if}
         </div>
       {/if}
-    {/foreach}
+    {/foreach}  
+    <div class="membership_livraison"> <p class="conditions"> Rejoignez le <a href="#" class="membership_link">membership Karine&Jeff </a> et bénéficier des frais de ports offert à partir de 30 euros. </p></div>
+
   </div>
 
   {block name='cart_summary_totals'}
