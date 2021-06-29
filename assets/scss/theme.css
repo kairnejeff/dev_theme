@@ -285,7 +285,6 @@ textarea {
     font-display: swap;
 }
 
-
 @font-face {
     font-family: RobotoMono;
     src: url(../fonts/RobotoMono-Regular.ttf) format("truetype");
@@ -11902,7 +11901,10 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 .block-social ul {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: -150px;
 }
 
 @media (max-width:767px) {
@@ -11915,7 +11917,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 .block-social ul li {
     height: 2.5rem;
     width: 2.5rem;
-    background-color: #f1f1f1;
     background-repeat: no-repeat;
     display: inline-block;
     margin: .125rem;
@@ -11930,10 +11931,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
         margin-bottom: 1.3rem;
         background-size: contain
     }
-}
-
-.block-social ul li:hover {
-    background-color: #232323
 }
 
 .block-social ul li a {
@@ -11997,6 +11994,10 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 
 .instagram {
     background-image: url(../img/insta.png)
+}
+
+.linkedin {
+    background-image: url(../img/linkedin.png)
 }
 
 .footer-container {
@@ -12437,7 +12438,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     margin-left: 2.5rem;
     text-align: right;
     white-space: nowrap;
-    font-size:12px;
+    font-size: 12px;
     padding: .75rem
 }
 
