@@ -1,0 +1,12 @@
+ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
+    opacity: 1;
+    display: block;
+    visibility: visible
+}
+
+.top-menu .menu-blocks.sub-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    height: 400px;
+}
