@@ -161,38 +161,36 @@
       </nav>
 
     <div class="info-detailed-titler active col-md-6">
-		{if isset($product.features)}
-      <div class="info-detailed-title" id ="composition" role="button" data-toggle="collapse" data-target="#composition" aria-expanded="false" aria-controls="collapseOne">
-			<h2 class="font3">Ingrédients</h2>
-      <i class="material-icons hidden-md-up">expand_more</i>
-      </div>
-      <div id="composition" class="info-detail-content collapse">
-        {foreach from=$product.features item=feature}
-          {if ($feature.name == "Ingrédients")}
-            <p>{$feature.value|escape:'html':'UTF-8'}</p>
-            <p>*ingrédients issus de l'agriculture biologique <br />
-              Certifié Ecocert SAS. 32600</p>
-          {/if}
-        {/foreach}
-      </div>
-      <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#allergenes" aria-expanded="false" aria-controls="collapseOne">
-			<h2 class="font3 text-uppercase">Allergènes</h2>
-      <i class="material-icons hidden-md-up">expand_more</i>
-      </div>
-      <div id="allergenes" class="info-detail-content collapse">
-        {foreach from=$product.features item=feature}
-          {if ($feature.name == "Allergènes")}
-            <p>{$feature.value|escape:'html':'UTF-8'}</p>
-          {/if}
-        {/foreach}
-      </div>
-      </div>
+      {if isset($product.features)}
+        <div class="info-detailed-title" id ="composition" role="button" data-toggle="collapse" data-target="#composition" aria-expanded="false" aria-controls="collapseOne">
+          <h2 class="font3">Ingrédients</h2>
+        </div>
+        <div id="composition" class="info-detail-content collapse">
+          {foreach from=$product.features item=feature}
+            {if ($feature.name == "Ingrédients")}
+              <p>{$feature.value|escape:'html':'UTF-8'}</p>
+              <p>*ingrédients issus de l'agriculture biologique <br />
+                Certifié Ecocert SAS. 32600</p>
+            {/if}
+          {/foreach}
+        </div>
+        <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#allergenes" aria-expanded="false" aria-controls="collapseOne">
+          <h2 class="font3 text-uppercase">Allergènes</h2>
+          <i class="material-icons hidden-md-up">expand_more</i>
+        </div>
+        <div id="allergenes" class="info-detail-content collapse">
+          {foreach from=$product.features item=feature}
+            {if ($feature.name == "Allergènes")}
+              <p>{$feature.value|escape:'html':'UTF-8'}</p>
+            {/if}
+          {/foreach}
+        </div>
+    </div>
 
-      <div class="info-detailed-titler nut col-md-6">
-		{if isset($product.features)}
+    <div class="info-detailed-titler nut col-md-6">
+      {if isset($product.features)}
       <div class="info-detailed-title" id ="mentions" role="button" data-toggle="collapse" data-target="#mentions" aria-expanded="false" aria-controls="collapseOne"">
 			<h2 class="font3">Valeurs nutritionnelles</h2>
-      <i class="material-icons hidden-md-up">expand_more</i>
       </div>
       <div id="mentions" class="info-detail-content collapse">
 			{foreach from=$product.features item=feature}
@@ -303,8 +301,24 @@
 		{/if}	
 		</div>
 
+    <div class="info-detailed-titler col-md-6">
+      <div class="info-detailed-title" id="histoire"  role="button" data-toggle="collapse" data-target="#history" aria-expanded="false" aria-controls="collapseOne">
+			<h2 class="font3">Histoire de la recette</h2> 
+      </div>
+      <div id="history" class="info-detail-content collapse">
+			{foreach from=$product.features item=feature}
+				{if ($feature.name == "Histoire de la recette")}
+					<p>{$feature.value|escape:'html':'UTF-8'}</p>
+				{/if}
+			{/foreach}
+      </div>
+    </div>
+
       <div class="info-detailed-titler col-md-6">
       <div class="info-detailed-title" id="avis" role="button" data-toggle="collapse" data-target="#preperation" aria-expanded="false" aria-controls="collapseOne">
+      <h2 class="font3">Vos avis</h2> 
+      </div>
+      <div id="avis_truspilot" info-detail-content collapse">
         <div class="data-hidden d-none">
           {if !empty($combinations)}
               <div id="combinaison-attributes" data-attributes="[{$combinations|json_encode}]"></div>
@@ -317,24 +331,8 @@
         <!-- End TrustBox widget -->
       </div>
       </div>
-			
-      <div class="info-detailed-titler col-md-6">
-      <div class="info-detailed-title" id="histoire"  role="button" data-toggle="collapse" data-target="#history" aria-expanded="false" aria-controls="collapseOne">
-			<h2 class="font3">Histoire de la recette</h2> 
-      <i class="material-icons hidden-md-up">expand_more</i>
       </div>
-      <div id="history" class="info-detail-content collapse">
-			{foreach from=$product.features item=feature}
-				{if ($feature.name == "Histoire de la recette")}
-					<p>{$feature.value|escape:'html':'UTF-8'}</p>
-				{/if}
-			{/foreach}
-      </div>
-      </div>
-			
-      <div class="info-detailed-titler col-md-6">
-      
-      </div>
+		
 		{/if}
 		</div>
     </div>
@@ -361,7 +359,11 @@
           <div class="flex">
             <div>
             <img src="https://s1.edi-static.fr/Img/BREVE/2019/10/343492/456045.jpg"/>
-              <span> Karine Tardon Fondatrice et créatrice des recettes</span>
+            <p> 
+              <span>Karine Tardon</span> 
+              <span> Fondatrice </span> 
+              <span>et créatrice des recettes</span>
+            </p>
             </div>
             <div class="text-info">
               <p>Toutes nos recettes sont cuites à basse température, selon un procédé unique élaboré par nos soins.</p>
@@ -409,7 +411,7 @@
  
     {block name='product_accessories'}
       {if $accessories}
-        <section class="product-accessories clearfix">
+        <section class="product-accessories container clearfix">
           <p class="h5 text-uppercase">
           <span>{l s='You might also like' d='Shop.Theme.Catalog'}</span>
           </p>
@@ -423,6 +425,10 @@
         </section>
       {/if}
     {/block}
+
+    <div class="boutique">
+      <button> <a href="https://www.karinejeff.fr/">Retour à la boutique </a> </button>
+    </div>
 
     {block name='product_footer'}
       {hook h='displayFooterProduct' product=$product category=$category}
