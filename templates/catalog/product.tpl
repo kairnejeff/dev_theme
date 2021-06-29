@@ -169,7 +169,7 @@
           {foreach from=$product.features item=feature}
             {if ($feature.name == "Ingrédients")}
               <p>{$feature.value|escape:'html':'UTF-8'}</p>
-              <p>*ingrédients issus de l'agriculture biologique <br />
+              <p>*ingrédients issus de l'agriculture biologique <br/>
                 Certifié Ecocert SAS. 32600</p>
             {/if}
           {/foreach}
