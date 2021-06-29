@@ -67,7 +67,7 @@
                     }
                     .product-miniature {
                         height: 100%;
-                        position: relative;
+                        
                         .thumbnail-container {
                             @media (max-width: 480px) {
                                 width: 100%;
@@ -126,6 +126,22 @@
 
                                 &:after {
                                     content: "";
+                                }
+
+                                .add-to-cart-or-refresh {
+                                    position: absolute;
+                                    right: 0;
+                                    bottom: -33px;
+                                    form {
+                                        .btn {
+                                            border: none;
+                                            background: none;
+                                        }
+                                    }
+
+                                    @media (max-width: 480px) {
+                                        bottom: -15px;
+                                    }
                                 }
                             }
                             .highlighted-informations {
@@ -192,6 +208,23 @@
                     padding-bottom: 20px;
                     .product-price-and-shipping {
                         bottom: -5px;
+                    }
+                }
+
+                .add-to-cart-or-refresh {
+                    position: absolute;
+                    right: 0;
+                    bottom: -33px;
+                    form {
+                        .btn {
+                            border: none;
+                            background: none;
+                            outline: none;
+                        }
+                    }
+
+                    @media (max-width: 480px) {
+                        bottom: -15px;
                     }
                 }
             }
