@@ -59,6 +59,7 @@
           <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
         {/if}
       </div>
+      {hook h='displayProductCaroussel' id_product=$product.id}
       <div class="col-md-6">
         {block name='page_content_container'}
           <section class="page-content" id="content">
