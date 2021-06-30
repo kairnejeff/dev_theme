@@ -305,7 +305,7 @@
         }
 
         .info-detailed-titler {
-            width: 100%;
+            width: 80%;
             padding-left: 0;
             display: none;
 
@@ -335,7 +335,20 @@
                 }
             }
 
+            #ingredient {
+                margin-bottom: 50px;
+
+                p {
+                    font-size: 14px;
+                    font-family: $roboto-light;
+                    line-height: 17px;
+
+                }
+            }
+
             #allergenes {
+                margin-top: 20px;
+
                 .product-nutriscore {
                     .nutriscore {
 
@@ -396,7 +409,8 @@
             }
 
             #avis_truspilot {
-                margin-top: 30px;
+                margin-top: 50px;
+
                 #trustbox-widget {
                     .tp-widget-wrapper {
                         margin: 0;
@@ -419,24 +433,26 @@
 
         h2 {
             margin-bottom: 30px;
-        }
-    }
-
-    .origin {
-        h2 {
             font-family: Unna;
             font-size: 24px;
             letter-spacing: 0;
+            font-weight: bold;
         }
     }
 
     .flex {
         display: flex;
         padding-left: 20px;
-        width: 60%;
+        width: 70%;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (min-width: 767px) and (max-width: 1024px) {
             width: 100%;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
         }
 
 
@@ -471,7 +487,13 @@
             }
             &:last-child {
                 p {
-                    margin-left: 20px;
+                    margin-left: 100px;
+                    font-size: 14px;
+
+                    @media screen and (max-width: 767px) {
+                        margin-left: 0;
+                        margin-top: 30px;
+                    }
                 }
             }
         }
