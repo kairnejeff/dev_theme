@@ -334,6 +334,18 @@
                     width: 100%;
                 }
             }
+
+            #allergenes {
+                .product-nutriscore {
+                    .nutriscore {
+
+                        img {
+                            width: 200px;
+                            height: 108px;
+                        }
+                    }
+                }
+            }
             
             #mentions {
                 .info-nutrition {

@@ -133,6 +133,25 @@
                     }
                 }
             }
+
+            .footer_information {
+                .titre {
+                    font-family: $unna;
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+                div {
+                    p {
+                        span {
+                            display: block;
+                        }
+                    }
+
+                    .coordonnes {
+                        margin-bottom: 0;
+                    }
+                }
+            }
         }
     }
     .blockreassurance {
