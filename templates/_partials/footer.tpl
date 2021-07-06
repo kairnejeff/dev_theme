@@ -32,23 +32,36 @@
 <div class="footer-container">
   <div class="container">
     <div class="row">
-      {block name='hook_footer'}
-        {hook h='displayFooter'}
-      {/block}
+      <div class="col-md-2 col-xs-4">
+        <img class="logo" src="{$urls.theme_assets}img/logo-karine-jeff-small.svg" alt="logo-small Karine&Jeff"/>
+      </div>
+      <div class="col-md-10 col-xs-8">
+        <div class="row">
+        {block name='hook_footer'}
+          {hook h='displayFooter'}
+        {/block}
+        </div>
+      </div>
     </div>
-    <div class="row">
+    <div class="col-md-3 col-xs-12 right right-block">
       {block name='hook_footer_after'}
         {hook h='displayFooterAfter'}
       {/block}
+      <div class="block-yuka">
+        <span class="yuka"></span>
+        <p class="yuka-note">Nos poduits sont excellents sur yuka (moyenne 82/100)</p>
+      </div>
+      <div class="membre">
+        <a href="" class="">Devenir membre du club k&j</a>
+      </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <p class="text-sm-center">
           {block name='copyright_link'}
-            <a class="_blank" href="https://www.prestashop.com" target="_blank" rel="nofollow">
-            {l s='%copyright% %year% - %kj%' sprintf=['%kj%' => 'Karine & Jeff™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
-            </a>
+            {l s='%copyright% %year% - %kj% %right%' sprintf=['%kj%' => 'Karine & Jeff','%right%'=>'Tous droits réservés', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
           {/block}
+          <a href="" class="mention">Mentions légales</a>
         </p>
       </div>
     </div>
