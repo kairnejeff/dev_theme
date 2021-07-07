@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
- <div class="wapper col-lg-3 col-md-12 col-sm-12 block_newsletter">
+ <div class="block_newsletter">
  <div class="row">
    <p id="block-newsletter-label" class="col-md-12 col-xs-12">{l s='Inscrivez-vous à la newsletter' d='Shop.Theme.Global'}</p>
    <div class="col-md-12 col-xs-12">

@@ -11902,9 +11902,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
-    right: 0;
-    top: -150px;
 }
 
 @media (max-width:767px) {
@@ -11915,12 +11912,14 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .block-social ul li {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
     background-repeat: no-repeat;
     display: inline-block;
-    margin: .125rem;
-    cursor: pointer
+    margin: 1rem;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
 }
 
 @media (max-width:767px) {

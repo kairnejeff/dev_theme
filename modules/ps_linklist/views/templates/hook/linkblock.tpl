@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
  {foreach $linkBlocks as $linkBlock}
-   <div class="col-lg-3 col-md-12 col-sm-12">
+   <div class="col-lg-3 col-md-3 col-sm-12">
      {assign var=_expand_id value=10|mt_rand:100000}
      <div class="block-title">{$linkBlock.title}</div>
      <ul id="footer_sub_menu_{$_expand_id}" class="">
