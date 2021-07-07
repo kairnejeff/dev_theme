@@ -142,6 +142,8 @@
                 }
                 div {
                     p {
+                        font-family: $roboto-light;
+                        font-size: 14px;
                         span {
                             display: block;
                         }
@@ -149,6 +151,10 @@
 
                     .coordonnes {
                         margin-bottom: 0;
+                    }
+
+                    .member {
+                        margin-top: 50px;
                     }
                 }
             }
