@@ -19,7 +19,7 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
 .top-menu .sub-menu.collapse {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 0 30px;
     height: 800px;
 
     .menu-block {
