@@ -1,5 +1,5 @@
 .top-menu .sub-menu.collapse {
-    display: none;
+    display: inherit;
 }
 
 @media (min-width: 1200px) {

@@ -293,14 +293,32 @@ $(document).ready(function(e) { // On attend que la page soit chargée
 //Trustpilot
 $(document).ready(function(e) {
     var attributes = $('#combinaison-attributes').data('attributes')
-    $('.input-color').change( function() {
-        if (this.checked) {
-            var id = $(this).val();
-            $.each(attributes[0], function(k, v) {
-                if (id == v.attributes[0]) {
-                    $('#trustbox-widget').attr('data-sku', v.reference)
-                }
-            })
-        }
-    })
+    $('.input-color').change(
+        function() {
+            if (this.checked) {
+                var id = $(this).val();
+                $.each(attributes[0], function(k, v) {
+                    if (id == v.attributes[0]) {
+                        $('#trustbox-widget').attr('data-sku', v.reference)
+                    }
+                })
+            }
+        })
+})
+
+$(document).ready(function(e) {
+    $('#truspilot-avis').owlCarousel({
+        nav: true,
+        //loop:true,
+        margin: 20,
+        rewind: false,
+        responsive: {
+            0: { items: 1 },
+            480: { items: 2 },
+            600: { items: 3 },
+            1000: { items: 4 }
+        },
+        smartSpeed: 70,
+        navText: ['<svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg>', '<svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>']
+    });
 })

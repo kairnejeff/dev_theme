@@ -7,6 +7,7 @@ import '/scss/categorie-grid.scss';
 import '/scss/category.scss';
 import '/scss/product.scss';
 import '/scss/my-account.scss';
+import '/scss/owl.carousel.min.css';
 import '/scss/filtre.scss';
 import '/scss/log.scss';
 import '/scss/command.scss';
@@ -15,4 +16,5 @@ import '/scss/contact.scss'
 import '/scss/megamenu.scss'
 import '/scss/cms.css';
 import '/js/themes.js';
+import '/js/owl.carousel.min.js';
 import '/js/customs.js';
