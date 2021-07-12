@@ -1,13 +1,10 @@
 @import "global.scss";
-
-
 // ul.top-menu[data-child="1"] li.menu-item .sub-menu {
 //     opacity: 1;
 //     display: flex;
 //     visibility: visible;
 //     background-color: #FEF9F4;
 // }
-
 ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
     opacity: 1;
     display: flex;
@@ -15,17 +12,14 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
     background-color: #FEF9F4;
 }
 
-
 .top-menu .sub-menu.collapse {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
     height: 800px;
-
     .menu-block {
         margin: 30px 20px;
         flex: 1 1 auto;
-
         .menu-block-link {
             i {
                 a {
@@ -36,7 +30,6 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
                 }
             }
         }
-
         .menu-block-name {
             padding-bottom: 5px;
             font-size: 12px;
@@ -44,46 +37,34 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
             word-spacing: 4px;
             letter-spacing: 1px;
             color: $black;
-            
         }
-
         i {
             display: block;
         }
-
         &:first-child {
             flex: 0 1 auto;
         }
-
         .recipe-ingredient {
             margin-top: 20px;
             padding-top: 20px;
             border-top: 1px solid $black;
-
         }
-
         &:nth-child(2) {
             border-right: 1px solid $black;
             border-left: 1px solid $black;
             padding: 0 30px;
-
             .recipe-ingredient {
                 display: flex;
                 justify-content: space-between;
-
-
                 .menu-block-child {
-
                     .menu-block-child-name {
                         font-family: $unna;
                         font-size: 24px;
                         margin-bottom: 30px;
                         color: $black;
                     }
-
                     .menu-block-child-link {
                         margin-top: 20px;
-
                         span {
                             font-style: normal;
                             font-family: $alegreya;
@@ -91,9 +72,7 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
                             color: $black;
                             letter-spacing: 0.5px;
                         }
-                        
                     }
-
                     &:first-child {
                         ul {
                             i {
@@ -106,7 +85,6 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
                             }
                         }
                     }
-
                     &:nth-child(2) {
                         ul {
                             i {
@@ -116,7 +94,6 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
                             }
                         }
                     }
-
                     &:last-child {
                         ul {
                             i {
@@ -127,16 +104,13 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
                         }
                     }
                 }
-
                 .menu-block-child {
                     flex: 1 1 0px;
-
                     &:nth-child(2) {
                         border-left: 1px solid $grey;
                         border-right: 1px solid $grey;
                         padding-left: 30px;
                     }
-
                     &:last-child {
                         padding-left: 30px;
                     }
@@ -148,4 +122,8 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
 
 .popover {
     top: 43px;
+}
+
+span.obflink {
+    cursor: pointer;
 }
