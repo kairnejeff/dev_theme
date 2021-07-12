@@ -154,10 +154,10 @@
 
       <nav id="main-menu" class="main-menu" >
         <ul>
-          <li class="menu-tab active"><a href="#/composition">Ingrédients</a></li>
+          <li class="menu-tab active"><a href="#/composition">Les ingrédients</a></li>
           <li class="menu-tab"><a href="#/mentions">Valeurs Nutritives</a></li>
-          <li class="menu-tab"><a href="#/histoire">Histoire</a></li>
-          <li class="menu-tab"><a href="#/avis">Avis</a></li>
+          <li class="menu-tab"><a href="#/histoire">Conseils</a></li>
+          <li class="menu-tab"><a href="#/avis">Les avis</a></li>
         </ul>
       </nav>
 
@@ -165,8 +165,7 @@
       {if isset($product.features)}
         <div class="info-detailed-title" id ="composition" role="button" data-toggle="collapse" data-target="#composition" aria-expanded="false" aria-controls="collapseOne">
           <h2 class="font3">Ingrédients</h2>
-        </div>
-        <div id="composition" class="info-detail-content collapse">
+          <div id="ingredient" class="info-detail-content collapse">
           {foreach from=$product.features item=feature}
             {if ($feature.name == "Ingrédients")}
               <p>{$feature.value|escape:'html':'UTF-8'}</p>
@@ -175,6 +174,8 @@
             {/if}
           {/foreach}
         </div>
+        </div>
+        
         <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#allergenes" aria-expanded="false" aria-controls="collapseOne">
           <h2 class="font3 text-uppercase">Allergènes</h2>
           <i class="material-icons hidden-md-up">expand_more</i>
@@ -185,6 +186,13 @@
               <p>{$feature.value|escape:'html':'UTF-8'}</p>
             {/if}
           {/foreach}
+
+
+          {if isset($product.nutriscore)&& $product.nutriscore!=" "}
+            <div class="product-nutriscore">
+                <div class="nutriscore"><img src="{$urls.img_url}/nutriscore-{$product.nutriscore}.svg" /></div>
+            </div>
+          {/if}
         </div>
     </div>
 
@@ -296,14 +304,7 @@
 
         </ul>
       {/foreach}
-
-      {if isset($product.nutriscore)&& $product.nutriscore!=" "}
-        <div class="product-nutriscore">
-            <div class="nutriscore"><img src="{$urls.img_url}/nutriscore-{$product.nutriscore}.svg" /></div>
-        </div>
-      {/if}
       </div>
-    
       </div>
 		{/if}	
 		</div>
@@ -434,7 +435,7 @@
     {/block}
 
     <div class="boutique">
-      <button> <a href="https://www.karinejeff.fr/">Retour à la boutique </a> </button>
+      <button> <a href={$urls.base_url}>Retour à la boutique </a> </button>
     </div>
 
     {block name='product_footer'}

@@ -3,20 +3,13 @@
 }
 
 @media (min-width: 1200px) {
-    .container {
-        width: 1190px;
-        position: relative;
-    }
-}
-
-@media (min-width: 1200px) {
     #header .header-nav {
         max-height: 100%;
         border: none;
     }
     #header .header-nav .row {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         border-bottom: 1px solid #000;
     }
     #header .header-nav .row .navigation-header {
@@ -27,11 +20,11 @@
     #header .header-nav .row .navigation-header #_desktop_logo {
         margin-top: -2em;
     }
-    #header .header-nav .row .header-bottom {
+    /* #header .header-nav .row .header-bottom {
         width: 100%;
         padding: 0;
         position: relative;
-    }
+    } */
     #header .header-nav .row .header-bottom #search_widget {
         position: absolute;
         top: -95px;

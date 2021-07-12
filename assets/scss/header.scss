@@ -27,32 +27,24 @@
 /* Header */
 
 @media (min-width: 1200px) {
-    .container {
-        width: 1190px;
-        position: relative;
-    }
-}
-
-@media (min-width: 1200px) {
     #header {
         .header-nav {
             max-height: 100%;
-            margin-top: 60px;
             border: none;
             .row {
                 display: flex;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 border-bottom: 1px solid #000;
+                position: relative;
+
                 .navigation-header {
                     display: flex;
                     width: 100%;
                     position: relative;
-                    margin-bottom: 30px;
                     #_desktop_logo {
                         margin-top: 3rem;
                         .logo {
                             display: block;
-                            margin: 0 auto;
                         }
                     }
                     .right-nav {
@@ -83,68 +75,72 @@
                 .header-bottom {
                     width: 100%;
                     padding: 0;
-                    position: relative;
-                    #search_widget {
-                        position: absolute;
-                        top: -95px;
-                        right: 30%;
-                    }
-                }
-                #_desktop_top_menu {
-                    width: 100%;
-                    padding: 0 20px;
-                    ul {
-                        display: flex;
-                        justify-content: space-between;
-                        li {
-                            font-family: 'AlegreyaSans';
-                            font-size: 16px;
-                            &:not(:last-child) {
-                                margin-right: 10px;
-                                display: block;
-                            }
-                            a {
-                                text-transform: none;
-                                letter-spacing: 0.5px;
-                                padding: 0;
-                                font-weight: 400;
-                                font-family: 'AlegreyaSans';
-                                font-size: 16px;
-                                cursor: pointer;
-                            }
-                            &.current#category-79 {
-                                a {
-                                    color: #f9992f;
-                                }
-                            }
-                            &.current#category-78 {
-                                a {
-                                    color: #ff3e39;
-                                }
-                            }
-                            &.current#category-80 {
-                                a {
-                                    color: #647b3f;
-                                }
-                            }
-                            &.current#category-40 {
-                                a {
-                                    color: #e8ae32;
-                                }
-                            }
-                            &.current#category-58 {
-                                a {
-                                    color: #e0a077;
-                                }
-                            }
-                            &.current#category-71 {
-                                a {
-                                    color: #464646;
-                                }
-                            }
+                    position: absolute;
+                    bottom: 0;
+                    text-align: center;
+
+                    .menu {
+                        ul {
+                            margin-bottom: 0;
                         }
                     }
                 }
+
+                // #_desktop_top_menu {
+                //     width: 100%;
+                //     padding: 0 20px;
+                //     ul {
+                //         display: flex;
+                //         justify-content: space-between;
+                //         li {
+                //             font-family: 'AlegreyaSans';
+                //             font-size: 16px;
+                //             &:not(:last-child) {
+                //                 margin-right: 10px;
+                //                 display: block;
+                //             }
+                //             a {
+                //                 text-transform: none;
+                //                 letter-spacing: 0.5px;
+                //                 padding: 0;
+                //                 font-weight: 400;
+                //                 font-family: 'AlegreyaSans';
+                //                 font-size: 16px;
+                //                 cursor: pointer;
+                //             }
+                //             &.current#category-79 {
+                //                 a {
+                //                     color: #f9992f;
+                //                 }
+                //             }
+                //             &.current#category-78 {
+                //                 a {
+                //                     color: #ff3e39;
+                //                 }
+                //             }
+                //             &.current#category-80 {
+                //                 a {
+                //                     color: #647b3f;
+                //                 }
+                //             }
+                //             &.current#category-40 {
+                //                 a {
+                //                     color: #e8ae32;
+                //                 }
+                //             }
+                //             &.current#category-58 {
+                //                 a {
+                //                     color: #e0a077;
+                //                 }
+                //             }
+                //             &.current#category-71 {
+                //                 a {
+                //                     color: #464646;
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
             }
         }
     }

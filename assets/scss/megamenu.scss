@@ -1,12 +1,151 @@
+@import "global.scss";
+
+
+// ul.top-menu[data-child="1"] li.menu-item .sub-menu {
+//     opacity: 1;
+//     display: flex;
+//     visibility: visible;
+//     background-color: #FEF9F4;
+// }
+
 ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
     opacity: 1;
-    display: block;
-    visibility: visible
+    display: flex;
+    visibility: visible;
+    background-color: #FEF9F4;
 }
 
-.top-menu .menu-blocks.sub-menu {
+
+.top-menu .sub-menu.collapse {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-    height: 400px;
+    padding: 30px;
+    height: 800px;
+
+    .menu-block {
+        margin: 30px 20px;
+        flex: 1 1 auto;
+
+        .menu-block-link {
+            i {
+                a {
+                    padding-left: 0;
+                    font-style: normal;
+                    font-family: $alegreya;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .menu-block-name {
+            padding-bottom: 5px;
+            font-size: 12px;
+            text-transform: uppercase;
+            word-spacing: 4px;
+            letter-spacing: 1px;
+            color: $black;
+            
+        }
+
+        i {
+            display: block;
+        }
+
+        &:first-child {
+            flex: 0 1 auto;
+        }
+
+        .recipe-ingredient {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid $black;
+
+        }
+
+        &:nth-child(2) {
+            border-right: 1px solid $black;
+            border-left: 1px solid $black;
+            padding: 0 30px;
+
+            .recipe-ingredient {
+                display: flex;
+                justify-content: space-between;
+
+
+                .menu-block-child {
+
+                    .menu-block-child-name {
+                        font-family: $unna;
+                        font-size: 24px;
+                        margin-bottom: 30px;
+                        color: $black;
+                    }
+
+                    .menu-block-child-link {
+                        margin-top: 20px;
+
+                        span {
+                            font-style: normal;
+                            font-family: $alegreya;
+                            font-size: 16px;
+                            color: $black;
+                            letter-spacing: 0.5px;
+                        }
+                        
+                    }
+
+                    &:first-child {
+                        ul {
+                            i {
+                                &:nth-child(4),
+                                &:nth-child(8),
+                                &:nth-child(13),
+                                &:nth-child(16) {
+                                    margin-bottom: 30px;
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        ul {
+                            i {
+                                &:nth-child(5) {
+                                    margin-bottom: 30px;
+                                }
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        ul {
+                            i {
+                                &:nth-child(5) {
+                                    margin-bottom: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .menu-block-child {
+                    flex: 1 1 0px;
+
+                    &:nth-child(2) {
+                        border-left: 1px solid $grey;
+                        border-right: 1px solid $grey;
+                        padding-left: 30px;
+                    }
+
+                    &:last-child {
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.popover {
+    top: 43px;
 }
