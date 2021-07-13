@@ -1010,6 +1010,7 @@ pre code {
     clear: both
 }
 
+
 /* @media (min-width:576px) {
     .container {
         width: 540px;
@@ -9771,19 +9772,21 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     }
 }
 
-#custom-text {
+.custom-text {
     background: #fff url(../img/dots-background.png) repeat 50%;
     border-radius: 2px;
     margin-bottom: 1.5rem;
     text-align: center;
-    margin: 60px 0 80px 0;
     padding: 40px;
 }
 
-#custom-text h2 {
+#custom-text h2,
+.en-off h2 {
     color: #232323;
-    font-size: 2em;
-    font-weight: 400
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #custom-text-container {
@@ -9796,7 +9799,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     margin-bottom: 20px
 }
 
-#custom-text p:last-child {
+.custom-text p:last-child {
     margin-bottom: 0;
 }
 

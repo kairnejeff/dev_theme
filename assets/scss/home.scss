@@ -16,12 +16,10 @@
                                         max-width: 1160px;
                                         max-height: 493.61px;
                                     }
-
                                     @media (max-width: 1200px) {
                                         width: 100%;
                                         height: auto;
                                     }
-
                                     @media (max-width: 480px) {
                                         max-width: 450px;
                                         max-height: 191.484px;
@@ -46,7 +44,7 @@
                     &::after {
                         content: none
                     }
-                    > div {
+                    >div {
                         margin-bottom: 50px;
                         @media (max-width: 960px) {
                             margin-bottom: 70px;
@@ -67,7 +65,6 @@
                     }
                     .product-miniature {
                         height: 100%;
-                        
                         .thumbnail-container {
                             @media (max-width: 480px) {
                                 width: 100%;
@@ -85,7 +82,6 @@
                                 z-index: 0;
                                 width: 100%;
                                 bottom: 2px;
-                                
                                 #product-subtitle {
                                     margin: 5px 0 15px 0;
                                     p {
@@ -107,7 +103,6 @@
                                     font-weight: 500;
                                     line-height: 27px;
                                     color: $hover;
-                            
                                     @media (max-width: 960px) {
                                         bottom: -25px;
                                     }
@@ -117,17 +112,14 @@
                                     @media (max-width: 960px) {
                                         bottom: -55px;
                                     }
-
                                     .price {
                                         font-family: 'RobotoMono';
                                         font-size: 13px;
                                     }
                                 }
-
                                 &:after {
                                     content: "";
                                 }
-
                                 .add-to-cart-or-refresh {
                                     position: absolute;
                                     right: 0;
@@ -138,7 +130,6 @@
                                             background: none;
                                         }
                                     }
-
                                     @media (max-width: 480px) {
                                         bottom: -15px;
                                     }
@@ -210,7 +201,6 @@
                         bottom: -5px;
                     }
                 }
-
                 .add-to-cart-or-refresh {
                     position: absolute;
                     right: 0;
@@ -222,7 +212,6 @@
                             outline: none;
                         }
                     }
-
                     @media (max-width: 480px) {
                         bottom: -15px;
                     }
@@ -243,6 +232,31 @@
     }
 }
 
+// Block en off
+.en-off {
+    .content {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 60px;
+        display: grid;
+        text-align: center;
+        h3 {
+            font-weight: 400;
+            font-size: 1.3em;
+            line-height: 1.3;
+        }
+    }
+}
+
+.page-home {
+    .home-page-block {
+        margin-top: 100px;
+        h2 {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+
 /*Nous connaître*/
 
 #content {
@@ -251,11 +265,9 @@
             margin-bottom: 60px;
         }
     }
-
-    .chapters {        
+    .chapters {
         .chapter {
             margin-bottom: 20px;
-        
             a {
                 img {
                     max-width: 314px!important;
