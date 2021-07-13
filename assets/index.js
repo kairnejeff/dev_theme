@@ -7,7 +7,7 @@ import '/scss/categorie-grid.scss';
 import '/scss/category.scss';
 import '/scss/product.scss';
 import '/scss/my-account.scss';
-import '/scss/owl.carousel.min.css';
+import '/scss/trustpilot.css';
 import '/scss/filtre.scss';
 import '/scss/log.scss';
 import '/scss/command.scss';
