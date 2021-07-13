@@ -54,10 +54,7 @@
 
     <div class="row product-container">
       <div class="title">
-        <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
-        {if $product.description_short}
-          <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
-        {/if}
+        
       </div>
       {hook h='displayProductCaroussel' id_product=$product.id}
       <div class="col-md-6">
@@ -85,9 +82,6 @@
             {if $product.description_short}
               <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
             {/if} 
-          {/block}
-          {block name='product_prices'}
-            {include file='catalog/_partials/product-prices.tpl'}
           {/block}
 
           <div class="product-information">
@@ -132,6 +126,8 @@
                   {block name='product_add_to_cart'}
                     {include file='catalog/_partials/product-add-to-cart.tpl'}
                   {/block}
+
+                  
 
                   <div class="product-special-info">
                     <div class="label-bio"><img src="{$urls.img_url}/logo-bio-europeen.svg" /></div>

@@ -24,11 +24,11 @@
  *}
 <div class="product-add-to-cart">
   {if !$configuration.is_catalog}
-    <span class="control-label">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
 
     {block name='product_quantity'}
       <div class="product-quantity clearfix">
         <div class="qty">
+        <div class="label-info"><span class="control-label">{l s='Quantity' d='Shop.Theme.Catalog'}</span></div>
           <input
             type="number"
             name="qty"
@@ -41,6 +41,9 @@
         </div>
 
         <div class="add">
+          {block name='product_prices'}
+            {include file='catalog/_partials/product-prices.tpl'}
+          {/block}
           <button
             class="btn btn-primary add-to-cart"
             data-button-action="add-to-cart"

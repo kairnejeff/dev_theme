@@ -26,20 +26,6 @@
 
                     margin-bottom: 30px;
                 }
-                > div {
-                    .product-information {
-                        .product-actions {
-                            .product-add-to-cart {
-                                .product-quantity {
-                                    flex-direction: column;
-                                    .add-to-cart {
-                                        border-radius: 25px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
 
                 .info-detailed {
                     @media screen and (min-width: 1024px) {
@@ -101,6 +87,7 @@
                         }
                     }
                     &:nth-child(3) {
+                        padding-left: 100px;
                         h2 {
                             padding-left: 8px;
                             line-height: 1.1;
@@ -118,11 +105,108 @@
                                 }
                             }
                             .product-actions {
+                                .label-info {
+                                    width: 25%;
+                                    span {
+                                        letter-spacing: 2px;
+                                        display: inline;
+                                        width: auto;
+                                        font-family: $roboto;
+                                        text-transform: uppercase;
+                                        font-size: 12px;
+                                        font-weight: 700;
+                                    }
+
+                                }
+
+                                .product-variants {
+                                    .product-variants-item {
+                                        display: flex;
+                                        align-items: center;
+                                        border-top: 1px solid grey;
+                                        border-bottom: 1px solid grey;
+                                        margin-bottom: 0;
+                                        padding: 12px 0;
+
+                                        #group_1 {
+                                            display: flex;
+                                            justify-content: flex-start;
+                                            flex-direction: row;
+                                            width: 75%;
+                                            align-items: center;
+                                            margin-bottom: 0;
+
+                                            li {
+                                                width: 25%;
+
+                                                label {
+                                                    margin-bottom: 0;
+                                                    .color {
+                                                        width: 100%;
+                                                        padding: 2px 20px 15px;
+                                                        height: 27px;
+                                                        margin-bottom: 0;
+                                                        span {
+                                                            left: 0;
+                                                            font-size: 16px;
+                                                        }
+                                                    }
+                                                }
+
+                                            }
+
+                                        }
+                                    }
+                                }
+
+                                .product-discounts {
+                                    margin-bottom: 0;
+                                }
+
                                 .product-add-to-cart {
                                     .product-quantity {
+                                        flex-direction: column;
+                                        .qty {
+                                            border-bottom: 1px solid grey;
+                                            align-items: center;
+                                            padding: 12px 0;
+
+                                            .input-group {
+                                                > input {
+                                                    width: 5rem;
+                                                }
+                                            }
+
+                                        }
                                         .add {
+                                            flex-direction: row;
+                                            justify-content: space-between;
+                                            align-items: center;
+
+                                            .product-prices {
+                                                .product-price {
+                                                    margin: 0;
+                                                    .current-price {
+                                                        span {
+                                                            font-size: 16px;
+                                                            font-family: 'RobotoMono';
+                                                            font-weight: 700;
+                                                            letter-spacing: 1px; 
+                                                        }
+                                                    }
+                                                }
+
+                                                .tax-shipping-delivery-label {
+                                                    display: none;
+                                                }
+                                            }
+                                            .add-to-cart {
+                                                height: 3rem;
+                                            }
                                             .btn-primary {
-                                                padding: 0.6rem 1.25rem;
+                                                padding: 0.7rem 1.25rem;
+                                                width: 50%;
+
                                                 .icon-panier-off {
                                                     &:before {
                                                         font-size: 15px;
