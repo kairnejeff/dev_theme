@@ -60,6 +60,33 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
             padding-top: 20px;
             border-top: 1px solid $black;
 
+            .menu-block-link {
+                &:first-child {
+                    i {
+                        a {
+                            font-style: normal;
+                            font-family: $alegreya;
+                            font-size: 16px;
+                            color: $black;
+                            letter-spacing: 0.5px;
+                        }
+
+                        a:hover {
+                            text-decoration: underline!important;
+                            cursor: pointer;
+                        }
+        
+        
+                        &:nth-child(2),
+                        &:nth-child(4),
+                        &:nth-child(7),
+                        &:nth-child(8) {
+                            margin-bottom: 30px;
+                        }   
+                    }
+                }
+            }
+
         }
 
         &:nth-child(2) {
@@ -81,13 +108,26 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
                         color: $black;
                     }
 
+                    .menu-block-link {
+                        
+                        i {
+                            a {
+                                font-style: normal;
+                                font-family: $alegreya;
+                                font-size: 16px;
+                                color: $black;
+                                letter-spacing: 0.5px;
+                            }
+                        }
+                    }
+
                     .menu-block-child-link {
                         margin-top: 20px;
 
                         span {
                             font-style: normal;
                             font-family: $alegreya;
-                            font-size: 16px;
+                            font-size: 14px;
                             color: $black;
                             letter-spacing: 0.5px;
                         }
