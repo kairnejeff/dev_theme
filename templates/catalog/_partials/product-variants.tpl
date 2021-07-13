@@ -26,7 +26,7 @@
   {foreach from=$groups key=id_attribute_group item=group}
     {if !empty($group.attributes)}
     <div class="clearfix product-variants-item">
-      <span class="control-label">{$group.name}</span>
+      <div class="label-info"><span class="control-label">{$group.name}</span></div>
       {if $group.group_type == 'select'}
         <select
           class="form-control form-control-select"
@@ -45,7 +45,7 @@
                 <input class="input-color" type="radio" data-product-attribute="{$id_attribute_group}" name="group[{$id_attribute_group}]" value="{$id_attribute}" title="{$group_attribute.name}"{if $group_attribute.selected} checked="checked"{/if}>
                 <span
                   {if $group_attribute.texture}
-                    class="color texture" style="background-image: url({$group_attribute.texture})"
+                    class="color texture"
                   {elseif $group_attribute.html_color_code}
                     class="color" style="background-color: {$group_attribute.html_color_code}" 
                   {/if}
