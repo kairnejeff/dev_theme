@@ -38,12 +38,21 @@
             min="{$product.minimal_quantity}"
             aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
           >
-        </div>
 
-        <div class="add">
           {block name='product_prices'}
             {include file='catalog/_partials/product-prices.tpl'}
           {/block}
+
+        </div>
+
+        <div class="add">
+          {if isset($product.nutriscore)&& $product.nutriscore!=" "}
+            <div class="product-nutriscore">
+                <div class="nutriscore"><img src="{$urls.img_url}/nutriscore-{$product.nutriscore}.svg" /></div>
+            </div>
+          {/if}
+
+
           <button
             class="btn btn-primary add-to-cart"
             data-button-action="add-to-cart"

@@ -48,7 +48,7 @@
         {hook h='displayFooterAfter'}
       {/block}
       <div class="block-yuka">
-        <span class="yuka"></span>
+        <span class="yuka"><img src="https://yuka.io/wp-content/uploads/presskit/logo-carotte.png"/></span>
         <p class="yuka-note">Nos poduits sont excellents sur yuka (moyenne 82/100)</p>
       </div>
       <div class="membre">
