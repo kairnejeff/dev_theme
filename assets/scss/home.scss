@@ -82,6 +82,12 @@
                                 z-index: 0;
                                 width: 100%;
                                 bottom: 2px;
+                                position: relative;
+
+                                .h3 {
+                                    width: 80%;
+                                }
+
                                 #product-subtitle {
                                     margin: 5px 0 15px 0;
                                     p {
@@ -122,8 +128,8 @@
                                 }
                                 .add-to-cart-or-refresh {
                                     position: absolute;
-                                    right: 0;
-                                    bottom: -33px;
+                                    top: 0;
+                                    
                                     form {
                                         .btn {
                                             border: none;
@@ -186,34 +192,48 @@
             margin-bottom: 50px;
             position: relative;
             article {
-                .product-price-and-shipping {
-                    position: absolute;
-                    bottom: -25px;
-                    .price {
-                        font-family: $roboto;
-                        font-size: 14px;
+                .product-description {
+                    position: relative;
+
+                    .h3 {
+                        width: 75%;
                     }
-                }
-                @media (max-width: 480px) {
-                    height: auto;
-                    padding-bottom: 20px;
+
+                    #product-subtitle {
+                        width: 65%;
+                    }
+
                     .product-price-and-shipping {
-                        bottom: -5px;
-                    }
-                }
-                .add-to-cart-or-refresh {
-                    position: absolute;
-                    right: 0;
-                    bottom: -33px;
-                    form {
-                        .btn {
-                            border: none;
-                            background: none;
-                            outline: none;
+                        position: absolute;
+                        top: 100px;
+                        right: 0;
+                        .price {
+                            font-family: $roboto;
+                            font-size: 14px;
                         }
                     }
                     @media (max-width: 480px) {
-                        bottom: -15px;
+                        height: auto;
+                        padding-bottom: 20px;
+                        .product-price-and-shipping {
+                            bottom: -5px;
+                        }
+                    }
+                    .add-to-cart-or-refresh {
+                        position: absolute;
+                        top: 0;
+                        right:0;
+
+                        form {
+                            .btn {
+                                border: none;
+                                background: none;
+                                outline: none;
+                            }
+                        }
+                        @media (max-width: 480px) {
+                            bottom: -15px;
+                        }
                     }
                 }
             }

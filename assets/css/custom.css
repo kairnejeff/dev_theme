@@ -566,18 +566,6 @@
     padding: unset;
 }
 
-.block-category .h1 {
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    color: #FFFFFF;
-}
-
 .grid-controle .grid-button {
     background-color: unset;
     border: unset;

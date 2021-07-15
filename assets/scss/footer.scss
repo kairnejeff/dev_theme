@@ -2,169 +2,173 @@
 #footer {
     position: relative;
     .footer-container {
-        .row {
-            .home_popup {
-                display: none;
-                #list-builder {
-                    opacity: 0.5;
-                }
-                #popup-box {
-                    height: auto;
-                    @media (max-width: 769px) {
-                        width: 300px;
-                        top: 50%;
-                        left: 50%;
-                        height: 100%;
-                        padding-bottom: 50px;
+        .container {
+            width: 1600px;
+            margin:0 auto;
+            .row {
+                .home_popup {
+                    display: none;
+                    #list-builder {
+                        opacity: 0.5;
                     }
-                    #popup-close {
-                        top: 5px;
-                        right: 5px;
-                    }
-                    #popup-box-content {
+                    #popup-box {
                         height: auto;
                         @media (max-width: 769px) {
-                            border: none;
+                            width: 300px;
+                            top: 50%;
+                            left: 50%;
+                            height: 100%;
+                            padding-bottom: 50px;
                         }
-                        >div {
-                            padding: 0;
+                        #popup-close {
+                            top: 5px;
+                            right: 5px;
+                        }
+                        #popup-box-content {
                             height: auto;
                             @media (max-width: 769px) {
-                                padding-left: 0;
-                                padding-right: 0;
+                                border: none;
                             }
-                            img {
-                                object-fit: cover;
-                                height: auto!important;
+                            >div {
+                                padding: 0;
+                                height: auto;
                                 @media (max-width: 769px) {
-                                    height: 200px!important;
-                                    margin-left: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
                                 }
-                            }
-                        }
-                        form {
-                            margin-top: 20px!important;
-                            padding-left: 0;
-                            padding-right: 30px;
-                            @media (max-width: 769px) {
-                                padding-left: 15px;
-                                padding-right: 15px;
-                            }
-                            .popup-logo {
                                 img {
-                                    width: 200px;
-                                    display: block;
-                                    margin: 0 auto;
-                                }
-                            }
-                            .description {
-                                margin-top: 20px!important;
-                                @media (max-width: 769px) {
-                                    text-align: center;
-                                    margin-top: 20px;
-                                }
-                                p {
-                                    text-align: center;
-                                    &:first-child {
-                                        font-weight: 600;
-                                        margin-bottom: 5px;
-                                    }
-                                    &:last-child {
-                                        font-size: 14px;
-                                    }
-                                }
-                            }
-                            .form-group {
-                                margin-bottom: 0;
-                                input {
-                                    border-bottom: 1px solid black;
-                                    border-left: none;
-                                    border-right: none;
-                                    border-top: none;
-                                    background: $white;
-                                }
-                                .form-control:focus {
-                                    outline: none;
-                                }
-                                &:nth-child(2) {
-                                    display: none;
-                                }
-                                label {
+                                    object-fit: cover;
+                                    height: auto!important;
                                     @media (max-width: 769px) {
-                                        width: auto;
+                                        height: 200px!important;
+                                        margin-left: 0;
                                     }
                                 }
-                                >div {
-                                    width: 90%;
-                                    margin: 0 auto;
-                                    display: block;
-                                    float: none;
-                                }
                             }
-                            .btn-primary {
-                                margin-top: 2rem;
+                            form {
+                                margin-top: 20px!important;
+                                padding-left: 0;
+                                padding-right: 30px;
                                 @media (max-width: 769px) {
-                                    width: 100%;
-                                    display: block!important;
+                                    padding-left: 15px;
+                                    padding-right: 15px;
+                                }
+                                .popup-logo {
+                                    img {
+                                        width: 200px;
+                                        display: block;
+                                        margin: 0 auto;
+                                    }
+                                }
+                                .description {
+                                    margin-top: 20px!important;
+                                    @media (max-width: 769px) {
+                                        text-align: center;
+                                        margin-top: 20px;
+                                    }
+                                    p {
+                                        text-align: center;
+                                        &:first-child {
+                                            font-weight: 600;
+                                            margin-bottom: 5px;
+                                        }
+                                        &:last-child {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                                .form-group {
+                                    margin-bottom: 0;
+                                    input {
+                                        border-bottom: 1px solid black;
+                                        border-left: none;
+                                        border-right: none;
+                                        border-top: none;
+                                        background: $white;
+                                    }
+                                    .form-control:focus {
+                                        outline: none;
+                                    }
+                                    &:nth-child(2) {
+                                        display: none;
+                                    }
+                                    label {
+                                        @media (max-width: 769px) {
+                                            width: auto;
+                                        }
+                                    }
+                                    >div {
+                                        width: 90%;
+                                        margin: 0 auto;
+                                        display: block;
+                                        float: none;
+                                    }
+                                }
+                                .btn-primary {
+                                    margin-top: 2rem;
+                                    @media (max-width: 769px) {
+                                        width: 100%;
+                                        display: block!important;
+                                    }
                                 }
                             }
                         }
                     }
                 }
-            }
-            .block_newsletter {
-                .row {
-                    @media (max-width: 768px) {
-                        padding-left: 15px;
-                    }
-                    >p {
+                .block_newsletter {
+                    .row {
                         @media (max-width: 768px) {
-                            padding: 0;
+                            padding-left: 15px;
+                        }
+                        >p {
+                            @media (max-width: 768px) {
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+
+                .footer_information {
+                    .titre {
+                        font-family: $unna;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                    div {
+                        p {
+                            font-family: $roboto-light;
+                            font-size: 14px;
+                            span {
+                                display: block;
+                            }
+                        }
+
+                        .coordonnes {
+                            margin-bottom: 0;
+                        }
+
+                        .member {
+                            margin-top: 50px;
                         }
                     }
                 }
             }
-
-            .footer_information {
-                .titre {
-                    font-family: $unna;
-                    font-weight: bold;
-                    font-size: 20px;
-                }
-                div {
-                    p {
-                        font-family: $roboto-light;
-                        font-size: 14px;
-                        span {
-                            display: block;
-                        }
-                    }
-
-                    .coordonnes {
-                        margin-bottom: 0;
-                    }
-
-                    .member {
-                        margin-top: 50px;
+            .container {
+                position: relative;
+                @media (min-width: 768px) {
+                    .right-block {
+                        padding-left: 2rem;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
                     }
                 }
             }
-        }
-        .container {
-            position: relative;
-            @media (min-width: 768px) {
-                .right-block {
-                    padding-left: 2rem;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                }
+            .block-title {
+                font-family: 'Unna';
+                font-size: 20px;
+                margin-bottom: 1rem;
             }
-        }
-        .block-title {
-            font-family: 'Unna';
-            font-size: 20px;
-            margin-bottom: 1rem;
         }
     }
     .blockreassurance {
@@ -232,6 +236,53 @@
                         }
                     }
                 }
+            }
+        }
+
+        .block-yuka {
+            position: relative;
+            padding-left: 40px;
+
+            .yuka {
+                position: absolute;
+                bottom: 7px;
+                left:0;
+
+                img {
+                    width: 30px;
+                }
+            }
+
+            .yuka-note {
+                font-family: 'RobotoMono';
+                font-weight: 700;
+                font-size: 11px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+
+            // .yuka-note::before {
+            //     content: url("https://yuka.io/wp-content/uploads/presskit/logo-carotte.png");
+            //     // background-image: url("https://yuka.io/wp-content/uploads/presskit/logo-carotte.png");
+            //     width: 23px;
+            //     height: 30px;
+            //     display: block;
+            //     position: absolute;
+            //     left: 0;
+            //     bottom: 7px;
+            // }
+
+        }
+
+        .membre {
+            margin-top: 30px;
+            
+            a {
+                font-family: 'RobotoMono';
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
             }
         }
     }

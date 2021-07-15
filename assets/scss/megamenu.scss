@@ -1,10 +1,14 @@
 @import "global.scss";
+
+
 // ul.top-menu[data-child="1"] li.menu-item .sub-menu {
 //     opacity: 1;
 //     display: flex;
 //     visibility: visible;
 //     background-color: #FEF9F4;
 // }
+
+
 ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
     opacity: 1;
     display: flex;
@@ -32,7 +36,7 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
         }
         .menu-block-name {
             padding-bottom: 5px;
-            font-size: 12px;
+            font-size: 11px;
             text-transform: uppercase;
             word-spacing: 4px;
             letter-spacing: 1px;
@@ -55,7 +59,7 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
                         a {
                             font-style: normal;
                             font-family: $alegreya;
-                            font-size: 16px;
+                            font-size: 15px;
                             color: $black;
                             letter-spacing: 0.5px;
                         }
@@ -87,7 +91,7 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
                 .menu-block-child {
                     .menu-block-child-name {
                         font-family: $unna;
-                        font-size: 24px;
+                        font-size: 20px;
                         margin-bottom: 30px;
                         color: $black;
                     }

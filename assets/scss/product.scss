@@ -92,15 +92,20 @@
                             padding-left: 8px;
                             line-height: 1.1;
                             border-left: 1px solid $black;
+                            font-size: 50px;
+
                             &::first-letter {
                                 text-transform: lowercase;
                             }
                         }
                         .product-information {
+                            margin-top: 30px;
+
                             > div {
                                 &:first-child {
                                     p {
                                         font-size: 16px;
+                                        margin-bottom: 40px;
                                     }
                                 }
                             }
@@ -124,7 +129,6 @@
                                         display: flex;
                                         align-items: center;
                                         border-top: 1px solid grey;
-                                        border-bottom: 1px solid grey;
                                         margin-bottom: 0;
                                         padding: 12px 0;
 
@@ -167,23 +171,23 @@
                                     .product-quantity {
                                         flex-direction: column;
                                         .qty {
+                                            border-top: 1px solid grey;
                                             border-bottom: 1px solid grey;
                                             align-items: center;
                                             padding: 12px 0;
 
                                             .input-group {
+                                                width: 25%;
+
                                                 > input {
                                                     width: 5rem;
                                                 }
                                             }
 
-                                        }
-                                        .add {
-                                            flex-direction: row;
-                                            justify-content: space-between;
-                                            align-items: center;
-
                                             .product-prices {
+                                                width: 50%;
+                                                text-align: right;
+
                                                 .product-price {
                                                     margin: 0;
                                                     .current-price {
@@ -200,6 +204,21 @@
                                                     display: none;
                                                 }
                                             }
+
+                                        }
+                                        .add {
+                                            flex-direction: row;
+                                            justify-content: space-between;
+                                            align-items: center;
+
+                                            .product-nutriscore {
+                                                div {
+                                                    img {
+                                                        width: 88px;
+                                                    }
+                                                }
+                                            }
+
                                             .add-to-cart {
                                                 height: 3rem;
                                             }
@@ -351,6 +370,7 @@
 .info-all {
     padding-left: 0;
     margin-right: 0;
+    margin: 0 auto;
 
     @media screen and (max-width: 767px) {
         padding-left: 15px;
@@ -362,18 +382,22 @@
     padding-left: 0;
     padding-right: 0;
     padding-top: 30px;
-    border-top: 2px solid #eee; 
-
 
         #main-menu {
+            
             ul {
                 display: flex;
                 justify-content: space-between;
+                padding: 9px 0 8px;
+                border-bottom: 1px solid $grey_border;
+                border-top: 1px solid $grey_border;
+                margin-bottom: 0;
 
                 .menu-tab {
                     font-size: 14px;
                     text-transform: uppercase;
-                    font-size: $roboto;
+                    font-family: $roboto;
+                    font-size: 11px;
 
                     &.active {
                         a {
@@ -391,9 +415,28 @@
         }
 
         .info-detailed-titler {
-            width: 80%;
+            width: 100%;
             padding-left: 0;
             display: none;
+            height: 232px;
+            border-bottom: 1px solid $grey_border;
+            overflow: scroll;
+
+            &::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            // &::-webkit-scrollbar-track {
+            //     background: #f1f1f1; 
+            // }
+            
+            &::-webkit-scrollbar-thumb {
+                background: #888; 
+            }
+            
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555; 
+            }
 
             @media screen and (max-width: 767px) {
                 margin-left: 20px;
@@ -402,19 +445,11 @@
             &.active {
                 display: block;
                 margin-top: 15px;
-
             }
 
-            h2 {
-                border-top: none!important;
-                text-transform: initial!important;
-                font-family: $unna;
-                font-size: 24px;
-                letter-spacing: 0;
-            }
 
             &.nut {
-                width: 50%;
+                width: 100%;
 
                 @media screen and (max-width: 1024px) {
                     width: 100%;
@@ -426,7 +461,7 @@
 
                 p {
                     font-size: 14px;
-                    font-family: $roboto-light;
+                    font-family: $alegreya;
                     line-height: 17px;
 
                 }
@@ -519,10 +554,11 @@
 
         h2 {
             margin-bottom: 30px;
-            font-family: Unna;
-            font-size: 24px;
-            letter-spacing: 0;
-            font-weight: bold;
+            font-family: $roboto;
+            font-size: 18px;
+            letter-spacing: 1;
+            text-transform: uppercase;
+            text-align: center;
         }
     }
 

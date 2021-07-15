@@ -6,18 +6,14 @@
 
 .block-category {
     .h1 {
-        z-index: 1;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
+        position: relative;
+        color: $black;
+        margin-top: 30px;
+        font-family: $roboto;
+        text-transform: uppercase;
+        font-size: 18px;
         text-align: center;
-        flex-direction: column;
-        color: #FFFFFF;
-        @media (max-width: 768px) {
-            font-size: 32px;
-        }
+        letter-spacing: 1px;
     }
 }
 
