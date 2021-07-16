@@ -16,9 +16,9 @@
                                         <ul class="menu-block-child-link">
                                             {foreach from=$block.list_link item=link}
                                                 {if $link.link.type=='custom'}
-                                                    <i><span class="obflink" data-o="{base64_encode($link.link.url)}">{$link.link.libelle_link}</span></i>
+                                                    <i><span class="obflink menulink {if isset($link.link.current)}current{/if}" data-o="{base64_encode($link.link.url)}">{$link.link.libelle_link}</span></i>
                                                 {else}
-                                                    <i><a href="{$link.link.url}">{$link.link.libelle_link}</a></i>
+                                                    <i><a href="{$link.link.url}" class="menulink {if isset($link.link.current)}current{/if}">{$link.link.libelle_link}</a></i>
                                                 {/if}
 
                                             {/foreach}
@@ -28,7 +28,7 @@
                             {else}
                                 <ul class="menu-block-link">
                                     {foreach from=$block.block.list_link item=link}
-                                        <i><a href="{$link.link.url}">{$link.link.libelle_link}</a></i>
+                                        <i><a href="{$link.link.url}" class="menulink {if isset($link.link.current)} current{/if}">{$link.link.libelle_link}</a></i>
                                     {/foreach}
                                 </ul>
                             {/if}
@@ -38,7 +38,7 @@
                 <div class="menu-block"> <img src="https://www.karinejeff.fr/img/cms/nous-connaitre/02-qualite.jpg"/></div>
                 </div>
             {else}
-                <span class="menu-item-title"><a href="{$item.link.url}">{$item.name_item}</a></span>
+                <span class="menu-item-title"><a href="{$item.link.url}" class="menulink {if isset($item.link.current)}current{/if}">{$item.name_item}</a></span>
             {/if}
         </li>
     {/foreach}
