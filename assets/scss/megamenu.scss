@@ -19,7 +19,7 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
     height: 800px;
     .menu-block {
         .menulink.current {
-            color: red important;
+            color: red !important;
         }
         margin: 30px 20px;
         flex: 1 1 auto;
