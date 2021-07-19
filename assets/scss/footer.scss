@@ -173,33 +173,20 @@
             margin-top: 30px;
         }
         .row {
+            width: 1160px;
+            margin: 0 auto;
+
             .offset-md-0 {
                 .block-icon {
                     margin: 0 auto;
-                    img {
-                        height: 30px;
-                        @media (max-width: 480px) {
-                            width: auto;
-                        }
-                    }
-                }
-                &:nth-child(1) {
-                    img {
-                        width: 52px;
-                    }
-                }
-                &:nth-child(2),
-                &:nth-child(3) {
-                    img {
-                        width: 30px;
-                    }
                 }
             }
         }
         p {
-            padding: 25px;
+            padding: 12px 25px 25px 25px;
             text-align: center;
             text-transform: capitalize;
+            border-top: 1px solid black;
         }
         .block-title {
             margin-top: 10px;
@@ -210,16 +197,15 @@
             letter-spacing: 1.3px;
             position: relative;
             margin-top: 2rem;
+            font-weight: normal;
+            padding-bottom: 12px;
+
             @media (max-width: 480px) {
                 margin-left: 20px;
                 margin-top: 0;
             }
             .border {
-                position: absolute;
-                left: 30%;
-                right: 30%;
-                border-bottom: 2px solid;
-                padding: 5px;
+                display: none;
             }
         }
         border-top: 1px solid #dbdbdb;
