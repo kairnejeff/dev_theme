@@ -4,7 +4,7 @@
     .footer-container {
         .container {
             width: 1600px;
-            margin:0 auto;
+            margin: 0 auto;
             .row {
                 .home_popup {
                     display: none;
@@ -127,7 +127,6 @@
                         }
                     }
                 }
-
                 .footer_information {
                     .titre {
                         font-family: $unna;
@@ -142,11 +141,9 @@
                                 display: block;
                             }
                         }
-
                         .coordonnes {
                             margin-bottom: 0;
                         }
-
                         .member {
                             margin-top: 50px;
                         }
@@ -199,18 +196,34 @@
                 }
             }
         }
+        p {
+            padding: 25px;
+            text-align: center;
+            text-transform: capitalize;
+        }
         .block-title {
-            margin-left: 10px;
-            font-style: italic;
-            font-family: 'AlegreyaSans';
+            margin-top: 10px;
+            font-style: unset;
+            font-family: 'RobotoMono';
             font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            position: relative;
+            margin-top: 2rem;
             @media (max-width: 480px) {
                 margin-left: 20px;
                 margin-top: 0;
             }
+            .border {
+                position: absolute;
+                left: 30%;
+                right: 30%;
+                border-bottom: 2px solid;
+                padding: 5px;
+            }
         }
-        border-top: 1px solid;
-        border-bottom: 1px solid;
+        border-top: 1px solid #dbdbdb;
+        border-bottom: 1px solid #dbdbdb;
     }
     .container {
         .block_newsletter {
@@ -238,21 +251,17 @@
                 }
             }
         }
-
         .block-yuka {
             position: relative;
             padding-left: 40px;
-
             .yuka {
                 position: absolute;
                 bottom: 7px;
-                left:0;
-
+                left: 0;
                 img {
                     width: 30px;
                 }
             }
-
             .yuka-note {
                 font-family: 'RobotoMono';
                 font-weight: 700;
@@ -260,7 +269,6 @@
                 letter-spacing: 1px;
                 text-transform: uppercase;
             }
-
             // .yuka-note::before {
             //     content: url("https://yuka.io/wp-content/uploads/presskit/logo-carotte.png");
             //     // background-image: url("https://yuka.io/wp-content/uploads/presskit/logo-carotte.png");
@@ -271,12 +279,9 @@
             //     left: 0;
             //     bottom: 7px;
             // }
-
         }
-
         .membre {
             margin-top: 30px;
-            
             a {
                 font-family: 'RobotoMono';
                 font-size: 11px;

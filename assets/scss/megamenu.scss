@@ -1,14 +1,10 @@
 @import "global.scss";
-
-
 // ul.top-menu[data-child="1"] li.menu-item .sub-menu {
 //     opacity: 1;
 //     display: flex;
 //     visibility: visible;
 //     background-color: #FEF9F4;
 // }
-
-
 ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
     opacity: 1;
     display: flex;
@@ -22,6 +18,9 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
     padding: 0 30px;
     height: 800px;
     .menu-block {
+        .menulink.current {
+            color: red !important;
+        }
         margin: 30px 20px;
         flex: 1 1 auto;
         .menu-block-link {
@@ -52,7 +51,6 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
             margin-top: 20px;
             padding-top: 20px;
             border-top: 1px solid $black;
-
             .menu-block-link {
                 &:first-child {
                     i {
@@ -63,23 +61,19 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
                             color: $black;
                             letter-spacing: 0.5px;
                         }
-
                         a:hover {
                             text-decoration: underline!important;
                             cursor: pointer;
                         }
-        
-        
                         &:nth-child(2),
                         &:nth-child(4),
                         &:nth-child(7),
                         &:nth-child(8) {
                             margin-bottom: 30px;
-                        }   
+                        }
                     }
                 }
             }
-
         }
         &:nth-child(2) {
             border-right: 1px solid $black;
@@ -95,9 +89,7 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
                         margin-bottom: 30px;
                         color: $black;
                     }
-
                     .menu-block-link {
-                        
                         i {
                             a {
                                 font-style: normal;
@@ -108,7 +100,6 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
                             }
                         }
                     }
-
                     .menu-block-child-link {
                         margin-top: 20px;
                         span {

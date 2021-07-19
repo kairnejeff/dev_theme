@@ -456,24 +456,6 @@
     }
 }
 
-#footer .blockreassurance {
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-}
-
-#footer .blockreassurance .block-icon,
-#footer .blockreassurance .block-icon img {
-    height: 30px;
-    width: auto;
-}
-
-#footer .blockreassurance .block-title {
-    margin-top: 10px;
-    font-style: italic;
-    font-family: "AlegreyaSans";
-    font-size: 12px;
-}
-
 @media only screen and (min-device-width: 993px) and (max-device-width: 1025px) {
     #footer .container .block_newsletter {
         bottom: 65px;
