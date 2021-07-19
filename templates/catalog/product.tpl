@@ -56,7 +56,7 @@
       <div class="title">
         
       </div>
-      <div class="col-md-6">
+      <div class="col-md-5">
         {block name='page_content_container'}
           <section class="page-content" id="content">
             {block name='page_content'}
@@ -73,7 +73,7 @@
           </section>
         {/block}
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7">
           {block name='page_header_container'}
             {block name='page_header'}
               <h2 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h2>
@@ -313,13 +313,13 @@
                     </div>
                     </div>
 
-                  <div class="product-special-info">
+                  {* <div class="product-special-info">
                     <div class="label-bio"><img src="{$urls.img_url}/logo-bio-europeen.svg" /></div>
                   </div>
 
                   {block name='product_additional_info'}
                     {include file='catalog/_partials/product-additional-info.tpl'}
-                  {/block}
+                  {/block} *}
 
                   {* Input to refresh product HTML removed, block kept for compatibility with themes *}
                   {block name='product_refresh'}{/block}

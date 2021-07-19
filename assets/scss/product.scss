@@ -15,16 +15,32 @@
         #main {
             .product-container {
 
-                .title {
-                    h1 {
-                        text-align: center;
-                    }
+                // .title {
+                //     h1 {
+                //         text-align: center;
+                //     }
 
-                    #product-subtitle {
-                        text-align: center;
-                    }
+                //     #product-subtitle {
+                //         text-align: center;
+                //     }
 
-                    margin-bottom: 30px;
+                //     margin-bottom: 30px;
+                // }
+
+                .col-md-5 {
+                    .images-container {
+                        #carousel {
+                            margin-top: 10px;
+
+                            ul {
+                                li {
+                                    img {
+                                        border: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .info-detailed {
