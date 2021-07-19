@@ -27,34 +27,12 @@
     <div class="product-cover">
       {if $product.default_image}
         <img class="js-qv-product-cover" src="{$product.default_image.bySize.large_default.url}"  alt="{if empty($product.default_image.legend)}{$product.name}{else}{$product.default_image.legend}{/if}" title="{$product.default_image.legend}" style="width:100%;" itemprop="image">
-        <div class="layer hidden-sm-down" data-toggle="modal" data-target="#product-modal">
-          <i class="material-icons zoom-in">search</i>
-        </div>
       {else}
         <img src="{$urls.no_picture_image.bySize.large_default.url}" style="width:100%;">
       {/if}
+      {hook h='displayProductCaroussel' id_product=$product.id}
     </div>
   {/block}
 
-  {block name='product_images'}
-    <div class="js-qv-mask mask">
-      <ul class="product-images js-qv-product-images">
-        {foreach from=$product.images item=image}
-          <li class="thumb-container">
-            <img
-              class="thumb js-thumb {if $image.id_image == $product.default_image.id_image} selected {/if}"
-              data-image-medium-src="{$image.bySize.medium_default.url}"
-              data-image-large-src="{$image.bySize.large_default.url}"
-              src="{$image.bySize.home_default.url}"
-              alt="{$image.legend}"
-              title="{$image.legend}"
-              width="100"
-              itemprop="image"
-            >
-          </li>
-        {/foreach}
-      </ul>
-    </div>
-  {/block}
 {hook h='displayAfterProductThumbs'}
 </div>
