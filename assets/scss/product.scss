@@ -203,10 +203,12 @@
                                             .product-prices {
                                                 width: 50%;
                                                 text-align: right;
+                                                margin: 0;
 
                                                 .product-price {
                                                     margin: 0;
                                                     .current-price {
+                                                        margin: 0;
                                                         span {
                                                             font-size: 16px;
                                                             font-family: 'RobotoMono';
@@ -231,7 +233,7 @@
                                             .product-nutriscore {
                                                 div {
                                                     img {
-                                                        width: 88px;
+                                                        width: 100px;
                                                     }
                                                 }
                                             }
@@ -583,7 +585,7 @@
         .flex {
             position: relative;
             height: 520px;
-            margin-bottom: 150px;
+            margin-bottom: 100px;
 
             @media screen and (min-width: 767px) and (max-width: 1024px) {
                 width: 100%;
@@ -641,14 +643,13 @@
                 }
                 
             }
-
         }
     }
 
     .secret {
         .text-info {
             left: 70px;
-            top: 15%;
+            top: 15%!important;
 
             p {
                 padding-bottom: 20px;

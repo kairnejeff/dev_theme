@@ -1,10 +1,12 @@
 @import "global.scss";
-// ul.top-menu[data-child="1"] li.menu-item .sub-menu {
-//     opacity: 1;
-//     display: flex;
-//     visibility: visible;
-//     background-color: #FEF9F4;
-// }
+
+ul.top-menu[data-child="1"] li.menu-item .sub-menu {
+    opacity: 1;
+    display: flex;
+    visibility: visible;
+    background-color: #FEF9F4;
+}
+
 ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
     opacity: 1;
     display: flex;
@@ -16,7 +18,7 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
-    height: 800px;
+    height: auto;
     .menu-block {
         .menulink.current {
             color: red !important;
@@ -117,7 +119,7 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
                                 &:nth-child(8),
                                 &:nth-child(13),
                                 &:nth-child(16) {
-                                    margin-bottom: 30px;
+                                    margin-bottom: 20px;
                                 }
                             }
                         }
@@ -152,6 +154,15 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
                         padding-left: 30px;
                     }
                 }
+            }
+        }
+
+        &:last-child {
+            margin: 30px 0;
+
+            img {
+                width: 100%;
+                object-fit: cover;
             }
         }
     }
