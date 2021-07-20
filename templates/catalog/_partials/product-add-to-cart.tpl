@@ -46,9 +46,9 @@
         </div>
 
         <div class="add">
-          {if isset($product.nutriscore)&& $product.nutriscore!=" "}
+          {if isset($product.nutriscore)&& $product.nutriscore!=NULL}
             <div class="product-nutriscore">
-                <div class="nutriscore"><img src="{$urls.img_url}/nutriscore-{$product.nutriscore}.svg" /></div>
+                <div class="nutriscore"><img src="{$urls.img_url}nutriscore-{$product.nutriscore}.svg" /></div>
             </div>
           {/if}
 
