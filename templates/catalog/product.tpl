@@ -336,10 +336,9 @@
           <div class="flex">
             <div class="provenance"></div>
             <div class="text-info">
-              <p>Nos recettes sont fabriquées à Revel, 
-                au cœur du Lauragais, dans ce Sud-Ouest de la France 
-                où l’on sait faire honneur à la qualité du produit 
-                comme à l’art de la bonne cuisine.</p>
+            {if $product.source != NULL}
+              {$product.source nofilter}
+            {/if}
             </div>
           </div>
         </div>
@@ -348,9 +347,9 @@
           <h2> Notre secret de cuisine </h2>
           <div class="flex">
             <div class="text-info">
-              <p>Toutes nos recettes sont cuites à basse température, selon un procédé unique élaboré par nos soins.</p>
-              <p>Ce procédé permet de respecter les saveurs et les qualités de chaque ingrédient.</p>
-              <p>Aucun additif (conservateur, arôme, épaississant, stabilisant, colorant) n’est ajouté.</p>
+            {if $product.secret != NULL}
+              {$product.secret nofilter}
+            {/if}
             </div>
             <div class="secret_cuisine"></div>
           </div>
