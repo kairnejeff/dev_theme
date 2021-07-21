@@ -10,7 +10,6 @@
     #header .header-nav .row {
         display: flex;
         flex-wrap: nowrap;
-        border-bottom: 1px solid #000;
     }
     #header .header-nav .row .navigation-header {
         display: flex;
@@ -153,10 +152,6 @@
 
 .container #main #content #carousel ul {
     height: auto;
-}
-
-.container #main #content .featured-products {
-    margin-top: 40px;
 }
 
 .container #main #content .featured-products h2 {

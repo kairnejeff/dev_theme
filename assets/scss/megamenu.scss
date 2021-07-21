@@ -13,6 +13,7 @@ ul.top-menu[data-child="1"] li.menu-item:hover .sub-menu {
 ul.top-menu[data-child="1"] li.menu-item .sub-menu {
     background-color: #FEF9F4;
     display: flex;
+    width: 100%;
 }
 
 .top-menu .sub-menu.collapse {
@@ -28,7 +29,8 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
         .menu-block-link {
             i {
                 a {
-                    padding-left: 0;
+                    padding: 0;
+                    padding-bottom: 17px;
                     font-style: normal;
                     font-family: $alegreya;
                     font-size: 16px;
@@ -53,43 +55,47 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
             margin-top: 20px;
             padding-top: 20px;
             border-top: 1px solid $black;
-            .menu-block-link {
-                &:first-child {
-                    i {
-                        a {
-                            font-style: normal;
-                            font-family: $alegreya;
-                            font-size: 15px;
-                            color: $black;
-                            letter-spacing: 0.5px;
-                        }
-                        a:hover {
-                            text-decoration: underline!important;
-                            cursor: pointer;
-                        }
-                        &:nth-child(2),
-                        &:nth-child(4),
-                        &:nth-child(7),
-                        &:nth-child(8) {
-                            margin-bottom: 30px;
-                        }
-                    }
+
+        }
+        &:first-child {
+                
+            i {
+                a {
+                    font-style: normal;
+                    font-family: $alegreya;
+                    font-size: 15px;
+                    color: $black;
+                    letter-spacing: 0.5px;
+                }
+                a:hover {
+                    text-decoration: underline!important;
+                    cursor: pointer;
+                }
+                &:nth-child(2),
+                &:nth-child(4),
+                &:nth-child(7),
+                &:nth-child(8) {
+                    margin-bottom: 30px;
                 }
             }
         }
+
         &:nth-child(2) {
             border-right: 1px solid $black;
             border-left: 1px solid $black;
             padding: 0 30px;
+
             .recipe-ingredient {
                 display: flex;
                 justify-content: space-between;
+
                 .menu-block-child {
                     .menu-block-child-name {
                         font-family: $unna;
                         font-size: 20px;
                         margin-bottom: 30px;
                         color: $black;
+                        line-height: 22px;
                     }
                     .menu-block-link {
                         i {
@@ -149,6 +155,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                         border-left: 1px solid $grey;
                         border-right: 1px solid $grey;
                         padding-left: 30px;
+                        padding-right: 10px;
                     }
                     &:last-child {
                         padding-left: 30px;
@@ -158,16 +165,16 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
         }
         &:last-child {
             margin: 30px 0;
-            img {
-                width: 100%;
-                object-fit: cover;
-            }
+            background-image: url("../img/HACL.png");
+            background-size: cover;
+            width: 340px;
         }
     }
 }
 
 .popover {
     top: 43px;
+    left: -100px;
 }
 
 span.obflink {

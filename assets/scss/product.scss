@@ -14,6 +14,8 @@
         }
         #main {
             .product-container {
+                width: 88%;
+                margin: 0 auto;
 
                 // .title {
                 //     h1 {
@@ -27,21 +29,36 @@
                 //     margin-bottom: 30px;
                 // }
 
-                .col-md-5 {
-                    .images-container {
-                        #carousel {
-                            margin-top: 10px;
+                .product-cover {  
+                    img {
+                        width: 400px;
+                        @media (max-width: 768px) {
+                            width: 100%;
+                        }
+                    }
+                            
 
-                            ul {
-                                li {
-                                    img {
-                                        border: none;
-                                    }
+                    #carousel {
+                        margin-top: 20px;
+
+                        ul {
+                            li {
+                                img {
+                                    border: none;
                                 }
                             }
                         }
-                    }
+                    }  
                 }
+                // .col-md-6 {                    
+
+                //     &:last-child {
+                //         @media (min-width: 768px) {
+                //             width:60%;
+                //         }
+                //     }
+                // }
+
 
                 .info-detailed {
                     @media screen and (min-width: 1024px) {
@@ -103,7 +120,7 @@
                         }
                     }
                     &:nth-child(3) {
-                        padding-left: 100px;
+                        padding-left: 50px;
                         h2 {
                             padding-left: 8px;
                             line-height: 1.1;
@@ -121,7 +138,8 @@
                                 &:first-child {
                                     p {
                                         font-size: 16px;
-                                        margin-bottom: 40px;
+                                        margin-bottom: 120px;
+                                        height: 66px;
                                     }
                                 }
                             }
@@ -147,6 +165,7 @@
                                         border-top: 1px solid grey;
                                         margin-bottom: 0;
                                         padding: 12px 0;
+                                        height: 60px;
 
                                         #group_1 {
                                             display: flex;
@@ -191,6 +210,7 @@
                                             border-bottom: 1px solid grey;
                                             align-items: center;
                                             padding: 12px 0;
+                                            height: 60px;
 
                                             .input-group {
                                                 width: 25%;
@@ -217,6 +237,8 @@
                                                         }
                                                     }
                                                 }
+
+                                                
 
                                                 .tax-shipping-delivery-label {
                                                     display: none;
@@ -253,6 +275,11 @@
                                             }
                                         }
                                     }
+
+                                    .product-minimal-quantity,
+                                    #product-availability {
+                                        display:none;
+                                    }
                                 }
                             }
                         }
@@ -287,21 +314,6 @@
                 }
                 .product-container {
                     .col-md-6 {
-                        &:first-child {
-                            .page-content {
-                                .images-container {
-                                    .product-cover {
-                                        img {
-                                            max-width: 565px;
-                                            max-height: 565px;
-                                            @media (max-width: 1200px) {
-                                                width: 100%;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
                         &:nth-child(2) {
                             .product-prices {
                                 .current-price {
@@ -399,7 +411,6 @@
         width: 100%;
         padding-left: 0;
         padding-right: 0;
-        padding-top: 30px;
         margin-bottom: 30px;
 
         #main-menu {
@@ -407,10 +418,12 @@
             ul {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 padding: 9px 0 8px;
                 border-bottom: 1px solid $grey_border;
                 border-top: 1px solid $grey_border;
                 margin-bottom: 0;
+                height: 60px;
 
                 .menu-tab {
                     font-size: 14px;
@@ -422,7 +435,7 @@
                         a {
                             color: $greylight;
                             border-bottom: 2px solid $greylight;
-                            padding-bottom: 10px;
+                            padding-bottom: 21px;
                             text-decoration: none;
                             padding-left: 15px;
                             padding-right: 15px;
@@ -437,7 +450,7 @@
             width: 100%;
             padding-left: 0;
             display: none;
-            height: 232px;
+            height: 205px;
             border-bottom: 1px solid $grey_border;
             overflow: scroll;
 
@@ -569,8 +582,6 @@
     margin-top: 80px;
 
     .info-actu {
-        margin-bottom: 60px;
-        padding-top: 30px;
 
         h2 {
             margin-bottom: 80px;

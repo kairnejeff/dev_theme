@@ -6,6 +6,9 @@
             width: 1600px;
             margin: 0 auto;
             .row {
+                .logo {
+                    width: 150px;
+                }
                 .home_popup {
                     display: none;
                     #list-builder {
