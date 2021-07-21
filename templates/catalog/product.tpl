@@ -56,7 +56,7 @@
       <div class="title">
         
       </div>
-      <div class="col-md-5">
+      <div class="col-md-6">
         {block name='page_content_container'}
           <section class="page-content" id="content">
             {block name='page_content'}
@@ -73,7 +73,7 @@
           </section>
         {/block}
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
           {block name='page_header_container'}
             {block name='page_header'}
               <h2 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h2>
