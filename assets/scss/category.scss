@@ -81,3 +81,11 @@
 .collapse-icons[aria-expanded=true] .add {
     display: none;
 }
+
+.product-miniature {
+    .thumbnail-container {
+        .carousel-inner {
+            display: none;
+        }
+    }
+}
