@@ -297,3 +297,10 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    #wrapper .container {
+        width: 1190px;
+        max-width: 100%;
+    }
+}

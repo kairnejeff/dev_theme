@@ -36,12 +36,10 @@
                 flex-wrap: nowrap;
                 border-bottom: 1px solid #000;
                 position: relative;
-
                 .right-nav {
                     position: absolute;
                     right: 0;
                     top: -40px;
-
                     #_desktop-user_info {
                         .user-info {
                             margin-top: 0;
@@ -61,7 +59,6 @@
                         }
                     }
                 }
-
                 .navigation-header {
                     display: flex;
                     width: 100%;
@@ -77,7 +74,6 @@
                         position: absolute;
                         right: 0;
                         top: -35px;
-                        
                     }
                 }
                 .header-bottom {
@@ -86,24 +82,20 @@
                     position: absolute;
                     bottom: 0;
                     text-align: center;
-
                     .menu {
-                        > ul {
+                        >ul {
                             margin-bottom: 0;
-
-                            > li {
+                            >li {
                                 margin-right: 50px;
-                                > span {
+                                >span {
                                     font-family: $unna;
                                     font-size: 20px;
                                     text-transform: none;
-
                                 }
                             }
                         }
                     }
                 }
-
                 // #_desktop_top_menu {
                 //     width: 100%;
                 //     padding: 0 20px;
@@ -251,12 +243,7 @@
                         ul {
                             position: absolute;
                             background-color: #fff;
-                            z-index: 999;
-                            width: 100%;
-                            border-top: 2px solid #000;
                             li {
-                                padding: 8px 5px;
-                                border-bottom: 1px solid $grey;
                                 a {
                                     text-transform: none;
                                     letter-spacing: 1px;

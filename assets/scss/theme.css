@@ -8100,8 +8100,8 @@ textarea:active:-moz-placeholder {
     box-shadow: none;
     z-index: inherit;
     display: block;
-    position: static;
-    overflow: hidden;
+    position: absolute;
+    top: 0;
     margin-left: 0;
     width: 100%;
     min-width: 100%;
