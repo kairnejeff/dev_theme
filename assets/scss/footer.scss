@@ -8,7 +8,15 @@
             .row {
                 .logo {
                     width: 150px;
+
+                    @media (max-width: 769px) {
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+                    }
+                    
                 }
+                
                 .home_popup {
                     display: none;
                     #list-builder {
@@ -130,25 +138,28 @@
                         }
                     }
                 }
-                .footer_information {
-                    .titre {
-                        font-family: $unna;
-                        font-weight: bold;
-                        font-size: 20px;
-                    }
-                    div {
-                        p {
-                            font-family: $roboto-light;
-                            font-size: 14px;
-                            span {
-                                display: block;
+
+                .col-md-7 {
+                    .footer_information {
+                        .titre {
+                            font-family: $unna;
+                            font-weight: bold;
+                            font-size: 20px;
+                        }
+                        div {
+                            p {
+                                font-family: $roboto-light;
+                                font-size: 14px;
+                                span {
+                                    display: block;
+                                }
                             }
-                        }
-                        .coordonnes {
-                            margin-bottom: 0;
-                        }
-                        .member {
-                            margin-top: 50px;
+                            .coordonnes {
+                                margin-bottom: 0;
+                            }
+                            .member {
+                                margin-top: 50px;
+                            }
                         }
                     }
                 }
