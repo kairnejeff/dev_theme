@@ -1,10 +1,19 @@
-<div  class="menu js-top-menu position-static">
+<div  class="menu js-top-menu position-static hidden-sm-down" id="_desktop_top_menu">
+<button type="button" id="menu-close" class="hidden-md-up" data-dismiss="menu" aria-label="Fermer">
+    <span aria-hidden="true"><i class="material-icons">close</i></span>
+</button>
 <ul class="top-menu" data-child="1">
     {foreach from=$items item=item}
         <li class="menu-item">
             {if !$item.is_single}
+                <button type="button" class="hidden-md-up menu-next"  aria-label="Next">
+                    <span aria-hidden="true" class="hidden-md-up"><i class="material-icons">chevron_right</i></span>
+                </button>
                 <span class="menu-item-title dropdown-item">{$item.name_item}</span>
                 <div class="menu-blocks popover sub-menu js-sub-menu collapse">
+                    <button type="button" class="hidden-md-up menu-before"  aria-label="Next">
+                    <span aria-hidden="true" class="hidden-md-up"><i class="material-icons">chevron_left</i></span>
+                    </button>
                 {foreach from=$item.list_block item=block}
                     <div class="menu-block">
                         <span class="menu-block-name">{$block.block.name_block}</span>
@@ -43,4 +52,5 @@
         </li>
     {/foreach}
 </ul>
+<div id="_mobile_user_info"></div>
 </div>

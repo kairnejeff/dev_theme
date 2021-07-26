@@ -1,8 +1,6 @@
 @import "global.scss";
-
 #wrapper {
     padding-top: 0;
-    width: 1190px;
     margin: 0 auto;
     .container {
         .page-home {
@@ -21,11 +19,9 @@
                 //     h1 {
                 //         text-align: center;
                 //     }
-
                 //     #product-subtitle {
                 //         text-align: center;
                 //     }
-
                 //     margin-bottom: 30px;
                 // }
 
@@ -45,21 +41,20 @@
                             li {
                                 img {
                                     border: none;
+                .col-md-5 {
+                    .images-container {
+                        #carousel {
+                            margin-top: 10px;
+                            ul {
+                                li {
+                                    img {
+                                        border: none;
+                                    }
                                 }
                             }
                         }
                     }  
                 }
-                // .col-md-6 {                    
-
-                //     &:last-child {
-                //         @media (min-width: 768px) {
-                //             width:60%;
-                //         }
-                //     }
-                // }
-
-
                 .info-detailed {
                     @media screen and (min-width: 1024px) {
                         .collapse {
@@ -84,7 +79,6 @@
                         }
                     }
                     font-size: 14px;
-
                     .info-detailed-title {
                         position: relative;
                         h2 {
@@ -99,14 +93,10 @@
                         }
                     }
                 }
-
                 .label-bio img {
                     max-width: 68px;
                     max-height: 52px;
                 }
-
-                
-                        
                 .product-flags {
                     display: none;
                 }
@@ -141,7 +131,7 @@
                                 display: block;
                             }
 
-                            > div {
+                            >div {
                                 &:first-child {
                                     p {
                                         font-size: 16px;
@@ -162,9 +152,7 @@
                                         font-size: 12px;
                                         font-weight: 700;
                                     }
-
                                 }
-
                                 .product-variants {
                                     .product-variants-item {
                                         display: flex;
@@ -181,10 +169,8 @@
                                             width: 75%;
                                             align-items: center;
                                             margin-bottom: 0;
-
                                             li {
                                                 width: 25%;
-
                                                 label {
                                                     margin-bottom: 0;
                                                     .color {
@@ -198,17 +184,13 @@
                                                         }
                                                     }
                                                 }
-
                                             }
-
                                         }
                                     }
                                 }
-
                                 .product-discounts {
                                     margin-bottom: 0;
                                 }
-
                                 .product-add-to-cart {
                                     .product-quantity {
                                         flex-direction: column;
@@ -221,17 +203,14 @@
 
                                             .input-group {
                                                 width: 25%;
-
-                                                > input {
+                                                >input {
                                                     width: 5rem;
                                                 }
                                             }
-
                                             .product-prices {
                                                 width: 50%;
                                                 text-align: right;
                                                 margin: 0;
-
                                                 .product-price {
                                                     margin: 0;
                                                     .current-price {
@@ -240,25 +219,22 @@
                                                             font-size: 16px;
                                                             font-family: 'RobotoMono';
                                                             font-weight: 700;
-                                                            letter-spacing: 1px; 
+                                                            letter-spacing: 1px;
                                                         }
                                                     }
                                                 }
 
-                                                
-
+                                            
                                                 .tax-shipping-delivery-label {
                                                     display: none;
                                                 }
                                             }
-
                                         }
                                         .add {
                                             flex-direction: row;
                                             justify-content: space-between;
                                             align-items: center;
                                             margin-top: 20px;
-
                                             .product-nutriscore {
                                                 div {
                                                     img {
@@ -266,14 +242,12 @@
                                                     }
                                                 }
                                             }
-
                                             .add-to-cart {
                                                 height: 3rem;
                                             }
                                             .btn-primary {
                                                 padding: 0.7rem 1.25rem;
                                                 width: 50%;
-
                                                 .icon-panier-off {
                                                     &:before {
                                                         font-size: 15px;
@@ -292,7 +266,6 @@
                         }
                     }
                 }
-            
                 .products {
                     @media (max-width: 480px) {
                         justify-content: space-around;
@@ -357,13 +330,11 @@
                 }
                 
             }
-        }       
+        }
     }
-
     .product-accessories {
         width: 1190px;
         margin: 120px auto;
-
         .h5 {
             margin-bottom: 20px;
             span {
@@ -383,52 +354,39 @@
     }
 }
 
-
 .boutique {
     button {
-        display:block;
+        display: block;
         margin: 0 auto;
         padding: 10px 100px;
         background: $grey;
         border-radius: 8px;
         border: 1px solid $greyblack;
         word-spacing: 6px;
-
         a {
             font-size: 16px;
             text-transform: uppercase;
             color: $white;
         }
     }
-} 
-
-
-
-
-
-
-
-
+}
 
 
 /* Test */
+
 .info-all {
     padding-left: 0;
     margin-right: 0;
     margin: 0 auto;
-
     @media screen and (max-width: 767px) {
         padding-left: 15px;
     }
-
     .info-detailed {
         width: 100%;
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 30px;
-
         #main-menu {
-            
             ul {
                 display: flex;
                 justify-content: space-between;
@@ -444,7 +402,6 @@
                     text-transform: uppercase;
                     font-family: $roboto;
                     font-size: 11px;
-
                     &.active {
                         a {
                             color: $greylight;
@@ -454,12 +411,10 @@
                             padding-left: 15px;
                             padding-right: 15px;
                         }
-                    }   
+                    }
                 }
-                
             }
         }
-
         .info-detailed-titler {
             width: 100%;
             padding-left: 0;
@@ -467,58 +422,43 @@
             height: 205px;
             border-bottom: 1px solid $grey_border;
             overflow: scroll;
-
             &::-webkit-scrollbar {
                 width: 10px;
             }
-
             // &::-webkit-scrollbar-track {
             //     background: #f1f1f1; 
             // }
-            
             &::-webkit-scrollbar-thumb {
-                background: #888; 
+                background: #888;
             }
-            
             &::-webkit-scrollbar-thumb:hover {
-                background: #555; 
+                background: #555;
             }
-
             @media screen and (max-width: 767px) {
                 margin-left: 20px;
             }
-
             &.active {
                 display: block;
                 margin-top: 15px;
             }
-
-
             &.nut {
                 width: 100%;
-
                 @media screen and (max-width: 1024px) {
                     width: 100%;
                 }
             }
-
             #ingredient {
                 margin-bottom: 50px;
-
                 p {
                     font-size: 14px;
                     font-family: $alegreya;
                     line-height: 17px;
-
                 }
             }
-
             #allergenes {
                 margin-top: 20px;
-
                 .product-nutriscore {
                     .nutriscore {
-
                         img {
                             width: 200px;
                             height: 108px;
@@ -526,35 +466,28 @@
                     }
                 }
             }
-            
             #mentions {
                 .info-nutrition {
                     display: flex;
                     flex-wrap: wrap;
                     margin-top: 35px;
-
                     ul {
                         flex: 1 0 21%;
-
                         &:nth-child(2) {
                             display: none;
                         }
-
                         .kj {
                             .number {
                                 span {
                                     display: block;
                                     line-height: 18px;
-
                                     &:first-child {
                                         padding-top: 8px;
                                     }
                                 }
                             }
                         }
-
                         .nutrition {
-
                             .number {
                                 border: 1px solid #000;
                                 padding: 10px;
@@ -565,7 +498,6 @@
                                 line-height: 50px;
                                 margin: 0 auto;
                             }
-
                             .label-nutrition {
                                 text-align: center;
                                 margin-top: 10px;
@@ -574,10 +506,8 @@
                     }
                 }
             }
-
             #avis_truspilot {
                 margin-top: 50px;
-
                 #trustbox-widget {
                     .tp-widget-wrapper {
                         margin: 0;
@@ -585,18 +515,13 @@
                     }
                 }
             }
-
         }
     }
-
-   
 }
 
 .actu {
     margin-top: 80px;
-
     .info-actu {
-
         h2 {
             margin-bottom: 80px;
             font-family: $roboto;
@@ -605,30 +530,24 @@
             text-transform: uppercase;
             text-align: center;
         }
-    
-
         .flex {
             position: relative;
             height: 520px;
             margin-bottom: 100px;
-
             @media screen and (min-width: 767px) and (max-width: 1024px) {
                 width: 100%;
             }
-
             @media screen and (max-width: 767px) {
                 width: 100%;
                 flex-direction: column;
                 align-items: center;
             }
-
             .provenance {
                 width: 694px;
                 height: 462px;
                 background-image: url("../img/provenance.png");
                 background-size: contain;
             }
-
             .secret_cuisine {
                 width: 694px;
                 height: 461px;
@@ -636,17 +555,12 @@
                 background-size: contain;
                 float: right;
             }
-
-
             .recyclage {
                 width: 694px;
                 height: 520px;
                 background-image: url("../img/recyclage.png");
                 background-size: contain;
             }
-
-                
-
             .text-info {
                 background-color: #fef9f4;
                 padding: 40px 30px;
@@ -654,34 +568,28 @@
                 top: 25%;
                 right: 70px;
                 width: 500px;
-                
                 p {
                     font-size: 21px;
                     font-family: $unna;
                     margin: 0;
                     line-height: 30px;
-
                     @media screen and (max-width: 767px) {
                         margin-left: 0;
                         margin-top: 30px;
                     }
                 }
-                
             }
         }
     }
-
     .secret {
         .text-info {
             left: 70px;
             top: 15%!important;
-
             p {
                 padding-bottom: 20px;
             }
         }
     }
-
     .text-info {
         color: $black;
         font-family: $roboto-light;

@@ -29,30 +29,6 @@
         top: -95px;
         right: 30%;
     }
-    #header .header-nav .row #_desktop_top_menu {
-        width: 100%;
-        padding: 0 20px;
-    }
-    #header .header-nav .row #_desktop_top_menu ul {
-        display: flex;
-        justify-content: space-between;
-    }
-    #header .header-nav .row #_desktop_top_menu ul li {
-        font-family: "AlegreyaSans";
-        font-size: 16px;
-    }
-    #header .header-nav .row #_desktop_top_menu ul li:not(:last-child) {
-        margin-right: 10px;
-        display: block;
-    }
-    #header .header-nav .row #_desktop_top_menu ul li a {
-        text-transform: none;
-        letter-spacing: 0.5px;
-        padding: 0;
-        font-weight: 400;
-        font-family: "AlegreyaSans";
-        font-size: 16px;
-    }
 }
 
 @media (max-width: 1200px) {
