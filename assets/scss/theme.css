@@ -10370,9 +10370,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     #prices-drop #content-wrapper {
         width: 100%
     }
-    #facet_section .button-filtre {
-        text-align: center;
-    }
 }
 
 @media (max-width:575px) {
