@@ -36,6 +36,7 @@
                   <source srcset="{$urls.base_url}modules/kj_webp/images/p/webp-img{$product.id_product}.webp" alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}" type="image/webp">
                   <img width="100" height="100" src="{$product.cover.bySize.home_default.url}" srcset="{$product.cover.bySize.home_default.url} 320w, {$product.cover.bySize.home_default_medium.url} 300w, {$product.cover.bySize.home_default_small.url} 150w " alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}">
               </picture>
+              {hook h='displayCategoryProductCaroussel' id_product=$product.id}
               
           {else}
                 <img
