@@ -12,7 +12,7 @@
                             {if sizeof($block.block.children)!=0}
                                 {foreach from=$block.block.children item=block}
                                     <div class="menu-block-child">
-                                        <span class="menu-block-child-name">{$block.name_block}</span>
+                                        <div class="menu-block-child-name">{$block.name_block nofilter}</div>
                                         <ul class="menu-block-child-link">
                                             {foreach from=$block.list_link item=link}
                                                 {if $link.link.type=='custom'}

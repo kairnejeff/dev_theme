@@ -121,18 +121,25 @@
                     }
                     &:nth-child(3) {
                         padding-left: 50px;
-                        h2 {
-                            padding-left: 8px;
-                            line-height: 1.1;
-                            border-left: 1px solid $black;
-                            font-size: 50px;
+                        .title_product {
+                            height: 110px;
+                        
+                            h2 {
+                                padding-left: 8px;
+                                line-height: 1.1;
+                                border-left: 1px solid $black;
+                                font-size: 50px;
 
-                            &::first-letter {
-                                text-transform: lowercase;
+                                &::first-letter {
+                                    text-transform: lowercase;
+                                }
                             }
                         }
                         .product-information {
                             margin-top: 30px;
+                            span {
+                                display: block;
+                            }
 
                             > div {
                                 &:first-child {
@@ -312,28 +319,34 @@
                         }
                     }
                 }
-                .product-container {
-                    .col-md-6 {
-                        &:nth-child(2) {
-                            .product-prices {
-                                .current-price {
+                
+                .col-md-6 {
+                    &:nth-child(2) {
+                        .product-prices {
+                            .current-price {
+                                span {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .product-information {
+                            > div {
+                                p {
                                     span {
-                                        font-size: 16px;
+                                        display:block;
                                     }
                                 }
                             }
-                            .product-information {
-                                .product-actions {
-                                    form {
-                                        .product-add-to-cart {
-                                            #product-availability {
-                                                position: relative;
-                                                padding-left: 30px;
-                                                i {
-                                                    position: absolute;
-                                                    left: 0;
-                                                    bottom: 2px;
-                                                }
+                            .product-actions {
+                                form {
+                                    .product-add-to-cart {
+                                        #product-availability {
+                                            position: relative;
+                                            padding-left: 30px;
+                                            i {
+                                                position: absolute;
+                                                left: 0;
+                                                bottom: 2px;
                                             }
                                         }
                                     }
@@ -342,6 +355,7 @@
                         }
                     }
                 }
+                
             }
         }       
     }

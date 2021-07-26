@@ -76,11 +76,13 @@
         <div class="col-md-6">
           {block name='page_header_container'}
             {block name='page_header'}
-              <h2 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h2>
-            {/block}
-            {if $product.description_short}
-              <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
-            {/if} 
+              <div class="title_product">
+                <h2 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h2>
+                {if $product.description_short}
+                  <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
+                {/if}
+              </div>
+            {/block} 
           {/block}
 
           <div class="product-information">
