@@ -20,8 +20,7 @@
   <div id="search_filters">
     <div id="filtre-name" class="hidden-md-up" data-target="#facet_section" data-toggle="collapse" aria-expanded="false">
       <p class="facet-title">
-        <span class="material-icons">manage_search</span>
-        <span class="filtre-sr">Filtrer</span>
+        <span class="filtre-sr">Filtrer ({$activeFilters|@count})</span>
       </p>
     </div>
     {block name='facets_clearall_button'}
@@ -35,6 +34,9 @@
       {/if}
     {/block}
     <div id="facet_section" class="mobile-collapse" >
+      <button type="button" class="close hidden-md-up" aria-label="{l s='Close' d='Shop.Theme.Global'}">
+        <span aria-hidden="true"><i class="material-icons">close</i></span>
+      </button>
     {foreach from=$displayedFacets item="facet"}
       <section class="facet clearfix">
         <p class="facet-title">{$facet.label}</p>
