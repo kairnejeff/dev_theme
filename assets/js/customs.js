@@ -94,6 +94,9 @@ function addCompleteCssProgressBar() {
         var isExpanded = $('#filtre-name').first().attr("aria-expanded")
         isExpanded ? $('.mobile-collapse').collapse() : $('.mobile-collapse').collapse('hide')
     })
+    $("#facet_section .close").click(function() {
+        $('.mobile-collapse').collapse('hide')
+    })
 
 
 })();

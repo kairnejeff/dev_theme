@@ -15,12 +15,17 @@
         text-align: center;
         letter-spacing: 1px;
     }
+    @media screen and (min-width: 768px) {
+        .h1 {
+            margin-left: 22%;
+        }
+    }
 }
 
 .block-category {
     img {
-        max-width: 100%;
         max-height: 100%;
+        width: 90%;
     }
 }
 
@@ -66,6 +71,12 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    #search_filters {
+        margin-top: 3.35rem;
+    }
+}
+
 .collapse-icons {
     .remove {
         display: none;
@@ -86,6 +97,20 @@
     .thumbnail-container {
         .carousel-inner {
             display: none;
+        }
+    }
+}
+
+#category {
+    #wrapper {
+        #products {
+            .container {
+                padding: unset;
+                .col-md-8,
+                .col-lg-9 {
+                    padding-right: unset;
+                }
+            }
         }
     }
 }

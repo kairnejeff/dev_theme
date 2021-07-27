@@ -6,14 +6,6 @@
     }
 }
 
-.block-category img {
-    max-width: 840px!important;
-    max-height: 293.95px!important;
-    @media (max-width: 1200px) {
-        max-width: 100%!important;
-    }
-}
-
 .categories-preview {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
