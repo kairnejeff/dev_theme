@@ -35,4 +35,6 @@
       <i class="material-icons">&#xE316;</i>
     </a>
   </div>
+
+  {hook h="displayFooterCategory"}
 </div>
