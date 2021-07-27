@@ -87,7 +87,6 @@
 
     </section>
 
-    {hook h="displayFooterCategory"}
     
     </section>
 {/block}

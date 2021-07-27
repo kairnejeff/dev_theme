@@ -19,6 +19,7 @@
  {if $displayedFacets|count}
   <div id="search_filters">
     <div id="filtre-name" class="hidden-md-up" data-target="#facet_section" data-toggle="collapse" aria-expanded="false">
+    <div id="overlay"></div>
       <p class="facet-title">
         <span class="filtre-sr">Filtrer ({$activeFilters|@count})</span>
       </p>
