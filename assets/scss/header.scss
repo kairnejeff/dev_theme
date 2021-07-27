@@ -208,7 +208,8 @@
                 }
                 #mobile_top_menu_wrapper {
                     #_mobile_top_menu {
-                        position: relative;
+                        position: fixed;
+                        height: 100%;
                         width: 100%;
                         margin-top: 15px;
                         background-color: $pink;
