@@ -100,9 +100,9 @@
               <input type="hidden" name="qty" value="1" id="id_product_{$product.id}"> 
               {if !$configuration.is_catalog}
                       {if (!isset($product.customization_required) || !$product.customization_required) && ($product.allow_oosp || $product.quantity > 0)}
-                        <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}></button>
+                        <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}><span class="icon-panier-off"></span></button>
                       {else}
-                        <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" disabled></button>
+                        <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" disabled><span class="icon-panier-off"></span></button>
                       {/if}
                 {/if}
             </form>
