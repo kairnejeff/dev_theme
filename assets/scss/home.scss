@@ -191,8 +191,9 @@
             article {
                 .product-description {
                     position: relative;
-                    .h3 {
+                    .h2 {
                         width: 75%;
+                        font-size: 1.125rem;
                     }
                     #product-subtitle {
                         width: 65%;
@@ -279,39 +280,32 @@
             font-family: $roboto;
             font-size: 18px;
             letter-spacing: 1.8px;
-
         }
-
         #custom-text {
             #custom-text-container {
                 padding: 40px 180px;
             }
         }
     }
-
     .avis {
         h2 {
             padding-bottom: 30px;
-	        font-family: 'RobotoMono';
+            font-family: 'RobotoMono';
             font-size: 18px;
             text-transform: uppercase;
-            border-bottom: 1px solid #e17550;
+            border-bottom: 1px solid #e17550;
             letter-spacing: 1.8px;
             width: max-content;
         }
-
         .truspilot-avis {
-
             .header {
                 font-size: 21px;
                 line-height: 24px;
             }
-
-            .slide-text  {
+            .slide-text {
                 font-size: 21px;
                 line-height: 24px;
             }
-
         }
     }
 }
