@@ -115,7 +115,6 @@
                         }
                     }
                     &:nth-child(3) {
-                        padding-left: 50px;
                         height: 846.172px;
                         position: relative;
                         .title_product {                        
@@ -322,6 +321,10 @@
                             .product-actions {
                                 position: absolute;
                                 bottom: 0;
+
+                                @media (max-width: 769px) {
+                                    position: relative;
+                                }
 
                                 form {
                                     .product-add-to-cart {
@@ -557,7 +560,7 @@
             .provenance {
                 width: 694px;
                 height: 462px;
-                background-image: url("../img/provenance.png");
+                background-image: url("../img/secret.png");
                 background-size: contain;
             }
             .secret_cuisine {
@@ -580,6 +583,13 @@
                 top: 25%;
                 right: 70px;
                 width: 500px;
+
+                @media (max-width: 769px) {
+                    right: 13px;
+                    bottom: 10px;
+                    top: auto;
+                }
+
                 p {
                     font-size: 21px;
                     font-family: $unna;
@@ -587,7 +597,6 @@
                     line-height: 30px;
                     @media screen and (max-width: 767px) {
                         margin-left: 0;
-                        margin-top: 30px;
                     }
                 }
             }
@@ -596,7 +605,7 @@
     .secret {
         .text-info {
             left: 70px;
-            top: 15%!important;
+            top: 15%;
             p {
                 padding-bottom: 20px;
             }

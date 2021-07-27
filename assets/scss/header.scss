@@ -87,13 +87,26 @@
                     .menu {
                         >ul {
                             margin-bottom: 0;
+                            margin-left: 315px;
+
                             >li {
                                 margin-right: 50px;
                                 span {
                                     font-family: $unna;
-                                    font-size: 20px;
+                                    font-size: 16px;
                                     text-transform: none;
                                     letter-spacing: 0px;
+                                    line-height: 23px;
+                                }
+
+                                &:first-child {
+                                    span {
+                                        padding-left:0;
+                                    }
+                                }
+
+                                &:last-child {
+                                    margin-right:0;
                                 }
                             }
                         }
@@ -108,9 +121,14 @@
     #header {
         position: relative;
         .header-nav {
-            border: none;
             margin: 0;
             padding-bottom: 20px;
+
+            @media (max-width: 769px) {
+                border-bottom: 1px solid $grey_border;
+                margin-bottom: 20px;
+            }
+            
             .row {
                 .navigation-header {
                     display: flex;
