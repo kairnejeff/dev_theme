@@ -8098,7 +8098,6 @@ textarea:active:-moz-placeholder {
 
 #mobile_top_menu_wrapper .top-menu .sub-menu {
     box-shadow: none;
-    z-index: inherit;
     display: block;
     position: absolute;
     top: 0;

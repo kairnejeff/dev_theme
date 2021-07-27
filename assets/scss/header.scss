@@ -89,7 +89,7 @@
                             margin-bottom: 0;
                             >li {
                                 margin-right: 50px;
-                                >span {
+                                span {
                                     font-family: $unna;
                                     font-size: 20px;
                                     text-transform: none;
@@ -99,61 +99,6 @@
                         }
                     }
                 }
-                // #_desktop_top_menu {
-                //     width: 100%;
-                //     padding: 0 20px;
-                //     ul {
-                //         display: flex;
-                //         justify-content: space-between;
-                //         li {
-                //             font-family: 'AlegreyaSans';
-                //             font-size: 16px;
-                //             &:not(:last-child) {
-                //                 margin-right: 10px;
-                //                 display: block;
-                //             }
-                //             a {
-                //                 text-transform: none;
-                //                 letter-spacing: 0.5px;
-                //                 padding: 0;
-                //                 font-weight: 400;
-                //                 font-family: 'AlegreyaSans';
-                //                 font-size: 16px;
-                //                 cursor: pointer;
-                //             }
-                //             &.current#category-79 {
-                //                 a {
-                //                     color: #f9992f;
-                //                 }
-                //             }
-                //             &.current#category-78 {
-                //                 a {
-                //                     color: #ff3e39;
-                //                 }
-                //             }
-                //             &.current#category-80 {
-                //                 a {
-                //                     color: #647b3f;
-                //                 }
-                //             }
-                //             &.current#category-40 {
-                //                 a {
-                //                     color: #e8ae32;
-                //                 }
-                //             }
-                //             &.current#category-58 {
-                //                 a {
-                //                     color: #e0a077;
-                //                 }
-                //             }
-                //             &.current#category-71 {
-                //                 a {
-                //                     color: #464646;
-                //                 }
-                //             }
-                //         }
-                //     }
-                // }
             }
         }
     }
@@ -161,6 +106,7 @@
 
 @media (max-width: 1200px) {
     #header {
+        position: relative;
         .header-nav {
             border: none;
             margin: 0;
@@ -221,6 +167,10 @@
         }
         .header-top {
             background-color: $white;
+            position: absolute;
+            z-index: 9999;
+            width: 100%;
+            top: 0;
             .container {
                 #menu-icon {
                     display: block;
@@ -243,18 +193,77 @@
                         position: relative;
                         width: 100%;
                         margin-top: 15px;
-                        ul {
-                            position: absolute;
-                            background-color: #fff;
-                            li {
+                        background-color: $pink;
+
+                        .top-menu {
+                            border-bottom: 1px soliD $grey_border;
+                            .menu-item {
+                                font-size: 20px;
+                                font-family: $unna;
+                                padding-left: 20px;
+
                                 a {
-                                    text-transform: none;
-                                    letter-spacing: 1px;
                                     padding: 0;
-                                    font-weight: 400;
-                                    font-family: 'AlegreyaSans';
+                                }
+                            }
+                        }
+
+                        #menu-close {
+                            border: none;
+                            background: none;
+                            position: absolute;
+                            right: 20px;
+
+                            i {
+                                background: none;
+                                line-height: 2;
+                            }
+                        }
+
+                        ul {
+                            position: relative;
+                            padding: 50px 15px;
+                            border-bottom: 1px solid $grey_border;
+
+                            @media (max-width: 769px) {
+                                border-bottom: none;
+                    
+                            }
+
+                            @media (max-width: 769px) {
+                                padding: 30px 0px;
+                            }
+
+                            li {
+                                position: relative;
+                                margin-bottom: 20px;
+                                
+                                    button {
+                                        position: absolute;
+                                        right: 5px;
+                                        border: none;
+                                        background: none;
+                                    }
+
+                                    .menu-block-child-name {
+                                    font-size: 20px;
+                                    font-family: $unna;
+                                    padding: 0;
+                                }
+                            }
+                        }
+
+                        #_mobile_user_info {
+                            padding: 20px 15px;
+
+                            .user-info {
+                                a {
                                     font-size: 14px;
-                                    border: 0
+                                    font-weight: bold;
+                                    text-transform: uppercase;
+                                    font-family: $roboto;
+                                    margin-right: 20px;
+                                    letter-spacing: 1px;
                                 }
                             }
                         }

@@ -41,6 +41,11 @@
                             li {
                                 img {
                                     border: none;
+                                }
+                            }
+                        }
+                    }
+                }
                 .col-md-5 {
                     .images-container {
                         #carousel {
@@ -111,9 +116,9 @@
                     }
                     &:nth-child(3) {
                         padding-left: 50px;
-                        .title_product {
-                            height: 110px;
-                        
+                        height: 846.172px;
+                        position: relative;
+                        .title_product {                        
                             h2 {
                                 padding-left: 8px;
                                 line-height: 1.1;
@@ -136,11 +141,14 @@
                                     p {
                                         font-size: 16px;
                                         margin-bottom: 120px;
-                                        height: 66px;
+                                        max-height: 66px;
                                     }
                                 }
                             }
                             .product-actions {
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
                                 .label-info {
                                     width: 25%;
                                     span {
@@ -249,6 +257,7 @@
                                                 padding: 0.7rem 1.25rem;
                                                 width: 50%;
                                                 .icon-panier-off {
+                                                    display: none;
                                                     &:before {
                                                         font-size: 15px;
                                                     }
@@ -311,6 +320,9 @@
                                 }
                             }
                             .product-actions {
+                                position: absolute;
+                                bottom: 0;
+
                                 form {
                                     .product-add-to-cart {
                                         #product-availability {
@@ -562,7 +574,7 @@
                 background-size: contain;
             }
             .text-info {
-                background-color: #fef9f4;
+                background-color: $pink ;
                 padding: 40px 30px;
                 position: absolute;
                 top: 25%;
