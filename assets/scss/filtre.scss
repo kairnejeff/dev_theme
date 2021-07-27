@@ -139,6 +139,7 @@
             left: 0;
             top: 4px;
             z-index: 99999;
+            cursor: pointer;
         }
         input[type="checkbox"]+label::before {
             content: '';
@@ -149,9 +150,11 @@
             left: 0;
             position: absolute;
             top: 1px;
+            padding: 3px;
         }
         input[type="checkbox"]:checked+label::before {
             background-color: $black;
+            background-clip: content-box;
         }
         label {
             margin-left: 0;
