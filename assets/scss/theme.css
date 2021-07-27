@@ -5037,7 +5037,7 @@ tbody.collapse.in {
 
 .breadcrumb {
     padding: .75rem 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 50px;
     list-style: none;
     background-color: #f6f6f6;
     border-radius: 0
@@ -8098,7 +8098,6 @@ textarea:active:-moz-placeholder {
 
 #mobile_top_menu_wrapper .top-menu .sub-menu {
     box-shadow: none;
-    z-index: inherit;
     display: block;
     position: absolute;
     top: 0;

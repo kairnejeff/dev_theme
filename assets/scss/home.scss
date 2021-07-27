@@ -31,7 +31,7 @@
                 }
             }
             .featured-products {
-                margin-top: 40px;
+                margin-top: 100px;
                 h2 {
                     @include title;
                     padding-bottom: 20px;
@@ -71,7 +71,7 @@
                             }
                             a:first-child {
                                 &:hover {
-                                    opacity: 0.4;
+                                    opacity: 1;
                                 }
                                 img {
                                     max-width: 373.328px;
@@ -263,6 +263,8 @@
         }
         img {
             border: 1px solid #dbdbdb;
+            width: 347px;
+            height: 347px;
         }
     }
 }
@@ -272,6 +274,44 @@
         margin-top: 100px;
         h2 {
             margin-bottom: 60px;
+        }
+        .lwc {
+            font-family: $roboto;
+            font-size: 18px;
+            letter-spacing: 1.8px;
+
+        }
+
+        #custom-text {
+            #custom-text-container {
+                padding: 40px 180px;
+            }
+        }
+    }
+
+    .avis {
+        h2 {
+            padding-bottom: 30px;
+	        font-family: 'RobotoMono';
+            font-size: 18px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #e17550;
+            letter-spacing: 1.8px;
+            width: max-content;
+        }
+
+        .truspilot-avis {
+
+            .header {
+                font-size: 21px;
+                line-height: 24px;
+            }
+
+            .slide-text  {
+                font-size: 21px;
+                line-height: 24px;
+            }
+
         }
     }
 }

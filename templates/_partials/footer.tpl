@@ -32,10 +32,10 @@
 <div class="footer-container">
   <div class="container">
     <div class="row">
-      <div class="col-md-2 col-xs-4">
+      <div class="col-md-2 col-xs-12">
         <img class="logo" src="{$urls.theme_assets}img/logo-karine-jeff-small.svg" alt="logo-small Karine&Jeff"/>
       </div>
-      <div class="col-md-7 col-xs-8">
+      <div class="col-md-7 col-xs-12">
         <div class="row">
         {block name='hook_footer'}
           {hook h='displayFooter'}

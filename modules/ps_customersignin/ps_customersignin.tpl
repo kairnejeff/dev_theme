@@ -46,7 +46,7 @@
         href="{$my_account_url}"
         title="{l s='Log in to your customer account' d='Shop.Theme.Customeraccount'}"
         rel="nofollow"
-      >
+      > Mon compte
       <span class="icon-compte-off header-icon"></span>
         <span class="hidden-sm-down">{l s='Sign in' d='Shop.Theme.Actions'}</span>
       </a>

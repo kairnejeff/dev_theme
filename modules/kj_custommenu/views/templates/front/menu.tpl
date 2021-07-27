@@ -44,7 +44,7 @@
                             </div>
                     </div>
                 {/foreach}
-                <div class="menu-block"> <img src="https://www.karinejeff.fr/img/cms/nous-connaitre/02-qualite.jpg"/></div>
+                <div class="menu-block"></div>
                 </div>
             {else}
                 <span class="menu-item-title"><a href="{$item.link.url}" class="menulink {if isset($item.link.current)}current{/if}">{$item.name_item}</a></span>

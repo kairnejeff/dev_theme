@@ -6,6 +6,7 @@ $grey_border: #d8d8d8;
 $greyblack: #232323;
 $greylight: #464646;
 $blue: #82b8ec;
+$pink: #FEF9F4;
 
 $alegreya : 'AlegreyaSans';
 $roboto: 'RobotoMono'; 
@@ -45,4 +46,12 @@ $unna: 'Unna';
             text-transform: lowercase;
         }
     }
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }

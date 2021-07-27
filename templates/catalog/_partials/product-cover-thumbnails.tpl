@@ -26,7 +26,7 @@
   {block name='product_cover'}
     <div class="product-cover">
       {if $product.default_image}
-        <img class="js-qv-product-cover" src="{$product.default_image.bySize.large_default.url}"  alt="{if empty($product.default_image.legend)}{$product.name}{else}{$product.default_image.legend}{/if}" title="{$product.default_image.legend}" style="width:100%;" itemprop="image">
+        <img class="js-qv-product-cover" src="{$product.default_image.bySize.large_default.url}"  alt="{if empty($product.default_image.legend)}{$product.name}{else}{$product.default_image.legend}{/if}" title="{$product.default_image.legend}" itemprop="image">
       {else}
         <img src="{$urls.no_picture_image.bySize.large_default.url}" style="width:100%;">
       {/if}

@@ -12,6 +12,9 @@
         }
         #main {
             .product-container {
+                width: 88%;
+                margin: 0 auto;
+
                 // .title {
                 //     h1 {
                 //         text-align: center;
@@ -21,6 +24,28 @@
                 //     }
                 //     margin-bottom: 30px;
                 // }
+
+                .product-cover {  
+                    img {
+                        width: 400px;
+                        @media (max-width: 768px) {
+                            width: 100%;
+                        }
+                    }
+                            
+
+                    #carousel {
+                        margin-top: 20px;
+
+                        ul {
+                            li {
+                                img {
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                }
                 .col-md-5 {
                     .images-container {
                         #carousel {
@@ -33,7 +58,7 @@
                                 }
                             }
                         }
-                    }
+                    }  
                 }
                 .info-detailed {
                     @media screen and (min-width: 1024px) {
@@ -90,27 +115,40 @@
                         }
                     }
                     &:nth-child(3) {
-                        padding-left: 100px;
-                        h2 {
-                            padding-left: 8px;
-                            line-height: 1.1;
-                            border-left: 1px solid $black;
-                            font-size: 50px;
-                            &::first-letter {
-                                text-transform: lowercase;
+                        padding-left: 50px;
+                        height: 846.172px;
+                        position: relative;
+                        .title_product {                        
+                            h2 {
+                                padding-left: 8px;
+                                line-height: 1.1;
+                                border-left: 1px solid $black;
+                                font-size: 50px;
+
+                                &::first-letter {
+                                    text-transform: lowercase;
+                                }
                             }
                         }
                         .product-information {
                             margin-top: 30px;
+                            span {
+                                display: block;
+                            }
+
                             >div {
                                 &:first-child {
                                     p {
                                         font-size: 16px;
-                                        margin-bottom: 40px;
+                                        margin-bottom: 120px;
+                                        max-height: 66px;
                                     }
                                 }
                             }
                             .product-actions {
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
                                 .label-info {
                                     width: 25%;
                                     span {
@@ -130,6 +168,8 @@
                                         border-top: 1px solid grey;
                                         margin-bottom: 0;
                                         padding: 12px 0;
+                                        height: 60px;
+
                                         #group_1 {
                                             display: flex;
                                             justify-content: flex-start;
@@ -167,6 +207,8 @@
                                             border-bottom: 1px solid grey;
                                             align-items: center;
                                             padding: 12px 0;
+                                            height: 60px;
+
                                             .input-group {
                                                 width: 25%;
                                                 >input {
@@ -189,6 +231,8 @@
                                                         }
                                                     }
                                                 }
+
+                                            
                                                 .tax-shipping-delivery-label {
                                                     display: none;
                                                 }
@@ -213,12 +257,18 @@
                                                 padding: 0.7rem 1.25rem;
                                                 width: 50%;
                                                 .icon-panier-off {
+                                                    display: none;
                                                     &:before {
                                                         font-size: 15px;
                                                     }
                                                 }
                                             }
                                         }
+                                    }
+
+                                    .product-minimal-quantity,
+                                    #product-availability {
+                                        display:none;
                                     }
                                 }
                             }
@@ -251,43 +301,37 @@
                         }
                     }
                 }
-                .product-container {
-                    .col-md-6 {
-                        &:first-child {
-                            .page-content {
-                                .images-container {
-                                    .product-cover {
-                                        img {
-                                            max-width: 565px;
-                                            max-height: 565px;
-                                            @media (max-width: 1200px) {
-                                                width: 100%;
-                                            }
-                                        }
-                                    }
+                
+                .col-md-6 {
+                    &:nth-child(2) {
+                        .product-prices {
+                            .current-price {
+                                span {
+                                    font-size: 16px;
                                 }
                             }
                         }
-                        &:nth-child(2) {
-                            .product-prices {
-                                .current-price {
+                        .product-information {
+                            > div {
+                                p {
                                     span {
-                                        font-size: 16px;
+                                        display:block;
                                     }
                                 }
                             }
-                            .product-information {
-                                .product-actions {
-                                    form {
-                                        .product-add-to-cart {
-                                            #product-availability {
-                                                position: relative;
-                                                padding-left: 30px;
-                                                i {
-                                                    position: absolute;
-                                                    left: 0;
-                                                    bottom: 2px;
-                                                }
+                            .product-actions {
+                                position: absolute;
+                                bottom: 0;
+
+                                form {
+                                    .product-add-to-cart {
+                                        #product-availability {
+                                            position: relative;
+                                            padding-left: 30px;
+                                            i {
+                                                position: absolute;
+                                                left: 0;
+                                                bottom: 2px;
                                             }
                                         }
                                     }
@@ -296,6 +340,7 @@
                         }
                     }
                 }
+                
             }
         }
     }
@@ -352,16 +397,18 @@
         width: 100%;
         padding-left: 0;
         padding-right: 0;
-        padding-top: 30px;
         margin-bottom: 30px;
         #main-menu {
             ul {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 padding: 9px 0 8px;
                 border-bottom: 1px solid $grey_border;
                 border-top: 1px solid $grey_border;
                 margin-bottom: 0;
+                height: 60px;
+
                 .menu-tab {
                     font-size: 14px;
                     text-transform: uppercase;
@@ -371,7 +418,7 @@
                         a {
                             color: $greylight;
                             border-bottom: 2px solid $greylight;
-                            padding-bottom: 10px;
+                            padding-bottom: 21px;
                             text-decoration: none;
                             padding-left: 15px;
                             padding-right: 15px;
@@ -384,7 +431,7 @@
             width: 100%;
             padding-left: 0;
             display: none;
-            height: 232px;
+            height: 205px;
             border-bottom: 1px solid $grey_border;
             overflow: scroll;
             &::-webkit-scrollbar {
@@ -487,8 +534,6 @@
 .actu {
     margin-top: 80px;
     .info-actu {
-        margin-bottom: 60px;
-        padding-top: 30px;
         h2 {
             margin-bottom: 80px;
             font-family: $roboto;
@@ -529,7 +574,7 @@
                 background-size: contain;
             }
             .text-info {
-                background-color: #fef9f4;
+                background-color: $pink ;
                 padding: 40px 30px;
                 position: absolute;
                 top: 25%;

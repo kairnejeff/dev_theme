@@ -10,7 +10,6 @@
     #header .header-nav .row {
         display: flex;
         flex-wrap: nowrap;
-        border-bottom: 1px solid #000;
     }
     #header .header-nav .row .navigation-header {
         display: flex;
@@ -106,33 +105,16 @@
         margin-top: 15px;
     }
     #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul {
-        position: absolute;
-        background-color: #fff;
         z-index: 999;
         width: 100%;
-        border-top: 2px solid #000;
     }
     #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul li {
         padding: 8px 5px;
-        border-bottom: 1px solid #ccc;
-    }
-    #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul li a {
-        text-transform: none;
-        letter-spacing: 1px;
-        padding: 0;
-        font-weight: 400;
-        font-family: "AlegreyaSans";
-        font-size: 14px;
-        border: 0;
     }
 }
 
 .container #main #content #carousel ul {
     height: auto;
-}
-
-.container #main #content .featured-products {
-    margin-top: 40px;
 }
 
 .container #main #content .featured-products h2 {
