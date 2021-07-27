@@ -250,7 +250,7 @@
 .en-off {
     .content {
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 60px;
+        grid-gap: 10px;
         display: grid;
         text-align: center;
         @media (max-width: 480px) {
