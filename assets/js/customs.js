@@ -152,32 +152,49 @@ function setComptedisplay() {
 
 })();
 
-//product-accordion
-function productAccordion() {
-    var windowsize = $(window).width()
-    if (windowsize > 767) {
-        $('.info-detailed .collapse').collapse()
 
-    } else {
-        $('.info-detailed .collapse').on('show.bs.collapse', function() {
-            $(this).prev().find("i")[0].innerHTML = 'expand_less';
-            $('.info-detailed .collapse').not(this).collapse('hide');
-        });
-        $('.info-detailed .collapse').on('hide.bs.collapse', function() {
-            $(this).prev().find("i")[0].innerHTML = 'expand_more';
-        });
-    }
-}
-
-
-(function() {
-    productAccordion();
-    $(window).resize(productAccordion);
-})();
-
-
+//product carousel
 $(document).ready(function() {
-    //category - filtre
+    $('.images-container .product-cover .icon-next').click(function() {
+        $('.images-container .product-cover').children('#carousel').css("display", "block")
+        $('.images-container .product-cover .icon-prev').css("display", "block")
+        $('.images-container .product-cover .icon-next').css("display", "none")
+
+    })
+    $('.images-container .product-cover .icon-prev').click(function() {
+        $('.images-container .product-cover').children('#carousel').css("display", "none")
+        $('.images-container .product-cover .icon-next').css("display", "block")
+        $('.images-container .product-cover .icon-prev').css("display", "none")
+    })
+
+})
+
+
+
+//product-accordion
+// function productAccordion() {
+//     var windowsize = $(window).width()
+//     if (windowsize > 767) {
+//         $('.info-detailed .collapse').collapse()
+
+//     } else {
+//         $('.info-detailed .collapse').on('show.bs.collapse', function() {
+//             $(this).prev().find("i")[0].innerHTML = 'expand_less';
+//             $('.info-detailed .collapse').not(this).collapse('hide');
+//         });
+//         $('.info-detailed .collapse').on('hide.bs.collapse', function() {
+//             $(this).prev().find("i")[0].innerHTML = 'expand_more';
+//         });
+//     }
+// }
+
+// (function() {
+//     productAccordion();
+//     $(window).resize(productAccordion);
+// })();
+
+//category - filtre
+$(document).ready(function() {
     $('#facet_section .form-check-filtre-label').click(function() {
         var attr = $(this).prev().attr('checked');
         if (typeof attr !== typeof undefined && attr !== false) {

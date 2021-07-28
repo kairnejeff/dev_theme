@@ -46,6 +46,13 @@
         {block name='hook_footer_after'}
           {hook h='displayFooterAfter'}
         {/block}
+        <div class="block-truspilot">
+          <!-- TrustBox widget - Mini -->
+          <div class="trustpilot-widget" data-locale="fr-FR" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="603ce71821527000016deb69" data-style-height="150px" data-style-width="225px" data-theme="light">
+          <a href="https://fr.trustpilot.com/review/karinejeff.fr" target="_blank" rel="noopener">Trustpilot</a>
+          </div>
+          <!-- End TrustBox widget -->
+        </div>
         <div class="block-yuka">
           <span class="yuka"><img src="{$urls.theme_assets}img/yuka.png"/></span>
           <p class="yuka-note">Nos poduits sont excellents sur yuka (moyenne 82/100)</p>
