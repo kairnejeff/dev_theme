@@ -7911,10 +7911,6 @@ textarea:active:-moz-placeholder {
     display: inline-block
 }
 
-.search-widget form {
-    position: relative
-}
-
 .search-widget form input[type=text] {
     border: none;
     padding: 10px;
@@ -12483,6 +12479,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 #header .header-nav .search-widget {
+    position: relative;
     margin-top: .2rem
 }
 

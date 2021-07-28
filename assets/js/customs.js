@@ -134,9 +134,17 @@ function setComptedisplay() {
     $(window).resize(setComptedisplay)
 })();
 
+//barre-recherche 
+$(document).ready(function() {
+    $(".search-widget").hover(function() {
+        $(this).children("form").children("input[type=text]").addClass("navr")
+    })
+
+})
+
 
 //grid view
-(function() {
+$(document).ready(function() {
 
     $('.grid-controle #list-view').click(function() {
         $("#js-product-list .row").css("grid-template-columns", "repeat(1, 1fr)")
@@ -150,7 +158,7 @@ function setComptedisplay() {
     })
 
 
-})();
+});
 
 
 //product carousel
@@ -331,6 +339,8 @@ $(document).ready(function(e) {
             }
         })
 })
+
+
 
 $(document).ready(function(e) {
     $('#truspilot-avis').owlCarousel({
