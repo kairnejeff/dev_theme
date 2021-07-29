@@ -24,9 +24,9 @@
         }
         .bloc-abonnement {
             @media (max-width: 768px) {
-                padding: 2em 6em;
+                padding: 2em 1.5em;
             }
-            padding: 120px;
+            padding: 30px 120px;
             background-color: #d3ede2;
             .bloc-abonnement-text {
                 width: 100%;
@@ -38,10 +38,12 @@
                     padding: 0 10px;
                 }
                 .avantages {
-                    display: flex;
-                    align-items: flex-start;
-                    -ms-flex-pack: end;
-                    justify-content: space-between;
+                    @media (min-width: 768px) {
+                        display: flex;
+                        align-items: flex-start;
+                        -ms-flex-pack: end;
+                        justify-content: space-between;
+                    }
                     margin-top: 20px;
                     h3 {
                         font-size: 25px;
@@ -54,18 +56,33 @@
                         }
                     }
                     .avantage {
-                        border-right: 1px solid;
-                        padding-right: 10px;
+                        @media (min-width: 769px) {
+                            border-right: 1px solid;
+                            padding-right: 10px;
+                        }
+                        @media (max-width: 768px) {
+                            &:after {
+                                content: "";
+                                display: block;
+                                width: 30%;
+                                margin: 0 auto;
+                                padding-top: 20px;
+                                border-bottom: 1px solid black;
+                            }
+                        }
                     }
                 }
             }
             .abonnement {
-                display: flex;
-                align-items: flex-start;
-                -ms-flex-pack: end;
-                justify-content: space-between;
+                @media (min-width: 768px) {
+                    display: flex;
+                    align-items: flex-start;
+                    -ms-flex-pack: end;
+                    justify-content: space-between;
+                }
                 .card {
                     padding: 30px;
+                    background: #fff;
                     .abonnement-title {
                         border-left: 1px solid;
                         padding-left: 10px;
@@ -100,6 +117,11 @@
                         }
                     }
                 }
+            }
+            p .footer {
+                text-align: center;
+                font-size: 25px;
+                margin-top: 20px;
             }
         }
     }
