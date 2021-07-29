@@ -11876,7 +11876,8 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .block-social {
-    text-align: right
+    text-align: right;
+    margin-left: -20px;
 }
 
 .block-social ul {
