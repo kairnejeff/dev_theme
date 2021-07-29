@@ -16,6 +16,7 @@ import '/scss/contact.scss'
 import '/scss/megamenu.scss'
 import '/scss/cms.css';
 import '/scss/page.scss';
+import '/scss/abonnement.scss';
 import '/js/themes.js';
 import '/js/owl.carousel.min.js';
 import '/js/customs.js';
