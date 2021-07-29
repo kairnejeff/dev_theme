@@ -24,13 +24,18 @@
             }
         }
         .bloc {
+            h2 {
+                padding: 40px;
+            }
             width: 100%;
-            background-color: #fef9f5;
+            &:nth-child(2n+1) {
+                background-color: #fef9f5;
+            }
+            margin-bottom: 4em;
             .bloc-content {
-                padding-left: 163px;
-                padding-right: 163px;
-                img {
+                padding:50px 163px 50px 163px img {
                     max-width: 100%;
+                    height: auto;
                 }
             }
         }
