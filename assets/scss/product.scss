@@ -12,8 +12,8 @@
         }
         #main {
             .product-container {
-                width: 88%;
                 margin: 0 auto;
+                width: 100%;
                 // .title {
                 //     h1 {
                 //         text-align: center;
@@ -588,7 +588,7 @@
                 padding: 40px 30px;
                 position: absolute;
                 top: 25%;
-                right: 70px;
+                right: -100px;
                 width: 500px;
                 @media (max-width: 769px) {
                     right: 13px;
@@ -609,8 +609,7 @@
     }
     .secret {
         .text-info {
-            left: 70px;
-            top: 15%;
+            left: -100px;
             p {
                 padding-bottom: 20px;
             }

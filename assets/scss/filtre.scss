@@ -160,35 +160,5 @@
             margin-left: 0;
             padding-left: 25px;
         }
-        // input {
-        //     margin-top: .25rem;
-        //     opacity: 0;
-        //     cursor: pointer;
-        //     position: absolute;
-        //     left: 5px;
-        // }
-        // label {
-        //     &::before {
-        //         content: '';
-        //         margin-right: 3px;
-        //         display: inline-block;
-        //         width: .9375rem;
-        //         height: .9375rem;
-        //         vertical-align: middle;
-        //         cursor: pointer;
-        //         border: 2px solid #232323;
-        //     }
-        // }
-        // input:checked + label::after {
-        //         left: 9px;
-        //         top: 5px;
-        //         width: 5px;
-        //         height: 10px;
-        //         border: solid white;
-        //         border-width: 0 3px 3px 0;
-        //         -webkit-transform: rotate(45deg);
-        //         -ms-transform: rotate(45deg);
-        //         transform: rotate(45deg);
-        // }
     }
 }
