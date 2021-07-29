@@ -209,7 +209,12 @@
             margin-top: 2rem;
             font-weight: normal;
             padding-bottom: 12px;
-            @media (max-width: 480px) {
+            text-align: center;
+            @media (max-width: 575px) {
+                display: block !important;
+                height: unset !important;
+                max-width: unset !important;
+                padding-top: unset !important;
                 margin-left: 20px;
                 margin-top: 0;
             }
