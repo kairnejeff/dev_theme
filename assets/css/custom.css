@@ -41,6 +41,7 @@
         display: flex;
         width: 100%;
         position: relative;
+        text-align: center;
     }
     #header .header-nav .row .navigation-header #_desktop_logo {
         width: 100%;
@@ -73,6 +74,7 @@
 @media (max-width: 1200px) {
     #header .header-nav .row .header-bottom {
         width: 100%;
+        text-align: center;
     }
     #header .header-nav .row .header-bottom .search-widget {
         display: none;

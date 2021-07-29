@@ -170,24 +170,20 @@
                     display: flex;
                     width: 100%;
                     position: relative;
-                    .right-nav {
-                        width: 300px;
-                        position: absolute;
-                        right: 0;
-                        top: 65px;
-                        #_desktop_cart {
-                            .cart-preview.active {
-                                background: $white;
-                                a {
-                                    color: $black;
-                                }
-                            }
-                        }
-                    }
                     #_desktop_logo {
                         img {
                             margin-top: 3rem;
                         }
+                    }
+                    @media (min-width: 769px) {
+                        margin-top: 2em;
+                    }
+                }
+                .right-nav {
+                    @media (min-width: 769px) {
+                        position: absolute;
+                        right: 0;
+                        top: 5px;
                     }
                 }
                 .mobile {
