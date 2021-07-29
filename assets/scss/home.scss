@@ -290,10 +290,10 @@
             letter-spacing: 1.8px;
             line-height: 24px;
         }
-        #custom-text {
+        .custom-text {
             #custom-text-container {
-                padding: 40px 180px;
-                .font2 {
+                padding: 40px 20px;
+                >p {
                     max-width: 722px;
                     margin: 0 auto;
                 }
