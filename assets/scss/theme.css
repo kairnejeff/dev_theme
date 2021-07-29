@@ -12415,11 +12415,11 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 #header .header-nav .user-info {
-    margin-left: 2.5rem;
+    margin-left: 27px;
     text-align: right;
     white-space: nowrap;
     font-size: 12px;
-    padding: .75rem
+    padding: .75rem 0;
 }
 
 #header .header-nav .user-info .account {
