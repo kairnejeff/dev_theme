@@ -292,16 +292,14 @@
             line-height: 24px;
         }
 
-        .font2 {
-            max-width: 722px;
-            margin: 0 auto;
-        }
-
-        #custom-text {
+        .custom-text {
             #custom-text-container {
-                padding: 40px 180px;
+                padding: 40px 20px;
 
-                
+                .font2 {
+                    max-width: 722px;
+                    margin: 0 auto;
+                }
             }
         }
     }
