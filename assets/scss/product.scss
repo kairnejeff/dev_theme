@@ -13,7 +13,6 @@
         #main {
             .product-container {
                 margin: 0 auto;
-
                 // .title {
                 //     h1 {
                 //         text-align: center;
@@ -23,25 +22,45 @@
                 //     }
                 //     margin-bottom: 30px;
                 // }
-
-                .product-cover {  
+                .product-cover {
                     img {
                         width: 400px;
                         @media (max-width: 768px) {
                             width: 100%;
                         }
                     }
-                            
-
                     #carousel {
                         margin-top: 20px;
-
+                        @media (min-width: 768px) {
+                            display: block !important;
+                        }
+                        @media (max-width: 767px) {
+                            margin-top: unset;
+                            position: absolute;
+                            top: 0;
+                            display: none;
+                        }
                         ul {
                             li {
                                 img {
                                     border: none;
                                 }
                             }
+                        }
+                    }
+                    .icon-prev {
+                        @media (max-width: 768px) {
+                            position: absolute;
+                            left: 0;
+                            top: 49.5%;
+                            display: none;
+                        }
+                    }
+                    .icon-next {
+                        @media (max-width: 768px) {
+                            position: absolute;
+                            right: 0;
+                            top: 49.5%;
                         }
                     }
                 }
@@ -57,7 +76,7 @@
                                 }
                             }
                         }
-                    }  
+                    }
                 }
                 .info-detailed {
                     @media screen and (min-width: 1024px) {
@@ -116,13 +135,12 @@
                     &:nth-child(3) {
                         height: 846.172px;
                         position: relative;
-                        .title_product {                        
+                        .title_product {
                             h2 {
                                 padding-left: 8px;
                                 line-height: 1.1;
                                 border-left: 1px solid $black;
                                 font-size: 50px;
-
                                 &::first-letter {
                                     text-transform: lowercase;
                                 }
@@ -133,7 +151,6 @@
                             span {
                                 display: block;
                             }
-
                             >div {
                                 &:first-child {
                                     p {
@@ -167,7 +184,6 @@
                                         margin-bottom: 0;
                                         padding: 12px 0;
                                         height: 60px;
-
                                         #group_1 {
                                             display: flex;
                                             justify-content: flex-start;
@@ -206,7 +222,6 @@
                                             align-items: center;
                                             padding: 12px 0;
                                             height: 60px;
-
                                             .input-group {
                                                 width: 25%;
                                                 >input {
@@ -229,8 +244,6 @@
                                                         }
                                                     }
                                                 }
-
-                                            
                                                 .tax-shipping-delivery-label {
                                                     display: none;
                                                 }
@@ -263,10 +276,9 @@
                                             }
                                         }
                                     }
-
                                     .product-minimal-quantity,
                                     #product-availability {
-                                        display:none;
+                                        display: none;
                                     }
                                 }
                             }
@@ -299,7 +311,6 @@
                         }
                     }
                 }
-                
                 .col-md-6 {
                     &:nth-child(2) {
                         .product-prices {
@@ -310,21 +321,19 @@
                             }
                         }
                         .product-information {
-                            > div {
+                            >div {
                                 p {
                                     span {
-                                        display:block;
+                                        display: block;
                                     }
                                 }
                             }
                             .product-actions {
                                 position: absolute;
                                 bottom: 0;
-
                                 @media (max-width: 769px) {
                                     position: relative;
                                 }
-
                                 form {
                                     .product-add-to-cart {
                                         #product-availability {
@@ -342,7 +351,6 @@
                         }
                     }
                 }
-                
             }
         }
     }
@@ -410,7 +418,6 @@
                 border-top: 1px solid $grey_border;
                 margin-bottom: 0;
                 height: 60px;
-
                 .menu-tab {
                     font-size: 14px;
                     text-transform: uppercase;
@@ -576,19 +583,17 @@
                 background-size: contain;
             }
             .text-info {
-                background-color: $pink ;
+                background-color: $pink;
                 padding: 40px 30px;
                 position: absolute;
                 top: 25%;
                 right: -100px;
                 width: 500px;
-
                 @media (max-width: 769px) {
                     right: 13px;
                     bottom: 10px;
                     top: auto;
                 }
-
                 p {
                     font-size: 21px;
                     font-family: $unna;

@@ -8,15 +8,12 @@
                 width: 100%;
                 .logo {
                     width: 150px;
-
                     @media (max-width: 769px) {
                         display: block;
                         margin: 0 auto;
                         margin-bottom: 30px;
                     }
-                    
                 }
-                
                 .home_popup {
                     display: none;
                     #list-builder {
@@ -138,7 +135,6 @@
                         }
                     }
                 }
-
                 .col-md-7 {
                     .footer_information {
                         .titre {
@@ -192,10 +188,9 @@
                 .block-icon {
                     margin: 0 auto;
                 }
-
                 @media (max-width: 768px) {
                     width: 100%;
-                }    
+                }
             }
         }
         p {

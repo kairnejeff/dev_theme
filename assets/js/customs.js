@@ -134,9 +134,17 @@ function setComptedisplay() {
     $(window).resize(setComptedisplay)
 })();
 
+//barre-recherche 
+$(document).ready(function() {
+    $(".search-widget").hover(function() {
+        $(this).children("form").children("input[type=text]").addClass("navr")
+    })
+
+})
+
 
 //grid view
-(function() {
+$(document).ready(function() {
 
     $('.grid-controle #list-view').click(function() {
         $("#js-product-list .row").css("grid-template-columns", "repeat(1, 1fr)")
@@ -150,34 +158,51 @@ function setComptedisplay() {
     })
 
 
-})();
+});
+
+
+//product carousel
+$(document).ready(function() {
+    $('.images-container .product-cover .icon-next').click(function() {
+        $('.images-container .product-cover').children('#carousel').css("display", "block")
+        $('.images-container .product-cover .icon-prev').css("display", "block")
+        $('.images-container .product-cover .icon-next').css("display", "none")
+
+    })
+    $('.images-container .product-cover .icon-prev').click(function() {
+        $('.images-container .product-cover').children('#carousel').css("display", "none")
+        $('.images-container .product-cover .icon-next').css("display", "block")
+        $('.images-container .product-cover .icon-prev').css("display", "none")
+    })
+
+})
+
+
 
 //product-accordion
-function productAccordion() {
-    var windowsize = $(window).width()
-    if (windowsize > 767) {
-        $('.info-detailed .collapse').collapse()
+// function productAccordion() {
+//     var windowsize = $(window).width()
+//     if (windowsize > 767) {
+//         $('.info-detailed .collapse').collapse()
 
-    } else {
-        $('.info-detailed .collapse').on('show.bs.collapse', function() {
-            $(this).prev().find("i")[0].innerHTML = 'expand_less';
-            $('.info-detailed .collapse').not(this).collapse('hide');
-        });
-        $('.info-detailed .collapse').on('hide.bs.collapse', function() {
-            $(this).prev().find("i")[0].innerHTML = 'expand_more';
-        });
-    }
-}
+//     } else {
+//         $('.info-detailed .collapse').on('show.bs.collapse', function() {
+//             $(this).prev().find("i")[0].innerHTML = 'expand_less';
+//             $('.info-detailed .collapse').not(this).collapse('hide');
+//         });
+//         $('.info-detailed .collapse').on('hide.bs.collapse', function() {
+//             $(this).prev().find("i")[0].innerHTML = 'expand_more';
+//         });
+//     }
+// }
 
+// (function() {
+//     productAccordion();
+//     $(window).resize(productAccordion);
+// })();
 
-(function() {
-    productAccordion();
-    $(window).resize(productAccordion);
-})();
-
-
+//category - filtre
 $(document).ready(function() {
-    //category - filtre
     $('#facet_section .form-check-filtre-label').click(function() {
         var attr = $(this).prev().attr('checked');
         if (typeof attr !== typeof undefined && attr !== false) {
@@ -315,6 +340,8 @@ $(document).ready(function(e) {
         })
 })
 
+
+
 $(document).ready(function(e) {
     $('#truspilot-avis').owlCarousel({
         nav: true,
@@ -323,7 +350,7 @@ $(document).ready(function(e) {
         rewind: false,
         items: 1,
         smartSpeed: 70,
-        navText: ['<svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg>', '<svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>']
+        navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"]
     });
 })
 

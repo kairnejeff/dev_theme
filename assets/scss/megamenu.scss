@@ -14,45 +14,37 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
     background-color: $pink;
     display: flex;
     width: 100%;
-
     @media (max-width: 769px) {
         position: relative;
         background-color: $pink;
     }
-
 }
 
 .top-menu .sub-menu.collapse {
     justify-content: space-between;
     padding: 0 30px;
     height: auto;
-    
     @media (max-width: 769px) {
         position: relative;
-        z-index:999;
+        z-index: 999;
         padding: 0;
-        margin-top: 10px;   
+        margin-top: 10px;
     }
-
-
     .menu-block {
         .menulink.current {
-           text-decoration: underline;
+            text-decoration: underline;
         }
         .menulink {
             cursor: pointer;
         }
         margin: 30px 20px;
         flex: 1 1 auto;
-
         @media (max-width: 769px) {
             display: block;
             background-color: $pink;
             padding: 0 30px;
             margin: 0;
-
         }
-
         .menu-block-link {
             i {
                 a {
@@ -72,8 +64,6 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
             word-spacing: 4px;
             letter-spacing: 1px;
             color: $black;
-
-            
         }
         i {
             display: block;
@@ -85,13 +75,10 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
             margin-top: 20px;
             padding-top: 20px;
             border-top: 1px solid $black;
-
             @media (max-width: 769px) {
                 margin: 0;
                 padding: 0;
-    
             }
-
         }
         &:first-child {
             i {
@@ -118,27 +105,19 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
             border-right: 1px solid $black;
             border-left: 1px solid $black;
             padding: 0 30px;
-
             @media (max-width: 769px) {
                 border: none;
             }
-
             .recipe-ingredient {
                 display: flex;
                 justify-content: space-between;
-
                 @media (max-width: 769px) {
                     display: block;
                 }
-
                 .menu-block-child {
-
                     @media (max-width: 769px) {
                         margin-top: 20px;
-                        
-            
                     }
-
                     .menu-block-child-name {
                         font-family: $unna;
                         font-size: 20px;
@@ -146,8 +125,6 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                         color: $black;
                         line-height: 22px;
                     }
-
-
                     .menu-block-link {
                         i {
                             a {
@@ -161,10 +138,8 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                     }
                     .menu-block-child-link {
                         margin-top: 20px;
-
                         @media (max-width: 769px) {
                             margin: 0;
-                
                         }
                         span {
                             font-style: normal;
@@ -212,7 +187,6 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                         border-right: 1px solid $grey;
                         padding-left: 30px;
                         padding-right: 10px;
-
                         @media (max-width: 769px) {
                             border: none;
                             padding-right: 0;
@@ -221,10 +195,8 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                     }
                     &:last-child {
                         padding-left: 30px;
-
                         @media (max-width: 769px) {
                             padding: 0;
-                
                         }
                     }
                 }
@@ -242,7 +214,6 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
 .popover {
     top: 43px;
     margin: 0;
-
     @media (max-width: 769px) {
         z-index: 99;
     }
@@ -255,11 +226,17 @@ span.obflink {
 @media (max-width: 480px) {
     #header.is-open {
         .header-top {
-            position: absolute;
+            position: fixed;
             top: 0;
-            width: 100%;
             z-index: 999;
-            height: 1900px;
+            width: 100%;
+            background: #fef9f4;
+            left: 0;
+            padding: 20px;
+            height: 100%;
+            -webkit-animation: linear;
+            -webkit-animation-name: run;
+            -webkit-animation-duration: 0.5s;
         }
     }
 }

@@ -283,24 +283,36 @@
 
 #truspilot-avis .owl-prev,
 #truspilot-avis .owl-next {
-    top: 110px;
+    top: 80px;
     z-index: 2;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     padding: 0;
     cursor: pointer;
-    margin-top: -20px;
     position: absolute;
-    border-radius: 50%;
-    background-color: #fff;
-    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, .3), 0 0 4px rgba(0, 0, 0, .2);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, .3), 0 0 4px rgba(0, 0, 0, .2)
+    background: transparent;
+    border: transparent;
+    outline: none;
 }
 
 #truspilot-avis .owl-prev {
-    left: -10px
+    left: 5px
 }
 
 #truspilot-avis .owl-next {
-    right: -10px
+    right: -20px
+}
+
+#truspilot-avis .owl-nav .nav-btn {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30px;
+}
+
+#truspilot-avis .owl-prev .prev-slide {
+    background-image: url('/img/fleche-gauche.png');
+}
+
+#truspilot-avis .owl-next .next-slide {
+    background-image: url('/img/fleche-droite.png');
 }

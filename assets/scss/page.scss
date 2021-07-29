@@ -1,0 +1,48 @@
+#cms {
+    #content {
+        .header {
+            position: relative;
+            width: 100%;
+            margin-bottom: 60px;
+            img {
+                max-height: 493.61px;
+                object-fit: cover;
+                width: 100%;
+            }
+            h1 {
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                margin: auto;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                height: 5px;
+                font-size: 45px;
+                color: #FFF;
+            }
+        }
+        .bloc {
+            h2 {
+                padding: 40px;
+                text-align: center;
+            }
+            width: 100%;
+            &:nth-child(2n+1) {
+                background-color: #fef9f5;
+            }
+            margin-bottom: 4em;
+            .bloc-content {
+                padding: 50px 163px;
+                @media (max-width: 768px) {
+                    padding: 50px 43px;
+                }
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
