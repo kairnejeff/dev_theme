@@ -24,9 +24,9 @@
         }
         .bloc-abonnement {
             @media (max-width: 768px) {
-                padding: 2em 6em;
+                padding: 2em 1.5em;
             }
-            padding: 120px;
+            padding: 30px 120px;
             background-color: #d3ede2;
             .bloc-abonnement-text {
                 width: 100%;
@@ -36,12 +36,15 @@
                 h2 {
                     text-align: center;
                     padding: 0 10px;
+                    line-height: 40px;
                 }
                 .avantages {
-                    display: flex;
-                    align-items: flex-start;
-                    -ms-flex-pack: end;
-                    justify-content: space-between;
+                    @media (min-width: 768px) {
+                        display: flex;
+                        align-items: flex-start;
+                        -ms-flex-pack: end;
+                        justify-content: space-between;
+                    }
                     margin-top: 20px;
                     h3 {
                         font-size: 25px;
@@ -54,18 +57,41 @@
                         }
                     }
                     .avantage {
-                        border-right: 1px solid;
-                        padding-right: 10px;
+                        @media (min-width: 769px) {
+                            border-right: 1px solid;
+                            padding-right: 30px;
+                            &:last-child {
+                                border-right: unset;
+                                padding-right: unset;
+                            }
+                        }
+                        @media (max-width: 768px) {
+                            &:after {
+                                content: "";
+                                display: block;
+                                width: 30%;
+                                margin: 0 auto;
+                                padding-top: 20px;
+                                margin-bottom: 20px;
+                                border-bottom: 1px solid black;
+                            }
+                            &:last-child:after {
+                                content: unset;
+                            }
+                        }
                     }
                 }
             }
             .abonnement {
-                display: flex;
-                align-items: flex-start;
-                -ms-flex-pack: end;
-                justify-content: space-between;
+                @media (min-width: 768px) {
+                    display: flex;
+                    align-items: flex-start;
+                    -ms-flex-pack: end;
+                    justify-content: space-between;
+                }
                 .card {
                     padding: 30px;
+                    background: #fff;
                     .abonnement-title {
                         border-left: 1px solid;
                         padding-left: 10px;
@@ -86,8 +112,12 @@
                             margin: 0 auto;
                         }
                     }
-                    .abonnement-image img {
-                        max-height: 130px;
+                    .abonnement-image {
+                        text-align: center;
+                        padding: 10px;
+                        img {
+                            max-height: 130px;
+                        }
                     }
                     .add-to-card {
                         margin-top: 20px;
@@ -100,6 +130,13 @@
                         }
                     }
                 }
+            }
+            p.footer {
+                text-align: center;
+                font-size: 30px;
+                margin-top: 20px;
+                font-family: 'Unna';
+                line-height: 40px;
             }
         }
     }
