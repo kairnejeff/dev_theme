@@ -1,0 +1,38 @@
+#cms {
+    #content {
+        .header {
+            position: relative;
+            width: 100%;
+            margin-bottom: 60px;
+            img {
+                max-height: 493.61px;
+                object-fit: cover;
+                width: 100%;
+            }
+            h1 {
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                margin: auto;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                height: 5px;
+                font-size: 45px;
+                color: #FFF;
+            }
+        }
+        .bloc {
+            width: 100%;
+            background-color: #fef9f5;
+            .bloc-content {
+                padding-left: 163px;
+                padding-right: 163px;
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
