@@ -36,6 +36,7 @@
                 h2 {
                     text-align: center;
                     padding: 0 10px;
+                    line-height: 40px;
                 }
                 .avantages {
                     @media (min-width: 768px) {
@@ -59,6 +60,9 @@
                         @media (min-width: 769px) {
                             border-right: 1px solid;
                             padding-right: 10px;
+                            &:last-child {
+                                border-right: unset
+                            }
                         }
                         @media (max-width: 768px) {
                             &:after {
@@ -68,6 +72,9 @@
                                 margin: 0 auto;
                                 padding-top: 20px;
                                 border-bottom: 1px solid black;
+                            }
+                            &:last-child:after {
+                                content: unset;
                             }
                         }
                     }
@@ -103,8 +110,12 @@
                             margin: 0 auto;
                         }
                     }
-                    .abonnement-image img {
-                        max-height: 130px;
+                    .abonnement-image {
+                        text-align: center;
+                        padding: 10px;
+                        img {
+                            max-height: 130px;
+                        }
                     }
                     .add-to-card {
                         margin-top: 20px;
@@ -120,8 +131,10 @@
             }
             p.footer {
                 text-align: center;
-                font-size: 25px;
+                font-size: 30px;
                 margin-top: 20px;
+                font-family: 'Unna';
+                line-height: 40px;
             }
         }
     }
