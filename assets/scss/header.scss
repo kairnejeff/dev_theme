@@ -34,6 +34,9 @@
         right: 40px;
         top: 20px;
         padding: .75rem;
+        @media (max-width: 768px) {
+            top: 0;
+        }
     }
 }
 
@@ -202,13 +205,16 @@
                     #_mobile_logo {
                         a {
                             img {
-                                margin-top: 2rem;
+                                margin-top: 10px;
                                 width: auto;
                                 height: auto;
                                 @media (max-width: 768px) {
                                     margin-left: 1rem;
                                     max-width: 50%;
                                     height: auto;
+                                }
+                                @media (max-width: 480px) {
+                                    margin-left: unset;
                                 }
                             }
                         }
@@ -240,6 +246,7 @@
                     }
                 }
                 #mobile_top_menu_wrapper {
+                    background-color: $pink;
                     #_mobile_top_menu {
                         position: fixed;
                         height: 100%;
@@ -261,7 +268,9 @@
                             border: none;
                             background: none;
                             position: absolute;
-                            right: 20px;
+                            right: 5px;
+                            top: -20px;
+                            z-index: 10000;
                             i {
                                 background: none;
                                 line-height: 2;
@@ -285,6 +294,10 @@
                                     right: 5px;
                                     border: none;
                                     background: none;
+                                }
+                                button.menu-before {
+                                    left: 0;
+                                    top: -45px;
                                 }
                                 .menu-block-child-name {
                                     font-size: 20px;

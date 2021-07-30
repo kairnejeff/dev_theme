@@ -74,6 +74,7 @@
     <div class="container">
        <div class="row">
       </div>
+      <div class="overlay"></div>
       <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
         <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
         <div class="js-top-menu-bottom">
