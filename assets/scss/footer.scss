@@ -228,17 +228,22 @@
     .container {
         .block_newsletter {
             bottom: auto!important;
-            @media (max-width: 480px) {
-                #block-newsletter-label {
-                    padding-left: 15px!important;
-                }
-            }
             .row {
                 >div {
                     form {
+                        @media (max-width: 768px) {
+                            margin-left: -30px;
+                        }
+                        @media (max-width: 480px) {
+                            margin-right: -30px;
+                        }
                         .row {
                             margin-left: 0;
                             padding-left: 0;
+                            input.hidden-sm-up {
+                                margin-top: 10px;
+                                width: 100%;
+                            }
                             div {
                                 padding-left: 0;
                                 >p {

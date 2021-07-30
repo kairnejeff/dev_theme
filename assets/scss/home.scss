@@ -36,111 +36,107 @@
                     @include title;
                     padding-bottom: 20px;
                 }
-                .row {
-                    @media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
-                        margin: 0;
-                        height: 100%;
-                    }
-                    &::after {
-                        content: none
-                    }
-                    >div {
-                        margin-bottom: 50px;
-                        @media (max-width: 960px) {
-                            margin-bottom: 70px;
-                        }
-                    }
+                .products {
                     @media (max-width: 480px) {
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
                         height: 100%;
-                        >div {
+                    }
+                    >div {
+                        @media (max-width: 480px) {
                             width: 100%;
                             margin-bottom: 60px;
                         }
-                        .products>div article {
-                            padding-bottom: 0;
-                            margin-left: 0;
-                        }
-                    }
-                    .product-miniature {
-                        height: 100%;
-                        .thumbnail-container {
-                            @media (max-width: 480px) {
-                                width: 100%;
-                            }
-                            a:first-child {
-                                &:hover {
-                                    opacity: 1;
+                        margin-bottom: 50px;
+                        position: relative;
+                        article {
+                            height: 100%;
+                            .thumbnail-container {
+                                @media (max-width: 480px) {
+                                    width: 100%;
                                 }
-                                img {
-                                    max-width: 373.328px;
-                                    max-height: 373.328px;
-                                }
-                            }
-                            .product-description {
-                                z-index: 0;
-                                width: 100%;
-                                bottom: 2px;
-                                position: relative;
-                                .h3 {
-                                    width: 80%;
-                                }
-                                #product-subtitle {
-                                    margin: 5px 0 15px 0;
-                                    p {
-                                        margin: 0;
-                                        color: #232323;
-                                        font-size: 15px;
-                                        font-family: $alegreya;
+                                a:first-child {
+                                    &:hover {
+                                        opacity: 1;
                                     }
-                                }
-                                .recipe {
-                                    font-family: $roboto;
-                                    text-decoration: underline;
-                                    text-transform: uppercase;
-                                    font-size: 12px;
-                                    margin-top: 10px;
-                                    position: absolute;
-                                    bottom: -10px;
-                                    height: auto;
-                                    font-weight: 500;
-                                    line-height: 27px;
-                                    color: $hover;
-                                    @media (max-width: 960px) {
-                                        bottom: -25px;
-                                    }
-                                }
-                                .product-price-and-shipping {
-                                    bottom: -35px;
-                                    @media (max-width: 960px) {
-                                        bottom: -55px;
-                                    }
-                                    .price {
-                                        font-family: 'RobotoMono';
-                                        font-size: 13px;
-                                    }
-                                }
-                                &:after {
-                                    content: "";
-                                }
-                                .add-to-cart-or-refresh {
-                                    position: absolute;
-                                    top: 0;
-                                    form {
-                                        .btn {
-                                            border: none;
-                                            background: none;
+                                    img {
+                                        max-width: 373.328px;
+                                        max-height: 373.328px;
+                                        @media (max-width: 480px) {
+                                            max-width: unset;
+                                            max-height: unset;
                                         }
                                     }
-                                    @media (max-width: 480px) {
-                                        bottom: -15px;
+                                }
+                                .product-description {
+                                    z-index: 0;
+                                    width: 100%;
+                                    position: relative;
+                                    .h3 {
+                                        width: 80%;
+                                    }
+                                    #product-subtitle {
+                                        width: 65%;
+                                        margin: 5px 0 15px 0;
+                                        p {
+                                            margin: 0;
+                                            color: #232323;
+                                            font-size: 15px;
+                                            font-family: $alegreya;
+                                        }
+                                    }
+                                    .recipe {
+                                        font-family: $roboto;
+                                        text-decoration: underline;
+                                        text-transform: uppercase;
+                                        font-size: 12px;
+                                        margin-top: 10px;
+                                        position: absolute;
+                                        bottom: -10px;
+                                        height: auto;
+                                        font-weight: 500;
+                                        line-height: 27px;
+                                        color: $hover;
+                                        @media (max-width: 960px) {
+                                            bottom: -25px;
+                                        }
+                                    }
+                                    .product-price-and-shipping {
+                                        position: absolute;
+                                        top: 100px;
+                                        right: 0;
+                                        .price {
+                                            font-family: $roboto;
+                                            font-size: 14px;
+                                        }
+                                        @media (max-width: 480px) {
+                                            bottom: -40px;
+                                            top: unset;
+                                        }
+                                    }
+                                    &:after {
+                                        content: "";
+                                    }
+                                    .add-to-cart-or-refresh {
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        form {
+                                            .btn {
+                                                border: none;
+                                                background: none;
+                                                outline: none;
+                                            }
+                                        }
+                                        @media (max-width: 480px) {
+                                            bottom: -15px;
+                                        }
                                     }
                                 }
-                            }
-                            .highlighted-informations {
-                                box-shadow: none;
-                                display: none;
+                                .highlighted-informations {
+                                    box-shadow: none;
+                                    display: none;
+                                }
                             }
                         }
                     }
@@ -300,6 +296,8 @@
             border: 1px solid #dbdbdb;
             max-width: 296px;
             max-height: 296px;
+            width: 100%;
+            height: auto;
         }
     }
 }
