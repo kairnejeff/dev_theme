@@ -187,12 +187,6 @@
     max-height: 373.328px;
 }
 
-.container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description {
-    z-index: 0;
-    width: 100%;
-    bottom: auto;
-}
-
 .container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description h3 {
     text-align: left;
 }
@@ -268,12 +262,6 @@
 .featured-products .products>div {
     margin-bottom: 50px;
     position: relative;
-}
-
-#js-product-list .products>div article .product-price-and-shipping,
-.featured-products .products>div article .product-price-and-shipping {
-    position: absolute;
-    bottom: -25px;
 }
 
 @media (max-width: 480px) {

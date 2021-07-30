@@ -114,3 +114,69 @@
         }
     }
 }
+
+#js-product-list {
+    .products {
+        >div {
+            margin-bottom: 50px;
+            position: relative;
+            article {
+                .product-description {
+                    position: relative;
+                    .h2 {
+                        width: 75%;
+                        font-size: 1.125rem;
+                    }
+                    #product-subtitle {
+                        width: 65%;
+                    }
+                    .product-price-and-shipping {
+                        position: absolute;
+                        top: 100px;
+                        right: 0;
+                        .price {
+                            font-family: $roboto;
+                            font-size: 14px;
+                        }
+                        @media (max-width: 480px) {
+                            left: 10px;
+                        }
+                    }
+                    @media (max-width: 480px) {
+                        height: auto;
+                        padding-bottom: 20px;
+                        .product-price-and-shipping {
+                            bottom: -5px;
+                        }
+                    }
+                    .add-to-cart-or-refresh {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        form {
+                            .btn {
+                                border: none;
+                                background: none;
+                                outline: none;
+                            }
+                        }
+                        @media (max-width: 480px) {
+                            top: 92px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .up {
+        a {
+            position: relative;
+            padding-right: 30px;
+            i {
+                position: absolute;
+                bottom: 3px;
+                right: -1px;
+            }
+        }
+    }
+}
