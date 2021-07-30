@@ -178,6 +178,96 @@
         .category-cover {
             img {
                 float: right;
+
+                @media (max-width: 768px) {
+                    float: none;
+                }
+                
+            }
+        }
+    }
+}
+
+#js-product-list,
+.featured-products {
+    .products {
+        >div {
+            margin-bottom: 100px;
+            position: relative;
+
+            @media (max-width: 768px) {
+                height: 361px;
+            }
+
+            article {
+                .product-description {
+                    position: relative;
+                    .h2 {
+                        width: 75%;
+                        font-size: 1.125rem;
+
+                        @media (max-width: 768px) {
+                            width: 100%;
+                        }
+
+                    }
+                    #product-subtitle {
+                        width: 65%;
+                    }
+                    .product-price-and-shipping {
+                        position: absolute;
+                        top: 100px;
+                        right: 0;
+
+                        .price {
+                            font-family: $roboto;
+                            font-size: 14px;
+                        }
+
+                        @media (max-width: 768px) {
+                            top: 130px;
+                        }
+                    }
+                    @media (max-width: 480px) {
+                        height: auto;
+
+                        .product-price-and-shipping {
+                            bottom: -5px;
+                            left: 10px;
+                        }
+                    }
+                    .add-to-cart-or-refresh {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        form {
+                            .btn {
+                                border: none;
+                                background: none;
+                                outline: none;
+                            }
+                        }
+                        @media (max-width: 480px) {
+                            top: 130px;
+                        }
+                    }
+
+                    @media (max-width: 768px) {
+                        border-left: 1px solid $black;
+                        padding-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .up {
+        a {
+            position: relative;
+            padding-right: 30px;
+            i {
+                position: absolute;
+                bottom: 3px;
+                right: -1px;
             }
         }
     }
