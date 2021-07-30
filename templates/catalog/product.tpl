@@ -183,99 +183,99 @@
                       <div>Pour 100g </div>
 
                       <div class="info-nutrition">
-                        {foreach from=$product.features item=feature}
+                        
 
-                        <ul> 
-
+                        <ul class="list-nutrition"> 
                           <li class="nutrition kj">
                             <ul>
+                                <li class="number"> 
+                            {foreach from=$product.features item=feature}
                               {if ($feature.name == "Energie kcal/100g")}
-                                <li class="number"> 
-                                  <span>{$feature.value|escape:'html':'UTF-8'} kcal </span>
-                                  <span>{$feature.value|escape:'html':'UTF-8'} kj </span>
-                                </li>
+                                        <span>{$feature.value|escape:'html':'UTF-8'} kcal </span>
+                              {/if}
+                              {if ($feature.name == "Energie kJ/100g")}
+                                <span>{$feature.value|escape:'html':'UTF-8'} kj </span>
+                              {/if}
+                            {/foreach}
+                                  </li>
                                 <li class="label-nutrition">Calories</li>
-                              {/if}
-                            </ul>
+                              </ul>
                           </li>
+                            
+                        {foreach from=$product.features item=feature}
 
-                          {* <li class="nutrition kj">
-                            <ul>
-                              {foreach from=$product.features item=feature}
-                                <li class="number"> 
-                                  {if ($feature.name == "Energie kcal/100g")}<span>{$feature.value|escape:'html':'UTF-8'} kcal </span>{/if}
-                                  {if ($feature.name == "Energie kj/100g")}<span>{$feature.value|escape:'html':'UTF-8'} kj </span>{/if}
-                                </li>
-                                <li class="label-nutrition">Calories</li>
-                              {/foreach}
-                            </ul>
-                          </li> *}
+                          {if ($feature.name == "Matière grasse" )}
+                            <li class="nutrition">
+                              <ul>
+                                  <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                  <li class="label-nutrition">Matière grasse</li>
+                              </ul>
+                            </li>
+                          {/if}
 
+                          {if ($feature.name == "Acides gras saturés" )}
+                            <li class="nutrition">
+                              <ul>
+                                  <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                  <li class="label-nutrition">Acides gras saturés</li>
+                              </ul>
+                            </li>
+                          {/if}
+
+                          {if ($feature.name == "Glucides" )}
                           <li class="nutrition">
                             <ul>
-                              {if ($feature.name == "Matière grasse" )}
-                                <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
-                                <li class="label-nutrition">Matière grasse</li>
-                              {/if}
-                            </ul>
-                          </li>
-
-                          <li class="nutrition">
-                            <ul>
-                              {if ($feature.name == "Acides gras saturés" )}
-                                <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
-                                <li class="label-nutrition">Acides gras saturés</li>
-                              {/if}
-                            </ul>
-                          </li>
-
-                          <li class="nutrition">
-                            <ul>
-                              {if ($feature.name == "Glucides" )}
                                 <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
                                 <li class="label-nutrition">Glucides</li>
-                              {/if}
                             </ul>
                           </li>
+                        {/if}
 
+                        {if ($feature.name == "Sucres" )}
                           <li class="nutrition">
                             <ul>
-                              {if ($feature.name == "Sucres" )}
                                 <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
                                 <li class="label-nutrition">Sucres</li>
-                              {/if}
                             </ul>
                           </li>
+                        {/if}
 
+                        {if ($feature.name == "Fibres" )}
                           <li class="nutrition">
                             <ul>
-                              {if ($feature.name == "Fibres" )}
+                             
                                 <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
                                 <li class="label-nutrition">Fibres</li>
-                              {/if}
+                              
                             </ul>
                           </li>
+                        {/if}
 
+                        {if ($feature.name == "Protéines" )}
                           <li class="nutrition">
                             <ul>
-                              {if ($feature.name == "Protéines" )}
+                              
                                 <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
                                 <li class="label-nutrition">Protéines</li>
-                              {/if}
+                              
                             </ul>
                           </li>
+                        {/if}
 
-                          <li class="nutrition">
+                        {if ($feature.name == "Sel" )}  
+                        <li class="nutrition">
                             <ul>
-                              {if ($feature.name == "Sel" )}
+                              
                                 <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
                                 <li class="label-nutrition">Sel</li>
-                              {/if}
+                              
                             </ul>
                           </li>
+                        {/if}
 
-                        </ul>
+                       
                       {/foreach}
+                      </ul>
                       </div>
                       </div>
                     {/if}	
