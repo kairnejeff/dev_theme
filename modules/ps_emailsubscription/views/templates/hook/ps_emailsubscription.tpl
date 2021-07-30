@@ -36,12 +36,7 @@
              type="submit"
              value="{l s='s\'inscrire' d='Shop.Theme.Actions'}"
            >
-           <input
-             class="btn btn-primary float-xs-right hidden-sm-up"
-             name="submitNewsletter"
-             type="submit"
-             value="{l s='OK' d='Shop.Theme.Actions'}"
-           >
+          
            <div class="input-wrapper">
              <input
                name="email"
@@ -51,6 +46,12 @@
                aria-labelledby="block-newsletter-label"
              >
            </div>
+           <input
+           class="btn btn-primary hidden-sm-up"
+           name="submitNewsletter"
+           type="submit"
+           value="{l s='s\'inscrire' d='Shop.Theme.Actions'}"
+         >
            <input type="hidden" name="action" value="0">
            <div class="clearfix"></div>
          </div>
