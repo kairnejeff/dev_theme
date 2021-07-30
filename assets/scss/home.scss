@@ -195,7 +195,7 @@
 .featured-products {
     .products {
         >div {
-            margin-bottom: 100px;
+            margin-bottom: 50px;
             position: relative;
             article {
                 .product-description {
@@ -221,7 +221,6 @@
                         padding-bottom: 20px;
                         .product-price-and-shipping {
                             bottom: -5px;
-                            left: 10px;
                         }
                     }
                     .add-to-cart-or-refresh {
@@ -236,7 +235,7 @@
                             }
                         }
                         @media (max-width: 480px) {
-                            top: 93px;
+                            bottom: -15px;
                         }
                     }
                 }

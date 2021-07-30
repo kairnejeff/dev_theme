@@ -224,16 +224,6 @@
     }
 }
 
-.container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description .product-price-and-shipping {
-    bottom: -50px;
-}
-
-@media (max-width: 960px) {
-    .container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description .product-price-and-shipping {
-        bottom: -55px;
-    }
-}
-
 .container #main #content .featured-products .row .product-miniature .thumbnail-container .highlighted-informations {
     box-shadow: none;
     display: none;

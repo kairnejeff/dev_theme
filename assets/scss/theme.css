@@ -9518,7 +9518,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 .product-miniature .products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 30px;
     margin: unset;
 }
 
