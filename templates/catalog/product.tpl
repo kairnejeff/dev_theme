@@ -144,8 +144,8 @@
 
                     <div class="info-detailed-titler active col-md-6">
                       {if isset($product.features)}
-                        <div class="info-detailed-title" id ="composition" role="button" data-toggle="collapse" data-target="#composition" aria-expanded="false" aria-controls="collapseOne">
-                          <div id="ingredient" class="info-detail-content collapse">
+                        <div class="info-detailed-title" >
+                          <div id="ingredient" class="info-detail-content">
                           {foreach from=$product.features item=feature}
                             {if ($feature.name == "Ingrédients")}
                               <p>{$feature.value|escape:'html':'UTF-8'}</p>
@@ -156,35 +156,28 @@
                         </div>
                         </div>
                         
-                        <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#allergenes" aria-expanded="false" aria-controls="collapseOne">
-                          <i class="material-icons hidden-md-up">expand_more</i>
-                        </div>
-                        <div id="allergenes" class="info-detail-content collapse">
+                        <div id="allergenes" class="info-detail-content">
                           {foreach from=$product.features item=feature}
                             {if ($feature.name == "Allergènes")}
                               <p>{$feature.value|escape:'html':'UTF-8'}</p>
                             {/if}
                           {/foreach}
-
                         </div>
                     </div>
 
                     <div class="info-detailed-titler nut col-md-6">
                       {if isset($product.features)}
-                      <div class="info-detailed-title" id ="mentions" role="button" data-toggle="collapse" data-target="#mentions" aria-expanded="false" aria-controls="collapseOne"">
+                      <div class="info-detailed-title">
                       </div>
-                      <div id="mentions" class="info-detail-content collapse">
+                      <div id="mentions" class="info-detail-content">
                       {foreach from=$product.features item=feature}
                         {if ($feature.name == "Mentions Spéciales")}
                           <div>{$feature.value|escape:'html':'UTF-8'}</div>
                         {/if}
-                      {/foreach}		
-                      <div></div>
+                      {/foreach}	
                       <div>Pour 100g </div>
 
                       <div class="info-nutrition">
-                        
-
                         <ul class="list-nutrition"> 
                           <li class="nutrition kj">
                             <ul>
@@ -282,9 +275,9 @@
                     </div>
 
                     <div class="info-detailed-titler col-md-6">
-                      <div class="info-detailed-title" id="histoire"  role="button" data-toggle="collapse" data-target="#history" aria-expanded="false" aria-controls="collapseOne">
+                      <div class="info-detailed-title">
                       </div>
-                      <div id="history" class="info-detail-content collapse">
+                      <div id="history" class="info-detail-content">
                       {foreach from=$product.features item=feature}
                         {if ($feature.name == "Histoire de la recette")}
                           <p>{$feature.value|escape:'html':'UTF-8'}</p>
@@ -294,9 +287,9 @@
                     </div>
 
                       <div class="info-detailed-titler col-md-6">
-                      <div class="info-detailed-title" id="avis" role="button" data-toggle="collapse" data-target="#preperation" aria-expanded="false" aria-controls="collapseOne">
+                      <div class="info-detailed-title">
                       </div>
-                      <div id="avis_truspilot" info-detail-content collapse">
+                      <div id="avis_truspilot info-detail-content ">
                         <div class="data-hidden d-none">
                           {if !empty($combinations)}
                               <div id="combinaison-attributes" data-attributes="[{$combinations|json_encode}]"></div>
