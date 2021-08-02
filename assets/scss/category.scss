@@ -22,7 +22,6 @@
             margin-bottom: 30px;
         }
     }
-
     @media screen and (min-width: 480px) {
         .h1 {
             margin-top: 50px;
@@ -132,17 +131,18 @@
             article {
                 .product-description {
                     position: relative;
+                    @media (max-width: 480px) {
+                        position: unset;
+                    }
                     .h2 {
                         width: 75%;
                         font-size: 1.125rem;
-
                         @media (max-width: 480px) {
                             width: 100%!important;
                         }
                     }
                     #product-subtitle {
                         width: 65%;
-
                         @media (max-width: 480px) {
                             width: 100%!important;
                         }
@@ -156,8 +156,10 @@
                             font-size: 14px;
                         }
                         @media (max-width: 480px) {
+                            top: unset;
                             left: 10px;
-                            top: 130px!important;
+                            bottom: -5px;
+                            ;
                         }
                     }
                     @media (max-width: 480px) {
@@ -174,17 +176,15 @@
                                 outline: none;
                             }
                         }
-
                         @media (max-width: 480px) {
-                            top: 120px!important;
+                            bottom: -10px;
+                            top: unset;
                         }
                     }
-
                     @media (max-width: 768px) {
                         border-left: 1px solid $black;
                         padding-left: 8px;
                     }
-
                     @media (max-width: 480px) {
                         padding-bottom: 0!important;
                     }
