@@ -296,7 +296,7 @@
                                                 .icon-panier-off {
                                                     display: none;
                                                     &:before {
-                                                        font-size: 15px;
+                                                        font-size: 18px;
                                                     }
                                                 }
 
@@ -470,6 +470,7 @@
                             color: $greylight;
                             text-decoration: none;
                             padding-right: 15px;
+                            padding-left: 15px;
                             margin:auto;
                         }
                     }
@@ -555,10 +556,12 @@
                         display: flex;
                         flex-wrap: wrap;
                         margin-top: 35px;
+
                         .nutrition {
                             flex: 1 0 21%;
                             margin-bottom: 1rem;
                             color: green;
+
                             .number {
                                 border: 1px solid #000;
                                 padding: 10px;
@@ -592,7 +595,15 @@
                     }
                 }
             }
+
+            #history {
+                @media (max-width: 768px) {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
         }
+        
         #avis_truspilot {
             margin-top: 50px;
             #trustbox-widget {
@@ -688,6 +699,27 @@
         font-family: $roboto-light;
         font-size: 13px;
         line-height: 17px;
+    }
+
+    .bocaux {
+        .flex {
+            .text-info {
+                @media (max-width: 769px) {
+                    bottom: -25px;
+                    right:-100px ;
+                }
+            }
+        }
+    }
+
+    .origin {
+        .flex {
+            .text-info {
+                @media (max-width: 769px) {
+                    right:-100px ;
+                }
+            }
+        }
     }
 }
 
