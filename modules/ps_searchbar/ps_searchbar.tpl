@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 <!-- Block search module TOP -->
-<div id="_desktop_search_widget" class="search-widget" data-search-controller-url="{$search_controller_url}">
+<div id="_desktop_search_widget" class="search-widget hidden-sm-down" data-search-controller-url="{$search_controller_url}">
 	<form method="get" action="{$search_controller_url}">
 	<span class="hidden-md-down text-search">{l s='Search' d='Shop.Theme.Catalog'}</span>
 		<input type="hidden" name="controller" value="search">
