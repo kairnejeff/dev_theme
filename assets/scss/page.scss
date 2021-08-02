@@ -37,7 +37,6 @@
             &:nth-child(2n+1) {
                 background-color: #fef9f5;
             }
-            margin-bottom: 4em;
             .bloc-content {
                 padding: 0 163px 121px;
                 @media (max-width: 768px) {
@@ -47,6 +46,9 @@
                     max-width: 100%;
                     height: auto;
                 }
+            }
+            .bloc-image {
+                margin-bottom: 75px;
             }
         }
     }
