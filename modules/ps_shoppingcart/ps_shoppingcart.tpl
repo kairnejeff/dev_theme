@@ -27,12 +27,14 @@
     <div class="header">
       {if $cart.products_count > 0}
         <a rel="nofollow" href="{$cart_url}">
-      {/if}
         <span class="hidden-sm-down">{l s='Cart' d='Shop.Theme.Checkout'}</span>
-        <span class="cart-products-count">({$cart.products_count})</span>
-        <span class="icon-panier-off"></span>
-      {if $cart.products_count > 0}
+        <span class="icon-panier-on"></span>
+        <span class="cart-products-count hidden-sm-down">({$cart.products_count})</span>
         </a>
+      {else}
+        <span class="hidden-sm-down">{l s='Cart' d='Shop.Theme.Checkout'}</span>
+        <span class="icon-panier-off"></span>
+        <span class="cart-products-count">({$cart.products_count})</span>
       {/if}
     </div>
   </div>

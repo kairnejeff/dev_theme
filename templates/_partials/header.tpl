@@ -58,6 +58,9 @@
           <div class="float-xs-left" id="menu-icon">
             <i class="material-icons d-inline"></i>
           </div>
+          <div class="hidden-md-up" id="mobile_loop">
+            <span class="loop-btn"><i class="material-icons search"></i></span>
+          </div>
           <div class="float-xs-right" id="_mobile_search_widget"></div>
           <div class="float-xs-right" id="_mobile_cart"></div>
           <div class="top-logo" id="_mobile_logo"></div>
@@ -74,6 +77,7 @@
     <div class="container">
        <div class="row">
       </div>
+      <div class="overlay"></div>
       <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
         <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
         <div class="js-top-menu-bottom">

@@ -31,6 +31,7 @@
 		<button type="submit">
 			<i class="material-icons search">&#xE8B6;</i>
 		</button>
+		<span class="hidden-md-up close"><i class="material-icons">close</i></span>
 	</form>
 </div>
 <!-- /Block search module TOP -->

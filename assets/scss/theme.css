@@ -8049,11 +8049,6 @@ textarea:active:-moz-placeholder {
     visibility: visible
 }
 
-#mobile_top_menu_wrapper {
-    padding: 15px;
-    background: #fff
-}
-
 #mobile_top_menu_wrapper #top-menu {
     margin-bottom: .625rem
 }

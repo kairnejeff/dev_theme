@@ -144,8 +144,8 @@
 
                     <div class="info-detailed-titler active col-md-6">
                       {if isset($product.features)}
-                        <div class="info-detailed-title" id ="composition" role="button" data-toggle="collapse" data-target="#composition" aria-expanded="false" aria-controls="collapseOne">
-                          <div id="ingredient" class="info-detail-content collapse">
+                        <div class="info-detailed-title" >
+                          <div id="ingredient" class="info-detail-content">
                           {foreach from=$product.features item=feature}
                             {if ($feature.name == "Ingrédients")}
                               <p>{$feature.value|escape:'html':'UTF-8'}</p>
@@ -156,135 +156,128 @@
                         </div>
                         </div>
                         
-                        <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#allergenes" aria-expanded="false" aria-controls="collapseOne">
-                          <i class="material-icons hidden-md-up">expand_more</i>
-                        </div>
-                        <div id="allergenes" class="info-detail-content collapse">
+                        <div id="allergenes" class="info-detail-content">
                           {foreach from=$product.features item=feature}
                             {if ($feature.name == "Allergènes")}
                               <p>{$feature.value|escape:'html':'UTF-8'}</p>
                             {/if}
                           {/foreach}
-
                         </div>
                     </div>
 
                     <div class="info-detailed-titler nut col-md-6">
                       {if isset($product.features)}
-                      <div class="info-detailed-title" id ="mentions" role="button" data-toggle="collapse" data-target="#mentions" aria-expanded="false" aria-controls="collapseOne"">
+                      <div class="info-detailed-title">
                       </div>
-                      <div id="mentions" class="info-detail-content collapse">
+                      <div id="mentions" class="info-detail-content">
                       {foreach from=$product.features item=feature}
                         {if ($feature.name == "Mentions Spéciales")}
                           <div>{$feature.value|escape:'html':'UTF-8'}</div>
                         {/if}
-                      {/foreach}		
-                      <div></div>
+                      {/foreach}	
                       <div>Pour 100g </div>
 
                       <div class="info-nutrition">
-                        {foreach from=$product.features item=feature}
-
-                        <ul> 
-
+                        <ul class="list-nutrition"> 
                           <li class="nutrition kj">
                             <ul>
+                                <li class="number"> 
+                            {foreach from=$product.features item=feature}
                               {if ($feature.name == "Energie kcal/100g")}
-                                <li class="number"> 
-                                  <span>{$feature.value|escape:'html':'UTF-8'} kcal </span>
-                                  <span>{$feature.value|escape:'html':'UTF-8'} kj </span>
-                                </li>
+                                        <span>{$feature.value|escape:'html':'UTF-8'} kcal </span>
+                              {/if}
+                              {if ($feature.name == "Energie kJ/100g")}
+                                <span>{$feature.value|escape:'html':'UTF-8'} kj </span>
+                              {/if}
+                            {/foreach}
+                                  </li>
                                 <li class="label-nutrition">Calories</li>
-                              {/if}
-                            </ul>
+                              </ul>
                           </li>
+                            
+                        {foreach from=$product.features item=feature}
 
-                          {* <li class="nutrition kj">
-                            <ul>
-                              {foreach from=$product.features item=feature}
-                                <li class="number"> 
-                                  {if ($feature.name == "Energie kcal/100g")}<span>{$feature.value|escape:'html':'UTF-8'} kcal </span>{/if}
-                                  {if ($feature.name == "Energie kj/100g")}<span>{$feature.value|escape:'html':'UTF-8'} kj </span>{/if}
-                                </li>
-                                <li class="label-nutrition">Calories</li>
-                              {/foreach}
-                            </ul>
-                          </li> *}
+                          {if ($feature.name == "Matière grasse" )}
+                            <li class="nutrition">
+                              <ul>
+                                  <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                  <li class="label-nutrition">Matière grasse</li>
+                              </ul>
+                            </li>
+                          {/if}
 
+                          {if ($feature.name == "Acides gras saturés" )}
+                            <li class="nutrition">
+                              <ul>
+                                  <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                  <li class="label-nutrition">Acides gras saturés</li>
+                              </ul>
+                            </li>
+                          {/if}
+
+                          {if ($feature.name == "Glucides" )}
                           <li class="nutrition">
                             <ul>
-                              {if ($feature.name == "Matière grasse" )}
-                                <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
-                                <li class="label-nutrition">Matière grasse</li>
-                              {/if}
-                            </ul>
-                          </li>
-
-                          <li class="nutrition">
-                            <ul>
-                              {if ($feature.name == "Acides gras saturés" )}
-                                <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
-                                <li class="label-nutrition">Acides gras saturés</li>
-                              {/if}
-                            </ul>
-                          </li>
-
-                          <li class="nutrition">
-                            <ul>
-                              {if ($feature.name == "Glucides" )}
                                 <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
                                 <li class="label-nutrition">Glucides</li>
-                              {/if}
                             </ul>
                           </li>
+                        {/if}
 
+                        {if ($feature.name == "Sucres" )}
                           <li class="nutrition">
                             <ul>
-                              {if ($feature.name == "Sucres" )}
                                 <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
                                 <li class="label-nutrition">Sucres</li>
-                              {/if}
                             </ul>
                           </li>
+                        {/if}
 
+                        {if ($feature.name == "Fibres" )}
                           <li class="nutrition">
                             <ul>
-                              {if ($feature.name == "Fibres" )}
+                             
                                 <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
                                 <li class="label-nutrition">Fibres</li>
-                              {/if}
+                              
                             </ul>
                           </li>
+                        {/if}
 
+                        {if ($feature.name == "Protéines" )}
                           <li class="nutrition">
                             <ul>
-                              {if ($feature.name == "Protéines" )}
+                              
                                 <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
                                 <li class="label-nutrition">Protéines</li>
-                              {/if}
+                              
                             </ul>
                           </li>
+                        {/if}
 
-                          <li class="nutrition">
+                        {if ($feature.name == "Sel" )}  
+                        <li class="nutrition">
                             <ul>
-                              {if ($feature.name == "Sel" )}
+                              
                                 <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
                                 <li class="label-nutrition">Sel</li>
-                              {/if}
+                              
                             </ul>
                           </li>
+                        {/if}
 
-                        </ul>
+                       
                       {/foreach}
+                      </ul>
                       </div>
                       </div>
                     {/if}	
                     </div>
 
                     <div class="info-detailed-titler col-md-6">
-                      <div class="info-detailed-title" id="histoire"  role="button" data-toggle="collapse" data-target="#history" aria-expanded="false" aria-controls="collapseOne">
+                      <div class="info-detailed-title">
                       </div>
-                      <div id="history" class="info-detail-content collapse">
+                      <div id="history" class="info-detail-content">
                       {foreach from=$product.features item=feature}
                         {if ($feature.name == "Histoire de la recette")}
                           <p>{$feature.value|escape:'html':'UTF-8'}</p>
@@ -294,9 +287,9 @@
                     </div>
 
                       <div class="info-detailed-titler col-md-6">
-                      <div class="info-detailed-title" id="avis" role="button" data-toggle="collapse" data-target="#preperation" aria-expanded="false" aria-controls="collapseOne">
+                      <div class="info-detailed-title">
                       </div>
-                      <div id="avis_truspilot" info-detail-content collapse">
+                      <div id="avis_truspilot info-detail-content ">
                         <div class="data-hidden d-none">
                           {if !empty($combinations)}
                               <div id="combinaison-attributes" data-attributes="[{$combinations|json_encode}]"></div>

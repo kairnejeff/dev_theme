@@ -56,11 +56,6 @@
     #header .header-nav .row .mobile {
         position: relative;
     }
-    #header .header-nav .row .mobile #_mobile_cart {
-        position: absolute;
-        right: 10px;
-        top: 20px;
-    }
     #header .header-nav .row .mobile #_mobile_user_info {
         position: absolute;
         top: 20px;
@@ -105,10 +100,6 @@
         position: relative;
         width: 100%;
         margin-top: 15px;
-    }
-    #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul {
-        z-index: 999;
-        width: 100%;
     }
     #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul li {
         padding: 8px 5px;
@@ -256,12 +247,6 @@
     .container #main .block-category-inner #category-description .col-md-4 .col-md-8 img {
         width: 100%;
     }
-}
-
-#js-product-list .products>div,
-.featured-products .products>div {
-    margin-bottom: 50px;
-    position: relative;
 }
 
 @media (max-width: 480px) {

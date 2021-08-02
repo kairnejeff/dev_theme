@@ -47,7 +47,7 @@
         title="{l s='Log in to your customer account' d='Shop.Theme.Customeraccount'}"
         rel="nofollow"
       >
-      <span class="hidden-sm-down">{l s='Sign in' d='Shop.Theme.Actions'}</span>
+      <span>{l s='Sign in' d='Shop.Theme.Actions'}</span>
       <span class="icon-compte-off header-icon"></span>
       </a>
     {/if}

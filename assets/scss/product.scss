@@ -516,26 +516,13 @@
             }
             #mentions {
                 .info-nutrition {
-                    display: flex;
-                    flex-wrap: wrap;
-                    margin-top: 35px;
-                    ul {
-                        flex: 1 0 21%;
-                        &:nth-child(2) {
-                            display: none;
-                        }
-                        .kj {
-                            .number {
-                                span {
-                                    display: block;
-                                    line-height: 18px;
-                                    &:first-child {
-                                        padding-top: 8px;
-                                    }
-                                }
-                            }
-                        }
+                    .list-nutrition {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 35px;
                         .nutrition {
+                            flex: 1 0 21%;
+                            margin-bottom: 1rem;
                             .number {
                                 border: 1px solid #000;
                                 padding: 10px;
@@ -551,16 +538,27 @@
                                 margin-top: 10px;
                             }
                         }
+                        .kj {
+                            .number {
+                                span {
+                                    display: block;
+                                    line-height: 18px;
+                                    &:first-child {
+                                        padding-top: 8px;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
-            #avis_truspilot {
-                margin-top: 50px;
-                #trustbox-widget {
-                    .tp-widget-wrapper {
-                        margin: 0;
-                        width: 100%;
-                    }
+        }
+        #avis_truspilot {
+            margin-top: 50px;
+            #trustbox-widget {
+                .tp-widget-wrapper {
+                    margin: 0;
+                    width: 100%;
                 }
             }
 
