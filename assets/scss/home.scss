@@ -45,7 +45,7 @@
                     >div {
                         @media (max-width: 480px) {
                             width: 100%;
-                            margin-bottom: 60px;
+                            margin-bottom: 30px;
                         }
                         margin-bottom: 50px;
                         position: relative;
@@ -110,7 +110,8 @@
                                             font-size: 14px;
                                         }
                                         @media (max-width: 480px) {
-                                            top: 130px;
+                                            top: calc(100% + 20px);
+                                            left: 10px;
                                         }
                                     }
                                     &:after {
@@ -128,7 +129,7 @@
                                             }
                                         }
                                         @media (max-width: 480px) {
-                                            top: 130px;
+                                            top: calc(100% + 10px);
                                         }
                                     }
                                 }
@@ -177,17 +178,13 @@
         .category-cover {
             img {
                 float: right;
-
                 @media (max-width: 768px) {
                     float: none;
                 }
-                
             }
         }
     }
 }
-
-
 
 // Block en off
 .en-off {

@@ -132,21 +132,11 @@
     content: none;
 }
 
-@media (max-width: 960px) {
-    .container #main #content .featured-products .row>div {
-        margin-bottom: 70px;
-    }
-}
-
 @media (max-width: 480px) {
     .container #main #content .featured-products .row {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         height: 100%;
-    }
-    .container #main #content .featured-products .row>div {
-        width: 100%;
-        margin-bottom: 60px;
     }
     .container #main #content .featured-products .row .products>div article {
         padding-bottom: 0;
