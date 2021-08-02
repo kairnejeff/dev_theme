@@ -24,6 +24,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
     justify-content: space-between;
     padding: 0 30px;
     height: auto;
+    background-color: $pink;
     @media (max-width: 769px) {
         position: relative;
         z-index: 999;
