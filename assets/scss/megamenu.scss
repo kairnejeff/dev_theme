@@ -243,6 +243,8 @@ span.obflink {
             left: 0;
             padding: 20px;
             height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
             -webkit-animation: linear;
             -webkit-animation-name: run;
             -webkit-animation-duration: 0.5s;
