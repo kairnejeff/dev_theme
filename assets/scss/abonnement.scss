@@ -4,18 +4,16 @@
             width: 100%;
             position: relative;
             img {
-                max-width: 100%;
+                max-width: calc(100% + 60px);
+                position: relative;
+                bottom: 100px;
             }
             h1 {
-                top: 0;
-                position: absolute;
-                width: 100%;
-                text-align: center;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                height: 220px;
+                position: relative;
+                left: 30px;
                 font-size: 45px;
+                z-index: 1;
+                text-align: center;
             }
         }
         .abonnement-description {
