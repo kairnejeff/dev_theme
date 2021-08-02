@@ -64,51 +64,50 @@
             <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
           {/if} 
         {/block}
-
-        {block name='product_price_and_shipping'}
-        
-          {if $product.show_price}
-            <div class="product-price-and-shipping">
-              {if $product.has_discount}
-                {hook h='displayProductPriceBlock' product=$product type="old_price"}
-    
-                <span class="regular-price" aria-label="{l s='Regular price' d='Shop.Theme.Catalog'}">{$product.regular_price}</span>
-                {if $product.discount_type === 'percentage'}
-                  <span class="discount-percentage discount-product">{$product.discount_percentage}</span>
-                {elseif $product.discount_type === 'amount'}
-                  <span class="discount-amount discount-product">{$product.discount_amount_to_display}</span>
-                {/if}
+        <div class="add-to-cart-or-refresh">
+        <form action="{$urls.pages.cart}" method="post" >
+            <input type="hidden" name="token" value="{$static_token}">
+            <input type="hidden" name="id_product" value="{$product.id}" class="product_page_product_id">
+            <input type="hidden" name="qty" value="1" id="id_product_{$product.id}"> 
+            {if !$configuration.is_catalog}
+                    {if (!isset($product.customization_required) || !$product.customization_required) && ($product.allow_oosp || $product.quantity > 0)}
+                      <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}><span class="icon-panier-off"></span></button>
+                    {else}
+                      <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" disabled><span class="icon-panier-off"></span></button>
+                    {/if}
               {/if}
-    
-              {hook h='displayProductPriceBlock' product=$product type="before_price"}
-    
-              <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">{$product.price}</span>
-              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="invisible">
-                <meta itemprop="priceCurrency" content="{$currency.iso_code}" />
-                <meta itemprop="price" content="{$product.price_amount}" />
-              </div>
-    
-              {hook h='displayProductPriceBlock' product=$product type='unit_price'}
-    
-              {hook h='displayProductPriceBlock' product=$product type='weight'}
-            </div>
-          {/if}
-          <div class="add-to-cart-or-refresh">
-          <form action="{$urls.pages.cart}" method="post" >
-              <input type="hidden" name="token" value="{$static_token}">
-              <input type="hidden" name="id_product" value="{$product.id}" class="product_page_product_id">
-              <input type="hidden" name="qty" value="1" id="id_product_{$product.id}"> 
-              {if !$configuration.is_catalog}
-                      {if (!isset($product.customization_required) || !$product.customization_required) && ($product.allow_oosp || $product.quantity > 0)}
-                        <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}><span class="icon-panier-off"></span></button>
-                      {else}
-                        <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" disabled><span class="icon-panier-off"></span></button>
-                      {/if}
-                {/if}
-            </form>
-          </div>
-        {/block}
+          </form>
+        </div>
       </div>
+      {block name='product_price_and_shipping'}
+        
+        {if $product.show_price}
+          <div class="product-price-and-shipping">
+            {if $product.has_discount}
+              {hook h='displayProductPriceBlock' product=$product type="old_price"}
+  
+              <span class="regular-price" aria-label="{l s='Regular price' d='Shop.Theme.Catalog'}">{$product.regular_price}</span>
+              {if $product.discount_type === 'percentage'}
+                <span class="discount-percentage discount-product">{$product.discount_percentage}</span>
+              {elseif $product.discount_type === 'amount'}
+                <span class="discount-amount discount-product">{$product.discount_amount_to_display}</span>
+              {/if}
+            {/if}
+  
+            {hook h='displayProductPriceBlock' product=$product type="before_price"}
+  
+            <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">{$product.price}</span>
+            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="invisible">
+              <meta itemprop="priceCurrency" content="{$currency.iso_code}" />
+              <meta itemprop="price" content="{$product.price_amount}" />
+            </div>
+  
+            {hook h='displayProductPriceBlock' product=$product type='unit_price'}
+  
+            {hook h='displayProductPriceBlock' product=$product type='weight'}
+          </div>
+        {/if}
+      {/block}
     </div>
   </article>
 </div>
