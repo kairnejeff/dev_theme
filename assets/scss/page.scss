@@ -19,22 +19,30 @@
                 right: 0;
                 bottom: 0;
                 height: 5px;
-                font-size: 45px;
+                font-size: 50px;
+                line-height: 55px;
                 color: #FFF;
+                @media (max-width: 768px) {
+                    font-size: 32px;
+                    line-height: unset;
+                }
             }
         }
         .bloc {
             h2 {
-                padding: 40px;
+                padding: 121px 40px;
                 text-align: center;
+            }
+            .bloc-title {
+                font-family: 'RobotoMono';
+                font-size: 18px;
             }
             width: 100%;
             &:nth-child(2n+1) {
                 background-color: #fef9f5;
             }
-            margin-bottom: 4em;
             .bloc-content {
-                padding: 50px 163px;
+                padding: 0 400px 121px;
                 @media (max-width: 768px) {
                     padding: 50px 43px;
                 }
@@ -43,6 +51,12 @@
                     height: auto;
                 }
             }
+            .bloc-image {
+                margin-bottom: 75px;
+            }
+        }
+        .introduction {
+            margin-bottom: 200px;
         }
     }
 }

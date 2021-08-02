@@ -245,10 +245,6 @@
         height: auto;
         padding-bottom: 20px;
     }
-    #js-product-list .products>div article .product-price-and-shipping,
-    .featured-products .products>div article .product-price-and-shipping {
-        bottom: -5px;
-    }
 }
 
 #js-product-list .up a,

@@ -147,21 +147,6 @@
                             width: 100%!important;
                         }
                     }
-                    .product-price-and-shipping {
-                        position: absolute;
-                        top: 100px;
-                        right: 0;
-                        .price {
-                            font-family: $roboto;
-                            font-size: 14px;
-                        }
-                        @media (max-width: 480px) {
-                            top: unset;
-                            left: 10px;
-                            bottom: -5px;
-                            ;
-                        }
-                    }
                     @media (max-width: 480px) {
                         height: auto;
                     }
@@ -177,7 +162,7 @@
                             }
                         }
                         @media (max-width: 480px) {
-                            bottom: -10px;
+                            bottom: -28px;
                             top: unset;
                         }
                     }
@@ -187,6 +172,19 @@
                     }
                     @media (max-width: 480px) {
                         padding-bottom: 0!important;
+                    }
+                }
+                .product-price-and-shipping {
+                    position: absolute;
+                    right: 0;
+                    .price {
+                        font-family: $roboto;
+                        font-size: 14px;
+                    }
+                    @media (max-width: 480px) {
+                        top: unset;
+                        left: 10px;
+                        ;
                     }
                 }
             }
