@@ -210,16 +210,13 @@
 @media (max-width: 1200px) {
     #header {
         position: relative;
-
         @media (max-width: 769px) {
             border-bottom: 1px solid $grey_border!important;
             margin-bottom: 50px;
         }
-
         .header-nav {
             margin: 0;
             padding-bottom: 20px;
-            
             .row {
                 .navigation-header {
                     display: flex;
@@ -360,6 +357,7 @@
                         }
                         #_mobile_user_info {
                             padding: 20px 15px;
+                            display: none;
                             .user-info {
                                 a {
                                     font-size: 14px;
