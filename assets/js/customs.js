@@ -1,19 +1,5 @@
 /*menu*/
-function mobileMenu() {
-    var width = $(window).width();
-    if (width < 1200) {
-        $("#top-menu").appendTo("#_mobile_top_menu");
-        // $("#_mobile_user_info").appendTo("#_mobile_top_menu");
-        $("#mobile_top_menu_wrapper").removeClass("hidden-md-up");
-        $("#menu-icon span").removeClass("hidden-md-up");
-        $("#menu-icon i").removeClass("hidden-md-up");
-    }
-
-}
-
 $(document).ready(function() {
-    mobileMenu()
-    $(window).resize(mobileMenu);
     $("#menu-icon").click(function() {
         $("#mobile_top_menu_wrapper").addClass("open")
         $("#header .overlay").addClass("shadow")
