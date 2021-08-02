@@ -467,6 +467,7 @@ textarea {
 
 .icon-panier-on:before {
     content: "\e90b";
+    font-size: 18px;
 }
 
 .icon-favoris-on:before {
