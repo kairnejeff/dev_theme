@@ -135,9 +135,17 @@
                     .h2 {
                         width: 75%;
                         font-size: 1.125rem;
+
+                        @media (max-width: 480px) {
+                            width: 100%!important;
+                        }
                     }
                     #product-subtitle {
                         width: 65%;
+
+                        @media (max-width: 480px) {
+                            width: 100%!important;
+                        }
                     }
                     .product-price-and-shipping {
                         position: absolute;
@@ -149,14 +157,11 @@
                         }
                         @media (max-width: 480px) {
                             left: 10px;
+                            top: 130px!important;
                         }
                     }
                     @media (max-width: 480px) {
                         height: auto;
-                        padding-bottom: 20px;
-                        .product-price-and-shipping {
-                            bottom: -5px;
-                        }
                     }
                     .add-to-cart-or-refresh {
                         position: absolute;
@@ -169,6 +174,19 @@
                                 outline: none;
                             }
                         }
+
+                        @media (max-width: 480px) {
+                            top: 120px!important;
+                        }
+                    }
+
+                    @media (max-width: 768px) {
+                        border-left: 1px solid $black;
+                        padding-left: 8px;
+                    }
+
+                    @media (max-width: 480px) {
+                        padding-bottom: 0!important;
                     }
                 }
             }

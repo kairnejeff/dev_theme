@@ -542,9 +542,6 @@
     #wrapper .container #main .products {
         justify-content: space-around;
     }
-    #wrapper .container #main .products>div {
-        margin-bottom: 30px;
-    }
 }
 
 @media (max-width: 768px) {
