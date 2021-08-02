@@ -58,6 +58,9 @@
           <div class="float-xs-left" id="menu-icon">
             <i class="material-icons d-inline"></i>
           </div>
+          <div class="hidden-md-up" id="mobile_loop">
+            <span class="loop-btn"><i class="material-icons search"></i></span>
+          </div>
           <div class="float-xs-right" id="_mobile_search_widget"></div>
           <div class="float-xs-right" id="_mobile_cart"></div>
           <div class="top-logo" id="_mobile_logo"></div>

@@ -26,7 +26,16 @@
     display: none;
 }
 
+#mobile_loop {
+    @media (max-width: 768px) {
+        position: absolute;
+        top: 15px;
+        right: 55px;
+    }
+}
+
 #_mobile_search_widget {
+    display: none;
     button[type=submit] {
         background: transparent;
         border: transparent;
@@ -37,6 +46,45 @@
         @media (max-width: 768px) {
             top: 0;
         }
+    }
+}
+
+#_mobile_search_widget.show {
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 888;
+    background: #fff;
+    top: -20px;
+    animation: to-bottom-1 .5s linear forwards;
+    form {
+        input[type=text] {
+            display: block;
+            width: calc(100% - 80px);
+            padding: 15px 40px 0 40px;
+            margin-left: 40px;
+            border: none;
+            border-bottom: 1px solid;
+            outline: 0;
+        }
+        button[type=submit] {
+            left: 30px;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+    }
+}
+
+@keyframes to-bottom-1 {
+    from {
+        top: -20px;
+    }
+    to {
+        top: 0;
     }
 }
 
@@ -294,6 +342,7 @@
                                     right: 5px;
                                     border: none;
                                     background: none;
+                                    outline: 0;
                                 }
                                 button.menu-before {
                                     left: 0;
