@@ -400,7 +400,10 @@
     {/block}
 
     <div class="boutique">
-      <button> <a href={$urls.base_url}>Retour à la boutique </a> </button>
+      
+      {assign var="breadcrumbLength" value=(count($breadcrumb.links)-2)}
+     
+      <button> <a href= {$breadcrumb.links[$breadcrumbLength].url}> {$breadcrumb.links[$breadcrumbLength].title} </a> </button>
     </div>
 
     {block name='product_footer'}
