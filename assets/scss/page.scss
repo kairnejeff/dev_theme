@@ -30,7 +30,7 @@
         }
         .bloc {
             h2 {
-                padding: 121px 40px;
+                padding: 60px 40px;
                 text-align: center;
             }
             .bloc-title {
@@ -42,7 +42,7 @@
                 background-color: #fef9f5;
             }
             .bloc-content {
-                padding: 0 400px 121px;
+                padding: 0 200px 60px;
                 @media (max-width: 768px) {
                     padding: 50px 43px;
                 }
@@ -52,11 +52,11 @@
                 }
             }
             .bloc-image {
-                margin-bottom: 75px;
+                margin-bottom: 35px;
             }
         }
         .introduction {
-            margin-bottom: 200px;
+            margin-bottom: 100px;
         }
     }
 }
