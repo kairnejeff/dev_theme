@@ -90,27 +90,25 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
             }
         }
         &:first-child {
-            
-                i {
-                    a {
-                        font-style: normal;
-                        font-family: $alegreya;
-                        font-size: 15px;
-                        color: $black;
-                        letter-spacing: 0.5px;
-                    }
-                    a:hover {
-                        text-decoration: underline!important;
-                        cursor: pointer;
-                    }
-                    &:nth-child(2),
-                    &:nth-child(4),
-                    &:nth-child(7),
-                    &:nth-child(8) {
-                        margin-bottom: 30px;
-                    }
+            i {
+                a {
+                    font-style: normal;
+                    font-family: $alegreya;
+                    font-size: 15px;
+                    color: $black;
+                    letter-spacing: 0.5px;
                 }
-            
+                a:hover {
+                    text-decoration: underline!important;
+                    cursor: pointer;
+                }
+                &:nth-child(2),
+                &:nth-child(4),
+                &:nth-child(7),
+                &:nth-child(8) {
+                    margin-bottom: 30px;
+                }
+            }
         }
         &:nth-child(3) {
             border-right: 1px solid $black;
@@ -137,7 +135,6 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                         line-height: 22px;
                     }
                     .menu-block-link {
-                        
                         i {
                             a {
                                 font-style: normal;
@@ -214,7 +211,6 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                 }
             }
         }
-
         &:nth-child(4) {
             .recipe-ingredient {
                 .menu-block-child {
@@ -229,7 +225,6 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                 }
             }
         }
-
         &:last-child {
             margin: 30px 0;
             background-image: url("../img/HACL.png");
@@ -270,6 +265,11 @@ span.obflink {
             -webkit-animation-duration: 0.5s;
             @media (max-width: 480px) {
                 width: 100%;
+            }
+            #_mobile_top_menu {
+                #mobile_user_info {
+                    display: block;
+                }
             }
         }
         .overlay.shadow {
