@@ -119,13 +119,15 @@
                                 }
                                 .product-price-and-shipping {
                                     position: absolute;
+                                    top: 100px;
                                     right: 0;
                                     .price {
                                         font-family: $roboto;
                                         font-size: 14px;
                                     }
                                     @media (max-width: 480px) {
-                                        right: 10px;
+                                        top: 100%;
+                                        left: unset;
                                     }
                                 }
                                 .highlighted-informations {
@@ -277,9 +279,13 @@
     }
 }
 
-@media (max-width: 1200px) {
-    #wrapper .container {
+#wrapper .container {
+    @media (max-width: 1200px) {
         width: 961px;
+        max-width: 100%;
+    }
+    @media (max-width: 767px) {
+        width: unset;
         max-width: 100%;
     }
 }
