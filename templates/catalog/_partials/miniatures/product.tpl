@@ -45,6 +45,7 @@
                         alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                         data-full-size-image-url="{$product.cover.large.url}"
                 />
+                {hook h='displayCategoryProductCaroussel' id_product=$product.id}
           {/if}
           </a>
         {else}
