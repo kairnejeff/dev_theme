@@ -55,3 +55,9 @@ html, body {
     padding: 0px;
     overflow-x: hidden; 
 }
+
+@mixin  icon-panier {
+    border: none;
+    background: none;
+    outline: none;
+}
