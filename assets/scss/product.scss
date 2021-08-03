@@ -214,6 +214,10 @@
                                         font-size: 12px;
                                         font-weight: 700;
                                     }
+
+                                    @media (max-width: 480px) {
+                                        width: 30%;
+                                    }
                                 }
                                 .product-variants {
                                     .product-variants-item {
@@ -286,6 +290,10 @@
                                                             font-family: 'RobotoMono';
                                                             font-weight: 700;
                                                             letter-spacing: 1px;
+
+                                                            @media (max-width: 480px) {
+                                                                font-size: 20px;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -645,6 +653,11 @@
                                     border: 1px solid green;
                                 }
                             }
+
+                            @media (max-width: 480px) {
+                                flex: 0 0 33.333333%;
+                            }
+
                             .label-nutrition {
                                 text-align: center;
                                 margin-top: 10px;
@@ -689,6 +702,9 @@
 .actu {
     margin-top: 80px;
     .info-actu {
+        @media screen and (max-width: 480px) {
+            height: 500px;
+        }
         h2 {
             margin-bottom: 80px;
             font-family: $roboto;
@@ -720,6 +736,15 @@
                         left: -15px;
                     }
                 }
+
+                @media screen and (max-width: 767px) {
+                    width: 600px;
+                    height: auto;
+                }
+
+                @media screen and (max-width: 480px) {
+                    width: 100%;
+                }
             }
             .secret_cuisine {
                 // width: 694px;
@@ -735,6 +760,12 @@
                 }
                 @media screen and (max-width: 767px) {
                     float: none;
+                    width: 600px;
+                    height: auto;
+                }
+
+                @media screen and (max-width: 480px) {
+                    width: 100%;
                 }
             }
             .recyclage {
@@ -748,6 +779,15 @@
                         left: -15px;
                     }
                 }
+
+                @media screen and (max-width: 767px) {
+                    width: 600px;
+                    height: auto;
+                }
+
+                @media screen and (max-width: 480px) {
+                       width: 100%;
+                }
             }
             .text-info {
                 background-color: $pink;
@@ -757,10 +797,21 @@
                 right: -100px;
                 width: 500px;
                 z-index: 99;
+                color: $black;
+                font-family: $roboto-light;
+                font-size: 13px;
+                line-height: 17px;
+
                 @media (max-width: 769px) {
                     right: 13px;
                     bottom: 65px;
                     top: auto;
+                }
+
+                @media (max-width: 480px) {
+                    bottom: 250px;
+                    right: -17px;
+                    width: 100%;
                 }
                 p {
                     font-size: 21px;
