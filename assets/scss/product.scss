@@ -501,11 +501,10 @@
     button {
         display: block;
         margin: 0 auto;
-        padding: 10px 100px;
-        background: $grey;
-        border-radius: 8px;
-        border: 1px solid $greyblack;
+        background: #000;
+        border: 1px solid #232323;
         word-spacing: 6px;
+        padding: 10px;
         a {
             font-size: 16px;
             text-transform: uppercase;
