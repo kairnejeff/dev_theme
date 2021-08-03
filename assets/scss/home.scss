@@ -280,13 +280,12 @@
 }
 
 #wrapper .container {
+    max-width: 100%;
     @media (max-width: 1200px) {
         width: 961px;
-        max-width: 100%;
     }
     @media (max-width: 767px) {
         width: unset;
-        max-width: 100%;
     }
 }
 
