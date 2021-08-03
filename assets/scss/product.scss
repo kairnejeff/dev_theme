@@ -214,7 +214,6 @@
                                         font-size: 12px;
                                         font-weight: 700;
                                     }
-
                                     @media (max-width: 480px) {
                                         width: 30%;
                                     }
@@ -290,7 +289,6 @@
                                                             font-family: 'RobotoMono';
                                                             font-weight: 700;
                                                             letter-spacing: 1px;
-
                                                             @media (max-width: 480px) {
                                                                 font-size: 20px;
                                                             }
@@ -512,9 +510,10 @@
         background: #000;
         border: 1px solid #232323;
         word-spacing: 6px;
-        padding: 10px;
+        padding: .7rem 1.25rem font-family: RobotoMono;
+        letter-spacing: 1px;
+        font-size: 11px;
         a {
-            font-size: 16px;
             text-transform: uppercase;
             color: $white;
         }
@@ -653,11 +652,9 @@
                                     border: 1px solid green;
                                 }
                             }
-
                             @media (max-width: 480px) {
                                 flex: 0 0 33.333333%;
                             }
-
                             .label-nutrition {
                                 text-align: center;
                                 margin-top: 10px;
@@ -736,12 +733,10 @@
                         left: -15px;
                     }
                 }
-
                 @media screen and (max-width: 767px) {
                     width: 600px;
                     height: auto;
                 }
-
                 @media screen and (max-width: 480px) {
                     width: 100%;
                 }
@@ -763,7 +758,6 @@
                     width: 600px;
                     height: auto;
                 }
-
                 @media screen and (max-width: 480px) {
                     width: 100%;
                 }
@@ -779,14 +773,12 @@
                         left: -15px;
                     }
                 }
-
                 @media screen and (max-width: 767px) {
                     width: 600px;
                     height: auto;
                 }
-
                 @media screen and (max-width: 480px) {
-                       width: 100%;
+                    width: 100%;
                 }
             }
             .text-info {
@@ -801,13 +793,11 @@
                 font-family: $roboto-light;
                 font-size: 13px;
                 line-height: 17px;
-
                 @media (max-width: 769px) {
                     right: 13px;
                     bottom: 65px;
                     top: auto;
                 }
-
                 @media (max-width: 480px) {
                     bottom: 250px;
                     right: -17px;
