@@ -178,12 +178,14 @@
                     bottom: 0;
                     text-align: center;
                     .menu {
+                        width: 1010px;
                         >ul {
                             margin-bottom: 0;
-                            margin-left: 270px;
+                            float: right;
+
                             >li {
                                 margin-right: 50px;
-                                span {
+                                .menu-item-title {
                                     font-family: $unna;
                                     font-size: 18px;
                                     text-transform: none;
@@ -191,12 +193,18 @@
                                     line-height: 23px;
                                 }
                                 &:first-child {
-                                    span {
+                                    .menu-item-title {
                                         padding-left: 0;
                                     }
                                 }
                                 &:last-child {
                                     margin-right: 0;
+
+                                    .menu-item-title {
+                                        a {
+                                            padding-right: 0;
+                                        }
+                                    }
                                 }
                             }
                         }

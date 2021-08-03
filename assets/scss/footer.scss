@@ -136,26 +136,15 @@
                     }
                 }
                 .col-md-7 {
-                    .footer_information {
+                    .col-lg-4 {
                         .titre {
-                            font-family: $unna;
-                            font-weight: bold;
                             font-size: 20px;
+                            font-family: $unna;
                         }
-                        div {
-                            p {
-                                font-family: $roboto-light;
-                                font-size: 14px;
-                                span {
-                                    display: block;
-                                }
-                            }
-                            .coordonnes {
-                                margin-bottom: 0;
-                            }
-                            .member {
-                                margin-top: 50px;
-                            }
+
+                        p {
+                            font-size: 14px;
+                            font-family: $alegreya;
                         }
                     }
                 }

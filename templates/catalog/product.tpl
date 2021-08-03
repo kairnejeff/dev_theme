@@ -329,7 +329,9 @@
         <div class="info-actu origin">
           <h2> D'où viennent nos produits ? </h2>
           <div class="flex">
-            <div class="provenance"></div>
+            <div class="provenance">
+              <img src="{$urls.img_url}provenance.png"/>
+            </div>
             <div class="text-info">
             {if $product.source != NULL}
               {$product.source nofilter}
@@ -346,14 +348,18 @@
               {$product.secret nofilter}
             {/if}
             </div>
-            <div class="secret_cuisine"></div>
+            <div class="secret_cuisine">
+              <img src="{$urls.img_url}secret.png"/>
+            </div>
           </div>
         </div>
 
         <div class="info-actu bocaux">
           <h2> Recyclage </h2>
           <div class="flex">
-            <div class="recyclage"></div>
+            <div class="recyclage">
+              <img src="{$urls.img_url}recyclage.png"/>
+            </div>
             <div class="text-info">
             <p> Les emballages : bocaux en verre recyclables </p>
             </div>
