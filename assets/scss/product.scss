@@ -406,9 +406,13 @@
             }
         }
     }
-    .product-accessories {
+    .product-accessories,
+    .featured-products {
         width: 1190px;
         margin: 120px auto;
+        padding-left: 15px;
+        padding-right: 15px;
+
         .h5 {
             margin-bottom: 20px;
             span {
