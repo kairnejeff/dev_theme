@@ -4,7 +4,7 @@
 </button>
 <ul class="top-menu" data-child="1">
     {foreach from=$items item=item}
-        <li class="menu-item">
+        <li class="menu-item {if isset($item.current)} current{/if}">
             {if !$item.is_single}
                 <button type="button" class="hidden-md-up menu-next"  aria-label="Next">
                     <span aria-hidden="true" class="hidden-md-up"><i class="material-icons">chevron_right</i></span>
@@ -47,7 +47,7 @@
                 <div class="menu-block"></div>
                 </div>
             {else}
-                <span class="menu-item-title"><a href="{$item.link.url}" class="menulink {if isset($item.link.current)}current{/if}">{$item.name_item}</a></span>
+                <span class="menu-item-title"><a href="{$item.link.url}" class="menulink ">{$item.name_item}</a></span>
             {/if}
         </li>
     {/foreach}
