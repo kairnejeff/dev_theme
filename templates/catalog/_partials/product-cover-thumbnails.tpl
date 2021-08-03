@@ -32,14 +32,7 @@
       {/if}
       {hook h='displayProductCaroussel' id_product=$product.id}
       
-      <span class="icon-prev hidden-md-up" aria-hidden="true">
-        <i class="material-icons">&#xE5CB;</i>
-      </span>
-      <span class="icon-next hidden-md-up" aria-hidden="true">
-          <i class="material-icons">&#xE5CC;</i>
-      </span>
     </div>
   {/block}
-
 {hook h='displayAfterProductThumbs'}
 </div>

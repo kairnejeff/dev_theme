@@ -32,7 +32,7 @@
           <a href="{$product.url}" class="thumbnail product-thumbnail">
           {assign var="img_webp" value="modules/kj_webp/images/p/webp-img{$product.id_product}.webp"}
           {if file_exists($img_webp)&& $modules.kj_detectdevice.machine !=='Mac'&&$modules.kj_detectdevice.machine !=='iPad'}
-              <picture>
+              <picture  class="product-img">
                   <source srcset="{$urls.base_url}modules/kj_webp/images/p/webp-img{$product.id_product}.webp" alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}" type="image/webp">
                   <img width="100" height="100" src="{$product.default_image.bySize.large_default.url}" srcset="{$product.cover.bySize.home_default.url} 320w, {$product.cover.bySize.home_default_medium.url} 300w, {$product.cover.bySize.home_default_small.url} 150w " alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}">
               </picture>
@@ -40,10 +40,12 @@
               
           {else}
                 <img
+                        class="product-img"
                         src="{$product.default_image.bySize.large_default.url}"
                         alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                         data-full-size-image-url="{$product.cover.large.url}"
                 />
+                {hook h='displayCategoryProductCaroussel' id_product=$product.id}
           {/if}
           </a>
         {else}

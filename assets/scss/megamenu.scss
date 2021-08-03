@@ -20,6 +20,14 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
     }
 }
 
+.menu-item.current {
+    border-bottom: 1px solid #000;
+}
+
+.menu-item.current:first-child {
+    padding-bottom: 6px;
+}
+
 .top-menu .sub-menu.collapse {
     justify-content: space-between;
     padding: 0 30px;
@@ -35,8 +43,8 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
         @media (max-width: 769px) {
             position: absolute;
             top: -45px;
-            left: calc(50% - 25px);
             font-size: 20px;
+            text-align: center;
         }
     }
     .menu-block {
@@ -45,6 +53,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
         }
         .menulink {
             cursor: pointer;
+            font-style: normal;
         }
         margin: 30px 20px;
         flex: 1 1 auto;
