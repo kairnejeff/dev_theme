@@ -156,9 +156,11 @@
                             >div {
                                 &:first-child {
                                     p {
-                                        font-size: 16px;
-                                        margin-bottom: 120px;
-                                        max-height: 66px;
+                                        &:last-child {
+                                            font-size: 16px;
+                                            margin-bottom: 120px;
+                                            max-height: 66px;
+                                        }
                                     }
                                 }
                             }
@@ -600,7 +602,7 @@
                             margin-bottom: 1rem;
                             color: green;
                             .number {
-                                border: 1px solid #000;
+                                border: 1px solid green;
                                 padding: 10px;
                                 border-radius: 50%;
                                 text-align: center;
@@ -677,23 +679,49 @@
                 align-items: center;
             }
             .provenance {
-                width: 694px;
-                height: 462px;
-                background-image: url("../img/secret.png");
-                background-size: contain;
+                // width: 694px;
+                // height: 462px;
+                position: relative;
+
+                img {
+                    @media screen and (max-width: 767px) {
+                        width: 100%;
+                        position: absolute;
+                        left: -15px;
+                    }
+                }
             }
             .secret_cuisine {
-                width: 694px;
-                height: 461px;
-                background-image: url("../img/secret.png");
-                background-size: contain;
+                // width: 694px;
+                // height: 461px;
                 float: right;
+                position: relative;
+
+                img {
+                    @media screen and (max-width: 767px) {
+                        width: 100%;
+                        position: absolute;
+                        right: -15px;
+                    }
+                }
+
+                @media screen and (max-width: 767px) {
+                    float: none;
+                }
             }
             .recyclage {
-                width: 694px;
-                height: 520px;
-                background-image: url("../img/recyclage.png");
-                background-size: contain;
+                // width: 694px;
+                // height: 520px;
+                position: relative;
+
+                img {
+                    @media screen and (max-width: 767px) {
+                        width: 100%;
+                        position: absolute;
+                        left: -15px;
+                        
+                    }
+                }
             }
             .text-info {
                 background-color: $pink;
@@ -702,9 +730,11 @@
                 top: 25%;
                 right: -100px;
                 width: 500px;
+                z-index: 99;
+
                 @media (max-width: 769px) {
                     right: 13px;
-                    bottom: 10px;
+                    bottom: 65px;
                     top: auto;
                 }
                 p {
@@ -736,9 +766,10 @@
     .bocaux {
         .flex {
             .text-info {
-                @media (max-width: 769px) {
-                    bottom: -25px;
-                    right: -100px;
+                @media (max-width: 480px) {
+                    bottom: 150px;
+                    right: -17px;
+                    width: 100%;
                 }
             }
         }
@@ -746,7 +777,7 @@
     .origin {
         .flex {
             .text-info {
-                @media (max-width: 769px) {
+                @media (max-width: 480px) {
                     right: -100px;
                 }
             }
