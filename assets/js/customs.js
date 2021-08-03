@@ -365,11 +365,11 @@ $(document).ready(function(e) {
 
 //category product list page image hover
 $(document).ready(function(e) {
-    $('.product-thumbnail picture img').mouseenter(
+    $('.product-thumbnail .product-img').mouseenter(
         function() {
-            if ($(this).parent().next().length > 0) {
-                $(this).parent().css('display', 'none')
-                $(this).parent().next().css('display', 'block')
+            if ($(this).parents('.product-thumbnail').children().length > 1) {
+                $(this).css('display', 'none')
+                $(this).parents('.product-thumbnail').children('.carousel-inner').css('display', 'block')
             }
         }
     )
