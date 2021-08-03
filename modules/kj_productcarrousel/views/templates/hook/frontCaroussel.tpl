@@ -1,11 +1,6 @@
 
 {if $carrousels}
     <div id="carousel" data-ride="carousel" class="carousel slide"  data-touch="true">
-         <ol class="carousel-indicators">
-          {foreach from=$carrousels item=carrousel key=idxSlide}
-          <li data-target="#carousel" data-slide-to="{$idxSlide}"{if $idxSlide == 0} class="active"{/if}></li>
-          {/foreach}
-        </ol>
         <ul class="carousel-inner" role="listbox">
             {foreach from=$carrousels item=carrousel key=idxSlide}
                 <li class="carousel-item {if $carrousel.position ==1}active{/if}"" role="option" aria-hidden="false">
@@ -34,5 +29,15 @@
           </a>
         </div>
         {/if}
+    </div>
+    {* <span class="icon-prev hidden-md-up" aria-hidden="true">
+      <i class="material-icons">&#xE5CB;</i>
+    </span>
+    <span class="icon-next hidden-md-up" aria-hidden="true">
+      <i class="material-icons">&#xE5CC;</i>
+    </span> *}
+    <div class="btn-image">
+      <span class="icon-prev rond hidden-md-up" id="img-prev"></span>
+      <span class="icon-next rond hidden-md-up" id="img-next"></span>
     </div>
 {/if}

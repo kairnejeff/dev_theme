@@ -26,9 +26,9 @@
                 // }
                 .product-cover {
                     img {
-                        width: 400px;
+                        max-width: 400px;
                         @media (max-width: 768px) {
-                            width: 100%;
+                            max-width: 100%;
                         }
                     }
                     #carousel {
@@ -50,19 +50,46 @@
                             }
                         }
                     }
-                    .icon-prev {
-                        @media (max-width: 768px) {
-                            position: absolute;
-                            left: 0;
-                            top: 49.5%;
-                            display: none;
+                    // .icon-prev {
+                    //     @media (max-width: 768px) {
+                    //         position: absolute;
+                    //         left: 0;
+                    //         top: 49.5%;
+                    //         display: none;
+                    //     }
+                    // }
+                    // .icon-next {
+                    //     @media (max-width: 768px) {
+                    //         position: absolute;
+                    //         right: 0;
+                    //         top: 49.5%;
+                    //     }
+                    // }
+                    .btn-image {
+                        text-align: center;
+                        position: relative;
+                        .icon-prev.rond {
+                            @media (max-width: 768px) {
+                                display: inline-flex;
+                                position: unset;
+                                height: 10px;
+                                width: 10px;
+                                background: #000;
+                                border: 1px solid black;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                            }
                         }
-                    }
-                    .icon-next {
-                        @media (max-width: 768px) {
-                            position: absolute;
-                            right: 0;
-                            top: 49.5%;
+                        .icon-next.rond {
+                            @media (max-width: 768px) {
+                                display: inline-flex;
+                                position: unset;
+                                height: 10px;
+                                width: 10px;
+                                background: #fff;
+                                border: 1px solid black;
+                                border-radius: 50%;
+                            }
                         }
                     }
                 }

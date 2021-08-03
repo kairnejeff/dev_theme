@@ -172,17 +172,17 @@ $(document).ready(function() {
 
 //product carousel
 $(document).ready(function() {
-    $('.images-container .product-cover .icon-next').click(function() {
-        $('.images-container .product-cover').children('#carousel').css("display", "block")
-        $('.images-container .product-cover .icon-prev').css("display", "block")
-        $('.images-container .product-cover .icon-next').css("display", "none")
+    $(document).on("click", '.images-container .product-cover .btn-image .icon-next', function() {
+        $(this).parent().parent().children('#carousel').css("display", "block")
+        $(this).css("background", "#000")
+        $(this).siblings().css("background", "#fff")
+    });
 
-    })
-    $('.images-container .product-cover .icon-prev').click(function() {
-        $('.images-container .product-cover').children('#carousel').css("display", "none")
-        $('.images-container .product-cover .icon-next').css("display", "block")
-        $('.images-container .product-cover .icon-prev').css("display", "none")
-    })
+    $(document).on("click", '.images-container .product-cover .btn-image .icon-prev', function() {
+        $(this).parent().parent().children('#carousel').css("display", "none")
+        $(this).css("background", "#000")
+        $(this).siblings().css("background", "#fff")
+    });
 
 })
 
