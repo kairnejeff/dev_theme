@@ -722,6 +722,11 @@
                         left: -15px;
                     }
                 }
+
+                @media screen and (max-width: 767px) {
+                    width: 600px;
+                    height: auto;
+                }
             }
             .secret_cuisine {
                 // width: 694px;
@@ -739,6 +744,8 @@
 
                 @media screen and (max-width: 767px) {
                     float: none;
+                    width: 600px;
+                    height: auto;
                 }
             }
             .recyclage {
@@ -753,6 +760,11 @@
                         left: -15px;
                         
                     }
+                }
+
+                @media screen and (max-width: 767px) {
+                    width: 600px;
+                    height: auto;
                 }
             }
             .text-info {
