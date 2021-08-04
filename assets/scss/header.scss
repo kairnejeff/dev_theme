@@ -179,12 +179,9 @@
                     text-align: center;
                     .menu {
                         width: 1010px;
-                        position: relative;
                         >ul {
-                            margin-bottom: 0;
-                            position: absolute;
-                            top: -45px;
-                            right: 0;
+                            margin-bottom: -8px;
+                            float: right;
                             
                             >li {
                                 margin-right: 50px;
