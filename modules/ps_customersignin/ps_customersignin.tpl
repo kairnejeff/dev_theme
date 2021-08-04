@@ -30,8 +30,10 @@
         href="{$my_account_url}"
         rel="nofollow"
       >
+
+      {l s='Mon compte' d='Shop.Theme.Actions'}
       <span class="icon-compte-on"></span>
-        {l s='Mon compte' d='Shop.Theme.Actions'}
+        
       </a>
     {else}
       <a
