@@ -228,18 +228,22 @@
             letter-spacing: 1.8px;
             line-height: 24px;
         }
-        .custom-text {
-            #custom-text-container {
-                padding: 40px 20px;
-                >p {
-                    max-width: 722px;
-                    margin: 0 auto;
-                    margin-bottom: 24px;
-                }
-                .little-size {
-                    font-size: $alegreya;
-                    font-size: 16px;
-                }
+    }
+    .custom-text {
+        color: #232323;
+        font-weight: 400;
+        font-size: 1.3em;
+        line-height: 1.3;
+        #custom-text-container {
+            padding: 40px 20px;
+            >p {
+                max-width: 722px;
+                margin: 0 auto;
+                margin-bottom: 24px;
+            }
+            .little-size {
+                font-size: $alegreya;
+                font-size: 16px;
             }
         }
     }
