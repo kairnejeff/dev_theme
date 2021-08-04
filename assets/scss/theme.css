@@ -476,7 +476,7 @@ textarea {
 
 .icon-compte-on:before {
     content: "\e90d";
-    font-size: 18px;
+    font-size: 18px!important;
 }
 
 .font2 {
