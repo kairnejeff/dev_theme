@@ -87,7 +87,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
         i {
             display: block;
 
-            @media (max-width: 767px) {
+            @media (max-width: 769px) {
                 margin-bottom: 10px;
             }
         }
@@ -157,7 +157,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                             color: $black;
                             letter-spacing: 0.5px;
 
-                            @media (max-width: 768px) {
+                            @media (max-width: 769px) {
                                 &:nth-child(2),
                                 &:nth-child(4),
                                 &:nth-child(7),
@@ -168,7 +168,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                             }
                         }
 
-                        @media (max-width: 768px) {
+                        @media (max-width: 769px) {
                             &:nth-child(2),
                             &:nth-child(4),
                             &:nth-child(6),
@@ -325,7 +325,7 @@ span.obflink {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     #header {
         #mobile_top_menu_wrapper.open {
             position: fixed;
