@@ -14,7 +14,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
     background-color: $pink;
     display: flex;
     width: 100%;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         position: relative;
         background-color: $pink;
     }
@@ -33,14 +33,14 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
     padding: 0 30px;
     height: auto;
     background-color: $pink;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         position: relative;
         z-index: 999;
         padding: 0;
         margin-top: 10px;
     }
     span.menu-item-title {
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             position: absolute;
             top: -45px;
             font-size: 20px;
@@ -57,13 +57,13 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
         }
         margin: 30px 20px;
         flex: 1 1 auto;
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             display: block;
             background-color: $pink;
             padding: 0 30px;
             margin: 0;
         }
-        .menu-block-link {            
+        .menu-block-link {
             i {
                 a {
                     padding: 0;
@@ -86,8 +86,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
         }
         i {
             display: block;
-
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 margin-bottom: 10px;
             }
         }
@@ -98,15 +97,14 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
             margin-top: 20px;
             padding-top: 20px;
             border-top: 1px solid $black;
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 margin: 0;
-                padding: 20px 0 40px; 
+                padding: 20px 0 40px;
             }
-
             .menu-block-child {
                 .menu-block-child-name {
                     br {
-                        @media (max-width: 768px) {
+                        @media (max-width: 767px) {
                             display: none;
                         }
                     }
@@ -138,16 +136,15 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
             border-right: 1px solid $black;
             border-left: 1px solid $black;
             padding: 0 30px;
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 border: none;
             }
             .recipe-ingredient {
                 display: flex;
                 justify-content: space-between;
-                @media (max-width: 768px) {
+                @media (max-width: 767px) {
                     display: block;
                 }
-
                 .menu-block-link {
                     i {
                         a {
@@ -156,32 +153,24 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                             font-size: 16px;
                             color: $black;
                             letter-spacing: 0.5px;
-
-                            @media (max-width: 768px) {
-                                &:nth-child(2),
-                                &:nth-child(4),
-                                &:nth-child(7),
-                                &:nth-child(8) {
+                            @media (max-width: 767px) {
+                                &:nth-child(2), &:nth-child(4), &:nth-child(7), &:nth-child(8) {
                                     margin-bottom: 40px;
                                 }
-
                             }
                         }
-
-                        @media (max-width: 768px) {
+                        @media (max-width: 767px) {
                             &:nth-child(2),
                             &:nth-child(4),
                             &:nth-child(6),
                             &:nth-child(7) {
                                 margin-bottom: 40px;
                             }
-
                         }
                     }
                 }
-
                 .menu-block-child {
-                    @media (max-width: 768px) {
+                    @media (max-width: 767px) {
                         margin-top: 20px;
                     }
                     .menu-block-child-name {
@@ -190,12 +179,10 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                         margin-bottom: 30px;
                         color: $black;
                         line-height: 22px;
-                        
                     }
-                    
                     .menu-block-child-link {
                         margin-top: 20px;
-                        @media (max-width: 768px) {
+                        @media (max-width: 767px) {
                             margin: 0;
                         }
                         span {
@@ -244,7 +231,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                         border-right: 1px solid $grey;
                         padding-left: 30px;
                         padding-right: 10px;
-                        @media (max-width: 768px) {
+                        @media (max-width: 767px) {
                             border: none;
                             padding-right: 0;
                             padding-left: 0;
@@ -252,7 +239,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                     }
                     &:last-child {
                         padding-left: 30px;
-                        @media (max-width: 768px) {
+                        @media (max-width: 767px) {
                             padding: 0;
                         }
                     }
@@ -260,44 +247,35 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
             }
         }
         &:nth-child(4) {
-            max-width: 236px; 
-
-            @media (max-width: 768px) {
+            max-width: 236px;
+            @media (max-width: 767px) {
                 max-width: 100%;
-
             }
             .recipe-ingredient {
                 .menu-block-child {
                     &:first-child {
                         ul {
-                            @media (max-width: 768px) {
+                            @media (max-width: 767px) {
                                 column-count: 2;
                                 column-gap: 80px;
                                 column-rule: 1px solid $grey;
-
                             }
-
                             i {
-                                @media (max-width: 768px) {
-                                    &:nth-child(4),
-                                    &:nth-child(8),
-                                    &:nth-child(13),
-                                    &:nth-child(16) {
+                                @media (max-width: 767px) {
+                                    &:nth-child(4), &:nth-child(8), &:nth-child(13), &:nth-child(16) {
                                         margin-bottom: 40px;
                                     }
                                 }
                             }
                         }
                     }
-
                     &:nth-child(2),
                     &:last-child {
                         ul {
-                            @media (max-width: 768px) {
+                            @media (max-width: 767px) {
                                 column-count: 2;
                                 column-gap: 80px;
                                 column-rule: 1px solid $grey;
-
                             }
                         }
                     }
@@ -316,7 +294,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
 .popover {
     top: 43px;
     margin: 0;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         z-index: 99;
     }
 }
@@ -325,7 +303,7 @@ span.obflink {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #header {
         #mobile_top_menu_wrapper.open {
             position: fixed;
