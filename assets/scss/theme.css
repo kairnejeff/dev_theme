@@ -12458,6 +12458,10 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     color: #232323
 }
 
+#_desktop_user_info .icon-compte-on {
+    font-size: 18px;
+}
+
 #header .header-nav .blockcart.active a:hover,
 #_desktop_user_info .user-info:hover {
     color: #232323;
