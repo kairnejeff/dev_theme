@@ -1,6 +1,7 @@
 /*menu*/
 $(document).ready(function() {
     $("#menu-icon").click(function() {
+        $("#mobile_top_menu_wrapper").css("display", "block")
         $("#mobile_top_menu_wrapper").addClass("open")
         $("#header .overlay").addClass("shadow")
     })

@@ -241,9 +241,17 @@
     font-family: 'Unna';
 }
 
+@media (max-width: 480px) {
+    #truspilot-avis .slide-text {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
 #truspilot-avis .header.slide-text {
     padding: 2rem;
     font-size: 2em;
+    line-height: 40px;
 }
 
 #truspilot-avis .tp-stars img {
@@ -283,7 +291,7 @@
 
 #truspilot-avis .owl-prev,
 #truspilot-avis .owl-next {
-    top: 80px;
+    top: calc(50% - 70px);
     z-index: 2;
     width: 40px;
     height: 40px;

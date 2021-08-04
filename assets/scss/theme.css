@@ -9793,15 +9793,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     margin-bottom: 0;
 }
 
-#custom-text .page-content.page-cms ul,
-#custom-text p,
-.page-content.page-cms #custom-text ul {
-    color: #232323;
-    font-weight: 400;
-    font-size: 1.3em;
-    line-height: 1.3;
-}
-
 #custom-text .page-content.page-cms ul .dark,
 #custom-text p .dark,
 .page-content.page-cms #custom-text ul .dark {
