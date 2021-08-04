@@ -20,4 +20,5 @@ import '/scss/abonnement.scss';
 import '/scss/owl.carousel.min.css';
 import '/js/themes.js';
 import '/js/owl.carousel.min.js';
+import '/js/swiped-events.js';
 import '/js/customs.js';

@@ -184,7 +184,17 @@ $(document).ready(function() {
         $(this).css("background", "#000")
         $(this).siblings().css("background", "#fff")
     });
+    $('.images-container .product-cover .js-qv-product-cover').on('swiped-left', function(e) {
+        $(e.target).siblings('#carousel').css("display", "block")
+        $(e.target).siblings('.btn-image').children('.icon-next').css("background", "#000")
+        $(e.target).siblings('.btn-image').children('.icon-prev').css("background", "#fff")
 
+    });
+    $('.images-container .product-cover #carousel').on('swiped-right', function(e) {
+        $(e.target).parents('#carousel').css("display", "none")
+        $(e.target).parents('.product-cover').children('.btn-image').children('.icon-next').css("background", "#fff")
+        $(e.target).parents('.product-cover').children('.btn-image').children('.icon-prev').css("background", "#000")
+    });
 })
 
 
