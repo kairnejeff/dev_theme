@@ -58,7 +58,7 @@
           <p class="yuka-note">Nos poduits sont excellents sur yuka (moyenne 82/100)</p>
         </div>
         <div class="membre">
-          <a href="/content/25-abonnement-passion-nature" class="">Devenir membre du club k&j</a>
+          <a href="{$urls.base_url}content/25-abonnement-passion-nature">Devenir membre du club k&j</a>
         </div>
       </div>
     </div>
