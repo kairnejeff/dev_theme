@@ -27,7 +27,7 @@
 }
 
 #mobile_loop {
-    @media (max-width: 769px) {
+    @media (max-width: 768px) {
         position: absolute;
         top: 12px;
         right: 55px;
@@ -43,7 +43,7 @@
         right: 40px;
         top: 20px;
         padding: .75rem;
-        @media (max-width: 769px) {
+        @media (max-width: 768px) {
             top: 0;
         }
     }
@@ -216,7 +216,7 @@
 @media (max-width: 1200px) {
     #header {
         position: relative;
-        @media (max-width: 769px) {
+        @media (max-width: 768px) {
             border-bottom: 1px solid $grey_border!important;
         }
         .header-nav {
@@ -261,7 +261,7 @@
                                 margin-top: 10px;
                                 width: auto;
                                 height: auto;
-                                @media (max-width: 769px) {
+                                @media (max-width: 768px) {
                                     margin-left: 1rem;
                                     max-width: 50%;
                                     height: auto;
@@ -333,10 +333,10 @@
                             position: relative;
                             padding: 50px 15px;
                             border-bottom: 1px solid $grey_border;
-                            @media (max-width: 769px) {
+                            @media (max-width: 768px) {
                                 border-bottom: none;
                             }
-                            @media (max-width: 769px) {
+                            @media (max-width: 768px) {
                                 padding: 20px 0px 30px;
                             }
                             li {
