@@ -29,7 +29,7 @@
 #mobile_loop {
     @media (max-width: 768px) {
         position: absolute;
-        top: 15px;
+        top: 12px;
         right: 55px;
     }
 }
@@ -182,7 +182,6 @@
                         >ul {
                             margin-bottom: -8px;
                             float: right;
-                            
                             >li {
                                 margin-right: 50px;
                                 .menu-item-title {
