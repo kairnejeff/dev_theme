@@ -12,12 +12,15 @@ $(document).ready(function() {
     })
     $(".menu-next").click(function() {
         $(this).siblings('.sub-menu').children('.menu-item-title').remove()
-        $(this).siblings('.menu-item-title').clone().prependTo($(this).siblings('.sub-menu'))
+        $(this).siblings('.menu-item-title').clone().addClass("clone-title").prependTo($(this).siblings('.sub-menu'))
         $(this).siblings('.sub-menu').css("display", "block")
     })
     $(".menu-before").click(function() {
         $(this).parent('.sub-menu').css("display", "none")
     })
+    $(window).resize(function() {
+        $("#_desktop_top_menu .clone-title").remove()
+    });
 
 })
 
