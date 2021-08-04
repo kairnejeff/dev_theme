@@ -26,20 +26,12 @@
   <div class="user-info">
     {if $logged}
       <a
-        class="logout hidden-sm-down"
+        class="logout"
         href="{$my_account_url}"
         rel="nofollow"
       >
       <span class="icon-compte-on"></span>
         {l s='Mon compte' d='Shop.Theme.Actions'}
-      </a>
-      <a
-        class="account"
-        href="{$my_account_url}"
-        title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}"
-        rel="nofollow"
-      >
-        <i class="material-icons hidden-md-up logged">&#xE7FF;</i>
       </a>
     {else}
       <a
