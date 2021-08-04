@@ -212,7 +212,7 @@
     }
 }
 
-.page-home {
+.page-home, .page-cms {
     .home-page-block {
         margin-top: 100px;
         h2 {
@@ -227,9 +227,15 @@
         .custom-text {
             #custom-text-container {
                 padding: 40px 20px;
-                >p {
+                > p {
                     max-width: 722px;
                     margin: 0 auto;
+                    margin-bottom: 24px;
+                }
+
+                .little-size {
+                    font-size: $alegreya;
+                    font-size: 16px;
                 }
             }
         }

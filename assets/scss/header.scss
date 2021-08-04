@@ -179,9 +179,13 @@
                     text-align: center;
                     .menu {
                         width: 1010px;
+                        position: relative;
                         >ul {
                             margin-bottom: 0;
-                            float: right;
+                            position: absolute;
+                            top: -45px;
+                            right: 0;
+                            
                             >li {
                                 margin-right: 50px;
                                 .menu-item-title {
