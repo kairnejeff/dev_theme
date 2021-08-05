@@ -24,6 +24,22 @@ $(document).ready(function() {
 
 })
 
+//barre-recherche 
+$(document).ready(function() {
+    $(".search-widget").mouseenter(function() {
+        $(this).children("form").children("input[type=text]").addClass("navr")
+    })
+    $(".search-widget").mouseleave(function() {
+        $(this).children("form").children("input[type=text]").removeClass("navr")
+    })
+    $(".search-widget form input[type=text]").focus(function() {
+        $(this).css("display", "block")
+    })
+    $(".search-widget form input[type=text]").blur(function() {
+        $(this).css("display", "none")
+    })
+
+})
 
 /**
  * mobile search
@@ -147,13 +163,7 @@ function setComptedisplay() {
     $(window).resize(setComptedisplay)
 })();
 
-//barre-recherche 
-$(document).ready(function() {
-    $(".search-widget").hover(function() {
-        $(this).children("form").children("input[type=text]").addClass("navr")
-    })
 
-})
 
 
 //grid view

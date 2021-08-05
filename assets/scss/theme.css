@@ -7922,9 +7922,13 @@ textarea:active:-moz-placeholder {
 }
 
 .search-widget form input[type=text]:focus {
-    outline: 3px solid #232323;
+    outline: 0;
     color: #232323;
-    background: #fff
+    background: #fff;
+    border-radius: 10px;
+    line-height: 5px;
+    position: relative;
+    right: 0;
 }
 
 .search-widget form input[type=text]:focus+button .search {
