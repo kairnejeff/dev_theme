@@ -14,6 +14,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
     background-color: $pink;
     display: flex;
     width: 100%;
+    margin-left: 0;
     @media (max-width: 767px) {
         position: relative;
         background-color: $pink;
@@ -48,6 +49,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
         }
     }
     .menu-block {
+
         .menulink.current {
             text-decoration: underline;
         }
@@ -287,6 +289,10 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
             background-image: url("../img/HACL.png");
             background-size: cover;
             width: 340px;
+
+            @media (max-width: 1200px) {
+            display: none;
+            }
         }
     }
 }
