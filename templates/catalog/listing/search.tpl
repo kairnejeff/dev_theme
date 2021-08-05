@@ -30,7 +30,7 @@
    <section id="main">
  
      {block name='product_list_header'}
-     {if isset($search_tag)}
+     {if isset($search_tag) && $search_tag!==false}
        <h2 id="js-product-list-header" class="h2">Nos recettes à base de {$search_tag}</h2>
      {else}
        <h2 id="js-product-list-header" class="h2">{$listing.label}</h2>
