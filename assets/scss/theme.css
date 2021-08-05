@@ -12158,7 +12158,8 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 
 #pagenotfound .page-not-found .search-widget,
 #products .page-not-found .search-widget {
-    float: none
+    float: none;
+    position: relative;
 }
 
 #pagenotfound .page-not-found .search-widget input,
