@@ -7941,7 +7941,12 @@ textarea:active:-moz-placeholder {
     border: none;
     bottom: .3125rem;
     right: .125rem;
-    color: #7a7a7a
+    color: #7a7a7a;
+    cursor: pointer;
+}
+
+.search-widget form button[type=submit]:focus {
+    outline: 0;
 }
 
 .search-widget form button[type=submit] .search:hover {
