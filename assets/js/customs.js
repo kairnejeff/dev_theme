@@ -56,19 +56,19 @@ $(document).ready(function() {
     })
 })
 
-//homepage carousel
-function changeData() {
-    var carousel = $('#carousel .carousel-inner figure picture source')
-    if ($(window).width() < 480) {
-        carousel.attr('srcset', carousel.data('mobile'))
-    } else {
-        carousel.attr('srcset', carousel.data('desktop'))
-    }
-}
-$(document).ready(function(e) {
-    changeData()
-    $(window).resize(changeData)
-})
+// //homepage carousel
+// function changeData() {
+//     var carousel = $('#carousel .carousel-inner figure picture source')
+//     if ($(window).width() < 480) {
+//         carousel.attr('srcset', carousel.data('mobile'))
+//     } else {
+//         carousel.attr('srcset', carousel.data('desktop'))
+//     }
+// }
+// $(document).ready(function(e) {
+//     changeData()
+//     $(window).resize(changeData)
+// })
 
 //featured products
 function featuredProductMobileCarousel() {
