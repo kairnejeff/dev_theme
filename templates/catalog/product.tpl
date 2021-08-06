@@ -90,6 +90,14 @@
             <div id="product-description-{$product.id}" itemprop="description">{$product.description nofilter}</div>
           {/block}
 
+          <div id="history" class="info-detail-content">
+            {foreach from=$product.features item=feature}
+              {if ($feature.name == "Histoire de la recette")}
+                <p>{$feature.value|escape:'html':'UTF-8'}</p>
+              {/if}
+            {/foreach}
+          </div>
+
             {if $product.is_customizable && count($product.customizations.fields)}
               {block name='product_customization'}
                 {include file="catalog/_partials/product-customization.tpl" customizations=$product.customizations}
@@ -137,7 +145,7 @@
                         <ul>
                           <li class="menu-tab active"><a href="#/composition">Ingrédients</a></li>
                           <li class="menu-tab"><a href="#/mentions">Valeurs Nutritives</a></li>
-                          <li class="menu-tab"><a href="#/histoire">Conseils</a></li>
+                          <li class="menu-tab"><a href="#/histoire">En Savoir Plus</a></li>
                           <li class="menu-tab"><a href="#/avis">Avis</a></li>
                         </ul>
                       </nav>
@@ -264,9 +272,7 @@
                               
                             </ul>
                           </li>
-                        {/if}
-
-                       
+                        {/if}                       
                       {/foreach}
                       </ul>
                       </div>
@@ -277,9 +283,9 @@
                     <div class="info-detailed-titler col-md-6">
                       <div class="info-detailed-title">
                       </div>
-                      <div id="history" class="info-detail-content">
+                      <div id="en_savoir_plus" class="info-detail-content">
                       {foreach from=$product.features item=feature}
-                        {if ($feature.name == "Histoire de la recette")}
+                        {if ($feature.name == "En savoir plus")}
                           <p>{$feature.value|escape:'html':'UTF-8'}</p>
                         {/if}
                       {/foreach}
