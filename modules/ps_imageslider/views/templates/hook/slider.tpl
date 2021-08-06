@@ -37,11 +37,13 @@
           <figure>
               {if file_exists($slide.image_webp_url)&& $modules.kj_detectdevice.machine !=='Mac'&&$modules.kj_detectdevice.machine !=='iPad'}
                   <picture>
-                    <source srcset="{$urls.base_url}{$slide.image_webp_url}" alt="{$slide.legend|escape}" type="image/webp">
-                    <img src="{$slide.image_url}" alt="{$slide.legend|escape}">
+                    <source srcset="{$urls.base_url}{$slide.image_webp_url}" data-mobile="{$slide.mobile_image_url}" data-desktop="{$slide.image_url}" alt="{$slide.legend|escape}" type="image/webp">
+                    <img src="{$slide.image_url}" alt="{$slide.legend|escape}" class="deskstop-image hidden-sm-down"/>
+                    <img src="{$slide.mobile_image_url}" class="mobile-image hidden-md-up"/> 
                   </picture>
               {else}
-                  <img src="{$slide.image_url}" alt="{$slide.legend|escape}">
+                <img src="{$slide.image_url}" alt="{$slide.legend|escape}" class="deskstop-image hidden-sm-down"/>
+                <img src="{$slide.mobile_image_url}" alt="{$slide.legend|escape}" class="mobile-image hidden-md-up"/>
               {/if}
               {if $slide.title || $slide.description}
                   <figcaption class="caption">
