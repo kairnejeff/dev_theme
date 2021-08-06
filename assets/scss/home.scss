@@ -6,6 +6,10 @@
     #main {
         #content {
             #carousel {
+                @media (max-width: 480px) {
+                    width: calc(100% + 30px);
+                    margin-left: -15px;
+                }
                 ul {
                     height: auto;
                     li {
