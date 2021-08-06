@@ -279,7 +279,7 @@
                       </div>
                       <div id="history" class="info-detail-content">
                       {foreach from=$product.features item=feature}
-                        {if ($feature.name == "Histoire de la recette")}
+                        {if ($feature.name == "Suggestions d'utilisation")}
                           <p>{$feature.value|escape:'html':'UTF-8'}</p>
                         {/if}
                       {/foreach}
