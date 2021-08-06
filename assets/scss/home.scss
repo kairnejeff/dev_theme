@@ -30,10 +30,10 @@
                 }
             }
             .featured-products {
-                margin-top: 100px;
+                margin-top: 70px;
                 h2 {
                     @include title;
-                    padding-bottom: 20px;
+                    margin-bottom: 40px;
                 }
                 .products {
                     @media (max-width: 480px) {
