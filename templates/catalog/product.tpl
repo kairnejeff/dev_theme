@@ -92,7 +92,7 @@
 
           <div id="history" class="info-detail-content">
             {foreach from=$product.features item=feature}
-              {if ($feature.name == "Histoire de la recette")}
+              {if ($feature.name == "Suggestions d'utilisation")}
                 <p>{$feature.value|escape:'html':'UTF-8'}</p>
               {/if}
             {/foreach}
@@ -284,11 +284,7 @@
                       <div class="info-detailed-title">
                       </div>
                       <div id="en_savoir_plus" class="info-detail-content">
-                      {foreach from=$product.features item=feature}
-                        {if ($feature.name == "En savoir plus")}
-                          <p>{$feature.value|escape:'html':'UTF-8'}</p>
-                        {/if}
-                      {/foreach}
+                          <p> {$product.custom_field_lang_wysiwyg nofilter}</p>
                       </div>
                     </div>
 
