@@ -189,10 +189,14 @@
                         <ul class="list-nutrition"> 
                           <li class="nutrition kj">
                             <ul>
-                                <li class="number"> 
+                                <li class="number color_nutrition"> 
                             {foreach from=$product.features item=feature}
                               {if ($feature.name == "Energie kcal/100g")}
-                                        <span>{$feature.value|escape:'html':'UTF-8'} kcal </span>
+                                {if $feature.value <= 360}
+                                    <span class="green_color">{$feature.value|escape:'html':'UTF-8'} kcal </span>
+                                    {else}
+                                    <span class="red_color">{$feature.value|escape:'html':'UTF-8'} kcal </span>
+                                {/if}
                               {/if}
                               {if ($feature.name == "Energie kJ/100g")}
                                 <span>{$feature.value|escape:'html':'UTF-8'} kj </span>
@@ -208,7 +212,12 @@
                           {if ($feature.name == "Matière grasse" )}
                             <li class="nutrition">
                               <ul>
-                                  <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                {if $feature.value <= 10}
+                                  <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                  {else}
+                                  <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                {/if}
+
                                   <li class="label-nutrition">Matière grasse</li>
                               </ul>
                             </li>
@@ -217,7 +226,11 @@
                           {if ($feature.name == "Acides gras saturés" )}
                             <li class="nutrition">
                               <ul>
-                                  <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                {if $feature.value <= 3}
+                                  <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                  {else}
+                                  <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                  {/if}
                                   <li class="label-nutrition">Acides gras saturés</li>
                               </ul>
                             </li>
@@ -226,7 +239,12 @@
                           {if ($feature.name == "Glucides" )}
                           <li class="nutrition">
                             <ul>
-                                <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
+                            {if $feature.value <= 10}
+                                <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                {else}
+                                <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
+                              {/if}
+
                                 <li class="label-nutrition">Glucides</li>
                             </ul>
                           </li>
@@ -235,7 +253,12 @@
                         {if ($feature.name == "Sucres" )}
                           <li class="nutrition">
                             <ul>
-                                <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
+                              {if $feature.value <= 18}
+                                <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                {else}
+                                <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
+                              {/if}
+
                                 <li class="label-nutrition">Sucres</li>
                             </ul>
                           </li>
@@ -244,8 +267,7 @@
                         {if ($feature.name == "Fibres" )}
                           <li class="nutrition">
                             <ul>
-                             
-                                <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
                                 <li class="label-nutrition">Fibres</li>
                               
                             </ul>
@@ -255,10 +277,13 @@
                         {if ($feature.name == "Protéines" )}
                           <li class="nutrition">
                             <ul>
-                              
-                                <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
+                              {if $feature.value <= 8}
+                                <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                {else}
+                                <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
+
+                              {/if}
                                 <li class="label-nutrition">Protéines</li>
-                              
                             </ul>
                           </li>
                         {/if}
@@ -266,9 +291,13 @@
                         {if ($feature.name == "Sel" )}  
                         <li class="nutrition">
                             <ul>
-                              
-                                <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
-                                <li class="label-nutrition">Sel</li>
+                              {if $feature.value <= 0.92}
+                                <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                {else}
+                                <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
+                              {/if}
+                                
+                              <li class="label-nutrition">Sel</li>
                               
                             </ul>
                           </li>
