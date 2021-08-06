@@ -34,6 +34,9 @@
                 }
             }
             .featured-products {
+                @media (max-width: 480px) {
+                    margin-bottom: -50px;
+                }
                 margin-top: 70px;
                 h2 {
                     @include title;
