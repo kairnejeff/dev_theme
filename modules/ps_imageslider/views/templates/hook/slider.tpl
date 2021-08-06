@@ -40,7 +40,7 @@
                     <source srcset="{$urls.base_url}{$slide.image_webp_url}" alt="{$slide.legend|escape}" type="image/webp">
                     <img src="{$slide.image_url}" alt="{$slide.legend|escape}" />
                   </picture>
-                  <picture class="deskstop-image hidden-sm-down">
+                  <picture class="deskstop-image hidden-md-up">
                     <source srcset="{$urls.base_url}{$slide.mobile_image_webp_url}"  alt="{$slide.legend|escape}" type="image/webp">
                     <img src="{$slide.mobile_image_url}"  alt="{$slide.legend|escape}" /> 
                   </picture>
