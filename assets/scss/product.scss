@@ -647,9 +647,8 @@
                         .nutrition {
                             flex: 1 0 21%;
                             margin-bottom: 1rem;
-                            color: green;
+                            
                             .number {
-                                border: 1px solid green;
                                 padding: 10px;
                                 border-radius: 50%;
                                 text-align: center;
@@ -657,10 +656,26 @@
                                 height: 70px;
                                 line-height: 50px;
                                 margin: 0 auto;
-                                @media (max-width: 768px) {
-                                    border: 1px solid green;
-                                }
                             }
+
+                            .green {
+                                color: green;
+                                border: 1px solid green;
+                            }
+
+                            .red {
+                                color: red;
+                                border: 1px solid red;
+                            }
+
+                            .red_color {
+                                color: red;
+                            }
+
+                            .green_color {
+                                color: green;
+                            }
+
                             @media (max-width: 480px) {
                                 flex: 0 0 33.333333%;
                             }
