@@ -189,7 +189,7 @@
                         <ul class="list-nutrition"> 
                           <li class="nutrition kj">
                             <ul>
-                                <li class="number color"> 
+                                <li class="number color_nutrition"> 
                             {foreach from=$product.features item=feature}
                               {if ($feature.name == "Energie kcal/100g")}
                                 {if $feature.value <= 360}
@@ -212,7 +212,12 @@
                           {if ($feature.name == "Matière grasse" )}
                             <li class="nutrition">
                               <ul>
-                                  <li class="number">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                {if $feature.value <= 10}
+                                  <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                  {else}
+                                  <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                {/if}
+
                                   <li class="label-nutrition">Matière grasse</li>
                               </ul>
                             </li>
