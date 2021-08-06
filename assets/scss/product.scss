@@ -15,7 +15,6 @@
             .product-container {
                 margin: 0 auto;
                 width: 100%;
-
                 @media (max-width: 768px) {
                     margin-top: 50px;
                 }
@@ -191,8 +190,8 @@
                                 &:first-child {
                                     p {
                                         &:last-child {
+                                            margin-bottom: 2rem;
                                             font-size: 16px;
-                                            margin-bottom: 100px;
                                             max-height: 66px;
                                         }
                                     }
@@ -430,7 +429,6 @@
         margin: 120px auto;
         padding-left: 15px;
         padding-right: 15px;
-
         @media (max-width: 768px) {
             margin-top: 50px;
             margin-bottom: 80px;
