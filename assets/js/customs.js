@@ -73,8 +73,8 @@ $(document).ready(function() {
 //featured products
 function featuredProductMobileCarousel() {
     if ($(window).width() < 480) {
-        $('#feature-products').addClass("owl-carousel")
-        $('#feature-products').owlCarousel({
+        $('.page-home #feature-products').addClass("owl-carousel")
+        $('.page-home #feature-products').owlCarousel({
             items: 1,
             loop: true,
             margin: 10,
