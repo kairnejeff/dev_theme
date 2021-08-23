@@ -41,6 +41,10 @@
                 h2 {
                     @include title;
                     margin-bottom: 40px;
+
+                    @media (max-width: 370px) {
+                        line-height: 1.5;
+                    }
                 }
                 .products {
                     @media (max-width: 480px) {
@@ -228,6 +232,16 @@
             font-size: 18px!important;
             letter-spacing: 1.8px;
             line-height: 24px;
+
+            @media (max-width: 480px) {
+                line-height: 1.5;
+            }
+        }
+
+        .en-off-block {
+            @media (max-width: 767px) {
+                margin-bottom: 40px;
+            }
         }
     }
     .custom-text {

@@ -123,18 +123,6 @@
                         }
                     }
                 }
-                .block_newsletter {
-                    .row {
-                        @media (max-width: 768px) {
-                            padding-left: 15px;
-                        }
-                        >p {
-                            @media (max-width: 768px) {
-                                padding: 0;
-                            }
-                        }
-                    }
-                }
                 .col-md-7 {
                     .col-lg-4 {
                         .titre {
@@ -145,6 +133,54 @@
                         p {
                             font-size: 14px;
                             font-family: $alegreya;
+                        }
+
+                        .footer_sub_menu_44320 {
+                            li {
+                                &:nth-child(2),
+                                &:nth-child(4),
+                                &:nth-child(7),
+                                &:nth-child(8) {
+                                    margin-bottom: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right-block {
+                    @media (max-width: 768px) {
+                        padding-right: 0;
+                    }
+                    
+                    .block_newsletter {
+                        .row {
+                            @media (max-width: 768px) {
+                                padding-left: 15px;
+                            }
+                            >p {
+                                @media (max-width: 768px) {
+                                    padding: 0;
+                                }
+                            }
+
+                            .col-xs-1 {
+                                @media (max-width: 768px) {
+                                    padding-right: 0;
+                                }
+
+                                form {
+                                    .alert {
+                                        margin-left: 15px;
+                                    }
+
+                                    .row {
+                                        > .col-xs-12 {
+                                            padding-right: 0;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
