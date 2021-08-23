@@ -7925,7 +7925,6 @@ textarea:active:-moz-placeholder {
     outline: 0;
     color: #232323;
     background: #fff;
-    border-radius: 10px;
     line-height: 5px;
     position: relative;
     right: 0;

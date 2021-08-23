@@ -56,6 +56,45 @@ $(document).ready(function() {
     })
 })
 
+// //homepage carousel
+// function changeData() {
+//     var carousel = $('#carousel .carousel-inner figure picture source')
+//     if ($(window).width() < 480) {
+//         carousel.attr('srcset', carousel.data('mobile'))
+//     } else {
+//         carousel.attr('srcset', carousel.data('desktop'))
+//     }
+// }
+// $(document).ready(function(e) {
+//     changeData()
+//     $(window).resize(changeData)
+// })
+
+//featured products
+function featuredProductMobileCarousel() {
+    if ($(window).width() < 480) {
+        $('.page-home #feature-products').addClass("owl-carousel")
+        $('.page-home #feature-products').owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 10000,
+            autoplayHoverPause: true,
+        })
+    } else {
+        $('#feature-products').owlCarousel('destroy');
+        $('#feature-products').removeClass("owl-carousel");
+    }
+
+}
+$(document).ready(function(e) {
+    featuredProductMobileCarousel()
+    $(window).resize(featuredProductMobileCarousel)
+
+})
+
 
 /*
  *checkout 
