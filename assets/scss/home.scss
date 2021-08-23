@@ -197,7 +197,7 @@
 .en-off {
     .content {
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
+        grid-gap: 30px;
         display: grid;
         text-align: center;
         @media (max-width: 767px) {
@@ -214,8 +214,6 @@
         }
         img {
             border: 1px solid #dbdbdb;
-            max-width: 296px;
-            max-height: 296px;
             width: 100%;
             height: auto;
         }
