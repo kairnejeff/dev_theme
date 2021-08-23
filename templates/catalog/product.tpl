@@ -199,7 +199,7 @@
                                 {/if}
                               {/if}
                               {if ($feature.name == "Energie kJ/100g")}
-                                <span>{$feature.value|escape:'html':'UTF-8'} kj </span>
+                                <span class="green_color">{$feature.value|escape:'html':'UTF-8'} kj </span>
                               {/if}
                             {/foreach}
                                   </li>
