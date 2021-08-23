@@ -2,6 +2,8 @@
 .row .item {
     background-color: #fef9f5;
     text-align: center;
+    margin-left: unset;
+    margin-right: unset;
 }
 
 .avis .h2 {
