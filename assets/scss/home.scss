@@ -16,7 +16,11 @@
                         a {
                             figure {
                                 img {
-                                    @media (min-width: 1200px) {
+                                    @media (min-width: 1679px) and (max-width: 2560px) {
+                                        max-width: 1410px;
+                                        max-height: 600px;    
+                                    }
+                                    @media (min-width: 1200px) and (max-width: 1678px) {
                                         max-width: 1160px;
                                         max-height: 493.61px;
                                     }
@@ -72,6 +76,10 @@
                                     img {
                                         max-width: 373.328px;
                                         max-height: 373.328px;
+                                        @media (min-width: 1679px) and (max-width: 2560px) {
+                                            max-width: 450px;
+                                            max-height: 450px;
+                                        }
                                         @media (max-width: 480px) {
                                             max-width: unset;
                                             max-height: unset;
@@ -310,6 +318,13 @@
 @media (min-width: 1200px) {
     #wrapper .container {
         width: 1040px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1679px) and (max-width: 2560px) {
+    #wrapper .container {
+        width: 1440px;
         max-width: 100%;
     }
 }
