@@ -135,8 +135,8 @@
                             font-family: $alegreya;
                         }
 
-                        ul {
-                            &:last-child {
+                        &:last-child {
+                            ul {
                                 background-color: blue;
                             }
                             
