@@ -137,17 +137,17 @@
 
                         &:last-child {
                             ul {
-                                background-color: blue;
+                                li {
+                                    &:nth-child(2),
+                                    &:nth-child(4),
+                                    &:nth-child(7),
+                                    &:nth-child(8) {
+                                        margin-bottom: 30px;
+                                    }
+                                }
                             }
                             
-                            // li {
-                            //     &:nth-child(2),
-                            //     &:nth-child(4),
-                            //     &:nth-child(7),
-                            //     &:nth-child(8) {
-                            //         margin-bottom: 30px;
-                            //     }
-                            // }
+                            
                         }
                     }
                 }
