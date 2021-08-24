@@ -879,7 +879,10 @@
     .secret,
     .bocaux {
         .text-info {
-            left: -16px;
+            @media (max-width: 480px) {
+                left: -16px;
+            }
+            
             p {
                 padding-bottom: 20px;
             }
