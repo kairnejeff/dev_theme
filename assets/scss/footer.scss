@@ -135,16 +135,19 @@
                             font-family: $alegreya;
                         }
 
-                        .footer_recettes {
-                        background-color: blue;
-                            li {
-                                &:nth-child(2),
-                                &:nth-child(4),
-                                &:nth-child(7),
-                                &:nth-child(8) {
-                                    margin-bottom: 30px;
-                                }
+                        ul {
+                            &:last-child {
+                                background-color: blue;
                             }
+                            
+                            // li {
+                            //     &:nth-child(2),
+                            //     &:nth-child(4),
+                            //     &:nth-child(7),
+                            //     &:nth-child(8) {
+                            //         margin-bottom: 30px;
+                            //     }
+                            // }
                         }
                     }
                 }
