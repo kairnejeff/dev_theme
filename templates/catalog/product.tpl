@@ -399,25 +399,6 @@
     </div>
   </div>
 
-
-
-
-  {if $product.custom_field_lang_wysiwyg != NULL}
-  <div class="info-all row clearfix">	
-    <div class="col-md-12">
-      <div class="collapse-icons" role="button" data-toggle="collapse" data-target="#product-savoir-plus" aria-expanded="false" aria-controls="collapseOne">
-        <h2 class="font3 text-uppercase">En savoir plus</h2>
-        <i class="material-icons add">expand_more</i>
-        <i class="material-icons remove">expand_less</i>
-      </div>
-      <div id="product-savoir-plus" aria-expanded="false" class="collapse">
-         {$product.custom_field_lang_wysiwyg nofilter}
-      </div>
-    </div>
-  </div>
-  {/if}
-
-
  
     {block name='product_accessories'}
       {if $accessories}
