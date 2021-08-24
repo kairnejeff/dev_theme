@@ -846,23 +846,21 @@
                 background-color: $pink;
                 padding: 40px 30px;
                 position: absolute;
-                top: 25%;
+                top: 100px;
                 right: -100px;
                 width: 500px;
-                z-index: 99;
-                color: $black;
-                font-family: $roboto-light;
-                font-size: 13px;
-                line-height: 17px;
+                text-align: justify;
+
                 @media (max-width: 769px) {
                     right: 13px;
                     bottom: 65px;
                     top: auto;
                 }
                 @media (max-width: 480px) {
-                    bottom: 250px;
-                    right: -17px;
-                    width: 100%;
+                    top: 150px;
+                    width: auto;
+                    padding: 20px 30px;
+                    z-index: 99;
                 }
                 p {
                     font-size: 21px;
@@ -871,41 +869,28 @@
                     line-height: 30px;
                     @media screen and (max-width: 767px) {
                         margin-left: 0;
+                        font-size: 16px;
+                        line-height: 22px;
                     }
                 }
             }
         }
     }
-    .secret {
+    .secret,
+    .bocaux {
         .text-info {
-            left: -100px;
+            left: -16px;
             p {
                 padding-bottom: 20px;
             }
         }
     }
-    .text-info {
-        color: $black;
-        font-family: $roboto-light;
-        font-size: 13px;
-        line-height: 17px;
-    }
-    .bocaux {
-        .flex {
-            .text-info {
-                @media (max-width: 480px) {
-                    bottom: 150px;
-                    right: -17px;
-                    width: 100%;
-                }
-            }
-        }
-    }
+    
     .origin {
         .flex {
             .text-info {
                 @media (max-width: 480px) {
-                    right: -100px;
+                    left: 14px;
                 }
             }
         }
