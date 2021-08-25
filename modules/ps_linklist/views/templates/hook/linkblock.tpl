@@ -26,7 +26,7 @@
    <div class="col-lg-4 col-md-4 col-sm-12">
      {assign var=_expand_id value=10|mt_rand:100000}
      <div class="block-title">{$linkBlock.title}</div>
-     <ul id="footer_sub_menu_{$_expand_id}" class="">
+     <ul id="footer_sub_menu_{$_expand_id}" class="footer_recettes">
        {foreach $linkBlock.links as $link}
          <li>
            <a

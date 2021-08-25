@@ -362,11 +362,11 @@
           <div class="flex">
             <div class="provenance">
               <img src="{$urls.img_url}provenance.png"/>
-            </div>
-            <div class="text-info">
-            {if $product.source != NULL}
-              {$product.source nofilter}
-            {/if}
+              <div class="text-info">
+                {if $product.source != NULL}
+                  {$product.source nofilter}
+                {/if}
+              </div>
             </div>
           </div>
         </div>
@@ -374,12 +374,12 @@
         <div class="info-actu secret">
           <h2> Notre secret de cuisine </h2>
           <div class="flex">
-            <div class="text-info">
-            {if $product.secret != NULL}
-              {$product.secret nofilter}
-            {/if}
-            </div>
             <div class="secret_cuisine">
+              <div class="text-info">
+                {if $product.secret != NULL}
+                  {$product.secret nofilter}
+                {/if}
+              </div>
               <img src="{$urls.img_url}secret.png"/>
             </div>
           </div>
@@ -390,9 +390,9 @@
           <div class="flex">
             <div class="recyclage">
               <img src="{$urls.img_url}recyclage.png"/>
-            </div>
-            <div class="text-info">
-            <p> Les emballages : bocaux en verre recyclables </p>
+              <div class="text-info">
+                <p> Les emballages : bocaux en verre recyclables </p>
+              </div>
             </div>
           </div>
         </div>
