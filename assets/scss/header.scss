@@ -289,9 +289,10 @@
                     #_mobile_logo {
                         a {
                             img {
-                                margin-top: 10px;
                                 width: auto;
                                 height: auto;
+                                margin: 0 auto;
+                                margin-top: 20px;
                                 @media (max-width: 767px) {
                                     margin-left: 1rem;
                                     max-width: 50%;
@@ -382,7 +383,11 @@
                                 }
                                 button.menu-before {
                                     left: 0;
-                                    top: -45px;
+                                    top: -44px;
+
+                                    i {
+                                        font-size: 30px;
+                                    }
                                 }
                                 .menu-block-child-name {
                                     font-size: 20px;
