@@ -5,25 +5,19 @@
 
  {block name='content'}
  
-   <section id="cms">
+   <section id="main">
  
      {block name='page_content_container'}
-        <section id="content" class="page-content page-cms">
-          <div class="header">
-          <img class="header-image" src="{$urls.theme_assets}img/point-vente.png" alt="point vente" />
-          <h1>Nous sommes ici</h1>
-          </div>
-          <p>Vous souhaitez distribuer nos produits : <a href="https://pro.karinejeff.fr/">Visitez notre plateforme à destination des professionnels.</a></p>
+        <section id="content" class="page-content page-cms page-cms-{$cms.id}">
+      
           {block name='cms_content'}
+            {$cms.content nofilter}
             <div class="row">
             <div class="col-md-4">
             <p>Touver un point de vente</p>
             <p>points de vente Karine & Jeff en France</p>
-            <select name="id-group" id="group">
-              <option value="">Filtrer par distributeur</option>
-              {foreach $groups as $group}
-                <option value="{$group.id_group_store}">{$group.name}</option>
-              {/foreach}
+            <select name="store" id="store">
+            <option value="">Filtrer par distributeur</option>
             </select>
             <button id="localise">Autour de moi</button>
             </div>
@@ -33,8 +27,7 @@
             </div>
            
           {/block}
-          <div id="stores-filter">
-          </div>
+      
         </section>
       {/block}
  
@@ -50,5 +43,3 @@
  
  {/block}
  
-
-

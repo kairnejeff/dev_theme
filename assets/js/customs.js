@@ -444,3 +444,45 @@ $(document).ready(function(e) {
     )
 
 })
+
+//localise stores
+$(document).ready(function() {
+    $('#localise').click(function(e) {
+        getLocation()
+    })
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+
+    function showPosition(position) {
+        $.ajax({
+            type: 'POST',
+            url: window.location.href,
+            cache: false,
+            dataType: 'html',
+            data: {
+                action: 'FilterStores',
+                ajax: true,
+                id_group: $('#localise').prev().val(),
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude
+            },
+            success: function(data) {
+                if (data.success) {
+                    //si 
+                } else {
+                    $('#stores-filter').html(data);
+                    console.log(data)
+                }
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log(textStatus + ' ' + errorThrown);
+            }
+        });
+    }
+})
