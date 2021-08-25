@@ -881,7 +881,7 @@
     .bocaux {
         .text-info {
             @media (max-width: 480px) {
-                left: -16px;
+                right: 16px;
             }
             
         }
@@ -891,7 +891,7 @@
         .flex {
             .text-info {
                 right: 0;
-                left: -300px;
+                left: -15px;
                 @media (max-width: 480px) {
                     left: 14px;
                 }
