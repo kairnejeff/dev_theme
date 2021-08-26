@@ -72,7 +72,22 @@
         <form action="{$urls.pages.cart}" method="post" >
             <input type="hidden" name="token" value="{$static_token}">
             <input type="hidden" name="id_product" value="{$product.id}" class="product_page_product_id">
-            <input type="hidden" name="qty" value="1" id="id_product_{$product.id}"> 
+            
+            {if $page.page_name == 'index'}
+              <div class="quantity">
+                <input
+                  type="number"
+                  name="qty"
+                  id="qty"
+                  value="1"
+                  class="input-group"
+                  min="{$product.minimal_quantity}"
+                  aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
+                >
+              </div>
+            {else}
+              <input type="hidden" name="qty" value="1" id="id_product_{$product.id}"> 
+            {/if}
             {if !$configuration.is_catalog}
                     {if (!isset($product.customization_required) || !$product.customization_required) && ($product.allow_oosp || $product.quantity > 0)}
                       <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}><span class="icon-panier-off"></span></button>
