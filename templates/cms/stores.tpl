@@ -28,12 +28,12 @@
             <button id="localise">Autour de moi</button>
             </div>
             <div class="col-md-8">
-              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1TOZ2gMcO1hYoxQlTO7qkHdlZKeBwDJOO" width="640" height="480"></iframe>
+              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1TOZ2gMcO1hYoxQlTO7qkHdlZKeBwDJOO" width="100%" height="400"></iframe>
             </div>
             </div>
            
           {/block}
-          <div id="stores-filter">
+          <div id="stores-filter" class="col-md-8 offset-md-2">
           </div>
         </section>
       {/block}
