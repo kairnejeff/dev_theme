@@ -379,8 +379,8 @@
                 {if $product.secret != NULL}
                   {$product.secret nofilter}
                 {/if}
+                <img src="{$urls.img_url}secret.png"/>
               </div>
-              <img src="{$urls.img_url}secret.png"/>
             </div>
           </div>
         </div>
