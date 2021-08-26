@@ -32,7 +32,7 @@
                 .product-cover {
                     img {
                         max-width: calc(100% - 60px);
-                        @media (max-width: 769px) {
+                        @media (max-width: 767px) {
                             max-width: 100%;
                         }
                     }
@@ -41,7 +41,7 @@
                         @media (min-width: 768px) {
                             display: block !important;
                         }
-                        @media (max-width: 769px) {
+                        @media (max-width: 767px) {
                             margin-top: unset;
                             position: absolute;
                             top: 0;
@@ -74,7 +74,7 @@
                         text-align: center;
                         position: relative;
                         .icon-prev.rond {
-                            @media (max-width: 769px) {
+                            @media (max-width: 767px) {
                                 display: inline-flex;
                                 position: unset;
                                 height: 10px;
@@ -86,7 +86,7 @@
                             }
                         }
                         .icon-next.rond {
-                            @media (max-width: 769px) {
+                            @media (max-width: 767px) {
                                 display: inline-flex;
                                 position: unset;
                                 height: 10px;
@@ -128,7 +128,7 @@
                     @media screen and (max-width: 480px) {
                         padding-left: 0;
                     }
-                    @media screen and (max-width: 769px) {
+                    @media screen and (max-width: 767px) {
                         .info-all .collapse-icons i.material-icons {
                             position: absolute;
                             top: 10px;
@@ -198,7 +198,7 @@
                             position: absolute;
                             bottom: 0;
                             width: 100%;
-                            @media (max-width: 769px) {
+                            @media (max-width: 767px) {
                                 position: relative;
                                 width: calc(100% + 60px);
                                 margin-left: -30px;
@@ -230,7 +230,7 @@
                                     margin-bottom: 0;
                                     padding: 12px 0;
                                     height: 60px;
-                                    @media (max-width: 769px) {
+                                    @media (max-width: 767px) {
                                         padding: 12px 20px;
                                     }
                                     #group_1 {
@@ -312,7 +312,7 @@
                                                 display: none;
                                             }
                                         }
-                                        @media (max-width: 769px) {
+                                        @media (max-width: 767px) {
                                             margin-left: 0;
                                             padding: 12px 20px;
                                         }
@@ -322,7 +322,7 @@
                                         justify-content: space-between;
                                         align-items: center;
                                         margin-top: 20px;
-                                        @media (max-width: 769px) {
+                                        @media (max-width: 767px) {
                                             flex-direction: column;
                                             align-items: left;
                                         }
@@ -345,12 +345,12 @@
                                                     font-size: 18px;
                                                 }
                                             }
-                                            @media (max-width: 769px) {
+                                            @media (max-width: 767px) {
                                                 width: 100%;
                                                 margin-top: 10px;
                                             }
                                         }
-                                        @media (max-width: 769px) {
+                                        @media (max-width: 767px) {
                                             margin-left: 20px;
                                             margin-right: 20px;
                                         }
@@ -375,7 +375,7 @@
                 }
                 .block-category-inner {
                     .text-muted {
-                        @media (max-width: 769px) {
+                        @media (max-width: 767px) {
                             margin-top: 30px;
                         }
                         p {
@@ -384,7 +384,7 @@
                             color: $black;
                             line-height: 30px;
                             ;
-                            @media (max-width: 769px) {
+                            @media (max-width: 767px) {
                                 font-size: 16px;
                             }
                         }
@@ -410,7 +410,7 @@
                             .product-actions {
                                 position: absolute;
                                 bottom: 0;
-                                @media (max-width: 769px) {
+                                @media (max-width: 767px) {
                                     position: relative;
                                 }
                                 form {
@@ -438,7 +438,7 @@
         margin: 120px auto;
         padding-left: 15px;
         padding-right: 15px;
-        @media (max-width: 769px) {
+        @media (max-width: 767px) {
             margin-top: 50px;
             margin-bottom: 80px;
         }
@@ -494,7 +494,7 @@
                         top: unset;
                     }
                 }
-                @media (max-width: 769px) {
+                @media (max-width: 767px) {
                     border-left: 1px solid $black;
                     padding-left: 8px;
                 }
@@ -830,7 +830,7 @@
                 @media (min-width: 1670px) {
                     left: 37%;
                 }
-                @media (max-width: 769px) {
+                @media (max-width: 767px) {
                     top: 150px;
                     bottom: auto;
                     width: auto;
@@ -856,7 +856,7 @@
     .origin,
     .bocaux {
         .text-info {
-            @media (max-width: 769px) {
+            @media (max-width: 767px) {
                 right: -14px!important;
             }
         }
@@ -866,7 +866,7 @@
             .text-info {
                 right: 70%;
                 left: auto;
-                @media (max-width: 769px) {
+                @media (max-width: 767px) {
                     left: -15px;
                     right: auto
                 }
