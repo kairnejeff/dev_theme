@@ -1,5 +1,15 @@
 #stores {
     #cms {
+        .h3 {
+            font-family: RobotoMono;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        .nb-stores {
+            font-family: 'Unna';
+            font-size: 20px;
+        }
         #group {
             height: 3rem;
             padding: .7rem 1.25rem;
@@ -32,8 +42,6 @@
                 text-transform: uppercase;
                 text-align: center;
                 margin-bottom: 40px;
-                width: 75%;
-                line-height: 30px;
             }
             article.store-item {
                 padding: 20px;
@@ -45,6 +53,8 @@
                     height: 100%;
                     .h3.card-title {
                         font-size: 20px;
+                        width: 75%;
+                        line-height: 30px;
                     }
                     .distance {
                         position: absolute;
