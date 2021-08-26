@@ -56,7 +56,7 @@
                         }
                     }
                     // .icon-prev {
-                    //     @media (max-width: 768px) {
+                    //     @media (max-width: 767px) {
                     //         position: absolute;
                     //         left: 0;
                     //         top: 49.5%;
@@ -64,7 +64,7 @@
                     //     }
                     // }
                     // .icon-next {
-                    //     @media (max-width: 768px) {
+                    //     @media (max-width: 767px) {
                     //         position: absolute;
                     //         right: 0;
                     //         top: 49.5%;
@@ -578,7 +578,7 @@
                         }
                     }
                 }
-                @media (max-width: 768px) {
+                @media (max-width: 767px) {
                     padding-left: 20px;
                     padding-right: 20px;
                 }
@@ -612,7 +612,7 @@
             &::-webkit-scrollbar-thumb:hover {
                 background: #555;
             }
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 height: 100%;
             }
             &.active {
@@ -627,7 +627,7 @@
             }
             #ingredient {
                 margin-bottom: 50px;
-                @media (max-width: 768px) {
+                @media (max-width: 767px) {
                     padding-left: 20px;
                     padding-right: 20px;
                 }
@@ -649,7 +649,7 @@
                 }
             }
             #mentions {
-                @media (max-width: 768px) {
+                @media (max-width: 767px) {
                     padding-left: 20px;
                     padding-right: 20px;
                 }
@@ -710,7 +710,7 @@
                 }
             }
             #en_savoir_plus {
-                @media (max-width: 768px) {
+                @media (max-width: 767px) {
                     padding-left: 20px;
                     padding-right: 20px;
                 }
@@ -724,7 +724,7 @@
                     width: 100%;
                 }
             }
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 overflow: hidden;
             }
         }
