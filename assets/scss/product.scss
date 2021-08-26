@@ -847,20 +847,20 @@
                 padding: 40px 30px;
                 position: absolute;
                 top: 100px;
-                right: -100px;
+                left: 57%;
                 width: 500px;
                 text-align: justify;
 
-                @media (max-width: 769px) {
-                    right: 13px;
-                    top: auto;
+                @media (min-width: 1670px) {
+                    left: 37%;
                 }
-                @media (max-width: 480px) {
+                @media (max-width: 769px) {
                     top: 150px;
                     bottom: auto;
                     width: auto;
                     padding: 20px 30px;
                     z-index: 99;
+                    left: auto;
                 }
                 p {
                     font-size: 21px;
@@ -880,7 +880,7 @@
     .origin,
     .bocaux {
         .text-info {
-            @media (max-width: 480px) {
+            @media (max-width: 769px) {
                 right: -14px!important;
             }
             
@@ -890,9 +890,11 @@
     .secret {
         .flex {
             .text-info {
-                left: 0;
-                @media (max-width: 480px) {
+                right: 70%;
+                left: auto;
+                @media (max-width: 769px) {
                     left: -15px;
+                    right: auto
                 }
             }
         }
@@ -903,4 +905,10 @@
     position: absolute;
     top: -6px;
     left: 130px;
+}
+
+.boutique {
+    button {
+        background-color: $greylight;
+    }
 }

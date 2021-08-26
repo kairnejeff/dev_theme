@@ -44,10 +44,14 @@
                 margin-top: 70px;
                 h2 {
                     @include title;
-                    margin-bottom: 40px;
+                    margin-bottom: 50px;
 
                     @media (max-width: 370px) {
                         line-height: 1.5;
+                    }
+
+                    span {
+                        border-bottom: 2px solid $black;
                     }
                 }
                 .products {
@@ -103,22 +107,6 @@
                                             font-family: $alegreya;
                                         }
                                     }
-                                    .recipe {
-                                        font-family: $roboto;
-                                        text-decoration: underline;
-                                        text-transform: uppercase;
-                                        font-size: 12px;
-                                        margin-top: 10px;
-                                        position: absolute;
-                                        bottom: -10px;
-                                        height: auto;
-                                        font-weight: 500;
-                                        line-height: 27px;
-                                        color: $hover;
-                                        @media (max-width: 960px) {
-                                            bottom: -25px;
-                                        }
-                                    }
                                     &:after {
                                         content: "";
                                     }
@@ -133,6 +121,22 @@
                                                 outline: none;
                                             }
                                         }
+                                    }
+                                }
+                                .recipe {
+                                    font-family: $roboto;
+                                    text-decoration: underline;
+                                    text-transform: uppercase;
+                                    font-size: 12px;
+                                    margin-top: 10px;
+                                    position: absolute;
+                                    top: calc(100% + 10px);
+                                    height: auto;
+                                    font-weight: 500;
+                                    line-height: 27px;
+                                    color: $hover;
+                                    @media (max-width: 960px) {
+                                        top: 100%;
                                     }
                                 }
                                 .product-price-and-shipping {
@@ -231,9 +235,9 @@
 .page-home,
 .page-cms {
     .home-page-block {
-        margin-top: 100px;
+        margin-top: 80px;
         h2 {
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
         .lwc {
             font-family: $roboto;
@@ -263,6 +267,10 @@
                 max-width: 722px;
                 margin: 0 auto;
                 margin-bottom: 24px;
+
+                &:first-child {
+                    margin-bottom: 20px;
+                }
             }
             .little-size {
                 font-size: $alegreya;
