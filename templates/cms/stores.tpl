@@ -33,7 +33,7 @@
             </div>
            
           {/block}
-          <div id="stores-filter" class="col-md-8 offset-md-2">
+          <div id="stores-filter" class="col-md-10 offset-md-1">
           </div>
         </section>
       {/block}
