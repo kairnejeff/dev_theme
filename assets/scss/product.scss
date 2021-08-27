@@ -160,10 +160,18 @@
                 > div {
                     float: none;
                     position: relative;
+
+                    @media (max-width: 769px) {
+                        width: 100%;
+                    }
                     .page-content {
                         width: auto;
                         .js-qv-mask {
                             display: none;
+                        }
+
+                        .carousel-inner {
+                            margin-bottom: 0;
                         }
                     }
                     
