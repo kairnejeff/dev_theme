@@ -160,10 +160,18 @@
                 >div {
                     float: none;
                     position: relative;
+
+                    @media (max-width: 769px) {
+                        width: 100%;
+                    }
                     .page-content {
                         width: auto;
                         .js-qv-mask {
                             display: none;
+                        }
+
+                        .carousel-inner {
+                            margin-bottom: 0;
                         }
                     }
                     .title_product {
@@ -187,9 +195,7 @@
                                 p {
                                     &:last-child {
                                         margin-bottom: 2rem;
-                                        @media (min-width: 480px) {
-                                            max-height: 66px;
-                                        }
+
                                     }
                                 }
                             }
@@ -400,6 +406,10 @@
                             }
                         }
                         .product-information {
+                            @media (max-width: 1200px) {
+                                overflow: scroll;
+                                height: 120px;
+                            }
                             >div {
                                 p {
                                     span {
@@ -626,7 +636,6 @@
                 }
             }
             #ingredient {
-                margin-bottom: 50px;
                 @media (max-width: 767px) {
                     padding-left: 20px;
                     padding-right: 20px;

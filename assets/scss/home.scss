@@ -248,6 +248,11 @@
             @media (max-width: 480px) {
                 line-height: 1.5;
             }
+
+            span {
+                padding-bottom: 6px;
+                border-bottom: 2px solid #000;
+            }
         }
 
         .en-off-block {
