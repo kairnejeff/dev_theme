@@ -134,7 +134,7 @@
                         <ul>
                           <li class="menu-tab active"><a href="#/composition">Ingrédients</a></li>
                           <li class="menu-tab"><a href="#/mentions">Valeurs Nutritives</a></li>
-                          <li class="menu-tab"><a href="#/history">Préparation</a></li>
+                          <li class="menu-tab"><a href="#/preparation">Préparation</a></li>
                           <li class="menu-tab"><a href="#/avis">Avis</a></li>
                           <li class="menu-tab"><a href="#/en_savoir_plus">En Savoir Plus</a></li>
                         </ul>
@@ -299,12 +299,16 @@
                     {/if}	
                     </div>
 
-                    <div id="history" class="info-detail-content">
-                      {foreach from=$product.features item=feature}
-                        {if ($feature.name == "Suggestions d'utilisation")}
-                          <p>{$feature.value|escape:'html':'UTF-8'}</p>
-                        {/if}
-                      {/foreach}
+                    <div class="info-detailed-titler col-md-6">
+                      <div class="info-detailed-title">
+                      </div>
+                      <div id="preparation" class="info-detail-content">
+                          {foreach from=$product.features item=feature}
+                            {if ($feature.name == "Suggestions d'utilisation")}
+                              <p>{$feature.value|escape:'html':'UTF-8'}</p>
+                            {/if}
+                          {/foreach}
+                      </div>
                     </div>
 
                       <div class="info-detailed-titler col-md-6">
