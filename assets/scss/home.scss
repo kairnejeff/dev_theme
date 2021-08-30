@@ -18,7 +18,7 @@
                                 img {
                                     @media (min-width: 1679px) and (max-width: 2560px) {
                                         max-width: 1410px;
-                                        max-height: 600px;    
+                                        max-height: 600px;
                                     }
                                     @media (min-width: 1200px) and (max-width: 1678px) {
                                         max-width: 1160px;
@@ -45,16 +45,24 @@
                 h2 {
                     @include title;
                     margin-bottom: 50px;
-
                     @media (max-width: 370px) {
                         line-height: 1.5;
                     }
-
                     span {
                         border-bottom: 2px solid $black;
                     }
                 }
                 .products {
+                    .owl-stage {
+                        @media (min-width: 481px) {
+                            display: flex;
+                            padding-bottom: 10px;
+                        }
+                        @media (min-width: 768px) {
+                            display: flex;
+                            padding-bottom: 15px;
+                        }
+                    }
                     @media (max-width: 480px) {
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
@@ -65,8 +73,6 @@
                             width: 100%;
                             margin-bottom: 30px;
                         }
-                        margin-bottom: 50px;
-                        position: relative;
                         article {
                             height: 100%;
                             .thumbnail-container {
@@ -94,6 +100,7 @@
                                     z-index: 0;
                                     width: 100%;
                                     position: relative;
+                                    margin-left: 1px;
                                     .h3 {
                                         width: 80%;
                                     }
@@ -128,28 +135,37 @@
                                     text-decoration: underline;
                                     text-transform: uppercase;
                                     font-size: 12px;
-                                    margin-top: 10px;
-                                    position: absolute;
-                                    top: 100%;
-                                    height: auto;
                                     font-weight: 500;
                                     line-height: 27px;
                                     color: $hover;
-                                    @media (max-width: 960px) {
-                                        top: 100%;
+                                    position: absolute;
+                                    @media (min-width: 481px) {
+                                        bottom: -10px;
+                                        left: 2px;
+                                    }
+                                    @media (min-width: 768px) {
+                                        bottom: -15px;
+                                        left: 2px;
+                                    }
+                                    @media (max-width: 480px) {
+                                        bottom: -5px;
                                     }
                                 }
                                 .product-price-and-shipping {
                                     position: absolute;
-                                    top: calc(100% + 10px);
                                     right: 0;
+                                    @media (min-width: 481px) {
+                                        bottom: -10px;
+                                    }
+                                    @media (min-width: 768px) {
+                                        bottom: -15px;
+                                    }
                                     .price {
                                         font-family: $roboto;
                                         font-size: 14px;
                                     }
                                     @media (max-width: 480px) {
-                                        top: 100%;
-                                        left: unset;
+                                        bottom: -5px;
                                     }
                                 }
                                 .highlighted-informations {
@@ -244,12 +260,10 @@
             font-size: 18px!important;
             letter-spacing: 1.8px;
             line-height: 24px;
-
             @media (max-width: 480px) {
                 line-height: 1.5;
             }
         }
-
         .en-off-block {
             @media (max-width: 767px) {
                 margin-bottom: 40px;
@@ -267,7 +281,6 @@
                 max-width: 722px;
                 margin: 0 auto;
                 margin-bottom: 24px;
-
                 &:first-child {
                     margin-bottom: 20px;
                 }
