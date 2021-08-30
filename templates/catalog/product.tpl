@@ -82,11 +82,6 @@
             {/block} 
           {/block}
 
-          <div class="product-information">
-          {block name='product_description'}
-            <div id="product-description-{$product.id}" itemprop="description">{$product.description nofilter}</div>
-          {/block}
-
           <div id="history" class="info-detail-content">
             {foreach from=$product.features item=feature}
               {if ($feature.name == "Suggestions d'utilisation")}
@@ -144,6 +139,7 @@
                           <li class="menu-tab"><a href="#/mentions">Valeurs Nutritives</a></li>
                           <li class="menu-tab"><a href="#/histoire">En Savoir Plus</a></li>
                           <li class="menu-tab"><a href="#/avis">Avis</a></li>
+                          <li class="menu-tab"><a href="#/histoire">En Savoir Plus</a></li>
                         </ul>
                       </nav>
 
@@ -309,10 +305,14 @@
                     <div class="info-detailed-titler col-md-6">
                       <div class="info-detailed-title">
                       </div>
-                      <div id="en_savoir_plus" class="info-detail-content">
-                          <p> {$product.custom_field_lang_wysiwyg nofilter}</p>
-                      </div>
+                      <div class="product-information">
+                      {block name='product_description'}
+                        <div id="product-description-{$product.id}" itemprop="description">{$product.description nofilter}</div>
+                      {/block}
+                      
                     </div>
+
+                    
 
                       <div class="info-detailed-titler col-md-6">
                       <div class="info-detailed-title">
@@ -329,6 +329,14 @@
                         </div>
                         <!-- End TrustBox widget -->
                       </div>
+                      </div>
+
+                        <div class="info-detailed-titler col-md-6">
+                        <div class="info-detailed-title">
+                        </div>
+                        <div id="en_savoir_plus" class="info-detail-content">
+                            <p> {$product.custom_field_lang_wysiwyg nofilter}</p>
+                        </div>
                       </div>
                       </div>
                     
