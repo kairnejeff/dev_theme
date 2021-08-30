@@ -141,11 +141,6 @@
     }
 }
 
-.container #main #content .featured-products .row .product-miniature {
-    height: 100%;
-    position: relative;
-}
-
 .container #main #content .featured-products .row .product-miniature .thumbnail-container {
     box-shadow: none;
 }
@@ -154,10 +149,6 @@
     .container #main #content .featured-products .row .product-miniature .thumbnail-container {
         width: 100%;
     }
-}
-
-.container #main #content .featured-products .row .product-miniature .thumbnail-container a {
-    height: 100%;
 }
 
 .container #main #content .featured-products .row .product-miniature .thumbnail-container a img {
