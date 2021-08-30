@@ -131,7 +131,7 @@
                     <div class="info-detailed col-md-12">
 
                       <nav id="main-menu" class="main-menu" >
-                        <ul>
+                        <ul class="menu">
                           <li class="menu-tab active"><a href="#/composition">Ingrédients</a></li>
                           <li class="menu-tab"><a href="#/mentions">Valeurs Nutritives</a></li>
                           <li class="menu-tab"><a href="#/preparation">Préparation</a></li>
