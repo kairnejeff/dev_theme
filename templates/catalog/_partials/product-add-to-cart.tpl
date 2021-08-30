@@ -51,6 +51,9 @@
                 <div class="nutriscore"><img src="{$urls.img_url}nutriscore-{$product.nutriscore}.svg" /></div>
             </div>
           {/if}
+          {if isset($product.yuka)&& $product.yuka!=NULL&& $product.yuka!=" "}
+           
+          {/if}
 
 
           <button
