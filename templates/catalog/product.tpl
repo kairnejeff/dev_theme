@@ -340,7 +340,6 @@
                     
                     {/if}
                     </div>
-
                     </div>
 
                   {* <div class="product-special-info">
