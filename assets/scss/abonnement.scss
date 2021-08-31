@@ -69,6 +69,9 @@
                                 padding-right: unset;
                             }
                         }
+                        @media (min-width: 1679px) and (max-width: 2560px) {
+                            padding-right: 110px;
+                        }
                         @media (max-width: 768px) {
                             &:after {
                                 content: "";
@@ -97,11 +100,9 @@
                     padding: 30px;
                     background: #fff;
                     width: 47%;
-
                     @media (max-width: 768px) {
                         width: 100%;
                     }
-
                     .abonnement-title {
                         border-left: 1px solid;
                         padding-left: 10px;
