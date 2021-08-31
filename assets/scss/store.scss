@@ -21,8 +21,8 @@
             cursor: pointer;
             border: 1.5px solid;
         }
-        #group:focus {
-            border: 1.5px solid #464646;
+        #group:focus-visible {
+            outline: 1.5px solid;
         }
         #localise {
             height: 3rem;
@@ -40,7 +40,7 @@
             border: 1.5px solid;
         }
         #localise:focus {
-            border: 1.5px solid #464646;
+            outline: 1.5px solid;
         }
         #stores-filter {
             margin-top: 120px;
