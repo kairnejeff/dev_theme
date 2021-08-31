@@ -171,6 +171,8 @@
                         position: absolute;
                         right: 0;
                         top: -40px;
+                        text-transform: uppercase;
+
                         #_desktop-user_info {
                             .user-info {
                                 margin-left: 27px;
@@ -179,6 +181,7 @@
                                 a {
                                     .icon-compte-on {
                                         font-size: 18px!important;
+                                        margin-left: 9px;
                                     }
                                 }
                             }

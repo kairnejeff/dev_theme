@@ -15,6 +15,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
     display: flex;
     width: 100%;
     margin-left: 0;
+    padding: 0;
     @media (max-width: 767px) {
         position: relative;
         background-color: $pink;
