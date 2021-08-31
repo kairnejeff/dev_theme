@@ -9521,7 +9521,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 .product-accessories .products,
 .product-miniature .products {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
     margin: unset;
 }
@@ -9539,7 +9539,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 780px) {
     #products .products,
     .featured-products .products,
     .product-accessories .products,
