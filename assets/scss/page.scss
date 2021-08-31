@@ -1,3 +1,5 @@
+@import "global.scss";
+
 #cms {
     #content {
         h2 {
@@ -32,27 +34,36 @@
             }
         }
         .bloc {
+            margin-bottom: 21px;
+            
             h2 {
-                padding: 60px 40px;
+                padding: 0px 0px 56px 0px;
                 text-align: center;
             }
             .bloc-title {
                 font-family: 'RobotoMono';
                 font-size: 18px;
                 text-transform: uppercase;
+                letter-spacing: 1.8px;
             }
             width: 100%;
             &:nth-child(2n+1) {
                 background-color: #fef9f5;
             }
             .bloc-content {
-                padding: 0 140px 60px;
+                padding: 56px 200px;
                 @media (max-width: 768px) {
                     padding: 50px 43px;
                 }
                 img {
                     max-width: 100%;
                     height: auto;
+                }
+
+                p {
+                    font-family: $unna;
+                    font-size: 21px;
+                    line-height: 28px;
                 }
             }
             .bloc-image {

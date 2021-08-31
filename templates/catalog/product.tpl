@@ -131,7 +131,7 @@
                     <div class="info-detailed col-md-12">
 
                       <nav id="main-menu" class="main-menu" >
-                        <ul>
+                        <ul class="menu">
                           <li class="menu-tab active"><a href="#/composition">Ingrédients</a></li>
                           <li class="menu-tab"><a href="#/mentions">Valeurs Nutritives</a></li>
                           <li class="menu-tab"><a href="#/preparation">Préparation</a></li>
@@ -312,28 +312,29 @@
                     </div>
 
                       <div class="info-detailed-titler col-md-6">
-                      <div class="info-detailed-title">
-                      </div>
-                      <div id="avis_truspilot info-detail-content ">
-                        <div class="data-hidden d-none">
-                          {if !empty($combinations)}
-                              <div id="combinaison-attributes" data-attributes="[{$combinations|json_encode}]"></div>
-                        {/if}
+                        <div class="info-detailed-title">
                         </div>
-                        <!-- TrustBox widget - Product Reviews -->
-                        <div id="trustbox-widget" class="trustpilot-widget" data-locale="fr-FR" data-template-id="544a426205dc0a09088833c6" data-businessunit-id="603ce71821527000016deb69" data-style-height="300px" data-style-width="100%" data-theme="light" data-sku="{if empty($combinations)}{$product.reference}{/if}" data-review-languages="fr" data-no-reviews="hide">
-                          <a href="https://fr.trustpilot.com/review/karinejeff.fr" target="_blank" rel="noopener">Trustpilot</a>
-                        </div>
-                        <!-- End TrustBox widget -->
-                      </div>
-                      </div>
-                          <div class="info-detailed-titler col-md-6">
-                            <div class="info-detailed-title">
-                            </div>
-                            <div id="en_savoir_plus" class="info-detail-content">
-                                <p> {$product.custom_field_lang_wysiwyg nofilter}</p>
-                            </div>
+                        <div id="avis_truspilot info-detail-content ">
+                          <div class="data-hidden d-none">
+                            {if !empty($combinations)}
+                                <div id="combinaison-attributes" data-attributes="[{$combinations|json_encode}]"></div>
+                          {/if}
                           </div>
+                          <!-- TrustBox widget - Product Reviews -->
+                          <div id="trustbox-widget" class="trustpilot-widget" data-locale="fr-FR" data-template-id="544a426205dc0a09088833c6" data-businessunit-id="603ce71821527000016deb69" data-style-height="300px" data-style-width="100%" data-theme="light" data-sku="{if empty($combinations)}{$product.reference}{/if}" data-review-languages="fr" data-no-reviews="hide">
+                            <a href="https://fr.trustpilot.com/review/karinejeff.fr" target="_blank" rel="noopener">Trustpilot</a>
+                          </div>
+                          <!-- End TrustBox widget -->
+                        </div>
+                      </div>
+
+                      <div class="info-detailed-titler col-md-6">
+                        <div class="info-detailed-title">
+                        </div>
+                        <div id="en_savoir_plus" class="info-detail-content">
+                            <p> {$product.custom_field_lang_wysiwyg nofilter}</p>
+                        </div>
+                      </div>
 
                       </div>
                     
