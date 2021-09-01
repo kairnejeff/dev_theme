@@ -1,3 +1,4 @@
 {
-    "smarty.highlight": true
+    "smarty.highlight": true,
+    "compile-hero.disable-compile-files-on-did-save-code": false
 }
