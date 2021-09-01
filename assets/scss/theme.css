@@ -9539,7 +9539,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 780px) {
     #products .products,
     .featured-products .products,
     .product-accessories .products,
@@ -12275,7 +12275,8 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 
 .block_newsletter form input[type=email] {
     padding: 11px;
-    width: 100%
+    width: 100%;
+    border: 1.5px solid;
 }
 
 .block_newsletter form input[type=email]:focus {

@@ -53,10 +53,8 @@
     <meta itemprop="url" content="{$product.url}">
 
     <div class="row product-container">
-      <div class="title">
-        
-      </div>
-      <div class="col-md-6">
+
+      <div class="col-md-6 image">
         {block name='page_content_container'}
           <section class="page-content" id="content">
             {block name='page_content'}
@@ -72,88 +70,87 @@
             {/block}
           </section>
         {/block}
-        </div>
-        <div class="col-md-6">
-          {block name='page_header_container'}
-            {block name='page_header'}
-              <div class="title_product">
-                <h2 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h2>
-                {if $product.description_short}
-                  <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
-                {/if}
-              </div>
-            {/block} 
-          {/block}
+      </div>
+      <div class="col-md-6 content">
+        {block name='page_header_container'}
+          {block name='page_header'}
+            <div class="title_product">
+              <h2 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h2>
+              {if $product.description_short}
+                <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
+              {/if}
+            </div>
+          {/block} 
+        {/block}
 
-          <div class="product-information">
+        <div class="product-information">
           {block name='product_description'}
             <div id="product-description-{$product.id}" itemprop="description">{$product.description nofilter}</div>
           {/block}
 
-          <div id="history" class="info-detail-content">
-            {foreach from=$product.features item=feature}
-              {if ($feature.name == "Suggestions d'utilisation")}
-                <p>{$feature.value|escape:'html':'UTF-8'}</p>
-              {/if}
-            {/foreach}
-          </div>
+          {if $product.is_customizable && count($product.customizations.fields)}
+            {block name='product_customization'}
+              {include file="catalog/_partials/product-customization.tpl" customizations=$product.customizations}
+            {/block}
+          {/if}
 
-            {if $product.is_customizable && count($product.customizations.fields)}
-              {block name='product_customization'}
-                {include file="catalog/_partials/product-customization.tpl" customizations=$product.customizations}
-              {/block}
-            {/if}
+          <div class="product-actions">
+            {block name='product_buy'}
+              <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
+                <input type="hidden" name="token" value="{$static_token}">
+                <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
+                <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
 
-            <div class="product-actions">
-              {block name='product_buy'}
-                <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
-                  <input type="hidden" name="token" value="{$static_token}">
-                  <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
-                  <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
+                {block name='product_variants'}
+                  {include file='catalog/_partials/product-variants.tpl'}
+                {/block}
 
-                  {block name='product_variants'}
-                    {include file='catalog/_partials/product-variants.tpl'}
-                  {/block}
+                {block name='product_pack'}
+                  {if $packItems}
+                    <section class="product-pack">
+                      <p class="h4">{l s='This pack contains' d='Shop.Theme.Catalog'}</p>
+                      {foreach from=$packItems item="product_pack"}
+                        {block name='product_miniature'}
+                          {include file='catalog/_partials/miniatures/pack-product.tpl' product=$product_pack showPackProductsPrice=$product.show_price}
+                        {/block}
+                      {/foreach}
+                  </section>
+                  {/if}
+                {/block}
 
-                  {block name='product_pack'}
-                    {if $packItems}
-                      <section class="product-pack">
-                        <p class="h4">{l s='This pack contains' d='Shop.Theme.Catalog'}</p>
-                        {foreach from=$packItems item="product_pack"}
-                          {block name='product_miniature'}
-                            {include file='catalog/_partials/miniatures/pack-product.tpl' product=$product_pack showPackProductsPrice=$product.show_price}
-                          {/block}
-                        {/foreach}
-                    </section>
-                    {/if}
-                  {/block}
+                {block name='product_discounts'}
+                  {include file='catalog/_partials/product-discounts.tpl'}
+                {/block}
 
-                  {block name='product_discounts'}
-                    {include file='catalog/_partials/product-discounts.tpl'}
-                  {/block}
+                {block name='product_add_to_cart'}
+                  {include file='catalog/_partials/product-add-to-cart.tpl'}
+                {/block}
+              </form>
+                {* <div class="product-special-info">
+                  <div class="label-bio"><img src="{$urls.img_url}/logo-bio-europeen.svg" /></div>
+                </div>
 
-                  {block name='product_add_to_cart'}
-                    {include file='catalog/_partials/product-add-to-cart.tpl'}
-                  {/block}
-                  
-                  
+                {block name='product_additional_info'}
+                  {include file='catalog/_partials/product-additional-info.tpl'}
+                {/block} *}
 
-                  <div class="info-all row clearfix">	
-                    <div class="info-detailed col-md-12">
-
-                      <nav id="main-menu" class="main-menu" >
-                        <ul>
-                          <li class="menu-tab active"><a href="#/composition">Ingrédients</a></li>
-                          <li class="menu-tab"><a href="#/mentions">Valeurs Nutritives</a></li>
-                          <li class="menu-tab"><a href="#/histoire">En Savoir Plus</a></li>
-                          <li class="menu-tab"><a href="#/avis">Avis</a></li>
-                        </ul>
-                      </nav>
+                {* Input to refresh product HTML removed, block kept for compatibility with themes *}
+              {block name='product_refresh'}{/block}
+                <div class="info-all row clearfix">	
+                  <div class="info-detailed col-md-12">
+                    <nav id="main-menu" class="main-menu" >
+                      <ul>
+                        <li class="menu-tab active"><a href="#/composition">Ingrédients</a></li>
+                        <li class="menu-tab"><a href="#/mentions">Valeurs Nutritives</a></li>
+                        <li class="menu-tab"><a href="#/preparation">Préparation</a></li>
+                        <li class="menu-tab"><a href="#/avis">Avis</a></li>
+                        <li class="menu-tab"><a href="#/en_savoir_plus">En Savoir Plus</a></li>
+                      </ul>
+                    </nav>
 
                     <div class="info-detailed-titler active col-md-6">
                       {if isset($product.features)}
-                        <div class="info-detailed-title" >
-                          <div id="ingredient" class="info-detail-content">
+                        <div id="ingredient" class="info-detail-content">
                           {foreach from=$product.features item=feature}
                             {if ($feature.name == "Ingrédients")}
                               <p>{$feature.value|escape:'html':'UTF-8'}</p>
@@ -161,7 +158,6 @@
                                 Certifié Ecocert SAS. 32600</p>
                             {/if}
                           {/foreach}
-                        </div>
                         </div>
                         
                         <div id="allergenes" class="info-detail-content">
@@ -171,155 +167,164 @@
                             {/if}
                           {/foreach}
                         </div>
+                        {/if}
                     </div>
 
-                    <div class="info-detailed-titler nut col-md-6">
+                    <div class="info-detailed-titler nut col-md-6" id="mention">
                       {if isset($product.features)}
-                      <div class="info-detailed-title">
-                      </div>
-                      <div id="mentions" class="info-detail-content">
-                      {foreach from=$product.features item=feature}
-                        {if ($feature.name == "Mentions Spéciales")}
-                          <div>{$feature.value|escape:'html':'UTF-8'}</div>
-                        {/if}
-                      {/foreach}	
-                      <div>Pour 100g </div>
-
-                      <div class="info-nutrition">
-                        <ul class="list-nutrition"> 
-                          <li class="nutrition kj">
-                            <ul>
-                                <li class="number color_nutrition"> 
-                            {foreach from=$product.features item=feature}
-                              {if ($feature.name == "Energie kcal/100g")}
-                                {if $feature.value <= 360}
-                                    <span class="green_color">{$feature.value|escape:'html':'UTF-8'} kcal </span>
-                                    {else}
-                                    <span class="red_color">{$feature.value|escape:'html':'UTF-8'} kcal </span>
-                                {/if}
-                              {/if}
-                              {if ($feature.name == "Energie kJ/100g")}
-                                <span>{$feature.value|escape:'html':'UTF-8'} kj </span>
-                              {/if}
-                            {/foreach}
-                                  </li>
-                                <li class="label-nutrition">Calories</li>
-                              </ul>
-                          </li>
-                            
-                        {foreach from=$product.features item=feature}
-
-                          {if ($feature.name == "Matière grasse" )}
-                            <li class="nutrition">
-                              <ul>
-                                {if $feature.value <= 10}
-                                  <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
-                                  {else}
-                                  <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
-                                {/if}
-
-                                  <li class="label-nutrition">Matière grasse</li>
-                              </ul>
-                            </li>
-                          {/if}
-
-                          {if ($feature.name == "Acides gras saturés" )}
-                            <li class="nutrition">
-                              <ul>
-                                {if $feature.value <= 3}
-                                  <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
-                                  {else}
-                                  <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
+                        <div id="mentions" class="info-detail-content">
+                          <div class="info-detailed-title">Pour 100g </div>
+                          {* <div id="mentions" class="info-detail-content">
+                          {foreach from=$product.features item=feature}
+                            {if ($feature.name == "Mentions Spéciales")}
+                              <div>{$feature.value|escape:'html':'UTF-8'}</div>
+                            {/if}
+                          {/foreach}	
+                          <div>Pour 100g </div> *}
+                          <div class="info-nutrition">
+                            <ul class="list-nutrition"> 
+                              <li class="nutrition kj">
+                                <ul>
+                                    <li class="number color_nutrition"> 
+                                {foreach from=$product.features item=feature}
+                                  {if ($feature.name == "Energie kcal/100g")}
+                                    {if $feature.value <= 360}
+                                        <span class="green_color">{$feature.value|escape:'html':'UTF-8'} kcal </span>
+                                        {else}
+                                        <span class="red_color">{$feature.value|escape:'html':'UTF-8'} kcal </span>
+                                    {/if}
                                   {/if}
-                                  <li class="label-nutrition">Acides gras saturés</li>
-                              </ul>
-                            </li>
-                          {/if}
+                                  {if ($feature.name == "Energie kJ/100g")}
+                                    <span class="green_color">{$feature.value|escape:'html':'UTF-8'} kj </span>
+                                  {/if}
+                                {/foreach}
+                                      </li>
+                                    <li class="label-nutrition">Calories</li>
+                                  </ul>
+                              </li>
+                              {foreach from=$product.features item=feature}
 
-                          {if ($feature.name == "Glucides" )}
-                          <li class="nutrition">
-                            <ul>
-                            {if $feature.value <= 10}
-                                <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
-                                {else}
-                                <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
-                              {/if}
+                                {if ($feature.name == "Matière grasse" )}
+                                  <li class="nutrition">
+                                    <ul>
+                                      {if $feature.value <= 10}
+                                        <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                        {else}
+                                        <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                      {/if}
 
-                                <li class="label-nutrition">Glucides</li>
+                                        <li class="label-nutrition">Matière grasse</li>
+                                    </ul>
+                                  </li>
+                                {/if}
+
+                                {if ($feature.name == "Acides gras saturés" )}
+                                  <li class="nutrition">
+                                    <ul>
+                                      {if $feature.value <= 3}
+                                        <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                        {else}
+                                        <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                        {/if}
+                                        <li class="label-nutrition">Acides gras saturés</li>
+                                    </ul>
+                                  </li>
+                                {/if}
+
+                                {if ($feature.name == "Glucides" )}
+                                  <li class="nutrition">
+                                    <ul>
+                                    {if $feature.value <= 10}
+                                        <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                        {else}
+                                        <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                      {/if}
+
+                                        <li class="label-nutrition">Glucides</li>
+                                    </ul>
+                                  </li>
+                                {/if}
+
+                                {if ($feature.name == "Sucres" )}
+                                  <li class="nutrition">
+                                    <ul>
+                                      {if $feature.value <= 18}
+                                        <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                        {else}
+                                        <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                      {/if}
+
+                                        <li class="label-nutrition">Sucres</li>
+                                    </ul>
+                                  </li>
+                                {/if}
+
+                                {if ($feature.name == "Fibres" )}
+                                  <li class="nutrition">
+                                    <ul>
+                                        <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                        <li class="label-nutrition">Fibres</li>
+                                      
+                                    </ul>
+                                  </li>
+                                {/if}
+
+                                {if ($feature.name == "Protéines" )}
+                                  <li class="nutrition">
+                                    <ul>
+                                      {if $feature.value <= 8}
+                                        <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                        {else}
+                                        <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
+
+                                      {/if}
+                                        <li class="label-nutrition">Protéines</li>
+                                    </ul>
+                                  </li>
+                                {/if}
+
+                                {if ($feature.name == "Sel" )}  
+                                  <li class="nutrition">
+                                    <ul>
+                                      {if $feature.value <= 0.92}
+                                        <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                        {else}
+                                        <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
+                                      {/if}
+                                        
+                                      <li class="label-nutrition">Sel</li>
+                                      
+                                    </ul>
+                                  </li>
+                                {/if}                       
+                              {/foreach}
                             </ul>
-                          </li>
-                        {/if}
-
-                        {if ($feature.name == "Sucres" )}
-                          <li class="nutrition">
-                            <ul>
-                              {if $feature.value <= 18}
-                                <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
-                                {else}
-                                <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
-                              {/if}
-
-                                <li class="label-nutrition">Sucres</li>
-                            </ul>
-                          </li>
-                        {/if}
-
-                        {if ($feature.name == "Fibres" )}
-                          <li class="nutrition">
-                            <ul>
-                                <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
-                                <li class="label-nutrition">Fibres</li>
-                              
-                            </ul>
-                          </li>
-                        {/if}
-
-                        {if ($feature.name == "Protéines" )}
-                          <li class="nutrition">
-                            <ul>
-                              {if $feature.value <= 8}
-                                <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
-                                {else}
-                                <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
-
-                              {/if}
-                                <li class="label-nutrition">Protéines</li>
-                            </ul>
-                          </li>
-                        {/if}
-
-                        {if ($feature.name == "Sel" )}  
-                        <li class="nutrition">
-                            <ul>
-                              {if $feature.value <= 0.92}
-                                <li class="number green">{$feature.value|escape:'html':'UTF-8'} g</li>
-                                {else}
-                                <li class="number red">{$feature.value|escape:'html':'UTF-8'} g</li>
-                              {/if}
-                                
-                              <li class="label-nutrition">Sel</li>
-                              
-                            </ul>
-                          </li>
-                        {/if}                       
-                      {/foreach}
-                      </ul>
-                      </div>
-                      </div>
-                    {/if}	
+                          </div>
+                        </div>
+                      {/if}	
                     </div>
 
                     <div class="info-detailed-titler col-md-6">
                       <div class="info-detailed-title">
                       </div>
-                      <div id="en_savoir_plus" class="info-detail-content">
-                          <p> {$product.custom_field_lang_wysiwyg nofilter}</p>
+                      <div id="preparation" class="info-detail-content">
+                          {foreach from=$product.features item=feature}
+                            {if ($feature.name == "Suggestions d'utilisation")}
+                              <p>{$feature.value|escape:'html':'UTF-8'}</p>
+                            {/if}
+                          {/foreach}
                       </div>
                     </div>
 
-                      <div class="info-detailed-titler col-md-6">
-                      <div class="info-detailed-title">
-                      </div>
+                    <div class="info-detailed-titler col-md-6">
+                      {if $product.custom_field_lang_wysiwyg != NULL}
+                        <div id="en_savoir_plus" class="info-detail-content">
+                            <p> {$product.custom_field_lang_wysiwyg nofilter}</p>
+                        </div>
+                      {/if}
+                    </div>
+
+                    <div class="info-detailed-titler col-md-6">
                       <div id="avis_truspilot info-detail-content ">
                         <div class="data-hidden d-none">
                           {if !empty($combinations)}
@@ -332,26 +337,14 @@
                         </div>
                         <!-- End TrustBox widget -->
                       </div>
-                      </div>
-                      </div>
-                    
-                    {/if}
-                    </div>
                     </div>
 
-                  {* <div class="product-special-info">
-                    <div class="label-bio"><img src="{$urls.img_url}/logo-bio-europeen.svg" /></div>
                   </div>
-
-                  {block name='product_additional_info'}
-                    {include file='catalog/_partials/product-additional-info.tpl'}
-                  {/block} *}
-
-                  {* Input to refresh product HTML removed, block kept for compatibility with themes *}
-                  {block name='product_refresh'}{/block}
-                </form>
+                </div>
               {/block}
-            </div>
+          </div>
+
+        
         </div>
       </div>
     </div>
@@ -397,27 +390,6 @@
           </div>
         </div>
     </div>
-  </div>
-
-
-
-
-  {if $product.custom_field_lang_wysiwyg != NULL}
-  <div class="info-all row clearfix">	
-    <div class="col-md-12">
-      <div class="collapse-icons" role="button" data-toggle="collapse" data-target="#product-savoir-plus" aria-expanded="false" aria-controls="collapseOne">
-        <h2 class="font3 text-uppercase">En savoir plus</h2>
-        <i class="material-icons add">expand_more</i>
-        <i class="material-icons remove">expand_less</i>
-      </div>
-      <div id="product-savoir-plus" aria-expanded="false" class="collapse">
-         {$product.custom_field_lang_wysiwyg nofilter}
-      </div>
-    </div>
-  </div>
-  {/if}
-
-
  
     {block name='product_accessories'}
       {if $accessories}

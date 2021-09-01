@@ -141,10 +141,21 @@
                             font-size: 20px;
                             font-family: $unna;
                         }
-
                         p {
                             font-size: 14px;
                             font-family: $alegreya;
+                        }
+                        &:last-child {
+                            ul {
+                                li {
+                                    &:nth-child(2),
+                                    &:nth-child(4),
+                                    &:nth-child(7),
+                                    &:nth-child(8) {
+                                        margin-bottom: 30px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -176,11 +187,9 @@
                 width: 1040px;
                 margin: 0 auto;
             }
-    
             @media (max-width: 1200px) {
                 width: 961px;
             }
-    
             @media (max-width: 961px) {
                 width: unset;
             }

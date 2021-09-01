@@ -50,7 +50,6 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
         }
     }
     .menu-block {
-
         .menulink.current {
             text-decoration: underline;
         }
@@ -75,6 +74,9 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                     font-family: $unna;
                     font-size: 16px;
                     line-height: 18px;
+                }
+                a:hover {
+                    text-decoration: underline !important;
                 }
             }
         }
@@ -111,6 +113,9 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                             display: none;
                         }
                     }
+                }
+                span.obflink.menulink:hover {
+                    text-decoration: underline;
                 }
             }
         }
@@ -290,9 +295,8 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
             background-image: url("../img/HACL.png");
             background-size: cover;
             width: 340px;
-
             @media (max-width: 1200px) {
-            display: none;
+                display: none;
             }
         }
     }
