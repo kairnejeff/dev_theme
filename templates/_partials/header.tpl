@@ -43,7 +43,8 @@
                 </h1>
               {else}
                   <a href="{$urls.base_url}">
-                    <img class="logo img-responsive" src="{$urls.img_url}logo-karine-jeff.svg" alt="{$shop.name}">
+                  <img class="logo img-responsive hidden-sm-down" src="{$urls.img_url}logo-karine-jeff.svg"  alt="{$shop.name} ">
+                  <img class="logo img-responsive hidden-md-up" src="{$urls.img_url}logo_mobile.svg"  alt="{$shop.name} ">
                   </a>
               {/if}
           </div>
