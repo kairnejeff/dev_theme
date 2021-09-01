@@ -169,7 +169,7 @@
                                     &:last-child {
                                         margin-bottom: 2rem;
                                         //font-size: 16px;
-                                        max-height: 66px;
+                                        //max-height: 66px;
                                     }
                                 }
                             }
@@ -329,7 +329,6 @@
                                 }
                             }
                         }
-                        
                         .info-all {
                             padding-left: 0;
                             margin-right: 0;
@@ -366,7 +365,6 @@
                                                     margin: auto;
                                                 }
                                             }
-
                                             #en_savoir_plus {
                                                 padding-left: 15px;
                                                 padding-right: 15px;
@@ -393,13 +391,13 @@
                                     height: 205px;
                                     border-bottom: 1px solid $grey_border;
                                     overflow: scroll;
-                                    overflow-x: hidden; 
+                                    overflow-x: hidden;
                                     &::-webkit-scrollbar {
                                         width: 10px;
                                     }
                                     &::-webkit-scrollbar-track {
-                                        background: $grey_border; 
-                                      }
+                                        background: $grey_border;
+                                    }
                                     &::-webkit-scrollbar-thumb {
                                         background: #888;
                                     }
@@ -419,8 +417,6 @@
                                             width: 100%;
                                         }
                                     }
-                                    
-
                                     #ingredient {
                                         margin-bottom: 50px;
                                         @media (max-width: 768px) {
