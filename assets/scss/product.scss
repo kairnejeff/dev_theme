@@ -96,20 +96,6 @@
                         }
                     }
                 }
-                .col-md-5 {
-                    .images-container {
-                        #carousel {
-                            margin-top: 10px;
-                            ul {
-                                li {
-                                    img {
-                                        border: none;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
                 .info-detailed {
                     @media screen and (min-width: 1024px) {
                         .collapse {
@@ -155,200 +141,375 @@
                 .product-flags {
                     display: none;
                 }
-                >div {
-                    &:first-child {
-                        .page-content {
-                            width: auto;
-                            .js-qv-mask {
-                                display: none;
+                .content {
+                    height: 846.172px;
+                    @media screen and (max-width: 767px) {
+                        height: 100%;
+                    }
+                    position: relative;
+                    .title_product {
+                        h2 {
+                            padding-left: 8px;
+                            line-height: 1.1;
+                            border-left: 1px solid $black;
+                            font-size: 50px;
+                            &::first-letter {
+                                text-transform: lowercase;
                             }
                         }
                     }
-                    &:nth-child(3) {
-                        height: 846.172px;
-                        @media screen and (max-width: 767px) {
-                            height: 100%;
+                    .product-information {
+                        margin-top: 30px;
+                        span {
+                            display: block;
                         }
-                        position: relative;
-                        .title_product {
-                            h2 {
-                                padding-left: 8px;
-                                line-height: 1.1;
-                                border-left: 1px solid $black;
-                                font-size: 50px;
-                                &::first-letter {
-                                    text-transform: lowercase;
+                        >div {
+                            &:first-child {
+                                p {
+                                    &:last-child {
+                                        margin-bottom: 2rem;
+                                        //font-size: 16px;
+                                        max-height: 66px;
+                                    }
                                 }
                             }
                         }
-                        .product-information {
-                            margin-top: 30px;
-                            span {
-                                display: block;
+                        .product-actions {
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            @media (max-width: 768px) {
+                                position: relative;
+                                width: calc(100% + 60px);
+                                margin-left: -30px;
                             }
-                            >div {
-                                &:first-child {
-                                    p {
-                                        &:last-child {
-                                            margin-bottom: 2rem;
-                                            //font-size: 16px;
-                                            max-height: 66px;
-                                        }
-                                    }
+                            .label-info {
+                                width: 25%;
+                                span {
+                                    letter-spacing: 2px;
+                                    display: inline;
+                                    width: auto;
+                                    font-family: $roboto;
+                                    text-transform: uppercase;
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                }
+                                @media (max-width: 480px) {
+                                    width: 30%;
                                 }
                             }
-                            .product-actions {
-                                position: absolute;
-                                bottom: 0;
-                                width: 100%;
-                                @media (max-width: 768px) {
-                                    position: relative;
-                                    width: calc(100% + 60px);
-                                    margin-left: -30px;
-                                }
-                                .label-info {
-                                    width: 25%;
-                                    span {
-                                        letter-spacing: 2px;
-                                        display: inline;
-                                        width: auto;
-                                        font-family: $roboto;
-                                        text-transform: uppercase;
-                                        font-size: 12px;
-                                        font-weight: 700;
+                            .product-variants {
+                                .product-variants-item {
+                                    display: flex;
+                                    align-items: center;
+                                    border-top: 1px solid grey;
+                                    margin-bottom: 0;
+                                    padding: 12px 0;
+                                    height: 60px;
+                                    @media (max-width: 768px) {
+                                        padding: 12px 20px;
                                     }
-                                    @media (max-width: 480px) {
-                                        width: 30%;
-                                    }
-                                }
-                                .product-variants {
-                                    .product-variants-item {
+                                    #group_1 {
                                         display: flex;
+                                        justify-content: flex-start;
+                                        flex-direction: row;
+                                        width: 35%;
                                         align-items: center;
-                                        border-top: 1px solid grey;
                                         margin-bottom: 0;
-                                        padding: 12px 0;
-                                        height: 60px;
-                                        @media (max-width: 768px) {
-                                            padding: 12px 20px;
-                                        }
-                                        #group_1 {
-                                            display: flex;
-                                            justify-content: flex-start;
-                                            flex-direction: row;
-                                            width: 35%;
-                                            align-items: center;
-                                            margin-bottom: 0;
-                                            li {
-                                                width: 65%;
-                                                label {
+                                        li {
+                                            width: 65%;
+                                            label {
+                                                margin-bottom: 0;
+                                                .color {
+                                                    width: 100%;
+                                                    padding: 2px 20px 15px;
+                                                    height: 27px;
                                                     margin-bottom: 0;
-                                                    .color {
-                                                        width: 100%;
-                                                        padding: 2px 20px 15px;
-                                                        height: 27px;
-                                                        margin-bottom: 0;
-                                                        span {
-                                                            left: 0;
-                                                            font-size: 16px;
-                                                        }
+                                                    span {
+                                                        left: 0;
+                                                        font-size: 16px;
                                                     }
                                                 }
                                             }
                                         }
                                     }
                                 }
-                                .product-discounts {
-                                    margin-bottom: 0;
-                                }
-                                .product-add-to-cart {
-                                    .product-quantity {
-                                        flex-direction: column;
-                                        .qty {
-                                            border-top: 1px solid grey;
-                                            border-bottom: 1px solid grey;
-                                            align-items: center;
-                                            padding: 12px 0;
-                                            height: 60px;
-                                            .input-group {
-                                                .bootstrap-touchspin {
-                                                    width: 35%;
-                                                }
-                                                >input {
-                                                    width: 5rem;
+                            }
+                            .product-discounts {
+                                margin-bottom: 0;
+                            }
+                            .product-add-to-cart {
+                                .product-quantity {
+                                    flex-direction: column;
+                                    .qty {
+                                        border-top: 1px solid grey;
+                                        border-bottom: 1px solid grey;
+                                        align-items: center;
+                                        padding: 12px 0;
+                                        height: 60px;
+                                        .input-group {
+                                            .bootstrap-touchspin {
+                                                width: 35%;
+                                            }
+                                            >input {
+                                                width: 5rem;
+                                            }
+                                        }
+                                        .product-prices {
+                                            text-align: right;
+                                            margin: 0;
+                                            position: absolute;
+                                            right: 10px;
+                                            .product-price {
+                                                margin: 0;
+                                                .current-price {
+                                                    margin: 0;
+                                                    span {
+                                                        font-size: 16px;
+                                                        font-family: 'RobotoMono';
+                                                        font-weight: 700;
+                                                        letter-spacing: 1px;
+                                                        @media (max-width: 480px) {
+                                                            font-size: 20px;
+                                                        }
+                                                    }
                                                 }
                                             }
-                                            .product-prices {
-                                                text-align: right;
-                                                margin: 0;
-                                                position: absolute;
-                                                right: 10px;
-                                                .product-price {
-                                                    margin: 0;
-                                                    .current-price {
-                                                        margin: 0;
+                                            .tax-shipping-delivery-label {
+                                                display: none;
+                                            }
+                                        }
+                                        @media (max-width: 768px) {
+                                            margin-left: 0;
+                                            padding: 12px 20px;
+                                        }
+                                    }
+                                    .add {
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        margin-top: 20px;
+                                        @media (max-width: 768px) {
+                                            flex-direction: column;
+                                            align-items: left;
+                                        }
+                                        .product-nutriscore {
+                                            div {
+                                                img {
+                                                    width: 100px;
+                                                }
+                                            }
+                                        }
+                                        .add-to-cart {
+                                            height: 3rem;
+                                        }
+                                        .btn-primary {
+                                            padding: 0.7rem 1.25rem;
+                                            width: 50%;
+                                            .icon-panier-off {
+                                                display: none;
+                                                &:before {
+                                                    font-size: 18px;
+                                                }
+                                            }
+                                            @media (max-width: 768px) {
+                                                width: 100%;
+                                                margin-top: 10px;
+                                            }
+                                        }
+                                        @media (max-width: 768px) {
+                                            margin-left: 20px;
+                                            margin-right: 20px;
+                                        }
+                                    }
+                                }
+                                .product-minimal-quantity,
+                                #product-availability {
+                                    display: none;
+                                }
+                            }
+                        }
+                        /* Test */
+                        .info-all {
+                            padding-left: 0;
+                            margin-right: 0;
+                            margin: 0 auto;
+                            .info-detailed {
+                                width: 100%;
+                                padding-left: 0;
+                                padding-right: 0;
+                                margin-bottom: 30px;
+                                #main-menu {
+                                    ul {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        padding-top: 9px;
+                                        border-bottom: 1px solid $grey_border;
+                                        border-top: 1px solid $grey_border;
+                                        margin-bottom: 0;
+                                        height: 60px;
+                                        .menu-tab {
+                                            font-size: 14px;
+                                            text-transform: uppercase;
+                                            font-family: $roboto;
+                                            font-size: 11px;
+                                            display: flex;
+                                            align-items: center;
+                                            height: 100%;
+                                            &.active {
+                                                border-bottom: 2px solid $greylight;
+                                                a {
+                                                    color: $greylight;
+                                                    text-decoration: none;
+                                                    padding-right: 15px;
+                                                    padding-left: 15px;
+                                                    margin: auto;
+                                                }
+                                            }
+                                        }
+                                        @media (max-width: 768px) {
+                                            padding-left: 20px;
+                                            padding-right: 20px;
+                                        }
+                                        li {
+                                            &:nth-child(2) {
+                                                width: 100px;
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+                                }
+                                .info-detailed-titler {
+                                    width: 100%;
+                                    padding-left: 0;
+                                    display: none;
+                                    height: 205px;
+                                    border-bottom: 1px solid $grey_border;
+                                    overflow: scroll;
+                                    &::-webkit-scrollbar {
+                                        width: 10px;
+                                    }
+                                    &::-webkit-scrollbar-thumb {
+                                        background: #888;
+                                    }
+                                    &::-webkit-scrollbar-thumb:hover {
+                                        background: #555;
+                                    }
+                                    @media (max-width: 768px) {
+                                        height: 100%;
+                                    }
+                                    &.active {
+                                        display: block;
+                                        margin-top: 15px;
+                                    }
+                                    &.nut {
+                                        width: 100%;
+                                        @media screen and (max-width: 1024px) {
+                                            width: 100%;
+                                        }
+                                    }
+                                    #ingredient {
+                                        margin-bottom: 50px;
+                                        @media (max-width: 768px) {
+                                            padding-left: 20px;
+                                            padding-right: 20px;
+                                        }
+                                        p {
+                                            font-size: 14px;
+                                            font-family: $alegreya;
+                                            line-height: 17px;
+                                        }
+                                    }
+                                    #allergenes {
+                                        margin-top: 20px;
+                                        .product-nutriscore {
+                                            .nutriscore {
+                                                img {
+                                                    width: 200px;
+                                                    height: 108px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    #mentions {
+                                        @media (max-width: 768px) {
+                                            padding-left: 20px;
+                                            padding-right: 20px;
+                                        }
+                                        .info-nutrition {
+                                            .list-nutrition {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                margin-top: 35px;
+                                                .nutrition {
+                                                    flex: 1 0 21%;
+                                                    margin-bottom: 1rem;
+                                                    .number {
+                                                        padding: 10px;
+                                                        border-radius: 50%;
+                                                        text-align: center;
+                                                        width: 70px;
+                                                        height: 70px;
+                                                        line-height: 50px;
+                                                        margin: 0 auto;
+                                                    }
+                                                    .color_nutrition {
+                                                        border: 1px solid green;
+                                                    }
+                                                    .green {
+                                                        color: green;
+                                                        border: 1px solid green;
+                                                    }
+                                                    .red {
+                                                        color: red;
+                                                        border: 1px solid red;
+                                                    }
+                                                    .red_color {
+                                                        color: red;
+                                                    }
+                                                    .green_color {
+                                                        color: green;
+                                                    }
+                                                    @media (max-width: 480px) {
+                                                        flex: 0 0 33.333333%;
+                                                    }
+                                                    .label-nutrition {
+                                                        text-align: center;
+                                                        margin-top: 10px;
+                                                    }
+                                                }
+                                                .kj {
+                                                    .number {
                                                         span {
-                                                            font-size: 16px;
-                                                            font-family: 'RobotoMono';
-                                                            font-weight: 700;
-                                                            letter-spacing: 1px;
-                                                            @media (max-width: 480px) {
-                                                                font-size: 20px;
+                                                            display: block;
+                                                            line-height: 18px;
+                                                            &:first-child {
+                                                                padding-top: 8px;
                                                             }
                                                         }
                                                     }
                                                 }
-                                                .tax-shipping-delivery-label {
-                                                    display: none;
-                                                }
-                                            }
-                                            @media (max-width: 768px) {
-                                                margin-left: 0;
-                                                padding: 12px 20px;
-                                            }
-                                        }
-                                        .add {
-                                            flex-direction: row;
-                                            justify-content: space-between;
-                                            align-items: center;
-                                            margin-top: 20px;
-                                            @media (max-width: 768px) {
-                                                flex-direction: column;
-                                                align-items: left;
-                                            }
-                                            .product-nutriscore {
-                                                div {
-                                                    img {
-                                                        width: 100px;
-                                                    }
-                                                }
-                                            }
-                                            .add-to-cart {
-                                                height: 3rem;
-                                            }
-                                            .btn-primary {
-                                                padding: 0.7rem 1.25rem;
-                                                width: 50%;
-                                                .icon-panier-off {
-                                                    display: none;
-                                                    &:before {
-                                                        font-size: 18px;
-                                                    }
-                                                }
-                                                @media (max-width: 768px) {
-                                                    width: 100%;
-                                                    margin-top: 10px;
-                                                }
-                                            }
-                                            @media (max-width: 768px) {
-                                                margin-left: 20px;
-                                                margin-right: 20px;
                                             }
                                         }
                                     }
-                                    .product-minimal-quantity,
-                                    #product-availability {
-                                        display: none;
+                                    #history {
+                                        @media (max-width: 768px) {
+                                            padding-left: 20px;
+                                            padding-right: 20px;
+                                        }
+                                    }
+                                }
+                                #avis_truspilot {
+                                    margin-top: 50px;
+                                    #trustbox-widget {
+                                        .tp-widget-wrapper {
+                                            margin: 0;
+                                            width: 100%;
+                                        }
+                                    }
+                                    @media (max-width: 768px) {
+                                        overflow: hidden;
                                     }
                                 }
                             }
@@ -381,7 +542,7 @@
                         }
                     }
                 }
-                .col-md-6 {
+                .content {
                     &:nth-child(2) {
                         .product-prices {
                             .current-price {
@@ -399,8 +560,6 @@
                                 }
                             }
                             .product-actions {
-                                position: absolute;
-                                bottom: 0;
                                 @media (max-width: 769px) {
                                     position: relative;
                                 }
@@ -525,201 +684,6 @@
         a {
             text-transform: uppercase;
             color: $white;
-        }
-    }
-}
-
-
-/* Test */
-
-.info-all {
-    padding-left: 0;
-    margin-right: 0;
-    margin: 0 auto;
-    .info-detailed {
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-        margin-bottom: 30px;
-        #main-menu {
-            ul {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding-top: 9px;
-                border-bottom: 1px solid $grey_border;
-                border-top: 1px solid $grey_border;
-                margin-bottom: 0;
-                height: 60px;
-                .menu-tab {
-                    font-size: 14px;
-                    text-transform: uppercase;
-                    font-family: $roboto;
-                    font-size: 11px;
-                    display: flex;
-                    align-items: center;
-                    height: 100%;
-                    &.active {
-                        border-bottom: 2px solid $greylight;
-                        a {
-                            color: $greylight;
-                            text-decoration: none;
-                            padding-right: 15px;
-                            padding-left: 15px;
-                            margin: auto;
-                        }
-                    }
-                }
-                @media (max-width: 768px) {
-                    padding-left: 20px;
-                    padding-right: 20px;
-                }
-                li {
-                    &:nth-child(2) {
-                        width: 100px;
-                        text-align: center;
-                    }
-                }
-            }
-        }
-        .info-detailed-titler {
-            width: 100%;
-            padding-left: 0;
-            display: none;
-            height: 205px;
-            border-bottom: 1px solid $grey_border;
-            overflow: scroll;
-            &::-webkit-scrollbar {
-                width: 10px;
-            }
-            &::-webkit-scrollbar-thumb {
-                background: #888;
-            }
-            &::-webkit-scrollbar-thumb:hover {
-                background: #555;
-            }
-            @media (max-width: 768px) {
-                height: 100%;
-            }
-            &.active {
-                display: block;
-                margin-top: 15px;
-            }
-            &.nut {
-                width: 100%;
-                @media screen and (max-width: 1024px) {
-                    width: 100%;
-                }
-            }
-            #ingredient {
-                margin-bottom: 50px;
-                @media (max-width: 768px) {
-                    padding-left: 20px;
-                    padding-right: 20px;
-                }
-                p {
-                    font-size: 14px;
-                    font-family: $alegreya;
-                    line-height: 17px;
-                }
-            }
-            #allergenes {
-                margin-top: 20px;
-                .product-nutriscore {
-                    .nutriscore {
-                        img {
-                            width: 200px;
-                            height: 108px;
-                        }
-                    }
-                }
-            }
-            #mentions {
-                @media (max-width: 768px) {
-                    padding-left: 20px;
-                    padding-right: 20px;
-                }
-                .info-nutrition {
-                    .list-nutrition {
-                        display: flex;
-                        flex-wrap: wrap;
-                        margin-top: 35px;
-                        .nutrition {
-                            flex: 1 0 21%;
-                            margin-bottom: 1rem;
-                            
-                            .number {
-                                padding: 10px;
-                                border-radius: 50%;
-                                text-align: center;
-                                width: 70px;
-                                height: 70px;
-                                line-height: 50px;
-                                margin: 0 auto;
-                            }
-
-                            .color_nutrition {
-                                border: 1px solid green;
-                            }
-
-                            .green {
-                                color: green;
-                                border: 1px solid green;
-                            }
-
-                            .red {
-                                color: red;
-                                border: 1px solid red;
-                            }
-
-                            .red_color {
-                                color: red;
-                            }
-
-                            .green_color {
-                                color: green;
-                            }
-
-                            @media (max-width: 480px) {
-                                flex: 0 0 33.333333%;
-                            }
-                            .label-nutrition {
-                                text-align: center;
-                                margin-top: 10px;
-                            }
-                        }
-                        .kj {
-                            .number {
-                                span {
-                                    display: block;
-                                    line-height: 18px;
-                                    &:first-child {
-                                        padding-top: 8px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            #history {
-                @media (max-width: 768px) {
-                    padding-left: 20px;
-                    padding-right: 20px;
-                }
-            }
-        }
-        #avis_truspilot {
-            margin-top: 50px;
-            #trustbox-widget {
-                .tp-widget-wrapper {
-                    margin: 0;
-                    width: 100%;
-                }
-            }
-            @media (max-width: 768px) {
-                overflow: hidden;
-            }
         }
     }
 }
