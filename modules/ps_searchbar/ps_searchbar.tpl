@@ -25,11 +25,11 @@
 <!-- Block search module TOP -->
 <div id="_desktop_search_widget" class="search-widget hidden-sm-down" data-search-controller-url="{$search_controller_url}">
 	<form method="get" action="{$search_controller_url}">
-	<span class="hidden-md-down text-search">{l s='Search' d='Shop.Theme.Catalog'}</span>
+	<span class="hidden-sm-down text-search">{l s='Search' d='Shop.Theme.Catalog'}</span>
 		<input type="hidden" name="controller" value="search">
 		<input type="text" name="s" value="{$search_string}" placeholder="{l s='Search our catalog' d='Shop.Theme.Catalog'}" aria-label="{l s='Search' d='Shop.Theme.Catalog'}">
 		<button type="submit">
-			<i class="material-icons search">&#xE8B6;</i>
+		<span class="icon-recherche"></span>
 		</button>
 		<span class="hidden-md-up close"><i class="material-icons">close</i></span>
 	</form>
