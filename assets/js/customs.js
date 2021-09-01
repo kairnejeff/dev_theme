@@ -45,14 +45,13 @@ $(document).ready(function() {
  * mobile search
  */
 $(document).ready(function() {
-    $("#mobile_loop .loop-btn .search").click(function() {
+    $("#mobile_loop .loop-btn").click(function() {
         $(this).css("display", "none")
-        $(this).parent().parent().siblings("#_mobile_search_widget").addClass("show")
+        $(this).parent().siblings("#_mobile_search_widget").addClass("show")
     })
     $("#_mobile_search_widget form .close").click(function() {
         $(this).parents("#_mobile_search_widget").removeClass("show")
-        console.log($(this).parents("#_mobile_search_widget").siblings("#mobile_loop"))
-        $(this).parents("#_mobile_search_widget").siblings("#mobile_loop").find(".loop-btn .search").css("display", "block")
+        $(this).parents("#_mobile_search_widget").siblings("#mobile_loop").find(".loop-btn").css("display", "block")
     })
 })
 
