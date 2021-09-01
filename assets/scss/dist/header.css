@@ -32,8 +32,7 @@ html, body {
 #_desktop_search_widget .text-search {
   position: absolute;
   right: 2.5rem;
-  top: 0.7em;
-  font-size: 12px;
+  top: 0.91em;
   color: #232323;
 }
 
@@ -53,7 +52,8 @@ html, body {
   #mobile_loop {
     position: absolute;
     top: 12px;
-    right: 55px;
+    right: 75px;
+    font-size: 18px;
   }
 }
 
@@ -278,7 +278,7 @@ html, body {
     right: 20px;
   }
   #header .header-nav .row .mobile #_mobile_logo a img {
-    margin-top: 10px;
+    margin-top: 12px;
     width: auto;
     height: auto;
   }
@@ -378,6 +378,9 @@ html, body {
     border: none;
     background: none;
     outline: 0;
+  }
+  #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul li .menu-next {
+    right: 5px;
   }
   #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul li button.menu-before {
     left: 0;
