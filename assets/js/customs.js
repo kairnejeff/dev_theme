@@ -72,8 +72,8 @@ $(document).ready(function() {
 //featured products
 function featuredProductMobileCarousel() {
     if ($(window).width() < 480) {
-        $('#feature-products').addClass("owl-carousel")
-        $('#feature-products').owlCarousel({
+        $('#index #feature-products').addClass("owl-carousel")
+        $('#index #feature-products').owlCarousel({
             items: 1,
             loop: true,
             margin: 10,
@@ -83,8 +83,8 @@ function featuredProductMobileCarousel() {
             autoplayHoverPause: true,
         })
     } else {
-        $('#feature-products').owlCarousel('destroy');
-        $('#feature-products').removeClass("owl-carousel");
+        $('#index #feature-products').owlCarousel('destroy');
+        $('#index #feature-products').removeClass("owl-carousel");
     }
 
 }
