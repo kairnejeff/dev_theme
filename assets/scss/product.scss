@@ -234,28 +234,6 @@
                                         }
                                     }
                                 }
-<<<<<<< HEAD
-                                .product-discounts {
-                                    margin-bottom: 0;
-                                }
-                                .product-add-to-cart {
-                                    .product-quantity {
-                                        flex-direction: column;
-                                        .qty {
-                                            border-top: 1px solid grey;
-                                            border-bottom: 1px solid grey;
-                                            align-items: center;
-                                            padding: 12px 0;
-                                            height: 60px;
-                                            margin-bottom: 0;
-                                            .input-group {
-                                                .bootstrap-touchspin {
-                                                    width: 35%;
-                                                }
-                                                >input {
-                                                    width: 5rem;
-                                                }
-=======
                             }
                             .product-discounts {
                                 margin-bottom: 0;
@@ -272,7 +250,6 @@
                                         .input-group {
                                             .bootstrap-touchspin {
                                                 width: 35%;
->>>>>>> 20456ed74feb6d672be385aef31680579a2a5603
                                             }
                                             >input {
                                                 width: 5rem;
@@ -352,7 +329,7 @@
                                 }
                             }
                         }
-                        /* Test */
+                        
                         .info-all {
                             padding-left: 0;
                             margin-right: 0;
@@ -379,29 +356,19 @@
                                             font-size: 11px;
                                             display: flex;
                                             align-items: center;
-<<<<<<< HEAD
-                                            margin: 20px 0;
-                                            @media (max-width: 768px) {
-                                                flex-direction: column;
-                                                align-items: left;
-                                            }
-                                            .product-nutriscore {
-                                                div {
-                                                    img {
-                                                        width: 100px;
-                                                    }
-=======
                                             height: 100%;
                                             &.active {
                                                 border-bottom: 2px solid $greylight;
                                                 a {
                                                     color: $greylight;
                                                     text-decoration: none;
-                                                    padding-right: 15px;
-                                                    padding-left: 15px;
                                                     margin: auto;
->>>>>>> 20456ed74feb6d672be385aef31680579a2a5603
                                                 }
+                                            }
+
+                                            #en_savoir_plus {
+                                                padding-left: 15px;
+                                                padding-right: 15px;
                                             }
                                         }
                                         @media (max-width: 768px) {
@@ -410,7 +377,7 @@
                                         }
                                         li {
                                             &:nth-child(2) {
-                                                width: 100px;
+                                                width: 70px;
                                                 text-align: center;
                                             }
                                         }
@@ -423,9 +390,13 @@
                                     height: 205px;
                                     border-bottom: 1px solid $grey_border;
                                     overflow: scroll;
+                                    overflow-x: hidden; 
                                     &::-webkit-scrollbar {
                                         width: 10px;
                                     }
+                                    &::-webkit-scrollbar-track {
+                                        background: $grey_border; 
+                                      }
                                     &::-webkit-scrollbar-thumb {
                                         background: #888;
                                     }
@@ -445,6 +416,8 @@
                                             width: 100%;
                                         }
                                     }
+                                    
+
                                     #ingredient {
                                         margin-bottom: 50px;
                                         @media (max-width: 768px) {
