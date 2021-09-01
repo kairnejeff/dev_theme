@@ -9772,7 +9772,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .custom-text {
-    background: #fff url(../img/dots-background.png) repeat 50%;
+    background: #fff url(../img/dots-background.png);
     border-radius: 2px;
     margin-bottom: 1.5rem;
     text-align: center;
