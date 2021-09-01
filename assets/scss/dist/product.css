@@ -360,6 +360,7 @@ html, body {
   display: flex;
   align-items: center;
   height: 100%;
+  letter-spacing: 1.8px;
 }
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .menu-tab.active {
   border-bottom: 2px solid #464646;
@@ -379,9 +380,10 @@ html, body {
     padding-right: 20px;
   }
 }
-#wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul li:nth-child(2) {
-  width: 70px;
+#wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul li:nth-child(2), #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul li:last-child {
+  width: 88px;
   text-align: center;
+  line-height: 15px;
 }
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler {
   width: 100%;

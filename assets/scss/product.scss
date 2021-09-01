@@ -357,6 +357,7 @@
                                             display: flex;
                                             align-items: center;
                                             height: 100%;
+                                            letter-spacing: 1.8px;
                                             &.active {
                                                 border-bottom: 2px solid $greylight;
                                                 a {
@@ -376,9 +377,11 @@
                                             padding-right: 20px;
                                         }
                                         li {
-                                            &:nth-child(2) {
-                                                width: 70px;
+                                            &:nth-child(2),
+                                            &:last-child {
+                                                width: 88px;
                                                 text-align: center;
+                                                line-height: 15px;
                                             }
                                         }
                                     }
