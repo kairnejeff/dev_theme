@@ -349,6 +349,10 @@ textarea {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search:before {
+    content: "\e919";
+}
+
 .icon-croix:before {
     content: "\e90e";
 }
@@ -7938,10 +7942,11 @@ textarea:active:-moz-placeholder {
     position: absolute;
     background: none;
     border: none;
-    bottom: .3125rem;
+    bottom: .8rem;
     right: .125rem;
-    color: #7a7a7a;
+    color: #232323;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .search-widget form button[type=submit]:focus {
@@ -9772,7 +9777,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .custom-text {
-    background: #fff url(../img/dots-background.png) repeat 50%;
+    background: #fff url(../img/dots-background.png);
     border-radius: 2px;
     margin-bottom: 1.5rem;
     text-align: center;
