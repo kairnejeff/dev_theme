@@ -38,7 +38,7 @@ html, body {
 }
 @media (max-width: 768px) {
   #wrapper .container #main .product-container {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 }
 #wrapper .container #main .product-container .product-cover img {
@@ -168,7 +168,6 @@ html, body {
 }
 #wrapper .container #main .product-container .content .product-information > div:first-child p:last-child {
   margin-bottom: 2rem;
-  max-height: 66px;
 }
 #wrapper .container #main .product-container .content .product-information .product-actions {
   position: absolute;

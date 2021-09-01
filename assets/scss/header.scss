@@ -247,6 +247,10 @@
         .header-nav {
             margin: 0;
             padding-bottom: 20px;
+
+            @media (max-width: 480px) {
+                padding: 5px 0 10px;
+            }
             .row {
                 .navigation-header {
                     display: flex;
@@ -377,7 +381,7 @@
                                 .menu-next {
                                     right: 5px;
                                 }
-                                
+
                                 button.menu-before {
                                     left: 0;
                                     top: -45px;
