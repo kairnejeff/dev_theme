@@ -429,17 +429,6 @@
                                             line-height: 17px;
                                         }
                                     }
-                                    #allergenes {
-                                        margin-top: 20px;
-                                        .product-nutriscore {
-                                            .nutriscore {
-                                                img {
-                                                    width: 200px;
-                                                    height: 108px;
-                                                }
-                                            }
-                                        }
-                                    }
                                     #mentions {
                                         @media (max-width: 768px) {
                                             padding-left: 20px;
@@ -499,6 +488,14 @@
                                                     }
                                                 }
                                             }
+                                        }
+                                    }
+
+                                    #en_savoir_plus,
+                                    #preparation {
+                                        @media (max-width: 768px) {
+                                            padding-left: 20px;
+                                            padding-right: 20px;
                                         }
                                     }
                                     #history {
