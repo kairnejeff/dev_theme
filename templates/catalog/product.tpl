@@ -331,14 +331,13 @@
                       </div>
                     </div>
 
-                  </div>
-                  
-                  <div class="info-detailed-titler col-md-6">
-                    {if $product.custom_field_lang_wysiwyg != NULL}
-                      <div id="en_savoir_plus" class="info-detail-content">
-                          <p> {$product.custom_field_lang_wysiwyg nofilter}</p>
-                      </div>
-                    {/if}
+                    <div class="info-detailed-titler col-md-6">
+                      {if $product.custom_field_lang_wysiwyg != NULL}
+                        <div id="en_savoir_plus" class="info-detail-content">
+                            <p> {$product.custom_field_lang_wysiwyg nofilter}</p>
+                        </div>
+                      {/if}
+                    </div>
                   </div>
                 </div>
               {/block}
