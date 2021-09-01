@@ -37,12 +37,13 @@
               {if $page.page_name == 'index'}
                 <h1>
                   <a href="{$urls.base_url}">
-                    <img class="logo img-responsive" src="{$urls.img_url}/logo-karine-jeff.svg"  alt="{$shop.name} ">
+                    <img class="logo img-responsive hidden-sm-down" src="{$urls.img_url}logo-karine-jeff.svg"  alt="{$shop.name} ">
+                    <img class="logo img-responsive hidden-md-up" src="{$urls.img_url}logo_mobile.svg"  alt="{$shop.name} ">
                   </a>
                 </h1>
               {else}
                   <a href="{$urls.base_url}">
-                    <img class="logo img-responsive" src="{$urls.img_url}/logo-karine-jeff.svg" alt="{$shop.name}">
+                    <img class="logo img-responsive" src="{$urls.img_url}logo-karine-jeff.svg" alt="{$shop.name}">
                   </a>
               {/if}
           </div>
@@ -59,7 +60,7 @@
             <i class="material-icons d-inline"></i>
           </div>
           <div class="hidden-md-up" id="mobile_loop">
-            <span class="loop-btn"><i class="material-icons search"></i></span>
+            <span class="icon-recherche loop-btn"></span>
           </div>
           <div class="float-xs-right" id="_mobile_search_widget"></div>
           <div class="float-xs-right" id="_mobile_cart"></div>
