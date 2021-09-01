@@ -329,7 +329,7 @@
                                 }
                             }
                         }
-                        /* Test */
+                        
                         .info-all {
                             padding-left: 0;
                             margin-right: 0;
@@ -357,15 +357,19 @@
                                             display: flex;
                                             align-items: center;
                                             height: 100%;
+                                            letter-spacing: 1.8px;
                                             &.active {
                                                 border-bottom: 2px solid $greylight;
                                                 a {
                                                     color: $greylight;
                                                     text-decoration: none;
-                                                    padding-right: 15px;
-                                                    padding-left: 15px;
                                                     margin: auto;
                                                 }
+                                            }
+
+                                            #en_savoir_plus {
+                                                padding-left: 15px;
+                                                padding-right: 15px;
                                             }
                                         }
                                         @media (max-width: 768px) {
@@ -373,9 +377,11 @@
                                             padding-right: 20px;
                                         }
                                         li {
-                                            &:nth-child(2) {
-                                                width: 100px;
+                                            &:nth-child(2),
+                                            &:last-child {
+                                                width: 88px;
                                                 text-align: center;
+                                                line-height: 15px;
                                             }
                                         }
                                     }
@@ -387,9 +393,13 @@
                                     height: 205px;
                                     border-bottom: 1px solid $grey_border;
                                     overflow: scroll;
+                                    overflow-x: hidden; 
                                     &::-webkit-scrollbar {
                                         width: 10px;
                                     }
+                                    &::-webkit-scrollbar-track {
+                                        background: $grey_border; 
+                                      }
                                     &::-webkit-scrollbar-thumb {
                                         background: #888;
                                     }
@@ -409,6 +419,8 @@
                                             width: 100%;
                                         }
                                     }
+                                    
+
                                     #ingredient {
                                         margin-bottom: 50px;
                                         @media (max-width: 768px) {
