@@ -48,6 +48,7 @@
         <div class="add">
           {if isset($product.nutriscore)&& $product.nutriscore!=NULL&& $product.nutriscore!=" "}
             <div class="product-nutriscore">
+                <div class="yuka"><img src="{$urls.img_url}yuka-produit.png" /></div>
                 <div class="nutriscore"><img src="{$urls.img_url}nutriscore-{$product.nutriscore}.svg" /></div>
             </div>
           {/if}
