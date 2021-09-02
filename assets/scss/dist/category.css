@@ -125,7 +125,7 @@ html, body {
 }
 
 #js-product-list .products > div {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   position: relative;
 }
 #js-product-list .products > div article .product-description {
