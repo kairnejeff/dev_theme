@@ -332,6 +332,7 @@ html, body {
 }
 #wrapper .container #main .product-container .content .product-information .info-all {
   padding-left: 0;
+  padding-right: 0;
   margin-right: 0;
   margin: 0 auto;
 }
@@ -356,7 +357,7 @@ html, body {
   margin-bottom: 0;
   height: 60px;
 }
-@media (max-width: 860px) {
+@media (max-width: 480px) {
   #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul {
     width: 500px;
   }
@@ -400,20 +401,24 @@ html, body {
   display: none;
   height: 205px;
   border-bottom: 1px solid #d8d8d8;
-  overflow: scroll;
-  overflow-x: hidden;
 }
-#wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler::-webkit-scrollbar {
-  width: 10px;
-}
-#wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler::-webkit-scrollbar-track {
-  background: #d8d8d8;
-}
-#wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler::-webkit-scrollbar-thumb {
-  background: #888;
-}
-#wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler::-webkit-scrollbar-thumb:hover {
-  background: #555;
+@media (min-width: 768px) {
+  #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler::-webkit-scrollbar {
+    width: 10px;
+  }
+  #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler::-webkit-scrollbar-track {
+    background: #d8d8d8;
+  }
+  #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
 @media (max-width: 768px) {
   #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler {

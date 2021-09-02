@@ -219,6 +219,7 @@ html, body {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 20px;
+    text-decoration: none;
   }
   #header .header-nav .row .header-bottom .menu > ul > li:last-child {
     margin-right: 0;
