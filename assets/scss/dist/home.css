@@ -190,6 +190,9 @@ html, body {
     display: block;
   }
 }
+.container #main #content .avis {
+  margin-bottom: 112px;
+}
 @media (max-width: 1200px) {
   .container #main .block-category-inner #category-description .col-md-4 {
     width: 100%;
