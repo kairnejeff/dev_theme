@@ -32,6 +32,8 @@
             .featured-products {
                 @media (max-width: 480px) {
                     margin-bottom: -50px;
+                    padding: 0 15px;
+                    margin-top: 90px;
                 }
                 margin-top: 100px;
                 h2 {
@@ -310,6 +312,10 @@
     .page-index #wrapper .container {
         width: 943px;
         max-width: 100%;
+        
+        @media (max-width: 480px) {
+            padding: 0;
+        }
     }
 
     .page-product #wrapper .container {
