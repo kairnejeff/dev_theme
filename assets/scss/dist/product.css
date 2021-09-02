@@ -41,6 +41,10 @@ html, body {
     margin-top: 20px;
   }
 }
+#wrapper .container #main .product-container .col-md-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
 #wrapper .container #main .product-container .product-cover img {
   max-width: 400px;
 }
