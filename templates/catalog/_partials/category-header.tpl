@@ -29,10 +29,12 @@
                 <div class="category-cover clearfix">
                     {assign var="img_webp" value="modules/kj_webp/images/c/webp-img{$category.id}.webp"}
                     {if file_exists($img_webp)&& $modules.kj_detectdevice.machine !=='Mac'&&$modules.kj_detectdevice.machine !=='iPad'}
-                        <picture>
+                        <picture class="hidden-sm-down">
                             <source srcset="{$urls.base_url}modules/kj_webp/images/c/webp-img{$category.id}.webp" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}" type="image/webp">
                             <img src="{$category.image.bySize.category_default.url}" class="float-md-right" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}">
+
                         </picture>
+                    <img src="{$urls.base_url}img/c/{$category.id}_thumb.jpg" class="float-md-right hidden-md-up" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}">
                     {else}
                         <img src="{$category.image.bySize.category_default.url}" alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}">
                     {/if}
