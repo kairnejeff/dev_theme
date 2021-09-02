@@ -339,6 +339,10 @@
                                 padding-right: 0;
                                 margin-bottom: 30px;
                                 #main-menu {
+                                    @media (max-width: 860px) {
+                                        overflow: scroll;
+                                    }
+
                                     ul {
                                         display: flex;
                                         justify-content: space-between;
@@ -348,6 +352,11 @@
                                         border-top: 1px solid $grey_border;
                                         margin-bottom: 0;
                                         height: 60px;
+                                        
+                                        @media (max-width: 860px) {
+                                            width: 500px;
+                                        }
+
                                         .menu-tab {
                                             font-size: 14px;
                                             text-transform: uppercase;
@@ -796,7 +805,7 @@
                     top: auto;
                 }
                 @media (max-width: 480px) {
-                    bottom: 250px;
+                    bottom: 170px;
                     right: -17px;
                     width: 100%;
                 }
@@ -814,7 +823,7 @@
     }
     .secret {
         .text-info {
-            left: -100px;
+            left: -15px;
             p {
                 padding-bottom: 20px;
             }
@@ -841,7 +850,7 @@
         .flex {
             .text-info {
                 @media (max-width: 480px) {
-                    right: -100px;
+                    right: -15px;
                 }
             }
         }

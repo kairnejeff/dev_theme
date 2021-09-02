@@ -46,7 +46,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
 }
 
 .menu-item.current:first-child {
-  padding-bottom: 6px;
+  padding-bottom: 18px;
 }
 
 .top-menu .sub-menu.collapse {
@@ -95,7 +95,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
   padding-bottom: 17px;
   font-style: normal;
   font-family: "Unna";
-  font-size: 14px;
+  font-size: 15px;
   line-height: 18px;
 }
 .top-menu .sub-menu.collapse .menu-block .menu-block-link i a:hover {
@@ -213,7 +213,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
 .top-menu .sub-menu.collapse .menu-block:nth-child(3) .recipe-ingredient .menu-block-child .menu-block-child-link span {
   font-style: normal;
   font-family: "Unna";
-  font-size: 16px;
+  font-size: 15px;
   color: #000;
   letter-spacing: 0.5px;
 }
