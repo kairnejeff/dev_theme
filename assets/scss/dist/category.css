@@ -136,7 +136,7 @@ html, body {
 
 @media (max-width: 480px) {
   #js-product-list .products {
-    padding: 0 15px;
+    padding-right: 15px;
   }
 }
 #js-product-list .products > div {

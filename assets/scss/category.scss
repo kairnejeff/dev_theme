@@ -136,7 +136,7 @@
 #js-product-list {
     .products {
         @media (max-width: 480px) {
-            padding: 0 15px;
+            padding-right: 15px;
         }
         >div {
             margin-bottom: 60px;
