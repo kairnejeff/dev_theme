@@ -121,16 +121,16 @@ html, body {
   display: none;
 }
 
-#category #wrapper #products .container {
+.page-category #wrapper .container {
   padding: unset;
 }
 @media (max-width: 480px) {
-  #category #wrapper #products .container {
+  .page-category #wrapper .container {
     padding: 0;
   }
 }
-#category #wrapper #products .container .col-md-8,
-#category #wrapper #products .container .col-lg-9 {
+.page-category #wrapper .container .col-md-8,
+.page-category #wrapper .container .col-lg-9 {
   padding-right: unset;
 }
 
