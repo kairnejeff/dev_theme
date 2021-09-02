@@ -339,6 +339,7 @@ html, body {
 }
 #wrapper .container #main .product-container .content .product-information .info-all {
   padding-left: 0;
+  padding-bottom: 0;
   padding-right: 0;
   margin-right: 0;
   margin: 0 auto;
@@ -602,7 +603,7 @@ html, body {
 }
 #wrapper .product-accessories .h5 span {
   text-align: center;
-  font-size: 13px;
+  font-size: 18px;
   font-family: "RobotoMono";
   padding-bottom: 6px;
   letter-spacing: 1.3px;
