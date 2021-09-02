@@ -33,6 +33,10 @@
     img {
         max-height: 100%;
         width: 90%;
+
+        @media (max-width: 480px) {
+            width: 100%;
+        }
     }
 }
 
@@ -117,6 +121,11 @@
         #products {
             .container {
                 padding: unset;
+
+                @media (max-width: 480px) {
+                    padding: 0;
+
+                }
                 .col-md-8,
                 .col-lg-9 {
                     padding-right: unset;
@@ -128,6 +137,9 @@
 
 #js-product-list {
     .products {
+        @media (max-width: 480px) {
+            padding: 0 15px;
+        }
         >div {
             margin-bottom: 60px;
             position: relative;

@@ -54,6 +54,11 @@ html, body {
   max-height: 100%;
   width: 90%;
 }
+@media (max-width: 480px) {
+  .block-category img {
+    width: 100%;
+  }
+}
 
 .grid-controle .grid-button {
   background-color: unset;
@@ -119,11 +124,21 @@ html, body {
 #category #wrapper #products .container {
   padding: unset;
 }
+@media (max-width: 480px) {
+  #category #wrapper #products .container {
+    padding: 0;
+  }
+}
 #category #wrapper #products .container .col-md-8,
 #category #wrapper #products .container .col-lg-9 {
   padding-right: unset;
 }
 
+@media (max-width: 480px) {
+  #js-product-list .products {
+    padding: 0 15px;
+  }
+}
 #js-product-list .products > div {
   margin-bottom: 60px;
   position: relative;
