@@ -32,6 +32,8 @@
             .featured-products {
                 @media (max-width: 480px) {
                     margin-bottom: -50px;
+                    padding: 0 15px;
+                    margin-top: 90px;
                 }
                 margin-top: 100px;
                 h2 {
@@ -158,6 +160,10 @@
                         display: block;
                     }
                 }
+            }
+
+            .avis {
+                margin-bottom: 112px;
             }
         }
         .block-category-inner {
@@ -304,6 +310,31 @@
 @media (min-width: 1200px) {
     #wrapper .container {
         width: 1040px;
+        max-width: 100%;
+    }
+
+    .page-index #wrapper .container {
+        width: 943px;
+        max-width: 100%;
+        
+        @media (max-width: 480px) {
+            padding: 0;
+        }
+    }
+
+    .page-product #wrapper .container {
+        width: 960px;
+        max-width: 100%;
+    }
+
+    .page-index #wrapper .home-page-block {
+        width: 1159px;
+        max-width: 100%;
+        
+    }
+
+    .page-category #wrapper .container {
+        width: 1060px;
         max-width: 100%;
     }
 }

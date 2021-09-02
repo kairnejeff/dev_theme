@@ -27,6 +27,10 @@
                 //     }
                 //     margin-bottom: 30px;
                 // }
+                .col-md-6 {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
                 .product-cover {
                     img {
                         max-width: 400px;
@@ -184,7 +188,7 @@
                                 margin-left: -30px;
                             }
                             .label-info {
-                                width: 25%;
+                                width: 45%;
                                 span {
                                     letter-spacing: 2px;
                                     display: inline;
@@ -336,9 +340,11 @@
                         }
                         .info-all {
                             padding-left: 0;
+                            padding-bottom: 0;
                             padding-right: 0;
                             margin-right: 0;
                             margin: 0 auto;
+                            
                             .info-detailed {
                                 width: 100%;
                                 padding-left: 0;
