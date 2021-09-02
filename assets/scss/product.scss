@@ -294,9 +294,14 @@
                                             align-items: left;
                                         }
                                         .product-nutriscore {
+                                            display: flex;
+                                            .yuka {
+                                                margin-right: 40px;
+                                                margin-top: 14px;
+                                            }
                                             div {
                                                 img {
-                                                    width: 100px;
+                                                    max-height: 45px;
                                                 }
                                             }
                                         }
@@ -343,7 +348,6 @@
                                     @media (max-width: 860px) {
                                         overflow: scroll;
                                     }
-
                                     ul {
                                         display: flex;
                                         justify-content: space-between;
@@ -357,7 +361,6 @@
                                         @media (max-width: 480px) {
                                             width: 500px;
                                         }
-
                                         .menu-tab {
                                             font-size: 14px;
                                             text-transform: uppercase;
@@ -503,7 +506,6 @@
                                             }
                                         }
                                     }
-
                                     #en_savoir_plus,
                                     #preparation {
                                         @media (max-width: 768px) {
@@ -619,7 +621,6 @@
                 font-family: $roboto;
                 padding-bottom: 6px;
                 letter-spacing: 1.3px;
-                border-bottom: 2px solid $black;
             }
         }
         .products {
