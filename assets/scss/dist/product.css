@@ -436,13 +436,6 @@ html, body {
   font-family: "AlegreyaSans";
   line-height: 17px;
 }
-#wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler #allergenes {
-  margin-top: 20px;
-}
-#wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler #allergenes .product-nutriscore .nutriscore img {
-  width: 200px;
-  height: 108px;
-}
 @media (max-width: 768px) {
   #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler #mentions {
     padding-left: 20px;
@@ -499,6 +492,13 @@ html, body {
 }
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler #mentions .info-nutrition .list-nutrition .kj .number span:first-child {
   padding-top: 8px;
+}
+@media (max-width: 768px) {
+  #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler #en_savoir_plus,
+#wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler #preparation {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media (max-width: 768px) {
   #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler #history {
