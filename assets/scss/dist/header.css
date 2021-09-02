@@ -264,7 +264,8 @@ html, body {
 }
 @media (max-width: 1200px) and (max-width: 480px) {
   #header .header-nav {
-    padding: 5px 0 10px;
+    padding-bottom: 0;
+    padding: 10px 0 5px 0;
   }
 }
 @media (max-width: 1200px) {
