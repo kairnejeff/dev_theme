@@ -212,7 +212,7 @@ html, body {
 }
 @media (max-width: 768px) {
   #wrapper .container #main .product-container .content .product-information .product-actions .product-variants .product-variants-item {
-    padding: 12px 20px;
+    padding: 12px 26px;
   }
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-variants .product-variants-item #group_1 {
@@ -222,6 +222,11 @@ html, body {
   width: 35%;
   align-items: center;
   margin-bottom: 0;
+}
+@media (max-width: 480px) {
+  #wrapper .container #main .product-container .content .product-information .product-actions .product-variants .product-variants-item #group_1 {
+    margin-left: 30px;
+  }
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-variants .product-variants-item #group_1 li {
   width: 65%;
@@ -276,6 +281,11 @@ html, body {
   font-weight: 700;
   letter-spacing: 1px;
 }
+@media (max-width: 768px) {
+  #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-price .current-price span {
+    margin-right: 20px;
+  }
+}
 @media (max-width: 480px) {
   #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-price .current-price span {
     font-size: 20px;
@@ -287,7 +297,7 @@ html, body {
 @media (max-width: 768px) {
   #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty {
     margin-left: 0;
-    padding: 12px 20px;
+    padding: 12px 26px;
   }
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add {
@@ -699,6 +709,12 @@ html, body {
   letter-spacing: 1px;
   font-size: 11px;
   font-weight: 600;
+  margin-bottom: 90px;
+}
+@media (max-width: 480px) {
+  .boutique button {
+    margin-bottom: 115px;
+  }
 }
 .boutique button a {
   text-transform: uppercase;

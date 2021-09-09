@@ -10503,10 +10503,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     margin-bottom: .5rem
 }
 
-.product-quantity .qty {
-    margin-right: .4rem
-}
-
 @media (max-width: 769px) {
     .product-quantity .qty {
         margin-right: unset;
