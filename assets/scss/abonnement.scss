@@ -148,4 +148,36 @@
             line-height: 40px;
         }
     }
+    section.stripe-form {
+        box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 20%);
+        background: #fff;
+        position: relative;
+        margin: 0 20%;
+        #paymentFrm {
+            margin-left: 20%;
+            margin-right: 20%;
+            padding: 40px 0;
+            .panel-title {
+                margin-top: 40px;
+            }
+            .panel-body {
+                margin-top: 40px;
+                .form-group {
+                    .field {
+                        border: 1px solid black;
+                        padding: 10px;
+                    }
+                    #payBtn {
+                        margin-top: 20px;
+                        text-align: center;
+                        padding: .7rem 1.25rem;
+                        width: 100%;
+                        color: #fff;
+                        background-color: #000;
+                        border-color: transparent;
+                    }
+                }
+            }
+        }
+    }
 }
