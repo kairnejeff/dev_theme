@@ -152,7 +152,7 @@
                     }
                     position: relative;
                     .title_product {
-                        h2 {
+                        h1 {
                             padding-left: 8px;
                             line-height: 1.1;
                             border-left: 1px solid $black;
@@ -220,7 +220,6 @@
                                         width: 35%;
                                         align-items: center;
                                         margin-bottom: 0;
-
                                         @media (max-width: 480px) {
                                             margin-left: 30px;
                                         }
@@ -711,11 +710,9 @@
         font-size: 11px;
         font-weight: 600;
         margin-bottom: 90px;
-
         @media (max-width: 480px) {
             margin-bottom: 115px;
         }
-        
         a {
             text-transform: uppercase;
             color: $white;

@@ -75,7 +75,7 @@
         {block name='page_header_container'}
           {block name='page_header'}
             <div class="title_product">
-              <h2 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h2>
+              <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
               {if $product.description_short}
                 <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
               {/if}
