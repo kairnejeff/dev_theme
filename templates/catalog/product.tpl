@@ -411,7 +411,7 @@
       
       {assign var="breadcrumbLength" value=(count($breadcrumb.links)-2)}
      
-      <button> <a href= {$breadcrumb.links[$breadcrumbLength].url}> {$breadcrumb.links[$breadcrumbLength].title} </a> </button>
+      <button> <a href= {$breadcrumb.links[$breadcrumbLength].url}> Retour à la catégorie </a> </button>
     </div>
 
     {block name='product_footer'}
