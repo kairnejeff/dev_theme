@@ -65,7 +65,7 @@
        <div class="button">
          <a class="btn btn-primary" href="{$urls.pages.identity}">
           <span class="link-item">
-           {l s='Modifier les informations' d='Shop.Theme.Customeraccount'}
+           {l s='MODIFIER MES INFORMATIONS' d='Shop.Theme.Customeraccount'}
          </span>
          </a>
        </div>
@@ -90,7 +90,7 @@
                <div class="button">
                    <a class="btn btn-primary" href="{$urls.pages.history}">
                   <span class="link-item">
-                   {l s='GÉRER LES SOUSCRIPTIONS' d='Shop.Theme.Customeraccount'}
+                   {l s='GÉRER MES COMMANDES' d='Shop.Theme.Customeraccount'}
                   </span>
                    </a>
                </div>
@@ -113,7 +113,7 @@
          {if $customer.addresses|count}
            <a class="btn btn-primary" id="addresses-link" href="{$urls.pages.addresses}">
            <span class="link-item">
-             {l s='GÉRER LES ADRESSES' d='Shop.Theme.Customeraccount'}
+             {l s='GÉRER MES ADRESSES' d='Shop.Theme.Customeraccount'}
            </span>
            </a>
          {else}
@@ -140,7 +140,7 @@
              <div class="button">
                  <a class="btn btn-primary" href="{$urls.pages.identity}">
                   <span class="link-item">
-                   {l s='GÉRER LES SOUSCRIPTIONS' d='Shop.Theme.Customeraccount'}
+                   {l s='GÉRER MES SOUSCRIPTIONS' d='Shop.Theme.Customeraccount'}
                   </span>
                  </a>
              </div>
@@ -154,7 +154,7 @@
              <div class="button">
                  <a class="btn btn-primary" href="{$urls.pages.order_slip}">
                   <span class="link-item">
-                   {l s='GÉRER LES SOUSCRIPTIONS' d='Shop.Theme.Customeraccount'}
+                   {l s='GÉRER MES AVOIRS' d='Shop.Theme.Customeraccount'}
                   </span>
                  </a>
              </div>
@@ -169,7 +169,7 @@
            <div class="button">
                <a class="btn btn-primary" href="{$urls.pages.discount}">
               <span class="link-item">
-               {l s='GÉRER LES SOUSCRIPTIONS' d='Shop.Theme.Customeraccount'}
+               {l s='GÉRER MES CODES PROMOS' d='Shop.Theme.Customeraccount'}
               </span>
                </a>
            </div>
@@ -185,7 +185,7 @@
            <div class="button">
                <a class="btn btn-primary" href="{$urls.pages.order_follow}">
           <span class="link-item">
-           {l s='GÉRER LES SOUSCRIPTIONS' d='Shop.Theme.Customeraccount'}
+           {l s='GÉRER LES RETOURS' d='Shop.Theme.Customeraccount'}
           </span>
                </a>
            </div>
