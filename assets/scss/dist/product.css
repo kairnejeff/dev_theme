@@ -132,7 +132,7 @@ html, body {
 #wrapper .container #main .product-container .info-detailed .info-detailed-title h2 {
   padding: 15px 0;
   margin: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #d6d6d6;
 }
 #wrapper .container #main .product-container .info-detailed .info-detailed-title i {
   position: absolute;
@@ -205,7 +205,7 @@ html, body {
 #wrapper .container #main .product-container .content .product-information .product-actions .product-variants .product-variants-item {
   display: flex;
   align-items: center;
-  border-top: 1px solid grey;
+  border-top: 1px solid #d6d6d6;
   margin-bottom: 0;
   padding: 12px 0;
   height: 60px;
@@ -251,8 +251,8 @@ html, body {
   flex-direction: column;
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty {
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
   align-items: center;
   padding: 12px 0;
   height: 60px;
@@ -393,9 +393,11 @@ html, body {
   align-items: center;
   height: 100%;
   letter-spacing: 1.8px;
+  opacity: 0.5;
 }
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .menu-tab.active {
   border-bottom: 2px solid #464646;
+  opacity: 1;
 }
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .menu-tab.active a {
   color: #464646;
@@ -419,7 +421,7 @@ html, body {
 }
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler {
   width: 100%;
-  padding-left: 0;
+  padding: 0 15px;
   display: none;
   height: 205px;
   border-bottom: 1px solid #d8d8d8;

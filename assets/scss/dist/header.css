@@ -145,6 +145,7 @@ html, body {
     max-height: 100%;
     margin-top: 80px;
     border: none;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) and (max-width: 480px) {
@@ -265,7 +266,7 @@ html, body {
 @media (max-width: 1200px) and (max-width: 480px) {
   #header .header-nav {
     padding-bottom: 0;
-    padding: 10px 0 5px 0;
+    padding: 10px 14px 5px 14px;
   }
 }
 @media (max-width: 1200px) {
@@ -407,7 +408,13 @@ html, body {
     outline: 0;
   }
   #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul li .menu-next {
-    right: 5px;
+    width: 100%;
+    height: 100%;
+  }
+  #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul li .menu-next span {
+    position: absolute;
+    right: 30px;
+    top: 0px;
   }
   #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul li button.menu-before {
     left: 0;

@@ -129,7 +129,7 @@
                         h2 {
                             padding: 15px 0;
                             margin: 0;
-                            border-top: 1px solid $grey;
+                            border-top: 1px solid $grey_footer;
                         }
                         i {
                             position: absolute;
@@ -206,7 +206,7 @@
                                 .product-variants-item {
                                     display: flex;
                                     align-items: center;
-                                    border-top: 1px solid grey;
+                                    border-top: 1px solid $grey_footer;
                                     margin-bottom: 0;
                                     padding: 12px 0;
                                     height: 60px;
@@ -250,8 +250,8 @@
                                 .product-quantity {
                                     flex-direction: column;
                                     .qty {
-                                        border-top: 1px solid grey;
-                                        border-bottom: 1px solid grey;
+                                        border-top: 1px solid $grey_footer;
+                                        border-bottom: 1px solid $grey_footer;
                                         align-items: center;
                                         padding: 12px 0;
                                         height: 60px;
@@ -381,8 +381,10 @@
                                             align-items: center;
                                             height: 100%;
                                             letter-spacing: 1.8px;
+                                            opacity: .5;
                                             &.active {
                                                 border-bottom: 2px solid $greylight;
+                                                opacity: 1;
                                                 a {
                                                     color: $greylight;
                                                     text-decoration: none;
