@@ -761,7 +761,8 @@
                     width: 694px;
                     height: 462px;
                     @media screen and (max-width: 767px) {
-                        width: 100%;
+                        width: 470px;
+                        height: 313px;
                         position: absolute;
                         left: -15px;
                     }
@@ -782,7 +783,8 @@
                     width: 694px;
                     height: 461px;
                     @media screen and (max-width: 767px) {
-                        width: 100%;
+                        width: 470px;
+                        height: 312.2px;
                         position: absolute;
                         right: -15px;
                     }
@@ -802,7 +804,8 @@
                     width: 694px;
                     height: 520px;
                     @media screen and (max-width: 767px) {
-                        width: 100%;
+                        width: 470px;
+                        height: 352.16px;
                         position: absolute;
                         left: -15px;
                     }
@@ -833,7 +836,7 @@
                     top: auto;
                 }
                 @media (max-width: 480px) {
-                    bottom: -30px;
+                    bottom: 50px;
                     right: -17px;
                     width: 100%;
                 }
