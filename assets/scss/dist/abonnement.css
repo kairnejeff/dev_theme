@@ -89,19 +89,22 @@ html, body {
   }
 }
 #content .bloc-abonnement .bloc-abonnement-text .avantages h3 {
-  font-size: 25px;
+  font-size: 24px;
   text-align: center;
 }
 #content .bloc-abonnement .bloc-abonnement-text .avantages h3 span {
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 21px;
   display: block;
   text-align: center;
   margin-top: 10px;
+  font-family: "AlegreyaSans";
 }
 @media (min-width: 769px) {
   #content .bloc-abonnement .bloc-abonnement-text .avantages .avantage {
     border-right: 1px solid;
     padding-right: 30px;
+    height: 100%;
   }
   #content .bloc-abonnement .bloc-abonnement-text .avantages .avantage:last-child {
     border-right: unset;

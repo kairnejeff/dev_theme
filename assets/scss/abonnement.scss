@@ -61,19 +61,22 @@
                 }
                 margin-top: 20px;
                 h3 {
-                    font-size: 25px;
+                    font-size: 24px;
                     text-align: center;
                     span {
-                        font-size: 18px;
+                        font-size: 16px;
+                        line-height: 21px;;
                         display: block;
                         text-align: center;
                         margin-top: 10px;
+                        font-family: $alegreya;
                     }
                 }
                 .avantage {
                     @media (min-width: 769px) {
                         border-right: 1px solid;
                         padding-right: 30px;
+                        height: 100%;
                         &:last-child {
                             border-right: unset;
                             padding-right: unset;
