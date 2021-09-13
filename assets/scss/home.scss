@@ -304,6 +304,7 @@
     width: 943px;
     max-width: 100%;
     margin: 0 auto;
+    margin-top: 90px;
     
     @media (max-width: 480px) {
         padding: 0;
@@ -318,11 +319,10 @@
 .page-index #wrapper .home-page-block {
     width: 1159px;
     max-width: 100%;
-    
 }
 
 .page-category #wrapper .container #products {
     width: 1060px;
     max-width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
 }
