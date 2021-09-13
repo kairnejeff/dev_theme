@@ -1,3 +1,5 @@
+@import "global.scss";
+
 #content {
     .abonnement-header {
         width: 100%;
@@ -23,6 +25,12 @@
         }
         padding: 40px 120px;
         text-align: center;
+
+        p {
+            font-family: $unna;
+            font-size: 21px;
+            line-height: 25px;
+        }
     }
     .bloc-abonnement {
         @media (max-width: 768px) {
@@ -38,8 +46,8 @@
             h2 {
                 text-align: center;
                 padding: 0 10px;
-                line-height: 40px;
-                font-size: 30px;
+                line-height: 27px;
+                font-size: 24px;
                 text-transform: uppercase;
             }
             .avantages {
