@@ -34,7 +34,7 @@ html, body {
   width: 100%;
 }
 .container #main #content .featured-products {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 @media (max-width: 480px) {
   .container #main #content .featured-products {
@@ -320,8 +320,7 @@ html, body {
 .page-index #wrapper .container .home-page-block {
   width: 943px;
   max-width: 100%;
-  margin: 0 auto;
-  margin-top: 90px;
+  margin: 50px auto;
 }
 @media (max-width: 480px) {
   .page-index #wrapper .container .home-page-block {
