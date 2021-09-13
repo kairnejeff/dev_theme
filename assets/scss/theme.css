@@ -9781,6 +9781,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     margin-bottom: 1.5rem;
     text-align: center;
     padding: 40px;
+    background-size: contain
 }
 
 #custom-text h2,
