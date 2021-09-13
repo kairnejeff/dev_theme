@@ -66,7 +66,8 @@
             <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
           {/if} 
         {/block}
-        <div class="add-to-cart-or-refresh">
+      </div>
+      <div class="add-to-cart-or-refresh">
         <form action="{$urls.pages.cart}" method="post" >
             <input type="hidden" name="token" value="{$static_token}">
             <input type="hidden" name="id_product" value="{$product.id}" class="product_page_product_id">
@@ -80,7 +81,6 @@
               {/if}
           </form>
         </div>
-      </div>
       {block name='product_price_and_shipping'}
         
         {if $product.show_price}
