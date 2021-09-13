@@ -201,7 +201,8 @@ html, body {
   margin-bottom: 1rem;
 }
 #footer .block-social .linkedin,
-#footer .block-social .twitter {
+#footer .block-social .twitter,
+#footer .block-social .pinterest {
   display: none;
 }
 #footer .blockreassurance {
