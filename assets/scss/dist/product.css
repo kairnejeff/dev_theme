@@ -155,13 +155,13 @@ html, body {
     height: 100%;
   }
 }
-#wrapper .container #main .product-container .content .title_product h2 {
+#wrapper .container #main .product-container .content .title_product h1 {
   padding-left: 8px;
   line-height: 1.1;
   border-left: 1px solid #000;
   font-size: 50px;
 }
-#wrapper .container #main .product-container .content .title_product h2::first-letter {
+#wrapper .container #main .product-container .content .title_product h1::first-letter {
   text-transform: lowercase;
 }
 #wrapper .container #main .product-container .content .product-information {
@@ -715,7 +715,7 @@ html, body {
 }
 @media (max-width: 480px) {
   .boutique button {
-    margin-bottom: 115px;
+    margin-bottom: 40px;
   }
 }
 .boutique button a {
