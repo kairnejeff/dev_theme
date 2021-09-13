@@ -39,7 +39,8 @@
 
                 .product-cover {
                     img {
-                        max-width: 400px;
+                        width: 400px;
+                        height: 400px;
                         @media (max-width: 768px) {
                             max-width: 100%;
                         }
@@ -756,6 +757,8 @@
                 // height: 462px;
                 position: relative;
                 img {
+                    width: 694px;
+                    height: 462px;
                     @media screen and (max-width: 767px) {
                         width: 100%;
                         position: absolute;
@@ -771,11 +774,12 @@
                 }
             }
             .secret_cuisine {
-                // width: 694px;
-                // height: 461px;
+                
                 float: right;
                 position: relative;
                 img {
+                    width: 694px;
+                    height: 461px;
                     @media screen and (max-width: 767px) {
                         width: 100%;
                         position: absolute;
@@ -792,10 +796,10 @@
                 }
             }
             .recyclage {
-                // width: 694px;
-                // height: 520px;
                 position: relative;
                 img {
+                    width: 694px;
+                    height: 520px;
                     @media screen and (max-width: 767px) {
                         width: 100%;
                         position: absolute;
@@ -828,7 +832,7 @@
                     top: auto;
                 }
                 @media (max-width: 480px) {
-                    bottom: 50px;
+                    bottom: -30px;
                     right: -17px;
                     width: 100%;
                 }

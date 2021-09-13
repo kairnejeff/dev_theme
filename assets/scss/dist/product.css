@@ -51,7 +51,8 @@ html, body {
   }
 }
 #wrapper .container #main .product-container .product-cover img {
-  max-width: 400px;
+  width: 400px;
+  height: 400px;
 }
 @media (max-width: 768px) {
   #wrapper .container #main .product-container .product-cover img {
@@ -759,6 +760,10 @@ html, body {
 .actu .info-actu .flex .provenance {
   position: relative;
 }
+.actu .info-actu .flex .provenance img {
+  width: 694px;
+  height: 462px;
+}
 @media screen and (max-width: 767px) {
   .actu .info-actu .flex .provenance img {
     width: 100%;
@@ -781,6 +786,10 @@ html, body {
   float: right;
   position: relative;
 }
+.actu .info-actu .flex .secret_cuisine img {
+  width: 694px;
+  height: 461px;
+}
 @media screen and (max-width: 767px) {
   .actu .info-actu .flex .secret_cuisine img {
     width: 100%;
@@ -802,6 +811,10 @@ html, body {
 }
 .actu .info-actu .flex .recyclage {
   position: relative;
+}
+.actu .info-actu .flex .recyclage img {
+  width: 694px;
+  height: 520px;
 }
 @media screen and (max-width: 767px) {
   .actu .info-actu .flex .recyclage img {
@@ -843,7 +856,7 @@ html, body {
 }
 @media (max-width: 480px) {
   .actu .info-actu .flex .text-info {
-    bottom: 50px;
+    bottom: -30px;
     right: -17px;
     width: 100%;
   }
