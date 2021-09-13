@@ -179,6 +179,12 @@
             }
         }
     }
+    .block-social {
+        .linkedin,
+        .twitter {
+            display: none;
+        }
+    }
     .blockreassurance {
         @media (max-width: 480px) {
             margin-top: 30px;
