@@ -725,9 +725,6 @@
 .actu {
     margin-top: 80px;
     .info-actu {
-        @media screen and (max-width: 480px) {
-            height: 500px;
-        }
         h2 {
             margin-bottom: 80px;
             font-family: $roboto;
@@ -825,7 +822,7 @@
                     top: auto;
                 }
                 @media (max-width: 480px) {
-                    bottom: 170px;
+                    bottom: 50px;
                     right: -17px;
                     width: 100%;
                 }
@@ -836,6 +833,7 @@
                     line-height: 30px;
                     @media screen and (max-width: 767px) {
                         margin-left: 0;
+                        line-height: 25px;
                     }
                 }
             }

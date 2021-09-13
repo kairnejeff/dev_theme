@@ -726,11 +726,6 @@ html, body {
 .actu {
   margin-top: 80px;
 }
-@media screen and (max-width: 480px) {
-  .actu .info-actu {
-    height: 500px;
-  }
-}
 .actu .info-actu h2 {
   margin-bottom: 80px;
   font-family: "RobotoMono";
@@ -843,7 +838,7 @@ html, body {
 }
 @media (max-width: 480px) {
   .actu .info-actu .flex .text-info {
-    bottom: 170px;
+    bottom: 50px;
     right: -17px;
     width: 100%;
   }
@@ -857,6 +852,7 @@ html, body {
 @media screen and (max-width: 767px) {
   .actu .info-actu .flex .text-info p {
     margin-left: 0;
+    line-height: 25px;
   }
 }
 .actu .secret .text-info {
