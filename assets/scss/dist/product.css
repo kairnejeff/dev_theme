@@ -56,7 +56,8 @@ html, body {
 }
 @media (max-width: 768px) {
   #wrapper .container #main .product-container .product-cover img {
-    max-width: 100%;
+    width: 470px;
+    height: 470px;
   }
 }
 #wrapper .container #main .product-container .product-cover #carousel {
