@@ -35,29 +35,29 @@ html, body {
 }
 @media (max-width: 480px) {
   .container #main #content #carousel ul li a figure img {
-    height: 212.5px;
-    width: 480px;
+    max-height: 212.5px;
+    max-width: 480px;
     max-width: 100%;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .container #main #content #carousel ul li a figure img {
-    height: 340px;
-    width: 769px;
+    max-height: 340px;
+    max-width: 769px;
     max-width: 100%;
   }
 }
 @media (min-width: 769px) and (max-width: 1200px) {
   .container #main #content #carousel ul li a figure img {
-    height: 531px;
-    width: 1200px;
+    max-height: 531px;
+    max-width: 1200px;
     max-width: 100%;
   }
 }
 @media (min-width: 1201px) and (max-width: 1920px) {
   .container #main #content #carousel ul li a figure img {
-    height: 850px;
-    width: 1920px;
+    max-height: 850px;
+    max-width: 1920px;
     max-width: 100%;
   }
 }
@@ -333,16 +333,6 @@ html, body {
 
 #wrapper .container {
   max-width: 100%;
-}
-@media (max-width: 1200px) {
-  #wrapper .container {
-    width: 961px;
-  }
-}
-@media (max-width: 767px) {
-  #wrapper .container {
-    width: unset;
-  }
 }
 
 .page-index #wrapper .container .home-page-block {
