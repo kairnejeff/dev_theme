@@ -303,7 +303,8 @@
 .page-index #wrapper .container .home-page-block {
     width: 943px;
     max-width: 100%;
-    margin: 50px auto;
+    margin: 0px auto;
+    margin-top: 90px;
     
     @media (max-width: 480px) {
         padding: 0;
