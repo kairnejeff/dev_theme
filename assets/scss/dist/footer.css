@@ -26,6 +26,11 @@ html, body {
   position: relative;
   padding-top: 0;
 }
+@media (max-width: 769px) {
+  #footer {
+    padding: 0 15px;
+  }
+}
 #footer .footer-container .container {
   margin: 0 auto;
 }

@@ -2,6 +2,9 @@
 #footer {
     position: relative;
     padding-top: 0;
+    @media (max-width: 769px) {
+        padding: 0 15px;
+    }
     .footer-container {
         .container {
             margin: 0 auto;
