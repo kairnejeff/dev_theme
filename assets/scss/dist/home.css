@@ -98,7 +98,7 @@ html, body {
 @media (max-width: 481px) {
   .container #main #content .featured-products .products .owl-stage {
     padding-bottom: 15px;
-    height: 650px;
+    height: 550px;
     position: relative;
   }
 }
@@ -429,7 +429,8 @@ html, body {
   margin: 0 auto;
 }
 
-#stores #wrapper .container {
+#stores #wrapper .container,
+#my-account #wrapper .container {
   width: 1159px;
   margin: 0 auto;
 }
