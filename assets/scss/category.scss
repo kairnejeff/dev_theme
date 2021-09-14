@@ -132,12 +132,9 @@
             padding-right: 15px;
         }
         >div {
-            margin-bottom: 60px;
+            margin-bottom: 100px;
             position: relative;
 
-            @media (max-width: 768px) {
-                margin-bottom: 60px;
-            }
             article {
                 .product-description {
                     position: relative;
@@ -171,12 +168,8 @@
                 }
                 .add-to-cart-or-refresh {
                     position: absolute;
-                    top: calc(100% + 10px);
+                    top: calc(100% + 40px);
                     left: 0;
-
-                    @media (max-width: 480px) {
-                       top: calc(100% + 40px);
-                    }
 
                     form {
                         .btn {
