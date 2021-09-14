@@ -139,6 +139,11 @@ html, body {
   margin-bottom: 60px;
   position: relative;
 }
+@media (max-width: 768px) {
+  #js-product-list .products > div {
+    margin-bottom: 60px;
+  }
+}
 #js-product-list .products > div article .product-description {
   position: relative;
 }
@@ -184,6 +189,11 @@ html, body {
   position: absolute;
   top: calc(100% + 10px);
   left: 0;
+}
+@media (max-width: 480px) {
+  #js-product-list .products > div article .add-to-cart-or-refresh {
+    top: calc(100% + 40px);
+  }
 }
 #js-product-list .products > div article .add-to-cart-or-refresh form .btn {
   border: none;

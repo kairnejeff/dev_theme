@@ -138,6 +138,10 @@
         >div {
             margin-bottom: 60px;
             position: relative;
+
+            @media (max-width: 768px) {
+                margin-bottom: 60px;
+            }
             article {
                 .product-description {
                     position: relative;
@@ -173,6 +177,11 @@
                     position: absolute;
                     top: calc(100% + 10px);
                     left: 0;
+
+                    @media (max-width: 480px) {
+                       top: calc(100% + 40px);
+                    }
+
                     form {
                         .btn {
                             border: none;
