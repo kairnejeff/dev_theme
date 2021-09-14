@@ -39,6 +39,7 @@ html, body {
 }
 #footer .footer-container .container .row .logo {
   width: 150px;
+  margin-left: 60px;
 }
 @media (max-width: 769px) {
   #footer .footer-container .container .row .logo {

@@ -337,7 +337,13 @@
     max-width: 100%;
 }
 
-.page-category #wrapper .container #products {
+#category #wrapper .container #products {
+    width: 1060px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#page-search #wrapper .container {
     width: 1060px;
     max-width: 100%;
     margin: 0 auto;
@@ -362,3 +368,4 @@
     width: 1159px;
     margin: 0 auto;
 }
+
