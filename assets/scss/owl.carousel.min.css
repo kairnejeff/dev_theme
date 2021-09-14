@@ -65,10 +65,10 @@
     display: none
 }
 
-.no-js .owl-carousel,
+/* .no-js .owl-carousel,
 .owl-carousel.owl-loaded {
     display: block
-}
+} */
 
 .owl-carousel .owl-dot,
 .owl-carousel .owl-nav .owl-next,
