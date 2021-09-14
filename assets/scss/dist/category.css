@@ -190,6 +190,11 @@ html, body {
   background: none;
   outline: none;
 }
+@media (max-width: 480px) {
+  #js-product-list .products > div article .add-to-cart-or-refresh form input:last-child {
+    width: 65%;
+  }
+}
 #js-product-list .products > div article .product-price-and-shipping {
   position: absolute;
   right: 0;
@@ -200,7 +205,7 @@ html, body {
 }
 @media (max-width: 480px) {
   #js-product-list .products > div article .product-price-and-shipping {
-    top: unset;
+    top: 90%;
     left: 10px;
   }
 }

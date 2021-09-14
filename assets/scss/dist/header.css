@@ -255,6 +255,7 @@ html, body {
 @media (max-width: 1200px) and (max-width: 767px) {
   #header {
     border-bottom: 1px solid #d8d8d8 !important;
+    padding: 0 15px;
   }
 }
 @media (max-width: 1200px) {

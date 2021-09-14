@@ -179,7 +179,17 @@
                             background: none;
                             outline: none;
                         }
+
+                        input {
+                            &:last-child {
+                                @media (max-width: 480px) {
+                                    width: 65%;
+                                }
+                            }
+                        }
                     }
+
+                    
                 }
                 .product-price-and-shipping {
                     position: absolute;
@@ -189,7 +199,7 @@
                         font-size: 14px;
                     }
                     @media (max-width: 480px) {
-                        top: unset;
+                        top: 90%;
                         left: 10px;
                         ;
                     }
