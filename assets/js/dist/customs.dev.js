@@ -434,3 +434,6 @@ $(document).ready(function (e) {
     $(this).prev().css('display', 'block');
   });
 });
+$('.add-card-button').on('click', 'button:not([type="submit"])', function (e) {
+  e.preventDefault();
+});

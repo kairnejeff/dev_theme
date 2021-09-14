@@ -65,16 +65,15 @@
                     .owl-stage {
                         @media (max-width: 481px) {
                             padding-bottom: 15px;
-                            height: 550px;
+                            height: 650px;
                             position: relative;
                         }
                     }
                     >div {
                         @media (max-width: 480px) {
                             width: 100%;
-                            margin-bottom: 30px;
                         }
-                        margin-bottom: 50px;
+                        margin-bottom: 100px;
                         position: relative;
                         article {
                             height: 100%;
@@ -140,12 +139,65 @@
                                     position: absolute;
                                     top: calc(100% + 10px);
                                     left: 0;
+
                                     form {
-                                        .btn {
+                                        .add-card-button {
+                                            border: 2px solid #ddd;
+                                            display: inline-flex;
+                                            .up,
+                                            .down {
+                                                outline:none;
+                                                -webkit-appearance: none;
+                                                background-color: transparent;
+                                                border: none;
+                                                align-items: center;
+                                                justify-content: center;
+                                                width: 2rem;
+                                                height: 12px;
+                                                cursor: pointer;
+                                                margin: 0;
+                                                position: relative;
+                                                font-size: 24px;
+                                                padding-top: 5px;
+                                            }
+                                            
+                                            .up:before,
+                                            .down:after {
+                                                display: inline-block;
+                                                position: absolute;
+                                                content: '';
+                                                width: 1rem;
+                                                height: 2px;
+                                                transform: translate(-50%, -50%);
+                                            }
+
+                                            input {
+                                                max-width: 4rem;
+                                                padding: .5rem;
+                                                border: solid #ddd;
+                                                border-width: 0 2px;
+                                                height: 2rem;
+                                                text-align: center;
+                                            }
+                                        }
+
+                                        .add-to-cart {
                                             border: none;
                                             background: none;
                                             outline: none;
-                                        }
+                                        }                            
+                
+                                        // .product-quantity {
+                                        //     .qty {
+                                        //         .input-group {
+                                        //             .input-group-btn-vertical {
+                                        //                 .btn {
+                                        //                     border: 1px solid rgba(0,0,0,.25);
+                                        //                 }
+                                        //             }
+                                        //         }
+                                        //     }
+                                        // }
                                     }
                                 }
                                 .product-price-and-shipping {

@@ -446,3 +446,9 @@ $(document).ready(function(e) {
     )
 
 })
+
+
+$('.add-card-button').on('click', 'button:not([type="submit"])', function(e){
+    e.preventDefault();
+  })
+

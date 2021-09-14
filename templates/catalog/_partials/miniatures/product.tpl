@@ -73,16 +73,41 @@
         <form action="{$urls.pages.cart}" method="post" >
             <input type="hidden" name="token" value="{$static_token}">
             <input type="hidden" name="id_product" value="{$product.id}" class="product_page_product_id">
-            <input name="qty" type="number" min="1" id="id_product_{$product.id}"> 
-            {* <input
+            <div class="add-card-button">
+              <button class="down" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" > - </button>
+              <input name="qty" type="number" class="value" min="1" id="id_product_{$product.id}"> 
+              <button class="up" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"> + </button>
+            </div>
+             {*<input
             type="number"
             name="qty"
             id="quantity_wanted"
             value="{$product.quantity_wanted}"
             class="input-group"
             min="{$product.minimal_quantity}"
-            aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
+            aria-label="{l s='Quantity' d='Shop.Theme.Actions'}" 
           > *}
+
+          
+          {* <div class="product-quantity clearfix">
+            <div class="qty">
+              <div class="input-group bootstrap-touchspin">
+                <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                <input type="number" name="qty" id="quantity_wanted" value="1" class="input-group form-control" min="1" aria-label="Quantité" style="display: block;">
+                <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                <span class="input-group-btn-vertical">
+                <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-up" type="button"><i class="material-icons touchspin-up"></i></button>
+                <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-down" type="button"><i class="material-icons touchspin-down"></i></button>
+                </span>
+              </div>
+            </div>
+          </div> *}
+
+
+
+
+
+
             {if !$configuration.is_catalog}
                     {if (!isset($product.customization_required) || !$product.customization_required) && ($product.allow_oosp || $product.quantity > 0)}
                       <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}><span class="icon-panier-off"></span></button>
