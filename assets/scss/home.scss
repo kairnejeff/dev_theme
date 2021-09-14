@@ -143,7 +143,7 @@
                                 }
                                 .product-price-and-shipping {
                                     position: absolute;
-                                    top: calc(100% + 10px);
+                                    top: calc(100% + 20px);
                                     right: 0;
                                     .price {
                                         font-family: $roboto;
@@ -349,5 +349,15 @@
 
 #module-kj_abonnement-showAbonnement #wrapper .container {
     width: 962px;
+    margin: 0 auto;
+}
+
+#cart #wrapper .container {
+    width: 1159px;
+    margin: 0 auto;
+}
+
+#stores #wrapper .container {
+    width: 1159px;
     margin: 0 auto;
 }

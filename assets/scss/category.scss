@@ -171,18 +171,14 @@
                 }
                 .add-to-cart-or-refresh {
                     position: absolute;
-                    top: 0;
-                    right: 0;
+                    top: calc(100% + 10px);
+                    left: 0;
                     form {
                         .btn {
                             border: none;
                             background: none;
                             outline: none;
                         }
-                    }
-                    @media (max-width: 480px) {
-                        bottom: -28px;
-                        top: unset;
                     }
                 }
                 .product-price-and-shipping {

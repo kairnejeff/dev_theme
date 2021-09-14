@@ -182,19 +182,13 @@ html, body {
 }
 #js-product-list .products > div article .add-to-cart-or-refresh {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: calc(100% + 10px);
+  left: 0;
 }
 #js-product-list .products > div article .add-to-cart-or-refresh form .btn {
   border: none;
   background: none;
   outline: none;
-}
-@media (max-width: 480px) {
-  #js-product-list .products > div article .add-to-cart-or-refresh {
-    bottom: -28px;
-    top: unset;
-  }
 }
 #js-product-list .products > div article .product-price-and-shipping {
   position: absolute;
