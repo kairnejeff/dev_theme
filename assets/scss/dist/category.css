@@ -55,6 +55,12 @@ html, body {
   width: 100%;
 }
 
+@media (max-width: 760px) {
+  #category #products .block-category-inner {
+    padding: 0 15px;
+  }
+}
+
 .grid-controle .grid-button {
   background-color: unset;
   border: unset;

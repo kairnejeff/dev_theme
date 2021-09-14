@@ -36,6 +36,13 @@
     }
 }
 
+
+ #category #products .block-category-inner {
+    @media (max-width: 760px) {
+        padding: 0 15px;
+    }
+ }
+
 .grid-controle {
     .grid-button {
         background-color: unset;

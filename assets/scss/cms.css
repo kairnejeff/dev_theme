@@ -52,7 +52,7 @@
 .page-cms .page-content h2 {
     font-size: 30px;
     line-height: 30px;
-    text-transform: none!important;
+    text-transform: none;
 }
 
 @media screen and (max-width: 768px) {
