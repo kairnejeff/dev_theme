@@ -73,7 +73,7 @@
         <form action="{$urls.pages.cart}" method="post" >
             <input type="hidden" name="token" value="{$static_token}">
             <input type="hidden" name="id_product" value="{$product.id}" class="product_page_product_id">
-            <input name="qty" id="id_product_{$product.id}"> 
+            <input name="qty" type="number" id="id_product_{$product.id}"> 
             {* <input
             type="number"
             name="qty"

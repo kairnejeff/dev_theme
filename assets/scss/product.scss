@@ -28,8 +28,8 @@
                 //     margin-bottom: 30px;
                 // }
                 .col-md-6 {
-                    padding-left: 0;
-                    padding-right: 0;
+                    padding-left: 15px;
+                    padding-right: 15px;
                 }
                 .content {
                     @media (max-width: 768px) {
@@ -39,12 +39,7 @@
 
                 .product-cover {
                     img {
-                        width: 400px;
-                        height: 400px;
-                        @media (max-width: 768px) {
-                            width: 375px;
-                            height: 375px;
-                        }
+                        max-width: 100%;
                     }
                     #carousel {
                         margin-top: 20px;
