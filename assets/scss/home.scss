@@ -30,7 +30,7 @@
                                         max-width: 100%;
                                     }
                                     @media (min-width: 1201px) and (max-width: 1920px) {
-                                        max-height: 850px;
+                                        max-height: 675px;
                                         max-width: 1920px;
                                         max-width: 100%;
                                     }
@@ -365,6 +365,12 @@
 }
 
 #stores #wrapper .container {
+    width: 1159px;
+    margin: 0 auto;
+}
+
+.page-cms .breadcrumb,
+.page-cms .cms-category-nav {
     width: 1159px;
     margin: 0 auto;
 }

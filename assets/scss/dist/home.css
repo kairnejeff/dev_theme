@@ -56,7 +56,7 @@ html, body {
 }
 @media (min-width: 1201px) and (max-width: 1920px) {
   .container #main #content #carousel ul li a figure img {
-    max-height: 850px;
+    max-height: 675px;
     max-width: 1920px;
     max-width: 100%;
   }
@@ -387,6 +387,12 @@ html, body {
 }
 
 #stores #wrapper .container {
+  width: 1159px;
+  margin: 0 auto;
+}
+
+.page-cms .breadcrumb,
+.page-cms .cms-category-nav {
   width: 1159px;
   margin: 0 auto;
 }
