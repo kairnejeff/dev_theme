@@ -81,8 +81,27 @@
     left: 30px
 }
 
+@media (max-width: 480px) {
+    #truspilot-avis .owl-prev {
+        left: 10px
+    }
+}
+
 #truspilot-avis .owl-next {
     right: 5px
+}
+
+@media (max-width: 480px) {
+    #truspilot-avis .owl-next {
+        right: -5px
+    }
+}
+
+@media (max-width: 480px) {
+    #truspilot-avis .slide-text {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }
 
 #truspilot-avis .owl-nav .nav-btn {

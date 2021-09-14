@@ -160,28 +160,29 @@
                     @media (max-width: 480px) {
                         height: auto;
                     }
-                    .add-to-cart-or-refresh {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        form {
-                            .btn {
-                                border: none;
-                                background: none;
-                                outline: none;
-                            }
-                        }
-                        @media (max-width: 480px) {
-                            bottom: -28px;
-                            top: unset;
-                        }
-                    }
+                    
                     @media (max-width: 768px) {
                         border-left: 1px solid $black;
                         padding-left: 8px;
                     }
                     @media (max-width: 480px) {
                         padding-bottom: 0!important;
+                    }
+                }
+                .add-to-cart-or-refresh {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    form {
+                        .btn {
+                            border: none;
+                            background: none;
+                            outline: none;
+                        }
+                    }
+                    @media (max-width: 480px) {
+                        bottom: -28px;
+                        top: unset;
                     }
                 }
                 .product-price-and-shipping {

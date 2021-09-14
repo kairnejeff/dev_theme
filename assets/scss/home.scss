@@ -128,16 +128,16 @@
                                     &:after {
                                         content: "";
                                     }
-                                    .add-to-cart-or-refresh {
-                                        position: absolute;
-                                        top: 0;
-                                        right: 0;
-                                        form {
-                                            .btn {
-                                                border: none;
-                                                background: none;
-                                                outline: none;
-                                            }
+                                }
+                                .add-to-cart-or-refresh {
+                                    position: absolute;
+                                    top: calc(100% + 10px);
+                                    left: 0;
+                                    form {
+                                        .btn {
+                                            border: none;
+                                            background: none;
+                                            outline: none;
                                         }
                                     }
                                 }

@@ -9776,12 +9776,20 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .custom-text {
-    background: #fff url(../img/pointsnoirs.png) repeat 50%;
+    background: #fff url(../img/pointsnoirs.png);
     border-radius: 2px;
     margin-bottom: 1.5rem;
     text-align: center;
-    padding: 40px;
+    padding: 40px 23px;
     background-size: contain
+}
+
+@media (max-width:991px) {
+    .featured-products .products {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
 }
 
 #custom-text h2,

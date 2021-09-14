@@ -169,12 +169,12 @@ html, body {
 .container #main #content .featured-products .products > div article .thumbnail-container .product-description:after {
   content: "";
 }
-.container #main #content .featured-products .products > div article .thumbnail-container .product-description .add-to-cart-or-refresh {
+.container #main #content .featured-products .products > div article .thumbnail-container .add-to-cart-or-refresh {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: calc(100% + 10px);
+  left: 0;
 }
-.container #main #content .featured-products .products > div article .thumbnail-container .product-description .add-to-cart-or-refresh form .btn {
+.container #main #content .featured-products .products > div article .thumbnail-container .add-to-cart-or-refresh form .btn {
   border: none;
   background: none;
   outline: none;
