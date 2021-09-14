@@ -91,6 +91,8 @@ html, body {
 @media (max-width: 481px) {
   .container #main #content .featured-products .products .owl-stage {
     padding-bottom: 15px;
+    height: 550px;
+    position: relative;
   }
 }
 .container #main #content .featured-products .products > div {
@@ -191,7 +193,6 @@ html, body {
 }
 @media (max-width: 480px) {
   .container #main #content .featured-products .products > div article .thumbnail-container .product-price-and-shipping {
-    top: unset;
     bottom: -15px;
   }
 }
