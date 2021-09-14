@@ -179,7 +179,7 @@ html, body {
 }
 .container #main #content .featured-products .products > div article .thumbnail-container .add-to-cart-or-refresh {
   position: absolute;
-  top: calc(100% + 10px);
+  top: calc(100% + 15px);
   left: 0;
 }
 .container #main #content .featured-products .products > div article .thumbnail-container .add-to-cart-or-refresh form .add-card-button {

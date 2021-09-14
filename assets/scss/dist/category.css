@@ -184,7 +184,7 @@ html, body {
 }
 #js-product-list .products > div article .add-to-cart-or-refresh {
   position: absolute;
-  top: calc(100% + 10px);
+  top: calc(100% + 15px);
   left: 0;
 }
 #js-product-list .products > div article .add-to-cart-or-refresh form .add-card-button {
