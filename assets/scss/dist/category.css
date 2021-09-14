@@ -206,7 +206,7 @@ html, body {
 @media (max-width: 480px) {
   #js-product-list .products > div article .product-price-and-shipping {
     top: 90%;
-    left: 10px;
+    right: 0;
   }
 }
 #js-product-list .up a {
