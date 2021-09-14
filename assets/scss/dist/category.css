@@ -198,6 +198,7 @@ html, body {
 #js-product-list .products > div article .product-price-and-shipping .price {
   font-family: "RobotoMono";
   font-size: 14px;
+  font-weight: 400;
 }
 @media (max-width: 480px) {
   #js-product-list .products > div article .product-price-and-shipping {
