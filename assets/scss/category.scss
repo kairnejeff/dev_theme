@@ -181,10 +181,8 @@
                         }
 
                         input {
-                            &:last-child {
-                                @media (max-width: 480px) {
-                                    width: 65%;
-                                }
+                            @media (max-width: 480px) {
+                                width: 65%;
                             }
                         }
                     }

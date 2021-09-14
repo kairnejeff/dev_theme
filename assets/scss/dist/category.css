@@ -191,7 +191,7 @@ html, body {
   outline: none;
 }
 @media (max-width: 480px) {
-  #js-product-list .products > div article .add-to-cart-or-refresh form input:last-child {
+  #js-product-list .products > div article .add-to-cart-or-refresh form input {
     width: 65%;
   }
 }
