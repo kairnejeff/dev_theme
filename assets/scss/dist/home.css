@@ -206,7 +206,15 @@ html, body {
 .container #main #content .featured-products .products > div article .thumbnail-container .add-to-cart-or-refresh form .add-card-button .down:after {
   display: inline-block;
   position: absolute;
-  content: "";
+  content: "-";
+  width: 1rem;
+  height: 2px;
+  transform: translate(-50%, -50%);
+}
+.container #main #content .featured-products .products > div article .thumbnail-container .add-to-cart-or-refresh form .add-card-button .up:before {
+  display: inline-block;
+  position: absolute;
+  content: "+";
   width: 1rem;
   height: 2px;
   transform: translate(-50%, -50%);

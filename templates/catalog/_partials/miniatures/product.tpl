@@ -74,9 +74,9 @@
             <input type="hidden" name="token" value="{$static_token}">
             <input type="hidden" name="id_product" value="{$product.id}" class="product_page_product_id">
             <div class="add-card-button">
-              <button class="down" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" > - </button>
-              <input name="qty" type="number" class="value" min="1" id="id_product_{$product.id}"> 
-              <button class="up" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"> + </button>
+              <button class="down" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+              <input name="qty" type="number" class="value" value ="1" min="1" id="id_product_{$product.id}"> 
+              <button class="up" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
             </div>
              {*<input
             type="number"

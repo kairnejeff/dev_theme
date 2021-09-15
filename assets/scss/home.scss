@@ -165,11 +165,21 @@
                                             .down:after {
                                                 display: inline-block;
                                                 position: absolute;
-                                                content: '';
+                                                content: '-';
                                                 width: 1rem;
                                                 height: 2px;
                                                 transform: translate(-50%, -50%);
                                             }
+
+                                            .up:before {
+                                                display: inline-block;
+                                                position: absolute;
+                                                content: '+';
+                                                width: 1rem;
+                                                height: 2px;
+                                                transform: translate(-50%, -50%);
+                                            }
+
 
                                             input {
                                                 max-width: 4rem;
