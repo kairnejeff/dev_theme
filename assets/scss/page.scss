@@ -1,6 +1,9 @@
 @import "global.scss";
 
 #cms {
+    .beadcrumb {
+        padding : 30px 0 ;
+    }
     .page-header {
         display: none;
     }
