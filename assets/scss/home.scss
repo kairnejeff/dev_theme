@@ -27,14 +27,12 @@
                                     @media (min-width: 769px) and (max-width: 1200px) {
                                         max-height: 531px;
                                         max-width: 1200px;
-                                        max-width: 100%;
                                     }
-                                    @media (min-width: 1201px) and (max-width: 1920px) {
+                                    @media (min-width: 1201px) and (max-width: 14000px) {
                                         max-height: 675px;
                                         max-width: 1920px;
-                                        max-width: 100%;
                                     }
-                                    @media (min-width: 1920px) {
+                                    @media (min-width: 1400px) {
                                         max-height: 675px;
                                         max-width: 1920px;
                                         margin: 0 auto;
