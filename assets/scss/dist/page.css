@@ -23,9 +23,8 @@ html, body {
 }
 
 #cms .breadcrumb {
-  margin: 30px 0;
   width: 961px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 #cms .page-header {
   display: none;
