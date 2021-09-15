@@ -286,26 +286,26 @@ html, body {
   }
 }
 @media (max-width: 1200px) {
-  #header .header-nav .row .header-bottom ._desktop_top_menu ul > li {
+  #header .header-nav .row .header-bottom #_desktop_top_menu ul > li {
     margin-right: 50px;
   }
-  #header .header-nav .row .header-bottom ._desktop_top_menu ul > li .menu-item-title {
+  #header .header-nav .row .header-bottom #_desktop_top_menu ul > li .menu-item-title {
     font-family: "Unna";
     font-size: 20px;
     text-transform: none;
     letter-spacing: 0px;
     line-height: 23px;
   }
-  #header .header-nav .row .header-bottom ._desktop_top_menu ul > li .menu-item-title a {
+  #header .header-nav .row .header-bottom #_desktop_top_menu ul > li .menu-item-title a {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 20px;
     text-decoration: none;
   }
-  #header .header-nav .row .header-bottom ._desktop_top_menu ul > li:last-child {
+  #header .header-nav .row .header-bottom #_desktop_top_menu ul > li:last-child {
     margin-right: 0;
   }
-  #header .header-nav .row .header-bottom ._desktop_top_menu ul > li:last-child .menu-item-title a {
+  #header .header-nav .row .header-bottom #_desktop_top_menu ul > li:last-child .menu-item-title a {
     padding-right: 0;
   }
 }
