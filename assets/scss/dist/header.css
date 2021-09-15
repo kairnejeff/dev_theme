@@ -264,16 +264,23 @@ html, body {
     padding-bottom: 20px;
   }
 }
+@media (max-width: 1200px) and (min-width: 767px) {
+  #header .header-nav {
+    padding-bottom: 0;
+  }
+}
 @media (max-width: 1200px) and (max-width: 480px) {
   #header .header-nav {
     padding-bottom: 0;
     padding: 10px 14px 5px 14px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 767px) {
   #header .header-nav .row {
     border-bottom: 1px solid #d8d8d8;
   }
+}
+@media (max-width: 1200px) {
   #header .header-nav .row .navigation-header {
     display: flex;
     width: 100%;

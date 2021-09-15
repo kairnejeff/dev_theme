@@ -260,12 +260,18 @@
             margin: 0;
             padding-bottom: 20px;
 
+            @media (min-width: 767px) {
+                padding-bottom: 0;
+            }            
+
             @media (max-width: 480px) {
                 padding-bottom: 0;
                 padding: 10px 14px 5px 14px;
             }
             .row {
-                border-bottom: 1px solid $grey_border;
+                @media (min-width: 767px) {
+                    border-bottom: 1px solid $grey_border;
+                } 
                 
                 .navigation-header {
                     display: flex;
