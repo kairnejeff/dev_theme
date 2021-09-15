@@ -1,6 +1,9 @@
 @import "global.scss";
 
 #cms {
+    .page-header {
+        display: none;
+    }
     #content {
         h2 {
             text-transform: uppercase;
@@ -71,3 +74,4 @@
         }
     }
 }
+

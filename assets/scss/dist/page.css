@@ -22,6 +22,9 @@ html, body {
   overflow-x: hidden;
 }
 
+#cms .page-header {
+  display: none;
+}
 #cms #content h2 {
   text-transform: uppercase;
 }
