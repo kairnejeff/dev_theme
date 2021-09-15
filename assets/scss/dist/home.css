@@ -63,6 +63,7 @@ html, body {
   .container #main #content #carousel ul li a figure img {
     max-height: 675px;
     max-width: 1920px;
+    display: block;
     margin: 0 auto;
   }
 }

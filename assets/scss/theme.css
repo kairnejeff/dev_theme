@@ -9381,7 +9381,6 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
 }
 
 .carousel .carousel-item img {
-    width: 100%;
     max-width: 100%;
     height: auto
 }
