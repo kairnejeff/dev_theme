@@ -1,0 +1,95 @@
+.product-description {
+  border-left: 1px solid #000;
+  padding-left: 13px;
+}
+.product-description .h3 a {
+  font-size: 24px;
+  display: block;
+  text-align: left !important;
+}
+.product-description .h3 a:hover {
+  color: #000;
+}
+.product-description .h3 a::first-letter {
+  text-transform: lowercase;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+#cms #content h2 {
+  text-transform: uppercase;
+}
+#cms #content .header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 60px;
+}
+#cms #content .header img {
+  max-height: 493.61px;
+  object-fit: cover;
+  width: 100%;
+}
+#cms #content .header h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  font-size: 50px;
+  line-height: 55px;
+  color: #FFF;
+}
+@media (max-width: 768px) {
+  #cms #content .header h1 {
+    font-size: 32px;
+    line-height: unset;
+  }
+}
+#cms #content .bloc {
+  width: 100%;
+}
+#cms #content .bloc h2 {
+  padding: 60px 40px;
+  text-align: center;
+}
+#cms #content .bloc .bloc-title {
+  font-family: "RobotoMono";
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#cms #content .bloc:nth-child(2n+1) {
+  background-color: #fef9f5;
+}
+#cms #content .bloc .bloc-content {
+  padding: 0 140px 60px;
+}
+@media (max-width: 768px) {
+  #cms #content .bloc .bloc-content {
+    padding: 50px 43px;
+  }
+}
+#cms #content .bloc .bloc-content img {
+  max-width: 100%;
+  height: auto;
+}
+#cms #content .bloc .bloc-content p {
+  font-size: 21px;
+  line-height: 28px;
+  font-family: "Unna";
+}
+#cms #content .bloc .bloc-image {
+  margin-bottom: 35px;
+}
+#cms #content .introduction {
+  margin-bottom: 100px;
+}

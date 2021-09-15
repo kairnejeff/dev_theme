@@ -458,7 +458,8 @@ html, body {
 }
 
 .page-cms .breadcrumb,
-.page-cms .cms-category-nav {
+.page-cms .cms-category-nav,
+.cms-id-26 #wrapper .cuisine-nature {
   width: 1159px;
   margin: 0 auto;
 }
