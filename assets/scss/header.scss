@@ -278,6 +278,37 @@
                         margin-top: 2em;
                     }
                 }
+                .header-bottom {
+                    ._desktop_top_menu {
+                        ul {
+                            >li {
+                                margin-right: 50px;
+                                .menu-item-title {
+                                    font-family: $unna;
+                                    font-size: 20px;
+                                    text-transform: none;
+                                    letter-spacing: 0px;
+                                    line-height: 23px;
+                                    a {
+                                        padding-left: 0;
+                                        padding-right: 0;
+                                        padding-bottom: 20px;
+                                        text-decoration: none;
+                                    }
+                                }
+                                &:last-child {
+                                    margin-right: 0;
+                                    .menu-item-title {
+                                        a {
+                                            padding-right: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .right-nav {
                     @media (min-width: 768px) {
                         position: absolute;
