@@ -55,9 +55,6 @@ html, body {
     line-height: unset;
   }
 }
-#cms #content .bloc {
-  width: 100%;
-}
 #cms #content .bloc h2 {
   padding: 60px 40px;
   text-align: center;

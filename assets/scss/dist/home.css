@@ -436,11 +436,6 @@ html, body {
   margin: 0 auto;
 }
 
-.cms-id-24 #wrapper .container {
-  width: 1159px;
-  margin: 0 auto;
-}
-
 #module-kj_abonnement-showAbonnement #wrapper .container {
   width: 962px;
   margin: 0 auto;
@@ -458,8 +453,7 @@ html, body {
 }
 
 .page-cms .breadcrumb,
-.page-cms .cms-category-nav,
-.cms-id-26 #wrapper .cuisine-nature {
+.page-cms .cms-category-nav {
   width: 1159px;
   margin: 0 auto;
 }
