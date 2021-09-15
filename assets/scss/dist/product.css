@@ -371,12 +371,11 @@ html, body {
   padding-right: 0;
   margin-bottom: 30px;
 }
-@media (max-width: 860px) {
-  #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu {
-    overflow: scroll;
-  }
+#wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu {
+  overflow: hidden;
 }
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul {
+  width: 550px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -390,6 +389,20 @@ html, body {
   #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul {
     width: 500px;
   }
+}
+#wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav {
+  margin: 0 !important;
+  position: static !important;
+}
+#wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav button {
+  position: absolute;
+  color: #000;
+  width: 40px;
+  top: 20%;
+  outline: none;
+}
+#wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav .owl-next {
+  right: 0;
 }
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .menu-tab {
   font-size: 14px;

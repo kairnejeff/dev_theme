@@ -360,16 +360,18 @@
                             padding-right: 0;
                             margin-right: 0;
                             margin: 0 auto;
+
                             .info-detailed {
                                 width: 100%;
                                 padding-left: 0;
                                 padding-right: 0;
                                 margin-bottom: 30px;
+
                                 #main-menu {
-                                    @media (max-width: 860px) {
-                                        overflow: scroll;
-                                    }
+                                    overflow: hidden;
+
                                     ul {
+                                        width: 550px;
                                         display: flex;
                                         justify-content: space-between;
                                         align-items: center;
@@ -381,6 +383,23 @@
                                         @media (max-width: 480px) {
                                             width: 500px;
                                         }
+
+                                        .owl-nav {
+                                            margin: 0!important;
+                                            position: static!important;
+                                            button {
+                                                position: absolute;
+                                                color: #000;
+                                                width: 40px;
+                                                top: 20%;
+                                                outline: none;
+                                            }
+                        
+                                            .owl-next {
+                                                right: 0;
+                                            }
+                                        }
+
                                         .menu-tab {
                                             font-size: 14px;
                                             text-transform: uppercase;
@@ -418,6 +437,7 @@
                                             }
                                         }
                                     }
+
                                 }
                                 .info-detailed-titler {
                                     width: 100%;

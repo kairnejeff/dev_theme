@@ -23,8 +23,7 @@ html, body {
 }
 
 #cms .breadcrumb {
-  width: 961px;
-  margin: 30px auto;
+  display: none;
 }
 #cms .page-header {
   display: none;
@@ -70,6 +69,7 @@ html, body {
   font-family: "RobotoMono";
   font-size: 18px;
   text-transform: uppercase;
+  letter-spacing: 1.8px;
 }
 #cms #content .bloc:nth-child(2n+1) {
   background-color: #fef9f5;

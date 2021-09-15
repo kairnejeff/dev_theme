@@ -471,3 +471,8 @@ html, body {
   width: 961px;
   margin: 0 auto;
 }
+
+#search #wrapper .container {
+  width: 1159px;
+  margin: 0 auto;
+}

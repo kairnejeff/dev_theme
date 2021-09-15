@@ -2,8 +2,7 @@
 
 #cms {
     .breadcrumb {
-        width: 961px;
-        margin: 30px auto;
+        display:none;
     }
     .page-header {
         display: none;
@@ -49,6 +48,7 @@
                 font-family: 'RobotoMono';
                 font-size: 18px;
                 text-transform: uppercase;
+                letter-spacing: 1.8px;
             }
             &:nth-child(2n+1) {
                 background-color: #fef9f5;
