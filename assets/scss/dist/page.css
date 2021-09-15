@@ -24,6 +24,7 @@ html, body {
 
 #cms nav {
   margin: 30px 0;
+  width: 961px;
 }
 #cms .page-header {
   display: none;
