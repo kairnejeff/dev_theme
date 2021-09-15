@@ -271,6 +271,9 @@ html, body {
   }
 }
 @media (max-width: 1200px) {
+  #header .header-nav .row {
+    border-bottom: 1px solid #d8d8d8;
+  }
   #header .header-nav .row .navigation-header {
     display: flex;
     width: 100%;

@@ -265,6 +265,8 @@
                 padding: 10px 14px 5px 14px;
             }
             .row {
+                border-bottom: 1px solid $grey_border;
+                
                 .navigation-header {
                     display: flex;
                     width: 100%;
