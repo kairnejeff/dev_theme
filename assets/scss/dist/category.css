@@ -228,6 +228,7 @@ html, body {
   border-width: 0 2px;
   height: 2rem;
   text-align: center;
+  outline: none;
 }
 #js-product-list .products > div article .add-to-cart-or-refresh form .add-to-cart {
   border: none;
