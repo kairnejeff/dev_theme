@@ -98,7 +98,7 @@ html, body {
 @media (max-width: 481px) {
   .container #main #content .featured-products .products .owl-stage {
     padding-bottom: 15px;
-    height: 550px;
+    height: 650px;
     position: relative;
   }
 }
@@ -242,6 +242,20 @@ html, body {
 .container #main #content .featured-products .products > div article .thumbnail-container .highlighted-informations {
   box-shadow: none;
   display: none;
+}
+.container #main #content .featured-products .owl-nav {
+  margin: 0 !important;
+  position: static !important;
+}
+.container #main #content .featured-products .owl-nav button {
+  position: absolute;
+  color: #000;
+  width: 40px;
+  top: 20%;
+  outline: none;
+}
+.container #main #content .featured-products .owl-nav .owl-next {
+  right: 0;
 }
 .container #main #content .home-category-foot .categories-preview {
   margin-top: 40px;
