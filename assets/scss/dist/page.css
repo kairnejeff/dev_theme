@@ -23,7 +23,7 @@ html, body {
 }
 
 #cms .beadcrumb {
-  padding: 30px 0;
+  margin: 30px 0;
 }
 #cms .page-header {
   display: none;
