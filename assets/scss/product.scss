@@ -763,6 +763,7 @@
             }
             .product-price-and-shipping {
                 position: absolute;
+                top: calc(100% + 20px);
                 right: 0;
                 .price {
                     font-family: $roboto;
@@ -770,9 +771,7 @@
                     font-weight: 400;
                 }
                 @media (max-width: 480px) {
-                    top: unset;
-                    left: 10px;
-                    ;
+                    bottom: -15px;
                 }
             }
         }

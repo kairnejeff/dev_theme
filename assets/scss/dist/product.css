@@ -742,6 +742,7 @@ html, body {
 }
 #wrapper .product-accessories .products .product-price-and-shipping {
   position: absolute;
+  top: calc(100% + 20px);
   right: 0;
 }
 #wrapper .product-accessories .products .product-price-and-shipping .price {
@@ -751,8 +752,7 @@ html, body {
 }
 @media (max-width: 480px) {
   #wrapper .product-accessories .products .product-price-and-shipping {
-    top: unset;
-    left: 10px;
+    bottom: -15px;
   }
 }
 
