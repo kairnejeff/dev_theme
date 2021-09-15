@@ -149,7 +149,12 @@
                     display: none;
                 }
                 .content {
-                    height: 846.172px;
+                    height: 944px;
+
+                    @media (min-width: 767px) and (max-width: 960px) {
+                        height: 846.172px;
+                    }
+                    
                     @media screen and (max-width: 767px) {
                         height: 100%;
                     }

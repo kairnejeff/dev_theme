@@ -147,8 +147,13 @@ html, body {
   display: none;
 }
 #wrapper .container #main .product-container .content {
-  height: 846.172px;
+  height: 944px;
   position: relative;
+}
+@media (min-width: 767px) and (max-width: 960px) {
+  #wrapper .container #main .product-container .content {
+    height: 846.172px;
+  }
 }
 @media screen and (max-width: 767px) {
   #wrapper .container #main .product-container .content {
