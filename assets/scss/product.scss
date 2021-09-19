@@ -59,6 +59,11 @@
                                     width: 450px;
                                     height: 450px;
                                 }
+
+                                .img-thumbnail {
+                                    width: 450px;
+                                    height: 438px;
+                                }
                             }
                         }
                     }
@@ -371,7 +376,6 @@
                                     overflow: hidden;
 
                                     ul {
-                                        width: 550px;
                                         display: flex;
                                         justify-content: space-between;
                                         align-items: center;
@@ -384,6 +388,15 @@
                                             width: 500px;
                                         }
 
+                                        .owl-stage {
+                                            display: flex;
+                                            justify-content: space-between;
+
+                                            .owl-item {
+                                                height: 53px;
+                                            }
+                                        }
+
                                         .owl-nav {
                                             margin: 0!important;
                                             position: static!important;
@@ -393,11 +406,36 @@
                                                 width: 40px;
                                                 top: 20%;
                                                 outline: none;
+
+                                                svg {
+                                                    color: currentColor;
+                                                }
+                                            }
+
+                                            .owl-prev,
+                                            .owl-next {
+                                                top: 50%;
+                                                z-index: 2;
+                                                width: 40px;
+                                                height: 40px;
+                                                padding: 8px;
+                                                margin-top: -20px;
+                                                position: absolute;
+                                                background-color: #fff;
                                             }
                         
                                             .owl-next {
                                                 right: 0;
                                             }
+
+                                            .owl-prev {
+                                                left: 0;
+                                            }
+
+                                            .disabled {
+                                                display: none;
+                                            }
+
                                         }
 
                                         .menu-tab {
@@ -407,6 +445,7 @@
                                             font-size: 11px;
                                             display: flex;
                                             align-items: center;
+                                            justify-content: center;
                                             height: 100%;
                                             letter-spacing: 1.8px;
                                             opacity: .5;
@@ -564,6 +603,10 @@
                                 #avis_truspilot {
                                     margin-top: 50px;
                                     #trustbox-widget {
+                                        @media (max-width: 768px) {
+                                            padding: 0 15px;
+                                        }
+
                                         .tp-widget-wrapper {
                                             margin: 0;
                                             width: 100%;
@@ -667,6 +710,12 @@
         .products {
             grid-gap: 30px;
             margin-top: 60px;
+            > div {
+                @media (max-width: 480px) {
+                    margin-bottom: 90px;
+                }
+                
+            }
             .product-description {
                 position: relative;
                 @media (max-width: 480px) {
@@ -701,6 +750,10 @@
                 position: absolute;
                 top: calc(100% + 15px);
                 left: 0;
+
+                @media (max-width: 480px) {
+                    top: calc(100% + 35px);
+                }
 
                 form {
                     position: relative;
@@ -737,6 +790,7 @@
                             height: 2px;
                             top: 5px;
                             transform: translate(-50%, -50%);
+                            font-family: $unna;
                         }
 
                         .up:before {
@@ -747,6 +801,7 @@
                             height: 2px;
                             top: 5px;
                             transform: translate(-50%, -50%);
+                            font-family: $unna;
                         }
 
 
@@ -766,6 +821,10 @@
                         background: none;
                         outline: none;
                         margin-left: 140px;
+
+                        @media (max-width: 480px) {
+                            margin-left: 125px;
+                        }
                     }                            
 
                     // .product-quantity {
@@ -792,6 +851,7 @@
                 }
                 @media (max-width: 480px) {
                     bottom: -15px;
+                    top: 100%;
                 }
             }
         }

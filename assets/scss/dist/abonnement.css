@@ -43,6 +43,7 @@ html, body {
   text-align: center;
 }
 #content .abonnement-description {
+  display: none;
   padding: 40px 120px;
   text-align: center;
 }

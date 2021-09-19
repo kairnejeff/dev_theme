@@ -13,24 +13,17 @@
                         a {
                             figure {
                                 display: block;
+                                background-color: #FEF9F4;
                                 img {
-                                    @media (max-width: 480px) {
-                                        max-height: 212.5px;
-                                        max-width: 480px;
-                                        max-width: 100%;
-                                    }
-                                    @media (min-width: 481px) and (max-width: 768px) {
-                                        max-height: 340px;
-                                        max-width: 769px;
-                                        max-width: 100%;
-                                    }
                                     @media (min-width: 769px) and (max-width: 1200px) {
                                         max-height: 531px;
                                         max-width: 1200px;
+                                        width: 100%;
                                     }
                                     @media (min-width: 1201px) and (max-width: 14000px) {
                                         max-height: 675px;
                                         max-width: 1920px;
+                                        width: 100%;
                                     }
                                     @media (min-width: 1400px) {
                                         max-height: 675px;
@@ -174,6 +167,7 @@
                                                 height: 2px;
                                                 top: 5px;
                                                 transform: translate(-50%, -50%);
+                                                font-family: $unna;
                                             }
 
                                             .up:before {
@@ -184,6 +178,7 @@
                                                 height: 2px;
                                                 top: 5px;
                                                 transform: translate(-50%, -50%);
+                                                font-family: $unna;
                                             }
 
 
@@ -469,6 +464,15 @@
 }
 
 #search #wrapper .container {
+    width: 1159px;
+    margin: 30px auto;
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+#pagenotfound #wrapper .container {
     width: 1159px;
     margin: 0 auto;
 }

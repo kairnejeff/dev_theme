@@ -30,9 +30,18 @@
 }
 
 .block-category {
-    img {
-        max-height: 100%;
-        width: 100%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+
+    img {  
+        height: 315px;
+        width: 1919px;
+        position: relative;
+        left: 100%;
+        margin-left: -200%;
+        float: none;
+        
     }
 }
 

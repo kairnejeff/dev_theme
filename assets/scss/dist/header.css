@@ -240,6 +240,9 @@ html, body {
     padding-bottom: 20px;
     text-decoration: none;
   }
+  #header .header-nav .row .header-bottom .menu > ul > li:nth-child(3), #header .header-nav .row .header-bottom .menu > ul > li:last-child {
+    display: none;
+  }
   #header .header-nav .row .header-bottom .menu > ul > li:last-child {
     margin-right: 0;
   }
@@ -402,6 +405,9 @@ html, body {
   }
   #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu .top-menu .menu-item a {
     padding: 0;
+  }
+  #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu .top-menu .menu-item:nth-child(3), #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu .top-menu .menu-item:last-child {
+    display: none;
   }
   #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu #menu-close {
     border: none;

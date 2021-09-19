@@ -528,23 +528,37 @@ $('.add-card-button').on('click', 'button:not([type="submit"])', function(e){
 // });
 
 
-function ScrollMobileCarousel() {
+// $(function() {
+//     $('.info-detailed #main-menu').owlCarousel({
+//         nav: true,
+//         //loop:true,
+//         rewind: false,
+//         smartSpeed: 70,
+//         navText: ['<svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg>', '<svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>']
+//     });
+// });
+
+function scrollProductCarousel() {
     
     $('.info-detailed #main-menu ul').addClass("owl-carousel")
     $('.info-detailed #main-menu ul').owlCarousel({
-        items: 1,
         loop: false,
         nav: true,
-        margin: 10,
-        dots: false,
-        autoplay: false,
-        autoplayTimeout: 10000,
-        autoplayHoverPause: true,
+        rewind: false,
+        responsive: {
+            0: { items: 1 },
+            480: { items: 2 },
+            600: { items: 3 },
+            1000: { items: 4 }
+        },
+        smartSpeed: 70,
+        slideBy: 'page',
         navText: ['<svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg>', '<svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>']
     })
+
 }
 $(document).ready(function(e) {
-    ScrollMobileCarousel()
-    $(window).resize(ScrollMobileCarousel)
+    scrollProductCarousel()
+    $(window).resize(scrollProductCarousel)
 
 })

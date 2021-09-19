@@ -232,6 +232,13 @@
                                         text-decoration: none;
                                     }
                                 }
+
+                              
+                                &:nth-child(3),
+                                &:last-child {
+                                    display:none;
+                                }
+                                
                                 &:last-child {
                                     margin-right: 0;
                                     .menu-item-title {
@@ -396,7 +403,14 @@
                                 a {
                                     padding: 0;
                                 }
+
+                                &:nth-child(3),
+                                &:last-child {
+                                    display:none;
+                                }
                             }
+
+                            
                         }
                         #menu-close {
                             border: none;

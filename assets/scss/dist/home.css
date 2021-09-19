@@ -32,31 +32,20 @@ html, body {
 }
 .container #main #content #carousel ul li a figure {
   display: block;
-}
-@media (max-width: 480px) {
-  .container #main #content #carousel ul li a figure img {
-    max-height: 212.5px;
-    max-width: 480px;
-    max-width: 100%;
-  }
-}
-@media (min-width: 481px) and (max-width: 768px) {
-  .container #main #content #carousel ul li a figure img {
-    max-height: 340px;
-    max-width: 769px;
-    max-width: 100%;
-  }
+  background-color: #FEF9F4;
 }
 @media (min-width: 769px) and (max-width: 1200px) {
   .container #main #content #carousel ul li a figure img {
     max-height: 531px;
     max-width: 1200px;
+    width: 100%;
   }
 }
 @media (min-width: 1201px) and (max-width: 14000px) {
   .container #main #content #carousel ul li a figure img {
     max-height: 675px;
     max-width: 1920px;
+    width: 100%;
   }
 }
 @media (min-width: 1400px) {
@@ -215,6 +204,7 @@ html, body {
   height: 2px;
   top: 5px;
   transform: translate(-50%, -50%);
+  font-family: "Unna";
 }
 .container #main #content .featured-products .products > div article .thumbnail-container .add-to-cart-or-refresh form .add-card-button .up:before {
   display: inline-block;
@@ -224,6 +214,7 @@ html, body {
   height: 2px;
   top: 5px;
   transform: translate(-50%, -50%);
+  font-family: "Unna";
 }
 .container #main #content .featured-products .products > div article .thumbnail-container .add-to-cart-or-refresh form .add-card-button input {
   max-width: 4rem;
@@ -473,6 +464,14 @@ html, body {
 }
 
 #search #wrapper .container {
+  width: 1159px;
+  margin: 30px auto;
+}
+#search #wrapper .container h2 {
+  font-size: 30px;
+}
+
+#pagenotfound #wrapper .container {
   width: 1159px;
   margin: 0 auto;
 }
