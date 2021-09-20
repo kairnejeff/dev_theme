@@ -38,6 +38,7 @@ html, body {
   #content .abonnement-header img {
     width: 100%;
     bottom: 20px;
+    height: auto;
   }
 }
 #content .abonnement-header h1 {
@@ -46,6 +47,11 @@ html, body {
   font-size: 45px;
   z-index: 1;
   text-align: center;
+}
+@media (max-width: 480px) {
+  #content .abonnement-header h1 {
+    left: 0;
+  }
 }
 #content .abonnement-description {
   display: none;

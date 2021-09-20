@@ -15,6 +15,7 @@
             @media (max-width: 768px) {
                 width: 100%;
                 bottom: 20px;
+                height: auto;
             }
         }
         h1 {
@@ -23,6 +24,10 @@
             font-size: 45px;
             z-index: 1;
             text-align: center;
+
+            @media (max-width: 480px) {
+                left:0;
+            }
         }
     }
     .abonnement-description {
