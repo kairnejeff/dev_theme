@@ -40,6 +40,11 @@
         left: 100%;
         margin-left: -200%;
         float: none!important;
+
+        @media (max-width: 767px) {
+            width:767px;
+            object-fit: cover;
+        }
         
     }
 }

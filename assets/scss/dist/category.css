@@ -62,6 +62,12 @@ html, body {
   margin-left: -200%;
   float: none !important;
 }
+@media (max-width: 767px) {
+  .block-category img {
+    width: 767px;
+    object-fit: cover;
+  }
+}
 
 @media (max-width: 760px) {
   #category #products .block-category-inner {
