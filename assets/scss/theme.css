@@ -9779,7 +9779,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     border-radius: 2px;
     margin-bottom: 1.5rem;
     text-align: center;
-    padding: 40px 23px;
+    padding: 40px;
     background-size: contain
 }
 
