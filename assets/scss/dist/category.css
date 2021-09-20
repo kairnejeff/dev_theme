@@ -268,7 +268,7 @@ html, body {
   border: none;
   background: none;
   outline: none;
-  margin-left: 140px;
+  margin-left: 130px;
 }
 @media (max-width: 480px) {
   #js-product-list .products > div article .add-to-cart-or-refresh form .add-to-cart {
@@ -277,6 +277,7 @@ html, body {
 }
 #js-product-list .products > div article .product-price-and-shipping {
   position: absolute;
+  top: calc(100% + 20px);
   right: 0;
 }
 #js-product-list .products > div article .product-price-and-shipping .price {
