@@ -297,13 +297,8 @@ html, body {
     height: auto;
   }
 }
-/* .container #main .category-cover img {
-  float: right;
-} */
-@media (max-width: 767px) {
-  .container #main .category-cover img {
-    float: none;
-  }
+.container #main .category-cover img {
+  float: none;
 }
 
 .en-off .content {
