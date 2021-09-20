@@ -399,6 +399,11 @@ html, body {
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-stage .owl-item {
   height: 60px;
 }
+@media (max-width: 480px) {
+  #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-stage .owl-item:nth-child(2) {
+    margin: 0 20px;
+  }
+}
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav {
   margin: 0 !important;
   position: static !important;
