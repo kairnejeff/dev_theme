@@ -440,34 +440,64 @@
     width: 1060px;
     max-width: 100%;
     margin: 0 auto;
+
+    @media (max-width: 960px) {
+        padding: 0 15px;
+        width: 100%;
+    }
 }
 
 #module-kj_abonnement-showAbonnement #wrapper .container {
     width: 962px;
     margin: 0 auto;
+
+    @media (max-width: 960px) {
+        padding: 0 15px;
+        width: 100%;
+    }
 }
 
 #cart #wrapper .container {
     width: 1159px;
     margin: 0 auto;
+
+    @media (max-width: 960px) {
+        padding: 0 15px;
+        width: 100%;
+    }
 }
 
 #stores #wrapper .container,
 #my-account #wrapper .container {
     width: 1159px;
     margin: 0 auto;
+
+    @media (max-width: 960px) {
+        padding: 0 15px;
+        width: 100%;
+    }
 }
 
 .page-cms .breadcrumb,
 .page-cms .cms-category-nav {
     width: 1159px;
     margin: 0 auto;
+
+    @media (max-width: 960px) {
+        padding: 0 15px;
+        width: 100%;
+    }
 }
 
 .cms-id-26  #wrapper .cuisine-nature,
 .cms-id-24 #wrapper .bloc {
     width: 961px;
     margin: 0 auto;
+
+    @media (max-width: 960px) {
+        padding: 0 15px;
+        width: 100%;
+    }
 }
 
 #search #wrapper .container {
@@ -476,6 +506,11 @@
 
     h2 {
         font-size: 30px;
+    }
+
+    @media (max-width: 960px) {
+        padding: 0 15px;
+        width: 100%;
     }
 }
 
