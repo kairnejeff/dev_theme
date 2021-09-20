@@ -297,9 +297,9 @@ html, body {
     height: auto;
   }
 }
-.container #main .category-cover img {
+/* .container #main .category-cover img {
   float: right;
-}
+} */
 @media (max-width: 767px) {
   .container #main .category-cover img {
     float: none;
