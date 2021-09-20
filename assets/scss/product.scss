@@ -425,11 +425,16 @@
                                             }
                         
                                             .owl-next {
-                                                right: 0;
+                                                right: 8px;
+
+                                                @media (max-width: 480px) {
+                                                    right: 350px;
+                                                }
                                             }
 
                                             .owl-prev {
-                                                left: 0;
+                                                left: 8px;
+
                                             }
 
                                             .disabled {
@@ -932,6 +937,7 @@
                 
                 float: right;
                 position: relative;
+                display: none;
                 img {
                     width: 694px;
                     height: 461px;

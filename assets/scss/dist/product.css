@@ -426,10 +426,15 @@ html, body {
   background-color: #fff;
 }
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav .owl-next {
-  right: 0;
+  right: 8px;
+}
+@media (max-width: 480px) {
+  #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav .owl-next {
+    right: 350px;
+  }
 }
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav .owl-prev {
-  left: 0;
+  left: 8px;
 }
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav .disabled {
   display: none;
@@ -905,6 +910,7 @@ html, body {
 .actu .info-actu .flex .secret_cuisine {
   float: right;
   position: relative;
+  display: none;
 }
 .actu .info-actu .flex .secret_cuisine img {
   width: 694px;
