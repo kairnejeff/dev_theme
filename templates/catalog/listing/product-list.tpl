@@ -31,7 +31,7 @@
 
     {block name='product_list_header'}
     {if isset($search_tag)}
-      <h2 id="js-product-list-header" class="h2">Nos recettes à base de {$search_tag}</h2>
+      <h2 id="js-product-list-header" class="h2">Nos recettes à base de : {$search_tag}</h2>
     {else}
       <h2 id="js-product-list-header" class="h2">{$listing.label}</h2>
     {/if}
