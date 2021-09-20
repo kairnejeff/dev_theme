@@ -21,7 +21,7 @@
                 }
                 .home_popup {
                     display: none;
-
+                    
                     #list-builder {
                         opacity: 0.5;
                     }
@@ -175,6 +175,7 @@
                 }
             }
             .container {
+                position: relative;
                 @media (min-width: 768px) {
                     .right-block {
                         padding-left: 2rem;
