@@ -179,6 +179,9 @@ html, body {
     padding: 0;
   }
 }
+#footer .footer-container .container .row .col-md-7 .insta {
+  font-weight: bold;
+}
 #footer .footer-container .container .row .col-md-7 .col-lg-4 .titre {
   font-size: 20px;
   font-family: "Unna";
