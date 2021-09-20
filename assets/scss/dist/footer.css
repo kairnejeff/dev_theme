@@ -196,9 +196,6 @@ html, body {
 #footer .footer-container .container .row .col-md-7 .col-lg-4:last-child ul li:nth-child(9), #footer .footer-container .container .row .col-md-7 .col-lg-4:last-child ul li:last-child {
   display: none;
 }
-#footer .footer-container .container .container {
-  position: relative;
-}
 @media (min-width: 768px) {
   #footer .footer-container .container .container .right-block {
     padding-left: 2rem;
