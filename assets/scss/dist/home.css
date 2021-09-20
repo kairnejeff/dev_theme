@@ -38,14 +38,12 @@ html, body {
   .container #main #content #carousel ul li a figure img {
     max-height: 531px;
     max-width: 1200px;
-    width: 100%;
   }
 }
 @media (min-width: 1201px) and (max-width: 14000px) {
   .container #main #content #carousel ul li a figure img {
     max-height: 675px;
     max-width: 1920px;
-    width: 100%;
   }
 }
 @media (min-width: 1400px) {
@@ -298,7 +296,12 @@ html, body {
   }
 }
 .container #main .category-cover img {
-  float: none;
+  float: right;
+}
+@media (max-width: 767px) {
+  .container #main .category-cover img {
+    float: none;
+  }
 }
 
 .en-off .content {

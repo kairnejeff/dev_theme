@@ -204,6 +204,11 @@ html, body {
   top: calc(100% + 15px);
   left: 0;
 }
+@media (max-width: 480px) {
+  #js-product-list .products > div article .add-to-cart-or-refresh {
+    top: calc(100% + 35px);
+  }
+}
 #js-product-list .products > div article .add-to-cart-or-refresh form {
   position: relative;
 }
@@ -265,6 +270,11 @@ html, body {
   outline: none;
   margin-left: 140px;
 }
+@media (max-width: 480px) {
+  #js-product-list .products > div article .add-to-cart-or-refresh form .add-to-cart {
+    margin-left: 125px;
+  }
+}
 #js-product-list .products > div article .product-price-and-shipping {
   position: absolute;
   right: 0;
@@ -276,8 +286,8 @@ html, body {
 }
 @media (max-width: 480px) {
   #js-product-list .products > div article .product-price-and-shipping {
-    top: 90%;
-    right: 0;
+    bottom: -15px;
+    top: 100%;
   }
 }
 #js-product-list .up a {

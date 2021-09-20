@@ -194,6 +194,10 @@
                     top: calc(100% + 15px);
                     left: 0;
 
+                    @media (max-width: 480px) {
+                        top: calc(100% + 35px);
+                    }
+
                     form {
                         position: relative;
 
@@ -259,6 +263,10 @@
                             background: none;
                             outline: none;
                             margin-left: 140px;
+
+                            @media (max-width: 480px) {
+                                margin-left: 125px;
+                            }
                         }                            
 
                         // .product-quantity {
@@ -283,8 +291,8 @@
                         font-weight: 400;
                     }
                     @media (max-width: 480px) {
-                        top: 90%;
-                        right: 0;
+                        bottom: -15px;
+                        top: 100%;
                     }
                 }
             }
