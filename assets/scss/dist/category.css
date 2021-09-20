@@ -233,10 +233,22 @@ html, body {
 #js-product-list .products > div article .add-to-cart-or-refresh form .add-card-button .down:after {
   display: inline-block;
   position: absolute;
-  content: "";
+  content: "-";
   width: 1rem;
   height: 2px;
+  top: 5px;
   transform: translate(-50%, -50%);
+  font-family: "Unna";
+}
+#js-product-list .products > div article .add-to-cart-or-refresh form .add-card-button .up:before {
+  display: inline-block;
+  position: absolute;
+  content: "+";
+  width: 1rem;
+  height: 2px;
+  top: 5px;
+  transform: translate(-50%, -50%);
+  font-family: "Unna";
 }
 #js-product-list .products > div article .add-to-cart-or-refresh form .add-card-button input {
   max-width: 4rem;

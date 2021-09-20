@@ -224,10 +224,23 @@
                             .down:after {
                                 display: inline-block;
                                 position: absolute;
-                                content: '';
+                                content: '-';
                                 width: 1rem;
                                 height: 2px;
+                                top: 5px;
                                 transform: translate(-50%, -50%);
+                                font-family: $unna;
+                            }
+
+                            .up:before {
+                                display: inline-block;
+                                position: absolute;
+                                content: '+';
+                                width: 1rem;
+                                height: 2px;
+                                top: 5px;
+                                transform: translate(-50%, -50%);
+                                font-family: $unna;
                             }
 
                             input {
