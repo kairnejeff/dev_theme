@@ -78,6 +78,12 @@ html, body {
   width: 450px;
   height: 438px;
 }
+@media (max-width: 480px) {
+  #wrapper .container #main .product-container .product-cover #carousel ul li .img-thumbnail {
+    width: 397px;
+    height: 397px;
+  }
+}
 #wrapper .container #main .product-container .product-cover .btn-image {
   text-align: center;
   position: relative;

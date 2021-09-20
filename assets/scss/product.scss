@@ -63,6 +63,11 @@
                                 .img-thumbnail {
                                     width: 450px;
                                     height: 438px;
+
+                                    @media (max-width: 480px) {
+                                        width: 397px;
+                                        height: 397px;
+                                    }                                    
                                 }
                             }
                         }
