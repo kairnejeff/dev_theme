@@ -4,7 +4,6 @@
     .abonnement-header {
         width: 100%;
         position: relative;
-        margin-left: -30px;
         margin-bottom: -100px;
         img {
             max-width: 100%;
@@ -36,6 +35,8 @@
         }
     }
     .bloc-abonnement {
+        margin-top: 40px; 
+        
         @media (max-width: 768px) {
             padding: 2em 1.5em;
         }

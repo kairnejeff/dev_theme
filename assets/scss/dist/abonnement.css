@@ -25,7 +25,6 @@ html, body {
 #content .abonnement-header {
   width: 100%;
   position: relative;
-  margin-left: -30px;
   margin-bottom: -100px;
 }
 #content .abonnement-header img {
@@ -58,6 +57,7 @@ html, body {
   line-height: 25px;
 }
 #content .bloc-abonnement {
+  margin-top: 40px;
   padding: 30px 120px;
   background-color: #d3ede2;
 }
