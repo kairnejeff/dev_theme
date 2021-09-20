@@ -769,6 +769,13 @@ html, body {
   font-size: 24px;
   padding-top: 5px;
 }
+@media (max-width: 480px) {
+  #wrapper .product-accessories .products .add-to-cart-or-refresh form .add-card-button .up,
+#wrapper .product-accessories .products .add-to-cart-or-refresh form .add-card-button .down {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
 #wrapper .product-accessories .products .add-to-cart-or-refresh form .add-card-button .up:before,
 #wrapper .product-accessories .products .add-to-cart-or-refresh form .add-card-button .down:after {
   display: inline-block;
@@ -798,6 +805,7 @@ html, body {
   height: 2rem;
   text-align: center;
   outline: none;
+  border-radius: 0;
 }
 #wrapper .product-accessories .products .add-to-cart-or-refresh form .add-to-cart {
   border: none;
