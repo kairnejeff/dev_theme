@@ -379,21 +379,21 @@
                                         display: flex;
                                         justify-content: space-between;
                                         align-items: center;
-                                        padding-top: 9px;
                                         border-bottom: 1px solid $grey_border;
                                         border-top: 1px solid $grey_border;
                                         margin-bottom: 0;
                                         height: 60px;
-                                        @media (max-width: 480px) {
-                                            width: 500px;
-                                        }
 
                                         .owl-stage {
                                             display: flex;
                                             justify-content: space-between;
 
+                                            @media (max-width: 480px) {
+                                                padding-left: 10px;
+                                            }
+
                                             .owl-item {
-                                                height: 53px;
+                                                height: 60px;
                                             }
                                         }
 
@@ -428,7 +428,7 @@
                                                 right: 8px;
 
                                                 @media (max-width: 480px) {
-                                                    right: 350px;
+                                                    left: 392px;
                                                 }
                                             }
 
