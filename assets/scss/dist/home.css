@@ -443,7 +443,7 @@ html, body {
   max-width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   #page-search #wrapper .container {
     padding: 0 15px;
     width: 100%;
@@ -454,7 +454,7 @@ html, body {
   width: 962px;
   margin: 0 auto;
 }
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   #module-kj_abonnement-showAbonnement #wrapper .container {
     padding: 0 15px;
     width: 100%;
@@ -465,7 +465,7 @@ html, body {
   width: 1159px;
   margin: 0 auto;
 }
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   #cart #wrapper .container {
     padding: 0 15px;
     width: 100%;
@@ -477,7 +477,7 @@ html, body {
   width: 1159px;
   margin: 0 auto;
 }
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   #stores #wrapper .container,
 #my-account #wrapper .container {
     padding: 0 15px;
@@ -490,7 +490,7 @@ html, body {
   width: 1159px;
   margin: 0 auto;
 }
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   .page-cms .breadcrumb,
 .page-cms .cms-category-nav {
     padding: 0 15px;
@@ -503,7 +503,7 @@ html, body {
   width: 961px;
   margin: 0 auto;
 }
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   .cms-id-26 #wrapper .cuisine-nature,
 .cms-id-24 #wrapper .bloc {
     padding: 0 15px;
@@ -518,9 +518,8 @@ html, body {
 #search #wrapper .container h2 {
   font-size: 30px;
 }
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   #search #wrapper .container {
-    padding: 0 15px;
     width: 100%;
   }
 }
@@ -536,7 +535,7 @@ html, body {
   width: 1159px;
   margin: 0 auto;
 }
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   #category.category-id-71 #wrapper .container #category-description,
 #category.category-id-71 #wrapper .container #products,
 #category.category-id-71 #wrapper .container .page-home {
