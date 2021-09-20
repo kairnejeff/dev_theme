@@ -71,9 +71,6 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
     text-align: center;
   }
 }
-.top-menu .sub-menu.collapse:first-child .recipe-ingredient i a {
-  font-weight: bold;
-}
 .top-menu .sub-menu.collapse .menu-block {
   margin: 30px 20px;
   flex: 1 1 auto;
@@ -124,9 +121,6 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
     margin-bottom: 10px;
   }
 }
-.top-menu .sub-menu.collapse .menu-block:nth-child(2) {
-  flex: 0 1 auto;
-}
 .top-menu .sub-menu.collapse .menu-block .recipe-ingredient {
   margin-top: 20px;
   padding-top: 33px;
@@ -146,12 +140,16 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
 .top-menu .sub-menu.collapse .menu-block .recipe-ingredient .menu-block-child span.obflink.menulink:hover {
   text-decoration: underline;
 }
+.top-menu .sub-menu.collapse .menu-block:nth-child(2) {
+  flex: 0 1 auto;
+}
 .top-menu .sub-menu.collapse .menu-block:nth-child(2) i a {
   font-style: normal;
   font-family: "Unna";
   font-size: 15px;
   color: #000;
   letter-spacing: 0.5px;
+  font-weight: bold;
 }
 .top-menu .sub-menu.collapse .menu-block:nth-child(2) i a:hover {
   text-decoration: underline !important;

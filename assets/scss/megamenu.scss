@@ -50,17 +50,6 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
         }
     }
 
-    &:first-child {
-        .recipe-ingredient {
-            i {
-                a {
-                    font-weight: bold;
-                }
-            }
-        }
-    }
-
-
 
     .menu-block {
 
@@ -115,9 +104,6 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                 margin-bottom: 10px;
             }
         }
-        &:nth-child(2) {
-            flex: 0 1 auto;
-        }
         .recipe-ingredient {
             margin-top: 20px;
             padding-top: 33px;
@@ -140,6 +126,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
             }
         }
         &:nth-child(2) {
+            flex: 0 1 auto;
             i {
                 a {
                     font-style: normal;
@@ -147,6 +134,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
                     font-size: 15px;
                     color: $black;
                     letter-spacing: 0.5px;
+                    font-weight: bold;
                 }
                 a:hover {
                     text-decoration: underline!important;
