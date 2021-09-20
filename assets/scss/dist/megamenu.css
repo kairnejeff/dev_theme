@@ -75,6 +75,9 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
   margin: 30px 20px;
   flex: 1 1 auto;
 }
+.top-menu .sub-menu.collapse .menu-block:first-child .recipe-ingredient i a {
+  font-weight: bold;
+}
 .top-menu .sub-menu.collapse .menu-block .menulink.current {
   text-decoration: underline;
 }

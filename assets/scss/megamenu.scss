@@ -50,6 +50,18 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
         }
     }
     .menu-block {
+
+        &:first-child {
+            .recipe-ingredient {
+                i {
+                    a {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+
         .menulink.current {
             text-decoration: underline;
         }
