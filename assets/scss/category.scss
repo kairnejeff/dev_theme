@@ -1,10 +1,9 @@
 @import "global.scss";
+
+
 .block-category {
     position: relative;
     padding: unset;
-}
-
-.block-category {
     .h1 {
         position: relative;
         color: $black;
@@ -40,7 +39,7 @@
         position: relative;
         left: 100%;
         margin-left: -200%;
-        float: none;
+        float: none!important;
         
     }
 }

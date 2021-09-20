@@ -26,7 +26,6 @@ html, body {
   position: relative;
   padding: unset;
 }
-
 .block-category .h1 {
   position: relative;
   color: #000;
@@ -61,7 +60,7 @@ html, body {
   position: relative;
   left: 100%;
   margin-left: -200%;
-  float: none;
+  float: none !important;
 }
 
 @media (max-width: 760px) {
