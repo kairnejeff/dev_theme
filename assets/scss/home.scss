@@ -470,12 +470,14 @@
     }
 }
 
-#pagenotfound #wrapper .container, 
-#category-id-71 #wrapper .container {
+#pagenotfound #wrapper .container {
     width: 1159px;
     margin: 0 auto;
+}
 
-    @media (max-width: 960px) {
-        padding: 0 15px;
-    }
+#category-id-71 #wrapper .container #category-description,
+#category-id-71 #wrapper .container #products,
+#category-id-71 #wrapper .container .page-home {
+    width: 1159px;
+    margin: 0 auto;
 }
