@@ -24,6 +24,10 @@
         .h1 {
             margin-top: 50px;
             margin-bottom: 20px;
+            position: absolute;
+            z-index: 9999;
+            top: 0;
+            left: 30%;
         }
     }
 }
