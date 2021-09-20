@@ -888,6 +888,11 @@
 
 .actu {
     margin-top: 80px;
+
+    .origin {
+        display: none;
+    }
+    
     .info-actu {
         h2 {
             margin-bottom: 80px;
@@ -898,10 +903,6 @@
             text-align: center;
         }
 
-        .origin {
-            display: none;
-        }
-        
         .flex {
             position: relative;
             height: 520px;
