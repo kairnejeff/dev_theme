@@ -897,6 +897,11 @@
             text-transform: uppercase;
             text-align: center;
         }
+
+        .origin {
+            display: none;
+        }
+        
         .flex {
             position: relative;
             height: 520px;
@@ -934,10 +939,8 @@
                 }
             }
             .secret_cuisine {
-                
                 float: right;
                 position: relative;
-                display: none;
                 img {
                     width: 694px;
                     height: 461px;

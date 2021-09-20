@@ -861,6 +861,9 @@ html, body {
   text-transform: uppercase;
   text-align: center;
 }
+.actu .info-actu .origin {
+  display: none;
+}
 .actu .info-actu .flex {
   position: relative;
   height: 520px;
@@ -909,7 +912,6 @@ html, body {
 .actu .info-actu .flex .secret_cuisine {
   float: right;
   position: relative;
-  display: none;
 }
 .actu .info-actu .flex .secret_cuisine img {
   width: 694px;
