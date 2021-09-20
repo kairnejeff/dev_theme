@@ -234,6 +234,13 @@ html, body {
   font-size: 24px;
   padding-top: 5px;
 }
+@media (max-width: 480px) {
+  #js-product-list .products > div article .add-to-cart-or-refresh form .add-card-button .up,
+#js-product-list .products > div article .add-to-cart-or-refresh form .add-card-button .down {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
 #js-product-list .products > div article .add-to-cart-or-refresh form .add-card-button .up:before,
 #js-product-list .products > div article .add-to-cart-or-refresh form .add-card-button .down:after {
   display: inline-block;
@@ -263,6 +270,7 @@ html, body {
   height: 2rem;
   text-align: center;
   outline: none;
+  border-radius: 0;
 }
 #js-product-list .products > div article .add-to-cart-or-refresh form .add-to-cart {
   border: none;
