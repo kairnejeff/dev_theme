@@ -159,6 +159,11 @@
                                     &:nth-child(8) {
                                         margin-bottom: 30px;
                                     }
+
+                                    &:nth-child(9),
+                                    &:last-child{
+                                        display:none;
+                                    }
                                 }
                             }
                         }

@@ -84,7 +84,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
 
                 &:nth-child(9),
                 &:nth-child(10),
-                &:nth-child(11) {
+                &:last-child {
                     display:none;
                 }
             }
