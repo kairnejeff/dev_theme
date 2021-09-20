@@ -1,5 +1,9 @@
 .category-id-71 {
     .container {
+        .breadcrumb {
+            display: none;
+        }
+
         >#left-column {
             display: none;
         }
@@ -12,11 +16,22 @@
             #main {
                 .block-category {
                     width: 100%;
+                    text-align: center;
+                    overflow: hidden;
 
                     .category-cover {
                         img {
-                            width: 100%;
-                            height: 100%;
+                            height: 315px;
+                            width: 1919px;
+                            position: relative;
+                            left: 100%;
+                            margin-left: -200%;
+                            float: none!important;
+
+                            @media (max-width: 767px) {
+                                width:767px;
+                                object-fit: cover;
+                            }
                         }
                     }
                 }
@@ -25,8 +40,20 @@
                     .col-md-8 {
                         img {
                             max-width: 412.89px;
+
+                            @media (max-width: 480px) {
+                                width: 100%;
+                            }
                         }
                     }   
+                }
+
+                #products {
+                    #js-product-list {
+                        .products {
+                            padding-right: 0!important;
+                        }
+                    }
                 }
 
                 .page-home {

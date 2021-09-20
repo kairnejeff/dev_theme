@@ -477,6 +477,14 @@ html, body {
 .category-id-71 #wrapper .container #category-description,
 .category-id-71 #wrapper .container #products,
 .category-id-71 #wrapper .container .page-home {
-  width: 1159px;
+  width: 1159px !important;
   margin: 0 auto;
+}
+@media (max-width: 960px) {
+  .category-id-71 #wrapper .container #category-description,
+.category-id-71 #wrapper .container #products,
+.category-id-71 #wrapper .container .page-home {
+    width: 100%;
+    padding: 0 15px;
+  }
 }
