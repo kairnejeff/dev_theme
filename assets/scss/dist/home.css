@@ -98,6 +98,7 @@ html, body {
 @media (max-width: 480px) {
   .container #main #content .featured-products .products > div {
     width: 100%;
+    margin-bottom: 0;
   }
 }
 .container #main #content .featured-products .products > div article {
@@ -418,6 +419,7 @@ html, body {
 @media (max-width: 960px) {
   .page-index #wrapper .container .home-page-block {
     padding: 0 15px;
+    margin-top: 30px;
   }
 }
 

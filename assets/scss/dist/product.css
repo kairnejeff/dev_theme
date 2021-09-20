@@ -432,11 +432,6 @@ html, body {
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav .owl-next {
   right: 8px;
 }
-@media (max-width: 480px) {
-  #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav .owl-next {
-    left: 392px;
-  }
-}
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav .owl-prev {
   left: 8px;
 }
