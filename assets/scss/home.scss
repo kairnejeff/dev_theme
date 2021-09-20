@@ -500,7 +500,7 @@
     }
 }
 
-#search #wrapper .container {
+#search #wrapper > .container {
     width: 1159px;
     margin: 30px auto;
 
@@ -510,6 +510,14 @@
 
     @media (max-width: 768px) {
         width: 100%;
+        padding: 0 15px;
+    }
+}
+
+#search #wrapper .col-md-12 {
+
+    @media (max-width: 768px) {
+       padding: 0;
     }
 }
 

@@ -511,16 +511,23 @@ html, body {
   }
 }
 
-#search #wrapper .container {
+#search #wrapper > .container {
   width: 1159px;
   margin: 30px auto;
 }
-#search #wrapper .container h2 {
+#search #wrapper > .container h2 {
   font-size: 30px;
 }
 @media (max-width: 768px) {
-  #search #wrapper .container {
+  #search #wrapper > .container {
     width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  #search #wrapper .col-md-12 {
+    padding: 0;
   }
 }
 
