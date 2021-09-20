@@ -257,6 +257,11 @@ html, body {
   height: 27px;
   margin-bottom: 0;
 }
+@media (max-width: 480px) {
+  #wrapper .container #main .product-container .content .product-information .product-actions .product-variants .product-variants-item #group_1 li label .color {
+    padding: 2px 15px 15px;
+  }
+}
 #wrapper .container #main .product-container .content .product-information .product-actions .product-variants .product-variants-item #group_1 li label .color span {
   left: 0;
   font-size: 16px;
