@@ -77,9 +77,14 @@ html, body {
 #cms #content .bloc .bloc-content {
   padding: 0 140px 60px;
 }
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   #cms #content .bloc .bloc-content {
     padding: 50px 43px;
+  }
+}
+@media (max-width: 480px) {
+  #cms #content .bloc .bloc-content {
+    padding: 50px 15px;
   }
 }
 #cms #content .bloc .bloc-content img {
