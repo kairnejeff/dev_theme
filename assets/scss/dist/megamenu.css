@@ -101,6 +101,9 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
 .top-menu .sub-menu.collapse .menu-block .menu-block-link i a:hover {
   text-decoration: underline !important;
 }
+.top-menu .sub-menu.collapse .menu-block .menu-block-link i:nth-child(9), .top-menu .sub-menu.collapse .menu-block .menu-block-link i:nth-child(10) {
+  display: none;
+}
 .top-menu .sub-menu.collapse .menu-block .menu-block-name {
   font-family: "RobotoMono";
   padding-bottom: 5px;
