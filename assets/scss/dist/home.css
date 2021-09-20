@@ -469,7 +469,14 @@ html, body {
   font-size: 30px;
 }
 
-#pagenotfound #wrapper .container {
+#pagenotfound #wrapper .container,
+#category-id-71 #wrapper .container {
   width: 1159px;
   margin: 0 auto;
+}
+@media (max-width: 960px) {
+  #pagenotfound #wrapper .container,
+#category-id-71 #wrapper .container {
+    padding: 0 15px;
+  }
 }
