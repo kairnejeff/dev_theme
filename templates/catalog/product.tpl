@@ -378,13 +378,15 @@
         </div>
 
         <div class="info-actu bocaux">
-          <h2> Recyclage </h2>
+          <h2> Engagement </h2>
           <div class="flex">
             <div class="recyclage">
               <img src="{$urls.img_url}recyclage.png"/>
             </div>
             <div class="text-info">
-            <p> Les emballages : bocaux en verre recyclables </p>
+            <p> Responsables jusqu’au bocal, nous tenons à privilégier les bocaux en verre pour le conditionnement et la présentation de nos recettes.
+              C’est un engagement fort, permettant à la fois le recyclage et la réalité visible de notre cuisine qualitative en appréciant textures et couleurs.
+              Enfin, nous avons la volonté de favoriser la filière verre en ne pratiquant pas de consigne ce qui de plus bénéficie à l’environnement à l’appui d’un bilan carbone maîtrisé. </p>
             </div>
           </div>
         </div>
