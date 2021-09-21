@@ -491,8 +491,10 @@
     }
 }
 
-.cms-id-26  #wrapper .cuisine-nature,
-.cms-id-24 #wrapper .bloc {
+.cms-id-24  #wrapper .cuisine-nature,
+.cms-id-25 #wrapper .bloc,
+.cms-id-14 #wrapper .bloc,
+.page-cms-13 #wrapper .bloc {
     width: 961px;
     margin: 0 auto;
 
@@ -500,6 +502,10 @@
         padding: 0 15px;
         width: 100%;
     }
+}
+
+.page-cms-13 #wrapper .bloc .chapeau {
+    padding: 60px 140px;
 }
 
 #search #wrapper > .container {
