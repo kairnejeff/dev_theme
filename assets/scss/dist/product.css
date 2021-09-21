@@ -699,6 +699,9 @@ html, body {
   grid-gap: 30px;
   margin-top: 60px;
 }
+#wrapper .product-accessories .products > div {
+  margin-bottom: 70px;
+}
 @media (max-width: 480px) {
   #wrapper .product-accessories .products > div {
     margin-bottom: 90px;

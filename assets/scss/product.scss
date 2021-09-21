@@ -728,6 +728,7 @@
             grid-gap: 30px;
             margin-top: 60px;
             > div {
+                margin-bottom: 70px;
                 @media (max-width: 480px) {
                     margin-bottom: 90px;
                 }
