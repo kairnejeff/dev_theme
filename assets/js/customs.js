@@ -361,7 +361,7 @@ function itsTime() {
 
 setTimeout(function() {
     itsTime();
-}, 3000);
+}, 15000);
 
 
 function tab(idConteiner, classTab, classPanel) {

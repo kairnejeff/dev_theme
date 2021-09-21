@@ -352,7 +352,7 @@ function itsTime() {
 
 setTimeout(function () {
   itsTime();
-}, 3000);
+}, 15000);
 
 function tab(idConteiner, classTab, classPanel) {
   var tabs = _toConsumableArray(document.querySelectorAll(classTab)),
