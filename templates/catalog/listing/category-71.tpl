@@ -66,11 +66,11 @@
                 <p class="font2" style="color: #232323; font-weight: 400; font-size: 1.1em;">Le bento, c'est la réunion, dans un même bocal, de plusieurs recettes associant légumes de saison, légumineuses et céréales. C'est un repas complet et équilibré, savoureux et original, 100 % bio, facile à transporter, facile à consommer.</p>
                 <p class="font2" style="color: #232323; font-weight: 400; font-size: 1.1em;">Élaborés à partir de produits de saison, les bentos sont disponibles en édition limitée.</p>
             </div>
-        {if $listing.products|count}
-        {else}
-            <p class="font2" style="color: #8B2A6D; font-weight: 400; font-size: 1.3em; text-align:center">La prochaine collection de bentos sera disponible le 7 Juillet 2021.</p>
-        {/if}
 	</div>
+    {if $listing.products|count}
+    {else}
+        <p class="font2" style="color: #8B2A6D; font-weight: 400; font-size: 1.3em; text-align:center">La prochaine collection de bentos sera disponible début octobre 2021.</p>
+    {/if}
 	</div>
     </section>
 {/block}
