@@ -463,12 +463,12 @@ html, body {
   }
 }
 
-#cart #wrapper .container {
+#cart #wrapper .container #authentication #wrapper .container {
   width: 1159px;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
-  #cart #wrapper .container {
+  #cart #wrapper .container #authentication #wrapper .container {
     padding: 0 15px;
     width: 100%;
   }
@@ -503,7 +503,7 @@ html, body {
 .cms-id-24 #wrapper .cuisine-nature,
 .cms-id-25 #wrapper .bloc,
 .cms-id-14 #wrapper .bloc,
-.page-cms-13 #wrapper .bloc {
+.cms-id-13 #wrapper .bloc {
   width: 961px;
   margin: 0 auto;
 }
@@ -511,13 +511,13 @@ html, body {
   .cms-id-24 #wrapper .cuisine-nature,
 .cms-id-25 #wrapper .bloc,
 .cms-id-14 #wrapper .bloc,
-.page-cms-13 #wrapper .bloc {
+.cms-id-13 #wrapper .bloc {
     padding: 0 15px;
     width: 100%;
   }
 }
 
-.page-cms-13 #wrapper .bloc .chapeau {
+.cms-id-13 #wrapper .bloc .chapeau {
   padding: 60px 140px;
 }
 

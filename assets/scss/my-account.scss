@@ -1,3 +1,5 @@
+@import "global.scss";
+
 @media screen and (max-width: 480px) {
     .log-out {
         float: left;
@@ -68,6 +70,26 @@
                 > div {
                     margin-bottom: 30px;
                 }
+            }
+        }
+    }
+}
+
+#my-account {
+    .container {
+        margin-top: 30px;
+
+        .my-account {
+            h1 {
+                font-size: 50px;
+                font-family: $unna;
+                color: white;
+                position: absolute;
+                z-index: 2;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%)''
+
             }
         }
     }
