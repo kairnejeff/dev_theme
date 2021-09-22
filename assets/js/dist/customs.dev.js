@@ -348,11 +348,19 @@ $(document).ready(function () {
 
 function itsTime() {
   $('.home_popup').css('display', 'block');
+  console.log("test");
 }
 
 setTimeout(function () {
   itsTime();
 }, 15000);
+
+function close_popup() {
+  $('#popup-close').click(function () {
+    $('.home_popup').css('display', 'none');
+    console.log("close");
+  });
+}
 
 function tab(idConteiner, classTab, classPanel) {
   var tabs = _toConsumableArray(document.querySelectorAll(classTab)),
