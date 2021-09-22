@@ -348,7 +348,6 @@ $(document).ready(function () {
 $(document).ready(function () {
   function itsTime() {
     $('.home_popup').css('display', 'block');
-    console.log("test");
   }
 
   setTimeout(function () {
@@ -356,7 +355,6 @@ $(document).ready(function () {
   }, 15000);
 });
 $(document).ready(function () {
-  console.log("tototiti");
   $('#popup-close').click(function () {
     $('.home_popup').css('display', 'none');
     console.log("close");
