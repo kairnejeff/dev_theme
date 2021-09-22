@@ -463,12 +463,14 @@ html, body {
   }
 }
 
-#cart #wrapper .container #authentication #wrapper .container {
+#cart #wrapper .container,
+#authentication #wrapper .container {
   width: 1159px;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
-  #cart #wrapper .container #authentication #wrapper .container {
+  #cart #wrapper .container,
+#authentication #wrapper .container {
     padding: 0 15px;
     width: 100%;
   }
