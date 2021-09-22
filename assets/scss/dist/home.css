@@ -477,13 +477,15 @@ html, body {
 }
 
 #stores #wrapper .container,
-#my-account #wrapper .container {
+#my-account #wrapper .container,
+#checkout #wrapper .container {
   width: 1159px;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
   #stores #wrapper .container,
-#my-account #wrapper .container {
+#my-account #wrapper .container,
+#checkout #wrapper .container {
     padding: 0 15px;
     width: 100%;
   }
