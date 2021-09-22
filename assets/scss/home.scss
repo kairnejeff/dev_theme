@@ -471,7 +471,7 @@
 
 #stores #wrapper .container,
 #my-account #wrapper .container,
-#checkout #wrapper .container{
+#checkout #wrapper .container {
     width: 1159px;
     margin: 0 auto;
 
@@ -479,6 +479,10 @@
         padding: 0 15px;
         width: 100%;
     }
+}
+
+#checkout #wrapper .container {
+    margin-top: 30px;
 }
 
 .page-cms .breadcrumb,

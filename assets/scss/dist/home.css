@@ -491,6 +491,10 @@ html, body {
   }
 }
 
+#checkout #wrapper .container {
+  margin-top: 30px;
+}
+
 .page-cms .breadcrumb,
 .page-cms .cms-category-nav {
   width: 1159px;
