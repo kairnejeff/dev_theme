@@ -355,21 +355,28 @@ $(document).ready(function() {
 
 
 
-function itsTime() {
-    $('.home_popup').css('display', 'block');
-    console.log("test");
-}
+$(document).ready(function() {
+    function itsTime() {
+        $('.home_popup').css('display', 'block');
+        console.log("test");
+    }
 
-setTimeout(function() {
-    itsTime();
-}, 15000);
+    setTimeout(function() {
+        itsTime();
+    }, 15000);
+});
 
-function close_popup() {
+
+
+$(document).ready(function() {
+    
+    console.log("tototiti");
     $('#popup-close').click(function() {
         $('.home_popup').css('display', 'none');
         console.log("close");
     });
-}
+    
+});
 
 
 
