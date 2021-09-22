@@ -69,25 +69,31 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
             margin: 0;
         }
         .menu-block-link {
-            i {
-                a {
-                    padding: 0;
-                    padding-bottom: 17px;
-                    font-style: normal;
-                    font-family: $unna;
-                    font-size: 15px;
-                    line-height: 18px;
+            &:first-child {
+                i {
+                    &:nth-child(9),
+                    &:nth-child(10),
+                    &:last-child {
+                        display:none;
+                    }
                 }
-                a:hover {
-                    text-decoration: underline !important;
-                }
-
-                &:nth-child(9),
-                &:nth-child(10),
-                &:last-child {
-                    display:none;
-                }
+                
             }
+                i {
+                    a {
+                        padding: 0;
+                        padding-bottom: 17px;
+                        font-style: normal;
+                        font-family: $unna;
+                        font-size: 15px;
+                        line-height: 18px;
+                    }
+                    a:hover {
+                        text-decoration: underline !important;
+                    }
+
+                    
+                }
         }
         .menu-block-name {
             font-family: $roboto;
@@ -305,6 +311,10 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
             width: 340px;
             @media (max-width: 1200px) {
                 display: none;
+            }
+
+            @media (min-width: 1800px) {
+                width: auto;
             }
         }
     }

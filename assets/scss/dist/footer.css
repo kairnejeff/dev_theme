@@ -342,6 +342,7 @@ html, body {
   text-transform: uppercase;
 }
 #footer .container .membre {
+  display: none;
   margin-top: 30px;
 }
 #footer .container .membre a {
@@ -354,7 +355,7 @@ html, body {
 #footer .row .text-sm-center {
   margin-top: 100px;
   text-align: center;
-  color: #d6d6d6;
+  color: #000;
 }
 @media (max-width: 992px) {
   #footer .row .text-sm-center {
@@ -364,7 +365,7 @@ html, body {
 #footer .row .text-sm-center a {
   display: inline-block;
   padding-left: 1rem;
-  color: #d6d6d6;
+  color: #000;
 }
 @media (max-width: 480px) {
   #footer .row .text-sm-center a {

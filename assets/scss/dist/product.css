@@ -242,7 +242,7 @@ html, body {
 }
 @media (max-width: 480px) {
   #wrapper .container #main .product-container .content .product-information .product-actions .product-variants .product-variants-item #group_1 {
-    margin-left: 30px;
+    margin-left: 50px;
   }
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-variants .product-variants-item #group_1 li {
@@ -259,7 +259,7 @@ html, body {
 }
 @media (max-width: 480px) {
   #wrapper .container #main .product-container .content .product-information .product-actions .product-variants .product-variants-item #group_1 li label .color {
-    padding: 2px 15px 15px;
+    padding: 2px 8px 15px;
   }
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-variants .product-variants-item #group_1 li label .color span {

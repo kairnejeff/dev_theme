@@ -90,6 +90,9 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
     margin: 0;
   }
 }
+.top-menu .sub-menu.collapse .menu-block .menu-block-link:first-child i:nth-child(9), .top-menu .sub-menu.collapse .menu-block .menu-block-link:first-child i:nth-child(10), .top-menu .sub-menu.collapse .menu-block .menu-block-link:first-child i:last-child {
+  display: none;
+}
 .top-menu .sub-menu.collapse .menu-block .menu-block-link i a {
   padding: 0;
   padding-bottom: 17px;
@@ -100,9 +103,6 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
 }
 .top-menu .sub-menu.collapse .menu-block .menu-block-link i a:hover {
   text-decoration: underline !important;
-}
-.top-menu .sub-menu.collapse .menu-block .menu-block-link i:nth-child(9), .top-menu .sub-menu.collapse .menu-block .menu-block-link i:nth-child(10), .top-menu .sub-menu.collapse .menu-block .menu-block-link i:last-child {
-  display: none;
 }
 .top-menu .sub-menu.collapse .menu-block .menu-block-name {
   font-family: "RobotoMono";
@@ -290,6 +290,11 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
 @media (max-width: 1200px) {
   .top-menu .sub-menu.collapse .menu-block:last-child {
     display: none;
+  }
+}
+@media (min-width: 1800px) {
+  .top-menu .sub-menu.collapse .menu-block:last-child {
+    width: auto;
   }
 }
 
