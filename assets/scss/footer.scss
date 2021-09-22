@@ -159,23 +159,23 @@
                             font-size: 14px;
                             font-family: $alegreya;
                         }
-                        &:last-child {
-                            ul {
-                                li {
-                                    &:nth-child(2),
-                                    &:nth-child(4),
-                                    &:nth-child(7),
-                                    &:nth-child(8) {
-                                        margin-bottom: 30px;
-                                    }
+                        
+                        #footer_sub_menu_65945 {
+                            li {
+                                &:nth-child(2),
+                                &:nth-child(4),
+                                &:nth-child(7),
+                                &:nth-child(8) {
+                                    margin-bottom: 30px;
+                                }
 
-                                    &:nth-child(9),
-                                    &:last-child{
-                                        display:none;
-                                    }
+                                &:nth-child(9),
+                                &:last-child{
+                                    display:none;
                                 }
                             }
                         }
+                        
                     }
                 }
             }
