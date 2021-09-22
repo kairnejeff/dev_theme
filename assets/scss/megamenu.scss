@@ -53,6 +53,17 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
 
     .menu-block {
 
+        &:first-child {
+            i {
+                &:nth-child(9),
+                &:nth-child(10),
+                &:last-child {
+                    display:none;
+                }
+            }
+            
+        }
+
         .menulink.current {
             text-decoration: underline;
         }
@@ -69,16 +80,6 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
             margin: 0;
         }
         .menu-block-link {
-            &:first-child {
-                i {
-                    &:nth-child(9),
-                    &:nth-child(10),
-                    &:last-child {
-                        display:none;
-                    }
-                }
-                
-            }
                 i {
                     a {
                         padding: 0;
