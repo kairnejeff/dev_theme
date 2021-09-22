@@ -157,7 +157,7 @@ html, body {
   max-width: 373.328px;
   max-height: 373.328px;
 }
-@media (max-width: 480px) {
+@media (max-width: 780px) {
   .container .featured-products .products > div article .thumbnail-container a:first-child img {
     max-width: unset;
     max-height: unset;
