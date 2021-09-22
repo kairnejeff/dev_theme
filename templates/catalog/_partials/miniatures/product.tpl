@@ -60,7 +60,7 @@
           {if $page.page_name == 'index'}
             <h3 class="h3 product-title" itemprop="name"><a href="{$product.url}" itemprop="url" content="{$product.url}">{$product.name}</a></h3>
           {else}
-            <h2 class="h2 product-title" itemprop="name"><a href="{$product.url}" itemprop="url" content="{$product.url}">{$product.name}</a></h2>
+            <h3 class="h3 product-title" itemprop="name"><a href="{$product.url}" itemprop="url" content="{$product.url}">{$product.name}</a></h3>
           {/if}
           {if $product.description_short}
             <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
