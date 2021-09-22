@@ -108,7 +108,7 @@ html, body {
     margin-top: 50px;
   }
 }
-.container .featured-products h2 {
+.container .featured-products .product-title {
   font-family: RobotoMono;
   font-size: 13px;
   line-height: 1em;

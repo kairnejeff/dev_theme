@@ -75,7 +75,3 @@ html, body {
 #wrapper .container #main .cart-grid .cart-grid-body a::first-letter {
   text-transform: lowercase;
 }
-#wrapper .featured-products .h2 {
-  font-family: "RobotoMono";
-  font-size: 13px;
-}
