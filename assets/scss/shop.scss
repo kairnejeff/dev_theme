@@ -11,6 +11,8 @@
                     .product-line-grid-body {
                         height: 100%;
                         position: relative;
+                        padding-left: 25px;
+
                         @media (max-width: 468px) {
                             height: auto;
                         }
@@ -32,7 +34,6 @@
                             }
                         }
                         .price {
-                            padding-left: 25px;
                             span {
                                 position: absolute;
                                 bottom: 0;

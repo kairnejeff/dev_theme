@@ -1,0 +1,81 @@
+.product-description {
+  border-left: 1px solid #000;
+  padding-left: 13px;
+}
+.product-description .h3 a {
+  font-size: 24px;
+  display: block;
+  text-align: left !important;
+}
+.product-description .h3 a:hover {
+  color: #000;
+}
+.product-description .h3 a::first-letter {
+  text-transform: lowercase;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+#header .header-nav {
+  box-shadow: none;
+  margin-top: none;
+}
+
+#blockcart-modal .modal-dialog .modal-header h4 {
+  text-align: center;
+}
+#blockcart-modal .modal-dialog .modal-header h4 i {
+  position: absolute;
+  left: 35%;
+}
+@media (max-width: 480px) {
+  #blockcart-modal .modal-dialog .modal-header h4 i {
+    left: 12px;
+  }
+}
+#blockcart-modal .modal-dialog .modal-body .row .cart-content .cart-content-btn button {
+  height: 40px;
+}
+#blockcart-modal .modal-dialog .modal-body .row .cart-content .cart-content-btn a {
+  position: relative;
+  padding-left: 40px;
+  height: 40px;
+  line-height: inherit;
+  background-color: #82b8ec !important;
+}
+#blockcart-modal .modal-dialog .modal-body .row .cart-content .cart-content-btn a i {
+  font-size: 18px;
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+}
+@media (max-width: 480px) {
+  #blockcart-modal .modal-dialog .modal-body .row .divide-right .product-image {
+    max-width: 150px;
+  }
+}
+
+#wrapper .container #main .cart-grid .cart-grid-body .label {
+  position: relative;
+}
+#wrapper .container #main .cart-grid .cart-grid-body .label i {
+  position: absolute;
+  line-height: inherit;
+  left: 0;
+}
+#wrapper .container #main .cart-grid .cart-grid-body .label span {
+  margin-left: 25px;
+}
+#wrapper .container #main .cart-grid .cart-grid-body a::first-letter {
+  text-transform: lowercase;
+}
+#wrapper .featured-products .h2 {
+  font-family: "RobotoMono";
+  font-size: 13px;
+}
