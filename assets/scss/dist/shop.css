@@ -25,6 +25,9 @@ html, body {
 #main .cart-grid .cart-grid-body .cart-container hr {
   margin-bottom: 20px;
 }
+#main .cart-grid .cart-grid-body .cart-container .label {
+  padding-left: 25px;
+}
 #main .cart-grid .cart-grid-body .cart-container .product-line-grid {
   height: 125px;
 }
