@@ -916,8 +916,6 @@ html, body {
   .actu .info-actu .flex .provenance img {
     width: 470px;
     height: 313px;
-    position: absolute;
-    left: -15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -935,6 +933,12 @@ html, body {
   float: right;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .actu .info-actu .flex .secret_cuisine {
+    width: 392px;
+    height: 593px;
+  }
+}
 .actu .info-actu .flex .secret_cuisine img {
   width: 694px;
   height: 461px;
@@ -943,8 +947,13 @@ html, body {
   .actu .info-actu .flex .secret_cuisine img {
     width: 470px;
     height: 312.2px;
-    position: absolute;
-    right: -15px;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 480px) {
+  .actu .info-actu .flex .secret_cuisine img {
+    height: auto;
+    width: 100%;
+    margin-left: 30px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -974,6 +983,13 @@ html, body {
     left: -15px;
   }
 }
+@media screen and (max-width: 480px) {
+  .actu .info-actu .flex .recyclage img {
+    height: auto;
+    width: 100%;
+    margin-left: -30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .actu .info-actu .flex .recyclage {
     width: 600px;
@@ -986,17 +1002,11 @@ html, body {
   }
 }
 .actu .info-actu .flex .text-info {
-  background-color: #FEF9F4;
-  padding: 40px 30px;
   position: absolute;
   top: 25%;
   right: -100px;
   width: 500px;
   z-index: 99;
-  color: #000;
-  font-family: "RobotoMonoLight";
-  font-size: 13px;
-  line-height: 17px;
 }
 @media (max-width: 769px) {
   .actu .info-actu .flex .text-info {
@@ -1013,6 +1023,8 @@ html, body {
   }
 }
 .actu .info-actu .flex .text-info p {
+  background-color: #FEF9F4;
+  padding: 40px 30px;
   font-size: 21px;
   font-family: "Unna";
   margin: 0;
