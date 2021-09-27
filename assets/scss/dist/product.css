@@ -1044,7 +1044,7 @@ html, body {
 }
 @media (max-width: 480px) {
   .actu .bocaux .flex .text-info {
-    bottom: 150px;
+    top: 45%;
     right: -17px;
     width: 100%;
   }
