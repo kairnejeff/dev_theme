@@ -55,7 +55,7 @@
         </div>
         <div class="block-yuka">
           <span class="yuka"><img src="{$urls.theme_assets}img/yuka.png"/></span>
-          <p class="yuka-note">Nos poduits sont excellents sur yuka (moyenne 82/100)</p>
+          <p class="yuka-note">Nos produits sont excellents sur yuka (moyenne 82/100)</p>
         </div>
         <div class="membre">
           <a href="{$urls.base_url}content/25-abonnement-passion-nature">Devenir membre du club k&j</a>
