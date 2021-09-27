@@ -160,10 +160,10 @@
     height: 100%;
 }
 
-.container #main #content .featured-products .row .product-miniature .thumbnail-container a img {
+/* .container #main #content .featured-products .row .product-miniature .thumbnail-container a img {
     max-width: 373.328px;
     max-height: 373.328px;
-}
+} */
 
 .container #main #content .featured-products .row .product-miniature .thumbnail-container .product-description h3 {
     text-align: left;
