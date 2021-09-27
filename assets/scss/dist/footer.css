@@ -195,6 +195,11 @@ html, body {
   font-size: 14px;
   font-family: "AlegreyaSans";
 }
+#footer .footer-container .container .row .col-md-7 .col-lg-4:nth-child(2) ul li:first-child a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
 #footer .footer-container .container .row .col-md-7 .col-lg-4:nth-child(3) ul li:nth-child(2), #footer .footer-container .container .row .col-md-7 .col-lg-4:nth-child(3) ul li:nth-child(4), #footer .footer-container .container .row .col-md-7 .col-lg-4:nth-child(3) ul li:nth-child(7), #footer .footer-container .container .row .col-md-7 .col-lg-4:nth-child(3) ul li:nth-child(8) {
   margin-bottom: 30px;
 }

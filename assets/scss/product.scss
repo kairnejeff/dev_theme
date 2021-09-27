@@ -960,10 +960,6 @@
             .secret_cuisine {
                 float: right;
                 position: relative;
-                @media screen and (max-width: 480px) {
-                            width: 392px;
-                            height: 593px;
-                        }
                 img {
                     width: 694px;
                     height: 461px;
@@ -1024,7 +1020,7 @@
                     top: auto;
                 }
                 @media (max-width: 480px) {
-                    bottom: 50px;
+                    top: 45%;
                     right: -17px;
                     width: 100%;
                 }
@@ -1037,7 +1033,7 @@
                     line-height: 30px;
                     @media screen and (max-width: 767px) {
                         margin-left: 0;
-                        line-height: 25px;
+                        padding: 40px 40px 40px 60px;
                     }
                 }
             }

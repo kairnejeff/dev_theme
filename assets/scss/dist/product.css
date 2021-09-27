@@ -933,12 +933,6 @@ html, body {
   float: right;
   position: relative;
 }
-@media screen and (max-width: 480px) {
-  .actu .info-actu .flex .secret_cuisine {
-    width: 392px;
-    height: 593px;
-  }
-}
 .actu .info-actu .flex .secret_cuisine img {
   width: 694px;
   height: 461px;
@@ -1017,7 +1011,7 @@ html, body {
 }
 @media (max-width: 480px) {
   .actu .info-actu .flex .text-info {
-    bottom: 50px;
+    top: 45%;
     right: -17px;
     width: 100%;
   }
@@ -1033,7 +1027,7 @@ html, body {
 @media screen and (max-width: 767px) {
   .actu .info-actu .flex .text-info p {
     margin-left: 0;
-    line-height: 25px;
+    padding: 40px 40px 40px 60px;
   }
 }
 .actu .secret .text-info {
