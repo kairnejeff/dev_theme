@@ -154,13 +154,13 @@ html, body {
   opacity: 1;
 }
 .container .featured-products .products > div article .thumbnail-container a:first-child img {
-  max-width: 373.328px;
-  max-height: 373.328px;
+  width: 294.33px;
+  height: 294.33px;
 }
-@media (max-width: 780px) {
+@media (max-width: 980px) {
   .container .featured-products .products > div article .thumbnail-container a:first-child img {
-    max-width: unset;
-    max-height: unset;
+    width: unset;
+    height: unset;
   }
 }
 .container .featured-products .products > div article .thumbnail-container .product-description {

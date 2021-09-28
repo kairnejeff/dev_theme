@@ -125,11 +125,11 @@
                                 opacity: 1;
                             }
                             img {
-                                max-width: 373.328px;
-                                max-height: 373.328px;
-                                @media (max-width: 780px) {
-                                    max-width: unset;
-                                    max-height: unset;
+                                width: 294.33px;
+                                height: 294.33px;
+                                @media (max-width: 980px) {
+                                    width: unset;
+                                    height: unset;
                                 }
                             }
                         }
