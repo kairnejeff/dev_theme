@@ -341,8 +341,13 @@ html, body {
   margin-right: 40px;
   margin-top: 14px;
 }
-#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .product-nutriscore div img {
-  max-height: 45px;
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .product-nutriscore .yuka img {
+  width: 16px;
+  height: 26px;
+}
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .product-nutriscore .nutriscore img {
+  width: 83.06px;
+  height: 45px;
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .add-to-cart {
   height: 3rem;
