@@ -4,6 +4,12 @@
     margin: 0 auto;
     .container {
         position: relative;
+
+        .breadcrumb {
+            @media (max-width: 960px) {
+                padding-left: 15px;
+            }
+        }
         .page-home {
             #custom-text {
                 #custom-text-container {
@@ -707,6 +713,7 @@
                             .product-actions {
                                 @media (max-width: 769px) {
                                     position: relative;
+                                    padding-left: 30px;
                                 }
                                 form {
                                     .product-add-to-cart {

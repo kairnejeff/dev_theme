@@ -29,6 +29,11 @@ html, body {
 #wrapper .container {
   position: relative;
 }
+@media (max-width: 960px) {
+  #wrapper .container .breadcrumb {
+    padding-left: 15px;
+  }
+}
 #wrapper .container .page-home #custom-text #custom-text-container {
   padding: 40px 20px;
 }
@@ -685,6 +690,7 @@ html, body {
 @media (max-width: 769px) {
   #wrapper .container #main .product-container .content:nth-child(2) .product-information .product-actions {
     position: relative;
+    padding-left: 30px;
   }
 }
 #wrapper .container #main .product-container .content:nth-child(2) .product-information .product-actions form .product-add-to-cart #product-availability {
