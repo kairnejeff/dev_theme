@@ -84,19 +84,22 @@ html, body {
     display: none;
   }
 }
-#wrapper .container #main .product-container .product-cover #carousel ul li img {
-  border: none;
-  width: 450px;
-  height: 450px;
-}
-#wrapper .container #main .product-container .product-cover #carousel ul li .img-thumbnail {
-  width: 450px;
-  height: 438px;
-}
-@media (max-width: 480px) {
+@media (max-width: 961px) {
   #wrapper .container #main .product-container .product-cover #carousel ul li .img-thumbnail {
-    width: 397px;
-    height: 397px;
+    width: 450px;
+    height: 450px;
+  }
+}
+@media (min-width: 769px) and (max-width: 960px) {
+  #wrapper .container #main .product-container .product-cover #carousel ul li .img-thumbnail {
+    max-width: 450px;
+    max-height: 450px;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper .container #main .product-container .product-cover #carousel ul li .img-thumbnail {
+    max-width: 734px;
+    max-height: 734px;
   }
 }
 #wrapper .container #main .product-container .product-cover .btn-image {
