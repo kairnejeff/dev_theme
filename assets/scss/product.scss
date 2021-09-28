@@ -39,8 +39,11 @@
 
                 .product-cover {
                     .js-qv-product-cover {
-                        width: 450px;
-                        height: 450px;
+
+                        @media (min-width: 961px) {
+                            width: 450px;
+                            height: 450px;
+                        }
 
                         @media (min-width: 769px) and (max-width: 960px) {
                             max-width: 450px;

@@ -50,9 +50,11 @@ html, body {
     padding: 0 15px;
   }
 }
-#wrapper .container #main .product-container .product-cover .js-qv-product-cover {
-  width: 450px;
-  height: 450px;
+@media (min-width: 961px) {
+  #wrapper .container #main .product-container .product-cover .js-qv-product-cover {
+    width: 450px;
+    height: 450px;
+  }
 }
 @media (min-width: 769px) and (max-width: 960px) {
   #wrapper .container #main .product-container .product-cover .js-qv-product-cover {
