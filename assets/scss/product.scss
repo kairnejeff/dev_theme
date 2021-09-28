@@ -38,8 +38,21 @@
                 }
 
                 .product-cover {
-                    img {
-                        max-width: 100%;
+                    .js-qv-product-cover {
+                        width: 450px;
+                        height: 450px;
+
+                        @media (min-width: 769px) and (max-width: 960px) {
+                            max-width: 450px;
+                            max-height: 450px;
+                        }
+
+                        @media (max-width: 768px) {
+                            max-width: 734px;
+                            max-height: 734px;
+                        }
+
+
                     }
                     #carousel {
                         margin-top: 20px;

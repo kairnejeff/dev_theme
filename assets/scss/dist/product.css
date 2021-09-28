@@ -50,8 +50,21 @@ html, body {
     padding: 0 15px;
   }
 }
-#wrapper .container #main .product-container .product-cover img {
-  max-width: 100%;
+#wrapper .container #main .product-container .product-cover .js-qv-product-cover {
+  width: 450px;
+  height: 450px;
+}
+@media (min-width: 769px) and (max-width: 960px) {
+  #wrapper .container #main .product-container .product-cover .js-qv-product-cover {
+    max-width: 450px;
+    max-height: 450px;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper .container #main .product-container .product-cover .js-qv-product-cover {
+    max-width: 734px;
+    max-height: 734px;
+  }
 }
 #wrapper .container #main .product-container .product-cover #carousel {
   margin-top: 20px;
