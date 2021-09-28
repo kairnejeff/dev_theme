@@ -287,7 +287,7 @@ ul.top-menu[data-child="1"] li.menu-item .sub-menu {
 }
 .top-menu .sub-menu.collapse .menu-block:last-child {
   margin: 30px 0;
-  background-image: url("../img/assiette.png");
+  background-image: url("../img/assiette.jpg");
   background-size: cover;
   width: 340px;
 }
