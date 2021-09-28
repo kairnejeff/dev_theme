@@ -372,7 +372,7 @@
             {/if}
             </div>
             <div class="secret_cuisine">
-              <img src="{$urls.img_url}secret.png"/>
+              <img src="{$urls.img_url}secret.jpg"/>
             </div>
           </div>
         </div>
@@ -381,7 +381,7 @@
           <h2> Engagement </h2>
           <div class="flex">
             <div class="recyclage">
-              <img src="{$urls.img_url}recyclage.png"/>
+              <img src="{$urls.img_url}recyclage.jpg"/>
             </div>
             <div class="text-info">
             <p> Responsables jusqu’au bocal, nous tenons à privilégier les bocaux en verre pour le conditionnement et la présentation de nos recettes.
