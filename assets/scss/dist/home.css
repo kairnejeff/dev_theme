@@ -340,8 +340,8 @@ html, body {
 }
 .en-off .content img {
   border: 1px solid #dbdbdb;
-  max-width: 296px;
-  max-height: 296px;
+  width: 296px;
+  height: 292.02px;
   width: 100%;
   height: auto;
 }
