@@ -71,7 +71,7 @@
                         ul {
                             li {
                                 .img-thumbnail {
-                                    @media (max-width: 961px) {
+                                    @media (min-width: 961px) {
                                         width: 450px;
                                         height: 450px;
                                     }  

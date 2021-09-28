@@ -84,7 +84,7 @@ html, body {
     display: none;
   }
 }
-@media (max-width: 961px) {
+@media (min-width: 961px) {
   #wrapper .container #main .product-container .product-cover #carousel ul li .img-thumbnail {
     width: 450px;
     height: 450px;
