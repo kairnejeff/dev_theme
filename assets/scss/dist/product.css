@@ -904,8 +904,18 @@ html, body {
 .actu {
   margin-top: 80px;
 }
+@media (max-width: 480px) {
+  .actu {
+    min-height: 1800px;
+  }
+}
 .actu .origin {
   display: none;
+}
+@media (max-width: 480px) {
+  .actu .info-actu {
+    height: 700px;
+  }
 }
 .actu .info-actu h2 {
   margin-bottom: 80px;
@@ -1026,19 +1036,11 @@ html, body {
 }
 .actu .info-actu .flex .text-info {
   position: absolute;
-  top: 25%;
-  right: -100px;
+  top: 15%;
   width: 500px;
   z-index: 99;
 }
 @media (max-width: 769px) {
-  .actu .info-actu .flex .text-info {
-    right: 13px;
-    bottom: 65px;
-    top: auto;
-  }
-}
-@media (max-width: 480px) {
   .actu .info-actu .flex .text-info {
     top: 45%;
     right: -17px;
@@ -1070,6 +1072,11 @@ html, body {
   font-family: "RobotoMonoLight";
   font-size: 13px;
   line-height: 17px;
+}
+@media (max-width: 480px) {
+  .actu .bocaux {
+    margin-top: 100px;
+  }
 }
 @media (max-width: 480px) {
   .actu .bocaux .flex .text-info {

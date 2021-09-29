@@ -939,11 +939,20 @@
 .actu {
     margin-top: 80px;
 
+    @media (max-width: 480px) {
+        min-height: 1800px
+    }
+
     .origin {
         display: none;
     }
 
     .info-actu {
+
+        @media (max-width: 480px) {
+            height: 700px;
+        }
+
         h2 {
             margin-bottom: 80px;
             font-family: $roboto;
@@ -1041,16 +1050,11 @@
             }
             .text-info {
                 position: absolute;
-                top: 25%;
-                right: -100px;
+                top: 15%;
                 width: 500px;
                 z-index: 99;
+                
                 @media (max-width: 769px) {
-                    right: 13px;
-                    bottom: 65px;
-                    top: auto;
-                }
-                @media (max-width: 480px) {
                     top: 45%;
                     right: -17px;
                     width: 100%;
@@ -1085,6 +1089,9 @@
         line-height: 17px;
     }
     .bocaux {
+        @media (max-width: 480px) {
+            margin-top: 100px;
+        }
         .flex {
             .text-info {
                 @media (max-width: 480px) {
