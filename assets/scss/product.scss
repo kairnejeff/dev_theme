@@ -573,6 +573,14 @@
                                             line-height: 17px;
                                         }
                                     }
+
+                                    #allergenes {
+                                        @media (max-width: 768px) {
+                                            padding-left: 20px;
+                                            padding-right: 20px;
+                                        }
+                                    }
+
                                     #mentions {
                                         @media (max-width: 768px) {
                                             padding-left: 20px;

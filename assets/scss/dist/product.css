@@ -571,6 +571,12 @@ html, body {
   line-height: 17px;
 }
 @media (max-width: 768px) {
+  #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler #allergenes {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 768px) {
   #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler #mentions {
     padding-left: 20px;
     padding-right: 20px;
