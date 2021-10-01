@@ -429,6 +429,7 @@ html, body {
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-stage {
   display: flex;
   justify-content: space-between;
+  padding-left: 10px;
 }
 @media (max-width: 480px) {
   #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-stage {
@@ -560,6 +561,7 @@ html, body {
 }
 @media (max-width: 768px) {
   #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler #ingredient {
+    padding-left: 20px;
     padding-right: 20px;
   }
 }
