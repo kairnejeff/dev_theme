@@ -37,16 +37,27 @@ html, body {
 #footer .footer-container .container .row {
   width: 100%;
 }
-#footer .footer-container .container .row .logo {
+@media (min-width: 769px) and (max-width: 1200px) {
+  #footer .footer-container .container .row .col-md-2 {
+    width: 100%;
+  }
+}
+#footer .footer-container .container .row .col-md-2 .logo {
   width: 150px;
   height: 104px;
   margin-left: 60px;
 }
-@media (max-width: 769px) {
-  #footer .footer-container .container .row .logo {
+@media (max-width: 1200px) {
+  #footer .footer-container .container .row .col-md-2 .logo {
     display: block;
     margin: 0 auto;
     margin-bottom: 30px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  #footer .footer-container .container .row .col-md-7 {
+    width: 70%;
+    margin-left: 15px;
   }
 }
 #footer .footer-container .container .row .home_popup {
@@ -185,6 +196,9 @@ html, body {
     padding: 0;
   }
 }
+#footer .footer-container .container .row .col-md-12 {
+  padding: 0;
+}
 #footer .footer-container .container .row .col-md-7 .insta {
   font-weight: bold;
 }
@@ -206,6 +220,11 @@ html, body {
 }
 #footer .footer-container .container .row .col-md-7 .col-lg-4:nth-child(3) ul li:nth-child(9), #footer .footer-container .container .row .col-md-7 .col-lg-4:nth-child(3) ul li:last-child {
   display: none;
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  #footer .footer-container .container .row .block-truspilot iframe {
+    width: 100% !important;
+  }
 }
 @media (min-width: 768px) {
   #footer .footer-container .container .container .right-block {
@@ -322,6 +341,7 @@ html, body {
 }
 #footer .container .block_newsletter .row > div form .row div {
   padding-left: 0;
+  padding-right: 0;
 }
 #footer .container .block_newsletter .row > div form .row div > p {
   padding-left: 0;

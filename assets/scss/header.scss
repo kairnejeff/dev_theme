@@ -298,6 +298,7 @@
                         ul {
                             >li {
                                 margin-right: 50px;
+
                                 .menu-item-title {
                                     font-family: $unna;
                                     font-size: 20px;
@@ -318,6 +319,15 @@
                                             padding-right: 0;
                                         }
                                     }
+                                }
+
+                                &:nth-child(2) {
+                                    margin: 0;
+                                }
+
+                                &:nth-child(3),
+                                &:last-child {
+                                    display:none;
                                 }
                             }
                         }

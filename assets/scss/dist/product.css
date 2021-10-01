@@ -560,7 +560,6 @@ html, body {
 }
 @media (max-width: 768px) {
   #wrapper .container #main .product-container .content .product-information .info-all .info-detailed .info-detailed-titler #ingredient {
-    padding-left: 20px;
     padding-right: 20px;
   }
 }
@@ -690,7 +689,6 @@ html, body {
 @media (max-width: 769px) {
   #wrapper .container #main .product-container .content:nth-child(2) .product-information .product-actions {
     position: relative;
-    padding-left: 30px;
   }
 }
 #wrapper .container #main .product-container .content:nth-child(2) .product-information .product-actions form .product-add-to-cart #product-availability {

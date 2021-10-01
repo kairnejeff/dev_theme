@@ -563,7 +563,6 @@
                                     #ingredient {
                                         margin-bottom: 50px;
                                         @media (max-width: 768px) {
-                                            padding-left: 20px;
                                             padding-right: 20px;
                                         }
                                         p {
@@ -713,7 +712,6 @@
                             .product-actions {
                                 @media (max-width: 769px) {
                                     position: relative;
-                                    padding-left: 30px;
                                 }
                                 form {
                                     .product-add-to-cart {

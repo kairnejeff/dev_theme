@@ -321,6 +321,12 @@ html, body {
   #header .header-nav .row .header-bottom #_desktop_top_menu ul > li:last-child .menu-item-title a {
     padding-right: 0;
   }
+  #header .header-nav .row .header-bottom #_desktop_top_menu ul > li:nth-child(2) {
+    margin: 0;
+  }
+  #header .header-nav .row .header-bottom #_desktop_top_menu ul > li:nth-child(3), #header .header-nav .row .header-bottom #_desktop_top_menu ul > li:last-child {
+    display: none;
+  }
 }
 @media (max-width: 1200px) and (min-width: 768px) {
   #header .header-nav .row .right-nav {
