@@ -34,6 +34,9 @@
   </script>
 {/foreach}
 
+<script type="text/javascript" src="scripts/jquery.cookies.2.2.0.min.js"></script>` 
+
+
 {if isset($vars) && $vars|@count}
   <script type="text/javascript">
     {foreach from=$vars key=var_name item=var_value}
