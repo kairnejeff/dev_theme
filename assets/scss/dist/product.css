@@ -1045,6 +1045,7 @@ html, body {
   top: 15%;
   width: 500px;
   z-index: 99;
+  right: 0;
 }
 @media (max-width: 769px) {
   .actu .info-actu .flex .text-info {

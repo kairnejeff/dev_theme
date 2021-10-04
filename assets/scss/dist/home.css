@@ -568,3 +568,10 @@ html, body {
     padding: 0 15px;
   }
 }
+
+.cms-id-2 #wrapper .container,
+.cms-id-3 #wrapper .container,
+.cms-id-6 #wrapper .container .cms-id-27 #wrapper .container {
+  width: 1159px;
+  margin: 60px auto;
+}

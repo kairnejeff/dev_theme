@@ -37,6 +37,9 @@ html, body {
 #footer .footer-container .container .row {
   width: 100%;
 }
+#footer .footer-container .container .row::after {
+  display: none;
+}
 @media (min-width: 769px) and (max-width: 1200px) {
   #footer .footer-container .container .row .col-md-2 {
     width: 100%;
@@ -62,6 +65,15 @@ html, body {
 }
 #footer .footer-container .container .row .home_popup {
   display: none;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
 }
 #footer .footer-container .container .row .home_popup #list-builder {
   display: block;
@@ -71,6 +83,7 @@ html, body {
 #footer .footer-container .container .row .home_popup #popup-box {
   display: block;
   height: auto;
+  background-color: #FEF9F4;
 }
 @media (max-width: 769px) {
   #footer .footer-container .container .row .home_popup #popup-box {
@@ -88,7 +101,6 @@ html, body {
 #footer .footer-container .container .row .home_popup #popup-box #popup-box-content {
   height: auto;
   margin: 0;
-  background-color: #FEF9F4;
 }
 @media (max-width: 769px) {
   #footer .footer-container .container .row .home_popup #popup-box #popup-box-content {
@@ -353,7 +365,7 @@ html, body {
 }
 #footer .container .block-yuka .yuka {
   position: absolute;
-  bottom: 7px;
+  bottom: 22px;
   left: 0;
 }
 #footer .container .block-yuka .yuka img {
