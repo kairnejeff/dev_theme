@@ -108,7 +108,7 @@
 .container #main #content #carousel ul {
     height: auto;
 }
-
+/* 
 .container #main #content .featured-products h2 {
     font-family: RobotoMono;
     font-size: 18px;
@@ -116,7 +116,7 @@
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
-}
+} */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
     .container #main #content .featured-products .row {

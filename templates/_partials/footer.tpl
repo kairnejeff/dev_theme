@@ -68,7 +68,6 @@
           {block name='copyright_link'}
             {l s='%copyright% %year% - %kj% %right%' sprintf=['%kj%' => 'Karine & Jeff','%right%'=>'Tous droits réservés', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
           {/block}
-          <a href="" class="mention">Mentions légales</a>
         </p>
       </div>
     </div>

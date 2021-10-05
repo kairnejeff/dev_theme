@@ -58,9 +58,9 @@
       <div class="product-description">
         {block name='product_name'}
           {if $page.page_name == 'index'}
-            <h3 class="h3 product-title" itemprop="name"><a href="{$product.url}" itemprop="url" content="{$product.url}">{$product.name}</a></h3>
+            <h3 class="h3 product-title" itemprop="name"><a href="{$product.url}" itemprop="url" content="{$product.url}">{$product.name}</a></h2>
           {else}
-            <h3 class="h3 product-title" itemprop="name"><a href="{$product.url}" itemprop="url" content="{$product.url}">{$product.name}</a></h3>
+            <h2 class="h3 product-title" itemprop="name"><a href="{$product.url}" itemprop="url" content="{$product.url}">{$product.name}</a></h2>
           {/if}
           {if $product.description_short}
             <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>

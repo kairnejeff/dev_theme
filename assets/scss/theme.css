@@ -7217,11 +7217,11 @@ a.text-gray-dark:hover {
     display: none!important
 }
 
-@media (max-width:1200px) {
+/* @media (max-width:1200px) {
     .hidden-xs-down {
         display: none!important
     }
-}
+} */
 
 @media (min-width:1201px) {
     .hidden-sm-up {

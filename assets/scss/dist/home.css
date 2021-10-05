@@ -168,8 +168,13 @@ html, body {
   width: 100%;
   position: relative;
 }
-.container .featured-products .products > div article .thumbnail-container .product-description .h3 {
+.container .featured-products .products > div article .thumbnail-container .product-description h2 {
   width: 80%;
+  font-size: 24px;
+  color: #000;
+  font-family: "Unna";
+  line-height: 26px;
+  text-transform: lowercase;
 }
 .container .featured-products .products > div article .thumbnail-container .product-description #product-subtitle {
   width: 65%;
@@ -571,7 +576,8 @@ html, body {
 
 .cms-id-2 #wrapper .container,
 .cms-id-3 #wrapper .container,
-.cms-id-6 #wrapper .container .cms-id-27 #wrapper .container {
+.cms-id-6 #wrapper .container,
+.cms-id-27 #wrapper .container {
   width: 1159px;
   margin: 60px auto;
 }

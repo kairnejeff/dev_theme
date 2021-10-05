@@ -60,7 +60,6 @@
                             width: 300px;
                             top: 50%;
                             left: 50%;
-                            height: 100%;
                             padding-bottom: 50px;
                         }
                         #popup-close {
@@ -80,6 +79,11 @@
                                     padding-left: 0;
                                     padding-right: 0;
                                 }
+
+                                @media (min-width: 769px) and (max-width: 1200px) {
+                                    width: 40%;
+                                }
+
                                 img {
                                     object-fit: cover;
                                     height: auto!important;
@@ -97,6 +101,11 @@
                                     padding-left: 15px;
                                     padding-right: 15px;
                                 }
+
+                                @media (min-width: 769px) and (max-width: 1200px) {
+                                    width: 55%;
+                                }
+
                                 .popup-logo {
                                     img {
                                         width: 200px;

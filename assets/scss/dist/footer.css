@@ -90,7 +90,6 @@ html, body {
     width: 300px;
     top: 50%;
     left: 50%;
-    height: 100%;
     padding-bottom: 50px;
   }
 }
@@ -117,6 +116,11 @@ html, body {
     padding-right: 0;
   }
 }
+@media (min-width: 769px) and (max-width: 1200px) {
+  #footer .footer-container .container .row .home_popup #popup-box #popup-box-content > div {
+    width: 40%;
+  }
+}
 #footer .footer-container .container .row .home_popup #popup-box #popup-box-content > div img {
   object-fit: cover;
   height: auto !important;
@@ -136,6 +140,11 @@ html, body {
   #footer .footer-container .container .row .home_popup #popup-box #popup-box-content form {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  #footer .footer-container .container .row .home_popup #popup-box #popup-box-content form {
+    width: 55%;
   }
 }
 #footer .footer-container .container .row .home_popup #popup-box #popup-box-content form .popup-logo img {

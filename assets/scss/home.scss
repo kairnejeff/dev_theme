@@ -137,8 +137,13 @@
                             z-index: 0;
                             width: 100%;
                             position: relative;
-                            .h3 {
+                            h2 {
                                 width: 80%;
+                                font-size: 24px;
+                                color: $black;
+                                font-family: $unna;
+                                line-height: 26px;
+                                text-transform: lowercase;
                             }
                             #product-subtitle {
                                 width: 65%;
@@ -552,7 +557,7 @@
 
 .cms-id-2 #wrapper .container,
 .cms-id-3 #wrapper .container,
-.cms-id-6 #wrapper .container
+.cms-id-6 #wrapper .container,
 .cms-id-27 #wrapper .container {
     width: 1159px;
     margin: 60px auto;
