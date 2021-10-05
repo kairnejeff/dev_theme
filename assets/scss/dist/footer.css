@@ -251,11 +251,6 @@ html, body {
   font-size: 20px;
   margin-bottom: 1rem;
 }
-#footer .block-social .linkedin,
-#footer .block-social .twitter,
-#footer .block-social .pinterest {
-  display: none;
-}
 #footer .blockreassurance {
   padding: 0;
   border-top: 1px solid #dbdbdb;
