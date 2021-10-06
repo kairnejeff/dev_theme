@@ -62,8 +62,8 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
+    <div class="row copyright">
+      <div class="col-md-12 copyright_link">
         <p class="text-sm-center">
           {block name='copyright_link'}
             {l s='%copyright% %year% - %kj% %right%' sprintf=['%kj%' => 'Karine & Jeff','%right%'=>'Tous droits réservés', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}

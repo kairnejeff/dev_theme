@@ -321,6 +321,14 @@ html, body {
 #footer .blockreassurance .block-title .border {
   display: none;
 }
+#footer .container {
+  position: relative;
+}
+@media (max-width: 768px) {
+  #footer .container {
+    padding-bottom: 60px;
+  }
+}
 @media (min-width: 768px) {
   #footer .container .right-block {
     padding-left: 2rem;
@@ -421,23 +429,29 @@ html, body {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-#footer .row .text-sm-center {
+@media (max-width: 768px) {
+  #footer .container .copyright {
+    position: absolute;
+    bottom: 15px;
+  }
+}
+#footer .container .copyright .text-sm-center {
   margin-top: 100px;
   text-align: center;
   color: #000;
 }
 @media (max-width: 992px) {
-  #footer .row .text-sm-center {
+  #footer .container .copyright .text-sm-center {
     margin-top: 20px;
   }
 }
-#footer .row .text-sm-center a {
+#footer .container .copyright .text-sm-center a {
   display: inline-block;
   padding-left: 1rem;
   color: #000;
 }
 @media (max-width: 480px) {
-  #footer .row .text-sm-center a {
+  #footer .container .copyright .text-sm-center a {
     display: block;
   }
 }
