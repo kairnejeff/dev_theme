@@ -315,9 +315,9 @@
         .right-block {
             @media (min-width: 768px) {
                 padding-left: 2rem;
-                position: absolute;
-                right: 0;
-                top: 0;
+                // position: absolute;
+                // right: 0;
+                // top: 0;
             }
 
             @media (max-width: 768px) {
