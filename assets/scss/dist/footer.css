@@ -237,36 +237,6 @@ html, body {
     width: 100% !important;
   }
 }
-@media (min-width: 768px) {
-  #footer .footer-container .container .container .right-block {
-    padding-left: 2rem;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-@media (max-width: 768px) {
-  #footer .footer-container .container .container .right-block {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (max-width: 768px) {
-  #footer .footer-container .container .container .right-block .block_newsletter {
-    padding-left: 15px;
-  }
-}
-@media (max-width: 768px) {
-  #footer .footer-container .container .container .right-block .block_newsletter .row {
-    padding-left: 15px;
-  }
-}
-@media (max-width: 768px) {
-  #footer .footer-container .container .container .right-block .block_newsletter .row > p {
-    padding: 0;
-    margin-left: -15px;
-  }
-}
 #footer .footer-container .container .block-title {
   font-family: "Unna";
   font-size: 20px;
@@ -351,65 +321,100 @@ html, body {
 #footer .blockreassurance .block-title .border {
   display: none;
 }
-#footer .container .block_newsletter {
+@media (min-width: 768px) {
+  #footer .container .right-block {
+    padding-left: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+@media (max-width: 768px) {
+  #footer .container .right-block {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#footer .container .right-block .block_newsletter {
   bottom: auto !important;
 }
 @media (max-width: 768px) {
-  #footer .container .block_newsletter .row > div form {
+  #footer .container .right-block .block_newsletter {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  #footer .container .right-block .block_newsletter .row {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  #footer .container .right-block .block_newsletter .row > div form {
     margin-left: -30px;
   }
 }
 @media (max-width: 480px) {
-  #footer .container .block_newsletter .row > div form {
+  #footer .container .right-block .block_newsletter .row > div form {
     margin-right: -30px;
   }
 }
-#footer .container .block_newsletter .row > div form .row {
+#footer .container .right-block .block_newsletter .row > div form .row {
   margin-left: 0;
   padding-left: 0;
 }
-#footer .container .block_newsletter .row > div form .row input.hidden-sm-up {
+#footer .container .right-block .block_newsletter .row > div form .row input.hidden-sm-up {
   margin-top: 10px;
   width: 100%;
 }
-#footer .container .block_newsletter .row > div form .row div {
+@media (max-width: 768px) {
+  #footer .container .right-block .block_newsletter .row > div form .row input.float-xs-right {
+    display: none;
+  }
+}
+#footer .container .right-block .block_newsletter .row > div form .row div {
   padding-left: 0;
   padding-right: 0;
 }
-#footer .container .block_newsletter .row > div form .row div > p {
+#footer .container .right-block .block_newsletter .row > div form .row div > p {
   padding-left: 0;
   margin-top: 10px;
 }
-#footer .container .block-yuka {
+@media (max-width: 768px) {
+  #footer .container .right-block .block_newsletter .row > div form .row div > p {
+    padding: 0;
+    margin-left: -15px;
+  }
+}
+#footer .container .right-block .block-yuka {
   position: relative;
   padding-left: 40px;
 }
-#footer .container .block-yuka .yuka {
+#footer .container .right-block .block-yuka .yuka {
   position: absolute;
   bottom: 22px;
   left: 0;
 }
 @media (max-width: 768px) {
-  #footer .container .block-yuka .yuka {
+  #footer .container .right-block .block-yuka .yuka {
     bottom: 11px;
   }
 }
-#footer .container .block-yuka .yuka img {
+#footer .container .right-block .block-yuka .yuka img {
   width: 30px;
   height: 30px;
 }
-#footer .container .block-yuka .yuka-note {
+#footer .container .right-block .block-yuka .yuka-note {
   font-family: "RobotoMono";
   font-weight: 700;
   font-size: 11px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-#footer .container .membre {
+#footer .container .right-block .membre {
   display: none;
   margin-top: 30px;
 }
-#footer .container .membre a {
+#footer .container .right-block .membre a {
   font-family: "RobotoMono";
   font-size: 11px;
   font-weight: 700;
