@@ -470,10 +470,10 @@ html, body {
   background-color: #fff;
 }
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav .owl-next {
-  right: 8px;
+  right: -10px;
 }
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav .owl-prev {
-  left: 8px;
+  left: -10px;
 }
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav .disabled {
   display: none;
