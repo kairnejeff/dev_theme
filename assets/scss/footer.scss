@@ -168,18 +168,6 @@
                         }
                     }
                 }
-                .block_newsletter {
-                    .row {
-                        @media (max-width: 768px) {
-                            padding-left: 15px;
-                        }
-                        >p {
-                            @media (max-width: 768px) {
-                                padding: 0;
-                            }
-                        }
-                    }
-                }
 
                 .col-md-12 {
                     padding: 0;
@@ -240,14 +228,35 @@
                     }
                 }
             }
-            .container {
-                
-                @media (min-width: 768px) {
-                    .right-block {
+            .container {   
+                .right-block {
+                    @media (min-width: 768px) {
                         padding-left: 2rem;
                         position: absolute;
                         right: 0;
                         top: 0;
+                    }
+
+                    @media (max-width: 768px) {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .block_newsletter {
+                        @media (max-width: 768px) {
+                            padding-left: 15px;
+                        }
+                        .row {
+                            @media (max-width: 768px) {
+                                padding-left: 15px;
+                            }
+                            >p {
+                                @media (max-width: 768px) {
+                                    padding: 0;
+                                    margin-left: -15px;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -367,6 +376,11 @@
                 position: absolute;
                 bottom: 22px;
                 left: 0;
+
+                @media (max-width: 768px) {
+                    bottom: 11px;
+                }
+                
                 img {
                     width: 30px;
                     height: 30px;

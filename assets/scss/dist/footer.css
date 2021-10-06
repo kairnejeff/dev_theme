@@ -207,16 +207,6 @@ html, body {
     display: block !important;
   }
 }
-@media (max-width: 768px) {
-  #footer .footer-container .container .row .block_newsletter .row {
-    padding-left: 15px;
-  }
-}
-@media (max-width: 768px) {
-  #footer .footer-container .container .row .block_newsletter .row > p {
-    padding: 0;
-  }
-}
 #footer .footer-container .container .row .col-md-12 {
   padding: 0;
 }
@@ -253,6 +243,28 @@ html, body {
     position: absolute;
     right: 0;
     top: 0;
+  }
+}
+@media (max-width: 768px) {
+  #footer .footer-container .container .container .right-block {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  #footer .footer-container .container .container .right-block .block_newsletter {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  #footer .footer-container .container .container .right-block .block_newsletter .row {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 768px) {
+  #footer .footer-container .container .container .right-block .block_newsletter .row > p {
+    padding: 0;
+    margin-left: -15px;
   }
 }
 #footer .footer-container .container .block-title {
@@ -376,6 +388,11 @@ html, body {
   position: absolute;
   bottom: 22px;
   left: 0;
+}
+@media (max-width: 768px) {
+  #footer .container .block-yuka .yuka {
+    bottom: 11px;
+  }
 }
 #footer .container .block-yuka .yuka img {
   width: 30px;
