@@ -251,6 +251,7 @@ html, body {
   top: 5px;
   transform: translate(-50%, -50%);
   font-family: "Unna";
+  color: #000;
 }
 #js-product-list .products > div article .add-to-cart-or-refresh form .add-card-button .up:before {
   display: inline-block;
@@ -261,6 +262,7 @@ html, body {
   top: 5px;
   transform: translate(-50%, -50%);
   font-family: "Unna";
+  color: #000;
 }
 #js-product-list .products > div article .add-to-cart-or-refresh form .add-card-button input {
   max-width: 4rem;
