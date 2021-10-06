@@ -45,13 +45,12 @@
 
         </div>
 
-        <div class="add">
-        {if isset($product.yuka)&& $product.yuka!=NULL&& $product.yuka!=" "}
-          <div class="yuka"><img src="{$urls.img_url}yuka-produit.jpg" /><p>{$product.yuka}</p></div>
-          var_dump($product.yuka);
-        {/if}  
+        <div class="add"> 
           {if isset($product.nutriscore)&& $product.nutriscore!=NULL&& $product.nutriscore!=" "}
             <div class="product-nutriscore">
+             {if isset($product.yuka)&& $product.yuka!=NULL&& $product.yuka!=" "}
+              <div class="yuka"><img src="{$urls.img_url}yuka-produit.jpg" /><p>{$product.yuka}</p></div>
+            {/if} 
                 <div class="nutriscore"><img src="{$urls.img_url}nutriscore-{$product.nutriscore}.svg" /></div>
             </div>
           {/if}
