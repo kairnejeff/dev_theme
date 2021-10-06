@@ -353,7 +353,13 @@ html, body {
 }
 @media (max-width: 768px) {
   #footer .container .right-block .block_newsletter .row {
-    padding-left: 15px;
+    padding-left: 15px !important;
+  }
+}
+@media (max-width: 768px) {
+  #footer .container .right-block .block_newsletter .row #block-newsletter-label {
+    padding: 0;
+    margin-left: -15px;
   }
 }
 @media (max-width: 768px) {
@@ -383,15 +389,14 @@ html, body {
   padding-left: 0;
   padding-right: 0;
 }
+@media (max-width: 768px) {
+  #footer .container .right-block .block_newsletter .row > div form .row div.col-xs-12 {
+    padding-left: 15px;
+  }
+}
 #footer .container .right-block .block_newsletter .row > div form .row div > p {
   padding-left: 0;
   margin-top: 10px;
-}
-@media (max-width: 768px) {
-  #footer .container .right-block .block_newsletter .row > div form .row div > p {
-    padding: 0;
-    margin-left: -15px;
-  }
 }
 #footer .container .right-block .block-yuka {
   position: relative;
