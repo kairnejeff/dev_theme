@@ -53,7 +53,9 @@
           {/if}
 
           {if isset($product.yuka)&& $product.yuka!=NULL&& $product.yuka!=" "}
-            <div class="yuka"><img src="{$urls.img_url}yuka-produit.jpg" /><p>{$product.yuka}</p></div>
+            <div class="yuka"><img src="{$urls.img_url}yuka-produit.jpg" />
+            {* <p>{$product.yuka}</p> *}
+            </div>
           {/if} 
 
 
