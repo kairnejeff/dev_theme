@@ -52,6 +52,9 @@
             </div>
           {/if}
           {if isset($product.yuka)&& $product.yuka!=NULL&& $product.yuka!=" "}
+            {if isset($combinaison.yuka)&& $combinaison.yuka!=NULL&& $combinaison.yuka!=" "}
+              <div class="yuka"><img src="{$urls.img_url}yuka-produit.jpg" /><p>{$product.yuka}</p></div>
+              {/if}
               <div class="yuka"><img src="{$urls.img_url}yuka-produit.jpg" /><p>{$product.yuka}</p></div>
           {/if} 
 
