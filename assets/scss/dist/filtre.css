@@ -1,0 +1,184 @@
+.product-description {
+  border-left: 1px solid #000;
+  padding-left: 13px;
+}
+.product-description .h3 a {
+  font-size: 24px;
+  display: block;
+  text-align: left !important;
+}
+.product-description .h3 a:hover {
+  color: #000;
+}
+.product-description .h3 a::first-letter {
+  text-transform: lowercase;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  .container #left-column {
+    float: left;
+    position: sticky;
+    top: 0;
+    height: 100%;
+  }
+}
+.container #left-column #search_filters #filtre-name {
+  padding-left: 30px;
+  font-size: 1.2em;
+}
+.container #left-column #search_filters #filtre-name p {
+  position: relative;
+}
+.container #left-column #search_filters #filtre-name p .filtre-sr {
+  position: relative;
+  top: -5px;
+  font-family: "RobotoMono";
+  color: #000;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.container #left-column #search_filters .show-filtre {
+  display: none;
+}
+.container #left-column #search_filters .facet .facet-title {
+  overflow: visible;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 13px;
+  font-weight: 600;
+}
+@media (max-width: 1200px) {
+  .container #left-column #search_filters .facet .facet-title {
+    font-size: 11px;
+  }
+}
+.container #left-column #search_filters .button-filtre {
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .container #left-column #search_filters .button-filtre {
+    margin-left: 16px;
+  }
+}
+.container #left-column #search_filters .button-filtre #category-filtre {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #464646;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+.container #left-column #search_filters .button-filtre #category-filtre i {
+  position: absolute;
+  left: 10px;
+}
+.container #left-column #_desktop_search_filters_clear_all a {
+  position: relative;
+  padding-left: 30px;
+  background-color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  padding: 0.5rem 1.25rem;
+  padding-left: 30px;
+}
+.container #left-column #_desktop_search_filters_clear_all a i {
+  position: absolute;
+  left: 8px;
+  bottom: 5px;
+}
+.container .categories {
+  float: right;
+}
+
+@media (max-width: 767px) {
+  #facet_section.collapse.in {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 90%;
+    background: white;
+    left: 0;
+    padding: 20px;
+    height: 100%;
+    -webkit-animation: linear;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 0.5s;
+  }
+
+  #filtre-name[aria-expanded=true] #overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 998;
+  }
+}
+@-webkit-keyframes run {
+  0% {
+    left: -100px;
+  }
+  50% {
+    left: -50px;
+  }
+  100% {
+    left: 0;
+  }
+}
+#facet_section ul .form-check-filtre:nth-child(5) {
+  margin-bottom: 1.5rem;
+}
+#facet_section ul .form-check-filtre:nth-child(8) {
+  margin-bottom: 1.5rem;
+}
+#facet_section .form-check-filtre {
+  position: relative;
+  margin-bottom: 10px;
+}
+#facet_section .form-check-filtre input[type=checkbox],
+#facet_section .form-check-filtre input[type=radio] {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  z-index: 99999;
+  cursor: pointer;
+}
+#facet_section .form-check-filtre input[type=checkbox] + label::before,
+#facet_section .form-check-filtre input[type=radio] + label::before {
+  content: "";
+  border: 1px solid #000;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  padding: 3px;
+}
+#facet_section .form-check-filtre input[type=radio] + label::before {
+  border-radius: 50%;
+}
+#facet_section .form-check-filtre input[type=checkbox]:checked + label::before,
+#facet_section .form-check-filtre input[type=radio]:checked + label::before {
+  background-color: #000;
+  background-clip: content-box;
+}
+#facet_section .form-check-filtre label {
+  margin-left: 0;
+  padding-left: 25px;
+}
