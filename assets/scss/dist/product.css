@@ -480,6 +480,11 @@ html, body {
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav .owl-prev {
   left: -10px;
 }
+@media (max-width: 990px) {
+  #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav .owl-prev {
+    left: 10px;
+  }
+}
 #wrapper .container #main .product-container .content .product-information .info-all .info-detailed #main-menu ul .owl-nav .disabled {
   display: none;
 }
