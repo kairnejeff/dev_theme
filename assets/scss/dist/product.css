@@ -357,18 +357,22 @@ html, body {
     align-items: left;
   }
 }
-#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .yuka {
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .img {
+  display: flex;
+  flex-direction: row;
+}
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .img .yuka {
   margin-right: 40px;
   margin-top: 14px;
 }
-#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .yuka img {
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .img .yuka img {
   width: 81px;
   height: 26px;
 }
-#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .product-nutriscore {
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .img .product-nutriscore {
   display: flex;
 }
-#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .product-nutriscore .nutriscore img {
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .img .product-nutriscore .nutriscore img {
   width: 83.06px;
   height: 45px;
 }

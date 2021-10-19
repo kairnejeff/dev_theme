@@ -351,23 +351,27 @@
                                             flex-direction: column;
                                             align-items: left;
                                         }
-                                        .yuka {
-                                            margin-right: 40px;
-                                            margin-top: 14px;
-
-                                            img {
-                                                width: 81px;
-                                                height: 26px;
-                                            }
-                                        }
-                                        .product-nutriscore {
+                                        .img {
                                             display: flex;
-                                            .nutriscore {
+                                            flex-direction: row;
+                                            .yuka {
+                                                margin-right: 40px;
+                                                margin-top: 14px;
+
                                                 img {
-                                                    width: 83.06px;
-                                                    height: 45px;
+                                                    width: 81px;
+                                                    height: 26px;
                                                 }
-                                                
+                                            }
+                                            .product-nutriscore {
+                                                display: flex;
+                                                .nutriscore {
+                                                    img {
+                                                        width: 83.06px;
+                                                        height: 45px;
+                                                    }
+                                                    
+                                                }
                                             }
                                         }
                                         .add-to-cart {

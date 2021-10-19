@@ -46,15 +46,17 @@
         </div>
 
         <div class="add"> 
-          <div class="yuka"><img src="{$urls.img_url}yuka-produit.jpg" />
-            <p class="int_yuka">{$product.yuka}</p>
-          </div>
-          
-          {if isset($product.nutriscore)&& $product.nutriscore!=NULL&& $product.nutriscore!=" "}
-            <div class="product-nutriscore">
-                <div class="nutriscore"><img src="{$urls.img_url}nutriscore-{$product.nutriscore}.svg" /></div>
+          <div class="img">
+            <div class="yuka"><img src="{$urls.img_url}yuka-produit.jpg" />
+              <p class="int_yuka">{$product.yuka}</p>
             </div>
-          {/if}
+            
+            {if isset($product.nutriscore)&& $product.nutriscore!=NULL&& $product.nutriscore!=" "}
+              <div class="product-nutriscore">
+                  <div class="nutriscore"><img src="{$urls.img_url}nutriscore-{$product.nutriscore}.svg" /></div>
+              </div>
+            {/if}
+          </div>
 
           
 
