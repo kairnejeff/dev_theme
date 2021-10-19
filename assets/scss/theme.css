@@ -418,6 +418,7 @@ textarea {
 .icon-panier-off:before {
     content: "\e901";
     font-size: 18px;
+    color: #000;
 }
 
 .icon-favoris-off:before {
