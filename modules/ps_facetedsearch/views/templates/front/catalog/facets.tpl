@@ -56,7 +56,11 @@
                 {/if}
 
                 <div class="form-check-filtre">
+                {if $facet.label == "Intolérances alimentaires" || "Régimes alimentaires"}
+                  <input class="form-check-filtre-input {if $filter.active} checked {/if}" type="radio" name='{$facet.label}' value="{$filter.label}"
+                  {else}
                   <input class="form-check-filtre-input {if $filter.active} checked {/if}" type="checkbox" name='{$facet.label}' value="{$filter.label}"
+                {/if}
                 {if $filter.active }checked{/if}>
                       {if $filter.magnitude and $show_quantities}
                         <span class="magnitude">({$filter.magnitude})</span>

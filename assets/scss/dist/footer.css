@@ -377,7 +377,7 @@ html, body {
   margin-top: 10px;
   width: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   #footer .container .right-block .block_newsletter .row > div form .row input.float-xs-right {
     display: none;
   }
