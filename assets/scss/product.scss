@@ -473,6 +473,10 @@
                         
                                             .owl-next {
                                                 right: -10px;
+
+                                                @media (max-width: 990px) {
+                                                    right: 10px;
+                                                }
                                             }
 
                                             .owl-prev {
