@@ -48,7 +48,9 @@
         <div class="add"> 
           <div class="img">
             <div class="yuka"><img src="{$urls.img_url}yuka-produit.jpg" />
-              <p class="int_yuka">{$product.yuka}</p>
+            {if isset($product.yuka)&& $product.yuka!=NULL&& $product.yuka!=" "}
+              <p class="int_yuka"> : {$product.yuka}</p>
+            {/if}
             </div>
             
             {if isset($product.nutriscore)&& $product.nutriscore!=NULL&& $product.nutriscore!=" "}
@@ -57,8 +59,6 @@
               </div>
             {/if}
           </div>
-
-          
 
 
           <button

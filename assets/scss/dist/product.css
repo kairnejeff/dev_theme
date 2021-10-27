@@ -369,6 +369,10 @@ html, body {
   width: 81px;
   height: 26px;
 }
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .img .yuka .int_yuka {
+  font-size: 24px;
+  margin-left: 10px;
+}
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .add .img .product-nutriscore {
   display: flex;
 }
@@ -754,6 +758,22 @@ html, body {
 @media (max-width: 480px) {
   #wrapper .product-accessories .products > div {
     margin-bottom: 90px;
+  }
+}
+#wrapper .product-accessories .products > div .product-miniature .product-img {
+  width: 290px;
+  height: 290px;
+}
+@media (min-width: 769px) and (max-width: 960px) {
+  #wrapper .product-accessories .products > div .product-miniature .product-img {
+    max-width: 290px;
+    max-height: 290px;
+  }
+}
+@media (max-width: 769px) {
+  #wrapper .product-accessories .products > div .product-miniature .product-img {
+    max-width: 355px;
+    max-height: 355px;
   }
 }
 #wrapper .product-accessories .products .product-description {
