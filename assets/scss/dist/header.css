@@ -87,7 +87,7 @@ html, body {
 #_mobile_search_widget.show form input[type=text] {
   display: block;
   width: calc(100% - 80px);
-  padding: 15px 40px 0 40px;
+  padding: 15px 0 0;
   margin-left: 40px;
   border: none;
   border-bottom: 1px solid;
@@ -95,6 +95,11 @@ html, body {
 }
 #_mobile_search_widget.show form button[type=submit] {
   left: 30px;
+}
+#_mobile_search_widget.show form button[type=submit] span {
+  position: absolute;
+  bottom: -7px;
+  right: 20px;
 }
 #_mobile_search_widget.show form .close {
   position: absolute;
