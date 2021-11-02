@@ -1,5 +1,5 @@
 
-{* {if $carrousels}
+{if $carrousels}
 
       <div class="carousel-inner" role="listbox">
           {foreach from=$carrousels item=carrousel key=idxSlide}
@@ -13,4 +13,4 @@
                   {/if}
           {/foreach}
       </div>
-{/if} *}
+{/if}
