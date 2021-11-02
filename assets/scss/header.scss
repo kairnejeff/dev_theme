@@ -81,6 +81,7 @@
             border: none;
             border-bottom: 1px solid;
             border-radius: 0;
+            height: 50px;
             outline: 0;
         }
         button[type=submit] {
@@ -88,14 +89,14 @@
 
             span {
                 position: absolute;
-                bottom: -7px;
+                bottom: -16px;
                 right: 20px;
                 color: black;
             }
         }
         .close {
             position: absolute;
-            top: 10px;
+            top: 20px;
             right: 20px;
         }
     }

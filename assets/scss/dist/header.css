@@ -92,6 +92,7 @@ html, body {
   border: none;
   border-bottom: 1px solid;
   border-radius: 0;
+  height: 50px;
   outline: 0;
 }
 #_mobile_search_widget.show form button[type=submit] {
@@ -99,13 +100,13 @@ html, body {
 }
 #_mobile_search_widget.show form button[type=submit] span {
   position: absolute;
-  bottom: -7px;
+  bottom: -16px;
   right: 20px;
   color: black;
 }
 #_mobile_search_widget.show form .close {
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 20px;
 }
 
