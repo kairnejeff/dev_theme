@@ -330,12 +330,12 @@ html, body {
   display: grid;
   text-align: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 960px) {
   .en-off .content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 630px) {
   .en-off .content {
     grid-template-columns: repeat(1, 1fr);
   }
