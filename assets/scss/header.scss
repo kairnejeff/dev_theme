@@ -442,18 +442,18 @@
 
                             
                         }
-                        // #menu-close {
-                        //     border: none;
-                        //     background: none;
-                        //     position: absolute;
-                        //     right: 5px;
-                        //     top: -20px;
-                        //     z-index: 10000;
-                        //     i {
-                        //         background: none;
-                        //         line-height: 2;
-                        //     }
-                        // }
+                        #menu-close {
+                            border: none;
+                            background: none;
+                            position: absolute;
+                            right: 5px;
+                            top: -20px;
+                            z-index: 10000;
+                            i {
+                                background: none;
+                                line-height: 2;
+                            }
+                        }
                         ul {
                             position: relative;
                             padding: 50px 15px;

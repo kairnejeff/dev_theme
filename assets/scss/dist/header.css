@@ -446,6 +446,18 @@ html, body {
   #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu .top-menu .menu-item:nth-child(3), #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu .top-menu .menu-item:last-child {
     display: none;
   }
+  #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu #menu-close {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+    z-index: 10000;
+  }
+  #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu #menu-close i {
+    background: none;
+    line-height: 2;
+  }
   #header .header-top .container #mobile_top_menu_wrapper #_mobile_top_menu ul {
     position: relative;
     padding: 50px 15px;
