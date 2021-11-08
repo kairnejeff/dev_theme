@@ -22,19 +22,6 @@ html, body {
   overflow-x: hidden;
 }
 
-#menu-close {
-  border: none;
-  background: none;
-  position: absolute;
-  right: 5px;
-  top: -20px;
-  z-index: 10000;
-}
-#menu-close i {
-  background: none;
-  line-height: 2;
-}
-
 /* logo */
 #header .logo {
   width: 400px;
@@ -165,6 +152,7 @@ html, body {
   #header .header-banner {
     background-color: #FEF9F4;
     padding: 10px 0;
+    position: relative;
   }
   #header .header-banner p {
     text-align: center;
@@ -172,7 +160,7 @@ html, body {
     color: #000;
     font-weight: bold;
   }
-  #header .header-banner #menu-close {
+  #header .header-banner #menu-close_shipping {
     border: none;
     background: none;
     position: absolute;
@@ -181,7 +169,7 @@ html, body {
     top: 2px;
     z-index: 10000;
   }
-  #header .header-banner #menu-close span::before {
+  #header .header-banner #menu-close_shipping span::before {
     font-size: 12px;
   }
   #header .header-nav {

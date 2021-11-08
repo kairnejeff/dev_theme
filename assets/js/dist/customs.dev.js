@@ -35,7 +35,7 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
-  $("#menu-close").click(function () {
+  $("#menu-close_shipping").click(function () {
     $(".header-banner").css("display", "none");
   });
 }); //barre-recherche 

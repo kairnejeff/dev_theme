@@ -153,6 +153,7 @@
         .header-banner {
             background-color: $pink;
             padding: 10px 0;
+            position: relative;
 
             p {
                 text-align: center;
@@ -161,7 +162,7 @@
                 font-weight: bold;
             }
 
-            #menu-close {
+            #menu-close_shipping {
                 border: none;
                 background: none;
                 position: absolute;
