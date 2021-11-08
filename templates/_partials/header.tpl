@@ -27,7 +27,7 @@
     {hook h='displayBanner'}
     <p> Les frais de port sont offerts à partir de 70€ </p>
   </div> *}
-
+{extends file=$layout}
 {block name='banner'}
 {/block}
 
