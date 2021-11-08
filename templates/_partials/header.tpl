@@ -26,6 +26,9 @@
   <div class="header-banner">
     {* {hook h='displayBanner'} *}
     <p> Les frais de port sont offerts à partir de 70€ </p>
+    <button type="button" id="menu-close" class="hidden-md-up" data-dismiss="menu" aria-label="Fermer">
+      <span class="icon-croix"></span>
+  </button>
   </div>
 {/block}
 
