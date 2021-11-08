@@ -33,6 +33,11 @@ $(document).ready(function () {
   $(window).resize(function () {
     $("#_desktop_top_menu .clone-title").remove();
   });
+});
+$(document).ready(function () {
+  $("#menu-close").click(function () {
+    $(".header-banner").css("display", "none");
+  });
 }); //barre-recherche 
 
 $(document).ready(function () {

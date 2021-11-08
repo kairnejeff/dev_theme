@@ -24,6 +24,13 @@ $(document).ready(function() {
 
 })
 
+$(document).ready(function() {
+    $("#menu-close").click(function() {
+        $(".header-banner").css("display", "none")
+    })
+
+})
+
 //barre-recherche 
 $(document).ready(function() {
     $(".search-widget").mouseenter(function() {
