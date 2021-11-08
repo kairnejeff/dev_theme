@@ -63,16 +63,3 @@ html, body {
     background: none;
     outline: none;
 }
-
-#menu-close {
-    border: none;
-    background: none;
-    position: absolute;
-    right: 5px;
-    top: -20px;
-    z-index: 10000;
-    i {
-        background: none;
-        line-height: 2;
-    }
-}

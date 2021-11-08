@@ -160,6 +160,21 @@
                 color: #000;
                 font-weight: bold;
             }
+
+            #menu-close {
+                border: none;
+                background: none;
+                position: absolute;
+                right: 20px;
+                bottom: 0;
+                top: 2px;
+                z-index: 10000;
+                span {
+                    &::before {
+                        font-size: 12px;
+                    }
+                }
+            }
         }
         .header-nav {
             max-height: 100%;

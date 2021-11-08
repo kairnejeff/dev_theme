@@ -172,6 +172,18 @@ html, body {
     color: #000;
     font-weight: bold;
   }
+  #header .header-banner #menu-close {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    top: 2px;
+    z-index: 10000;
+  }
+  #header .header-banner #menu-close span::before {
+    font-size: 12px;
+  }
   #header .header-nav {
     max-height: 100%;
     margin-top: 80px;
