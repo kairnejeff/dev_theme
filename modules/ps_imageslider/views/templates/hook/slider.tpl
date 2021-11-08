@@ -36,16 +36,16 @@
           <a href="{$slide.url}">
           <figure>
               {if file_exists($slide.image_webp_url)&& $modules.kj_detectdevice.machine !=='Mac'&&$modules.kj_detectdevice.machine !=='iPad'}
-                  <picture class="deskstop-image hidden-sm-down">
+                  <picture class="desktop-image hidden-sm-down">
                     <source srcset="{$urls.base_url}{$slide.image_webp_url}" alt="{$slide.legend|escape}" type="image/webp">
                     <img src="{$slide.image_url}" alt="{$slide.legend|escape}" />
                   </picture>
-                  <picture class="deskstop-image hidden-md-up">
+                  <picture class="mobile-image hidden-md-up">
                     <source srcset="{$urls.base_url}{$slide.mobile_image_webp_url}"  alt="{$slide.legend|escape}" type="image/webp">
                     <img src="{$slide.mobile_image_url}"  alt="{$slide.legend|escape}" /> 
                   </picture>
               {else}
-                <img src="{$slide.image_url}" alt="{$slide.legend|escape}" class="deskstop-image hidden-sm-down"/>
+                <img src="{$slide.image_url}" alt="{$slide.legend|escape}" class="desktop-image hidden-sm-down"/>
                 <img src="{$slide.mobile_image_url}" alt="{$slide.legend|escape}" class="mobile-image hidden-md-up"/>
               {/if}
               {if $slide.title || $slide.description}

@@ -22,12 +22,11 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-{block name='header_banner'}
+{* {block name='header_banner'}
   <div class="header-banner">
-    {* {hook h='displayBanner'} *}
     <p> Les frais de port sont offerts à partir de 70€ </p>
   </div>
-{/block}
+{/block} *}
 
 {block name='header_nav'}
   <nav class="header-nav">

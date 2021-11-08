@@ -150,7 +150,7 @@ html, body {
 /* Header */
 @media (min-width: 1200px) {
   #header .header-banner {
-    background-color: #ccc;
+    background-color: #d4795e;
     padding: 10px 0;
     position: relative;
   }
@@ -159,6 +159,7 @@ html, body {
     margin-bottom: 0;
     color: #fff;
     font-weight: bold;
+    letter-spacing: 0.5px;
   }
   #header .header-nav {
     max-height: 100%;
