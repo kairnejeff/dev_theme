@@ -22,4 +22,10 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-<p class="banner">Les frais de port sont offerts à partir de 70€</p>
+<a class="banner" href="{$banner_link}" title="{$banner_desc}">
+  {if isset($banner_img)}
+    <img src="{$banner_img}" alt="{$banner_desc}" title="{$banner_desc}" class="img-fluid">
+  {else}
+    <span>{$banner_desc}</span>
+  {/if}
+</a>
