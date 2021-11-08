@@ -39,6 +39,12 @@ html, body {
     left: 12px;
   }
 }
+#blockcart-modal .modal-dialog .modal-body .row .cart-content .delivery {
+  margin-bottom: 0;
+}
+#blockcart-modal .modal-dialog .modal-body .row .cart-content .free {
+  font-size: 12px;
+}
 #blockcart-modal .modal-dialog .modal-body .row .cart-content .cart-content-btn button {
   height: 40px;
 }

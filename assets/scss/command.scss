@@ -24,6 +24,12 @@
         .modal-body {
             .row {
                 .cart-content {
+                    .delivery {
+                        margin-bottom: 0;
+                    }
+                    .free {
+                        font-size: 12px;
+                    }
                     .cart-content-btn {
                         button {
                             height: 40px;
