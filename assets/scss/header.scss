@@ -151,30 +151,15 @@
 @media (min-width: 1200px) {
     #header {
         .header-banner {
-            background-color: $pink;
+            background-color: $grey;
             padding: 10px 0;
             position: relative;
 
             p {
                 text-align: center;
                 margin-bottom: 0;
-                color: #000;
+                color: $white;
                 font-weight: bold;
-            }
-
-            #menu-close_shipping {
-                border: none;
-                background: none;
-                position: absolute;
-                right: 20px;
-                bottom: 0;
-                top: 2px;
-                z-index: 10000;
-                span {
-                    &::before {
-                        font-size: 12px;
-                    }
-                }
             }
         }
         .header-nav {
