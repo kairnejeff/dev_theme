@@ -59,7 +59,7 @@
               <p><span class="label">{l s='Subtotal:' d='Shop.Theme.Checkout'}</span>&nbsp;<span class="value">{$cart.subtotals.products.value}</span></p>
               {if $cart.subtotals.shipping.value}
                 <p class="delivery"><span>{l s='Livraison' d='Shop.Theme.Checkout'}</span>&nbsp;<span class="value">{$cart.subtotals.shipping.value} {hook h='displayCheckoutSubtotalDetails' subtotal=$cart.subtotals.shipping}</span></p>
-                <p class="free">Frais de port offerte à partir de 70€ </p>
+                <p class="free">Frais de port offerts à partir de 70€ </p>
               {/if}
 
               {if !$configuration.display_prices_tax_incl && $configuration.taxes_enabled}
