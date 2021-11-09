@@ -363,7 +363,7 @@ html, body {
   #header .header-nav .row .right-nav {
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 40px;
   }
 }
 @media (max-width: 1200px) {
