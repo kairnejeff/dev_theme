@@ -295,7 +295,6 @@
         position: relative;
         @media (max-width: 767px) {
             border-bottom: 1px solid $grey_border!important;
-            padding: 0 15px;
         }
         .header-nav {
             margin: 0;
@@ -377,6 +376,7 @@
                 }
                 .mobile {
                     position: relative;
+                    padding: 0 15px;
                     #_mobile_cart {
                         position: relative;
                         right: 0;

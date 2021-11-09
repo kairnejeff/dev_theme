@@ -290,7 +290,6 @@ html, body {
 @media (max-width: 1200px) and (max-width: 767px) {
   #header {
     border-bottom: 1px solid #d8d8d8 !important;
-    padding: 0 15px;
   }
 }
 @media (max-width: 1200px) {
@@ -370,6 +369,7 @@ html, body {
 @media (max-width: 1200px) {
   #header .header-nav .row .mobile {
     position: relative;
+    padding: 0 15px;
   }
   #header .header-nav .row .mobile #_mobile_cart {
     position: relative;
