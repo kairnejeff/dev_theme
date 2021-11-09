@@ -150,7 +150,7 @@ html, body {
 /* Header */
 @media (min-width: 1200px) {
   #header .header-banner {
-    background-color: #d4795e;
+    background-color: #FCE8D9;
     padding: 10px 0;
     position: relative;
   }
