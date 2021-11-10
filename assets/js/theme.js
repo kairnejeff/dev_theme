@@ -31,17 +31,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./scss/categorie-grid.scss":
-/*!**********************************!*\
-  !*** ./scss/categorie-grid.scss ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://assets/./scss/categorie-grid.scss?");
-
-/***/ }),
-
 /***/ "./scss/category.scss":
 /*!****************************!*\
   !*** ./scss/category.scss ***!
@@ -61,17 +50,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://assets/./scss/command.scss?");
-
-/***/ }),
-
-/***/ "./scss/contact.scss":
-/*!***************************!*\
-  !*** ./scss/contact.scss ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://assets/./scss/contact.scss?");
 
 /***/ }),
 
@@ -116,17 +94,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://assets/./scss/home.scss?");
-
-/***/ }),
-
-/***/ "./scss/log.scss":
-/*!***********************!*\
-  !*** ./scss/log.scss ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://assets/./scss/log.scss?");
 
 /***/ }),
 
@@ -185,17 +152,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./scss/store.scss":
-/*!*************************!*\
-  !*** ./scss/store.scss ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://assets/./scss/store.scss?");
-
-/***/ }),
-
 /***/ "./scss/cms.css":
 /*!**********************!*\
   !*** ./scss/cms.css ***!
@@ -247,7 +203,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_theme_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../scss/theme.css */ \"./scss/theme.css\");\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../../scss/header.scss */ \"./scss/header.scss\");\n/* harmony import */ var _scss_bentos_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../scss/bentos.scss */ \"./scss/bentos.scss\");\n/* harmony import */ var _scss_home_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../scss/home.scss */ \"./scss/home.scss\");\n/* harmony import */ var _scss_footer_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../../../scss/footer.scss */ \"./scss/footer.scss\");\n/* harmony import */ var _scss_categorie_grid_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../../../scss/categorie-grid.scss */ \"./scss/categorie-grid.scss\");\n/* harmony import */ var _scss_category_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../../../../scss/category.scss */ \"./scss/category.scss\");\n/* harmony import */ var _scss_product_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../../../../scss/product.scss */ \"./scss/product.scss\");\n/* harmony import */ var _scss_my_account_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../../../../scss/my-account.scss */ \"./scss/my-account.scss\");\n/* harmony import */ var _scss_trustpilot_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../../../../scss/trustpilot.css */ \"./scss/trustpilot.css\");\n/* harmony import */ var _scss_filtre_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../../../../scss/filtre.scss */ \"./scss/filtre.scss\");\n/* harmony import */ var _scss_log_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../../../../scss/log.scss */ \"./scss/log.scss\");\n/* harmony import */ var _scss_command_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../../../../../scss/command.scss */ \"./scss/command.scss\");\n/* harmony import */ var _scss_shop_scss__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../../../../scss/shop.scss */ \"./scss/shop.scss\");\n/* harmony import */ var _scss_contact_scss__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../../../../../scss/contact.scss */ \"./scss/contact.scss\");\n/* harmony import */ var _scss_megamenu_scss__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../../../../../scss/megamenu.scss */ \"./scss/megamenu.scss\");\n/* harmony import */ var _scss_cms_css__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../../../../../scss/cms.css */ \"./scss/cms.css\");\n/* harmony import */ var _scss_page_scss__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../../../../../scss/page.scss */ \"./scss/page.scss\");\n/* harmony import */ var _scss_store_scss__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../../../../../scss/store.scss */ \"./scss/store.scss\");\n/* harmony import */ var _scss_abonnement_scss__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../../../../../scss/abonnement.scss */ \"./scss/abonnement.scss\");\n/* harmony import */ var _scss_owl_carousel_min_css__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../../../../../../scss/owl.carousel.min.css */ \"./scss/owl.carousel.min.css\");\n/* harmony import */ var _js_themes_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../../../../../../js/themes.js */ \"./js/themes.js\");\n/* harmony import */ var _js_themes_js__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_js_themes_js__WEBPACK_IMPORTED_MODULE_21__);\n/* harmony import */ var _js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../../../../../../../js/owl.carousel.min.js */ \"./js/owl.carousel.min.js\");\n/* harmony import */ var _js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_22__);\n/* harmony import */ var _js_swiped_events_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../../../../../../../js/swiped-events.js */ \"./js/swiped-events.js\");\n/* harmony import */ var _js_swiped_events_js__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_js_swiped_events_js__WEBPACK_IMPORTED_MODULE_23__);\n/* harmony import */ var _js_customs_js__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../../../../../../../js/customs.js */ \"./js/customs.js\");\n/* harmony import */ var _js_customs_js__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_js_customs_js__WEBPACK_IMPORTED_MODULE_24__);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://assets/./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_theme_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../scss/theme.css */ \"./scss/theme.css\");\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../../scss/header.scss */ \"./scss/header.scss\");\n/* harmony import */ var _scss_bentos_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../scss/bentos.scss */ \"./scss/bentos.scss\");\n/* harmony import */ var _scss_home_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../../../scss/home.scss */ \"./scss/home.scss\");\n/* harmony import */ var _scss_footer_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../../../../scss/footer.scss */ \"./scss/footer.scss\");\n/* harmony import */ var _scss_category_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../../../../scss/category.scss */ \"./scss/category.scss\");\n/* harmony import */ var _scss_product_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../../../../scss/product.scss */ \"./scss/product.scss\");\n/* harmony import */ var _scss_my_account_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../../../../scss/my-account.scss */ \"./scss/my-account.scss\");\n/* harmony import */ var _scss_trustpilot_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../../../../scss/trustpilot.css */ \"./scss/trustpilot.css\");\n/* harmony import */ var _scss_filtre_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../../../../scss/filtre.scss */ \"./scss/filtre.scss\");\n/* harmony import */ var _scss_command_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../../../../scss/command.scss */ \"./scss/command.scss\");\n/* harmony import */ var _scss_shop_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../../../../scss/shop.scss */ \"./scss/shop.scss\");\n/* harmony import */ var _scss_megamenu_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../../../../../scss/megamenu.scss */ \"./scss/megamenu.scss\");\n/* harmony import */ var _scss_cms_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../../../../scss/cms.css */ \"./scss/cms.css\");\n/* harmony import */ var _scss_page_scss__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../../../../../scss/page.scss */ \"./scss/page.scss\");\n/* harmony import */ var _scss_abonnement_scss__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../../../../../scss/abonnement.scss */ \"./scss/abonnement.scss\");\n/* harmony import */ var _scss_owl_carousel_min_css__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../../../../../scss/owl.carousel.min.css */ \"./scss/owl.carousel.min.css\");\n/* harmony import */ var _js_themes_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../../../../../js/themes.js */ \"./js/themes.js\");\n/* harmony import */ var _js_themes_js__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_js_themes_js__WEBPACK_IMPORTED_MODULE_17__);\n/* harmony import */ var _js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../../../../../js/owl.carousel.min.js */ \"./js/owl.carousel.min.js\");\n/* harmony import */ var _js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_js_owl_carousel_min_js__WEBPACK_IMPORTED_MODULE_18__);\n/* harmony import */ var _js_swiped_events_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../../../../../js/swiped-events.js */ \"./js/swiped-events.js\");\n/* harmony import */ var _js_swiped_events_js__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_js_swiped_events_js__WEBPACK_IMPORTED_MODULE_19__);\n/* harmony import */ var _js_customs_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../../../../../../js/customs.js */ \"./js/customs.js\");\n/* harmony import */ var _js_customs_js__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_js_customs_js__WEBPACK_IMPORTED_MODULE_20__);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://assets/./index.js?");
 
 /***/ }),
 

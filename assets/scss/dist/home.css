@@ -583,3 +583,11 @@ html, body {
   width: 1159px;
   margin: 60px auto;
 }
+
+/* Contact */
+.contact-form section .form-group .group-span-filestyle > label {
+  height: 38px;
+}
+.contact-form section .form-group .group-span-filestyle > label .buttonText {
+  line-height: 18px;
+}

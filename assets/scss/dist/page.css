@@ -106,3 +106,82 @@ html, body {
 #cms #content .introduction {
   margin-bottom: 100px;
 }
+
+#stores #cms .h3 {
+  font-family: RobotoMono;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+#stores #cms .nb-stores {
+  font-family: "Unna";
+  font-size: 20px;
+}
+#stores #cms #group {
+  height: 3rem;
+  padding: 0.7rem 1.25rem;
+  width: 100%;
+  font-family: "RobotoMono";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 11px;
+  cursor: pointer;
+  border: 1.5px solid;
+}
+#stores #cms #group:focus-visible {
+  outline: 1.5px solid;
+}
+#stores #cms #localise {
+  height: 3rem;
+  padding: 0.7rem 1.25rem;
+  width: 100%;
+  background: white;
+  margin-top: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "RobotoMono";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 11px;
+  cursor: pointer;
+  border: 1.5px solid;
+}
+#stores #cms #localise:focus {
+  outline: 1.5px solid;
+}
+#stores #cms #stores-filter {
+  margin-top: 120px;
+}
+#stores #cms #stores-filter h3 {
+  font-family: RobotoMono;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#stores #cms #stores-filter article.store-item {
+  padding: 20px;
+  height: 300px;
+}
+#stores #cms #stores-filter article.store-item .store-item-container {
+  background: #fef9f5;
+  padding: 20px;
+  position: relative;
+  height: 100%;
+}
+#stores #cms #stores-filter article.store-item .store-item-container .h3.card-title {
+  font-size: 20px;
+  width: 75%;
+  line-height: 30px;
+}
+#stores #cms #stores-filter article.store-item .store-item-container .distance {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  font-family: "RobotoMono";
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+#stores #cms #stores-filter article.store-item .store-item-container address {
+  text-decoration: underline;
+}

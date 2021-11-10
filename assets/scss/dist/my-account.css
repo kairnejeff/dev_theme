@@ -101,3 +101,113 @@ html, body {
   transform: translate(-50%, -50%);
   margin: 0 !important;
 }
+#my-account .container .my-account img.category-cover {
+  max-width: 1160px !important;
+  max-height: 369.03px !important;
+}
+
+#checkout header .header-nav,
+.card header .header-nav {
+  margin-top: 0;
+}
+#checkout .login-form form section,
+.card .login-form form section {
+  position: relative;
+}
+#checkout .login-form form section .form-group:nth-child(3),
+.card .login-form form section .form-group:nth-child(3) {
+  margin-bottom: 0;
+}
+#checkout .login-form form section .form-group:nth-child(3) button,
+.card .login-form form section .form-group:nth-child(3) button {
+  width: 100%;
+  height: 38px !important;
+}
+@media (min-width: 768px) {
+  #checkout .login-form form section .forgot-password,
+.card .login-form form section .forgot-password {
+    position: absolute;
+    left: 160px;
+  }
+}
+#checkout .login-form form footer,
+.card .login-form form footer {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #checkout .login-form form footer,
+.card .login-form form footer {
+    margin-top: 50px;
+  }
+}
+#checkout form section .form-group:first-child .form-control-valign .radio-inline,
+.card form section .form-group:first-child .form-control-valign .radio-inline {
+  margin-right: 20px;
+}
+#checkout form section .form-group:first-child .form-control-valign .radio-inline span,
+.card form section .form-group:first-child .form-control-valign .radio-inline span {
+  margin-right: 3px;
+}
+#checkout form section .btn[data-action=show-password],
+.card form section .btn[data-action=show-password] {
+  height: 40px;
+  line-height: inherit;
+  background-color: #82b8ec !important;
+  height: 100%;
+  line-height: initial;
+}
+#checkout form footer button,
+.card form footer button {
+  height: 40px;
+  line-height: inherit;
+  background-color: #82b8ec !important;
+}
+#checkout #checkout-personal-information-step p:nth-child(2) a,
+.card #checkout-personal-information-step p:nth-child(2) a {
+  margin-left: 15px;
+  text-decoration: underline;
+}
+
+.cart-grid-body .checkout-step button {
+  height: 40px;
+  line-height: inherit;
+  background-color: #82b8ec !important;
+}
+.cart-grid-body #checkout-addresses-step .content #delivery-addresses .radio-block {
+  padding: 10px;
+}
+.cart-grid-body #checkout-addresses-step .content #delivery-addresses .radio-block .address-alias {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.cart-grid-right #js-checkout-summary .cart-summary-products p a {
+  position: relative;
+}
+.cart-grid-right #js-checkout-summary .cart-summary-products p a i {
+  position: absolute;
+  bottom: 0;
+}
+
+.info-blocs {
+  position: relative;
+}
+.info-blocs > a {
+  position: absolute;
+  bottom: -50px;
+  left: -18px;
+}
+.info-blocs > a span {
+  position: relative;
+  padding-left: 30px;
+}
+.info-blocs > a span i {
+  position: absolute;
+  left: 0;
+}
+.info-blocs .info-bloc .info-bloc-content .font3 {
+  text-transform: uppercase;
+}
+.info-blocs .info-bloc .info-bloc-content .button a {
+  line-height: inherit;
+}
