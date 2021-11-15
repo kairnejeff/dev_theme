@@ -314,11 +314,17 @@ html, body {
   position: absolute;
   right: 10px;
 }
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-discount {
+  margin-bottom: 0;
+}
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-price {
   margin: 0;
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-price .current-price {
   margin: 0;
+}
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-price .current-price .discount-percentage {
+  font-size: 12px;
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-price .current-price span {
   font-size: 16px;
