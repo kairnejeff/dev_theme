@@ -295,6 +295,10 @@ html, body {
   top: -24px;
   right: 0;
 }
+#js-product-list .products > div article .product-price-and-shipping .old_price span {
+  font-size: 16px;
+  font-family: "RobotoMono";
+}
 #js-product-list .products > div article .product-price-and-shipping .price {
   font-family: "RobotoMono";
   font-size: 14px;
