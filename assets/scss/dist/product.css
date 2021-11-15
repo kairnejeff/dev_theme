@@ -320,6 +320,11 @@ html, body {
   right: -8px;
   bottom: 50px;
 }
+@media (max-width: 768px) {
+  #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-discount {
+    right: 11px;
+  }
+}
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-price {
   margin: 0;
 }
