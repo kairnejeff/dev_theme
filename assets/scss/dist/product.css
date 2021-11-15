@@ -324,7 +324,7 @@ html, body {
   margin: 0;
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-price .current-price {
-  margin-top: 40px;
+  margin-top: 40px !important;
   margin: 0;
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-price .current-price span:first-child {
