@@ -349,7 +349,7 @@
     </div>
     
     <div class="actu">
-        <div class="info-actu origin">
+        {* <div class="info-actu origin">
           <h2> D'où viennent nos produits ? </h2>
           <div class="flex">
             <div class="provenance">
@@ -361,7 +361,7 @@
             {/if}
             </div>
           </div>
-        </div>
+        </div> *}
 
         <div class="info-actu secret">
           <h2> Notre secret de cuisine </h2>
