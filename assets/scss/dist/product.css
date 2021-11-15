@@ -327,6 +327,9 @@ html, body {
   margin-top: 40px;
   margin: 0;
 }
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-price .current-price span:first-child {
+  margin-bottom: 5px;
+}
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-price .current-price .discount-percentage {
   font-size: 12px;
 }

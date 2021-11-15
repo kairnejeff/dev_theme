@@ -326,6 +326,11 @@
                                                 margin: 0;
                                                 .current-price {
                                                     margin-top: 40px;
+                                                    span {
+                                                        &:first-child {
+                                                            margin-bottom: 5px;
+                                                        }
+                                                    }
                                                     .discount-percentage {
                                                         font-size: 12px;
                                                     }
