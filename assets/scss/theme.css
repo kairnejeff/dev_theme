@@ -9744,7 +9744,7 @@ body#checkout #hook-display-after-carrier>[class^=col].links .row>[class^=col] {
     color: #7a7a7a;
     text-decoration: line-through;
     font-size: 12px;
-    font-family: Roboto;
+    font-family: RobotoMono;
     display: inline-block
 }
 
