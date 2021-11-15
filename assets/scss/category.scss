@@ -294,6 +294,11 @@
                     position: absolute;
                     top: calc(100% + 20px);
                     right: 0;
+                    .old_price {
+                        position: absolute;
+                        top: -24px;
+                        right: 0;
+                    }
                     .price {
                         font-family: $roboto;
                         font-size: 14px;

@@ -295,6 +295,11 @@ html, body {
   top: calc(100% + 20px);
   right: 0;
 }
+.container .featured-products .products > div article .thumbnail-container .product-price-and-shipping .old_price {
+  position: absolute;
+  top: -24px;
+  right: 0;
+}
 .container .featured-products .products > div article .thumbnail-container .product-price-and-shipping .price {
   font-family: "RobotoMono";
   font-size: 14px;
