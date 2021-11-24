@@ -148,10 +148,11 @@ html, body {
 }
 
 .header-banner {
-  position: none;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 99999;
+  display: none;
 }
 .header-banner > div {
   background-color: #FCE8D9;
