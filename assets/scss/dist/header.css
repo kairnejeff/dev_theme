@@ -148,11 +148,17 @@ html, body {
 }
 
 .header-banner {
+  position: none;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+.header-banner > div {
   background-color: #FCE8D9;
   padding: 10px 0;
   position: relative;
 }
-.header-banner p {
+.header-banner > div p {
   text-align: center;
   margin-bottom: 0;
   color: #000;
@@ -162,17 +168,6 @@ html, body {
 
 /* Header */
 @media (min-width: 1200px) {
-  #header .header-banner {
-    background-color: #FCE8D9;
-    padding: 10px 0;
-    position: relative;
-  }
-  #header .header-banner p {
-    text-align: center;
-    margin-bottom: 0;
-    color: #000;
-    letter-spacing: 0.5px;
-  }
   #header .header-nav {
     max-height: 100%;
     margin-top: 80px;

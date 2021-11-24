@@ -24,7 +24,9 @@
  *}
 {block name='header_banner'}
   <div class="header-banner">
-    <p> Les frais de port sont offerts à partir de 70€ </p>
+    <div>
+      <p> Les frais de port sont offerts à partir de 70€ </p>
+    </div>
   </div>
 {/block}
 
