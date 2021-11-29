@@ -70,7 +70,7 @@
           {/if} 
         {/block}
       </div>
-      {if $product->id_product !== 324}
+      {* {if $product->id_product !== 324}
         <div class="info-detailed">
           <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#composition" aria-expanded="false" aria-controls="collapseOne"">
             <h2 class="font3 text-uppercase">Ingrédients</h2>
@@ -86,7 +86,7 @@
             {/foreach}
           </div>
         </div>
-      {/if}
+      {/if} *}
       {if $product->id_product == 324}
 
       <div class="add-to-cart-or-refresh">
