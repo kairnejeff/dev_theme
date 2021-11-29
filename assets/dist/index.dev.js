@@ -30,6 +30,8 @@ require("/scss/cms.css");
 
 require("/scss/page.scss");
 
+require("/scss/coffret.scss");
+
 require("/scss/abonnement.scss");
 
 require("/scss/owl.carousel.min.css");

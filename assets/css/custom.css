@@ -482,7 +482,7 @@
     font-size: 14px;
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
     .info-detailed .collapse {
         display: block;
         height: auto !important;
@@ -493,7 +493,7 @@
         height: unset !important;
         overflow: hidden;
     }
-}
+} */
 
 .info-detailed .info-detailed-title h2 {
     padding: 15px 0;

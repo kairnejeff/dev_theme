@@ -242,26 +242,23 @@ $(document).ready(function () {
     $(e.target).parents('.product-cover').children('.btn-image').children('.icon-next').css("background", "#fff");
     $(e.target).parents('.product-cover').children('.btn-image').children('.icon-prev').css("background", "#000");
   });
-}); //product-accordion
-// function productAccordion() {
-//     var windowsize = $(window).width()
-//     if (windowsize > 767) {
-//         $('.info-detailed .collapse').collapse()
-//     } else {
-//         $('.info-detailed .collapse').on('show.bs.collapse', function() {
-//             $(this).prev().find("i")[0].innerHTML = 'expand_less';
-//             $('.info-detailed .collapse').not(this).collapse('hide');
-//         });
-//         $('.info-detailed .collapse').on('hide.bs.collapse', function() {
-//             $(this).prev().find("i")[0].innerHTML = 'expand_more';
-//         });
-//     }
-// }
-// (function() {
+}); //Accordéon 
+//product-accordion
+
+function productAccordion() {
+  $('.info-detailed .collapse').on('show.bs.collapse', function () {
+    $(this).prev().find("i")[0].innerHTML = 'expand_less';
+    $('.info-detailed .collapse').not(this).collapse('hide');
+  });
+  $('.info-detailed .collapse').on('hide.bs.collapse', function () {
+    $(this).prev().find("i")[0].innerHTML = 'expand_more';
+  });
+} // (function() {
 //     productAccordion();
 //     $(window).resize(productAccordion);
 // })();
 //category - filtre
+
 
 $(document).ready(function () {
   $('#facet_section .form-check-filtre-label').click(function () {

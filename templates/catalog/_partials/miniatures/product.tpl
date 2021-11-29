@@ -22,6 +22,9 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
+
+
+
 {block name='product_miniature_item'}
 <div itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
   {if isset($position)}<meta itemprop="position" content="{$position}" />{/if}
@@ -67,7 +70,25 @@
           {/if} 
         {/block}
       </div>
-      
+      {if $product->id_product !== 324}
+        <div class="info-detailed">
+          <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#composition" aria-expanded="false" aria-controls="collapseOne"">
+            <h2 class="font3 text-uppercase">Ingrédients</h2>
+            <i class="material-icons hidden-md-up">expand_more</i>
+          </div>
+          <div id="composition" class="info-detail-content collapse">
+            {foreach from=$product.features item=feature}
+              {if ($feature.name == "Ingrédients")}
+                <p>{$feature.value|escape:'html':'UTF-8'}</p>
+                <p>*ingrédients issus de l'agriculture biologique <br />
+                  Certifié Ecocert SAS. 32600</p>
+              {/if}
+            {/foreach}
+          </div>
+        </div>
+      {/if}
+      {if $product->id_product == 324}
+
       <div class="add-to-cart-or-refresh">
       
         <form action="{$urls.pages.cart}" method="post" >
@@ -149,6 +170,10 @@
         {/if}
       {/block}
     </div>
+    {/if}
   </article>
 </div>
 {/block}
+
+
+

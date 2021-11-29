@@ -1,0 +1,9 @@
+.coffret_noel .content {
+  height: auto !important;
+}
+.coffret_noel .content .product-information .product-actions {
+  bottom: -190px !important;
+}
+.coffret_noel .product-accessories .products {
+  grid-gap: 45px;
+}
