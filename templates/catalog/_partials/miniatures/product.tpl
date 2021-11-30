@@ -73,7 +73,7 @@
 
       {if $page.page_name == 'product'} 
       
-        <div class="info-detailed">
+        {* <div class="info-detailed">
           <div class="info-detailed-title" role="button">
             <h2 class="font3 text-uppercase">Ingrédients</h2>
             <i class="material-icons hidden-md-up">expand_more</i>
@@ -87,7 +87,7 @@
               {/if}
             {/foreach}
           </div>
-        </div>
+        </div> *}
       {/if}
       
 
