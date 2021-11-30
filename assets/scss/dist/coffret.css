@@ -24,3 +24,8 @@
 .coffret_noel .products > div .product-miniature .product-price-and-shipping {
   display: none;
 }
+
+.chutney .info-detailed {
+  position: absolute;
+  top: 54%;
+}

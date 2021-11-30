@@ -129,7 +129,7 @@
 
     {block name='product_accessories'}
       {if $accessories}
-        <section class="product-accessories coffret_noel container clearfix">
+        <section class="product-accessories coffret_noel chutney container clearfix">
           <div class="products" itemscope itemtype="http://schema.org/ItemList">
             {foreach from=$accessories item="product_accessory" key="position"}
               {block name='product_miniature'}
