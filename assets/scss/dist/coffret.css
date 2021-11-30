@@ -14,11 +14,11 @@
   grid-gap: 45px;
 }
 .coffret_noel .products > div {
-  height: 600px;
+  height: 700px;
 }
 .coffret_noel .products > div .product-miniature .info-detailed {
   position: absolute;
-  bottom: -50px;
+  top: 60%;
 }
 .coffret_noel .products > div .product-miniature .add-to-cart-or-refresh,
 .coffret_noel .products > div .product-miniature .product-price-and-shipping {

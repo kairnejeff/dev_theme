@@ -1149,3 +1149,7 @@ html, body {
   top: -6px;
   left: 130px;
 }
+
+.not-noel .info-detailed {
+  display: none;
+}

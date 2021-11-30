@@ -26,11 +26,11 @@
         grid-gap: 45px;
 
         > div {
-            height: 600px;
+            height: 700px;
             .product-miniature {
                 .info-detailed {
                     position: absolute;
-                    bottom: -50px;
+                    top: 60%;
                 }
 
                 .add-to-cart-or-refresh,

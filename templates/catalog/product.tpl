@@ -394,7 +394,7 @@
  
     {block name='product_accessories'}
       {if $accessories}
-        <section class="product-accessories container clearfix">
+        <section class="product-accessories not-noel container clearfix">
           <p class="h5 text-uppercase">
           <span>{l s='You might also like' d='Shop.Theme.Catalog'}</span>
           </p>
