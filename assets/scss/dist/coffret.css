@@ -14,11 +14,13 @@
   grid-gap: 45px;
 }
 .coffret_noel .products > div {
-  height: 700px;
+  height: 600px;
+  margin-bottom: 0;
 }
 .coffret_noel .products > div .product-miniature .info-detailed {
+  width: 100%;
   position: absolute;
-  top: 60%;
+  top: 78%;
 }
 .coffret_noel .products > div .product-miniature .add-to-cart-or-refresh,
 .coffret_noel .products > div .product-miniature .product-price-and-shipping {
@@ -27,5 +29,5 @@
 
 .chutney .info-detailed {
   position: absolute;
-  top: 54% !important;
+  top: 72% !important;
 }

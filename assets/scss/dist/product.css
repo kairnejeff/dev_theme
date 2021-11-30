@@ -137,22 +137,25 @@ html, body {
 #wrapper .container #main .product-container .info-detailed {
   font-size: 14px;
 }
-@media screen and (min-width: 1024px) {
-  #wrapper .container #main .product-container .info-detailed .collapse {
-    display: block;
-    height: auto !important;
-    visibility: visible;
-  }
-  #wrapper .container #main .product-container .info-detailed .collapsing {
-    position: relative;
-    height: unset !important;
-    overflow: hidden;
-  }
+#wrapper .container #main .product-container .info-detailed .collapse {
+  display: block;
+  height: auto !important;
+  visibility: visible;
+}
+#wrapper .container #main .product-container .info-detailed .collapsing {
+  position: relative;
+  height: unset !important;
+  overflow: hidden;
 }
 @media screen and (max-width: 480px) {
   #wrapper .container #main .product-container .info-detailed {
     padding-left: 0;
   }
+}
+#wrapper .container #main .product-container .info-detailed .info-all .collapse-icons i.material-icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 #wrapper .container #main .product-container .info-detailed .info-detailed-title {
   position: relative;

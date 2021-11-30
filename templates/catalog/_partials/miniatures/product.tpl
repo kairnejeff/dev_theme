@@ -74,11 +74,11 @@
       {if $page.page_name == 'product'} 
       
         <div class="info-detailed">
-          <div class="info-detailed-title" role="button">
+          <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#{$position}" aria-expanded="false" aria-controls="collapseOne">
             <h2 class="font3 text-uppercase">Ingrédients</h2>
-            <i class="material-icons hidden-md-up">expand_more</i>
+            <i class="material-icons">expand_more</i>
           </div>
-          <div class="composition" class="info-detail-content">
+          <div id="{$position}" class="info-detail-content collapse">
             {foreach from=$product.features item=feature}
               {if ($feature.name == "Ingrédients")}
                 <p>{$feature.value|escape:'html':'UTF-8'}</p>

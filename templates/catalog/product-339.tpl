@@ -136,6 +136,28 @@
                 {include file='catalog/_partials/miniatures/product.tpl' product=$product_accessory position=$position}
               {/block}
             {/foreach}
+             <div itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            {if isset($position)}<meta itemprop="position" content="7" />{/if}
+            <article class="product-miniature totebag js-product-miniature">
+              <div class="thumbnail-container">
+                {block name='product_thumbnail'}
+                  
+                          <img
+                                  class="product-img"
+                                  src="https://www.karinejeff.fr/205-large_default/totebags-myrtille.jpg"
+                                  alt="Tote bag"
+                          />
+                
+                {/block}
+
+                <div class="product-description">
+                  {block name='product_name'}
+                    <h2 class="h3 product-title" itemprop="name"><a>tote bag</a></h2> 
+                  {/block}
+                </div>
+              </div>
+            </article> 
+          </div>
           </div>
         </section>
       {/if}
