@@ -154,13 +154,13 @@
                     @media screen and (max-width: 480px) {
                         padding-left: 0;
                     }
-                    @media screen and (max-width: 767px) {
-                        .info-all .collapse-icons i.material-icons {
-                            position: absolute;
-                            top: 10px;
-                            right: 10px;
-                        }
-                    }
+                    // @media screen and (max-width: 767px) {
+                    //     .info-all .collapse-icons i.material-icons {
+                    //         position: absolute;
+                    //         top: 10px;
+                    //         right: 10px;
+                    //     }
+                    // }
                     font-size: 14px;
                     .info-detailed-title {
                         position: relative;
@@ -330,7 +330,6 @@
                                             .product-price {
                                                 margin: 0;
                                                 .current-price {
-                                                    margin-top: 40px!important;
                                                     span {
                                                         &:first-child {
                                                             margin-bottom: 5px;
@@ -860,6 +859,7 @@
                     padding-bottom: 0!important;
                 }
             }
+
             .add-to-cart-or-refresh {
                 position: absolute;
                 top: calc(100% + 15px);

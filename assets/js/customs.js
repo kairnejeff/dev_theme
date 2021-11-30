@@ -255,17 +255,17 @@ $(document).ready(function() {
 
 
 //product-accordion
-function productAccordion() {
+// function productAccordion() {
 
-        $('.info-detailed .collapse').on('show.bs.collapse', function() {
-            $(this).prev().find("i")[0].innerHTML = 'expand_less';
-            $('.info-detailed .collapse').not(this).collapse('hide');
-        });
-        $('.info-detailed .collapse').on('hide.bs.collapse', function() {
-            $(this).prev().find("i")[0].innerHTML = 'expand_more';
-        });
+//         $('.info-detailed .collapse').on('show.bs.collapse', function() {
+//             $(this).prev().find("i")[0].innerHTML = 'expand_less';
+//             $('.info-detailed .collapse').not(this).collapse('hide');
+//         });
+//         $('.info-detailed .collapse').on('hide.bs.collapse', function() {
+//             $(this).prev().find("i")[0].innerHTML = 'expand_more';
+//         });
     
-}
+// }
 
 // (function() {
 //     productAccordion();

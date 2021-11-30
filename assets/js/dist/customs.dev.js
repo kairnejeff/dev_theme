@@ -244,21 +244,20 @@ $(document).ready(function () {
   });
 }); //Accordéon 
 //product-accordion
-
-function productAccordion() {
-  $('.info-detailed .collapse').on('show.bs.collapse', function () {
-    $(this).prev().find("i")[0].innerHTML = 'expand_less';
-    $('.info-detailed .collapse').not(this).collapse('hide');
-  });
-  $('.info-detailed .collapse').on('hide.bs.collapse', function () {
-    $(this).prev().find("i")[0].innerHTML = 'expand_more';
-  });
-} // (function() {
+// function productAccordion() {
+//         $('.info-detailed .collapse').on('show.bs.collapse', function() {
+//             $(this).prev().find("i")[0].innerHTML = 'expand_less';
+//             $('.info-detailed .collapse').not(this).collapse('hide');
+//         });
+//         $('.info-detailed .collapse').on('hide.bs.collapse', function() {
+//             $(this).prev().find("i")[0].innerHTML = 'expand_more';
+//         });
+// }
+// (function() {
 //     productAccordion();
 //     $(window).resize(productAccordion);
 // })();
 //category - filtre
-
 
 $(document).ready(function () {
   $('#facet_section .form-check-filtre-label').click(function () {

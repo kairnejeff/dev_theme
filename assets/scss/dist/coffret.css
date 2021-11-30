@@ -1,9 +1,26 @@
 .coffret_noel .content {
   height: auto !important;
 }
-.coffret_noel .content .product-information .product-actions {
-  bottom: -190px !important;
+@media screen and (min-width: 769px) {
+  .coffret_noel .content .product-information .product-actions {
+    bottom: -190px !important;
+  }
 }
-.coffret_noel .product-accessories .products {
+.coffret_noel .content .product-information .product-actions .add .yuka img {
+  display: none;
+}
+
+.coffret_noel .products {
   grid-gap: 45px;
+}
+.coffret_noel .products > div {
+  height: 600px;
+}
+.coffret_noel .products > div .product-miniature .info-detailed {
+  position: absolute;
+  bottom: -50px;
+}
+.coffret_noel .products > div .product-miniature .add-to-cart-or-refresh,
+.coffret_noel .products > div .product-miniature .product-price-and-shipping {
+  display: none;
 }

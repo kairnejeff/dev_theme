@@ -26,57 +26,59 @@
 
 
 {block name='product_miniature_item'}
-<div itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-  {if isset($position)}<meta itemprop="position" content="{$position}" />{/if}
-  <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemprop="item" itemscope itemtype="http://schema.org/Product">
-    <div class="thumbnail-container">
-      {block name='product_thumbnail'}
-        {if $product.cover}
-          <a href="{$product.url}" class="thumbnail product-thumbnail">
-          {assign var="img_webp" value="modules/kj_webp/images/p/webp-img{$product.id_product}.webp"}
-          {if file_exists($img_webp)&& $modules.kj_detectdevice.machine !=='Mac'&&$modules.kj_detectdevice.machine !=='iPad'}
-              <picture  class="product-img">
-                  <source srcset="{$urls.base_url}modules/kj_webp/images/p/webp-img{$product.id_product}.webp" alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}" type="image/webp">
-                  <img width="100" height="100" src="{$product.default_image.bySize.large_default.url}" srcset="{$product.cover.bySize.home_default.url} 320w, {$product.cover.bySize.home_default_medium.url} 300w, {$product.cover.bySize.home_default_small.url} 150w " alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}">
-              </picture>
-              {hook h='displayCategoryProductCaroussel' id_product=$product.id}
-              
-          {else}
-                <img
-                        class="product-img"
-                        src="{$product.default_image.bySize.large_default.url}"
-                        alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
-                        data-full-size-image-url="{$product.cover.large.url}"
-                />
+  <div itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    {if isset($position)}<meta itemprop="position" content="{$position}" />{/if}
+    <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemprop="item" itemscope itemtype="http://schema.org/Product">
+      <div class="thumbnail-container">
+        {block name='product_thumbnail'}
+          {if $product.cover}
+            <a href="{$product.url}" class="thumbnail product-thumbnail">
+            {assign var="img_webp" value="modules/kj_webp/images/p/webp-img{$product.id_product}.webp"}
+            {if file_exists($img_webp)&& $modules.kj_detectdevice.machine !=='Mac'&&$modules.kj_detectdevice.machine !=='iPad'}
+                <picture  class="product-img">
+                    <source srcset="{$urls.base_url}modules/kj_webp/images/p/webp-img{$product.id_product}.webp" alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}" type="image/webp">
+                    <img width="100" height="100" src="{$product.default_image.bySize.large_default.url}" srcset="{$product.cover.bySize.home_default.url} 320w, {$product.cover.bySize.home_default_medium.url} 300w, {$product.cover.bySize.home_default_small.url} 150w " alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}">
+                </picture>
                 {hook h='displayCategoryProductCaroussel' id_product=$product.id}
-          {/if}
-          </a>
-        {else}
-          <a href="{$product.url}" class="thumbnail product-thumbnail">
-            <img src="{$urls.no_picture_image.bySize.home_default.url}" />
-          </a>
-        {/if}
-      {/block}
-
-      <div class="product-description">
-        {block name='product_name'}
-          {if $page.page_name == 'index'}
-            <h3 class="h3 product-title" itemprop="name"><a href="{$product.url}" itemprop="url" content="{$product.url}">{$product.name}</a></h2>
+                
+            {else}
+                  <img
+                          class="product-img"
+                          src="{$product.default_image.bySize.large_default.url}"
+                          alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
+                          data-full-size-image-url="{$product.cover.large.url}"
+                  />
+                  {hook h='displayCategoryProductCaroussel' id_product=$product.id}
+            {/if}
+            </a>
           {else}
-            <h2 class="h3 product-title" itemprop="name"><a href="{$product.url}" itemprop="url" content="{$product.url}">{$product.name}</a></h2>
+            <a href="{$product.url}" class="thumbnail product-thumbnail">
+              <img src="{$urls.no_picture_image.bySize.home_default.url}" />
+            </a>
           {/if}
-          {if $product.description_short}
-            <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
-          {/if} 
         {/block}
-      </div>
-      {* {if $product->id_product !== 324}
+
+        <div class="product-description">
+          {block name='product_name'}
+            {if $page.page_name == 'index'}
+              <h3 class="h3 product-title" itemprop="name"><a href="{$product.url}" itemprop="url" content="{$product.url}">{$product.name}</a></h2>
+            {else}
+              <h2 class="h3 product-title" itemprop="name"><a href="{$product.url}" itemprop="url" content="{$product.url}">{$product.name}</a></h2>
+            {/if}
+            {if $product.description_short}
+              <div id="product-subtitle" itemprop="subtitle">{$product.description_short nofilter}</div>
+            {/if} 
+          {/block}
+        </div>
+
+      {if $page.page_name == 'product'} 
+      
         <div class="info-detailed">
-          <div class="info-detailed-title" role="button" data-toggle="collapse" data-target="#composition" aria-expanded="false" aria-controls="collapseOne"">
+          <div class="info-detailed-title" role="button">
             <h2 class="font3 text-uppercase">Ingrédients</h2>
             <i class="material-icons hidden-md-up">expand_more</i>
           </div>
-          <div id="composition" class="info-detail-content collapse">
+          <div class="composition" class="info-detail-content">
             {foreach from=$product.features item=feature}
               {if ($feature.name == "Ingrédients")}
                 <p>{$feature.value|escape:'html':'UTF-8'}</p>
@@ -86,94 +88,63 @@
             {/foreach}
           </div>
         </div>
-      {/if} *}
-      {if $product->id_product == 324}
-
-      <div class="add-to-cart-or-refresh">
+      {/if}
       
-        <form action="{$urls.pages.cart}" method="post" >
-            <input type="hidden" name="token" value="{$static_token}">
-            <input type="hidden" name="id_product" value="{$product.id}" class="product_page_product_id">
-            <div class="add-card-button">
-              <button class="down" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
-              <input name="qty" type="number" class="value" value ="1" min="1" id="id_product_{$product.id}"> 
-              <button class="up" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-            </div>
-             {*<input
-            type="number"
-            name="qty"
-            id="quantity_wanted"
-            value="{$product.quantity_wanted}"
-            class="input-group"
-            min="{$product.minimal_quantity}"
-            aria-label="{l s='Quantity' d='Shop.Theme.Actions'}" 
-          > *}
 
-          
-          {* <div class="product-quantity clearfix">
-            <div class="qty">
-              <div class="input-group bootstrap-touchspin">
-                <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
-                <input type="number" name="qty" id="quantity_wanted" value="1" class="input-group form-control" min="1" aria-label="Quantité" style="display: block;">
-                <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
-                <span class="input-group-btn-vertical">
-                <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-up" type="button"><i class="material-icons touchspin-up"></i></button>
-                <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-down" type="button"><i class="material-icons touchspin-down"></i></button>
-                </span>
-              </div>
-            </div>
-          </div> *}
-
-
-
-
-
-
-            {if !$configuration.is_catalog}
-                    {if (!isset($product.customization_required) || !$product.customization_required) && ($product.allow_oosp || $product.quantity > 0)}
-                      <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}><span class="icon-panier-off"></span></button>
-                    {else}
-                      <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" disabled><span class="icon-panier-off"></span></button>
-                    {/if}
-              {/if}
-          </form>
-        </div>
-      {block name='product_price_and_shipping'}
+        <div class="add-to-cart-or-refresh">
         
-        {if $product.show_price}
-          <div class="product-price-and-shipping">
-            <div class="old_price">
-              {if $product.has_discount}
-                {hook h='displayProductPriceBlock' product=$product type="old_price"}
-    
-                <span class="regular-price" aria-label="{l s='Regular price' d='Shop.Theme.Catalog'}">{$product.regular_price}</span>
-                {if $product.discount_type === 'percentage'}
-                  <span class="discount-percentage discount-product">{$product.discount_percentage}</span>
-                {elseif $product.discount_type === 'amount'}
-                  <span class="discount-amount discount-product">{$product.discount_amount_to_display}</span>
+          <form action="{$urls.pages.cart}" method="post" >
+              <input type="hidden" name="token" value="{$static_token}">
+              <input type="hidden" name="id_product" value="{$product.id}" class="product_page_product_id">
+              <div class="add-card-button">
+                <button class="down" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                <input name="qty" type="number" class="value" value ="1" min="1" id="id_product_{$product.id}"> 
+                <button class="up" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+              </div>
+              
+              {if !$configuration.is_catalog}
+                      {if (!isset($product.customization_required) || !$product.customization_required) && ($product.allow_oosp || $product.quantity > 0)}
+                        <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" {if !$product.add_to_cart_url}disabled{/if}><span class="icon-panier-off"></span></button>
+                      {else}
+                        <button class="btn add-to-cart" data-button-action="add-to-cart" type="submit" disabled><span class="icon-panier-off"></span></button>
+                      {/if}
                 {/if}
-              {/if}
-            </div>
-  
-            {hook h='displayProductPriceBlock' product=$product type="before_price"}
-  
-            <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">{$product.price}</span>
-            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="invisible">
-              <meta itemprop="priceCurrency" content="{$currency.iso_code}" />
-              <meta itemprop="price" content="{$product.price_amount}" />
-            </div>
-  
-            {hook h='displayProductPriceBlock' product=$product type='unit_price'}
-  
-            {hook h='displayProductPriceBlock' product=$product type='weight'}
+            </form>
           </div>
-        {/if}
-      {/block}
-    </div>
-    {/if}
-  </article>
-</div>
+        {block name='product_price_and_shipping'}
+          
+          {if $product.show_price}
+            <div class="product-price-and-shipping">
+              <div class="old_price">
+                {if $product.has_discount}
+                  {hook h='displayProductPriceBlock' product=$product type="old_price"}
+      
+                  <span class="regular-price" aria-label="{l s='Regular price' d='Shop.Theme.Catalog'}">{$product.regular_price}</span>
+                  {if $product.discount_type === 'percentage'}
+                    <span class="discount-percentage discount-product">{$product.discount_percentage}</span>
+                  {elseif $product.discount_type === 'amount'}
+                    <span class="discount-amount discount-product">{$product.discount_amount_to_display}</span>
+                  {/if}
+                {/if}
+              </div>
+    
+              {hook h='displayProductPriceBlock' product=$product type="before_price"}
+    
+              <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">{$product.price}</span>
+              <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="invisible">
+                <meta itemprop="priceCurrency" content="{$currency.iso_code}" />
+                <meta itemprop="price" content="{$product.price_amount}" />
+              </div>
+    
+              {hook h='displayProductPriceBlock' product=$product type='unit_price'}
+    
+              {hook h='displayProductPriceBlock' product=$product type='weight'}
+            </div>
+          {/if}
+        {/block}
+      </div>
+    </article>
+  </div>
 {/block}
-
 
 

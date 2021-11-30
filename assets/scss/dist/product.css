@@ -154,13 +154,6 @@ html, body {
     padding-left: 0;
   }
 }
-@media screen and (max-width: 767px) {
-  #wrapper .container #main .product-container .info-detailed .info-all .collapse-icons i.material-icons {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-}
 #wrapper .container #main .product-container .info-detailed .info-detailed-title {
   position: relative;
 }
@@ -329,7 +322,6 @@ html, body {
   margin: 0;
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-price .current-price {
-  margin-top: 40px !important;
   margin: 0;
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-price .current-price span:first-child {
