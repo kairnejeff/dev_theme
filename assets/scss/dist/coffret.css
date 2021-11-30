@@ -15,7 +15,7 @@
 }
 .coffret_noel .products > div {
   height: 600px;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 .coffret_noel .products > div .product-miniature .info-detailed {
   width: 100%;
