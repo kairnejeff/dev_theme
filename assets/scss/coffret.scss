@@ -33,9 +33,14 @@
             height: 650px;
             margin-bottom: 0!important;
 
-            @media (max-width: 630px) {
-                height: 850px;
+            @media (max-width: 630px) and (min-width: 480px) {
+                height: 700px;
             }
+
+            @media (max-width: 480px) {
+                height: 750px;
+            }
+
             .product-miniature {
                 .info-detailed {
                     width: 100%;
@@ -43,7 +48,7 @@
                     top: 64%;
 
                     @media (max-width: 630px) {
-                        top: 67%;
+                        position: relative;
                     }
                 }
 

@@ -22,9 +22,14 @@
   height: 650px;
   margin-bottom: 0 !important;
 }
-@media (max-width: 630px) {
+@media (max-width: 630px) and (min-width: 480px) {
   .coffret_noel .products > div {
-    height: 850px;
+    height: 700px;
+  }
+}
+@media (max-width: 480px) {
+  .coffret_noel .products > div {
+    height: 750px;
   }
 }
 .coffret_noel .products > div .product-miniature .info-detailed {
@@ -34,7 +39,7 @@
 }
 @media (max-width: 630px) {
   .coffret_noel .products > div .product-miniature .info-detailed {
-    top: 67%;
+    position: relative;
   }
 }
 .coffret_noel .products > div .product-miniature .add-to-cart-or-refresh,
