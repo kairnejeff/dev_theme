@@ -25,8 +25,12 @@
     .products {
         grid-gap: 45px;
 
+        @media (max-width: 630px) {
+            display: block;
+        }
+
         > div {
-            height: 600px;
+            height: 650px;
             margin-bottom: 0!important;
             .product-miniature {
                 .info-detailed {

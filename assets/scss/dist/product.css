@@ -773,9 +773,11 @@ html, body {
     margin-bottom: 90px;
   }
 }
-#wrapper .product-accessories .products > div .product-miniature .product-img {
-  width: 290px;
-  height: 290px;
+@media (min-width: 961px) {
+  #wrapper .product-accessories .products > div .product-miniature .product-img {
+    width: 290px;
+    height: 290px;
+  }
 }
 @media (min-width: 769px) and (max-width: 960px) {
   #wrapper .product-accessories .products > div .product-miniature .product-img {
