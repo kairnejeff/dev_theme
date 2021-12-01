@@ -32,11 +32,19 @@
         > div {
             height: 650px;
             margin-bottom: 0!important;
+
+            @media (max-width: 630px) {
+                height: 850px;
+            }
             .product-miniature {
                 .info-detailed {
                     width: 100%;
                     position: absolute;
                     top: 64%;
+
+                    @media (max-width: 630px) {
+                        top: 74%;
+                    }
                 }
 
                 .add-to-cart-or-refresh,

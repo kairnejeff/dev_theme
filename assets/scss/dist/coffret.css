@@ -22,10 +22,20 @@
   height: 650px;
   margin-bottom: 0 !important;
 }
+@media (max-width: 630px) {
+  .coffret_noel .products > div {
+    height: 850px;
+  }
+}
 .coffret_noel .products > div .product-miniature .info-detailed {
   width: 100%;
   position: absolute;
   top: 64%;
+}
+@media (max-width: 630px) {
+  .coffret_noel .products > div .product-miniature .info-detailed {
+    top: 74%;
+  }
 }
 .coffret_noel .products > div .product-miniature .add-to-cart-or-refresh,
 .coffret_noel .products > div .product-miniature .product-price-and-shipping {
