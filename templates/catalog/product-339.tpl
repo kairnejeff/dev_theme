@@ -152,7 +152,7 @@
 
                 <div class="product-description">
                   {block name='product_name'}
-                    <h2 class="h3 product-title" itemprop="name"><a>tote bag</a></h2> 
+                    <h2 class="h3 product-title" itemprop="name"><a>tote bag Karine & Jeff offert</a></h2> 
                   {/block}
                 </div>
               </div>
