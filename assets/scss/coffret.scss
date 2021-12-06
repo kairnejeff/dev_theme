@@ -64,9 +64,15 @@
 } 
 
 .chutney {
-    .info-detailed {
-        position: absolute;
-        top: 56%!important;
-    } 
+    div {
+        div {
+            &:last-child {
+                .info-detailed {
+                    position: absolute;
+                    top: 56%!important;
+                } 
+            }
+        }
+    }
 }
 
