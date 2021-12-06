@@ -46,11 +46,11 @@
 .coffret_noel .products > div .product-miniature .product-price-and-shipping {
   display: none;
 }
-
-.chutney .products div:last-child {
+.coffret_noel .products > div:last-child {
   height: auto !important;
 }
-.chutney .products div:last-child .info-detailed {
+
+.chutney .info-detailed {
   position: absolute;
   top: 56% !important;
 }

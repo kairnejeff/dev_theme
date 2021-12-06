@@ -57,23 +57,19 @@
                     display: none;
                 }
             }
-
+            &:last-child {
+                height: auto!important;
+            }
             
         }
     }
 } 
 
 .chutney {
-    .products {
-        div {
-            &:last-child {
-                height: auto!important;
-                .info-detailed {
-                    position: absolute;
-                    top: 56%!important;
-                } 
-            }
-        }
-    }
+    .info-detailed {
+        position: absolute;
+        top: 56%!important;
+    } 
+
 }
 
