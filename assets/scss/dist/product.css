@@ -352,8 +352,12 @@ html, body {
     font-size: 20px;
   }
 }
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .has-discount .current-price {
+  margin-top: 27px;
+}
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .has-discount .current-price span:first-child {
   color: #000;
+  margin-bottom: 12px;
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .has-discount .current-price .discount-percentage {
   font-size: 10px !important;

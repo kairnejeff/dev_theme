@@ -356,10 +356,12 @@
                                             }
 
                                             .has-discount {
-                                                .current-price {   
+                                                .current-price {  
+                                                    margin-top: 27px; 
                                                     span {
                                                         &:first-child {
                                                             color: $black;
+                                                            margin-bottom: 12px;
                                                         }
                                                     }
                                                     .discount-percentage {
