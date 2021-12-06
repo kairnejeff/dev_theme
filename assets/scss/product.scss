@@ -294,6 +294,7 @@
                                 margin-bottom: 0;
                             }
                             .product-add-to-cart {
+                                position: relative;
                                 .product-quantity {
                                     flex-direction: column;
                                     .qty {
@@ -353,6 +354,22 @@
                                                     }
                                                 }
                                             }
+
+                                            .has-discount {
+                                                .current-price {   
+                                                    span {
+                                                        &:first-child {
+                                                            color: $black;
+                                                        }
+                                                    }
+                                                    .discount-percentage {
+                                                        font-size: 10px!important;
+                                                        background-color: #FCE8D9;
+                                                        color: $black;
+                                                    }
+                                                }
+                                            }
+
                                             .tax-shipping-delivery-label {
                                                 display: none;
                                             }

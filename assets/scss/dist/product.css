@@ -288,6 +288,9 @@ html, body {
 #wrapper .container #main .product-container .content .product-information .product-actions .product-discounts {
   margin-bottom: 0;
 }
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart {
+  position: relative;
+}
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity {
   flex-direction: column;
 }
@@ -348,6 +351,14 @@ html, body {
   #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .product-price .current-price span {
     font-size: 20px;
   }
+}
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .has-discount .current-price span:first-child {
+  color: #000;
+}
+#wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .has-discount .current-price .discount-percentage {
+  font-size: 10px !important;
+  background-color: #FCE8D9;
+  color: #000;
 }
 #wrapper .container #main .product-container .content .product-information .product-actions .product-add-to-cart .product-quantity .qty .product-prices .tax-shipping-delivery-label {
   display: none;

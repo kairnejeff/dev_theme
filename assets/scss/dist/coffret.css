@@ -35,7 +35,7 @@
 .coffret_noel .products > div .product-miniature .info-detailed {
   width: 100%;
   position: absolute;
-  top: 64%;
+  top: 60%;
 }
 @media (max-width: 630px) {
   .coffret_noel .products > div .product-miniature .info-detailed {
