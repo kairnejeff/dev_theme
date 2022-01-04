@@ -606,7 +606,7 @@ html, body {
 }
 @media (max-width: 768px) {
   .category-id-89 h1 {
-    color: #000;
+    color: #000 !important;
   }
 }
 

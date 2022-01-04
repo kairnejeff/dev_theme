@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {foreach $javascript.external as $js}
-  <script type="text/javascript" src="{$js.uri}" {$js.attribute}></script>
+  <script type="text/javascript" src="{$js.uri}" {$js.attribute} async></script>
 {/foreach}
 <!-- TrustBox script -->
 <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
