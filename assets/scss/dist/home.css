@@ -32,7 +32,7 @@ html, body {
 }
 .container #main #carousel ul li a figure {
   display: block;
-  background-color: #FEF9F4;
+  background-color: #FEF9F5;
 }
 @media (min-width: 769px) and (max-width: 1200px) {
   .container #main #carousel ul li a figure img {
